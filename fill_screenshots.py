@@ -241,7 +241,7 @@ YEAR_RE = re.compile(r"19[5-9]\d|20[0-3]\d")
 def norm(s):
     s = unicodedata.normalize("NFKD", s or "")
     s = "".join(c for c in s if not unicodedata.combining(c)).casefold()
-    s = s.replace("&", " and ").replace("’", "'").replace("'", "")
+    s = s.replace("&", " and ").replace("’", "'").replace("'", "").replace("×", "x")
     s = re.sub(r"[\W_]+", " ", s)
     return " ".join(s.split())
 
@@ -257,16 +257,27 @@ def spelling(title):
     return " ".join(t.split())
 
 
+AGES_RE = re.compile(r"\b(\d+)\s*(?:[-–]\s*(\d+)|\+)")  # "3-8", "2 - 5", "3+"
+
+
+def ages(title):
+    return {m.group(0).replace(" ", "").replace("–", "-") for m in AGES_RE.finditer(title or "")}
+
+
 def numbers(title):
-    return {ROMAN.get(t, t) for t in norm(title).split()
+    return {ROMAN.get(t, t) for t in norm(AGES_RE.sub(" ", title or "")).split()
             if (t.isdigit() or t in ROMAN) and not YEAR_RE.fullmatch(t)}
 
 
 def number_mismatch(game_title, cand_title):
     """Sequel numbers differ: the list title's numbers must all appear in the
-    candidate, and the candidate's main title may not add any (bar a "1")."""
+    candidate, and the candidate's main title may not add any (bar a "1").
+    Age ranges ("kids 3-8") only count when both titles have one."""
     want = numbers(game_title)
-    return bool(want - numbers(cand_title) or numbers(base(cand_title)) - want - {"1"})
+    if want - numbers(cand_title) or numbers(base(cand_title)) - want - {"1"}:
+        return True
+    a, b = ages(game_title), ages(cand_title)
+    return bool(a and b and a != b)
 
 
 def developer_hint(title):
