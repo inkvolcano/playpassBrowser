@@ -26,6 +26,7 @@ How a match is chosen
     python3 fill_screenshots.py --only "Mini Metro"  # (re)do specific titles
     python3 fill_screenshots.py --refresh            # re-read every matched app: all
                                                      # screenshots + today's Play Pass status
+    python3 fill_screenshots.py --region nl          # which matched apps the Dutch Play Store offers
 """
 import argparse
 import json
@@ -113,12 +114,15 @@ def _nested(obj, *path):
     return obj
 
 
-def gp_search(query, lang, country, n_hits=10):
+def gp_search(query, lang, country, n_hits=10, fallback=True):
     """google_play_scraper.search() with sturdier parsing: 1.2.7 crashes when a
-    "Showing results for ..." section comes before the results."""
+    "Showing results for ..." section comes before the results. The library's
+    fallback URL drops the country, so region checks switch it off."""
     try:
         dom = get(Formats.Searchresults.build(query=quote(query), lang=lang, country=country))
     except NotFoundError:
+        if not fallback:
+            raise
         dom = get(Formats.Searchresults.fallback_build(query=quote(query), lang=lang))
     ds = {}
     for m in Regex.SCRIPT.findall(dom):
@@ -572,6 +576,39 @@ def refresh_entry(game, e):
                 installs=install_total(d), tags=store_tags(d.get("categories")))
 
 
+def search_ids(query, country):
+    """App ids that a Play Store search from this country returns, or None if the search failed."""
+    try:
+        return [h["appId"] for h in _call(gp_search, query, "en", country, 50, False) if h.get("appId")]
+    except NotFoundError:
+        return None
+    except Blocked:
+        raise
+    except Exception as e:  # layout surprises
+        print(f"    ! search({query!r}, {country}) failed: {type(e).__name__}: {e}", flush=True)
+        return None
+
+
+def region_available(e, country):
+    """Whether the app is offered in this country's Play Store.
+
+    A details page loads from any country and the Play Pass badge shows
+    everywhere, but search only returns apps offered in the searcher's country.
+    True: a search from the country finds the app. False: it doesn't, while the
+    same searches from a reference country (US, or GB for the US) do. None:
+    no search finds it anywhere, so there's no telling."""
+    app_id, name = e["appId"], e.get("matched") or ""
+    queries = list(dict.fromkeys(q for q in (name, f"{name} {e.get('developer') or ''}".strip(), app_id) if q))
+    for q in queries:
+        if app_id in (search_ids(q, country) or []):
+            return True
+    ref = "gb" if country == "us" else "us"
+    for q in queries:
+        if app_id in (search_ids(q, ref) or []):
+            return False
+    return None
+
+
 # ---------------------------------------------------------------- cache / git
 
 def load_json(path, default):
@@ -633,6 +670,9 @@ def main():
                     help="re-read every matched app's store page (all screenshots, rating, installs, tags, "
                          "current Play Pass status) instead of looking games up; resumes where a refresh "
                          "stopped today")
+    ap.add_argument("--region", nargs="+", metavar="CC", type=str.lower,
+                    help="check which matched apps these countries' Play Stores offer (two-letter codes, "
+                         "e.g. nl de); resumes where a check stopped today")
     ap.add_argument("--limit", type=int, help="stop after this many lookups")
     ap.add_argument("--delay", type=float, default=0.6, help="seconds between requests (default 0.6)")
     ap.add_argument("--commit-every", type=int, default=0, metavar="N",
@@ -661,8 +701,13 @@ def main():
                     or (e.get("confidence") == "verified" and (e.get("similarity") or 0) < 0.9))
         return {"all": True, "nulls": e.get("appId") is None, "doubtful": doubtful}.get(args.recheck, False)
 
-    if args.refresh:
-        today = date.today().isoformat()
+    today = date.today().isoformat()
+    if args.region:
+        def region_todo(e):
+            return any(((e.get("regions") or {}).get(cc) or {}).get("checked") != today for cc in args.region)
+        queue = [g for g in games if (cache.get(g["title"]) or {}).get("appId") and region_todo(cache[g["title"]])]
+        print(f"{len(queue)} matched games to check in: {', '.join(args.region)}", flush=True)
+    elif args.refresh:
         queue = [g for g in games if (cache.get(g["title"]) or {}).get("appId")
                  and (cache[g["title"]].get("passChecked") != today or cache[g["title"]].get("ratings") is None
                       or cache[g["title"]].get("tags") is None)]
@@ -675,15 +720,27 @@ def main():
         queue = queue[:args.limit]
 
     def checkpoint_message():
+        if args.region:
+            return f"Check Play Store availability ({', '.join(args.region)}): {done}/{len(queue)} games"
         if args.refresh:
             return f"Refresh Play Store data: {done}/{len(queue)} games"
         return f"Cache Play Store data: {sum(1 for x in order if x in cache)}/{len(order)} games"
 
     done = 0
+    seen = {}  # (appId, country) -> result, for apps YTECHB lists twice
     try:
         for i, g in enumerate(queue, 1):
             t = g["title"]
-            if args.refresh:
+            if args.region:
+                e = dict(cache[t], regions=dict(cache[t].get("regions") or {}))
+                for cc in args.region:
+                    k = (e["appId"], cc)
+                    if k not in seen:
+                        seen[k] = region_available(e, cc)
+                    e["regions"][cc] = {"available": seen[k], "checked": today}
+                info = ", ".join(f"{cc}: {({True: 'offered', False: 'NOT OFFERED', None: 'unknown'})[e['regions'][cc]['available']]}"
+                                 for cc in args.region)
+            elif args.refresh:
                 e = refresh_entry(g, cache[t])
                 status = "store page incomplete, kept" if e.get("passError") else \
                     {True: "in Play Pass", False: "NOT in Play Pass", None: "store page gone"}[e["playPass"]]

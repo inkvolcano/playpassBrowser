@@ -27,6 +27,12 @@ be matched to a Play Store app; both are left out (the footer gives the counts).
 left are marked "Not in Play Pass", unmatched ones get a generated gradient
 cover and a Play Store search link.
 
+Not every game is offered everywhere. The country menu in the header (United
+States and the Netherlands so far) hides games that country's Play Store
+doesn't offer; on a first visit the page picks the country from your time zone
+or browser language. The list itself comes from the US store, so games that
+are in Play Pass only outside the US are missing.
+
 ## Files
 
 | File | What it is |
@@ -36,7 +42,7 @@ cover and a Play Store search link.
 | `build_index.py` | Builds `index.html` from `index.template.html` and the data files |
 | `index.template.html` | The page (HTML, CSS, JS) with a `__DATA__` placeholder |
 | `data/games.json` | The game list: `title`, `genre`, `source` |
-| `data/shots_cache.json` | Play Store data per game: `appId`, `icon`, `screenshots`, `url`, `playPass`, `rating`, `ratings`, `installs`, `tags`, plus match details |
+| `data/shots_cache.json` | Play Store data per game: `appId`, `icon`, `screenshots`, `url`, `playPass`, `rating`, `ratings`, `installs`, `tags`, `regions` (availability per country), plus match details |
 | `data/overrides.json` | Hand-made fixes: title → appId, or title → `null` |
 | `data/sources.json` | Where the list came from and when it was last updated |
 
@@ -49,6 +55,7 @@ python3 fetch_games.py                # 1. refresh the game list from YTECHB
 python3 fill_screenshots.py           # 2. look up games not in the cache yet
 python3 fill_screenshots.py --refresh # 3. re-check every game's Play Pass status, rating,
                                       #    downloads, tags and screenshots, then rebuild index.html
+python3 fill_screenshots.py --region nl  # 4. re-check which games the Dutch Play Store offers
 ```
 
 `fill_screenshots.py` resumes from `data/shots_cache.json`, so it only looks up
@@ -56,7 +63,10 @@ games it hasn't seen; stop it at any time (Ctrl-C saves progress) and run it
 again to continue. A full run over ~1,800 games takes about 45 minutes because
 requests are throttled (`--delay`, 0.6 s by default) to avoid rate limiting.
 `--refresh` keeps every match and re-reads each app's store page (about 35
-minutes); it resumes too, skipping games already refreshed that day.
+minutes); it resumes too, skipping games already refreshed that day. So does
+`--region` (about 25 minutes per country). To add a country, run it with that
+country's two-letter code (`--region de`, or several: `--region de be`); the
+next build adds it to the page's country menu.
 
 Useful options:
 
@@ -113,3 +123,14 @@ The script also patches two bugs in google-play-scraper 1.2.7: the top search
 result's `appId` comes back as `None`, and `search()` crashes on pages that
 start with "Showing results for". It turns TLS certificate checks back on,
 which the library switches off on import.
+
+## How availability per country is checked
+
+A Play Store details page loads from any country, and the Play Pass badge shows
+in every country (even ones without Play Pass), so neither says what a country
+offers. Search does: a Play Store search from a country only returns apps
+offered there. For each app, `--region` searches its store name, then name plus
+developer, then its package name, from that country. If a search finds the app,
+it's offered. If none does, the same searches run from the US (from the UK
+when checking the US); when they find the app there, it's marked as not
+offered. When no search finds it anywhere, it's unknown and stays listed.

@@ -127,14 +127,37 @@ h1 {
   font-variant-numeric: tabular-nums;
 }
 .stub-label { font: 500 11px/1.3 var(--f-mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
-.stub-bar { width: 70%; height: 6px; margin-top: 10px; border-radius: 3px; background: var(--line); overflow: hidden; }
-.stub-bar i { display: block; height: 100%; background: var(--brass); }
-.stub-small { font: 400 10.5px/1.4 var(--f-mono); color: var(--muted); margin-top: 4px; }
+.stub-region { position: relative; display: inline-flex; max-width: 100%; margin-top: 10px; }
+.stub-region select {
+  -webkit-appearance: none;
+  appearance: none;
+  max-width: 100%;
+  height: 30px;
+  padding: 0 27px 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font: 600 12.5px/1 var(--f-body);
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+.stub-region select:hover { border-color: var(--muted); }
+.stub-region::after {
+  content: "";
+  position: absolute;
+  right: 11px; top: 50%;
+  margin-top: -2px;
+  border: 4.5px solid transparent;
+  border-top-color: var(--muted);
+  pointer-events: none;
+}
+.stub-small { font: 400 10.5px/1.4 var(--f-mono); color: var(--muted); margin-top: 6px; }
 @media (max-width: 560px) {
   .pass { grid-template-columns: minmax(0, 1fr); }
   .stub {
     grid-template-columns: auto auto minmax(0, 1fr);
-    grid-template-areas: "num label bar" "num label small";
+    grid-template-areas: "num label region" "num label small";
     place-content: stretch;
     justify-items: start;
     align-items: center;
@@ -148,8 +171,8 @@ h1 {
   .stub::after { top: -14px; bottom: auto; left: auto; right: -13px; }
   .stub-num { grid-area: num; font-size: 34px; }
   .stub-label { grid-area: label; }
-  .stub-bar { grid-area: bar; width: 100%; margin: 0; align-self: end; }
-  .stub-small { grid-area: small; margin: 0; align-self: start; font-size: 9.5px; }
+  .stub-region { grid-area: region; margin: 0; align-self: end; justify-self: start; }
+  .stub-small { grid-area: small; margin: 4px 0 0; align-self: start; font-size: 9.5px; }
 }
 
 /* ---------- sticky controls ---------- */
@@ -430,7 +453,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     <div class="stub" aria-label="Catalogue size">
       <span class="stub-num" id="stub-num">0</span>
       <span class="stub-label">games</span>
-      <span class="stub-bar" aria-hidden="true"><i id="stub-bar"></i></span>
+      <label class="stub-region" id="region-box" hidden><span class="sr-only">Play Store country</span><select id="region"></select></label>
       <span class="stub-small" id="stub-small"></span>
     </div>
   </header>
@@ -480,6 +503,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     <p id="foot-list"></p>
     <p id="foot-store"></p>
     <p id="foot-pass"></p>
+    <p id="foot-region"></p>
     <p id="foot-rating"></p>
   </footer>
 </div>
@@ -509,14 +533,19 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     set(k, v) { try { localStorage.setItem("ppb:" + k, v); } catch (e) { /* storage unavailable */ } }
   };
 
+  // Regions: the US store (where the list comes from) plus any country checked for
+  // availability. Each game carries a bit per region: set when that store offers it.
+  const REGIONS = D.regions && D.regions.length ? D.regions : [{ code: "US", tz: [] }];
+  const ALL_REGIONS = (1 << REGIONS.length) - 1;
+
   // games: [title, genreIndex, appId, icon, [screenshots], developer, playStoreTitle, inPlayPass 1/0/null,
-  //         starRating, numberOfRatings, installs, [tag indexes into D.tags]]
+  //         starRating, numberOfRatings, installs, [tag indexes into D.tags], region bits]
   const games = D.games.map((g, i) => {
-    const [title, gi, appId, icon, shots, dev, matched, pass, rating, ratings, installs, tagIds] = g;
+    const [title, gi, appId, icon, shots, dev, matched, pass, rating, ratings, installs, tagIds, rbits] = g;
     const genre = D.genres[gi];
     const tags = (tagIds || []).map((t) => D.tags[t]);
     return { i, title, gi, genre, appId, icon, shots: shots || [], dev, matched, pass, rating, ratings,
-             installs: installs || 0, tagIds: tagIds || [],
+             installs: installs || 0, tagIds: tagIds || [], rbits: rbits ?? ALL_REGIONS,
              key: norm([title, dev, matched, ...tags].filter(Boolean).join(" ")), el: null };
   });
   const confirmedOnly = !!D.meta.confirmedOnly;
@@ -635,41 +664,85 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
 
   // ----- header, footer, chips
   const m = D.meta;
-  const withShots = games.filter((g) => g.shots.length).length;
-  const inPass = games.filter((g) => g.pass === 1).length;
-  const leftPass = games.filter((g) => g.pass === 0).length;
   const dateText = (iso) => iso ? new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }) : "";
-  $("stub-num").textContent = fmt.format(games.length);
-  $("stub-bar").style.width = (100 * withShots / Math.max(1, games.length)).toFixed(1) + "%";
   const shortDate = (iso) => iso ? new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }) : "";
-  $("stub-small").innerHTML = confirmedOnly
-    ? `all in Play Pass<br>checked ${esc(shortDate(m.passChecked))}`
-    : `${fmt.format(withShots)} with screenshots<br>${fmt.format(inPass)} in Play Pass`;
+  const regionNames = (() => { try { return new Intl.DisplayNames(["en"], { type: "region" }); } catch (e) { return null; } })();
+  const regionName = (r) => (regionNames && regionNames.of(r.code)) || r.code;
+  const THE = new Set(["NL", "US", "GB", "PH", "AE", "BS", "GM", "DO"]);  // "in the Netherlands"
+  const theName = (r) => (THE.has(r.code) ? "the " : "") + regionName(r);
+  const inRegionName = (r) => `in ${theName(r)}`;
+  // First visit: the country of the visitor's time zone, then of their browser language, else the US.
+  function guessRegion() {
+    const saved = REGIONS.findIndex((r) => r.code === store.get("region"));
+    if (saved >= 0) return saved;
+    let tz = "";
+    try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ""; } catch (e) { /* no Intl time zones */ }
+    const byZone = REGIONS.findIndex((r) => (r.tz || []).includes(tz));
+    if (byZone >= 0) return byZone;
+    for (const lang of navigator.languages || [navigator.language || ""]) {
+      const cc = (/-([a-z]{2})$/i.exec(lang) || [])[1];
+      const byLang = cc ? REGIONS.findIndex((r) => r.code === cc.toUpperCase()) : -1;
+      if (byLang >= 0) return byLang;
+    }
+    return 0;
+  }
+  let region = guessRegion();
+  const inRegion = (g) => (g.rbits >> region) & 1;
+  $("region").innerHTML = REGIONS.map((r, i) => `<option value="${i}">${esc(regionName(r))}</option>`).join("");
+  $("region").value = String(region);
+  $("region-box").hidden = REGIONS.length < 2;
   $("sources").innerHTML = `List: <a href="${esc(m.listUrl)}" target="_blank" rel="noopener">YTECHB</a>, updated ${esc(dateText(m.listUpdated))} · Store data: ${esc(dateText(m.passChecked || m.storeChecked))}`;
-  $("q").placeholder = `Search ${fmt.format(games.length)} games or developers`;
   $("foot-list").innerHTML = `Game list from <a href="${esc(m.listUrl)}" target="_blank" rel="noopener">YTECHB's Play Pass list</a>, updated ${esc(dateText(m.listUpdated))}. Genres follow its sections, with Trivia and Word merged.`;
-  $("foot-store").textContent = `Screenshots, icons, ratings, downloads and tags come from Google Play, checked ${dateText(m.passChecked)}.` +
-    (games.length > withShots ? ` ${fmt.format(games.length - withShots)} games have no confident Play Store match; they show a generated cover and a Play Store search link instead.` : "");
-  $("foot-pass").textContent = confirmedOnly
-    ? `Only games whose Play Store page (US store) showed the Play Pass badge on ${dateText(m.passChecked)} are listed. ` +
-      `Of YTECHB's list, ${fmt.format(m.leftOutOfPass)} games no longer had it and ${fmt.format(m.leftOutUnmatched)} couldn't be found on the Play Store, so they're left out.`
-    : `“Play Pass” marks games whose Play Store page (US store) showed the Play Pass badge on ${dateText(m.passChecked)}. ` +
-      `${fmt.format(leftPass)} matched games didn't, so they have probably left Play Pass; they're marked “Not in Play Pass”.`;
   $("foot-rating").textContent = `Most popular sorts by Play Store downloads. Top rated uses a weighted average: games with few ` +
     `ratings are pulled toward the catalogue average of ${meanRating.toFixed(1)}, so a 5.0 from a handful of ratings doesn't ` +
     `outrank a 4.8 from thousands.`;
 
-  const counts = D.genres.map((_, gi) => games.filter((g) => g.gi === gi).length);
   const tagOptions = (pick) => D.tags.map((name, t) => ({ name, t })).filter((x) => tagCounts[x.t] && pick(x.name))
     .sort((a, b) => collator.compare(a.name, b.name))
-    .map((x) => `<option value="${x.t}">${esc(x.name)} (${fmt.format(tagCounts[x.t])})</option>`).join("");
+    .map((x) => `<option value="${x.t}">${esc(x.name)}</option>`).join("");
   $("tag").insertAdjacentHTML("beforeend",
     `<optgroup label="Tags">${tagOptions((n) => !STORE_GENRES.has(n))}</optgroup>` +
     `<optgroup label="Play Store genres">${tagOptions((n) => STORE_GENRES.has(n))}</optgroup>`);
   $("only-pass").hidden = confirmedOnly;
   $("genres").innerHTML =
-    `<button type="button" class="genre all" data-g="-1" aria-pressed="true">All <small>${fmt.format(games.length)}</small></button>` +
-    D.genres.map((name, gi) => `<button type="button" class="genre" data-g="${gi}" style="--h:${HUES[name] ?? 250}" aria-pressed="false">${esc(name)} <small>${counts[gi]}</small></button>`).join("");
+    `<button type="button" class="genre all" data-g="-1" aria-pressed="true">All <small></small></button>` +
+    D.genres.map((name, gi) => `<button type="button" class="genre" data-g="${gi}" style="--h:${HUES[name] ?? 250}" aria-pressed="false">${esc(name)} <small></small></button>`).join("");
+
+  // Everything that counts games follows the region: the stub, chips, Tag menu, footer.
+  let pool = [];  // games the current region's store offers
+  function renderRegion() {
+    pool = games.filter(inRegion);
+    const r = REGIONS[region];
+    const withShots = pool.filter((g) => g.shots.length).length;
+    $("stub-num").textContent = fmt.format(pool.length);
+    $("stub-small").innerHTML = confirmedOnly
+      ? `in Play Pass<br>checked ${esc(shortDate(m.passChecked))}`
+      : `${fmt.format(withShots)} with screenshots<br>${fmt.format(pool.filter((g) => g.pass === 1).length)} in Play Pass`;
+    $("q").placeholder = `Search ${fmt.format(pool.length)} games or developers`;
+    const byGenre = D.genres.map(() => 0), byTag = D.tags.map(() => 0);
+    pool.forEach((g) => { byGenre[g.gi]++; g.tagIds.forEach((t) => { byTag[t]++; }); });
+    document.querySelectorAll(".genre small").forEach((el) => {
+      const gi = Number(el.parentElement.dataset.g);
+      el.textContent = fmt.format(gi < 0 ? pool.length : byGenre[gi]);
+    });
+    $("tag").querySelectorAll("optgroup option").forEach((o) => {
+      const t = Number(o.value);
+      o.textContent = `${D.tags[t]} (${fmt.format(byTag[t])})`;
+      o.disabled = !byTag[t] && t !== tag;
+    });
+    $("foot-store").textContent = `Screenshots, icons, ratings, downloads and tags come from the US Play Store, checked ${dateText(m.passChecked)}.` +
+      (pool.length > withShots ? ` ${fmt.format(pool.length - withShots)} games have no confident Play Store match; they show a generated cover and a Play Store search link instead.` : "");
+    $("foot-pass").textContent = confirmedOnly
+      ? `Only games whose Play Store page showed the Play Pass badge on ${dateText(m.passChecked)} are listed. ` +
+        `Of YTECHB's list, ${fmt.format(m.leftOutOfPass)} games no longer had it and ${fmt.format(m.leftOutUnmatched)} couldn't be found on the Play Store, so they're left out.`
+      : `“Play Pass” marks games whose Play Store page showed the Play Pass badge on ${dateText(m.passChecked)}. ` +
+        `${fmt.format(pool.filter((g) => g.pass === 0).length)} matched games didn't, so they have probably left Play Pass; they're marked “Not in Play Pass”.`;
+    const missing = games.length - pool.length;
+    $("foot-region").textContent = REGIONS.length < 2 ? "" : region === 0
+      ? `The list comes from the US Play Store. Pick another country in the header to hide games its Play Store doesn't offer.`
+      : `In ${theName(r)}, a game is listed when a Play Store search from there finds it (checked ${dateText(r.checked)}); ` +
+        `${fmt.format(missing)} ${missing === 1 ? "game in the catalogue isn't" : "games in the catalogue aren't"} offered there. Ratings are from the US store.`;
+  }
 
   // ----- state
   const list = $("list"), q = $("q");
@@ -706,12 +779,13 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   function apply() {
     const terms = norm(q.value).split(/\s+/).filter(Boolean);
     const shownBy = new Array(D.genres.length).fill(0);
-    let shown = 0;
+    let shown = 0, elsewhere = 0;  // elsewhere: matches the region's store doesn't offer
     for (const g of games) {
-      const ok = (genre < 0 || g.gi === genre) && (tag < 0 || g.tagIds.includes(tag)) && (!onlyPass || g.pass === 1)
+      const match = (genre < 0 || g.gi === genre) && (tag < 0 || g.tagIds.includes(tag)) && (!onlyPass || g.pass === 1)
         && terms.every((t) => g.key.includes(t));
+      const ok = match && inRegion(g);
       g.el.hidden = !ok;
-      if (ok) { shown++; shownBy[g.gi]++; }
+      if (ok) { shown++; shownBy[g.gi]++; } else if (match) elsewhere++;
     }
     for (const grp of groups) {
       grp.sec.hidden = shownBy[grp.gi] === 0;
@@ -720,13 +794,15 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     const noun = (genre < 0 ? "" : `${D.genres[genre]} `) + (shown === 1 ? "game" : "games");
     const tagged = tag < 0 ? "" : ` tagged “${D.tags[tag]}”`;
     const scope = noun + tagged + (onlyPass ? " in Play Pass" : "");
-    $("status").textContent = (shown === games.length
+    const notHere = elsewhere ? ` · ${fmt.format(elsewhere)} not offered ${inRegionName(REGIONS[region])}` : "";
+    $("status").textContent = (shown === pool.length
       ? `Showing all ${fmt.format(shown)} games`
       : `Showing ${fmt.format(shown)} ${scope}` + (terms.length ? ` matching “${q.value.trim()}”` : "")) +
-      (SORT_NOTE[sort] || "");
+      (SORT_NOTE[sort] || "") + notHere;
     $("empty").hidden = shown > 0;
     const none = (genre < 0 ? "" : `${D.genres[genre]} `) + "games" + tagged + (onlyPass ? " in Play Pass" : "");
-    $("empty-text").textContent = terms.length ? `No ${none} match “${q.value.trim()}”.` : `No ${none} to show.`;
+    $("empty-text").textContent = (terms.length ? `No ${none} match “${q.value.trim()}”` : `No ${none} to show`) +
+      (elsewhere ? ` ${inRegionName(REGIONS[region])}: ${fmt.format(elsewhere)} ${elsewhere === 1 ? "game" : "games"} would, but its Play Store doesn't offer ${elsewhere === 1 ? "it" : "them"}.` : ".");
   }
 
   let timer = 0;
@@ -750,6 +826,12 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     apply();
   });
   $("sort").addEventListener("change", () => { sort = $("sort").value; store.set("sort", sort); layout(); });
+  $("region").addEventListener("change", () => {
+    region = Number($("region").value);
+    store.set("region", REGIONS[region].code);
+    renderRegion();
+    apply();
+  });
   function setTag(t) {
     tag = t;
     $("tag").value = String(t);
@@ -842,6 +924,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   $("theme").addEventListener("click", () => setTheme(THEMES[(THEMES.indexOf(theme) + 1) % THEMES.length]));
   setTheme(theme);
 
+  renderRegion();
   layout();
 })();
 </script>

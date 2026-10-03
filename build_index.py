@@ -8,6 +8,10 @@ URLs are stored without the googleusercontent host and get their size suffix
 By default the page lists only games whose Play Store page showed the Play Pass
 badge at the last check; --all also keeps games that have left Play Pass and
 games without a Play Store match (shown with a generated cover).
+
+Regions: the catalogue comes from the US store. Countries checked with
+`fill_screenshots.py --region CC` get an entry in the page's region menu, which
+hides games that country's store doesn't offer.
 """
 import argparse
 import json
@@ -19,6 +23,8 @@ TEMPLATE = ROOT / "index.template.html"
 OUT = ROOT / "index.html"
 IMG_HOST = "https://play-lh.googleusercontent.com/"
 PAGE_SHOTS = 12  # screenshots per card
+HOME_REGION = "us"  # the store the catalogue itself comes from
+ZONE_TAB = Path("/usr/share/zoneinfo/zone.tab")
 
 
 def load(name, default):
@@ -31,6 +37,22 @@ def short(url):
         return None
     url = url.split("=")[0]
     return url[len(IMG_HOST):] if url.startswith(IMG_HOST) else url
+
+
+def offered(e, cc):
+    """False only when a check found that country's store doesn't offer the app."""
+    return ((e.get("regions") or {}).get(cc) or {}).get("available") is not False
+
+
+def time_zones():
+    """Country code -> its IANA time zones, so the page can guess the visitor's country."""
+    zones = {}
+    if ZONE_TAB.exists():
+        for line in ZONE_TAB.read_text(encoding="utf-8").splitlines():
+            parts = line.split("\t")
+            if len(parts) >= 3 and not line.startswith("#"):
+                zones.setdefault(parts[0].lower(), []).append(parts[2])
+    return zones
 
 
 def main(argv=None):
@@ -70,6 +92,13 @@ def main(argv=None):
         else:
             shown.append((g, e))
 
+    # Region menu: the home store plus every country that has been checked.
+    regions = [HOME_REGION] + sorted({cc for _, e in shown for cc in (e.get("regions") or {}) if cc != HOME_REGION})
+    region_checked = {cc: [r["checked"] for _, e in shown if (r := (e.get("regions") or {}).get(cc)) and r.get("checked")]
+                      for cc in regions}
+    nowhere = [g["title"] for g, e in shown if e.get("appId") and not any(offered(e, cc) for cc in regions)]
+    shown = [(g, e) for g, e in shown if g["title"] not in nowhere]
+
     genres = sorted({g["genre"] for g, _ in shown})
     genre_index = {name: i for i, name in enumerate(genres)}
     tag_counts = Counter(t for _, e in shown if e.get("appId") for t in (e.get("tags") or []))
@@ -87,15 +116,19 @@ def main(argv=None):
                      shots, e.get("developer") if app_id else None, matched, in_pass,
                      e["rating"] if rated else None, e["ratings"] if rated else None,
                      e.get("installs") if app_id else None,
-                     [tag_index[t] for t in (e.get("tags") or [])] if app_id else []])
+                     [tag_index[t] for t in (e.get("tags") or [])] if app_id else [],
+                     sum(1 << i for i, cc in enumerate(regions) if not app_id or offered(e, cc))])
         if e.get("checked"):
             checked.append(e["checked"])
         if app_id and e.get("passChecked"):
             pass_checked.append(e["passChecked"])
 
+    zones = time_zones()
     data = {
         "genres": genres,
         "tags": tags,
+        "regions": [{"code": cc.upper(), "checked": max(region_checked[cc]) if region_checked[cc] else None,
+                     "tz": zones.get(cc, []) if cc != HOME_REGION else []} for cc in regions],
         "games": rows,
         "meta": {"listUrl": source.get("url"), "listUpdated": source.get("updated"),
                  "storeChecked": max(checked) if checked else None,
@@ -116,6 +149,15 @@ def main(argv=None):
     if not args.all:
         print(f"left out: {len(out_of_pass)} no longer in Play Pass, {len(unmatched)} without a Play Store match "
               f"(use --all to keep them)")
+    matched_rows = sum(1 for r in rows if r[2])
+    for i, cc in enumerate(regions):
+        off = sum(1 for r in rows if not r[12] >> i & 1)
+        checked = sum(1 for g, e in shown if e.get("appId") and cc in (e.get("regions") or {}))
+        note = "" if cc == HOME_REGION and not checked else f", checked {checked}/{matched_rows}"
+        print(f"region {cc}: {len(rows) - off} offered, {off} not{note}"
+              + (" - INCOMPLETE: unchecked games count as offered" if checked and checked < matched_rows else ""))
+    if nowhere:
+        print(f"left out, offered in none of the regions: {len(nowhere)}: " + "; ".join(nowhere))
     if merged:
         print(f"{len(merged)} duplicate listings shown once: " + "; ".join(merged))
 
