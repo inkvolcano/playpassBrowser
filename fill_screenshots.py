@@ -247,6 +247,8 @@ def norm(s):
 
 
 def base(title):
+    """Main title without subtitle; a leading tag like "[Premium]" is skipped."""
+    title = re.sub(r"^\s*[\[(][^\])]*[\])]\s*", "", title or "")
     return SUBTITLE_RE.split(title, 1)[0]
 
 
@@ -265,8 +267,10 @@ def ages(title):
 
 
 def numbers(title):
-    return {ROMAN.get(t, t) for t in norm(AGES_RE.sub(" ", title or "")).split()
-            if (t.isdigit() or t in ROMAN) and not YEAR_RE.fullmatch(t)}
+    toks = norm(AGES_RE.sub(" ", title or "")).split()
+    # a lone "i" after the first word is a numeral ("Alphadia I & II"), not the pronoun
+    toks = ["1" if t == "i" and k else t for k, t in enumerate(toks)]
+    return {ROMAN.get(t, t) for t in toks if (t.isdigit() or t in ROMAN) and not YEAR_RE.fullmatch(t)}
 
 
 def number_mismatch(game_title, cand_title):
@@ -300,9 +304,10 @@ def missing_words(game_title, cand_title):
     """Distinctive words of the list title that the candidate lacks ("Bob" in
     "Bob Jigsaw Puzzles for Kids" vs "Jigsaw Puzzles for Kids"). Typos pass."""
     hint = developer_hint(game_title)
-    have, joined = norm(cand_title).split(), norm(cand_title).replace(" ", "")
+    have = norm(cand_title).split()
+    compounds = {"".join(have[i:j]) for i in range(len(have)) for j in range(i + 2, len(have) + 1)}  # "mini games"
     return [w for w in norm(hint[0] if hint else game_title).split()
-            if w not in GENERIC_WORDS and w not in joined
+            if w not in GENERIC_WORDS and w not in compounds
             and not any(SequenceMatcher(None, w, h).ratio() >= 0.8 for h in have)]
 
 
@@ -445,7 +450,9 @@ def lookup(game):
                 return entry_from(c, title, "verified", c["query"], c["flags"])
         ranked = sorted(pool.values(), key=lambda c: (-c["score"], c["rank"]))
         best = ranked[0] if ranked else None
-        if (best and best["score"] >= STRONG_MIN and not best["flags"] and not generic
+        # short titles must match exactly: "Replica" is not "Replicat"
+        typo_ok = best and (best["sim"] >= 1.0 or len(norm(title)) >= 12)
+        if (best and typo_ok and best["score"] >= STRONG_MIN and not best["flags"] and not generic
                 and not missing_words(title, best.get("title")) and not rivals(best, pool)):
             if len(best.get("screenshots") or []) < 2 and not best.get("detailed"):
                 merge(best, app_details(best["appId"], lang, country))
