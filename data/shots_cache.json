@@ -18254,22 +18254,28 @@
   "checked": "2026-10-03"
  },
  "Kids Spelling & Reading Games": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "title similarity too low (0.81) and no Play Pass badge",
-  "queries": [
-   "Kids Spelling & Reading Games",
-   "Kids Spelling & Reading Games Play Pass"
+  "appId": "com.iz.kids.word.search.games.spelling.words.vocabulary.letters.kindergarten.preschool.learning",
+  "matched": "Kids Spelling & Reading Games",
+  "developer": "IDZ Digital Private Limited",
+  "playGenre": "Educational",
+  "icon": "https://play-lh.googleusercontent.com/BIAIKcRy0MN0uvHrfjqi3S4brCLb65Ce2NrU0R_cFuL1Tx41xWWKqDnUk8Vg0UosmLJ8JOHt-jXMIPUsa-H86A",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/x7XmA7UGiPYYd1sCotcvW-DmZEfju8YdlMYF_naVKlVtb1hvnFti0aOjXrER9PcWuCCALEg5N1FseZUdvRY3",
+   "https://play-lh.googleusercontent.com/r0_OX3PGnvA28D5TnQW2pog-uSwbdA1QfyNCzP1W4UlKnFuTntzIq50Qvu4Wf4CH5z7ERljLaECWqNYnzPElmg",
+   "https://play-lh.googleusercontent.com/K_9XbXpjdcjUtajOwFVsiUv2zmVHaQder840LOITIj_a_WdDzl3oaQIDzHPs-qvX8zJWni-hNL6sooMA7FGsnk4",
+   "https://play-lh.googleusercontent.com/zHEVfO2-pMkbYCoKi2V0lNo2Vo1jHuYnOBWe8JGVEWo9JzDBCPPx7tWRx4XgC8yYYXKOcfOocd2VN1jInkUzpg",
+   "https://play-lh.googleusercontent.com/m9iqKXptSINO6zDDksZMWL3c9KTQ8EkpxehpGX0LAy1XBDzucsjLDVF6K5oInbCo7ZAxLw4vGoPE-nQ1vy8",
+   "https://play-lh.googleusercontent.com/tATai0pqI1qFWTh64hdrSh9JP17uN2U8Kr5BvfqHSAoE5LPZS42-itEkkxtfgE49qjw7V_h4ODtHygj7TmR25Q",
+   "https://play-lh.googleusercontent.com/pMYUorfcIon-ke8t5yA8aY-y6ZcCK8cVb5OnchWWn8lQalQaU4mHVjYe6rjzDQwGQVLwO8o-SuBGav_Uv79B",
+   "https://play-lh.googleusercontent.com/8tH0EvgNjDwldvZmRl4X5U0luo9W1IaBh1ntp5TffchTaCLvw5m3mm2Rz_b85vPpDyR4MZ36RgEgAWxTwZIb"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.spelling.phonics.toddler.learn.to.read.abc.vocabulary.kids.games",
-   "title": "Kids Spelling & Phonics Games",
-   "developer": "Yories: Learning Apps & Games for Boys and Girls",
-   "playPass": false,
-   "sim": 0.806,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.iz.kids.word.search.games.spelling.words.vocabulary.letters.kindergarten.preschool.learning",
+  "playPass": true,
+  "similarity": 1.0,
+  "confidence": "verified",
+  "flags": [],
+  "query": "Kids Spelling & Reading Games",
+  "checked": "2026-10-03"
  },
  "Kids Tractor Games- Farm games": {
   "appId": "com.iz.kids.tractor.farming.truck3d.construction.vehicle.building.games",
@@ -18298,18 +18304,18 @@
  "Kids Write ABC Letter Animals": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.63) and no Play Pass badge",
+  "reason": "closest match lacks 'write' and no Play Pass badge",
   "queries": [
    "Kids Write ABC Letter Animals",
    "Kids Write ABC Letter Animals Play Pass"
   ],
   "checked": "2026-10-03",
   "candidate": {
-   "appId": "com.kindergarten.MathPreScool3",
-   "title": "Write ABC - Learn Alphabets",
-   "developer": "kindergarten",
+   "appId": "com.swaganizer.abcanimals",
+   "title": "ABC Kids: Animals",
+   "developer": "SWAGANIZER",
    "playPass": false,
-   "sim": 0.63,
+   "sim": 0.6,
    "flags": []
   }
  },
@@ -18650,28 +18656,22 @@
   "checked": "2026-10-03"
  },
  "Knock Knock": {
-  "appId": "oryg.rge.knock",
-  "matched": "Knock knock",
-  "developer": "Blue Brass",
-  "playGenre": "Puzzle",
-  "icon": "https://play-lh.googleusercontent.com/PMhD8WTwHjuHy2wDxVBmo9J6r3PDUUbVfWwYCBnZnEhYXB9UQndOqXqd29YL9AQ2YHyIqO9Ip_WAT3AZY_-LPxw",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/wbynYXpBVIByqUq7nD-AF748Q06ZavZsygrH8VhoNLPjKdBC8QdeGkrl34CyhNmEFq2f_h7ddtEzjcZrGBQ",
-   "https://play-lh.googleusercontent.com/vXQRyhTm5tqomRLA601wbDp4qiT7JbKeHzp0nGqsLx9ddsM6m27brIofa6eRh6pH51k5qsKn8We1DAlBt33kYw",
-   "https://play-lh.googleusercontent.com/L8Ovj9vG9ODBO3GGGJ1dftIUZgKihehvTrtsKlas7aWg6ZsiJEqyyiqMM06mI2ray9_W6qMI34xfzT7Y9SRGoQ",
-   "https://play-lh.googleusercontent.com/GkbA0OZzzAjbW3TeWBc36iyVaXqTfhrXCuFZ3JGodZYU37-x3Ngo4XgZg5c1zUL1AnRsDoYkWmU7Nur0KjAP",
-   "https://play-lh.googleusercontent.com/rB9mX_RKNbpYDG1TLGt0bnRQkkiKaJe03FAeeGZGEZb37Dy_qTS1sjLVT_ytHDfHj1UoNJLIiKOJAfAHRcvT",
-   "https://play-lh.googleusercontent.com/zdxxj5ENg3Lfw8IpRQoo9YP0oqSSwMF2nqjDf_kyqc-v1ucwqbPeyL8RPBqn7rMxHsGzm2gSmfv05Fyf6rsgAQ",
-   "https://play-lh.googleusercontent.com/TBRZEHvy5MlcFpcZsnArnBWPk6sbee9F28U_F9tVSnyMLh2XKIG5utiiMmquNhX2ygBFb_8L84JR5qnNQBPpoGs",
-   "https://play-lh.googleusercontent.com/awx49e37e3McbshKibXYEO-x6-a8aW9u9HmoyPCcD-XOu234Hrygi0GfvSPKR1aOSxnE_ocqM6F9qYRn5BjU3A"
+  "appId": null,
+  "confidence": "null",
+  "reason": "4 apps share this title and none has the Play Pass badge",
+  "queries": [
+   "Knock Knock",
+   "Knock Knock Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=oryg.rge.knock",
-  "playPass": false,
-  "similarity": 1.0,
-  "confidence": "strong",
-  "flags": [],
-  "query": "Knock Knock",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "oryg.rge.knock",
+   "title": "Knock knock",
+   "developer": "Blue Brass",
+   "playPass": false,
+   "sim": 1.0,
+   "flags": []
+  }
  },
  "Knotwords": {
   "appId": "com.noodlecake.knotwords",
@@ -18980,28 +18980,22 @@
   "checked": "2026-10-03"
  },
  "Learn 123 Number, Trace, Count": {
-  "appId": "com.gamesforkids.numbers123.tracing",
-  "matched": "Learn 123 Numbers Kids Games",
-  "developer": "GunjanApps Studios",
-  "playGenre": "Educational",
-  "icon": "https://play-lh.googleusercontent.com/jaIE-0mYU_SYLMz6ZO4xk-hD4Lvp0i5cXt0BJYXrClO1Dby-_OTJ9y_WjporwnU26mZM9ho1TCpbJIw3CTnG",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/-ziUsWdBXHhPpGeefiEAhrpDiLQweGDY3P0VE1Fiudl07W6bErHDMGmCKOnvV0dlTOAmRYysN1cCRSGg2Y1-cA",
-   "https://play-lh.googleusercontent.com/uRXEUPmJf_JoiycUGlsc1O8iqZ9ZhFPnRwAr8DoniI0uFXQo_VFWmx_LXtdrcCRoPs1CkesJ6Lb81_ukNSxOSt0",
-   "https://play-lh.googleusercontent.com/1hRLT36qKuj8sNQiWhBUxYAgoEJ9eGLUqh8yNLtyFWhMGTi9_ZlcMpKhvqjUnPFDc2U9AjqA0g3cPccjETEm",
-   "https://play-lh.googleusercontent.com/ln8LR6mi_qNrz-mvA8lV02evH_i0snHYe0sO9CdldoFJDcjI5jCTedZ_9Xhs89Be3XX4CV4R3-kGsYKtht6n",
-   "https://play-lh.googleusercontent.com/piLhxIxBx-ALkcX690YrDhsBE_a0LeGQG1-1pUiP-NkGz9eZCI-G3iuwTLDGYkgi44lG4aZ65f5HwrBBZ-dTl-c",
-   "https://play-lh.googleusercontent.com/dGbh0JezS0QW32ZbETt-s3tcB3jv2C_IHn65Yxqt7O1UTwi40YDB7YfZ1jBrwWM6f3kmrCfQGm-j54lq6G93lg",
-   "https://play-lh.googleusercontent.com/-ziUsWdBXHhPpGeefiEAhrpDiLQweGDY3P0VE1Fiudl07W6bErHDMGmCKOnvV0dlTOAmRYysN1cCRSGg2Y1-cA",
-   "https://play-lh.googleusercontent.com/uRXEUPmJf_JoiycUGlsc1O8iqZ9ZhFPnRwAr8DoniI0uFXQo_VFWmx_LXtdrcCRoPs1CkesJ6Lb81_ukNSxOSt0"
+  "appId": null,
+  "confidence": "null",
+  "reason": "closest match lacks 'trace, count'",
+  "queries": [
+   "Learn 123 Number, Trace, Count",
+   "Learn 123 Number, Trace, Count Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.gamesforkids.numbers123.tracing",
-  "playPass": true,
-  "similarity": 0.679,
-  "confidence": "verified",
-  "flags": [],
-  "query": "Learn 123 Number, Trace, Count",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "com.iz.dino.numbers.kids.toddler.games.preschool.kindergarten.learning",
+   "title": "123 Numbers Tracing & Counting",
+   "developer": "IDZ Digital Private Limited",
+   "playPass": true,
+   "sim": 0.7,
+   "flags": []
+  }
  },
  "Learn 123 Numbers Kids Games": {
   "appId": "com.gamesforkids.numbers123.tracing",
@@ -20068,18 +20062,18 @@
  "Lock’s Quest": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.83) and no Play Pass badge",
+  "reason": "closest match lacks 'locks' and no Play Pass badge",
   "queries": [
    "Lock’s Quest",
    "Lock’s Quest Play Pass"
   ],
   "checked": "2026-10-03",
   "candidate": {
-   "appId": "com.crunchyroll.gv.locksquest.game",
-   "title": "Crunchyroll: Lock's Quest",
-   "developer": "Crunchyroll, LLC",
+   "appId": "jp.pokemon.pokemonquest",
+   "title": "Pokémon Quest",
+   "developer": "The Pokémon Company",
    "playPass": false,
-   "sim": 0.833,
+   "sim": 0.667,
    "flags": []
   }
  },
@@ -20348,30 +20342,33 @@
   "checked": "2026-10-03"
  },
  "Lucid Dream Adventure 2: Story": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "closest match flagged: different number",
-  "queries": [
-   "Lucid Dream Adventure 2: Story",
-   "Lucid Dream Adventure 2",
-   "Lucid Dream Adventure 2: Story Play Pass"
+  "appId": "games.dali.adventure.lucid.dream.part.two",
+  "matched": "Lucid Dream Adventure 2: Story",
+  "developer": "Dali Games P.S.A.",
+  "playGenre": "Adventure",
+  "icon": "https://play-lh.googleusercontent.com/bn1fS1xSzJWlQz9ZDI56s7sbRK_Idde_ddlBgJcua6ze8QewZ1CuXN-0ZDpXZdhPFuRjwsAigSdGsYeIx5qK3A",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/Ptdkf2ssmn-kvjfK9X7_xlaZGJohidJCBKjVZNRwcfv8h3mjPJfdclBLkkFB_NIFVRRQV1x2NiuKWj2gMqO-4Q",
+   "https://play-lh.googleusercontent.com/aSRDvaKpbwbPZN_sVrbSkD92NocJvyBY__q-508G4CdlZtgY05T26ODfHaQZMyMkIsiz_gm05CMIjw8gfvjtHx4",
+   "https://play-lh.googleusercontent.com/kIn3aPcIkI9s7ipg_-ksd0f2SCSYS2LndRgJmfxXH9ftGphm1zyENymtJxeyLqi20TiXTtcwuRnYGLxb1WOHDw",
+   "https://play-lh.googleusercontent.com/gDJHh7OUOJ-wHW86cdK5itXOB2IUNTp8LKSqTDhdTUihnBlSKBJwT9xvbsMsOaqZTy_llQRhVhD8Qu4orQC_MEw",
+   "https://play-lh.googleusercontent.com/VtcKU559qyz_kEPRXvuPPdHpm5P24J2V3IqnZoTt7IuDUAqp-mzIgeli8WjzZRsKKvZ3jrPpoQ9GP7_EqTtQsJs",
+   "https://play-lh.googleusercontent.com/5Rj9QogETkMOVeEduKP0S0LJNTGTeTgVqKOIZ1VZPmUbE3RFzvgnL_osjoTiLrI6e-dZiUqRux9ftePOZQekVfI",
+   "https://play-lh.googleusercontent.com/tSbuePG15KxtRo-ZDJndyjwQOXGvQGfpFgg7EyZMtsIwhFxAAeeXg5BrfJM--yMM5dLV4OXhsFDW-u5q-FzK",
+   "https://play-lh.googleusercontent.com/MjN3V7-2wfXB1WLACxESw-Wy5zPe_5uW7UnO7CNw_zRMJeElUv341JPlhvUADatrdM42OBttfioh6naZGMLO"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "games.dali.adventure.lucid.dream.part.three",
-   "title": "Lucid Dream Adventure 3 - Stor",
-   "developer": "Dali Games P.S.A.",
-   "playPass": false,
-   "sim": 0.947,
-   "flags": [
-    "different number"
-   ]
-  }
+  "url": "https://play.google.com/store/apps/details?id=games.dali.adventure.lucid.dream.part.two",
+  "playPass": true,
+  "similarity": 1.0,
+  "confidence": "verified",
+  "flags": [],
+  "query": "Lucid Dream Adventure 2: Story",
+  "checked": "2026-10-03"
  },
  "Lucid Lenses": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.67) and no Play Pass badge",
+  "reason": "closest match lacks 'lenses' and no Play Pass badge",
   "queries": [
    "Lucid Lenses",
    "Lucid Lenses Play Pass"
@@ -20459,28 +20456,23 @@
   "checked": "2026-10-03"
  },
  "Ludo – Board Games": {
-  "appId": "io.yarsa.games.ludo",
-  "matched": "Ludo",
-  "developer": "Yarsa Games",
-  "playGenre": "Board",
-  "icon": "https://play-lh.googleusercontent.com/q4wf7_02s7dV-E4MN2hoB6GQLnr9g5WnPms-V_DPxinbilbrbLKz_QTguIguBKgdtGNyGTu9Bnk7EkGNyEsSXw",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/Hg5qSGn8vuXSWa0BWp_XGP4_XBgXPmu4O0PhBlE3mbQ9D28WileBnlWTGQac7j0bXbDgOy3dmk9KIDojqi7Q",
-   "https://play-lh.googleusercontent.com/xfA0BvAaNH0DuPo05c6piMh0qI4K8G5KBQKAfA0jfDuy7co5XnCpKBmSjd3_YGkQuN5lwA39zFYs6zj1ApDP_w",
-   "https://play-lh.googleusercontent.com/43SWS00oVtQiIbOlKIWMFxD1L77vNds1x8JcFjU-FC83Q9M5KIxr8Kk9Sqjp2_Ccs7Bl7r4OdjJkfXJXP_MLbH8",
-   "https://play-lh.googleusercontent.com/lsp_pj4bXgaDY13_rrLR_kqd6dQBw3HnTN1XTzpojHISuJIfVrPx7d098GMYJk3RK3B0vtgZqL2Qp272UjZbug",
-   "https://play-lh.googleusercontent.com/PlT2dZ3DVS9-qxmCPfX26VF5A4xHns1iiOV3n2-VpU7V1QPiyZCt2n-rbnowVEoJuYZpvX-QwYYOOQXibe-7",
-   "https://play-lh.googleusercontent.com/P_8NzScSx_gJ3RXF1ycSY9mpc7Af-74PUbJ3pGd8gKCf7y2hK1D-i-5jp57656s4bBKxQnZZ_dFhE-JoWz_kCBo",
-   "https://play-lh.googleusercontent.com/KxklsZhaKD0Wayqgr27gHN_H_QRJmq3nti0vY0DpiecaoL8cKLGQqZt1edyQmoOiYDDIAQeITYeZRRGB34UN",
-   "https://play-lh.googleusercontent.com/43xTiPGt7aN3etMfPMweF1mLi3V5_pPbuPTVAzbAJMIW3C4ng98-_XCSWhE6g38Gfv-021FJHUK7lzKKT5hv"
+  "appId": null,
+  "confidence": "null",
+  "reason": "generic title and no Play Pass badge on the closest match",
+  "queries": [
+   "Ludo – Board Games",
+   "Ludo",
+   "Ludo – Board Games Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=io.yarsa.games.ludo",
-  "playPass": false,
-  "similarity": 0.93,
-  "confidence": "strong",
-  "flags": [],
-  "query": "Ludo",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "io.yarsa.games.ludo",
+   "title": "Ludo",
+   "developer": "Yarsa Games",
+   "playPass": false,
+   "sim": 0.93,
+   "flags": []
+  }
  },
  "Lumino City": {
   "appId": "air.com.noodlecake.luminocity",
@@ -20987,28 +20979,22 @@
   "checked": "2026-10-03"
  },
  "Mandala Coloring Book": {
-  "appId": "com.albertopinaroli.mandala",
-  "matched": "Mandala Coloring Book",
-  "developer": "Studio Namastè",
-  "playGenre": "Entertainment",
-  "icon": "https://play-lh.googleusercontent.com/reqcRHZoCvO3lEcBH_cOKKRJY9el9TVAHFTr3WX60KW19b_hi9NcSwc-Bv_KP6LtI9s9MrsQKZhN7Y9rg-KepA",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/XnZXZmnX99AMpAYpJlAGhoH7iRLjaFgTKbaSGCdOsLyfqPHPO-32dxxYBYaNhtGjCaVuOsoOsalzSEtf6fHA6A",
-   "https://play-lh.googleusercontent.com/D_UWv25bNpLSL0ElmMJ8BySlIoUmf8mWXSb-0P96fXo8RB7oS8QzPkFwoCogdcFeJ1WDeWm5etipuM0AeAIHSw",
-   "https://play-lh.googleusercontent.com/9zqVM48-ZuemYVqCYaZm2BVV59PI90dZTTyejQGjubsWlloWh_53rhYlHcJvUD2PB3eOQpJ77s6LOsYPzuW2",
-   "https://play-lh.googleusercontent.com/jVJAWKW1Rk0ySlVO7reO5GepcKN3Hr8q5CAM2NbP-AGqa52G4K8-knRlAvcJqZf5lRHUvhtucUmOyM_dr91tgQ",
-   "https://play-lh.googleusercontent.com/9wAb87hUQ_BNLR3evrMN1PYg-TffI1Ye6v7BQ4PTv63Zodbyy0m0DgaB0al7I4MXPHKSb5l7ydDi_gxuf4pF7Q",
-   "https://play-lh.googleusercontent.com/cEJtemvW07sfO8JqnG-9GCA2P9di2R9WF4KiLfK4Bj7nrbvgMu1j68yGYbCT90H6h9WfoA3LE-pg6kUu8IgR",
-   "https://play-lh.googleusercontent.com/-DJUnTWJcT3VMlmcqcuRWbX-OxLZovuBs_YagJKide7mzG9Krpwit58rAZhv-agZybIqiVLmzn3Zu-rFpBk7rw",
-   "https://play-lh.googleusercontent.com/qn301EdbEl7ADAvSb4tKZ2iB-xIGXXv0K05w0ZiTTH6y4bc-r-UjgDYUudQFz8dtv-zaP8JUNQPxZt-xDbFABg"
+  "appId": null,
+  "confidence": "null",
+  "reason": "generic title and no Play Pass badge on the closest match",
+  "queries": [
+   "Mandala Coloring Book",
+   "Mandala Coloring Book Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.albertopinaroli.mandala",
-  "playPass": false,
-  "similarity": 1.0,
-  "confidence": "strong",
-  "flags": [],
-  "query": "Mandala Coloring Book",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "com.albertopinaroli.mandala",
+   "title": "Mandala Coloring Book",
+   "developer": "Studio Namastè",
+   "playPass": false,
+   "sim": 1.0,
+   "flags": []
+  }
  },
  "Marble Duel Premium": {
   "appId": "com.herocraft.game.full.marbleduel",
@@ -21035,22 +21021,28 @@
   "checked": "2026-10-03"
  },
  "Marble Legend Pro": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "title similarity too low (0.87) and no Play Pass badge",
-  "queries": [
-   "Marble Legend Pro",
-   "Marble Legend Pro Play Pass"
+  "appId": "com.easygame.marblelegendpay",
+  "matched": "Marble Kingdom",
+  "developer": "easygame7",
+  "playGenre": "Casual",
+  "icon": "https://play-lh.googleusercontent.com/yszmckYpHkc6H3omsyNQHg3HECi2FkIhyQ9plC99vrUK4OV8UFROZeYOkaOQJYoVmZIjhwKuzEJ6cn8EJn2cmg",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/5v89f9sa8zqh1uThyozyEakOIOb8508FHnZajuQRVOjc9mQeVG1S1tXResT1e54jgwbCN9_85B_V-z0EpE9pcl0",
+   "https://play-lh.googleusercontent.com/zU0vovFrBUlIadCXCZbCMyjIu1fr8Pk_C7U7Ox1eAw-dg9hui7ziMi3TozxgTsdoBQz0bjypXD4WOEpDF5qo",
+   "https://play-lh.googleusercontent.com/OAa3g-2xEg8FyGvKUqMsX_cY2cjQTp4mgZUtZ25svMwpSzQBXITt6DmQPBw4TIbxPj32JNut5oMFfsTJ9U6f",
+   "https://play-lh.googleusercontent.com/a1hmw2GKSYsbXj-lbe3wtRxfjismcHpN66LGCNoH_aQKrXDY9onhsbaOiHs1oEJgJAFREDMInL0AHC8nCDE2",
+   "https://play-lh.googleusercontent.com/98p3il7wl_y8bHRfyYYnc_CFMtZ6T3aMvMFAPTx2vp-QFhMWjZEvCJO5-v6SjcAKzniABWWmOkJNsPqKm7MTsE0",
+   "https://play-lh.googleusercontent.com/1YMqAhOwExZuk5ujll7g668Id_7LnNmELnLi4QaOZc-JvIAR3n1cTBAQr_uKe6hQhvEYZcoUZNWJK171BPLXXg",
+   "https://play-lh.googleusercontent.com/5v89f9sa8zqh1uThyozyEakOIOb8508FHnZajuQRVOjc9mQeVG1S1tXResT1e54jgwbCN9_85B_V-z0EpE9pcl0",
+   "https://play-lh.googleusercontent.com/1YMqAhOwExZuk5ujll7g668Id_7LnNmELnLi4QaOZc-JvIAR3n1cTBAQr_uKe6hQhvEYZcoUZNWJK171BPLXXg"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.easygame.marblelegend",
-   "title": "Marble Legend",
-   "developer": "easygame7",
-   "playPass": false,
-   "sim": 0.867,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.easygame.marblelegendpay",
+  "playPass": true,
+  "similarity": 0.645,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "March to a Million": {
   "appId": "net.kairosoft.android.ongaku2_en",
@@ -21175,7 +21167,7 @@
  "Math for Kids: learning games": {
   "appId": null,
   "confidence": "null",
-  "reason": "generic title and no Play Pass badge on the closest match",
+  "reason": "title similarity too low (0.83) and no Play Pass badge",
   "queries": [
    "Math for Kids: learning games",
    "Math for Kids",
@@ -21183,11 +21175,11 @@
   ],
   "checked": "2026-10-03",
   "candidate": {
-   "appId": "com.astepanov.mobile.mathforkids",
-   "title": "Math for kids: learning games",
-   "developer": "Standy Software",
+   "appId": "math.games.education.learn.logic.fun",
+   "title": "Math for Kids - Logic Games",
+   "developer": "WizSprint",
    "playPass": false,
-   "sim": 1.0,
+   "sim": 0.83,
    "flags": []
   }
  },
@@ -21314,7 +21306,7 @@
  "Maze Machina": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.64) and no Play Pass badge",
+  "reason": "closest match lacks 'machina' and no Play Pass badge",
   "queries": [
    "Maze Machina",
    "Maze Machina Play Pass"
@@ -22244,7 +22236,7 @@
  "Mini Racing Adventures": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.78) and no Play Pass badge",
+  "reason": "closest match lacks 'mini' and no Play Pass badge",
   "queries": [
    "Mini Racing Adventures",
    "Mini Racing Adventures Play Pass"
@@ -22400,28 +22392,22 @@
   }
  },
  "Mobile Police Transport Games": {
-  "appId": "com.hubg.drive.oil.tanker.transporter.oil.truck.simulation",
-  "matched": "Police Transport Car Parking",
-  "developer": "TapNation",
-  "playGenre": "Strategy",
-  "icon": "https://play-lh.googleusercontent.com/ltf4Xqcm39WypVzi95ezM7AX1RC0Y8g_dfIt6GjvCKhoVJjOqsrI-s_-s-ONE8ivEKzANKCIbdl7g_D4PK4Z",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/GgvBukiKIjgTg2hPHFV5kJaSCSrcjxsYi3WmTzgRoh7ZtRuztXbL0l4vBILVqL9YzjwssmsFnQdxLInZ8G-d4g",
-   "https://play-lh.googleusercontent.com/1uxwZ_lg52FwvYTQLGBK3K4AL4TY5WZAUp7Hjw1hY5Ah1vdfapkd7YdLitYALsI8KU-MKfSr5bWKx7A7JiDa5Q",
-   "https://play-lh.googleusercontent.com/5EfHKvNG86YLHdI_OCIxoyaAz7P8Jzrdmo6vx94A6np0nm61VNCZ7K6LfAQFZTudtTjCFxase1ivnMsGAb731Q",
-   "https://play-lh.googleusercontent.com/pY59XUij4FCkf4BRIJExlhhgwggb9nZIUgfk9_2n8GGTEns9imlKHe__g6yq5ZVxPycpT2TUAVX33E3SAPuUoh4",
-   "https://play-lh.googleusercontent.com/bpzdbm7Csga7KUKW-08RTWDVELII8rmSKktzcMJqjaV3UiGQBSgWmU7pyysYFX6XRRyK_aZqcQ4wOcLziEvC",
-   "https://play-lh.googleusercontent.com/XgblrfQiHfA4VLYYzDthDfYyaWW1ZGsBW9r_l1cyuJ3NPjAeg7JbUvNyQhEjXfrviBguXtgZ9Ylm6Nf__HE07A",
-   "https://play-lh.googleusercontent.com/nHNtqYutLmD-rKa9M6tS5nEHLnr1mJN6KyCwrLploumKfdlAo837nlFunHbOV-NfgH3BsRGpuePiDVVnmQCUjA",
-   "https://play-lh.googleusercontent.com/cK3ShurlXVhUcfxmbN5ELL4bzEAxDKHN51gi3P4I7X-TcSlk1qrceiv-ykhF3Bj1EorDIPXy3PtHWBDUC0p7"
+  "appId": null,
+  "confidence": "null",
+  "reason": "closest match lacks 'mobile' and no Play Pass badge",
+  "queries": [
+   "Mobile Police Transport Games",
+   "Mobile Police Transport Games Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.hubg.drive.oil.tanker.transporter.oil.truck.simulation",
-  "playPass": true,
-  "similarity": 0.632,
-  "confidence": "verified",
-  "flags": [],
-  "query": "Mobile Police Transport Games",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "com.tgh.us.police.vehicles.truck.transport.games",
+   "title": "Police Car Transport Car Games",
+   "developer": "The Gamerz Hub",
+   "playPass": false,
+   "sim": 0.746,
+   "flags": []
+  }
  },
  "MOCHI-O: Cute Hamster Defense": {
   "appId": "com.zxima.mochio",
@@ -23710,26 +23696,22 @@
   "checked": "2026-10-03"
  },
  "Nail Salon Game Girls Nail Art": {
-  "appId": "com.casual.acrylic.nails.simulator",
-  "matched": "Nail Art Salon - Girls Game",
-  "developer": "Bangalore Agency",
-  "playGenre": "Casual",
-  "icon": "https://play-lh.googleusercontent.com/ZCat_05OHcUnYtUhyRcMnhR2MjsabF_eUTqCUqCgZi6kOar_4rizjdS9wuTrWZlBFhW1XJ75aaa6cMSPaHtsAQ",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/_VuprKEDcV4uKL-4nueqbVsoJ9mgvwMmfyPEhNghU4EbWmTSTbmG4TAXT4lVShGDJxQutlgvPCDjHygt_rOA",
-   "https://play-lh.googleusercontent.com/3WI_UspxrOqbV1mAMYQGyfF4kHBN-NSPeIDee5VigMo3GWhxvplWJRrS-4lMRpq1D0aoGcRyT6XlHNXCBgi3trA",
-   "https://play-lh.googleusercontent.com/WZbYiTbhrlyb4N279QaFzxwZHkPq3TB4HcGPLWvlJQZ_7Gx8TidbELOlakVlb6aQ4zFXrLm5gx-qsX_COkLv",
-   "https://play-lh.googleusercontent.com/FBmJwhj9xIDF3kojLIxQomiyzJDAWl5eAXi3DuW0BigAM2J_Y4LtxWZMCXIw95go1Vjk8MEEWAH1yCMHNjiBwA",
-   "https://play-lh.googleusercontent.com/baU274eUHgdvoazMKCXK2THeUnC6w92cIgtHzbAaVJ2lEgXOJNLy-0VsuAA5xZITeASMnJa-sfh0TxDcz0qYtyo",
-   "https://play-lh.googleusercontent.com/GUIoU7iy67uPT5_t0z7qs4ixNGnpits4bJq4txd-kUmhSSrBpHV6fGJZ_nmSIMT26OTkKg23XcU1YugWI2jWuw"
+  "appId": null,
+  "confidence": "null",
+  "reason": "generic title and no Play Pass badge on the closest match",
+  "queries": [
+   "Nail Salon Game Girls Nail Art",
+   "Nail Salon Game Girls Nail Art Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.casual.acrylic.nails.simulator",
-  "playPass": false,
-  "similarity": 1.0,
-  "confidence": "strong",
-  "flags": [],
-  "query": "Nail Salon Game Girls Nail Art",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "com.casual.acrylic.nails.simulator",
+   "title": "Nail Art Salon - Girls Game",
+   "developer": "Bangalore Agency",
+   "playPass": false,
+   "sim": 1.0,
+   "flags": []
+  }
  },
  "Nail Salon Games Acrylic Nails": {
   "appId": "com.tz.nail.salon.art.nails.design.girl.games",
@@ -24161,25 +24143,25 @@
   "checked": "2026-10-03"
  },
  "Not Exactly a Hero: Story Game": {
-  "appId": "com.buffstudio.not.exactly.hero.free.visual.novel.adventure.story.games",
+  "appId": "com.buffstudio.not.exactly.hero.visual.novel.adventure.story.games",
   "matched": "Not Exactly A Hero: Story Game",
   "developer": "Buff Studio Co.,Ltd.",
   "playGenre": "Adventure",
-  "icon": "https://play-lh.googleusercontent.com/Dli1t0PUkeUrKrZX6HFus0FmpKyDKxaprqiAyehIWjqKLHtzVP2IoW4swreh5TYuZeU56TnE0y6BYw9NJ7mANzg",
+  "icon": "https://play-lh.googleusercontent.com/OnpcgG5EaB8O9AG9D_Obkke4gOMCw6TtNihYyncyGOkyVHbLYVv-DLIBy3ZsOk5Ua8KnqPFc8eRZ-OhMgAXn",
   "screenshots": [
-   "https://play-lh.googleusercontent.com/Br1OCRcHLWvf7XrHOPAEkmBqBiHWK4XIVEP3Rn4w5AnLwkD7hheQnQ6kU-PkMtJmB2CmXFABW4aR6GNPyIEYeg",
-   "https://play-lh.googleusercontent.com/j8LQ1Eegk_6RaTfXb1ooOCPfKe5mfcfa7e_W9R8orruW67ANO4l-sPQLw4Fhih_lssHeC7Jlb2tq5jpQC9XXpw",
-   "https://play-lh.googleusercontent.com/1KXfsMSzOUnDWw2MBk1OsrjrlLl_Wej_xvxmPJbcbd89VKG8Y9A4Mc8tMfru0NwQ4jyUewbjZLpB05JOvqII",
-   "https://play-lh.googleusercontent.com/GRD9T8mbFjkMNFqgmbqDzCoRFTUrpmPCKe4lQAgZiUJAU4nn-4L_CThozyKwIlrhhysn86D9rfnHTqDr7fMtDQ",
-   "https://play-lh.googleusercontent.com/g36ltSkUv4WPfO09yRVY6h9S8zLUzy16PF6ncjOpgmbNh915pWqmlUvrfsLzc8YxXAOv24ul-opM52BfURydpA",
-   "https://play-lh.googleusercontent.com/XdHAzqjH_24Ut8zMrpBn2LXQSYip5OPcIwMt8tZC6HkOsrS2UJIf6sFV6tUtrfzLBUDOKS1mRxjDUknhmjLo",
-   "https://play-lh.googleusercontent.com/BWF70QjmSXy76S8gpwnYwI0zXGBVekNEYCY1E_eexT-_JZ6EjH9FaT6cR2aARMNiV8iXFyMyGzWer4xzu8fprA",
-   "https://play-lh.googleusercontent.com/RaaoZHE-nPho7XcKQdVQasdXMh_VffWba_cXDTq2EY2Yr_oz8A6T46yXcTkO1AAGaCEwA4jfOGG_LHiNuDSJ"
+   "https://play-lh.googleusercontent.com/PzFmekTOgI0VPPy1ByAaoiexhiXiy7eOOX6p5YidVAKRORlZBo-oUmSy_KSfVZgWdA018OZYm1J6jyWmsiQuYA",
+   "https://play-lh.googleusercontent.com/HGI256_vVfIpTswS_pdXXuCAhIsrJALOMp7Dp6SgJJtQpAzHtl7ZL32jtdigSQ_V-czg0S99je4xtL1R-_VSyvs",
+   "https://play-lh.googleusercontent.com/zDQqmMk2wZA1DQ0T5feba9XyG6_AaIcPYBWxTEGCdPTNYyYI4sI9GDq4XIJ41DlYMLXmRUPpuayNzUWwPZr1",
+   "https://play-lh.googleusercontent.com/MClclg3DRJKwZ7iIOF9Wn15av4iNVvttqRw8c29YPWV94a0dYPRhrqfLvT1JvcULxXVzgyuXc5JrKGGSHlko",
+   "https://play-lh.googleusercontent.com/V6bOXxqXDsgJVtg0t7h8W-1HPvMjlq9W6KIBymHUlyzt_rk0oS2updEavQjD-j2Kejf91uxWg5wOTc7jtRtLHIM",
+   "https://play-lh.googleusercontent.com/uplR7IWAY0W25C2xoQt_wKeGe4_NQghpSkQYUKwW-UXaCMK1-Fz0rkH6ye_kJzwyNaAsb3dXQdSJPkn4G2VuXg",
+   "https://play-lh.googleusercontent.com/eX1707zzranduePg-ZajgOWJym6Wn3su3Mk2BRS1W-hQP9iqNP59Y0bN-3-t3fOplAAeO8-ar9YIwTWOibgq5w",
+   "https://play-lh.googleusercontent.com/LhBOWwkMUIxJhqOUybl1P4CDAtRHCOHACTK3PPKgHFl2B3sH7kBJ9J2z-ZzYYd5UjgMUeIBP1Wnqu48uhg0gtT0"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.buffstudio.not.exactly.hero.free.visual.novel.adventure.story.games",
-  "playPass": false,
+  "url": "https://play.google.com/store/apps/details?id=com.buffstudio.not.exactly.hero.visual.novel.adventure.story.games",
+  "playPass": true,
   "similarity": 1.0,
-  "confidence": "strong",
+  "confidence": "verified",
   "flags": [],
   "query": "Not Exactly a Hero: Story Game",
   "checked": "2026-10-03"
@@ -24496,67 +24478,70 @@
   "checked": "2026-10-03"
  },
  "Off-road Driver Pro": {
-  "appId": "com.logicmiracle.offroaddrivepro",
-  "matched": "OffRoad Drive Pro",
-  "developer": "LogicMiracle",
-  "playGenre": "Racing",
-  "icon": "https://play-lh.googleusercontent.com/n63kOO0O7DcpYlSDju0a7G9kMB89Jy8WHHxv4mHVeF9FORRfX6eM3SPi9W2hsNUn-nKgQzVxqEQyM7Zi_UCf",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/6r_vQzaA8f5MpSe7HCRfQT0YAxi_DHIu-KxPLZXiV8npw0Wcmeu_KsPnlvF8jvG6AEEU76s1dN2vinVlgI68wQ",
-   "https://play-lh.googleusercontent.com/K_sEGFXMwKmlhdS5ZRJVRiD_M3NcV5ECLAmpywJ1lsejcL2ZZqEnWSmNE5wuiAMoR8HVx32j0wSPsogohofCXg",
-   "https://play-lh.googleusercontent.com/Dc23Ep5TL3uk_u61hbOLSJ1qhNZHcecHvaOqcplVD8vnid_hyOsioU6qPI58oRZW-VjzeBQkhY9BnYfYpxFDgA",
-   "https://play-lh.googleusercontent.com/q5h4aW64PSsL2IhP6aSdfsg5wV_akhzGB0P-AgGfDn6ZPHuBekod1cEBYyVaUpe9fS67GuvmdgdYPgF5qGGV",
-   "https://play-lh.googleusercontent.com/wt5kx3ei2q6byeYbuN9366pCfSSd59zCrastkKoHbo6XFGAzH1JH6JM-p5vpSvckhEh53acIxjQHwbdzZoS28ug",
-   "https://play-lh.googleusercontent.com/o0JUfFHTEUFjCNaUrWAp2FCXJZg4EnJQbbaZl3l24RxwUfas94RIsXCRFfPeTMDj5e1vJGVImBM8I1rGEVwq5qs",
-   "https://play-lh.googleusercontent.com/bUHwCCEpYzGVW8QLdW1Xl9QxWdcyEgXkk-1m0c5D5FtZU_Z1WtV18dZ6580lewZ6iLvLQc0QsO8K3Vqv8ExE",
-   "https://play-lh.googleusercontent.com/XlLfQZln8aGXqNJzdZz3tjw72rIC8H84EArTOU0vduxn1tPFShMgMyyf8QF6J-5ka-_WtKmksY9bm4j9Etan"
-  ],
-  "url": "https://play.google.com/store/apps/details?id=com.logicmiracle.offroaddrivepro",
-  "playPass": false,
-  "similarity": 0.944,
-  "confidence": "strong",
-  "flags": [],
-  "query": "Off-road Driver Pro",
-  "checked": "2026-10-03"
- },
- "Offline Games – No Wifi Games": {
   "appId": null,
   "confidence": "null",
-  "reason": "generic title and no Play Pass badge on the closest match",
+  "reason": "closest match lacks 'off, road' and no Play Pass badge",
   "queries": [
-   "Offline Games – No Wifi Games",
-   "Offline Games",
-   "Offline Games – No Wifi Games Play Pass"
+   "Off-road Driver Pro",
+   "Off-road Driver Pro Play Pass"
   ],
   "checked": "2026-10-03",
   "candidate": {
-   "appId": "com.JindoBlu.OfflineGames",
-   "title": "Offline Games - No Wifi Games",
-   "developer": "JindoBlu",
+   "appId": "com.logicmiracle.offroaddrivepro",
+   "title": "OffRoad Drive Pro",
+   "developer": "LogicMiracle",
    "playPass": false,
-   "sim": 1.0,
+   "sim": 0.944,
    "flags": []
   }
  },
- "Offroad Climb 4×4": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "closest match flagged: different number",
-  "queries": [
-   "Offroad Climb 4×4",
-   "Offroad Climb 4×4 Play Pass"
+ "Offline Games – No Wifi Games": {
+  "appId": "com.shuttergames.offlinegames",
+  "matched": "Offline Games - No Wifi Games",
+  "developer": "Shutter Games",
+  "playGenre": "Casual",
+  "icon": "https://play-lh.googleusercontent.com/nENZlv2Z4bF6b5i_x_DSGEVtBF1y6FRPaqpcEfxaWlAfEPWrbG9hCbSzcQr2daWirqP_tblTlbzFNZoPZAKPjA",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/lcPhPxadzrorpq4JEZXcc5AMZa8sDtm0IEb1bY5TMo28zdyhI4td2B4VM9-pIz2QWMYbM-Nl1uqobF4h8-hU",
+   "https://play-lh.googleusercontent.com/ti0IswtWKy-jCWu8LXgDCyaiZC7xb3Tg7PvXJa86VRm_1HenLnb17MYPA7mg9PjRRf8ykYg5C38KiG7lxUnT4v4",
+   "https://play-lh.googleusercontent.com/iKzbanSsp6OobEWdaEkp-m5N8WRJ5GzNPEf9GehltyPO8Dq1YxCHdRIN9s45gP4pb-LUYd0YR4t7CGIKh7en",
+   "https://play-lh.googleusercontent.com/dToHqBdRjiKRCnydHcrcIzxv0L85gHetS6IZrpCij0l-3PAIjNWa4bRl67tigXz4pskESZH-8NyrLPg5hq2zdw",
+   "https://play-lh.googleusercontent.com/KWMBlknCQCq31sYacmmxmSD7TR5THPDwQaxcYCM5Dsl_AqTU-XBSgshLVhTIZ5TABbkcVWz3hwrN0HD9E7z3",
+   "https://play-lh.googleusercontent.com/165Csz22YluTaKx7c4kjLSZmkKLVGfDZ7CsBvQA7kTYYtFEd_ZjMfA5IP1Rj5jn00lPWjvBAtjKpe6_N4IEPxLk",
+   "https://play-lh.googleusercontent.com/wrDY2W5Zbq1bCz7Pae__XoG6blkcQYwwCknNI2yWd4pGNpW9pu1g_Anz_3IayxjHNkIeooGuUAnVM3jIR1Veig",
+   "https://play-lh.googleusercontent.com/C-ykyg57GTTlsg0mDa2DljOsyXl5A0Yjg0uWIBW_JVKnGAwVE9XIC0Dhc4B78CuxohI8VwXgEM0J_UH251oCWM8"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.offroad.climb.awd",
-   "title": "Offroad Climb 4x4",
-   "developer": "BoomBit Games",
-   "playPass": true,
-   "sim": 0.941,
-   "flags": [
-    "different number"
-   ]
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.shuttergames.offlinegames",
+  "playPass": true,
+  "similarity": 1.0,
+  "confidence": "verified",
+  "flags": [],
+  "query": "Offline Games – No Wifi Games Play Pass",
+  "checked": "2026-10-03"
+ },
+ "Offroad Climb 4×4": {
+  "appId": "com.offroad.climb.awd",
+  "matched": "Offroad Climb 4x4",
+  "developer": "BoomBit Games",
+  "playGenre": "Racing",
+  "icon": "https://play-lh.googleusercontent.com/EhoOuhtTy3Cw3rAeEQn33csACIWiZIw4CuCukEqFTXptdzEd37IKkQkuq1wXumNq2xA4Gl4hg3ghS_fQlF5CxJE",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/R6OaDHWZp_3Df3Jb0x05etT2X2eScqyLgGhkWVyEUYyCN8ihjnldhXCOeLH8LhZgXoARu7wB2EnujXEkuIF8",
+   "https://play-lh.googleusercontent.com/d4mXWAKBU-nlXqIIeCLz2KOB-yDMavl3ecMsKwqBgYPCzzJIbf9IkHIkuQ_2WQQw0gPdSTny-7SXpWp3mGjZ9w",
+   "https://play-lh.googleusercontent.com/SXAmOY88ACva7RoozRzOq5yG6vESJRK1TuDdqBBr6m96CZJ57jcmvKVV18YkDoqLlU0BwNb9NT1-6HdzJ_2-",
+   "https://play-lh.googleusercontent.com/GPaigdWxXBDGP3xu8omSQ1EiRX-y7mwLBABniO9AjTml9GcR6BLrXsTzal1l8WBifpfmQWPQtMFygFBu5mT2Jw",
+   "https://play-lh.googleusercontent.com/r6glAKvy-5umFY-Q90xVlcYJmM4ECXTUV-7PSS7atFBsXCk9jbmfdy-wWIq5P6v-f0E84zxAhXN43OKhKNR8",
+   "https://play-lh.googleusercontent.com/tXb1D2mY2EHGxutdUpKy9THYPgHKoRAwLuo4IOTCWzDPFDclESapcG3JNgyYG6ASTsFo0KG-HDkPtOLR_EXNhz8",
+   "https://play-lh.googleusercontent.com/DZsiFoSjw6Bjg05MuNknPN-ycFrjwbGOu62_47wdRzDrZEgAvBZTPsuQfsCSuJw2MdMc0i7Nu__HOLENeKX_5w",
+   "https://play-lh.googleusercontent.com/R6OaDHWZp_3Df3Jb0x05etT2X2eScqyLgGhkWVyEUYyCN8ihjnldhXCOeLH8LhZgXoARu7wB2EnujXEkuIF8"
+  ],
+  "url": "https://play.google.com/store/apps/details?id=com.offroad.climb.awd",
+  "playPass": true,
+  "similarity": 1.0,
+  "confidence": "verified",
+  "flags": [],
+  "query": "Offroad Climb 4×4",
+  "checked": "2026-10-03"
  },
  "Offroad Legends 2": {
   "appId": "com.dogbytegames.offroadlegends2",
@@ -24870,24 +24855,10 @@
   "checked": "2026-10-03"
  },
  "Ord.": {
-  "appId": "com.raiyansoft.ord",
-  "matched": "ORD",
-  "developer": "RAIYANSOFT FOR DESIGNING AND PROGRAMING OF SW",
-  "playGenre": "Shopping",
-  "icon": "https://play-lh.googleusercontent.com/PNqT5B36P-UvQHZ4A13Eu7p9yZv8492zxHw9sOLUMZEbgn_8ccgt4Kkoq6BRNRtm8xIF-CE287L8nZz1xxhM",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/KzL_inq_ycOpaxibCGByuAm9G-dhhImWZVY7uI2GJ16xv7v-gwlfnW6fbwAfaVQQ6As5qte4zcnkGbk11UbE9g",
-   "https://play-lh.googleusercontent.com/dwsbJ5vXuRM_bU7GHpTg1_PbMHODuzaHeemyz216Zsc6wLU7PUR4zUg1WILiiAOXI-0znYHhmUGla-jxNB_z",
-   "https://play-lh.googleusercontent.com/uVI6m3BwxIhnnQq6Ff3gBb3wYHM4l2AR2vQkdIWYlSIsu6ItmJmau5sAOnetTQvZBm1WUaVK2X-N3zM0K_0vxg",
-   "https://play-lh.googleusercontent.com/sTE1iBP4S5An03Lj8BpZaA2UTg0mOYZYsnH_EofRmPDkMjBC8G2bFTqtOWeNysdmSZ3M3iss3vgfWPHGFb9zLYw",
-   "https://play-lh.googleusercontent.com/DODCz5HKUfPBUc7-B58fq50YSMhVCdNcdcm2fK6FQwmR6Oj-ollmeO1tPRRXsKDKVh-cz7so_2D3yv5_yTMzdQ"
-  ],
-  "url": "https://play.google.com/store/apps/details?id=com.raiyansoft.ord",
-  "playPass": false,
-  "similarity": 1.0,
-  "confidence": "strong",
-  "flags": [],
-  "query": "Ord.",
+  "appId": null,
+  "confidence": "null",
+  "reason": "set to null in data/overrides.json",
+  "queries": [],
   "checked": "2026-10-03"
  },
  "Ordia": {
@@ -25203,28 +25174,22 @@
   "checked": "2026-10-03"
  },
  "Pango Bakery Restaurant": {
-  "appId": "com.studiopango.bakery",
-  "matched": "Pango Bakery: Obstacle Course",
-  "developer": "Studio Pango - Kids Fun preschool learning games",
-  "playGenre": "Puzzle",
-  "icon": "https://play-lh.googleusercontent.com/qK_LhrxK71XP8ANBEo_O0wowuFXF6oAjXXNSa6916W1XzcpzvDxaKAGygpjHg_v4U5Eep-aIbENOfsIqJGVSNg",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/tw7RD4uPhgaMMt3U8vE5odnWEffZYjhOHpFMFn3X4gYzXin9Knde9OzlcDLcpRRxWVaRSiHjjKrHN1jqoNG_Kb8",
-   "https://play-lh.googleusercontent.com/aQ2WbDeMJKXHafOyWMLqjhM2jVsPM7cEeryZ4d0kD-Sal78BT6nd704ZVHoMrLH5jNoEmK7YhyoT_8XRcim4Gg",
-   "https://play-lh.googleusercontent.com/4tUWajDcr8Qc-GSrqB8TZFECsoVwoFkrcU0hz7mpoYKw0h1TfDbgifixu6Nwdojca4ClaT4R8niI6uK_LE5G",
-   "https://play-lh.googleusercontent.com/iXG33vfBMYC7VQcYUPg-uYVMaMqk9a8Fq3AGrQ5EJrt6Vsszl1EUy4TPx8NeX2V9nntuc8DQMW7yklUHcWGq",
-   "https://play-lh.googleusercontent.com/DbRsEX3vm71Lcg3nOMh_zC202YdTw1nui2b7-TGw73mGJFnmbQXu7tfnT6fla8GBQxDRvLd2AfCD2p-5XSMQLg",
-   "https://play-lh.googleusercontent.com/zQqhyt5bHxJhJPvn8F17oTbRzjd3Tybv5VvBERzLaGK7TZUQIyHXiT0RDvy_soNM5Y66IC10X1VanECyUJu-ag",
-   "https://play-lh.googleusercontent.com/UlNi3X_NbjQLLuqECibi-L30JJ6wu6-WM1qW_2Ds6S4Aqldcs9zSLJgojb0vXiyBwwd2MHBxQFhOAWmy4ZhrnQ",
-   "https://play-lh.googleusercontent.com/THHomhik5nIln__B7bC6mHCfc3ZTJ8kV86OI7jQFeRQUefTxxcumTlKgBViqNWhZ1d5b4nb0v9DtJr7ELeGd"
+  "appId": null,
+  "confidence": "null",
+  "reason": "closest match lacks 'restaurant'",
+  "queries": [
+   "Pango Bakery Restaurant",
+   "Pango Bakery Restaurant Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.studiopango.bakery",
-  "playPass": true,
-  "similarity": 0.706,
-  "confidence": "verified",
-  "flags": [],
-  "query": "Pango Bakery Restaurant",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "com.studiopango.bakery",
+   "title": "Pango Bakery: Obstacle Course",
+   "developer": "Studio Pango - Kids Fun preschool learning games",
+   "playPass": true,
+   "sim": 0.706,
+   "flags": []
+  }
  },
  "Pango Bakery: Obstacle Course": {
   "appId": "com.studiopango.bakery",
@@ -25251,80 +25216,100 @@
   "checked": "2026-10-03"
  },
  "Pango Build Amusement Park": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "title similarity too low (0.59) and no Play Pass badge",
-  "queries": [
-   "Pango Build Amusement Park",
-   "Pango Build Amusement Park Play Pass"
+  "appId": "com.studiopango.pangobuildpark",
+  "matched": "Pango Theme Park Builder",
+  "developer": "Studio Pango - Kids Fun preschool learning games",
+  "playGenre": "Educational",
+  "icon": "https://play-lh.googleusercontent.com/KU61htwIa722RFXEmouudAVnqbKThobbWzc4wCqhpA9jBPqqeIUWI1y2ALZjmo0U0Z2s25gDof1WBSNAAg_TS1Y",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/0dllcNK-Q4GwgMbGR2p1o2mSqF9eZ-l_io3_jdVAvruN0ys4pTJ9ZrHd7R70kkva1HXxVoU6yFTIocjxDeo1BA",
+   "https://play-lh.googleusercontent.com/C4JGJKpQ-z7NQMw4AZrvVenX93DPWdhmkXNgiRsWo0Ma-npKymYUwkeKgvo9RpWbRjZrqNSnqRpbAZy_K1Fsrmw",
+   "https://play-lh.googleusercontent.com/36PW2fsu7rVSWwwC8dav4U6FWv_HDSoO-xExXZV9x-5Igo69BevpKXFCFjamGhRWCgp1GTZ1DXGLXYMDqRjVry8",
+   "https://play-lh.googleusercontent.com/8UOM8307lQV9kKTVN4ujo2HDzoeSbZrOI_etx6TC6OUBhByVMBtd6P2iy5k0X4CjPwpbExeLprS0HjkTftxRbQ",
+   "https://play-lh.googleusercontent.com/t45VyzKo11HyAozORxXW-DHvv6rDiv69znKybjOCN9-sGbZ9DVB0coaqB3qvPCZu91s2J8SXvUn050-xS_fDWg",
+   "https://play-lh.googleusercontent.com/YX9xu1eAzda6lKi3-U-GzBawhmK70AjrwQYYL_EFy7Ejv_DzT8xhOKXESs8u-xxwtGf8tIpjAl2hvt1AelpLDg",
+   "https://play-lh.googleusercontent.com/aQtqN5wiKzyyjV8qa05ChYboNLVmbUE8hU9a7lX9CfIXdPHZq7jBfQsnI93VNMUA4SyAD3L-wIS6AJ6kqejhVw",
+   "https://play-lh.googleusercontent.com/dqJEFaqcZJLexE2aVjcb4s7NhE6qqHaqdcdVCHB1SInFww8038uDd-VataCqlom-en5Yz5CURKoQv6mavaZ2ow"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.studiopango.pangobuildcity",
-   "title": "Pango Build & Explore City",
-   "developer": "Studio Pango - Kids Fun preschool learning games",
-   "playPass": true,
-   "sim": 0.593,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.studiopango.pangobuildpark",
+  "playPass": true,
+  "similarity": 0.52,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Pango Build City Kids 3-8": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "closest match flagged: different number",
-  "queries": [
-   "Pango Build City Kids 3-8",
-   "Pango Build City Kids 3-8 Play Pass"
+  "appId": "com.studiopango.pangobuildcity",
+  "matched": "Pango Build & Explore City",
+  "developer": "Studio Pango - Kids Fun preschool learning games",
+  "playGenre": "Educational",
+  "icon": "https://play-lh.googleusercontent.com/A10lWxW0xRPdl7rQ5fDgbMoNRmtgVKzk4ljjQN8gQq17MGd0LxLu_YPLGYnrsotHCpTKAsRla0Gk3QJDpJs6KQ",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/yZuJD1ifByIfzdAninDhQH5BYmJiojpTjebHoZ5q_tI7LBRdqHKMRBBHSY1ccpoUnBVaafMlm3-bZkQIifKzEw",
+   "https://play-lh.googleusercontent.com/_qVptYoOM9a_Ul3MqhbbozxNcK5wg_ebgkNf9KshWqX20gcQTNOUAqX4KCjfLHtqadZoIPvHVgBFHv9QzOeGig",
+   "https://play-lh.googleusercontent.com/ypTV1APrRnGaO_as3uwUXT-74L8QIf9_fhpAJtHk3RmoVuMgDv8x7Tq2qO_vucAC7Zg8-RmI5fMDvLxN19559Q",
+   "https://play-lh.googleusercontent.com/ccieTxJKSOfhRVgmTFaiH0Ct7RW7aTpSWy3gBH3REOqivFogww50FmsSem79uvYTqsDSnlbiNQ0qPSmNBdidFCs",
+   "https://play-lh.googleusercontent.com/caSn4dNBDOys9Gzikz_Gty1PCyfId78Fm6BgoaZDsCmwQwzvhzoTnCnmUi3z7a6t4OYuknq6NsNXzrDm87VE",
+   "https://play-lh.googleusercontent.com/9oFC7VuzrWiPLxjrkt-OsDllXdcAicjtjubyo7LmG6GpoiqTdanWwtx9KIHfbyINryAr1TtwWfpw6ZJn-eHBGQ",
+   "https://play-lh.googleusercontent.com/9FtCpsBrt-Loq5fOtzDAHgAvLws1uWwqy70er4qgmHo7UK3knJ_jtxLZqIbA8bWznYjKEdL06XTma0Q3S_J8jg",
+   "https://play-lh.googleusercontent.com/novtTeLqPvoZuCDrMUHIX1ywxjmretZ6z6eTq4Qh5kcTit-JlPPnUYQZDKJ2cmBuaEkt__xzqoijnKeMETRLWQ"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.studiopango.pangobuildsafari",
-   "title": "Pango safari builder for kids",
-   "developer": "Studio Pango - Kids Fun preschool learning games",
-   "playPass": null,
-   "sim": 0.63,
-   "flags": [
-    "different number"
-   ]
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.studiopango.pangobuildcity",
+  "playPass": true,
+  "similarity": 0.604,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Pango Build Safari kids 3-8": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "closest match flagged: different number",
-  "queries": [
-   "Pango Build Safari kids 3-8",
-   "Pango Build Safari kids 3-8 Play Pass"
+  "appId": "com.studiopango.pangobuildsafari",
+  "matched": "Pango safari builder for kids",
+  "developer": "Studio Pango - Kids Fun preschool learning games",
+  "playGenre": "Simulation",
+  "icon": "https://play-lh.googleusercontent.com/eHo7Ppy8rYLqHLq2ufzAu93zkADpjHV6O5jNYTFZuc_w8HOy3g5tXlHzXbXeMUIDOcBtyXXFww1G3TUuSTWb",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/Jmv-Yz1MltBErkMtI_4LkFs42__qfKs1FotYK6VX0j1Zsyp4Mcjbno9RvASoK5s0QttMlCp0HhJM8JzailY6wg",
+   "https://play-lh.googleusercontent.com/TtZEXBcV3TD57njy7AeRWffm-5bOkqhpdzM0iHfiZ7VtOjRJbzgjXsMrETJy2ryTOZYtGmLdyAJ-r9LGXz3pkQ",
+   "https://play-lh.googleusercontent.com/sKNIntS2qFHXZFVNNK5flGRqubiBB_U1I9Ajg3vxk46Rml6jNL3XbFmuNyVnqoHR1RkaluMTXQXl83RfhrDjvA",
+   "https://play-lh.googleusercontent.com/6Q4U0pk5DwsLgnIsvw69WuWiaSHlDk9Mol_MvUkMjvIjUexIFpOIoq86_yGm8XfCnRmj5gy7-Q81QrxFIpZ43A",
+   "https://play-lh.googleusercontent.com/FSqg74TsO5uibi0Jp1wFKQfTCAICtJQc0hGfkU24rfQAJFL6Ij4L5xjPX8l1g_o0gh_9LIExV_K3ouFUD_xrfg",
+   "https://play-lh.googleusercontent.com/pZ6OEQ45GbLzhzCq_dH2WwUl29k7HwUaIH4I64njmZjPg9jfNF4Jw9MT9CXx7ZWTMkU0Mw5OBiAvl2trq4kvbQ",
+   "https://play-lh.googleusercontent.com/JR-k9e5VrKkVxL_71iyfYtQ2Hi78j7q1wK2O0pfL9srjFs-4vnXI9A26RUQHB_marQohv1CmMhAwoavnYeJX",
+   "https://play-lh.googleusercontent.com/KMV2Rbk9jHujHf2qd90sZQYgQrFaJXMwknUrLFjY9Vaq2QMU8EeZ7CL8hYORLhoY7H-dwZeQP47LqFo9U8Kkvg"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "air.com.studiopango.pangoWhereAreYou",
-   "title": "Pango Hide & Seek - for Kids",
-   "developer": "Studio Pango - Kids Fun preschool learning games",
-   "playPass": null,
-   "sim": 0.618,
-   "flags": [
-    "different number"
-   ]
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.studiopango.pangobuildsafari",
+  "playPass": true,
+  "similarity": 0.607,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Pango Halloween Memory Match": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "title similarity too low (0.83) and no Play Pass badge",
-  "queries": [
-   "Pango Halloween Memory Match",
-   "Pango Halloween Memory Match Play Pass"
+  "appId": "com.studiopango.halloween",
+  "matched": "Pango Memory: Find & Match",
+  "developer": "Studio Pango - Kids Fun preschool learning games",
+  "playGenre": "Educational",
+  "icon": "https://play-lh.googleusercontent.com/ut-lwlAG7CAGrAn4C9t6btNu25FWLtv3FfLsmgGRDT9yXT4AjL2jDKYaddc1bxXRC6yFTauyszVYZtZMDJiHfw",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/HAjzr2SrS0mLZD8mli9pMF9jpVZiPK5m1Z_8er4iCLMCAtJV-KAzcefArqgd70R2cxt6G2wnFwW9TLty3ZV7hQ",
+   "https://play-lh.googleusercontent.com/vdHmK3s3dt9zr660eKNZEb-XUf_rqiAClR8853Gv_wEW8H7Axg_tPQ_-HbjIp0LULq1yxFftfjRQdvprjm_QAw",
+   "https://play-lh.googleusercontent.com/10Sr-mY9zZfHvwqp8eC7T69tXL9qkfvmOr_LP_-0l6ZBto-fxjYqTgwYeaPqT22Lk4dvpE42-10RST2koLqOPA",
+   "https://play-lh.googleusercontent.com/NR6AFPlYfo2BjVadP2h_t8jMXEt9aegy9RGDci_ZHA64pmub9da0nokKwv8B-m0ue8-TYozUqTYvd6iinCABwg",
+   "https://play-lh.googleusercontent.com/csiz_6V0NikrLXVd_4RwpzGS0wG1Z_dk34oP0TuWL7URzTJvsIiXY9vbSEub_0z6tiIeJ_ICvMFKObEFamOKDUY",
+   "https://play-lh.googleusercontent.com/nw7FmQRY9L2sfPNVP60pIj4vTPydF7tuxDd_Ws9l3BiVZohf59r_R_8oZuzdTUfq-counGfsPsEHuE-PWun5oA",
+   "https://play-lh.googleusercontent.com/ZnSkMdk1CxljS2GlHuuS5wdEOqAwEDuqwgCKcsCPydYr3aLtaS4rRlNn9VeU86ORYJpLiJ0zKsLrAP7NG08yhA",
+   "https://play-lh.googleusercontent.com/2Z8qC4cieEKX99EwJYf58yZnEJ1-343aqL8st2qBwB5br7bK0pG34D9bvnk0JMefGyzdhrZoSotrXdY_XuFpFQ"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.cgfx.halloweenmemorymatching",
-   "title": "Halloween Memory Matching",
-   "developer": "CGFX",
-   "playPass": false,
-   "sim": 0.83,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.studiopango.halloween",
+  "playPass": false,
+  "similarity": 0.655,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Pango Hide and Seek: Fairy Tales": {
   "appId": "com.studiopango.fairytales",
@@ -25375,24 +25360,28 @@
   "checked": "2026-10-03"
  },
  "Pango Land dollhouse kids 3+": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "closest match flagged: different number",
-  "queries": [
-   "Pango Land dollhouse kids 3+",
-   "Pango Land dollhouse kids 3+ Play Pass"
+  "appId": "com.studiopango.pangoland",
+  "matched": "PangoLand - Imaginary World",
+  "developer": "Studio Pango - Kids Fun preschool learning games",
+  "playGenre": "Simulation",
+  "icon": "https://play-lh.googleusercontent.com/zcJDAYxKEgRNtU9m_JCXK2iBOu5PPHQqIWbLNS-aDyZkBYiCJ49yF03DbgXqvGzGQ-sBXgdbaCXl2txMQ71X0g",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/JHI6evnLMgHUZ6oY2NaFcViaT6hyYoMk4JLO7DoUvAxuxaA5hYBS02xf6TjXsaGOABZxdAYBq9BKnWAbH-tK9w",
+   "https://play-lh.googleusercontent.com/KEaVPaowdKfIhOOOwO8UTxftUTMz_YXMaMu-9Mc3p8MaI047soOu1d2M0V0W9LyQotdPMRKuMTnKVYNuAlEe",
+   "https://play-lh.googleusercontent.com/ztWek6ieqxqAb2TvXXT7N5kFNXtytBOnE0G7ZeuzBxn7A8521jmwSx27ZyYFgy_z5JSG0hpHKU30FlQqNOU2nA",
+   "https://play-lh.googleusercontent.com/biO7VJQRnGBOd70ooDqgPJEVvmWVx9VntA0cn6kl2A4gIq5phusIH_YOyHD6xPHCCarIeRgzYudolcacSxppdQ",
+   "https://play-lh.googleusercontent.com/Ra3Gf0fZ0N9syXbtS0q935x3TtSTb0ZzhZxC9CpDMHWwLUK9GA2Yz__MjXPRZ0DLroua8Lrxu1RVcohGHu0_U4c",
+   "https://play-lh.googleusercontent.com/qWuyymZ0K6cEYw6nvOYhXVr5ZU84BuavbtQ_1No5V9zzmY3Y0ho6m0dAJ1DZbLCdhGpP24xmkxVXavyWyT3X6w",
+   "https://play-lh.googleusercontent.com/s9qHtQ-VPcCgcplda1CTnRdNA9DJWELeg-UzMfkMCaOcmfYh-dKCu5pzgJTN-bgcaoq2t3YerzzvDjMQ7GOpQw",
+   "https://play-lh.googleusercontent.com/WKG81S4GbbmhzVzbTLyCf7jtjQbp9vsqSrXldnTe1XbcN0AYwHeZTmJX_QsTNbQ4-UT6-xOhrnI8-wfzuEMn"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "air.PangoPlayground",
-   "title": "Pango Playground for kids",
-   "developer": "Studio Pango - Kids Fun preschool learning games",
-   "playPass": null,
-   "sim": 0.654,
-   "flags": [
-    "different number"
-   ]
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.studiopango.pangoland",
+  "playPass": true,
+  "similarity": 0.423,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Pango Music Band Maker": {
   "appId": "com.studiopango.musicalmarch",
@@ -25419,23 +25408,28 @@
   "checked": "2026-10-03"
  },
  "Pango one Road: logical maze": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "title similarity too low (0.64) and no Play Pass badge",
-  "queries": [
-   "Pango one Road: logical maze",
-   "Pango one Road",
-   "Pango one Road: logical maze Play Pass"
+  "appId": "com.studiopango.logicisland",
+  "matched": "Pango: Draw & Connect Paths",
+  "developer": "Studio Pango - Kids Fun preschool learning games",
+  "playGenre": "Puzzle",
+  "icon": "https://play-lh.googleusercontent.com/IxI9za0sxRZ1iJqP-XTI11xWaG7_7_Y9od0FJanHacuZVsIZYQf_w-M13KCxHzdGmpkZbBpBBsCjDsHrvVfZHw",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/1qlbWpc0Ol71AYowAyNPeEam5YAW5M0spEHOJO20rvjJGtXyCm47bxO7O-DqzIMzBOnkmc0M5XO0f7q62XI25w",
+   "https://play-lh.googleusercontent.com/k40ppShrcxqWUsb_6SGNEMEXH-H4WhBDXXCPmQKVHlvhj6w-A09-UJTzyMvI_RCcM-9FP7Rx2dDVwr0X8sPr",
+   "https://play-lh.googleusercontent.com/mFqFRpNDBFInGqo5o7kdZKdxZS3uGoGYo1OBnCB11anTpqca_xoDGEMCwNZLuGEFBFLhcjY4_6w1q_B5JcFOFNU",
+   "https://play-lh.googleusercontent.com/11a660iNsx3g4yKa0dyyybow1ZUERFRSd6GMFPSjO4kIKATDaCTKdguYCbUhNCYYzDBc_mWnk3s0Nw2aM1G9Bj4",
+   "https://play-lh.googleusercontent.com/OifXbih_Fyq74knAoo1em9WAVsL8lGfPmYVYTN_7No0SWian1PakqOJ1Mr75LAOgwlZCnCWVA-eyT_8HFG-2uUw",
+   "https://play-lh.googleusercontent.com/AMmdBL5O-lAek64niKqxySmrRaqOm3m-e6On6inqgk_giIdvosQOXEMiPbjxnQ5Dp8qGyTNuxvmmS07rZ4sp",
+   "https://play-lh.googleusercontent.com/rO0-Cli7c10esHg7FM3n4dQyoW8SjVnwU_FwqFkH07DOv-VNcj3y2w8CsonVcpzZ6jqLKkJqyHXvHDW0ei82",
+   "https://play-lh.googleusercontent.com/AfH9B5IXbV90DgF1zXXeGa6tJ-DsERAyLC6T84R9m2bRJ8OQfzg-sZviID7nJ9Gc35KqxZqOXhn4cixwdNTalA"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.studiopango.blocks",
-   "title": "Pango Blocks - Logic Game",
-   "developer": "Studio Pango - Kids Fun preschool learning games",
-   "playPass": false,
-   "sim": 0.64,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.studiopango.logicisland",
+  "playPass": true,
+  "similarity": 0.4,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Pango Pirate: Adventure Game": {
   "appId": "com.studiopango.pangopirate",
@@ -25462,40 +25456,52 @@
   "checked": "2026-10-03"
  },
  "Pango Sheep get all the sheep": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "title similarity too low (0.58) and no Play Pass badge",
-  "queries": [
-   "Pango Sheep get all the sheep",
-   "Pango Sheep get all the sheep Play Pass"
+  "appId": "com.studiopango.pangoSheep",
+  "matched": "Pango Sheep: Count & Play",
+  "developer": "Studio Pango - Kids Fun preschool learning games",
+  "playGenre": "Educational",
+  "icon": "https://play-lh.googleusercontent.com/JnZXNtfRT2qI5UFYjTaTYTSZmtM-ruIPfFdVUsTg5P7sGjafZ4vdD_QCqyLsV7rwqpWK1jpcvRxMRldabOga9Q",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/Nno2aZEybLk1ZVqUnScz1D3W6ppJ7ZTJTFQzPJ-l52f9n6tz5LpVbcpaapC0jxy677WBGg_8SECyM-iDKZOL",
+   "https://play-lh.googleusercontent.com/LWOG1RV1u-NXY6oROVnyGLrvkZxjKxbwRdeKV9buvUJtjG4YokRgpbpZp-k6ApOVW5mxcEqiq5aVEdE7SL3_Zw",
+   "https://play-lh.googleusercontent.com/Qk4WcL9D0H69TMp8-Xi4IwdC5-aebNCvwJ_71uwnipVO7p1LDidn9ApN9H5mHE_azCsYyMUg0My3BEFdyvggbA",
+   "https://play-lh.googleusercontent.com/vTZITMSry9Dh7gWNotQuFlMDzK0dijQNQz0AMGn-oGVtUAHexEPRvRl_Nct-RdsqM23ZZAelBgsLzGL_i3PM1jk",
+   "https://play-lh.googleusercontent.com/L2Xhag_RxvvPxhG3Ae2mcaZhBMrqbr1fLFQvyEtzA_1bxFYA35wpcbazqo1HYCNVak8uqsCs628YCoW6jstffg",
+   "https://play-lh.googleusercontent.com/rKwhcKfIkVBeY2rbDNJIXTBb1K-MxXXHrrBmQrn8X2ctuz7APdu4VwumhXF0MXw8l_o-Kgib8NSI5w4jwhE1",
+   "https://play-lh.googleusercontent.com/pkqXQaCtGz47GJt8F00GNBOgx4WRLoFfE8N252OSIgLvSIkW-CuTdgejsj3brMb1OjFe3pa2mIBIiI5khj4Arvc",
+   "https://play-lh.googleusercontent.com/fB19g8yKYUakMkS3SIY5ondV2iWubJW1JaSseSagJpl_qqshNf7OdO3W9z9nFsZlrQwQUbE-76w0CxMyqY-j"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.studiopango.pangoSheep",
-   "title": "Pango Sheep: Count & Play",
-   "developer": "Studio Pango - Kids Fun preschool learning games",
-   "playPass": true,
-   "sim": 0.582,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.studiopango.pangoSheep",
+  "playPass": true,
+  "similarity": 0.582,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Pangp Factory Learn to Code": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "title similarity too low (0.65) and no Play Pass badge",
-  "queries": [
-   "Pangp Factory Learn to Code",
-   "Pangp Factory Learn to Code Play Pass"
+  "appId": "com.studiopango.foxfactory",
+  "matched": "Pango Factory: Coding Game",
+  "developer": "Studio Pango - Kids Fun preschool learning games",
+  "playGenre": "Educational",
+  "icon": "https://play-lh.googleusercontent.com/O7wfWNZfcRMHUTMYB6y_6wRmX3f34AThXJXv4CK-0ZNAWVc08a2WNIg9ZevFyZxvt2WCv_YhLE9pj1GIfKoad5U",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/3upmyb3k9cNULqYosfk2rRgts9YCHrzFUs-ckIO1X5FXyasSYA-ziIjG1BepJrbXe_v9ePCo4q8ZnfXErFuu",
+   "https://play-lh.googleusercontent.com/x5cr2Lth86Zu1Z12zIv4SLhtd7S4sBxOcmv58nBC_FzjSTaafUrsnORwKNfzS7rLXMbVUv8uJwwrqhKYDSOrTg",
+   "https://play-lh.googleusercontent.com/vAnb1xLekRxVxfD7PyM_34o57VYrg4h_-8WEm9vDIRtrZNxo4XcXITmK0rUD08tCNzuDcPYfGBxARWcf0hPc",
+   "https://play-lh.googleusercontent.com/3U5xjs9N9l1REc6k0f4xHONCiT3d9gy6fxFpIAdNTfTpXH3tWbKdNckxkHbKGkwt-x3h0FxETN6gADy47EcV0g",
+   "https://play-lh.googleusercontent.com/Dq42vYuUDHS4xEM1KTp_Suk8SYMXW9SVtfPQfl3vhDMCl30jiFna2vk5Usg3ko8JwgR94o6Je4z4jT-8s11INg",
+   "https://play-lh.googleusercontent.com/HzvFqc8C2kleesZ-GXC01EWPIwiXR6DdV8CejJwOANDjqmDoHhgnqe2BVuw8ASihiFFt8ew5Dbhtp0Lj_BgSWg",
+   "https://play-lh.googleusercontent.com/nkFRzvfiZOjr33udh5DN8X-fAKny0bdw7jGgt3wFs9RTM7FhnvvLmbhAfljvC9zyIe9pvFHG0ig-5I-aY6CIeQ",
+   "https://play-lh.googleusercontent.com/q6YmArtxIVsWDyi_bB4p0MG6pH9qVIZtDQFSDPLhqBAaftqF7cMKvNP11k_sowlMRjwqNq81FdfAplnPcNk4ug"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.studiopango.foxfactory",
-   "title": "Pango Factory: Coding Game",
-   "developer": "Studio Pango - Kids Fun preschool learning games",
-   "playPass": false,
-   "sim": 0.654,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.studiopango.foxfactory",
+  "playPass": false,
+  "similarity": 0.654,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Panzer War: DE": {
   "appId": "com.ShanghaiWindy.PanzerWarDEM",
@@ -25663,26 +25669,23 @@
   "checked": "2026-10-03"
  },
  "Paths: Beatrice’s Adventure": {
-  "appId": "ai.gopaths.pitravel",
-  "matched": "Paths",
-  "developer": "gopaths",
-  "playGenre": "Travel & Local",
-  "icon": "https://play-lh.googleusercontent.com/SHfD-G3F5JvvESj3B6Z9mLq_blVqU3NaSNYvBYU7v7z4M38-CcwhA79dG41Z-76X5mMfFayClw2SO914NMIUSJw",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/K1fnP6A_3aSTYrMu5OY3tVc6o-wknQNOLD9d_eVC8Tmn-FydqUbmqhxw9RcMF0BVp6FGeRHbQcRjy9qqj2AVDA",
-   "https://play-lh.googleusercontent.com/6wJyYkWhnjZ_6cBYOZum5OltqRldPSOq2atzojBa8Do4i8CXQV5KxWz2wOGJ1HUKszW5ixPbNghW4SYmIdbEZA",
-   "https://play-lh.googleusercontent.com/JpyUsn-_9od-ebt9h08NXr-VRkKGiFFrelu1XYItX6Pw6i4YbA1DHVkBBb61_htpx240nI9oO9lQyLhDYM3hVeY",
-   "https://play-lh.googleusercontent.com/TGYKlMAxeQmXqGpAs9Z6IWgMrOBn97RMG440ahdlz4tciE8vASIZUqGopUAu1lt11b96WSY5djiYmbIf-0t6Fg",
-   "https://play-lh.googleusercontent.com/oE-gUnOl7_9x1dpartj1CCJHLvJex5UK8Y0qmsGEe_q-73ekWJhpZWW11zFomdXB5nF-qOWPZ6e9_axhpUUh8K0",
-   "https://play-lh.googleusercontent.com/L6x7Zpzeu095hSSww4KXm5sd53oTk0ThDQiQ0m5NQUgd9DbQuo-USoGuP3LECm6mnx80maHTFo5wTRin1x6c"
+  "appId": null,
+  "confidence": "null",
+  "reason": "3 apps share this title and none has the Play Pass badge",
+  "queries": [
+   "Paths: Beatrice’s Adventure",
+   "Paths",
+   "Paths: Beatrice’s Adventure Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=ai.gopaths.pitravel",
-  "playPass": false,
-  "similarity": 0.93,
-  "confidence": "strong",
-  "flags": [],
-  "query": "Paths",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "ai.gopaths.pitravel",
+   "title": "Paths",
+   "developer": "gopaths",
+   "playPass": false,
+   "sim": 0.93,
+   "flags": []
+  }
  },
  "Peace, Death 2": {
   "appId": "com.azamatika.peacedeathtwo",
@@ -25973,23 +25976,30 @@
   "checked": "2026-10-03"
  },
  "Piano Tiles 2 – Piano Games": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "title similarity too low (0.83) and no Play Pass badge",
-  "queries": [
-   "Piano Tiles 2 – Piano Games",
-   "Piano Tiles 2",
-   "Piano Tiles 2 – Piano Games Play Pass"
+  "appId": "com.kooapps.pianotiles2gp",
+  "matched": "Piano Tiles 2™ - Piano Game",
+  "developer": "Kooapps Games | Fun Arcade and Casual Action Games",
+  "playGenre": "Music",
+  "icon": "https://play-lh.googleusercontent.com/f7YcB5_a-gTjR3joD0qijksY2WYP7gcesj5vK3S2Wj5zGrF0H4xR7s_KHalQl9fS-dMJd1tF7dxd_Z1ZsDdh8pY",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/8zeMiVLotFQgruxbBeUkrSXVcbigpRqhW7Uq0DnBdvBN30nKlQy7EiZmvGmfBYS9Q7HSTVC6G_8Wt1VjPsvdZA",
+   "https://play-lh.googleusercontent.com/OJ3iq355eJN0DNO-CiQLivZOe39HFZewx5kuHurHiP9JKpA2nCIwLN_Z4R51VVzkY25he9YyZhL6kSqIIijU3A",
+   "https://play-lh.googleusercontent.com/_wHMulpb6aTSe_FXP1xAoZ_URBQ-U5-jXxsBfSmSZDvtAacB7zHPA54UZ3ChLsy6Hsap4a_DlXWLj1s_3iZhzh4",
+   "https://play-lh.googleusercontent.com/i-2d5zQPhQgu4w4e_8U9Law7A_rOJS5nqyspe9v7t080rgye_tXskammB-cSd-QlcOBV4sc5LZAoa3woRlcHqw",
+   "https://play-lh.googleusercontent.com/8yMUHRakIkw5hZGAg6oJY_z-JJCaLcocEJsslW6jEaPeR87bkL33rOJmATUqs4dk_bubGiuz6B9SdNEsxkmqDTo",
+   "https://play-lh.googleusercontent.com/n89iTP-a3O8wWjsyBUcOFxzDXrqWoEL2N7fELuinFyjERFaHv041IgSBMKwt36tBVKCxc_9illn8CGyjGHlgNbA",
+   "https://play-lh.googleusercontent.com/QWGLKMVvifc_55QXlbh8LKuplNKyMhDFqcwPW3XvFwKUFXbuJWhU0oxICF1361isQQB17nf200GfPMS-BuRUxTo",
+   "https://play-lh.googleusercontent.com/ezHzxIp23_mgY3GxTjL3s967yJatZkM-j4wXkbdoOnjRHSppEgHZtOp_fWZj7dNoNxBUdTbt37qqonzfgEzQCA"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "tiles.song.game.piano.surf",
-   "title": "Piano Pop 2: Tiles Music Games",
-   "developer": "Rhythm Hero: Good Music Games",
-   "playPass": false,
-   "sim": 0.833,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.kooapps.pianotiles2gp",
+  "playPass": true,
+  "similarity": 0.941,
+  "confidence": "manual",
+  "flags": [
+   "different number"
+  ],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Pics 2 Words": {
   "appId": "com.asgardsoft.wordspic",
@@ -26112,23 +26122,28 @@
   "checked": "2026-10-03"
  },
  "Pingo Blocks: Logical Paths": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "title similarity too low (0.85) and no Play Pass badge",
-  "queries": [
-   "Pingo Blocks: Logical Paths",
-   "Pingo Blocks",
-   "Pingo Blocks: Logical Paths Play Pass"
+  "appId": "com.studiopango.blocks",
+  "matched": "Pango Blocks - Logic Game",
+  "developer": "Studio Pango - Kids Fun preschool learning games",
+  "playGenre": "Puzzle",
+  "icon": "https://play-lh.googleusercontent.com/Dnz6SJPA1NlCQI_B_Q1WjGBclr-q-w2EOLuXo4TBREBmiLzI9N-NNgmZCvyjAEClszQfXtO-htQAJlyqsXEJQQ",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/kghWjTv69uH3c1mkZst5gH2TKma8lo-Y1b86MF-X1HAG-ntEwPtj7jWG4lLc83bbdIaHdmtmxaj3yi1iS46FkA",
+   "https://play-lh.googleusercontent.com/j7oo_k4yBZc4wRAI0UlTc7LRznuZ7aYUcrb0fp7ovKPzZ7rcSKz8ifWshZJavChVgenD2Un6NCVRGMRZpXhH",
+   "https://play-lh.googleusercontent.com/1W0nfGVQ6LDBMTiOauo4S5KLoUn770B4_wFszzuRISvTMNzhAavS18mrjb2oCvHBsbvtQ3dc8PoZ9fL2GPN5xw",
+   "https://play-lh.googleusercontent.com/_sN_naOCaq4LVv2Efol4RTUjavzJKq12QM1evMKcIUpx4ZFPwYWBEIg96kSsEQ8LyJceDgW858LmcVs_0SMsHQ",
+   "https://play-lh.googleusercontent.com/elKGsEE_-LoZMMBKpU340peOjX5kww01CqQEvYAXl6HeURZUNtX5RGhX__7NS7NN93--kALzypadrh8DuVf18w",
+   "https://play-lh.googleusercontent.com/tDTOSIMCKAbKUYfuqkpeGj55pxpyLBQhGojU4xLu0cf_cRkMsRL2T7t7zAQlCLJzbrNox46zCABUhNMxkoYlIw",
+   "https://play-lh.googleusercontent.com/A2ZCPUfZYcHFkFLdc52Rib1VudFDXSEoyaGoL-iUXgz4I6jQhJW191V6m7JqhNWVQhjXRRpFmnlaD7l_ODkmQ-4",
+   "https://play-lh.googleusercontent.com/rO3yRT2a9moO8ogQLBw7k6knVVeBCMno89UYAHLYiPwOz-tYH8YKeSMOH3wlfQaI7oS_9nSSjEyy_JFxfogQfA"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.skytech.pingo2024",
-   "title": "Pingo",
-   "developer": "Pingo F&B",
-   "playPass": false,
-   "sim": 0.85,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.studiopango.blocks",
+  "playPass": false,
+  "similarity": 0.735,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Pinochle": {
   "appId": "com.karmangames.pinochle",
@@ -27187,24 +27202,28 @@
   "checked": "2026-10-03"
  },
  "Premium RPG Alphadia I & II": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "closest match flagged: different number",
-  "queries": [
-   "Premium RPG Alphadia I & II",
-   "Premium RPG Alphadia I & II Play Pass"
+  "appId": "kemco.execreate.alphadiaoneandtwopremium",
+  "matched": "[Premium] RPG Alphadia I & II",
+  "developer": "KEMCO",
+  "playGenre": "Role Playing",
+  "icon": "https://play-lh.googleusercontent.com/wgA87EEsoC9Yr8a7ZXe5ZGUX4yEr_F6PZGi2lbteWxnE-NRUKzBvApHSp3C6GPjqOTcweqLo39KPTUZLZx8dwu4",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/qOZdwAcinI6BhIg9L1ZFwCdyZMNd3TLX49fxAUyXBfPsho7hVA7a2Jm7Z7tDFqIumiVhXZwuLMdyGcRkL1G28w",
+   "https://play-lh.googleusercontent.com/g24ch3cHMiDe1Qr6f8ka-k1KavcT4Zln9YNvekORc3GngmZVtFAla3y4m1bMHJscxbcaaGbkVrth9BoKk4a_VaE",
+   "https://play-lh.googleusercontent.com/A1-WVEqW88o_lLrM8Wshtkhsn9tfjX8Y23QTrl41qCRVoMX8vU2x6TruBjUa7MFiCMh2vZgjzvbNSTA7F903",
+   "https://play-lh.googleusercontent.com/hIi9RCP1cB5qKhpd4vAwkUatkRtIDyWdLRJVl0KCBPzQSSDrbnx6WbwKNijIEdrU1hcn-aYjKQh8wTuEd_NImdk",
+   "https://play-lh.googleusercontent.com/YI8VRnJYQJIX7mBoLQhnvAO-m3sYqCfG6VDZJZVxmE-BwnKjni5Wn7a8IewoQjE86qvr9a0SSMzqjxYRsfflMUI",
+   "https://play-lh.googleusercontent.com/Mk5lp_tz1DnGwQ1segfZLqGxcaSwyZwcjO4WttM0tqfXGAW4rnOyzR3A8HSbpgaJQlDKnURGc9dt6PEzBrTn",
+   "https://play-lh.googleusercontent.com/pv-sMtK7HLaKZFjxge3o5QXjcmDuhlhRE-qpFDYdJadI4GrEEibVK-hqJTDsPIXPFCuIZ7MIer_Z4alrP2afkPM",
+   "https://play-lh.googleusercontent.com/qR0dCn55rnGgWc81VCQePn2YN2QB1XnCEJ_DqG_z8jvs2Ab8s07AOR1yj2hRf3mZxCYPTtenZ05eQ_w8G1Fzkg"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "kemco.execreate.alphadiaoneandtwopremium",
-   "title": "[Premium] RPG Alphadia I & II",
-   "developer": "KEMCO",
-   "playPass": true,
-   "sim": 1.0,
-   "flags": [
-    "different number"
-   ]
-  }
+  "url": "https://play.google.com/store/apps/details?id=kemco.execreate.alphadiaoneandtwopremium",
+  "playPass": true,
+  "similarity": 1.0,
+  "confidence": "verified",
+  "flags": [],
+  "query": "Premium RPG Alphadia I & II",
+  "checked": "2026-10-03"
  },
  "Premium RPG Alphadia Neo": {
   "appId": "kemco.execreate.alphadianeopremium",
@@ -29095,49 +29114,40 @@
   "checked": "2026-10-03"
  },
  "Repit": {
-  "appId": "com.repit.application",
-  "matched": "Repit - Learn Vocabulary Fast",
-  "developer": "JLBCSDP",
-  "playGenre": "Education",
-  "icon": "https://play-lh.googleusercontent.com/d4J5yB0yj4zQ8OSyeztvtd47bc1Bm9cV0O04UWzpiFLfUB_uLj1YiLktJjVlMX68mqQI_kt-sOUJo4OitH_iag",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/jwIlBeE5uFJw4Xo8PwBenzxpWmKVjAdo8VjmH_uiQ-vneaQ0cs4RrRT4tY9-6wCRFs7uqirKjWNyJHBdvten0g",
-   "https://play-lh.googleusercontent.com/n0ZDETakzuY0cnVDNPW5mdEX86fEg_8eCAFZyoH2-KyAw9Zw45-2Me_ll4iqKtZipTnkrVNYMlipP6o_cgTckg",
-   "https://play-lh.googleusercontent.com/yGzDL_j9jbH-4vXoRM65KXxWRKtg3vGTgcSAzoSYPkp6G4-935DYgQ3W_4qIWyIbnB98GpB5OLkPRbowRmFrNA",
-   "https://play-lh.googleusercontent.com/E_WwS2-VhGKlLQ6aiSKzwPQGSFLwYK0yARv17kPWjMtxfOMbRtrvAzBshU-twW9AEzl01p4wfyNORK0Uu8HcY00",
-   "https://play-lh.googleusercontent.com/KB59r8yRcrOVPVtvE1LFUWChBEXi0_c7661Tk1RBKP7wlpXjWvQDTkNAP5dqxyleyLG2B-8ATwuMXKKFgStkZqc"
+  "appId": null,
+  "confidence": "null",
+  "reason": "3 apps share this title and none has the Play Pass badge",
+  "queries": [
+   "Repit",
+   "Repit Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.repit.application",
-  "playPass": false,
-  "similarity": 0.95,
-  "confidence": "strong",
-  "flags": [],
-  "query": "Repit",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "com.repit.application",
+   "title": "Repit - Learn Vocabulary Fast",
+   "developer": "JLBCSDP",
+   "playPass": false,
+   "sim": 0.95,
+   "flags": []
+  }
  },
  "Replica": {
-  "appId": "com.erabit.replicat.gp",
-  "matched": "Replicat",
-  "developer": "Erabit Studios",
-  "playGenre": "Casual",
-  "icon": "https://play-lh.googleusercontent.com/wunIwVfGD1nEGMpW1trl7jLc970P-duq_0JDhERN-RFaJlJUNC0aRtTE7EMg8VFHQsyzh8fQh18ndZgEqaMbLQ",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/BwHH2GevILsz0ppDnoxDbX1bEIdCPbaXzjD5qCRVHraEMA1w4380YvQyk8-m3bY8RK2gMZkbjH_IGL49xSrG",
-   "https://play-lh.googleusercontent.com/vrIaCQw5_lQrSdTw3ocOeMqoiRj93_9VktR6qyrPJi5JKt7OOrfucQYs2yAimufgOTMqxrLvB8v7UvW6HhWJJA",
-   "https://play-lh.googleusercontent.com/WVdmBaFAeHN2BuWLT-_k-LEkixPB_iA5yjNTd24rqltGV47CCu9tl-P4FMTRDbj1I7h-qO41smAXP_s7RR-i",
-   "https://play-lh.googleusercontent.com/1iDn2__huyCSbplT5vZNWX0p2ytVMilv_2xgkf9U9NiszQSCtAfVJcteMJej-2CjaRy7bY8wafJNNwuOxzJ6YQ",
-   "https://play-lh.googleusercontent.com/nE17MTcaomhv_UbEK_zJ83dCrtJHktU_Ti_yeO8shCBcY4XsMXxsi3df_0Gybq1IrIgaMkVN217SRP03gjna",
-   "https://play-lh.googleusercontent.com/vrIaCQw5_lQrSdTw3ocOeMqoiRj93_9VktR6qyrPJi5JKt7OOrfucQYs2yAimufgOTMqxrLvB8v7UvW6HhWJJA",
-   "https://play-lh.googleusercontent.com/nE17MTcaomhv_UbEK_zJ83dCrtJHktU_Ti_yeO8shCBcY4XsMXxsi3df_0Gybq1IrIgaMkVN217SRP03gjna",
-   "https://play-lh.googleusercontent.com/1iDn2__huyCSbplT5vZNWX0p2ytVMilv_2xgkf9U9NiszQSCtAfVJcteMJej-2CjaRy7bY8wafJNNwuOxzJ6YQ"
+  "appId": null,
+  "confidence": "null",
+  "reason": "title similarity too low (0.93) and no Play Pass badge",
+  "queries": [
+   "Replica",
+   "Replica Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.erabit.replicat.gp",
-  "playPass": false,
-  "similarity": 0.933,
-  "confidence": "strong",
-  "flags": [],
-  "query": "Replica",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "com.erabit.replicat.gp",
+   "title": "Replicat",
+   "developer": "Erabit Studios",
+   "playPass": false,
+   "sim": 0.933,
+   "flags": []
+  }
  },
  "Reporter 2 – Scary Horror Game": {
   "appId": "com.agaming.reporterii",
@@ -29847,24 +29857,28 @@
   "checked": "2026-10-03"
  },
  "RPG Alphadia 1 and 2 Premium": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "closest match flagged: different number",
-  "queries": [
-   "RPG Alphadia 1 and 2 Premium",
-   "RPG Alphadia 1 and 2 Premium Play Pass"
+  "appId": "kemco.execreate.alphadiaoneandtwopremium",
+  "matched": "[Premium] RPG Alphadia I & II",
+  "developer": "KEMCO",
+  "playGenre": "Role Playing",
+  "icon": "https://play-lh.googleusercontent.com/wgA87EEsoC9Yr8a7ZXe5ZGUX4yEr_F6PZGi2lbteWxnE-NRUKzBvApHSp3C6GPjqOTcweqLo39KPTUZLZx8dwu4",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/qOZdwAcinI6BhIg9L1ZFwCdyZMNd3TLX49fxAUyXBfPsho7hVA7a2Jm7Z7tDFqIumiVhXZwuLMdyGcRkL1G28w",
+   "https://play-lh.googleusercontent.com/g24ch3cHMiDe1Qr6f8ka-k1KavcT4Zln9YNvekORc3GngmZVtFAla3y4m1bMHJscxbcaaGbkVrth9BoKk4a_VaE",
+   "https://play-lh.googleusercontent.com/A1-WVEqW88o_lLrM8Wshtkhsn9tfjX8Y23QTrl41qCRVoMX8vU2x6TruBjUa7MFiCMh2vZgjzvbNSTA7F903",
+   "https://play-lh.googleusercontent.com/hIi9RCP1cB5qKhpd4vAwkUatkRtIDyWdLRJVl0KCBPzQSSDrbnx6WbwKNijIEdrU1hcn-aYjKQh8wTuEd_NImdk",
+   "https://play-lh.googleusercontent.com/YI8VRnJYQJIX7mBoLQhnvAO-m3sYqCfG6VDZJZVxmE-BwnKjni5Wn7a8IewoQjE86qvr9a0SSMzqjxYRsfflMUI",
+   "https://play-lh.googleusercontent.com/Mk5lp_tz1DnGwQ1segfZLqGxcaSwyZwcjO4WttM0tqfXGAW4rnOyzR3A8HSbpgaJQlDKnURGc9dt6PEzBrTn",
+   "https://play-lh.googleusercontent.com/pv-sMtK7HLaKZFjxge3o5QXjcmDuhlhRE-qpFDYdJadI4GrEEibVK-hqJTDsPIXPFCuIZ7MIer_Z4alrP2afkPM",
+   "https://play-lh.googleusercontent.com/qR0dCn55rnGgWc81VCQePn2YN2QB1XnCEJ_DqG_z8jvs2Ab8s07AOR1yj2hRf3mZxCYPTtenZ05eQ_w8G1Fzkg"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "kemco.execreate.alphadiaoneandtwopremium",
-   "title": "[Premium] RPG Alphadia I & II",
-   "developer": "KEMCO",
-   "playPass": null,
-   "sim": 0.667,
-   "flags": [
-    "different number"
-   ]
-  }
+  "url": "https://play.google.com/store/apps/details?id=kemco.execreate.alphadiaoneandtwopremium",
+  "playPass": true,
+  "similarity": 0.667,
+  "confidence": "verified",
+  "flags": [],
+  "query": "RPG Alphadia 1 and 2 Premium",
+  "checked": "2026-10-03"
  },
  "RPG Alphadia Neo Premium": {
   "appId": "kemco.execreate.alphadianeopremium",
@@ -30029,28 +30043,22 @@
   "checked": "2026-10-03"
  },
  "RPG Asdivine Saga Premium": {
-  "appId": "kemco.execreate.asdivinedios",
-  "matched": "[Premium] RPG Asdivine Dios",
-  "developer": "KEMCO",
-  "playGenre": "Role Playing",
-  "icon": "https://play-lh.googleusercontent.com/y4xmQMh3X-c7vVSdWRPLFyVgVNzAVJSpZXI7iEskw68NKyExl9s5IcoLUljREdANJppTN718nGadOh9HHAYwtA",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/xQuE2LFCndFqyUvoT-CIEtHa0UrXEDDQiEgpuL7jbMIRiR4sQjMj-uCpYbFFko0kE3CW48eD7G3NoVjrLoy8ig",
-   "https://play-lh.googleusercontent.com/NX0XLWaAF6q2R7SCJ9KRFGlTSHriRGebpDV8wl-7eL1XKJ7-Qk--Kw8ODfOBjNA0TC7uApcJShujq_6hBCDE8w",
-   "https://play-lh.googleusercontent.com/e503td7prm6T4Rjre_WQClwKWtHe0BmP5x3UfxlNxDTaVooHHdEb42FTBlS3_DlT5qErf5w_LQCnaThU6SYAuA",
-   "https://play-lh.googleusercontent.com/IeUAnDcn6KoYh9yYr6Mstzw8w8oQQbKm8PyZO3pCxoH_-nr7Obs0QYMyymV6lt4xqc8o7WU3nD8y_RjMH3H4",
-   "https://play-lh.googleusercontent.com/0K7r-v4cECmD8nygNnP_Ot3S7mv2YnDNj-alhciPl1Ti9EdmG8vHc1g9sDYdIK8V5SxfqrJhA7Wj89eEy458Kg",
-   "https://play-lh.googleusercontent.com/uhj4QpHsZFf6uaOf-XoZSMLh2JpIgHd_1Se9FzeO8WTHJdj08xGNuOU8hf1OmK4LyaXv2UusnPi8ZTRnM6AFXQ",
-   "https://play-lh.googleusercontent.com/3qCMpvQhm4j4C3YTfEFn66eHuOmtCbtVvKD8cL1qWuEqcpTXYGSzqDoJh8q7pQalA-O_17qG_FoWY6ipYDh5",
-   "https://play-lh.googleusercontent.com/lSMGE1aEX48BnI9Pos0nXdaeZQ1mLuebQKAbWvgr_wM2AKhIZ4RWdyl4hoCiwL2A7EHTPT61ao_V-oOD3nahaQ"
+  "appId": null,
+  "confidence": "null",
+  "reason": "closest match lacks 'saga' and no Play Pass badge",
+  "queries": [
+   "RPG Asdivine Saga Premium",
+   "RPG Asdivine Saga Premium Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=kemco.execreate.asdivinedios",
-  "playPass": true,
-  "similarity": 0.675,
-  "confidence": "verified",
-  "flags": [],
-  "query": "RPG Asdivine Saga Premium",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "kemco.execreate.asdivinemenace",
+   "title": "RPG Asdivine Menace",
+   "developer": "KEMCO",
+   "playPass": false,
+   "sim": 0.682,
+   "flags": []
+  }
  },
  "RPG Astral Takers": {
   "appId": "kemco.vgd.astraltakers",
@@ -30293,28 +30301,22 @@
   "checked": "2026-10-03"
  },
  "RPG gate fo Windoria Premium": {
-  "appId": "kemco.hitpoint.windheropremium",
-  "matched": "[Premium] RPG Gale of Windoria",
-  "developer": "KEMCO",
-  "playGenre": "Role Playing",
-  "icon": "https://play-lh.googleusercontent.com/hdj1SJ3uEjtz72K1lCtK4LfwYHDe_Lu_mhTqVHzgMZ1rEwOrojpvVvF3rwZxuEm0VdpCBvVJdVZ2ZEvFTRw5lw",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/O-4RM9IkhF8K9BZeoLCTNTHehnUmb1SY_aLaq59f9eWxsvc2XpvBVLpEPd0Qvjwof2KkJU9PERW9dKFJwiaSbw",
-   "https://play-lh.googleusercontent.com/Xnw7QBkYom7IUB6-IVSOX10O-NHwKwgfADSigkxzUxlsDQN3D6OJAG_GTc1h_e9jrqRsxrSj-PuarOJzPITd",
-   "https://play-lh.googleusercontent.com/MU7eFEvrF1ZWv5IwMFMeftm2bkORZR-kxgW2Un0C7at62peHm20ZQpp82MyCIqKy_mzTf7zOW2CLEl6V13b1eQ0",
-   "https://play-lh.googleusercontent.com/FaTXS2ONblxokWjYvFHrJKYket1pjbgJG3ywnmqhPRrJmDXemhqM0Uh-jdzzOczfB70GCXmcHpKda7kKatJ7Q-U",
-   "https://play-lh.googleusercontent.com/4N4SA8ELWKYZBthRVNEs9Jea71D-hHE398cTPVtCmLgE0ErJZNjYhHS0X6Ng0nBmqgxrQjJuMm1DZ76Jq0kWb6c",
-   "https://play-lh.googleusercontent.com/Jh2708C7yQnBGIKT3NpzvbUrwVENiqTbuSfFk56ORuZMjLU6AaYkVowW_85Y1pOzZq62EE6j8tsfY23YSFTc6Q",
-   "https://play-lh.googleusercontent.com/g3ISV45Cut6ryerFC1sT7cTuoMmRxzAGo8ercEjrSW0xfs9rBGExStzJWCP1PZvR0zw-fG9NRqbCt5Tva5bFFRk",
-   "https://play-lh.googleusercontent.com/hA3YdvRXCC1j-b1C_VL8DOU8PnKSYvegrHKVGHaFTUz-9msMLcDwYFTTV6GJQ-9xH_X5Sre6-G3Q9eBXo-e_Gw"
+  "appId": null,
+  "confidence": "null",
+  "reason": "closest match lacks 'gate, fo' and no Play Pass badge",
+  "queries": [
+   "RPG gate fo Windoria Premium",
+   "RPG gate fo Windoria Premium Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=kemco.hitpoint.windheropremium",
-  "playPass": true,
-  "similarity": 0.643,
-  "confidence": "verified",
-  "flags": [],
-  "query": "RPG gate fo Windoria Premium",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "kemco.hitpoint.windhero",
+   "title": "RPG Gale of Windoria",
+   "developer": "KEMCO",
+   "playPass": false,
+   "sim": 0.75,
+   "flags": []
+  }
  },
  "RPG GloriousSavior Premium": {
   "appId": "kemco.execreate.glorioussaviorpremium",
@@ -30557,22 +30559,28 @@
   "checked": "2026-10-03"
  },
  "RPG Sword of Elpisia Premium": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "title similarity too low (0.85) and no Play Pass badge",
-  "queries": [
-   "RPG Sword of Elpisia Premium",
-   "RPG Sword of Elpisia Premium Play Pass"
+  "appId": "kemco.execreate.makenpremium",
+  "matched": "[Premium] RPG Sword of Elpisia",
+  "developer": "KEMCO",
+  "playGenre": "Role Playing",
+  "icon": "https://play-lh.googleusercontent.com/k_bcVuf53kpFRT5QgXhT2kkaf9r_RgBI43lOuPrp29XY1QAGqnk-kyxu9WxVxWwESVMCARTmcg-a9OQwl5qhSRU",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/Hysjfh01VdzZZa3ydnAMFyWHSPr66ngRaIiu2qJ_4utNvrfoePIfyGcD8OymxTEpn4mFat33IOwodOjlAzB6",
+   "https://play-lh.googleusercontent.com/-r9PyxdcXU59KvevcEATZPkCZ7ff7JzWpplxHqZJuT7_HYcJgas-brYpldx_CNsoRH97jVPKrGARlL_b3TtJsA",
+   "https://play-lh.googleusercontent.com/HQV_aFg7cS_hVdBTtT2fi9YOuB8hS0cJw8o1nNGidnVtoBY8dU7kf59UoHKrH_qWE-TVfYOuOo96i-6vgOp7zQ",
+   "https://play-lh.googleusercontent.com/7sR1U_ciQ_Ge_HeTe7GM_7zYI9LbQiltlRCfuALBvQJINX685MGMOh0DN01RtOH2BdHICmMkV0PEkvkuCJOnng",
+   "https://play-lh.googleusercontent.com/8s6f9F4qt626-SDGcSduAcy8r1ulhGnUbfozNsUvIDqRRelsrlFK2pLefKOgRzl6_G7zOrDWUyOXp2tB9DHd5Q",
+   "https://play-lh.googleusercontent.com/HZgtzkzakGyNjfz986ZgiMl9l4qGRFmqbYy1Ts1gNenZ79gYxebsHQRTb0nLGC-kERXFzD7Q6zTrZjkBOsUXNPM",
+   "https://play-lh.googleusercontent.com/IUzoM61HxNGl0vSdM7JAy0jrrmPvXQ0zcwu9QzzcNLK9pY9wB4YMnv-0EUoBPdvus8SPAxHhMq_f8Krw9QFysg",
+   "https://play-lh.googleusercontent.com/Y2HBwTlYBrxaNrMF1ADlIgyZXajAg_4OvLHGTzoAMA3vkZbue54PWIkUINspaSaoimkEyXO8FPsK2onImc-en18"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "kemco.execreate.maken",
-   "title": "RPG Sword of Elpisia",
-   "developer": "KEMCO",
-   "playPass": false,
-   "sim": 0.85,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=kemco.execreate.makenpremium",
+  "playPass": true,
+  "similarity": 1.0,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "RPG Symphony of Eternity": {
   "appId": "kemco.wws.soe",
@@ -30815,27 +30823,10 @@
   "checked": "2026-10-03"
  },
  "Sage Solitaire": {
-  "appId": "com.neza.game.solitaire",
-  "matched": "Sage Solitaire: Puzzle Game",
-  "developer": "SpringYKK",
-  "playGenre": "Puzzle",
-  "icon": "https://play-lh.googleusercontent.com/ZDgIII55dkts6wxFg7ye6Iw8_4o4rmnlOVysBrNu50vogH7BWO-fNqyzT9cMxw9KnFIACNVQp_4Rj4aIKlXYRQ",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/AMTUt1oYkzBXUu7wQwI1-QyFE8cSJWPCfl3jz8gFNDlwo0L23VUuLGA0AUZNF2F4eBKPq9FKtOFntUvwXpzBBA",
-   "https://play-lh.googleusercontent.com/SfHjCGPYkQM0IvYRiEtiZlXAoTh00Xu6s-epkmt6vT2Py0f6j1zGlHfHkgVORhfpVgcpdeUOilBrVTYTXo-h5Q",
-   "https://play-lh.googleusercontent.com/GDQ2RitA77FhYi-Rw_QIUdckYSF8RF7HVKNJUf8ueZoUTa8BVEGOA8ETznMdapzI01ox-oDjCmJATBW2-hRn",
-   "https://play-lh.googleusercontent.com/reHVtxt6Q6v0X4wcVkCI_nauP1FA0SAnLaF9EyZ2VuSVAjkJSrqGOfgWvdS1SXHjGD_7BGD5S-xKzXrVKRcWyA",
-   "https://play-lh.googleusercontent.com/AMTUt1oYkzBXUu7wQwI1-QyFE8cSJWPCfl3jz8gFNDlwo0L23VUuLGA0AUZNF2F4eBKPq9FKtOFntUvwXpzBBA",
-   "https://play-lh.googleusercontent.com/SfHjCGPYkQM0IvYRiEtiZlXAoTh00Xu6s-epkmt6vT2Py0f6j1zGlHfHkgVORhfpVgcpdeUOilBrVTYTXo-h5Q",
-   "https://play-lh.googleusercontent.com/reHVtxt6Q6v0X4wcVkCI_nauP1FA0SAnLaF9EyZ2VuSVAjkJSrqGOfgWvdS1SXHjGD_7BGD5S-xKzXrVKRcWyA",
-   "https://play-lh.googleusercontent.com/GDQ2RitA77FhYi-Rw_QIUdckYSF8RF7HVKNJUf8ueZoUTa8BVEGOA8ETznMdapzI01ox-oDjCmJATBW2-hRn"
-  ],
-  "url": "https://play.google.com/store/apps/details?id=com.neza.game.solitaire",
-  "playPass": false,
-  "similarity": 0.95,
-  "confidence": "strong",
-  "flags": [],
-  "query": "Sage Solitaire",
+  "appId": null,
+  "confidence": "null",
+  "reason": "set to null in data/overrides.json",
+  "queries": [],
   "checked": "2026-10-03"
  },
  "Sago Mini School (Kids 2-5)": {
@@ -30859,7 +30850,7 @@
   "similarity": 0.691,
   "confidence": "verified",
   "flags": [],
-  "query": "Sago Mini School",
+  "query": "Sago Mini School (Kids 2-5)",
   "checked": "2026-10-03"
  },
  "Sagrada": {
@@ -31292,51 +31283,28 @@
   "checked": "2026-10-03"
  },
  "Sesame Street Mecha Builders": {
-  "appId": "com.sesameworkshop.ssam.play",
-  "matched": "Sesame Street Art Maker",
-  "developer": "Sesame Workshop",
-  "playGenre": "Art & Design",
-  "icon": "https://play-lh.googleusercontent.com/lV6CBBuF7LANWuE0ZAyP6h2mIQpZ9f3aWRvUFWTZCV4uhk6nsmO5Rl2QINZncfQ-n-_pfX_AtAVZA6a-wtny",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/Xu3-VwdvhoN5nK93ypsK2R0pyZYfDxmGArlheB52hXIov5xemjCXACebg3s7KwdqDDMUS0T-d-1nc7uNb5jSbEg",
-   "https://play-lh.googleusercontent.com/7ML-KpaudjEQzUQzTIlAeQFluISTViCOzfKa1aQb8dvlHsOGCts4yWDUUMvORvLp7cyBx582ZAWmXJawqKdO",
-   "https://play-lh.googleusercontent.com/eW0HQTYosOD7G3jkO8uT4DMkY310PtbOJ7t4JkI4StJ6YQ2UB2AdLwAWtWZLY5K8KY-oYj4HPE78yy53aNMOOP8",
-   "https://play-lh.googleusercontent.com/beV10iZv5lA8dTw4qt2MOVtmemGAkdc_AIJ0SAfigs67C1uJyXkSUe2GVxW-kcFwLTlQY3SVJD9h-OA8yDUvXw",
-   "https://play-lh.googleusercontent.com/D8XouxdST9-nme6Pu-XyJI5QEUpUmOfCjPITfiX76PltnuT_Bt74aiwAO3I4C58N38_5Kn3E8dGlQfJhDRSVPZ0",
-   "https://play-lh.googleusercontent.com/E15wUvV7Fdh5qBt3GuE4aM-2I9Ze7QtiHg9StZqQFQrNLHNAjXsRs5a2zDZ5CrFBrdvRAGl0sG45rDtk-erb",
-   "https://play-lh.googleusercontent.com/Xu3-VwdvhoN5nK93ypsK2R0pyZYfDxmGArlheB52hXIov5xemjCXACebg3s7KwdqDDMUS0T-d-1nc7uNb5jSbEg",
-   "https://play-lh.googleusercontent.com/7ML-KpaudjEQzUQzTIlAeQFluISTViCOzfKa1aQb8dvlHsOGCts4yWDUUMvORvLp7cyBx582ZAWmXJawqKdO"
+  "appId": null,
+  "confidence": "null",
+  "reason": "closest match lacks 'mecha, builders' and no Play Pass badge",
+  "queries": [
+   "Sesame Street Mecha Builders",
+   "Sesame Street Mecha Builders Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.sesameworkshop.ssam.play",
-  "playPass": true,
-  "similarity": 0.706,
-  "confidence": "verified",
-  "flags": [],
-  "query": "Sesame Street Mecha Builders",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "com.sesame.go",
+   "title": "Sesame Street",
+   "developer": "Sesame Workshop",
+   "playPass": false,
+   "sim": 0.85,
+   "flags": []
+  }
  },
  "Shadow Blade": {
-  "appId": "com.shadow.action.hunt.devil.knight.blade",
-  "matched": "Shadow Blade: Hero Darkness",
-  "developer": "MGIF",
-  "playGenre": "Action",
-  "icon": "https://play-lh.googleusercontent.com/pKYlXeEYYr0FveC1eCltjF594BFN3Wd5nsGkny2MoU--CHAk7_GqASrAUMuyWSn8QEpya9hNiqgbGpr2D-cABA",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/CbSoNGze5yGgEVKivJ8nL3Oo6iJy8HCfpS3awh0-eccMPOlFx5znhxTi5T9j3msAfVCrX6C6iEWsis0JIC84",
-   "https://play-lh.googleusercontent.com/FBNBt_UCF8dQFRVOa4rxdPMjXbZy8SJELyVkBeiqy2MC7uslTGE4Yi5tX3j9Df5IW1ZRGI_53_z-f9EZzBlJ2-s",
-   "https://play-lh.googleusercontent.com/DMgfd5t8CO-08oTZvbIxysDyHuUBvmYLR_w9MYmKzah33Ibx3jNh9GHXb1d_lJqKTjQ7Ut3jg2801btnmzuVu3k",
-   "https://play-lh.googleusercontent.com/NgPn8tIS6BgI5ReXPezPKZSQzyIojhsjm9_y9Rwn6-jk3GDIAP9m6WUMgaiubIjMhIuQAaFKnamIvtE78PF3",
-   "https://play-lh.googleusercontent.com/CbSoNGze5yGgEVKivJ8nL3Oo6iJy8HCfpS3awh0-eccMPOlFx5znhxTi5T9j3msAfVCrX6C6iEWsis0JIC84",
-   "https://play-lh.googleusercontent.com/FBNBt_UCF8dQFRVOa4rxdPMjXbZy8SJELyVkBeiqy2MC7uslTGE4Yi5tX3j9Df5IW1ZRGI_53_z-f9EZzBlJ2-s",
-   "https://play-lh.googleusercontent.com/DMgfd5t8CO-08oTZvbIxysDyHuUBvmYLR_w9MYmKzah33Ibx3jNh9GHXb1d_lJqKTjQ7Ut3jg2801btnmzuVu3k",
-   "https://play-lh.googleusercontent.com/NgPn8tIS6BgI5ReXPezPKZSQzyIojhsjm9_y9Rwn6-jk3GDIAP9m6WUMgaiubIjMhIuQAaFKnamIvtE78PF3"
-  ],
-  "url": "https://play.google.com/store/apps/details?id=com.shadow.action.hunt.devil.knight.blade",
-  "playPass": false,
-  "similarity": 0.95,
-  "confidence": "strong",
-  "flags": [],
-  "query": "Shadow Blade",
+  "appId": null,
+  "confidence": "null",
+  "reason": "set to null in data/overrides.json",
+  "queries": [],
   "checked": "2026-10-03"
  },
  "Shadow Fight 2 Special Edition": {
@@ -31460,23 +31428,28 @@
   "checked": "2026-10-03"
  },
  "Shapes: Abstract Graphic Games": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "title similarity too low (0.56) and no Play Pass badge",
-  "queries": [
-   "Shapes: Abstract Graphic Games",
-   "Shapes",
-   "Shapes: Abstract Graphic Games Play Pass"
+  "appId": "com.infinitygames.shapes",
+  "matched": "Shapes: Logic & Brain Training",
+  "developer": "Infinity Games, Lda",
+  "playGenre": "Puzzle",
+  "icon": "https://play-lh.googleusercontent.com/8daa8htj6f120CkkftB6CwD83c_nEJNiZfex60LV2l31x-HWwKrjS-k35KMU7U55MmbXEM54CvGd51af7J2aQg",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/-vR3WlF2BuV-G3l0rF0fQPnFg-SFMdBwW_ZWRHbvj8jTAkope0eB22a3RTa8ot8_QF5-m9GTELU4K-arE9q7fA",
+   "https://play-lh.googleusercontent.com/1vtwXEuFzwuPjTKO5vupA0ZT_6TidFP1rhrEuuOZFCLUUdzB1XoJ46Zxj41Ii9X3BFi6x0EXq6FBVWdSHA65FAM",
+   "https://play-lh.googleusercontent.com/PzmcPmQUY3qMuDi-rtozbe3id7MC3hlRQex9_cf96i-hqRdhe04On1yWmlJdZtD-QNEd2wJZTfErR7hnNeKampE",
+   "https://play-lh.googleusercontent.com/ZYG4KF9URDcAmNQAKUOG2Ti6-Lukfio0nhiaEUXh7GSdLjbwaJk0XHQze0_Ncf64NX6Hm3Rxcx7dE07M8-xAKQ",
+   "https://play-lh.googleusercontent.com/RjA6KIil_0_QqkSaTj4_rfGoXLk4P0x71wnrztcCvU0HjaXWlSJUBOY5qDZIvBqOD0nkC4QdBJbU8l5MBzBQVw",
+   "https://play-lh.googleusercontent.com/UWN4XbMWH_qG8tGr_qSAxemz-bav-yLpuL6uZ1_00hOfQfGKKgNlrksaEDdASBctiXIYE13K48S1i_e2LkADmEI",
+   "https://play-lh.googleusercontent.com/XFjAg4Qq4HAZthegH0dqCSDAnH31p0l9pgdCoZDbUH1GPMSMtvD5Lhq_-YQH8uwJI8AH3eJm8HHrYcl9QdtA",
+   "https://play-lh.googleusercontent.com/CGetJF4h2kpGWQ3nAmTcmvVhhytt5mkfk5g2DAUL4DAjAuig1ZeMRdTVsMFee3HTc9SNw6megxXgGIaqJKM79A"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.greysprings.shapesandcolors",
-   "title": "Shapes & Colors learning games",
-   "developer": "Greysprings",
-   "playPass": false,
-   "sim": 0.557,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.infinitygames.shapes",
+  "playPass": true,
+  "similarity": 0.433,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Shapez – Factory Game": {
   "appId": "com.playdigious.shapez",
@@ -33025,7 +32998,7 @@
  "Sonic The Hedgehog 2 Classic": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.67) and no Play Pass badge",
+  "reason": "closest match lacks 'sonic' and no Play Pass badge",
   "queries": [
    "Sonic The Hedgehog 2 Classic",
    "Sonic The Hedgehog 2 Classic Play Pass"
@@ -33580,7 +33553,7 @@
  "Sphaze Sci-fi Puzzle game": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.67) and no Play Pass badge",
+  "reason": "closest match lacks 'sphaze, sci, fi' and no Play Pass badge",
   "queries": [
    "Sphaze Sci-fi Puzzle game",
    "Sphaze Sci-fi Puzzle game Play Pass"
@@ -33878,25 +33851,28 @@
   "checked": "2026-10-03"
  },
  "SSC 22 – Super Soccer Champs": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "closest match flagged: different number",
-  "queries": [
-   "SSC 22 – Super Soccer Champs",
-   "SSC 22",
-   "SSC 22 – Super Soccer Champs Play Pass"
+  "appId": "com.jakyl.supersoccerchamps",
+  "matched": "Super Soccer Champs (SSC) 22",
+  "developer": "Jakyl",
+  "playGenre": "Sports",
+  "icon": "https://play-lh.googleusercontent.com/Urz_xwe5JvoiOlJ58av_Ke5vM3Cw-g4hbDXEP-A4eRio0dsxx7cDxJZUnNaAYP8GYaUfUJap_wVBPWaIt-ix0Q",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/QsPvPOCgMcd-fMuRs9e4RZPOha7gfR3zlB1DSnm_SOkeeIN8pSlJhrRSUBklFgK__AWIXxCnwKmKY4wK9OXzU8o",
+   "https://play-lh.googleusercontent.com/BkekkRO2ZfC43G4AmA8iFy2-RETaORO7nEp9j0sk_ZpKO2cDD7p5FcCtRS6vCGHf2vz5wXRfGCe6NSOXq9vHlA",
+   "https://play-lh.googleusercontent.com/5pE7TwYmuOG8qDAaxt-JnRIlmlkDAJdNW9z06AH6G9t97ZUowQI8mjyKjO-BvyP1c4XOdtR0y3LGHDKWrGzcJQ",
+   "https://play-lh.googleusercontent.com/Hy8DgpNgFwaGnTDFT33uP9TkkrxQnE243ZnXxR6Tk7CLuF_cQx4WZ4ewI3tUwT86wnZjqZf8ucXMfZ_qxpxepQ",
+   "https://play-lh.googleusercontent.com/FOIEefG-yAG_WqfncxgJVg8yKdiVAnTxBj3PQfxOaQldFfGddmgtkjBWlnjTiuiyCbH5l5RTE6bXz2rFx6z6",
+   "https://play-lh.googleusercontent.com/ZiA1H3hF4t9pY6Wcl9pifk294TG1jm9Mcp-iAVVvjvGmLu36_JLY4Y2-xey_cjtazE4OWbXdRPDFpKuEUdqJKNo",
+   "https://play-lh.googleusercontent.com/onLSD1p75iYrEGLL38Gn3HX55H0IBAf5XlqXaYHrDzpkrFA8MAVph1oupJiEMOi-ESLU8PduxdxtCaV3_8ww",
+   "https://play-lh.googleusercontent.com/i_3HGcwrOvYMpLT6FGQx5d-rtnPaaWWkr5LbYGnyXMle0sJjAMrD62kb7moUjPczKNzHVvNWhhXUoRy7KiSS9Ng"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.jakyl.supersoccerchamps",
-   "title": "Super Soccer Champs (SSC) 22",
-   "developer": "Jakyl",
-   "playPass": true,
-   "sim": 1.0,
-   "flags": [
-    "different number"
-   ]
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.jakyl.supersoccerchamps",
+  "playPass": true,
+  "similarity": 1.0,
+  "confidence": "verified",
+  "flags": [],
+  "query": "SSC 22 – Super Soccer Champs",
+  "checked": "2026-10-03"
  },
  "Stacky Bird: Fun Offline Game": {
   "appId": "com.kooapps.stackybirdandroid",
@@ -33949,7 +33925,7 @@
  "Star Viking Forever": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.65) and no Play Pass badge",
+  "reason": "closest match lacks 'star, forever' and no Play Pass badge",
   "queries": [
    "Star Viking Forever",
    "Star Viking Forever Play Pass"
@@ -34601,7 +34577,7 @@
  "Sudplu": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.67) and no Play Pass badge",
+  "reason": "closest match lacks 'sudplu' and no Play Pass badge",
   "queries": [
    "Sudplu",
    "Sudplu Play Pass"
@@ -35185,28 +35161,23 @@
   "checked": "2026-10-03"
  },
  "Surivval RPG 1: Island Escape": {
-  "appId": "com.bewgames.survivaladventure",
-  "matched": "Survival RPG 1: Lost Treasure",
-  "developer": "Bew Games inc.",
-  "playGenre": "Role Playing",
-  "icon": "https://play-lh.googleusercontent.com/Zk7BPm-eXXcQABMWo7LCOuDWj-A06jUfKKc_vUxEU5R3gsRBKSqdT74NyOioclpOR2b4QJbL6T0LISUuV1wLGw",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/aB9Q-j1upZ8FyHPqLtzW2KyPIgITOm7LvNU5YfJcBAdq4K93LexBGuESK7pRQ1YR_x798fcN__hDUiCGJSGIEA",
-   "https://play-lh.googleusercontent.com/rbKqh1fpZHY4fioCX-GNrotwuU0-DbB_i8b1bxSZeyp30kIfbSGNANhOHql604AOW11yNRjTLcwiaTbZM32skA",
-   "https://play-lh.googleusercontent.com/_aBO24ZJJc0xZQ4A9AJyyv1SzmqlGR_rMp1PoogH_myG6r4iaCUkhOrnxWq8NIEnh5dmTPMSi9fKKu4kk_F6sw",
-   "https://play-lh.googleusercontent.com/H4plWKtv0lvPzNo4M596aL3Lqgh3vWBYxS6fAErLB94mNQvM19C2MEbGsB7sUtLszouKroP12XuCDjdnzcHSXQ",
-   "https://play-lh.googleusercontent.com/9lSNjYyioyQuKtpV8ayByjvA-R2wDpL1g0yapA05w9UHr1al0PfkGABrS3qhPEI-GNEBW49dpWUuk7Z-b2UZXg",
-   "https://play-lh.googleusercontent.com/3R0ljtinM6IzvvR_2KmnkwMd1iwmfaJvXZdqwPaFy5Ubck_jLYcW2h_3np6hSiX82FnJ2n5kf20vMludLFJUTJM",
-   "https://play-lh.googleusercontent.com/PQkuLflmQl9-fdoGSrPdXpXgitqoNVek_tl1-qsgSXz_TCgwiHm5l6KMTBY-AgG0lSeemsvWnZLfeHMS1W4Nhw",
-   "https://play-lh.googleusercontent.com/xyjB5OlJSlcvHudmLmOJn-5LWVzxF15_SEnXsukyLyR-oKvjT3sI8USSsWqsOCLYZTjqWt4tctDwB0_dkGxv"
+  "appId": null,
+  "confidence": "null",
+  "reason": "closest match lacks 'island'",
+  "queries": [
+   "Surivval RPG 1: Island Escape",
+   "Surivval RPG 1",
+   "Surivval RPG 1: Island Escape Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.bewgames.survivaladventure",
-  "playPass": true,
-  "similarity": 0.607,
-  "confidence": "verified",
-  "flags": [],
-  "query": "Surivval RPG 1: Island Escape",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "com.bewgames.survivaladventure",
+   "title": "Survival RPG 1: Lost Treasure",
+   "developer": "Bew Games inc.",
+   "playPass": true,
+   "sim": 0.607,
+   "flags": []
+  }
  },
  "Surivval RPG 3: Lost in time 2D": {
   "appId": "com.bewgames.lostintime",
