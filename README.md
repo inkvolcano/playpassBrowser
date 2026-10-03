@@ -53,19 +53,30 @@ Run `python3 fill_screenshots.py --help` for the rest.
 ## How games are matched
 
 For each title the script runs a Play Store search and scores every hit on
-title similarity, with penalties for Lite/Free/Demo editions, Netflix and Crunchyroll editions,
-companion apps (guides, save editors, trackers), different sequel numbers, a
-developer that doesn't match a "... by Developer" title, and non-game
-categories. The Play Store shows a Play Pass badge on included apps; the script
-reads it from the top search card or the app's details page.
+title similarity, with penalties for Lite/Free/Demo editions, Netflix and
+Crunchyroll editions, companion apps (guides, save editors, trackers), different
+sequel numbers, a developer that doesn't match a "... by Developer" title, and
+non-game categories. The Play Store shows a Play Pass badge on included apps;
+the script reads it from the top search card or the app's details page.
 
-- **verified**: the app has the Play Pass badge and the title matches.
+- **verified**: the app has the Play Pass badge and the title matches. A badged
+  app that lacks a distinctive word of the list title must still be a close
+  match, so "2 Player Games – Sports" doesn't take "2 Player Games - Pastimes".
 - **strong**: no badge (often a game that has left Play Pass), but the title is
-  a near-exact match with every distinctive word and no red flags.
+  a near-exact match containing every distinctive word, no other developer has
+  an app with the same name, titles under 12 characters match exactly, and the
+  app has at least 100 installs (lower usually means a copycat of a game that
+  has been taken down).
 - Anything else is retried with tweaked queries (subtitle dropped, developer
   added, "Play Pass" added). Generic titles such as "Word Search" or "Baby Games
   for 2-5 Year Olds" must be verified. Whatever is still doubtful is stored
   with `appId: null`, so the page shows a cover instead of the wrong game.
+- **manual**: set in `data/overrides.json`, mostly renamed apps (found by
+  package name) and YTECHB typos, plus a few titles pinned to `null`.
+
+YTECHB sometimes lists one game under two names (typos, old and new names,
+"Premium RPG X" next to "RPG X Premium"). Both entries then resolve to the same
+app and `build_index.py` shows it once.
 
 To fix a match by hand, add it to `data/overrides.json` and rerun
 `fill_screenshots.py` (overrides are applied whenever they change):
