@@ -59550,7 +59550,18 @@
   "flags": [],
   "query": "RPG Fairy Elements Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.54,
+  "ratings": 681,
+  "installs": 15920,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Anime"
+  ]
  },
  "RPG Fern gate Premium": {
   "appId": "kemco.execreate.fernzgatepremium",
@@ -59588,7 +59599,16 @@
   "flags": [],
   "query": "RPG Fern gate Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.43,
+  "ratings": 1437,
+  "installs": 28377,
+  "tags": [
+   "Role Playing",
+   "Action Role-Playing",
+   "Stylized",
+   "Anime"
+  ]
  },
  "RPG gate fo Windoria Premium": {
   "appId": "kemco.hitpoint.windheropremium",
@@ -59629,7 +59649,20 @@
   "flags": [],
   "query": null,
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.61,
+  "ratings": 426,
+  "installs": 12743,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Immersive",
+   "Fantasy",
+   "Medieval fantasy"
+  ]
  },
  "RPG GloriousSavior Premium": {
   "appId": "kemco.execreate.glorioussaviorpremium",
@@ -59667,7 +59700,15 @@
   "flags": [],
   "query": "RPG GloriousSavior Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.53,
+  "ratings": 656,
+  "installs": 11007,
+  "tags": [
+   "Role Playing",
+   "Stylized",
+   "Anime"
+  ]
  },
  "RPG Grinsia": {
   "appId": "kemco.magitec.grinsia",
@@ -59705,7 +59746,20 @@
   "flags": [],
   "query": "RPG Grinsia",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.82,
+  "ratings": 407,
+  "installs": 22779,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Immersive",
+   "Offline"
+  ]
  },
  "RPG Infinite Links Premium": {
   "appId": "kemco.execreate.infinitelinkspremium",
@@ -59746,7 +59800,17 @@
   "flags": [],
   "query": "RPG Infinite Links Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.58,
+  "ratings": 567,
+  "installs": 25301,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Casual",
+   "Stylized",
+   "Pixelated"
+  ]
  },
  "RPG Isekai Rondo Premium": {
   "appId": "kemco.execreate.isekaipremium",
@@ -59787,7 +59851,22 @@
   "flags": [],
   "query": "RPG Isekai Rondo Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.51,
+  "ratings": 2466,
+  "installs": 82448,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Fantasy",
+   "Eastern fantasy",
+   "Isekai",
+   "Immersive",
+   "Offline"
+  ]
  },
  "RPG Legend of the Tetrarchs": {
   "appId": "kemco.hitpoint.legerrior",
@@ -59828,7 +59907,19 @@
   "flags": [],
   "query": "RPG Legend of the Tetrarchs",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.49,
+  "ratings": 683,
+  "installs": 9408,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Immersive",
+   "Offline"
+  ]
  },
  "RPG Liege Dragon": {
   "appId": "kemco.execreate.lostdragon",
@@ -59869,7 +59960,16 @@
   "flags": [],
   "query": "RPG Liege Dragon",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.29,
+  "ratings": 360,
+  "installs": 5857,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Stylized",
+   "Pixelated"
+  ]
  },
  "RPG Maiden Tower": {
   "appId": "kemco.execreate.innocentrevenger",
@@ -59910,7 +60010,22 @@
   "flags": [],
   "query": "RPG Maiden Tower",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.55,
+  "ratings": 973,
+  "installs": 17159,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Immersive",
+   "Fantasy",
+   "Eastern fantasy",
+   "Offline"
+  ]
  },
  "RPG Monster Viator": {
   "appId": "kemco.hitpoint.viator",
@@ -59951,7 +60066,18 @@
   "flags": [],
   "query": "RPG Monster Viator",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.45,
+  "ratings": 198,
+  "installs": 11572,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Stylized",
+   "Pixelated",
+   "Immersive",
+   "Fantasy"
+  ]
  },
  "RPG Revenant Dogma Premium": {
   "appId": "kemco.execreate.revenantdogmapremium",
@@ -59989,7 +60115,16 @@
   "flags": [],
   "query": "RPG Revenant Dogma Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.64,
+  "ratings": 864,
+  "installs": 15174,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Stylized",
+   "Anime"
+  ]
  },
  "RPG Ruinverse": {
   "appId": "kemco.execreate.ruinverse",
@@ -60030,7 +60165,19 @@
   "flags": [],
   "query": "RPG Ruinverse",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.27,
+  "ratings": 389,
+  "installs": 9759,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Casual",
+   "Stylized",
+   "Pixelated",
+   "Immersive",
+   "Fantasy"
+  ]
  },
  "RPG Sword of Elpisia Premium": {
   "appId": "kemco.execreate.makenpremium",
@@ -60071,7 +60218,17 @@
   "flags": [],
   "query": null,
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.5,
+  "ratings": 976,
+  "installs": 34704,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Casual",
+   "Stylized",
+   "Pixelated"
+  ]
  },
  "RPG Symphony of Eternity": {
   "appId": "kemco.wws.soe",
@@ -60103,7 +60260,22 @@
   "flags": [],
   "query": "RPG Symphony of Eternity",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.83,
+  "ratings": 2300,
+  "installs": 115581,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Immersive",
+   "Fantasy",
+   "Medieval fantasy",
+   "Offline"
+  ]
  },
  "Rummikub": {
   "appId": "com.kinkajoo.RummikubHD",
@@ -60135,7 +60307,16 @@
   "flags": [],
   "query": "Rummikub",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.32,
+  "ratings": 2520,
+  "installs": 111645,
+  "tags": [
+   "Board",
+   "Abstract strategy",
+   "Casual",
+   "Realistic"
+  ]
  },
  "Runic Curse": {
   "appId": "com.AlexeySuslin.RunicCurse",
@@ -60176,7 +60357,19 @@
   "flags": [],
   "query": "Runic Curse",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.17,
+  "ratings": 1669,
+  "installs": 37831,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Hack & slash",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Running Fable": {
   "appId": "com.SeashellStudio.RunningFable",
@@ -60209,7 +60402,13 @@
   "flags": [],
   "query": "Running Fable",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 2.75,
+  "ratings": 82,
+  "installs": 38722,
+  "tags": [
+   "Racing"
+  ]
  },
  "Ruro train Simulator 2 game": {
   "appId": "com.HighbrowInteractive.EuroTrainSim2",
@@ -60234,7 +60433,19 @@
   "flags": [],
   "query": "Ruro train Simulator 2 game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.26,
+  "ratings": 44672,
+  "installs": 7394663,
+  "tags": [
+   "Simulation",
+   "Vehicle",
+   "Train",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Rush Rally 2": {
   "appId": "brownmonster.app.game.rushrally2",
@@ -60275,7 +60486,22 @@
   "flags": [],
   "query": "Rush Rally 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.96,
+  "ratings": 7322,
+  "installs": 551312,
+  "tags": [
+   "Racing",
+   "Car race",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Stylized",
+   "Vehicles",
+   "Car",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Rush Rally 3": {
   "appId": "brownmonster.app.game.rushrally3",
@@ -60316,7 +60542,22 @@
   "flags": [],
   "query": "Rush Rally 3",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.71,
+  "ratings": 30400,
+  "installs": 851374,
+  "tags": [
+   "Racing",
+   "Car race",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Realistic",
+   "Vehicles",
+   "Race car",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Rush Rally Origins": {
   "appId": "brownmonster.app.game.rushrallyremastered",
@@ -60357,7 +60598,19 @@
   "flags": [],
   "query": "Rush Rally Origins",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.31,
+  "ratings": 5061,
+  "installs": 337308,
+  "tags": [
+   "Racing",
+   "Car race",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Stylized",
+   "Competitive"
+  ]
  },
  "Rusted Warfare – RTS Strategy": {
   "appId": "com.corrodinggames.rts",
@@ -60397,7 +60650,21 @@
   "flags": [],
   "query": "Rusted Warfare – RTS Strategy",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.62,
+  "ratings": 16106,
+  "installs": 493199,
+  "tags": [
+   "Strategy",
+   "Wargame",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Stylized",
+   "Immersive",
+   "Offline"
+  ]
  },
  "Rymdkapsel": {
   "appId": "com.grapefrukt.games.rymdkapsel1",
@@ -60432,7 +60699,17 @@
   "flags": [],
   "query": "Rymdkapsel",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.81,
+  "ratings": 4921,
+  "installs": 100007,
+  "tags": [
+   "Strategy",
+   "Build & battle",
+   "Casual",
+   "Single player",
+   "Abstract"
+  ]
  },
  "Sage Solitaire": {
   "appId": null,
@@ -60480,7 +60757,19 @@
   "flags": [],
   "query": "Sago Mini School (Kids 2-5)",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.52,
+  "ratings": 8217,
+  "installs": 5138017,
+  "tags": [
+   "Educational",
+   "Language",
+   "Abc",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Cute"
+  ]
  },
  "Sagrada": {
   "appId": "com.direwolfdigital.sagrada",
@@ -60521,7 +60810,19 @@
   "flags": [],
   "query": "Sagrada",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.66,
+  "ratings": 2553,
+  "installs": 119099,
+  "tags": [
+   "Board",
+   "Dice",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Sally’s Law": {
   "appId": "com.Nanali.SallysLaw",
@@ -60556,7 +60857,18 @@
   "flags": [],
   "query": "Sally’s Law",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.12,
+  "ratings": 5316,
+  "installs": 260062,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Arcade",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Samorost 2": {
   "appId": "net.amanita_design.Samorost2",
@@ -60594,7 +60906,17 @@
   "flags": [],
   "query": "Samorost 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.19,
+  "ratings": 1662,
+  "installs": 122586,
+  "tags": [
+   "Adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Samorost 3": {
   "appId": "amanita_design.samorost3.GP",
@@ -60628,7 +60950,19 @@
   "flags": [],
   "query": "Samorost 3",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.07,
+  "ratings": 18298,
+  "installs": 711745,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Puzzles",
+   "Mystery"
+  ]
  },
  "Samurai II: Vengeance": {
   "appId": "com.madfingergames.SamuraiIIAll",
@@ -60668,7 +61002,19 @@
   "flags": [],
   "query": "Samurai II: Vengeance",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.32,
+  "ratings": 17311,
+  "installs": 478672,
+  "tags": [
+   "Role Playing",
+   "Action Role-Playing",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Samurai",
+   "Offline"
+  ]
  },
  "Save the Dog – Draw to Save": {
   "appId": "com.gameease.savethedoggy",
@@ -60703,7 +61049,18 @@
   "flags": [],
   "query": "Save the Dog – Draw to Save",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.17,
+  "ratings": 24067,
+  "installs": 4845078,
+  "tags": [
+   "Puzzle",
+   "Brain teaser",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Handicraft"
+  ]
  },
  "Save The Puppies Premium": {
   "appId": "com.hg.savethepuppies",
@@ -60735,7 +61092,18 @@
   "flags": [],
   "query": "Save The Puppies Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.38,
+  "ratings": 501,
+  "installs": 22241,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Stylized",
+   "Cartoon",
+   "Animals"
+  ]
  },
  "Scalak: Relaxing Puzzle game": {
   "appId": "com.hamsteroncoke.scalak",
@@ -60776,7 +61144,17 @@
   "flags": [],
   "query": "Scalak: Relaxing Puzzle game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.76,
+  "ratings": 17817,
+  "installs": 313698,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Single player",
+   "Abstract"
+  ]
  },
  "Scoring Champion": {
   "appId": "com.scoring.champion",
@@ -60817,7 +61195,17 @@
   "flags": [],
   "query": "Scoring Champion",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.67,
+  "ratings": 9689,
+  "installs": 5084777,
+  "tags": [
+   "Sports",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "ScourgeBringer": {
   "appId": "com.pid.scourgebringer",
@@ -60852,7 +61240,17 @@
   "flags": [],
   "query": "ScourgeBringer",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.82,
+  "ratings": 11663,
+  "installs": 216853,
+  "tags": [
+   "Role Playing",
+   "Roguelike",
+   "Casual",
+   "Stylized",
+   "Pixelated"
+  ]
  },
  "Scrap Friends: Robot Walk": {
   "appId": "com.zxima.scrapfriends",
@@ -60893,7 +61291,13 @@
   "flags": [],
   "query": "Scrap Friends: Robot Walk",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.69,
+  "ratings": 615,
+  "installs": 21644,
+  "tags": [
+   "Adventure"
+  ]
  },
  "Scritchy Scratchy": {
   "appId": "com.fundaygames.scritchyscratchy",
@@ -60931,7 +61335,18 @@
   "flags": [],
   "query": "Scritchy Scratchy",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.67,
+  "ratings": 6422,
+  "installs": 253329,
+  "tags": [
+   "Simulation",
+   "Idle",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Sea battle 2: Warship Online": {
   "appId": "com.byril.seabattle2",
@@ -60972,7 +61387,24 @@
   "flags": [],
   "query": "Sea battle 2: Warship Online",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.39,
+  "ratings": 1609315,
+  "installs": 54807852,
+  "tags": [
+   "Board",
+   "Abstract strategy",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Stylized",
+   "Handicraft",
+   "Vehicles",
+   "Warship",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Senior Word Game": {
   "appId": "com.epicpandagames.word.connect.search",
@@ -61013,7 +61445,18 @@
   "flags": [],
   "query": "Senior Word Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.75,
+  "ratings": 6984,
+  "installs": 616315,
+  "tags": [
+   "Word",
+   "Search",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Sentinels of the Multiverse": {
   "appId": "com.handelabra.Sentinels",
@@ -61048,7 +61491,18 @@
   "flags": [],
   "query": "Sentinels of the Multiverse",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.75,
+  "ratings": 1669,
+  "installs": 90931,
+  "tags": [
+   "Card",
+   "Card battler",
+   "Casual",
+   "Stylized",
+   "Fantasy",
+   "Super heroes"
+  ]
  },
  "Serial Cleaner": {
   "appId": "com.pid.serialcleaner",
@@ -61083,7 +61537,13 @@
   "flags": [],
   "query": "Serial Cleaner",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.09,
+  "ratings": 812,
+  "installs": 55964,
+  "tags": [
+   "Action"
+  ]
  },
  "Sesame Street Alphabet Kitchen": {
   "appId": "com.sesameworkshop.alphabetkitchen.play",
@@ -61105,7 +61565,21 @@
   "flags": [],
   "query": "Sesame Street Alphabet Kitchen",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.85,
+  "ratings": 15782,
+  "installs": 26890888,
+  "tags": [
+   "Educational",
+   "Language",
+   "Abc",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Cute",
+   "Offline"
+  ]
  },
  "Sesame Street Games Club": {
   "appId": "com.storytoys.sesame.street.mecha.builders.googleplay",
@@ -61137,7 +61611,19 @@
   "flags": [],
   "query": "Sesame Street Games Club",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.24,
+  "ratings": 2059,
+  "installs": 909890,
+  "tags": [
+   "Educational",
+   "Drawing",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Cute",
+   "Offline"
+  ]
  },
  "Sesame Street Mecha Builders": {
   "appId": "com.storytoys.sesame.street.mecha.builders.googleplay",
@@ -61169,7 +61655,19 @@
   "flags": [],
   "query": null,
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.24,
+  "ratings": 2059,
+  "installs": 909890,
+  "tags": [
+   "Educational",
+   "Drawing",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Cute",
+   "Offline"
+  ]
  },
  "Shadow Blade": {
   "appId": null,
@@ -61211,7 +61709,19 @@
   "flags": [],
   "query": "Shadow Fight 2 Special Edition",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.56,
+  "ratings": 105720,
+  "installs": 2221174,
+  "tags": [
+   "Action",
+   "Fighting",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Battling",
+   "Ninja"
+  ]
  },
  "Shadow of Naught Story Drama": {
   "appId": "studio.taawoos.shadowofnaught",
@@ -61244,7 +61754,16 @@
   "flags": [],
   "query": "Shadow of Naught Story Drama",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.04,
+  "ratings": 1453,
+  "installs": 65523,
+  "tags": [
+   "Adventure",
+   "Interactive story",
+   "Casual",
+   "Stylized"
+  ]
  },
  "Shadow Trick": {
   "appId": "com.neutronized.shadowtrick",
@@ -61279,7 +61798,13 @@
   "flags": [],
   "query": "Shadow Trick",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.89,
+  "ratings": 1015,
+  "installs": 191816,
+  "tags": [
+   "Action"
+  ]
  },
  "Shadowmatic": {
   "appId": "com.triadastudio.shadowmatic",
@@ -61320,7 +61845,18 @@
   "flags": [],
   "query": "Shadowmatic",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.54,
+  "ratings": 102274,
+  "installs": 3572268,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Single player",
+   "Realistic",
+   "Offline"
+  ]
  },
  "Shapes and Colors Games for Kids": {
   "appId": "com.iz.dino.kids.colors.shapes.toddler.games.preschool.kindergarten.learning",
@@ -61361,7 +61897,18 @@
   "flags": [],
   "query": "Shapes and Colors Games for Kids",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.94,
+  "ratings": 1808,
+  "installs": 1091117,
+  "tags": [
+   "Educational",
+   "Language",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Offline"
+  ]
  },
  "Shapes: Abstract Graphic Games": {
   "appId": "com.infinitygames.shapes",
@@ -61396,7 +61943,18 @@
   "flags": [],
   "query": null,
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.5,
+  "ratings": 93347,
+  "installs": 4251794,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Shapez – Factory Game": {
   "appId": "com.playdigious.shapez",
@@ -61437,7 +61995,13 @@
   "flags": [],
   "query": "Shapez – Factory Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.27,
+  "ratings": 7776,
+  "installs": 515614,
+  "tags": [
+   "Simulation"
+  ]
  },
  "Shards of Infinity": {
   "appId": "com.templegatesgames.ShardsAndroid",
@@ -61464,7 +62028,16 @@
   "flags": [],
   "query": "Shards of Infinity",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.31,
+  "ratings": 380,
+  "installs": 24619,
+  "tags": [
+   "Card",
+   "Card battler",
+   "Single player",
+   "Stylized"
+  ]
  },
  "Shatterbrain: Physics Puzzles": {
   "appId": "com.orbital.donttouchit",
@@ -61505,7 +62078,18 @@
   "flags": [],
   "query": "Shatterbrain: Physics Puzzles",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.36,
+  "ratings": 26504,
+  "installs": 4826434,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Shine – Journey Of Light": {
   "appId": "com.foxandsheep.loomies",
@@ -61540,7 +62124,17 @@
   "flags": [],
   "query": "Shine – Journey Of Light",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.06,
+  "ratings": 2933,
+  "installs": 415158,
+  "tags": [
+   "Adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Shiny Ski Resort": {
   "appId": "net.kairosoft.android.ski_en",
@@ -61581,7 +62175,20 @@
   "flags": [],
   "query": "Shiny Ski Resort",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.12,
+  "ratings": 911,
+  "installs": 139686,
+  "tags": [
+   "Simulation",
+   "Management",
+   "Tycoon",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Light-hearted"
+  ]
  },
  "Ship Ramp Jumping": {
   "appId": "com.ship.ramp.jumping",
@@ -61619,7 +62226,13 @@
   "flags": [],
   "query": "Ship Ramp Jumping",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.19,
+  "ratings": 17915,
+  "installs": 9706268,
+  "tags": [
+   "Simulation"
+  ]
  },
  "Shotgun Club: PvP Multiplayer": {
   "appId": "com.shooting.club",
@@ -61660,7 +62273,13 @@
   "flags": [],
   "query": "Shotgun Club: PvP Multiplayer",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.51,
+  "ratings": 3871,
+  "installs": 476150,
+  "tags": [
+   "Sports"
+  ]
  },
  "Shredder Chess": {
   "appId": "com.shredderchess.android",
@@ -61701,7 +62320,16 @@
   "flags": [],
   "query": "Shredder Chess",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.47,
+  "ratings": 3415,
+  "installs": 102247,
+  "tags": [
+   "Board",
+   "Abstract strategy",
+   "Chess",
+   "Casual"
+  ]
  },
  "Shuttle Shuffle: Aliens Panic": {
   "appId": "com.LozangeLab.ShuttleShuffle",
@@ -61736,7 +62364,18 @@
   "flags": [],
   "query": "Shuttle Shuffle: Aliens Panic",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.91,
+  "ratings": 143,
+  "installs": 6643,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Sigma Theory": {
   "appId": "com.pid.sigmatheory",
@@ -61777,7 +62416,18 @@
   "flags": [],
   "query": "Sigma Theory",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.97,
+  "ratings": 163,
+  "installs": 11848,
+  "tags": [
+   "Strategy",
+   "Wargame",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Immersive"
+  ]
  },
  "Silly Royale – Devil Amongst Us": {
   "appId": null,
@@ -61827,7 +62477,15 @@
   "flags": [],
   "query": "SILT",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.72,
+  "ratings": 23833,
+  "installs": 2297634,
+  "tags": [
+   "Adventure",
+   "Stylized",
+   "Dark"
+  ]
  },
  "Silver Screen Story": {
   "appId": "net.kairosoft.android.pictures",
@@ -61868,7 +62526,19 @@
   "flags": [],
   "query": "Silver Screen Story Play Pass",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.5,
+  "ratings": 3570,
+  "installs": 137777,
+  "tags": [
+   "Simulation",
+   "Management",
+   "Tycoon",
+   "Casual",
+   "Stylized",
+   "Pixelated",
+   "Light-hearted"
+  ]
  },
  "Simon the Sorcerer": {
   "appId": "com.mojotouch.simon",
@@ -61906,7 +62576,17 @@
   "flags": [],
   "query": "Simon the Sorcerer",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.12,
+  "ratings": 3441,
+  "installs": 67097,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Simon the Sorcerer – Mucusade": {
   "appId": "com.mojotouch.simon2",
@@ -61947,7 +62627,17 @@
   "flags": [],
   "query": "Simon the Sorcerer – Mucusade",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.03,
+  "ratings": 1325,
+  "installs": 20234,
+  "tags": [
+   "Adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "SimplePlanes": {
   "appId": "com.jundroo.SimplePlanes",
@@ -61982,7 +62672,18 @@
   "flags": [],
   "query": "SimplePlanes",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.14,
+  "ratings": 15290,
+  "installs": 605261,
+  "tags": [
+   "Simulation",
+   "Vehicle",
+   "Flight",
+   "Casual",
+   "Single player",
+   "Stylized"
+  ]
  },
  "Sink the Fleet – Sea War": {
   "appId": "com.tellmewow.senior.battleship",
@@ -62013,7 +62714,21 @@
   "flags": [],
   "query": "Sink the Fleet – Sea War",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.17,
+  "ratings": 19351,
+  "installs": 1330965,
+  "tags": [
+   "Board",
+   "Abstract strategy",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Stylized",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Skate Jam Pro Skateboarding": {
   "appId": "com.skateboard.skatejam",
@@ -62042,7 +62757,17 @@
   "flags": [],
   "query": "Skate Jam Pro Skateboarding",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.41,
+  "ratings": 10136,
+  "installs": 1782688,
+  "tags": [
+   "Racing",
+   "Stunt driving",
+   "Casual",
+   "Single player",
+   "Stylized"
+  ]
  },
  "Skateboard Party 2": {
   "appId": "com.ratrodstudio.skateparty2lite",
@@ -62083,7 +62808,18 @@
   "flags": [],
   "query": "Skateboard Party 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.57,
+  "ratings": 188472,
+  "installs": 13209851,
+  "tags": [
+   "Sports",
+   "Skateboarding",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Skateboard Party 3": {
   "appId": "com.ratrodstudio.skateparty3lite",
@@ -62122,7 +62858,18 @@
   "flags": [],
   "query": "Skateboard Party 3",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.78,
+  "ratings": 66266,
+  "installs": 11734108,
+  "tags": [
+   "Sports",
+   "Skateboarding",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Skel and Defense": {
   "appId": "com.buffstudio.skel.defense.dungeon.roguelike",
@@ -62163,7 +62910,15 @@
   "flags": [],
   "query": "Skel and Defense",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.4,
+  "ratings": 581,
+  "installs": 23745,
+  "tags": [
+   "Role Playing",
+   "Roguelike",
+   "Stylized"
+  ]
  },
  "Skul: The Hero Slayer": {
   "appId": "com.playdigious.skul",
@@ -62204,7 +62959,22 @@
   "flags": [],
   "query": "Skul: The Hero Slayer",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.79,
+  "ratings": 15366,
+  "installs": 231204,
+  "tags": [
+   "Role Playing",
+   "Roguelike",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Immersive",
+   "Fantasy",
+   "Dark fantasy",
+   "Offline"
+  ]
  },
  "Sky Aces 2": {
   "appId": "ru.gamedevteam.skyaces2",
@@ -62236,7 +63006,17 @@
   "flags": [],
   "query": "Sky Aces 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.49,
+  "ratings": 2122,
+  "installs": 71141,
+  "tags": [
+   "Action",
+   "Shooter",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Slash Quest!": {
   "appId": "com.biggreenpillow.slashquest",
@@ -62274,7 +63054,19 @@
   "flags": [],
   "query": "Slash Quest!",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.86,
+  "ratings": 1068,
+  "installs": 196806,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Hack & slash",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Slaughter 2: Prison Assault": {
   "appId": "com.venomizedArt.Slaughter2",
@@ -62309,7 +63101,23 @@
   "flags": [],
   "query": "Slaughter 2: Prison Assault",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.96,
+  "ratings": 4480,
+  "installs": 181662,
+  "tags": [
+   "Action",
+   "Shooter",
+   "Tactical shooter",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Weapons",
+   "Gun",
+   "Modern",
+   "Military",
+   "Special forces"
+  ]
  },
  "Slaughter 3: The Rebels": {
   "appId": "com.venomizedArt.SlaughterRebels",
@@ -62344,7 +63152,20 @@
   "flags": [],
   "query": "Slaughter 3: The Rebels",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.89,
+  "ratings": 5357,
+  "installs": 188599,
+  "tags": [
+   "Action",
+   "Shooter",
+   "Tactical shooter",
+   "Casual",
+   "Stylized",
+   "Weapons",
+   "Gun",
+   "Intense"
+  ]
  },
  "Slaughter: The Lost Outpost": {
   "appId": "com.VenomizedArt.Slaughter4",
@@ -62376,7 +63197,17 @@
   "flags": [],
   "query": "Slaughter: The Lost Outpost",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.75,
+  "ratings": 649,
+  "installs": 62238,
+  "tags": [
+   "Action",
+   "Shooter",
+   "Tactical shooter",
+   "Stylized",
+   "Intense"
+  ]
  },
  "Slay": {
   "appId": "com.windowsgames.slay",
@@ -62405,7 +63236,13 @@
   "flags": [],
   "query": "Slay",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.08,
+  "ratings": 2353,
+  "installs": 48936,
+  "tags": [
+   "Strategy"
+  ]
  },
  "Slay The Spire": {
   "appId": "com.humble.SlayTheSpire",
@@ -62443,7 +63280,18 @@
   "flags": [],
   "query": "Slay The Spire",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.34,
+  "ratings": 29998,
+  "installs": 1773857,
+  "tags": [
+   "Card",
+   "Card battler",
+   "Single player",
+   "Stylized",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Slayaway Camp 2: Puzzle Horror": {
   "appId": "com.bluewizard.slayawaycamp2",
@@ -62484,7 +63332,13 @@
   "flags": [],
   "query": "Slayaway Camp 2: Puzzle Horror",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.78,
+  "ratings": 110,
+  "installs": 10234,
+  "tags": [
+   "Puzzle"
+  ]
  },
  "Slayaway Camp: Horror Puzzle": {
   "appId": "com.bluewizard.slayawaycamp",
@@ -62517,7 +63371,20 @@
   "flags": [],
   "query": "Slayaway Camp: Horror Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.79,
+  "ratings": 16223,
+  "installs": 495458,
+  "tags": [
+   "Puzzle",
+   "Sliding",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Light-hearted",
+   "Offline"
+  ]
  },
  "Slender Last Sleep": {
   "appId": "com.Studio17.slender",
@@ -62546,7 +63413,16 @@
   "flags": [],
   "query": "Slender Last Sleep",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.66,
+  "ratings": 401,
+  "installs": 9814,
+  "tags": [
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Slender Threads": {
   "appId": "com.blyts.slenderthreads",
@@ -62587,7 +63463,16 @@
   "flags": [],
   "query": "Slender Threads",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.56,
+  "ratings": 1665,
+  "installs": 87990,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Stylized",
+   "Mystery"
+  ]
  },
  "Slime Labs 2": {
   "appId": "com.neutronized.slimelabs2",
@@ -62622,7 +63507,19 @@
   "flags": [],
   "query": "Slime Labs 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.08,
+  "ratings": 4906,
+  "installs": 5261724,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Sling Drift: Car Drifting Games": {
   "appId": "com.rubygames.slingdrift",
@@ -62663,7 +63560,18 @@
   "flags": [],
   "query": "Sling Drift: Car Drifting Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.88,
+  "ratings": 197616,
+  "installs": 81593416,
+  "tags": [
+   "Action",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Intense",
+   "Offline"
+  ]
  },
  "Sling Kong": {
   "appId": "com.protostar.sling",
@@ -62699,7 +63607,20 @@
   "flags": [],
   "query": "Sling Kong",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.76,
+  "ratings": 295592,
+  "installs": 12982245,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Intense",
+   "Offline"
+  ]
  },
  "Slingshot Stunt Driver & Sport": {
   "appId": "com.slingshot.car",
@@ -62740,7 +63661,18 @@
   "flags": [],
   "query": "Slingshot Stunt Driver & Sport",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.3,
+  "ratings": 152768,
+  "installs": 35144410,
+  "tags": [
+   "Puzzle",
+   "Physics",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Slingshot Train": {
   "appId": "com.slingshot.train",
@@ -62781,7 +63713,13 @@
   "flags": [],
   "query": "Slingshot Train",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.94,
+  "ratings": 3531,
+  "installs": 1790408,
+  "tags": [
+   "Casual"
+  ]
  },
  "Small living world Unlocked": {
   "appId": "smalllivingworld.com.Unlocked",
@@ -62806,7 +63744,17 @@
   "flags": [],
   "query": "Small living world Unlocked",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.38,
+  "ratings": 861,
+  "installs": 102350,
+  "tags": [
+   "Simulation",
+   "Sandbox",
+   "Casual",
+   "Stylized",
+   "Pixelated"
+  ]
  },
  "Smart Brain: Mind-Blowing Game": {
   "appId": "game.mind.teaser.smartbrain",
@@ -62847,7 +63795,18 @@
   "flags": [],
   "query": "Smart Brain: Mind-Blowing Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.45,
+  "ratings": 152455,
+  "installs": 7937930,
+  "tags": [
+   "Puzzle",
+   "Brain teaser",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Funny"
+  ]
  },
  "Smarter – Brain Training Games": {
   "appId": "net.rention.smarter",
@@ -62872,7 +63831,21 @@
   "flags": [],
   "query": "Smarter – Brain Training Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.44,
+  "ratings": 24270,
+  "installs": 4448168,
+  "tags": [
+   "Puzzle",
+   "Brain teaser",
+   "Brain training",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Smash Hit": {
   "appId": "com.mediocre.smashhit",
@@ -62905,7 +63878,21 @@
   "flags": [],
   "query": "Smash Hit",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.54,
+  "ratings": 4647603,
+  "installs": 208053040,
+  "tags": [
+   "Puzzle",
+   "Physics",
+   "Casual",
+   "Hypercasual",
+   "Single player",
+   "Abstract",
+   "Intense",
+   "Shoot",
+   "Offline"
+  ]
  },
  "Smashy Road: Arena": {
   "appId": "com.bearbit.smashyroadarena",
@@ -62937,7 +63924,24 @@
   "flags": [],
   "query": "Smashy Road: Arena",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.84,
+  "ratings": 61317,
+  "installs": 11761111,
+  "tags": [
+   "Action",
+   "Shooter",
+   "Vehicle combat",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Vehicles",
+   "Car",
+   "Offline"
+  ]
  },
  "Smashy Road: Wanted": {
   "appId": "com.rkgames.smashywanted",
@@ -62978,7 +63982,18 @@
   "flags": [],
   "query": "Smashy Road: Wanted",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.0,
+  "ratings": 579586,
+  "installs": 47072784,
+  "tags": [
+   "Action",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Snail Bob 1: Adventure Puzzle": {
   "appId": "com.hunterhamster.snailbob",
@@ -63019,7 +64034,19 @@
   "flags": [],
   "query": "Snail Bob 1: Adventure Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.77,
+  "ratings": 50462,
+  "installs": 6817183,
+  "tags": [
+   "Action",
+   "Action-adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Offline"
+  ]
  },
  "Snail Bob 2": {
   "appId": "com.hunterhamster.snailbob2.gp",
@@ -63054,7 +64081,19 @@
   "flags": [],
   "query": "Snail Bob 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.59,
+  "ratings": 195645,
+  "installs": 25385926,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Offline"
+  ]
  },
  "Snail Bob 3": {
   "appId": "com.hunterhamster.snailbob3",
@@ -63093,7 +64132,19 @@
   "flags": [],
   "query": "Snail Bob 3",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.51,
+  "ratings": 30186,
+  "installs": 10563026,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Offline"
+  ]
  },
  "Snake.io – Fun Snake .io Games": {
   "appId": "com.amelosinteractive.snake",
@@ -63131,7 +64182,23 @@
   "flags": [],
   "query": "Snake.io – Fun Snake .io Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.14,
+  "ratings": 1270506,
+  "installs": 421865796,
+  "tags": [
+   "Action",
+   "IO game",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Stylized",
+   "Animals",
+   "Snake",
+   "Battling",
+   "Offline"
+  ]
  },
  "Snakes and Ladders Board Games": {
   "appId": "com.idz.snakes.and.ladders.dice.board.games",
@@ -63172,7 +64239,21 @@
   "flags": [],
   "query": "Snakes and Ladders Board Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.46,
+  "ratings": 176508,
+  "installs": 22502474,
+  "tags": [
+   "Board",
+   "Dice",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Stylized",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Sneaker Art! – Coloring Games": {
   "appId": "com.majorfrank.sneakerart",
@@ -63210,7 +64291,17 @@
   "flags": [],
   "query": "Sneaker Art! – Coloring Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.14,
+  "ratings": 101390,
+  "installs": 33311465,
+  "tags": [
+   "Simulation",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Snowboard Party: World Tour": {
   "appId": "com.ratrodstudio.snowparty2lite",
@@ -63251,7 +64342,18 @@
   "flags": [],
   "query": "Snowboard Party: World Tour",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.26,
+  "ratings": 66887,
+  "installs": 10227024,
+  "tags": [
+   "Sports",
+   "Winter",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Snowman Story": {
   "appId": "com.rpgsnack.snowman",
@@ -63292,7 +64394,18 @@
   "flags": [],
   "query": "Snowman Story",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.2,
+  "ratings": 5148,
+  "installs": 252958,
+  "tags": [
+   "Adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Soccer Cup Pro 2025 – Football": {
   "appId": "eu.inlogic.footballcuppro",
@@ -63327,7 +64440,19 @@
   "flags": [],
   "query": "Soccer Cup Pro 2025 – Football",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.33,
+  "ratings": 1802,
+  "installs": 106773,
+  "tags": [
+   "Sports",
+   "Soccer",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Competitive",
+   "Offline"
+  ]
  },
  "SocialChess – Online Chess": {
   "appId": "com.woodchop.chess",
@@ -63368,7 +64493,20 @@
   "flags": [],
   "query": "SocialChess – Online Chess",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.62,
+  "ratings": 9602,
+  "installs": 441991,
+  "tags": [
+   "Board",
+   "Abstract strategy",
+   "Chess",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Realistic",
+   "Competitive"
+  ]
  },
  "Solitaire": {
   "appId": "com.mobilityware.solitaire",
@@ -63400,7 +64538,20 @@
   "flags": [],
   "query": "Solitaire",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.56,
+  "ratings": 1798719,
+  "installs": 151942285,
+  "tags": [
+   "Card",
+   "Solitaire",
+   "Casual",
+   "Single player",
+   "Realistic",
+   "Cards",
+   "Fantasy",
+   "Offline"
+  ]
  },
  "Solitaire (Full)": {
   "appId": null,
@@ -63460,7 +64611,20 @@
   "flags": [],
   "query": "Solitaire JD",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.44,
+  "ratings": 490,
+  "installs": 155618,
+  "tags": [
+   "Card",
+   "Solitaire",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Realistic",
+   "Offline"
+  ]
  },
  "Solitaire Klondike Quest": {
   "appId": "com.mobirix.ldstkd",
@@ -63501,7 +64665,13 @@
   "flags": [],
   "query": "Solitaire Klondike Quest",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.42,
+  "ratings": 256,
+  "installs": 37251,
+  "tags": [
+   "Puzzle"
+  ]
  },
  "Solitaire Plus": {
   "appId": "com.infinitygames.solitaire",
@@ -63542,7 +64712,18 @@
   "flags": [],
   "query": "Solitaire Plus Play Pass",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.23,
+  "ratings": 1994,
+  "installs": 101516,
+  "tags": [
+   "Card",
+   "Solitaire",
+   "Casual",
+   "Single player",
+   "Realistic",
+   "Offline"
+  ]
  },
  "Solitaire Pro": {
   "appId": "uk.co.aifactory.solitaire",
@@ -63583,7 +64764,18 @@
   "flags": [],
   "query": "Solitaire Pro",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.57,
+  "ratings": 2099,
+  "installs": 57738,
+  "tags": [
+   "Card",
+   "Solitaire",
+   "Casual",
+   "Single player",
+   "Realistic",
+   "Offline"
+  ]
  },
  "Solitaire Spanish Pack": {
   "appId": null,
@@ -63636,7 +64828,18 @@
   "flags": [],
   "query": "Solitaire Super Pack",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.01,
+  "ratings": 62680,
+  "installs": 8798797,
+  "tags": [
+   "Card",
+   "Solitaire",
+   "Casual",
+   "Single player",
+   "Realistic",
+   "Offline"
+  ]
  },
  "Solitaire – Card Games": {
   "appId": null,
@@ -63675,7 +64878,20 @@
   "flags": [],
   "query": "Solitaire – Classic Card Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.56,
+  "ratings": 1798719,
+  "installs": 151942285,
+  "tags": [
+   "Card",
+   "Solitaire",
+   "Casual",
+   "Single player",
+   "Realistic",
+   "Cards",
+   "Fantasy",
+   "Offline"
+  ]
  },
  "Someday": {
   "appId": "com.THIRTEENDAYS.SOMEDAY",
@@ -63716,7 +64932,17 @@
   "flags": [],
   "query": "Someday",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.44,
+  "ratings": 4985,
+  "installs": 319177,
+  "tags": [
+   "Adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Sonic The Hedgehog 2 Classic": {
   "appId": null,
@@ -63784,7 +65010,16 @@
   "flags": [],
   "query": "Sorcery 3",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.48,
+  "ratings": 1580,
+  "installs": 96867,
+  "tags": [
+   "Adventure",
+   "Interactive story",
+   "Single player",
+   "Offline"
+  ]
  },
  "Sorcery 4": {
   "appId": "com.inkle.sorcery4",
@@ -63803,7 +65038,14 @@
   "flags": [],
   "query": "Sorcery 4",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.4,
+  "ratings": 553,
+  "installs": 55650,
+  "tags": [
+   "Casual",
+   "Single player"
+  ]
  },
  "Sorcery!": {
   "appId": "com.inkle.sorcery1",
@@ -63827,7 +65069,18 @@
   "flags": [],
   "query": "Sorcery!",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.24,
+  "ratings": 8918,
+  "installs": 304533,
+  "tags": [
+   "Adventure",
+   "Interactive story",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Sorcery! 2": {
   "appId": "com.inkle.sorcery2",
@@ -63852,7 +65105,18 @@
   "flags": [],
   "query": "Sorcery! 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.14,
+  "ratings": 4336,
+  "installs": 132121,
+  "tags": [
+   "Adventure",
+   "Interactive story",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Sorting Ball Quiz": {
   "appId": "com.mobirix.bsq",
@@ -63893,7 +65157,18 @@
   "flags": [],
   "query": "Sorting Ball Quiz",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.31,
+  "ratings": 2586,
+  "installs": 801806,
+  "tags": [
+   "Puzzle",
+   "Sort",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Soulvars": {
   "appId": "com.ginolabo.soulvars",
@@ -63921,7 +65196,18 @@
   "flags": [],
   "query": "Soulvars",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.17,
+  "ratings": 669,
+  "installs": 65694,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Space Gladiators: Premium": {
   "appId": "com.space.gladiators.mobile.paid.gp",
@@ -63962,7 +65248,13 @@
   "flags": [],
   "query": "Space Gladiators: Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.62,
+  "ratings": 147,
+  "installs": 21222,
+  "tags": [
+   "Action"
+  ]
  },
  "Space Legends: Adventure Game": {
   "appId": "com.absolutist.spacelegendsfree",
@@ -64003,7 +65295,19 @@
   "flags": [],
   "query": "Space Legends: Adventure Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.63,
+  "ratings": 5067,
+  "installs": 178334,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Stylized-realistic",
+   "Offline"
+  ]
  },
  "Space Marshals": {
   "appId": "com.pixelbite.sg",
@@ -64044,7 +65348,19 @@
   "flags": [],
   "query": "Space Marshals",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.57,
+  "ratings": 20495,
+  "installs": 430846,
+  "tags": [
+   "Action",
+   "Shooter",
+   "Tactical shooter",
+   "Stylized",
+   "Science fiction",
+   "Space",
+   "Intense"
+  ]
  },
  "Space Marshals 2": {
   "appId": "com.pixelbite.sm2",
@@ -64079,7 +65395,20 @@
   "flags": [],
   "query": "Space Marshals 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.92,
+  "ratings": 125968,
+  "installs": 10444364,
+  "tags": [
+   "Action",
+   "Shooter",
+   "Tactical shooter",
+   "Single player",
+   "Stylized",
+   "History",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Space Marshals 3": {
   "appId": "com.pixelbite.sm3",
@@ -64120,7 +65449,20 @@
   "flags": [],
   "query": "Space Marshals 3",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.12,
+  "ratings": 19372,
+  "installs": 1296147,
+  "tags": [
+   "Action",
+   "Shooter",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Science fiction",
+   "Space",
+   "Offline"
+  ]
  },
  "Space Raiders RPG": {
   "appId": "com.geekgames.DeepSpace",
@@ -64161,7 +65503,18 @@
   "flags": [],
   "query": "Space Raiders RPG",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.42,
+  "ratings": 24103,
+  "installs": 277953,
+  "tags": [
+   "Role Playing",
+   "Tactical",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Space Squad Survival": {
   "appId": "com.rebeltwins.spacesquadsurvival",
@@ -64196,7 +65549,13 @@
   "flags": [],
   "query": "Space Squad Survival",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.41,
+  "ratings": 1469,
+  "installs": 107831,
+  "tags": [
+   "Action"
+  ]
  },
  "Spaceflight Simulator": {
   "appId": "com.StefMorojna.SpaceflightSimulator",
@@ -64237,7 +65596,20 @@
   "flags": [],
   "query": "Spaceflight Simulator",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.75,
+  "ratings": 593290,
+  "installs": 44983675,
+  "tags": [
+   "Simulation",
+   "Casual",
+   "Single player",
+   "Realistic",
+   "Vehicles",
+   "Rocket",
+   "Launch",
+   "Offline"
+  ]
  },
  "Spaceplan": {
   "appId": "com.devolver.spaceplan",
@@ -64274,7 +65646,16 @@
   "flags": [],
   "query": "Spaceplan",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.45,
+  "ratings": 7624,
+  "installs": 326591,
+  "tags": [
+   "Simulation",
+   "Idle",
+   "Casual",
+   "Stylized"
+  ]
  },
  "Spades": {
   "appId": "com.mobilityware.Spades",
@@ -64309,7 +65690,21 @@
   "flags": [],
   "query": "Spades",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.68,
+  "ratings": 212310,
+  "installs": 14729450,
+  "tags": [
+   "Card",
+   "Classic cards",
+   "Spades",
+   "Casual",
+   "Single player",
+   "Realistic",
+   "Cards",
+   "Peaceful",
+   "Offline"
+  ]
  },
  "Spades Offline Card Game": {
   "appId": "com.zariba.spades.offline",
@@ -64350,7 +65745,13 @@
   "flags": [],
   "query": "Spades Offline Card Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.84,
+  "ratings": 21500,
+  "installs": 1007245,
+  "tags": [
+   "Casual"
+  ]
  },
  "Spades: Classic Card Games": {
   "appId": "com.mobilityware.Spades",
@@ -64385,7 +65786,21 @@
   "flags": [],
   "query": "Spades: Classic Card Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.68,
+  "ratings": 212310,
+  "installs": 14729450,
+  "tags": [
+   "Card",
+   "Classic cards",
+   "Spades",
+   "Casual",
+   "Single player",
+   "Realistic",
+   "Cards",
+   "Peaceful",
+   "Offline"
+  ]
  },
  "Sparkle 2": {
   "appId": "com.the10tons.sparkle.two",
@@ -64413,7 +65828,18 @@
   "flags": [],
   "query": "Sparkle 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.01,
+  "ratings": 1814,
+  "installs": 119550,
+  "tags": [
+   "Puzzle",
+   "Bubble shooter",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Sparklite": {
   "appId": "com.playdigious.sparklite",
@@ -64454,7 +65880,19 @@
   "flags": [],
   "query": "Sparklite",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.49,
+  "ratings": 18941,
+  "installs": 1094776,
+  "tags": [
+   "Role Playing",
+   "Roguelike",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Immersive",
+   "Offline"
+  ]
  },
  "Speed JD": {
   "appId": "com.jimmyinteractive.speed",
@@ -64495,7 +65933,19 @@
   "flags": [],
   "query": "Speed JD",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.58,
+  "ratings": 16003,
+  "installs": 1326033,
+  "tags": [
+   "Card",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Realistic",
+   "Offline"
+  ]
  },
  "Spellforce: Heroes and Magic": {
   "appId": "com.hg.spellforce",
@@ -64518,7 +65968,19 @@
   "flags": [],
   "query": "Spellforce: Heroes and Magic",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.14,
+  "ratings": 1094,
+  "installs": 84689,
+  "tags": [
+   "Strategy",
+   "Tactics",
+   "Casual",
+   "Stylized",
+   "Immersive",
+   "Fantasy",
+   "Medieval fantasy"
+  ]
  },
  "Sphaze Sci-fi Puzzle game": {
   "appId": null,
@@ -64587,7 +66049,21 @@
   "flags": [],
   "query": "Spider Solitaire Card Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.57,
+  "ratings": 748477,
+  "installs": 56419037,
+  "tags": [
+   "Card",
+   "Solitaire",
+   "Spider solitaire",
+   "Casual",
+   "Single player",
+   "Realistic",
+   "Cards",
+   "Peaceful",
+   "Offline"
+  ]
  },
  "Spider Solitaire Plus": {
   "appId": "com.infinitygames.spidersolitaire",
@@ -64628,7 +66104,19 @@
   "flags": [],
   "query": "Spider Solitaire Plus",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.21,
+  "ratings": 1854,
+  "installs": 77877,
+  "tags": [
+   "Card",
+   "Solitaire",
+   "Spider solitaire",
+   "Casual",
+   "Single player",
+   "Realistic",
+   "Offline"
+  ]
  },
  "Spin Hero": {
   "appId": "spherestudios.spinheromobile",
@@ -64669,7 +66157,13 @@
   "flags": [],
   "query": "Spin Hero",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.35,
+  "ratings": 428,
+  "installs": 76839,
+  "tags": [
+   "Strategy"
+  ]
  },
  "Spirit": {
   "appId": "com.jakyl.spirithd",
@@ -64702,7 +66196,13 @@
   "flags": [],
   "query": "Spirit",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.17,
+  "ratings": 6666,
+  "installs": 289349,
+  "tags": [
+   "Action"
+  ]
  },
  "Spirit of the Island": {
   "appId": "com.pid.spirit",
@@ -64743,7 +66243,19 @@
   "flags": [],
   "query": "Spirit of the Island",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.03,
+  "ratings": 510,
+  "installs": 36037,
+  "tags": [
+   "Action",
+   "Action-adventure",
+   "Survival",
+   "Single player",
+   "Multiplayer",
+   "Stylized",
+   "Immersive"
+  ]
  },
  "Spirit Roots": {
   "appId": "com.fireart.SpiritRootsP",
@@ -64784,7 +66296,18 @@
   "flags": [],
   "query": "Spirit Roots",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.8,
+  "ratings": 285,
+  "installs": 14318,
+  "tags": [
+   "Action",
+   "Action-adventure",
+   "Arcade",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Sproggiwodd": {
   "appId": "com.freeholdgames.sproggiwood",
@@ -64816,7 +66339,16 @@
   "flags": [],
   "query": "Sproggiwodd",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.55,
+  "ratings": 1100,
+  "installs": 69751,
+  "tags": [
+   "Role Playing",
+   "Roguelike",
+   "Stylized",
+   "Dungeon"
+  ]
  },
  "Square Paint": {
   "appId": "com.infinitygames.squareit",
@@ -64857,7 +66389,18 @@
   "flags": [],
   "query": "Square Paint",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.03,
+  "ratings": 4819,
+  "installs": 941088,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Sqube Darkness": {
   "appId": "com.RHPOSITIVE.squbedarkness",
@@ -64898,7 +66441,20 @@
   "flags": [],
   "query": "Sqube Darkness",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.94,
+  "ratings": 142187,
+  "installs": 29826428,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Abstract",
+   "Dark"
+  ]
  },
  "Sqube Darkness 2": {
   "appId": "com.rhpositive.squbedarkness2",
@@ -64939,7 +66495,13 @@
   "flags": [],
   "query": "Sqube Darkness 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.95,
+  "ratings": 652,
+  "installs": 189617,
+  "tags": [
+   "Arcade"
+  ]
  },
  "Sqube Escape": {
   "appId": "com.rhpositive.squbeescape",
@@ -64980,7 +66542,20 @@
   "flags": [],
   "query": "Sqube Escape",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.67,
+  "ratings": 262,
+  "installs": 79848,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Single player",
+   "Stylized",
+   "Intense",
+   "Fantasy",
+   "Dark fantasy",
+   "Offline"
+  ]
  },
  "SSC 22 – Super Soccer Champs": {
   "appId": "com.jakyl.supersoccerchamps",
@@ -65021,7 +66596,18 @@
   "flags": [],
   "query": "SSC 22 – Super Soccer Champs",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.57,
+  "ratings": 1099,
+  "installs": 131290,
+  "tags": [
+   "Sports",
+   "Soccer",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Stylized",
+   "Competitive"
+  ]
  },
  "Stacky Bird: Fun Offline Game": {
   "appId": "com.kooapps.stackybirdandroid",
@@ -65058,7 +66644,22 @@
   "flags": [],
   "query": "Stacky Bird: Fun Offline Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.4,
+  "ratings": 132428,
+  "installs": 77577238,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Animals",
+   "Bird",
+   "Cute",
+   "Offline"
+  ]
  },
  "Star Survivor: Premium": {
   "appId": "com.star.survivor.games.paid.gp",
@@ -65099,7 +66700,21 @@
   "flags": [],
   "query": "Star Survivor: Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.62,
+  "ratings": 4127,
+  "installs": 125264,
+  "tags": [
+   "Action",
+   "Shooter",
+   "Bulletstorm",
+   "Single player",
+   "Stylized",
+   "Science fiction",
+   "Space",
+   "Intense",
+   "Offline"
+  ]
  },
  "Star Viking Forever": {
   "appId": null,
@@ -65152,7 +66767,19 @@
   "flags": [],
   "query": "Star Wars- KOTOR",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.7,
+  "ratings": 55941,
+  "installs": 1178736,
+  "tags": [
+   "Role Playing",
+   "Action Role-Playing",
+   "Casual",
+   "Stylized",
+   "Battling",
+   "Fantasy",
+   "Sci-fi fantasy"
+  ]
  },
  "Stardew valley": {
   "appId": "com.chucklefish.stardewvalley",
@@ -65193,7 +66820,18 @@
   "flags": [],
   "query": "Stardew valley",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.61,
+  "ratings": 202798,
+  "installs": 7156523,
+  "tags": [
+   "Simulation",
+   "Management",
+   "Farming",
+   "Stylized",
+   "Pixelated",
+   "Light-hearted"
+  ]
  },
  "Starlit kart Racing": {
   "appId": "com.rockhead.starlit.kartracing",
@@ -65234,7 +66872,21 @@
   "flags": [],
   "query": "Starlit kart Racing",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.89,
+  "ratings": 3497,
+  "installs": 1179882,
+  "tags": [
+   "Racing",
+   "Kart",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Vehicles",
+   "Go-kart",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Starman": {
   "appId": "games.nadastudio.android.starman",
@@ -65257,7 +66909,15 @@
   "flags": [],
   "query": "Starman",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.93,
+  "ratings": 490,
+  "installs": 58567,
+  "tags": [
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Station Manager": {
   "appId": "net.kairosoft.android.densha_en",
@@ -65295,7 +66955,20 @@
   "flags": [],
   "query": "Station Manager",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.94,
+  "ratings": 4616,
+  "installs": 134295,
+  "tags": [
+   "Simulation",
+   "Management",
+   "Tycoon",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Light-hearted"
+  ]
  },
  "Stick vs Zombies: Platformer": {
   "appId": "com.aurecas.stickmanzombieshooter",
@@ -65336,7 +67009,19 @@
   "flags": [],
   "query": "Stick vs Zombies: Platformer",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.41,
+  "ratings": 161655,
+  "installs": 91044233,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Arcade",
+   "Single player",
+   "Abstract",
+   "Zombie",
+   "Stickman"
+  ]
  },
  "Stormhill Mystery (Full)": {
   "appId": "com.specialbit.lurking.android.full",
@@ -65371,7 +67056,18 @@
   "flags": [],
   "query": "Stormhill Mystery (Full)",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.58,
+  "ratings": 1944,
+  "installs": 63856,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Casual",
+   "Stylized",
+   "Stylized-realistic",
+   "Mystery"
+  ]
  },
  "Strange Horticulture": {
   "appId": "com.pid.strangehorticulture",
@@ -65412,7 +67108,16 @@
   "flags": [],
   "query": "Strange Horticulture",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.77,
+  "ratings": 6367,
+  "installs": 79390,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Stylized",
+   "Mystery"
+  ]
  },
  "Stranger Cases: Mystery Escape": {
   "appId": "com.snapbreak.strangercases",
@@ -65447,7 +67152,19 @@
   "flags": [],
   "query": "Stranger Cases: Mystery Escape",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.23,
+  "ratings": 8468,
+  "installs": 999966,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Mystery",
+   "Offline"
+  ]
  },
  "Strawberry Shortcake Bake shop": {
   "appId": "com.budgestudios.StrawberryShortcakeBakeShare",
@@ -65488,7 +67205,19 @@
   "flags": [],
   "query": "Strawberry Shortcake Bake shop",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.57,
+  "ratings": 404104,
+  "installs": 67067582,
+  "tags": [
+   "Simulation",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Cafe & restaurant",
+   "Offline"
+  ]
  },
  "Stray Souls: Dollhouse Story.": {
   "appId": "com.alawar.straysoulsFull",
@@ -65520,7 +67249,19 @@
   "flags": [],
   "query": "Stray Souls: Dollhouse Story.",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.25,
+  "ratings": 2519,
+  "installs": 68467,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Stylized-realistic",
+   "Offline"
+  ]
  },
  "Streets of Rage 4": {
   "appId": "com.playdigious.sor4",
@@ -65561,7 +67302,21 @@
   "flags": [],
   "query": "Streets of Rage 4",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.83,
+  "ratings": 31272,
+  "installs": 266281,
+  "tags": [
+   "Action",
+   "Fighting",
+   "Brawler",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Stylized",
+   "Intense",
+   "Offline"
+  ]
  },
  "Stress-Relief: Sensispark": {
   "appId": "com.iz.antistress.relaxing.satisfying.sensory.magic.games",
@@ -65599,7 +67354,13 @@
   "flags": [],
   "query": "Stress-Relief: Sensispark",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.27,
+  "ratings": 389,
+  "installs": 26635,
+  "tags": [
+   "Simulation"
+  ]
  },
  "Strike Master Bowling": {
   "appId": "com.rubicon.dev.strikemaster",
@@ -65631,7 +67392,18 @@
   "flags": [],
   "query": "Strike Master Bowling",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.01,
+  "ratings": 13241,
+  "installs": 734962,
+  "tags": [
+   "Sports",
+   "Bowling",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Strikers 1945 Classic": {
   "appId": null,
@@ -65690,7 +67462,16 @@
   "flags": [],
   "query": "String of Words",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.4,
+  "ratings": 2647,
+  "installs": 197937,
+  "tags": [
+   "Word",
+   "Casual",
+   "Single player",
+   "Offline"
+  ]
  },
  "Stuntman Ragdoll Action Movie": {
   "appId": "com.stuntman.ragdoll.action.movie",
@@ -65725,7 +67506,13 @@
   "flags": [],
   "query": "Stuntman Ragdoll Action Movie",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.27,
+  "ratings": 5496,
+  "installs": 1668550,
+  "tags": [
+   "Simulation"
+  ]
  },
  "Stylist Girl Make Me Fabulos": {
   "appId": "com.cocoplay.stylist.girl",
@@ -65757,7 +67544,19 @@
   "flags": [],
   "query": "Stylist Girl Make Me Fabulos",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.24,
+  "ratings": 220592,
+  "installs": 64570211,
+  "tags": [
+   "Simulation",
+   "Lifestyle",
+   "Nail salon",
+   "Single player",
+   "Stylized",
+   "Celebrity & idol",
+   "Offline"
+  ]
  },
  "Subnautica": {
   "appId": "com.unknownworlds.subnautica",
@@ -65798,7 +67597,20 @@
   "flags": [],
   "query": "Subnautica",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.55,
+  "ratings": 6540,
+  "installs": 257126,
+  "tags": [
+   "Action",
+   "Action-adventure",
+   "Survival",
+   "Single player",
+   "Stylized",
+   "Stylized-realistic",
+   "Immersive",
+   "Offline"
+  ]
  },
  "Subper Pool": {
   "appId": "com.grapefrukt.games.tilebreaker",
@@ -65837,7 +67649,14 @@
   "flags": [],
   "query": "Subper Pool",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.98,
+  "ratings": 243,
+  "installs": 53247,
+  "tags": [
+   "Sports",
+   "Billiards"
+  ]
  },
  "Sudoku": {
   "appId": null,
@@ -65896,7 +67715,18 @@
   "flags": [],
   "query": "Sudoku Brain Puzzle Play Pass",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.02,
+  "ratings": 9323,
+  "installs": 2388082,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Sudoku Classic Brain Puzzle": {
   "appId": "com.unicostudio.sudoku",
@@ -65937,7 +67767,18 @@
   "flags": [],
   "query": "Sudoku Classic Brain Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.02,
+  "ratings": 9323,
+  "installs": 2388082,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Sudoku master- Classic Puzzle": {
   "appId": "com.soodexlabs.sudoku2",
@@ -65972,7 +67813,18 @@
   "flags": [],
   "query": "Sudoku master- Classic Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.61,
+  "ratings": 209271,
+  "installs": 7044674,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Sudoku Plus: brain Puzzle": {
   "appId": "com.infinitygames.sudokunew",
@@ -66013,7 +67865,19 @@
   "flags": [],
   "query": "Sudoku Plus: brain Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.25,
+  "ratings": 479,
+  "installs": 41777,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Sudoku",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Sudoku – Classic Puzzle Game": {
   "appId": "com.pinkpointer.sudoku",
@@ -66052,7 +67916,18 @@
   "flags": [],
   "query": "Sudoku – Classic Puzzle Game Play Pass",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.39,
+  "ratings": 74731,
+  "installs": 7010190,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Sudoku.com – Classic Sudoku": {
   "appId": "com.easybrain.sudoku.android",
@@ -66093,7 +67968,20 @@
   "flags": [],
   "query": "Sudoku.com – Classic Sudoku",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.73,
+  "ratings": 2505100,
+  "installs": 108474668,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Sudoku",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Puzzles",
+   "Offline"
+  ]
  },
  "Sudplu": {
   "appId": null,
@@ -66139,7 +68027,18 @@
   "flags": [],
   "query": "Sulvars",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.17,
+  "ratings": 669,
+  "installs": 65694,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Sumi Sumi Matching Puzzle": {
   "appId": "jp.co.imagineer.sumikkogurashi.sumisumi",
@@ -66180,7 +68079,20 @@
   "flags": [],
   "query": "Sumi Sumi Matching Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.33,
+  "ratings": 37432,
+  "installs": 3682523,
+  "tags": [
+   "Puzzle",
+   "Pair matching",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Puzzles",
+   "Light-hearted"
+  ]
  },
  "Sumikogurashi Farm": {
   "appId": "jp.co.imagineer.sumikkogurashi.farm",
@@ -66215,7 +68127,19 @@
   "flags": [],
   "query": "Sumikogurashi Farm",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.51,
+  "ratings": 27343,
+  "installs": 3591926,
+  "tags": [
+   "Simulation",
+   "Management",
+   "Farming",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Farm"
+  ]
  },
  "Summer Catchers": {
   "appId": "com.noodlecake.summercatchers",
@@ -66256,7 +68180,19 @@
   "flags": [],
   "query": "Summer Catchers",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.94,
+  "ratings": 1195,
+  "installs": 50891,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Arcade",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Summer Wheelie": {
   "appId": "com.big.summerwheelie",
@@ -66291,7 +68227,18 @@
   "flags": [],
   "query": "Summer Wheelie",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.58,
+  "ratings": 34429,
+  "installs": 12584479,
+  "tags": [
+   "Racing",
+   "Stunt driving",
+   "Single player",
+   "Stylized",
+   "Intense",
+   "Offline"
+  ]
  },
  "SumoRoll – road to Yokozuna": {
   "appId": "com.StudioKingmo.SumoRoll",
@@ -66332,7 +68279,13 @@
   "flags": [],
   "query": "SumoRoll – road to Yokozuna",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.33,
+  "ratings": 672,
+  "installs": 73402,
+  "tags": [
+   "Casual"
+  ]
  },
  "Sunday Lawn Seasons": {
   "appId": "com.donutgames.sundaylawnseasons",
@@ -66367,7 +68320,17 @@
   "flags": [],
   "query": "Sunday Lawn Seasons",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.88,
+  "ratings": 8867,
+  "installs": 796456,
+  "tags": [
+   "Action",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Sunset Hills": {
   "appId": "com.cottongame.sunsethills",
@@ -66392,7 +68355,13 @@
   "flags": [],
   "query": "Sunset Hills",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.72,
+  "ratings": 180,
+  "installs": 11017,
+  "tags": [
+   "Adventure"
+  ]
  },
  "Super Arcade Racing": {
   "appId": "com.outofthebit.superarcaderacing",
@@ -66433,7 +68402,18 @@
   "flags": [],
   "query": "Super Arcade Racing",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.24,
+  "ratings": 3416,
+  "installs": 367629,
+  "tags": [
+   "Racing",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Super Cat Tales 2": {
   "appId": "com.neutronized.supercattales2",
@@ -66468,7 +68448,23 @@
   "flags": [],
   "query": "Super Cat Tales 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.76,
+  "ratings": 167762,
+  "installs": 4630226,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Hack & slash",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Animals",
+   "Cat",
+   "Intense",
+   "Offline"
+  ]
  },
  "Super Cat Tales: PAWS": {
   "appId": "com.neutronized.supercattalespaws",
@@ -66503,7 +68499,22 @@
   "flags": [],
   "query": "Super Cat Tales: PAWS",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.69,
+  "ratings": 34024,
+  "installs": 1595591,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Hack & slash",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Animals",
+   "Cat",
+   "Offline"
+  ]
  },
  "Super Chicken Jumper": {
   "appId": "com.sewercat.superchickenjumper",
@@ -66526,7 +68537,14 @@
   "flags": [],
   "query": "Super Chicken Jumper",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.55,
+  "ratings": 2079,
+  "installs": 33207,
+  "tags": [
+   "Action",
+   "Platformer"
+  ]
  },
  "Super Drop Land": {
   "appId": "com.lamington.spooky",
@@ -66561,7 +68579,19 @@
   "flags": [],
   "query": "Super Drop Land",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.38,
+  "ratings": 3797,
+  "installs": 647586,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Super Flappy Golf": {
   "appId": "com.noodlecake.superflappygolf",
@@ -66602,7 +68632,13 @@
   "flags": [],
   "query": "Super Flappy Golf",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.53,
+  "ratings": 604,
+  "installs": 27992,
+  "tags": [
+   "Arcade"
+  ]
  },
  "Super Glitch Dash": {
   "appId": null,
@@ -66655,7 +68691,13 @@
   "flags": [],
   "query": "Super Hero Flying School",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.14,
+  "ratings": 15667,
+  "installs": 7333300,
+  "tags": [
+   "Casual"
+  ]
  },
  "Super Meat Boy Forever": {
   "appId": "com.thunderful.smbf",
@@ -66696,7 +68738,17 @@
   "flags": [],
   "query": "Super Meat Boy Forever",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.68,
+  "ratings": 4448,
+  "installs": 337477,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Single player",
+   "Stylized",
+   "Intense"
+  ]
  },
  "Super Mombo Quest": {
   "appId": "com.orube.supermomboquest",
@@ -66731,7 +68783,21 @@
   "flags": [],
   "query": "Super Mombo Quest",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.69,
+  "ratings": 116375,
+  "installs": 3049331,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Hack & slash",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Intense",
+   "Offline"
+  ]
  },
  "Super Starfish": {
   "appId": "com.protostar.starfish",
@@ -66770,7 +68836,19 @@
   "flags": [],
   "query": "Super Starfish",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.74,
+  "ratings": 223141,
+  "installs": 10679159,
+  "tags": [
+   "Action",
+   "Arcade",
+   "Single player",
+   "Stylized",
+   "Science fiction",
+   "Space",
+   "Offline"
+  ]
  },
  "Super Sucker 3D": {
   "appId": "com.luckykat.supersucker",
@@ -66811,7 +68889,13 @@
   "flags": [],
   "query": "Super Sucker 3D",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.28,
+  "ratings": 11732,
+  "installs": 2983386,
+  "tags": [
+   "Casual"
+  ]
  },
  "Super Wings – Baby Games": {
   "appId": "com.edujoy.superwings",
@@ -66852,7 +68936,19 @@
   "flags": [],
   "query": "Super Wings – Baby Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.3,
+  "ratings": 4284,
+  "installs": 4106602,
+  "tags": [
+   "Educational",
+   "Language",
+   "Abc",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Offline"
+  ]
  },
  "Super Wings: Educational Games": {
   "appId": "com.edujoy.superwings",
@@ -66893,7 +68989,19 @@
   "flags": [],
   "query": "Super Wings: Educational Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.3,
+  "ratings": 4284,
+  "installs": 4106602,
+  "tags": [
+   "Educational",
+   "Language",
+   "Abc",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Offline"
+  ]
  },
  "Superliminal": {
   "appId": "com.noodlecake.superliminal",
@@ -66934,7 +69042,13 @@
   "flags": [],
   "query": "Superliminal",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.08,
+  "ratings": 5960,
+  "installs": 1133295,
+  "tags": [
+   "Puzzle"
+  ]
  },
  "Supermarket Game Kids Shopping": {
   "appId": "com.elepant.kids.shopping.games.girls.supermarket.free",
@@ -66975,7 +69089,18 @@
   "flags": [],
   "query": "Supermarket Game Kids Shopping",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.32,
+  "ratings": 930,
+  "installs": 621873,
+  "tags": [
+   "Simulation",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Cute",
+   "Offline"
+  ]
  },
  "Surivval RPG 1: Island Escape": {
   "appId": "com.bewgames.survivaladventure",
@@ -67016,7 +69141,20 @@
   "flags": [],
   "query": null,
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.56,
+  "ratings": 211234,
+  "installs": 9618574,
+  "tags": [
+   "Action",
+   "Action-adventure",
+   "Survival",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Surivval RPG 3: Lost in time 2D": {
   "appId": "com.bewgames.lostintime",
@@ -67057,7 +69195,20 @@
   "flags": [],
   "query": "Surivval RPG 3: Lost in time 2D",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.57,
+  "ratings": 54942,
+  "installs": 2925761,
+  "tags": [
+   "Action",
+   "Action-adventure",
+   "Survival",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Surivvial RPG Open World Pixel": {
   "appId": "com.bewgames.openworld",
@@ -67098,7 +69249,19 @@
   "flags": [],
   "query": "Surivvial RPG Open World Pixel",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.61,
+  "ratings": 35133,
+  "installs": 1639128,
+  "tags": [
+   "Role Playing",
+   "Roguelike",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Survival RPG 2: Temple Ruins 2D": {
   "appId": "com.bewgames.templeruins",
@@ -67139,7 +69302,17 @@
   "flags": [],
   "query": "Survival RPG 2: Temple Ruins 2D",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.66,
+  "ratings": 113027,
+  "installs": 4233379,
+  "tags": [
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Survival RPG 4: Haunted Manor": {
   "appId": "com.bewgames.hauntedmanor",
@@ -67180,7 +69353,20 @@
   "flags": [],
   "query": "Survival RPG 4: Haunted Manor",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.51,
+  "ratings": 23100,
+  "installs": 609836,
+  "tags": [
+   "Action",
+   "Action-adventure",
+   "Survival",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Immersive",
+   "Offline"
+  ]
  },
  "Survival RPG: Pirate Adventure": {
   "appId": "com.bewgames.pirate",
