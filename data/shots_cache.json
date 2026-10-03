@@ -1,22 +1,27 @@
 {
  "100 Doors Games: School Escape": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "title similarity too low (0.86) and no Play Pass badge",
-  "queries": [
-   "100 Doors Games: School Escape",
-   "100 Doors Games",
-   "100 Doors Games: School Escape Play Pass"
+  "appId": "com.hundred_doors_game.escape_from_school",
+  "matched": "Escape from School - 100 Doors",
+  "developer": "Peaksel Games",
+  "playGenre": "Puzzle",
+  "icon": "https://play-lh.googleusercontent.com/l4AN6XqSaKi2lhxDbHgdEHCwDO7N0G4abWFSnP2jFlEOWReLB9hJdlMpSHtseFvR6h7YkXlddN0kln0-REVL",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/6TZgPWc_PMYIUB0OTWsEhlQYiVy1a0NN_4X4V3hSqLSwF-M1_JbLg93XZUwPKGmzAH0_Rbond7mCqW82syzAVw",
+   "https://play-lh.googleusercontent.com/BmpRoNTHlBD1eaFb5_NEc6T09tbmI2k0mog0wnyJzzHVQBG8JE3WNFa2UHJihnEZGYfGADIoX5NwjOIL3DgWQQ",
+   "https://play-lh.googleusercontent.com/tcHss0ZzBYwuL8l2ZAZ5fHaH1vlVq0YivVEV1MHgyUiDpluDipX0g7gZEiQWOIGFrG0Ig2H7JmtuAdV0Wr8ang",
+   "https://play-lh.googleusercontent.com/_wFvsY3fC57AaSTX3nsAUyTAqSerXmCucKs9nD9Vn4EWbEiuCTYlvXL-4W5VqQkufnHkZAOhcC-179fGlIAc",
+   "https://play-lh.googleusercontent.com/fITsovaRnyYuPCzDDLtzip9eOHmuQpSUVjJ18HIL186NFofLcK7BwoqAjnN2RHIeiIpZD_QJiBJvN4TNiEAXyTM",
+   "https://play-lh.googleusercontent.com/XrqRMeR05eOMW5JtHwseu_50dooCDgVYK1cbZ8iyTRc2-LP7lqcIp2I2AX097vjQVWh2iioPo7MAPJjPDOTN",
+   "https://play-lh.googleusercontent.com/0ftwvWNGsYo_3HvbirlbqXHHCVfvYrZzb_YqzZMuNZ3ilwoO95mqIgX0RxUIQyRoD6uJvbJ1tqSM1tFZFhU1Kw",
+   "https://play-lh.googleusercontent.com/VWQh-46P67NSCDuC7ubll2Tki4YcyhJq_xHktKwiSy-kJAxu1I43M5bR24zVV57JmlWRFdLPmJ82xqoO97S-qQ"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "air.com.ttn.alienmystery",
-   "title": "100 Doors Game: Space Escape",
-   "developer": "TTN Fun Games",
-   "playPass": false,
-   "sim": 0.857,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.hundred_doors_game.escape_from_school",
+  "playPass": true,
+  "similarity": 0.733,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "1024 Puzzle Numbers Game": {
   "appId": "game2048.b2048game.twozerofoureight2048.game",
@@ -259,27 +264,10 @@
   "checked": "2026-10-03"
  },
  "2 Player Games – Sports": {
-  "appId": "com.tellmewow.senior.pastimes",
-  "matched": "2 Player Games - Pastimes",
-  "developer": "Senior Games",
-  "playGenre": "Arcade",
-  "icon": "https://play-lh.googleusercontent.com/xXDVayjp7ONr1kspVUgY9pl_NzjjwmDGB-1434VZSwZIT_lo6o7Q0soy9DtU70JTpEJUHt5ldyEzS2XjdRT2QE8",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/zRHWIUZbo_OpG5iK_SFGDBbYm50C6WsbbGekb2Ky_LH5ykiwdRzJwyifbCT2GTgxi4MyIXWoVHTpvE67bACIxQ",
-   "https://play-lh.googleusercontent.com/kPajjPzc3xynRblrpYw_Me4UagJOdy0WCLYDWZIcOIM00VyHTrSDTmFjn7zzismH9DWEQyniK5Zb89_Fyt0wajo",
-   "https://play-lh.googleusercontent.com/SEG_uXffNfteAzEnY0UP-FJgGT65it6pzWvVkupeTXd5w2qm980DlfI2yExM1a0CbGSHhOXtvQyy7ESumGA7",
-   "https://play-lh.googleusercontent.com/bGkgdAvcGnp1B3qdOyjfzmPLepxgbmPfwdnQ-cR0gCQxRfVzgxcAjPnqpK5d2emGUzjdds4-_WK2u10fPXc_7zQ",
-   "https://play-lh.googleusercontent.com/N1nLEOTb27Fo89kFXOiml67qQkKZoN7X66yYQn9JOjhNFM8drz6QWGLRBlT9UUZ8BXMVLZd0Pp6OyymuMZmodA",
-   "https://play-lh.googleusercontent.com/VCt1vzRNCtHZABYWZsUzb8XHBqDNgHcS5v6zRZp464bhvb6Cn3CvSLqrbkGTgTrlPUfJDnfrx0hOMe7nRibsX-0",
-   "https://play-lh.googleusercontent.com/zRHWIUZbo_OpG5iK_SFGDBbYm50C6WsbbGekb2Ky_LH5ykiwdRzJwyifbCT2GTgxi4MyIXWoVHTpvE67bACIxQ",
-   "https://play-lh.googleusercontent.com/kPajjPzc3xynRblrpYw_Me4UagJOdy0WCLYDWZIcOIM00VyHTrSDTmFjn7zzismH9DWEQyniK5Zb89_Fyt0wajo"
-  ],
-  "url": "https://play.google.com/store/apps/details?id=com.tellmewow.senior.pastimes",
-  "playPass": true,
-  "similarity": 0.88,
-  "confidence": "verified",
-  "flags": [],
-  "query": "2 Player Games – Sports Play Pass",
+  "appId": null,
+  "confidence": "null",
+  "reason": "set to null in data/overrides.json",
+  "queries": [],
   "checked": "2026-10-03"
  },
  "20 Minutes Till Dawn": {
@@ -331,24 +319,28 @@
   "checked": "2026-10-03"
  },
  "2048 Blast Merge Numbers 2248": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "closest match flagged: different number",
-  "queries": [
-   "2048 Blast Merge Numbers 2248",
-   "2048 Blast Merge Numbers 2248 Play Pass"
+  "appId": "com.unicostudio.blast2048",
+  "matched": "2048 Blast: Merge Numbers 2248",
+  "developer": "Unico Studio",
+  "playGenre": "Puzzle",
+  "icon": "https://play-lh.googleusercontent.com/YE3ybPIfBQbjpLdnhpLDI8CuIbj964jrbVtuRZEjeWApDUNZUskcgOLOvdf7Pwd9E1PUJhOzAPHXDiewtbNDSA",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/HipqMQv7Z9tmifViCUJhw96W-b-9UC65x-oJ2fmU8TBpB1T9_jV07mflNgxnWdxMfKL5mgqKMMAvz9xXGBwB_uA",
+   "https://play-lh.googleusercontent.com/-9vMx2CEo3hAKi9DMyh0dXi0wrv0-m_KyB5WuMcvhfz3zka1T_H66j6S-gbHNFgdvo5YFVKoBLhxKefevuKQwQ",
+   "https://play-lh.googleusercontent.com/m1B1O9yXQAOLFYA8gvotXRgw5JerggF_8g_1YrH9B6M_OL0vSYWSLtq96PnP2POzSVpyhGxQARWf8ooBt_V-HVs",
+   "https://play-lh.googleusercontent.com/PUjqeEEPphtAqHiVqIqavuH5d9n5VnjifYOVEzjBStApu022EUB6h6Er4vepYcBgpuy47IhTxC2yWPcw9L8l1nQ",
+   "https://play-lh.googleusercontent.com/6FSt-OMI6JSSChkDdoVgWt70Y7vKeycLFNrqfmNh_xEmM3u52hiyyGLwyvUiXJFhsvDSw17FvXT2AwXWw522",
+   "https://play-lh.googleusercontent.com/lUgoeVHrYhJuS9P7-nxqRnLCdVqQQDUrkZA-X65gjBOJI1lWBpI6IDoAOKeV3HaoA_24DOQtDCDmbs8evx7J9A",
+   "https://play-lh.googleusercontent.com/iKeOyNrNBDgBeMGiYbj28u7WF0zLKf_iZzRiQOw2HKvSmpaILZR9MWwr0uj7kB2dSMvD5LSdMJYyGFsMwvFhYg",
+   "https://play-lh.googleusercontent.com/aI90UO0BHQQy8MDdfDJiy6Vh1aPJJIEik3k4Z4cTHSRVSzbsRhO3Nw8OQc1iTTvAF_JbMTY-vVyK7bHw0wN1BQ"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.unicostudio.blast2048",
-   "title": "2048 Blast: Merge Numbers 2248",
-   "developer": "Unico Studio",
-   "playPass": true,
-   "sim": 1.0,
-   "flags": [
-    "different number"
-   ]
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.unicostudio.blast2048",
+  "playPass": true,
+  "similarity": 1.0,
+  "confidence": "verified",
+  "flags": [],
+  "query": "2048 Blast Merge Numbers 2248",
+  "checked": "2026-10-03"
  },
  "2048 Shapes": {
   "appId": "com.infinitygames.merge",
@@ -1161,28 +1153,23 @@
   "checked": "2026-10-03"
  },
  "Adventure Reborn: Story Game": {
-  "appId": "com.Gseeds.Pechka",
-  "matched": "Pechka | Adventure Story Game",
-  "developer": "MazM (Story Games)",
-  "playGenre": "Adventure",
-  "icon": "https://play-lh.googleusercontent.com/8lE1OMUdhlyuJDpuvh9bsBws6Pw2rEdq3sGGIHWPwl7V9DZzxrzKXLuUY4oZjUE65sHv-1P-LOXFiSrJa0Uhug",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/bcxo6B3yoj0TqLCx_UQ3l4eiapSdKAt_BwkWddrYB6LaiLmiy5vgldOzTzuU4vg9eX99KTYAb6v-_9zcNNx-1w",
-   "https://play-lh.googleusercontent.com/Lp5kM98t7pdZnES8alNcpB80vlNNnKhvqOOdSQSJz4HRiA8nxV9tdlXlIoM9lgufGF-thUou_m8dJsSIa2vEAg",
-   "https://play-lh.googleusercontent.com/O9EdnTEnTIIcwnVFVFK2snAFIacnWwM8iYHeg4eNuANiUkeo9Zvsy2nb-nypsPv3J9Ezl0BhOQOESaaCf9b0",
-   "https://play-lh.googleusercontent.com/9Ct_QW_1a6woumC3Anw0d6nPpOJwHmJqvsF6Wy_RaXEO4J1eLRw17zJthIoR8PGBNeHggJTfnpwSoeAYmj-MnYQ",
-   "https://play-lh.googleusercontent.com/ZONrd5xI5KswwsSVOEMJGfeKtmytl81a453RN7uWWd-IYiMUFEn_02b12gcvEvJxY2auiv_ptvSrkjtEIOzi",
-   "https://play-lh.googleusercontent.com/1ZDs-STu3GfI8crXCA_cBjV-TIBsFs3r_qT3jEZHdqNPvDGD_f0AgTQ9nUV8oouvq4HvarOvQ3Um37iAfFYL3g",
-   "https://play-lh.googleusercontent.com/kRpC1zBn5O7brE53o8g9rGbYc3kW9EFJchzgDc5G0avAhN0R17mCeOfngQ5IiytwtFs0spUdzQAOHxbAJ-cIyQ",
-   "https://play-lh.googleusercontent.com/JZ8LN0kF3jxmGGPtQuMwnWDvsl14EgQ-k3p8gv87duIk1c9nWm6Q6IMbHKnePP2V8LIq9nRSLQIziO_iFMrOpQ"
+  "appId": null,
+  "confidence": "null",
+  "reason": "closest match lacks 'reborn'",
+  "queries": [
+   "Adventure Reborn: Story Game",
+   "Adventure Reborn",
+   "Adventure Reborn: Story Game Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.Gseeds.Pechka",
-  "playPass": true,
-  "similarity": 0.741,
-  "confidence": "verified",
-  "flags": [],
-  "query": "Adventure Reborn: Story Game",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "com.Gseeds.Pechka",
+   "title": "Pechka | Adventure Story Game",
+   "developer": "MazM (Story Games)",
+   "playPass": true,
+   "sim": 0.741,
+   "flags": []
+  }
  },
  "After Inc.": {
   "appId": "com.ndemiccreations.afterinc",
@@ -3584,28 +3571,22 @@
   "checked": "2026-10-03"
  },
  "Birthday Cake Decoration Games": {
-  "appId": "com.iz.kids.happy.birthday.party.cake.decoration.celebration.game",
-  "matched": "Birthday Cake Games Cake Maker",
-  "developer": "Timpy Games For Kids, Toddlers & Baby",
-  "playGenre": "Educational",
-  "icon": "https://play-lh.googleusercontent.com/Duy3JIsWc_NENJnRPdaLN2WnQFJ_TMJRkBvVcGl9zudBXEPTpuVX_6QeZ4Vcv3zqvfR15U24NX7A2ZEiAsdGmRQ",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/Vpxp2a16nVcgxAFfGzzJs5B6Y0u1gZHp6wDp0ZdllUP4xFgrHZLZNxEENwdSBJq5Z8KHmH0jGtzYtmTaxRtROZ8",
-   "https://play-lh.googleusercontent.com/GpP0NlssYnwrkaG2UzbPSUdYuOetYbtfNcJKHsVzRV2ZtCuSVUxqmXRsMcJXfTIF1MgC2pVz9J_VkUPYykWz",
-   "https://play-lh.googleusercontent.com/1OtoHLQoC9nCsgz3EQ_UsxtUCtnKMto4B944W8jv_Ci6nP2nsdYKJEQfiYKA-1B4xiiUYb72681a2tZRKmg",
-   "https://play-lh.googleusercontent.com/AubpzGfexMgwyvf2nNkYqwz4GbwhDUuMfsC_lpcW5mBSeOJyWeZySUdm_abHtccXMv9XISjni3BLrYsLQDBJ0Q",
-   "https://play-lh.googleusercontent.com/8FbT4hFy3IPzDuKcJ-ZJ3RBvhY35Tc1bsHbvdgRMqfJiOOIjCSSkC5zA2DcNdkVRz0cqQ_q8zaLt0X3gtEwZQQ",
-   "https://play-lh.googleusercontent.com/j3AdBPup8gG6pcMpKrdn8kS5OnvB2tFvkpzbf7d1l2wmTy8HisF0xZQPSIhtYxgZS_K0fxZeGgVKskYoJS7m",
-   "https://play-lh.googleusercontent.com/qEgZ62JWWzSgwRK01a0rmRMbuN9LhiWls-vJFOXlZKSk00x3IojKR4PahxlPgqGWIepkbKsvfB5PqpJuxnVGWw",
-   "https://play-lh.googleusercontent.com/ARklbyHMoFePTSM9JFgN-rZOWkwBS5dWreU5F7iDgkv4CEJJC-1hNaLlrDMdfp66w7naOqhfjjRklB9Gx4obEw"
+  "appId": null,
+  "confidence": "null",
+  "reason": "closest match lacks 'decoration' and no Play Pass badge",
+  "queries": [
+   "Birthday Cake Decoration Games",
+   "Birthday Cake Decoration Games Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.iz.kids.happy.birthday.party.cake.decoration.celebration.game",
-  "playPass": true,
-  "similarity": 0.675,
-  "confidence": "verified",
-  "flags": [],
-  "query": "Birthday Cake Decoration Games",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "com.gameimake.designerbirthdaycakebakery",
+   "title": "Birthday Cake Cooking Games",
+   "developer": "GameiMake",
+   "playPass": false,
+   "sim": 0.842,
+   "flags": []
+  }
  },
  "Biz Builder Deluxe": {
   "appId": "net.kairosoft.android.townshop_en",
@@ -3800,28 +3781,22 @@
   "checked": "2026-10-03"
  },
  "Bob Jigsaw Puzzles for Kids": {
-  "appId": "jigsaw.puzzle.casual.games.word.brain",
-  "matched": "Jigsaw Puzzles for Kids",
-  "developer": "Dark Halo",
-  "playGenre": "Educational",
-  "icon": "https://play-lh.googleusercontent.com/dD5B4KbLDh_IuRKB_apWUeveSvLugFODG2zkDt1iUxDiDY3FnYmWwG_xnrXWRYqiVa6TLVLs3E1bVcHRjH59",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/tuQPJ8OompcBW646GddM5JwYTnOMWB4jbhNplHrnzpNd9zmkiWfQLsjKaafvI0W-goFNXZPKwqiu9XfbiHxev9c",
-   "https://play-lh.googleusercontent.com/sFEdtj1IC4QAAZGs5glnqcS6r3kXr2AkKPX4uDhirPjcvj2aPLJEFtLOn6n-Y_XKoa6grrwm3jGAoKcF5icf",
-   "https://play-lh.googleusercontent.com/ptA-XrNkI1etO_pIKyfnHstWoACCzF7O5KVPQhBBCtfCKloYZ6dG0S66VIGFMkcM1q-ab9lSDjHPdSiCDmWZpg",
-   "https://play-lh.googleusercontent.com/U4-b3MG3TnDw0IMDjphHORXgpLNoDkxE4_euECFBLQ0jDpZtO0bA7uYm5MzDLUOu24RYoLbTBBTgLsVDO9fnWiU",
-   "https://play-lh.googleusercontent.com/f8ocVL7uJWLCjhZKbBYMfKqZjUKCFORqthgEzUPxARbW4iIiTAnWuT6T7tTsoXq54LdFv-cCISIYS4YFFjp-",
-   "https://play-lh.googleusercontent.com/CQWLBgGWNFwJePJaLFA4V18GH_QSmwVfm81cO7C9L2QGLJl37Ey5dz2diqBWnlzO66ZZGyhBfLBURyByfy4",
-   "https://play-lh.googleusercontent.com/o1HkaKLorwh3zuE62cR4S5HZlPmlIIWDD187V7VPSW9pjpLpKCTJF2zOqbtveI3j1z51iVYeB3g3ig4iLvcNH68",
-   "https://play-lh.googleusercontent.com/uD5_Vbl2xbWjBBuqXDJEpxknCm9k4Aod3OeXk5Pohnp9LYJ-kLLKps2NT8L7TuPhKXAmfHgxuV7n3YrNqj4_AQ"
+  "appId": null,
+  "confidence": "null",
+  "reason": "2 apps share this title and none has the Play Pass badge",
+  "queries": [
+   "Bob Jigsaw Puzzles for Kids",
+   "Bob Jigsaw Puzzles for Kids Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=jigsaw.puzzle.casual.games.word.brain",
-  "playPass": false,
-  "similarity": 0.92,
-  "confidence": "strong",
-  "flags": [],
-  "query": "Bob Jigsaw Puzzles for Kids",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "jigsaw.puzzle.casual.games.word.brain",
+   "title": "Jigsaw Puzzles for Kids",
+   "developer": "Dark Halo",
+   "playPass": false,
+   "sim": 0.92,
+   "flags": []
+  }
  },
  "Boba Tea Games: Bubble Tea DIY": {
   "appId": "com.iz.boba.bubble.tea.maker.drink.iced.game.girls.kids",
@@ -3898,7 +3873,7 @@
  "Bored Button Play Pass Games": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.85) and no Play Pass badge",
+  "reason": "closest match lacks 'pass' and no Play Pass badge",
   "queries": [
    "Bored Button Play Pass Games",
    "Bored Button Play Pass Games Play Pass"
@@ -4202,28 +4177,22 @@
   "checked": "2026-10-03"
  },
  "Brain Games for Adults": {
-  "appId": "tricky.quiz.test",
-  "matched": "Brain Games: Puzzle for adults",
-  "developer": "Fun offline games no wifi or internet needed.",
-  "playGenre": "Puzzle",
-  "icon": "https://play-lh.googleusercontent.com/smwGM9g8022XoREIOKswlQViosdCRJgllkwrNMhry3ClDG-xDGnEb5TfrYHuiXs0FRG0gbZxQC2DaFwGwHuO1w",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/sqydDeGrF3C0MoSgpmmWutq1yY-W6gYE7JMIbhqNxPW30YNTj-w0g_slUurGYHv0X7ySAbDYT__fK2B7Haav4kA",
-   "https://play-lh.googleusercontent.com/ExA-O89Nd0f8eu2ASpyR0EnJnqVHarHpHLzyGYPdEiesq9f2GQJDGyPevEWjH8J-du9EzDogiToW24Qo_5CH8a8",
-   "https://play-lh.googleusercontent.com/Vsz-oeKCItjtOngi7t67CnkZz8WANCF2puGQRTqVK5f_MJpR8oWMuKDvLSqXNW_6yo36od5ltZuEwtI1-IdI",
-   "https://play-lh.googleusercontent.com/bVsmOfjQSgzqL2ii3haXLUFchPoBMCEoPEVOGjocIeAiD47z06j4VHx7d3Ln-5oHw3H2ziZB0ChCH21gppm7FA",
-   "https://play-lh.googleusercontent.com/Mgn3Pb1kfJNwzz6_tgoKZsitbGzW1B-DpR6x_dJcR399A91LjArCFeQ51R5p8GmPizMRUYrFeksCUXN_fRse",
-   "https://play-lh.googleusercontent.com/Dx8YjWG7tSzH6ktKH95Qhz_7BKHhDH58Rx3K9XF7IGpvYS-dzOZ3PUKSHyS9Je_XLaFkWB4oCV7Q56hb9j2nCQ",
-   "https://play-lh.googleusercontent.com/gbXklcYW_p_woK-zsrSsueG1ENKEd0oTH4XP5hxUIZfzAuxCaZGJ0DdEvJm51QWr-qm29FJrnAKNeJp2cRrOhg",
-   "https://play-lh.googleusercontent.com/VTeShsoSFWiYfVa-NGGh9zaNHtcmQxWyGwsiYqEJZd9zd8jV64E18tA3m4aEqGEWQDmnLStWKGgUYKAb3Bv3TA"
+  "appId": null,
+  "confidence": "null",
+  "reason": "generic title and no Play Pass badge on the closest match",
+  "queries": [
+   "Brain Games for Adults",
+   "Brain Games for Adults Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=tricky.quiz.test",
-  "playPass": false,
-  "similarity": 0.9,
-  "confidence": "strong",
-  "flags": [],
-  "query": "Brain Games for Adults Play Pass",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "tricky.quiz.test",
+   "title": "Brain Games: Puzzle for adults",
+   "developer": "Fun offline games no wifi or internet needed.",
+   "playPass": false,
+   "sim": 0.9,
+   "flags": []
+  }
  },
  "Brain it Out – Physics Puzzles": {
   "appId": "com.orbital.brainiton",
@@ -5273,28 +5242,22 @@
   "checked": "2026-10-03"
  },
  "Car Eats Car 3 Hill Climb Racing": {
-  "appId": "com.smokoko.careatscar3",
-  "matched": "Car Eats Car 3 Survival Racing",
-  "developer": "SMOKOKO LTD",
-  "playGenre": "Racing",
-  "icon": "https://play-lh.googleusercontent.com/Y-y-KCuWgXb9NGd5uhcwbjdCw36sLiznI8AnmHFXatR315Iyv9x_5LfZPgr7UgeUW9TYrfX4bL0MfW9DaZUwtQ",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/0uMCMsa2JK2wx0CrP-8_-8PQoOVbAwBYau-yGYBWvQB2e7wMPq4M2_WknyRJ-jD8Xmw2rn7_jmdCeqVUeiZx",
-   "https://play-lh.googleusercontent.com/SOM8ag1Qag3lETnPd-_R0WSrnG4oG7al9_Gtrk1Qn_SZoRUkjEJ7TodJI3i0IDKK4PIbzt1btng7w-jwWywoE6E",
-   "https://play-lh.googleusercontent.com/7ScPtO--En5yqoKJfp1RRwRQjYkQeqnunPusyd93rGcPwgcswInmcBfv8PPp5Y6WBbjjcjCynT-u4VXhJ-jc",
-   "https://play-lh.googleusercontent.com/D3k1fqNBObus4rfXLISHoelo_DVgcYEuMKBcRKVaEMS1gJzWM0rRi5P36JvMi2rpgchiVaKP6fET6ivJ9gEh4Qc",
-   "https://play-lh.googleusercontent.com/1BocR1InoQ0sjioJKfHkGt_4cqZCS_CO_FIn6Y-JOxNBsuX2BJEBjMCqmiUULqt3BQ9_-D-tXyW6_ifJs5915g",
-   "https://play-lh.googleusercontent.com/Ay6M2wxChibgfZxcTPB_dYKEhLwGNITU3EY5ZsGLIGzmV5j9LjpsSGrYOCBnvsJfjJUY1act2B2NcYsJFq6q",
-   "https://play-lh.googleusercontent.com/O3-6sK7Y8Rne_6uy0QIMrcq_pqz-Bu3eN89MLXdzsDrbTcR9FVFnVUt9xUSQ4GC4gT9o_dxwpkG8HUOAbmXRsg",
-   "https://play-lh.googleusercontent.com/hnHmXeYaAh2hXEZoYn7KSp-LGlhENCaj0xyYKHOiw5_x35LnLkLRNZGc5hQD8VA0waOdkWA8sLhUEmg77FQ5UA"
+  "appId": null,
+  "confidence": "null",
+  "reason": "closest match lacks 'hill, climb'",
+  "queries": [
+   "Car Eats Car 3 Hill Climb Racing",
+   "Car Eats Car 3 Hill Climb Racing Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.smokoko.careatscar3",
-  "playPass": true,
-  "similarity": 0.774,
-  "confidence": "verified",
-  "flags": [],
-  "query": "Car Eats Car 3 Hill Climb Racing",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "com.smokoko.careatscar3",
+   "title": "Car Eats Car 3 Survival Racing",
+   "developer": "SMOKOKO LTD",
+   "playPass": true,
+   "sim": 0.774,
+   "flags": []
+  }
  },
  "Car Eats Car 5 – Battle Arena": {
   "appId": "com.smokoko.careatscar5",
@@ -6124,27 +6087,10 @@
   "checked": "2026-10-03"
  },
  "Chef Master Story": {
-  "appId": "net.kairosoft.android.burger",
-  "matched": "Burger Bistro Story",
-  "developer": "Kairosoft",
-  "playGenre": "Simulation",
-  "icon": "https://play-lh.googleusercontent.com/PB5gxAmGMdXl5Xy3vQ1AKxkBeYGAZTxh6hzHfZs7acPtu7Zjh7wXtWy7vLaUyakbjd28nhTAPJadKAIl86joDg",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/GUPj09mljD1-thl00vU6vbJcZL7qvBBiagxnfFWM5flhX0HFe8-jBZgzPYDuuSLrUJv1a07UWd4X76MCAhJh6g",
-   "https://play-lh.googleusercontent.com/9S0JEz2aMVN561yDWM0IGti9N4zi2oWbPWUNkG2HbJWhs1VixKrFp0NMHgQftKmsRtA9F-1Zm-0IrYPq5Uxx",
-   "https://play-lh.googleusercontent.com/LlvC5LXR1mHNDJIIeWxMv-gL7LCeGYdADOuAJzw-LOH3PTbHHXLOV7kYYVaTBRPRM_5gqisEv4mOIMTN411lu9I",
-   "https://play-lh.googleusercontent.com/xbQ3C0sfL4OCGeb7aA-gxh8tMQC5atyJy0-09n1JMcpFEd69UFF9rjip9P4A0opJUqH2omxVYq4HVvMhdf5NvME",
-   "https://play-lh.googleusercontent.com/fHc8Z8s2m5ZHE8Bk5DZ3NkU2LDn8DpUzuS9hKMJxrKXGJLuw7r518jpsag1ssf5fWh6d8mlu_lnDvzUMb4dzFw",
-   "https://play-lh.googleusercontent.com/E4jWSeSvK2buFCbN-DLqZVM91iNkvvBhY1MP7sj82CyRIsu85YIy49w70hMf0X9P3-83xdzCSEZievFdhfquqw",
-   "https://play-lh.googleusercontent.com/9LWitt2BV3JRFOrr5wY1RmXoeRwcxVZlIawTI3l1_rfEzcNpdSuVFf8wqGFa-uhhMz10aWuAxxqK_CSRBH6ynGk",
-   "https://play-lh.googleusercontent.com/KubOqQKyTPOglPMWOtqzT71dmJmhG3qn5u2eHo7kKFsGXyZRtZmwFJe-QqifhMmrcqqVV3PsCpejUMDtn4XLZ3Q"
-  ],
-  "url": "https://play.google.com/store/apps/details?id=net.kairosoft.android.burger",
-  "playPass": true,
-  "similarity": 0.611,
-  "confidence": "verified",
-  "flags": [],
-  "query": "Chef Master Story",
+  "appId": null,
+  "confidence": "null",
+  "reason": "set to null in data/overrides.json",
+  "queries": [],
   "checked": "2026-10-03"
  },
  "Chef Story: Cooking Game": {
@@ -6387,27 +6333,27 @@
   "checked": "2026-10-03"
  },
  "Christmas Coloring Book Games": {
-  "appId": "com.magisterapp.natale",
-  "matched": "Coloring book Christmas Games",
-  "developer": "MagisterApp - Educational Games for kids",
-  "playGenre": "Educational",
-  "icon": "https://play-lh.googleusercontent.com/SA2VbV_1t89_sM1ccgfZf2AhZL6HyTgVHAJWQVP1UYtV5vfaO4_mCE1-MY6HpavYbbi-HoLZbh4o5DPsqYLMj-8",
+  "appId": "com.gamesforkids.coloring.games.christmas",
+  "matched": "Christmas Coloring Book Games",
+  "developer": "GunjanApps Studios",
+  "playGenre": "Casual",
+  "icon": "https://play-lh.googleusercontent.com/inFjUabninX-LlAyyZzX5vdUu23-LwglPhEcyPWxu1bjnrKF4VOyvYidk0YaKs24JphA6zmt3ePK90VJgzw",
   "screenshots": [
-   "https://play-lh.googleusercontent.com/NvidCPE1xmd9YHHudtU_j-uTl_XYT-6no4SAEilShNpmaRaZZ7zawkk36lkqM1yGM-3YI7zlXdp0hJm4MojH",
-   "https://play-lh.googleusercontent.com/hG3E5r6EanAjcFRgAD0KWdUJnN6-0s43c53TX_LbrpI0UBELQkWaX4kFmpCS14ZifM9Gw2em1BerCyeWhkam",
-   "https://play-lh.googleusercontent.com/sQR90xgpry3uTQp4Fun2Y758BJ-vIbQFrygpaViBbVphuAdSt_73FGBx467gARnrS3Okyt9f00PIMClmgnoDMA",
-   "https://play-lh.googleusercontent.com/4LM54h-vPAM-KePqPHtFhZ6I0uaCcxq_m2RoYcbkEIAZ_so3TTCuJldG2tRYO1RRx76Hq7-VkuNfLXIEUz49",
-   "https://play-lh.googleusercontent.com/uFHOcBAw4Nr21tbjyoUW3KTEw4O84IA7U7b_hycQxS0McR2ZuHHVYZemRE8E6xGLfP0RFkE7P-uSG-yMM7BQPi4",
-   "https://play-lh.googleusercontent.com/NvidCPE1xmd9YHHudtU_j-uTl_XYT-6no4SAEilShNpmaRaZZ7zawkk36lkqM1yGM-3YI7zlXdp0hJm4MojH",
-   "https://play-lh.googleusercontent.com/hG3E5r6EanAjcFRgAD0KWdUJnN6-0s43c53TX_LbrpI0UBELQkWaX4kFmpCS14ZifM9Gw2em1BerCyeWhkam",
-   "https://play-lh.googleusercontent.com/sQR90xgpry3uTQp4Fun2Y758BJ-vIbQFrygpaViBbVphuAdSt_73FGBx467gARnrS3Okyt9f00PIMClmgnoDMA"
+   "https://play-lh.googleusercontent.com/uajrZXgnAiOX9WOFVd56F5AseL_nmGbznVPeL8IteK25ZdbJkRG_g_5zo_CnS3u6dyYEBtfOYFUtR6Q-pcTi",
+   "https://play-lh.googleusercontent.com/Coe_RY41GuxKIXKGurB0pIuYRq9rnvSWI4Jl_Jiu-lsAFqG-AQ63hP8tmdBdVudwhjLLwXL8IbHu_krIh7gufg",
+   "https://play-lh.googleusercontent.com/jSidSmifKOWmK_W_tlK8pjp7GfU8r5Jgg1MrLApRb4auRYhrTkeada7uNI6gciLwzfKmuHvqYytfJ5hbRnT9",
+   "https://play-lh.googleusercontent.com/B_af2_9YzugwD2D46w9uibPwZ92Ze61A7bvIgGGW_DQssJkUMoKp4jAHcnNUnl7gh4T0Oj0L8QRhhuTUtbvZtA",
+   "https://play-lh.googleusercontent.com/GWe-W-_MDev6YzgYEHJiQ7p_-yVTJfPdd7nG1oQ95laqhtpX9AlDCAUgtytZDD1qRCz6bM845f6OYpqPx7g2zQ",
+   "https://play-lh.googleusercontent.com/c4irUchft5wfilmKb9xYEJESN5qTOqLnL7fbgsFCbhq9ANRCcqxLTURIrFDy43UsVDUYOxqxIn_OP3WEJ0HB6A",
+   "https://play-lh.googleusercontent.com/pE_RRW4ryqy4YFZMt2M8x3pjTt72Rqj4fAvDVOUEMLXJ8NQP3zrm9XoPMkbseXzKRJbIlTilwVHMbdhH00j8",
+   "https://play-lh.googleusercontent.com/Ti-RRENCDg9zr2PeAlN8IHXAUecY5PNPF_aoIeiWYSU5zbfhyhqyOFE_cvIrGqzgGjVb2DDb3R1aAEiQMQo9aKE"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.magisterapp.natale",
-  "playPass": false,
+  "url": "https://play.google.com/store/apps/details?id=com.gamesforkids.coloring.games.christmas",
+  "playPass": true,
   "similarity": 1.0,
-  "confidence": "strong",
+  "confidence": "verified",
   "flags": [],
-  "query": "Christmas Coloring Book Games",
+  "query": "Christmas Coloring Book Games Play Pass",
   "checked": "2026-10-03"
  },
  "Christmas Sweeper 4 – Match 3": {
@@ -6507,22 +6453,28 @@
   "checked": "2026-10-03"
  },
  "City Games Princess Dollhouse": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "title similarity too low (0.71) and no Play Pass badge",
-  "queries": [
-   "City Games Princess Dollhouse",
-   "City Games Princess Dollhouse Play Pass"
+  "appId": "com.my.city.town.home.design.dollhouse.princess.girls.games",
+  "matched": "City Games world: Avatar life",
+  "developer": "Ijjus World",
+  "playGenre": "Educational",
+  "icon": "https://play-lh.googleusercontent.com/ljfl2riU8GJAnZaUTYMvWoYXL2amLLwZXLJbnuB8x9w5AYBPux77xReaVaTZMQ0Pski1x6Io0xIjdHl5OeBtLg",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/ihSv8bQ9GjwXxFD0YTylllmXEyFCsi6a2q_z2m7239VJlbjplCdnOkK1G074hKZV9LTKqSdlsmH5ke7hAo79Fg",
+   "https://play-lh.googleusercontent.com/Z6PJnGYUmIiv8lQfuagVlud3NqwgXFNVx0uNdbcUSrZoDZzNdxB0cRA94pUwbU5aSRsLsECTibVmn_GyBErYoA",
+   "https://play-lh.googleusercontent.com/4VyjrxtdOFAi9qsUo8zxv5Oghz-xuRUThx7uVJjhXUtKCjvrMzv0WyMwcSGE7LDjDPXV-YzSl10AOfJuNUbF-w",
+   "https://play-lh.googleusercontent.com/y0L6K_EBPngzmSjq3wFmBuSzMGEDkUuWcHEf1bwb9l8BvS9tQBIUO-3eVepY5r_pnpgQxS1D_MSRKllIeYB83g",
+   "https://play-lh.googleusercontent.com/yHaFx3wQFPbAqoIXpB6wbyChGLKZZhfEEo2qW3p_CyMocIdJ7pDLB3FmqJp-xn4LkbZbrgBl2KwgIyXhKqN9XA",
+   "https://play-lh.googleusercontent.com/GtCYNsyIrObh8W9YicPMKhqrIUyMpTSPVjO6O7CLrQipyxffrnvybfTtpWrvgv8ybnFGUTmKhMXeTiVXw-9BsQ",
+   "https://play-lh.googleusercontent.com/H1Q-ZhwoDO7ofQdtocYzdnsGTW3gO6XOlMyqDobfPbWJ0sokI85HFGtNZvRLJAeSwg-hvNZffQk6siuD3AI0AA",
+   "https://play-lh.googleusercontent.com/ihSv8bQ9GjwXxFD0YTylllmXEyFCsi6a2q_z2m7239VJlbjplCdnOkK1G074hKZV9LTKqSdlsmH5ke7hAo79Fg"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.magictoons.princesstownforgirls",
-   "title": "My Princess Dollhouse Games",
-   "developer": "MagicToons",
-   "playPass": false,
-   "sim": 0.714,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.my.city.town.home.design.dollhouse.princess.girls.games",
+  "playPass": true,
+  "similarity": 0.491,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Claire’s Café Tasty Cuisine": {
   "appId": "com.gamehouse.cc1",
@@ -6837,27 +6789,28 @@
   "checked": "2026-10-03"
  },
  "Color by Number – Pixel Art": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "closest match flagged: developer is not Number – Pixel Art",
-  "queries": [
-   "Color by Number – Pixel Art",
-   "Color Number – Pixel Art",
-   "Color",
-   "Color by Number",
-   "Color by Number – Pixel Art Play Pass"
+  "appId": "com.europosit.pixelcoloring",
+  "matched": "Pixel Art - Color by Number",
+  "developer": "Easybrain",
+  "playGenre": "Puzzle",
+  "icon": "https://play-lh.googleusercontent.com/6uxzOzSLRNbcY7fe0k8F4UcP9Z-Km3mcC7GwKxchM41UjJwv85TK4IVL4cOtAtHHddG_t6tdTx_vhFFWsJ2hDw",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/foL1SkKuWGTCyhJ2ZxkZtp_bzQ009Ke1hpzoRODujNirhxHoHDCfx2ddSrHH1eJIf-WCttEwRTyIWJYN_-lvmg",
+   "https://play-lh.googleusercontent.com/Lmfu01AOkjOlGBMb8il7bVstwCPR4aL1Zm0nEVV6lw77okgzVbn-ouFm5JQnYDrLsU1OgWW1T4_66YzWHJmu7-0",
+   "https://play-lh.googleusercontent.com/G6uw3t9iMDV9tRjU-TvxFg55MhrnK-HGFKROevvUNR2cANZvoEVx_PuQnaLCDSEkRZuTwE4VgaooIBZsliKS7g",
+   "https://play-lh.googleusercontent.com/HDQkWQa73_u4Z0_pQvMd8DiSkvG3yY0lZzyvs8xLICgfHKSiRk2V5mh9StAKh2GuoJLPlKbFLH7lTIrnuIRinFc",
+   "https://play-lh.googleusercontent.com/j1Na_JrPyGZwEpg5THm8yQJ6lTzaX0UzPNulQZBmfjJk3hQ30svAsSxPwO_-NTkaC2O-4WFk898vdlIKqWusww",
+   "https://play-lh.googleusercontent.com/bo2euXsBPUJBF4kQ0Rky401xNal0O6B9ytwH1q5Pt0gqPsUKmxD1f0hvxo9WDDL-GFyxTkbk3F0-8T0pMI-kpPc",
+   "https://play-lh.googleusercontent.com/UiDGh3Q9IuiHuuzOqamdNA5YMgZn2j1qKiyQsNv7wG6HkHg6G9E1mO44UNmHMTlaxUhjuRWe6HmMtOFPRgikXg",
+   "https://play-lh.googleusercontent.com/7TJhqXQbWhzFecXKZ6h_ILqLi91RBeC4gkOmjQNaQaNHf9DBk-6nhuYQY920gXuSAgt_qeCGYceUvllBlFibHQ"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.europosit.pixelcoloring",
-   "title": "Pixel Art - Color by Number",
-   "developer": "Easybrain",
-   "playPass": true,
-   "sim": 1.0,
-   "flags": [
-    "developer is not Number – Pixel Art"
-   ]
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.europosit.pixelcoloring",
+  "playPass": true,
+  "similarity": 1.0,
+  "confidence": "verified",
+  "flags": [],
+  "query": "Color by Number – Pixel Art",
+  "checked": "2026-10-03"
  },
  "Color Music Hop Ball Games": {
   "appId": "it.haystudio.dancingbeat2",
@@ -7094,26 +7047,22 @@
   "checked": "2026-10-03"
  },
  "Concentration": {
-  "appId": "com.game.good.memory",
-  "matched": "Concentration",
-  "developer": "GoodSoft",
-  "playGenre": "Card",
-  "icon": "https://play-lh.googleusercontent.com/d1ghBDGc5_Xx3o2ubEQoj4TquXq2tDWAZBs6W2dY4Keyu2T36F5pti_WUSsBcJupbs2f0GBGOzdIyIBI_zwQ",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/rUsRfaSzvzy1fYH02LD8pwZqYQkvyRb-fiUrc2mZx9z6Juyp63H4bO265S-fc6KtatfS10H_6LMJug1kUbZjLQ",
-   "https://play-lh.googleusercontent.com/6lXP-VDOWwTmB-tECBEhJ1qANIvF_7OZXLsofrOoV1RU-WMZVQsqsmCdCn5MyCuv8A4nyY39GDUAw8SCxujfqA",
-   "https://play-lh.googleusercontent.com/9IpJwDQNKBi9ZJNmtp3d-iJkfvg8lw-Rt8zWQdm4Wl1bguso8ol9qpprV6SRsRiGD7Shuzh-n0PE_tXbyls1zJM",
-   "https://play-lh.googleusercontent.com/J_qaewX0_U_40Gwe3XrOWZ6SsBCsGh_aOR2KvQLD3RFBo4rCYrZ_PQ6V6ucsYfBfUiHxEGiw001r09Cz2WkKpQ",
-   "https://play-lh.googleusercontent.com/yP0wrB3ixNwwtN2KDySdc52XNbcHmsTiNYmX_FC5OEm6jbk-Knm7EeDndO9t5fY1vchbBpOD7HLe3cgismy28Q",
-   "https://play-lh.googleusercontent.com/rUsRfaSzvzy1fYH02LD8pwZqYQkvyRb-fiUrc2mZx9z6Juyp63H4bO265S-fc6KtatfS10H_6LMJug1kUbZjLQ"
+  "appId": null,
+  "confidence": "null",
+  "reason": "generic title and no Play Pass badge on the closest match",
+  "queries": [
+   "Concentration",
+   "Concentration Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.game.good.memory",
-  "playPass": false,
-  "similarity": 1.0,
-  "confidence": "strong",
-  "flags": [],
-  "query": "Concentration",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "com.game.good.memory",
+   "title": "Concentration",
+   "developer": "GoodSoft",
+   "playPass": false,
+   "sim": 1.0,
+   "flags": []
+  }
  },
  "Conenction Logic Games": {
   "appId": "com.infinitygames.connection",
@@ -7424,7 +7373,7 @@
  "Cops vs Robbers: Jailbreak": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.81) and no Play Pass badge",
+  "reason": "closest match lacks 'jailbreak' and no Play Pass badge",
   "queries": [
    "Cops vs Robbers: Jailbreak",
    "Cops vs Robbers",
@@ -8225,24 +8174,24 @@
   "checked": "2026-10-03"
  },
  "Daily Pastimes – Minigames": {
-  "appId": "com.tellmewow.senior.classic.pastimes",
-  "matched": "Pastimes - 30 Mini Games",
-  "developer": "Senior Games",
-  "playGenre": "Puzzle",
-  "icon": "https://play-lh.googleusercontent.com/-wqhdnJRsqAuR6nWMdhzRWu4q1lT-R-epKaxSi6yv8tDqlTuJ0ADo7PcwIujxP4qxP7isBCxHXtP53hpvEJfGw",
+  "appId": "com.puzztime.pastimes",
+  "matched": "Pastimes - Mini Games",
+  "developer": "Puzztime!",
+  "playGenre": "Trivia",
+  "icon": "https://play-lh.googleusercontent.com/OZhuDCsGSF-75_Kgzb1yIWirULTuHEjG3V62NMgwxCKdeaLQvdSK0kAF-IUsGGk9aQjYwNpRWT3avtCEeUVDBg",
   "screenshots": [
-   "https://play-lh.googleusercontent.com/fFcjIRFf3K31N_l4CGIi4zfzAiaI7l61eubz7XZcStuZlibiZ35_LvOqn_cKpjPQbfkxjxI2tc5Qaa3JSoTw",
-   "https://play-lh.googleusercontent.com/kGYWelex4kQTWbLFk2_mr-K9DajVr1WsQ-5iMwOistrrkEImBhHlWrZVsBFnFnZKJy9nsJtJWTB21vlv91Noqcg",
-   "https://play-lh.googleusercontent.com/xgqxmSQ8z22wJ5npg20APctDZnsYVk9pvnEbNlm879psbF-Rddt-XJTl97iWswM79aNJkNTKXeEEb9rikIb4",
-   "https://play-lh.googleusercontent.com/9_TRPHPG5lmKAHLzKxv1cZZVsmVNEZSTcGC0AplOCJ9CaTLcYNBFdSozulEjf5Vzmz7MKVqruuR31xyWSH2P",
-   "https://play-lh.googleusercontent.com/zQojCPY_Xt8_ZXQsDGQIKfly2lUT5XsfB3_8hmbZBh5adzl5WuSKX17hJBj1G_3qRJT57b4Q3BARf768NE_SFv0",
-   "https://play-lh.googleusercontent.com/TOgB5Wc2irumKJoJ0BOTiQXo2gxkO_WHMtNb7wD7zyNsfQVnlirL6q8FggvfdEub-Xz1PBZ50EHaJ3aybHrZ",
-   "https://play-lh.googleusercontent.com/8bmZtiXa67JtM0oug8-NnJqYt_RlDMjtWxV3IC-haUdPReMfV4oO7M829LzH3xOqOUDmhL4wQXsOl8LQ5UtcUA",
-   "https://play-lh.googleusercontent.com/fFcjIRFf3K31N_l4CGIi4zfzAiaI7l61eubz7XZcStuZlibiZ35_LvOqn_cKpjPQbfkxjxI2tc5Qaa3JSoTw"
+   "https://play-lh.googleusercontent.com/1ZWetoqN-pe7D87oDjXDZDGUvEAHqOkAyLX2DqeCLRfB--QAsir8UyeLGLJzjAnOtO2HjNHyCu56l_dCUCzdSg",
+   "https://play-lh.googleusercontent.com/oEdmLt9WEzM4s7yirBdHyCuCibEWBqajLHeN82kJoiMXJjE5pGO9N4tBDNqdDxfThv1Nf2JvbJHws0K9SEgKbA",
+   "https://play-lh.googleusercontent.com/ycxUAdJF6H6kOB57DPj1fNLkWKyxPZ1B7Vf7QxvSzM_hfhqebOQynoKKGXta1qDvW91ItTKZI2qEd80Vdcfu",
+   "https://play-lh.googleusercontent.com/UvtnxfVZ6uO10joAr8nZ8coO6WWEQrcaoPKvFjiW_b3XtGqooamfp9x4INvbOufLgdqICAPZ0oxtwQ3I-T1ytIs",
+   "https://play-lh.googleusercontent.com/3xeqp6HNdojDKiy5_wG83fOt5QdOjkPTOi_RYnc3j7RjuuRaBfj_5OxlDlWKSeMgjtTB7UxHmod64ZEzQbaR",
+   "https://play-lh.googleusercontent.com/UVZlnV5u31kheTyTz69nuvB2xC02890z8DUFZa57mDFhajjLHJ1JwuXbFo6-rHlLsxiV393ExTXScuVz1CuF",
+   "https://play-lh.googleusercontent.com/1ZWetoqN-pe7D87oDjXDZDGUvEAHqOkAyLX2DqeCLRfB--QAsir8UyeLGLJzjAnOtO2HjNHyCu56l_dCUCzdSg",
+   "https://play-lh.googleusercontent.com/oEdmLt9WEzM4s7yirBdHyCuCibEWBqajLHeN82kJoiMXJjE5pGO9N4tBDNqdDxfThv1Nf2JvbJHws0K9SEgKbA"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.tellmewow.senior.classic.pastimes",
+  "url": "https://play.google.com/store/apps/details?id=com.puzztime.pastimes",
   "playPass": true,
-  "similarity": 0.783,
+  "similarity": 0.837,
   "confidence": "verified",
   "flags": [],
   "query": "Daily Pastimes – Minigames",
@@ -8323,7 +8272,7 @@
  "Dark Heritage (Full)": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.67) and no Play Pass badge",
+  "reason": "closest match lacks 'dark, full' and no Play Pass badge",
   "queries": [
    "Dark Heritage (Full)",
    "Dark Heritage",
@@ -8750,7 +8699,7 @@
  "Demon Hunter (Full)": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.88) and no Play Pass badge",
+  "reason": "closest match lacks 'full' and no Play Pass badge",
   "queries": [
    "Demon Hunter (Full)",
    "Demon Hunter",
@@ -9189,22 +9138,28 @@
   "checked": "2026-10-03"
  },
  "Dinosaur Police Car kids Game": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "title similarity too low (0.81) and no Play Pass badge",
-  "queries": [
-   "Dinosaur Police Car kids Game",
-   "Dinosaur Police Car kids Game Play Pass"
+  "appId": "com.yateland.dinopolice",
+  "matched": "Dinosaur Police Car Games kids",
+  "developer": "Yateland Games for kids",
+  "playGenre": "Role Playing",
+  "icon": "https://play-lh.googleusercontent.com/vvQCAo5K81h-1ua7Qw4OyqdNV_DL_JGmmNnSq0c6SupsvBoKWnpYskWd_XiEvWv-slLCoc-rZsZI5XgRPspP",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/G9K1DyFyX0LGa86u6_CP-NYZ0CW5KalEccI6cAPSHq_LwOY_UoZq_qWwZfsuf2Pj6zBRZrXhtW5vui9lluX8",
+   "https://play-lh.googleusercontent.com/K_sHNAd7H85DdHRw8yaZrL_SidITqC8oNUyIBid2XZl9rb4_Ycw2G5iFqnWC-BRKKZbvpZbyBCa1XqV6DgJ6uQ",
+   "https://play-lh.googleusercontent.com/E_aEV3Ri7DSNLgRiwXQ5b39zrVd_1zjxUGyWcie1RLThHaLrF3z28ROmZIvTug426EDyA-qDm7uRujPndgnjyG4",
+   "https://play-lh.googleusercontent.com/GgQ3wLFN7PXaQXL9D3N-WaMJeg8-BIKi3WvIIcbMMkyXHEeYvSXyTlMe44RJAWnERsVqfZH0bfVCa7RHh5zxCA",
+   "https://play-lh.googleusercontent.com/gkWZP5Pyz2DrHm-81xLMLbCUdCG3jFxt3BV67ljPVecfAZfQJ0OJG9MPuN5cXbVzEyn5EervvLR7VeB5Y6Js",
+   "https://play-lh.googleusercontent.com/rqg53UjTtPuZiEiMj_UdmVELR4rhafVD-eb5V-DXB4Is5sASXdzdgAAg1iuxT-dyPKK2jkFeNSNsaWTrDfdr",
+   "https://play-lh.googleusercontent.com/AoId7tkwTxZTuku3YEOkZ-_qUeKwAKeW_Hqy3bOyv8aS_fH51nAcO45rclAUUPPb1K24IHSGIcYmxBB-BrIlOOs",
+   "https://play-lh.googleusercontent.com/NgpO7TE-dFQ94n3c6Rx5Fi3UhSkLYwlm9lszWHsrAQmTCzxVgjXj068W7mwh0kqiGQYmGxPJz6sOtytARfXw"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.yateland.dinopolice",
-   "title": "Dinosaur Police Car Games kids",
-   "developer": "Yateland Games for kids",
-   "playPass": false,
-   "sim": 0.814,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.yateland.dinopolice",
+  "playPass": false,
+  "similarity": 0.814,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Dinosaur Smash Car Games": {
   "appId": "com.imayi.dinodrivefree",
@@ -9277,7 +9232,7 @@
  "Dirt Trackin Sprint Cars": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.80) and no Play Pass badge",
+  "reason": "closest match lacks 'sprint' and no Play Pass badge",
   "queries": [
    "Dirt Trackin Sprint Cars",
    "Dirt Trackin Sprint Cars Play Pass"
@@ -9439,7 +9394,7 @@
  "Dog Hotel Premium": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.70) and no Play Pass badge",
+  "reason": "closest match lacks 'dog' and no Play Pass badge",
   "queries": [
    "Dog Hotel Premium",
    "Dog Hotel Premium Play Pass"
@@ -9505,7 +9460,7 @@
  "Dog World Premium – My Puppy": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.67) and no Play Pass badge",
+  "reason": "closest match lacks 'dog, puppy' and no Play Pass badge",
   "queries": [
    "Dog World Premium – My Puppy",
    "Dog World Premium",
@@ -9618,27 +9573,27 @@
   "checked": "2026-10-03"
  },
  "Doodle God": {
-  "appId": "joybits.doodlegod_hd_blitz",
-  "matched": "Doodle God: Infinite Craft 3D",
+  "appId": "joybits.doodlegod",
+  "matched": "Doodle God™",
   "developer": "JoyBits Ltd.",
   "playGenre": "Puzzle",
-  "icon": "https://play-lh.googleusercontent.com/YFNZMyVUMoMzdUJsa5c98zK364rZ34kz9Wf9cvkR-NRSixUnuu84oJiG6Gve50G8dyjoQw3b_RmQIP9-b8Vs0A",
+  "icon": "https://play-lh.googleusercontent.com/MPWzr194N2WXeqRafBnclrMeEUpaLIX8r9k4taSnIDunnFocb5E4U3fMa5-dSJRNLNztE17yA0HNqYnw7fGmCmc",
   "screenshots": [
-   "https://play-lh.googleusercontent.com/aVk2nEKvt1t89sBqHHYa1Kk8NbOZLF_FuYuywb4HGyotxJUVizQ9Tp8vhIhpahpzbFqanbRo76IGyr0wiokl",
-   "https://play-lh.googleusercontent.com/I8ImjO5P0vfQYJaEMgG0vFNPL1zi-OcUXacyscwtnIC71WNrfUEECMVhqP-2hFfO9TDtDN8lTgx8nkyWEO-o",
-   "https://play-lh.googleusercontent.com/Y4GsJfqig_Mmw_zoSdPn_ufSwFdvC-XQnPSZ6zg2jgSXklwdD3p7ZTVBUGAVqK_qWEFwrpBN7-Qn2G4wkNUzTA",
-   "https://play-lh.googleusercontent.com/kxBHJTKmeoLJ6Mwr_bO3LAZs7y3MOAqVRRcadnPE6zd1B9n24ZHJujA92uvP9ob3R15dPjFHvplG_gI9iXszeYc",
-   "https://play-lh.googleusercontent.com/dzLMwHcxUzQqgt2yivLlf-w3Zm6LNmRHNCBbh0nc3zFTt3YtG8WwPdJrPa-47DvYCGHEgQ-jqX3OrXVzLyk_7g",
-   "https://play-lh.googleusercontent.com/SUn-B2EJ36304U26nvC0VfGDt6v6E2U9Cc8bbZFYimkv7Y2FHKByMqL2I-AKYfbzZmtLhgVL02gJmEb41pq_Xg",
-   "https://play-lh.googleusercontent.com/LFGcRrD7gTwwemxaWvpnnh_T2wQi3EU8NNBTrMtQ0BJ9ppJkj3PmWFBFtcBu-Gdyl7gOrCRy-7zvRvaneYtGlfY",
-   "https://play-lh.googleusercontent.com/aVk2nEKvt1t89sBqHHYa1Kk8NbOZLF_FuYuywb4HGyotxJUVizQ9Tp8vhIhpahpzbFqanbRo76IGyr0wiokl"
+   "https://play-lh.googleusercontent.com/f2T4tplkgZHI6DhZ7VFius7cHj9ZExo34o8hEtUvM1rHeMFqvuM36PCdXjT6FBUH6K9y9o98R6t22luvZymtXWk",
+   "https://play-lh.googleusercontent.com/v60MFoA5C0-fcgfffKLSKpjECWdvkjOrqhUGWGWLjjJEY1MS1VpIiVB5FwyGBUTnA1JMBgoMAjnGH1NJJ8ZO",
+   "https://play-lh.googleusercontent.com/pp_sNK2Hgfx05hJOTeQMGwFtO33anXo1Eb9r3RM0CcxwXrrlopg1rCx8-ALK7Pw-1zBGqcBA3dId8TBeUYE69A",
+   "https://play-lh.googleusercontent.com/pFR-KH2hFiln-GVWO2GvaH_v516gr2PBEbDQo7O6SMqbVtyHsf-eSw7W9TRZqI2ZFlU0Ifkx9NRbDLBO2V25SQ",
+   "https://play-lh.googleusercontent.com/qX7qAITnN6tM8AaBJ1WBIH1j6VaJkiXojIXyjq9iUKMrscp9pz3oD1s9rGswZTjGE6eZYHAPAlzCorVuoNagBQ",
+   "https://play-lh.googleusercontent.com/f2T4tplkgZHI6DhZ7VFius7cHj9ZExo34o8hEtUvM1rHeMFqvuM36PCdXjT6FBUH6K9y9o98R6t22luvZymtXWk",
+   "https://play-lh.googleusercontent.com/v60MFoA5C0-fcgfffKLSKpjECWdvkjOrqhUGWGWLjjJEY1MS1VpIiVB5FwyGBUTnA1JMBgoMAjnGH1NJJ8ZO",
+   "https://play-lh.googleusercontent.com/pp_sNK2Hgfx05hJOTeQMGwFtO33anXo1Eb9r3RM0CcxwXrrlopg1rCx8-ALK7Pw-1zBGqcBA3dId8TBeUYE69A"
   ],
-  "url": "https://play.google.com/store/apps/details?id=joybits.doodlegod_hd_blitz",
-  "playPass": false,
-  "similarity": 0.95,
-  "confidence": "strong",
+  "url": "https://play.google.com/store/apps/details?id=joybits.doodlegod",
+  "playPass": true,
+  "similarity": 0.909,
+  "confidence": "manual",
   "flags": [],
-  "query": "Doodle God",
+  "query": null,
   "checked": "2026-10-03"
  },
  "Doodle Kingdom": {
@@ -10067,27 +10022,10 @@
   "checked": "2026-10-03"
  },
  "Dream House Days Off": {
-  "appId": "net.kairosoft.android.apartdx",
-  "matched": "Dream House Days DX",
-  "developer": "Kairosoft",
-  "playGenre": "Simulation",
-  "icon": "https://play-lh.googleusercontent.com/ALU-RD13E-DDOBljYupz5DuBOkZf-5MJIOWt6zDh4n5M0DpPl7Hh0db4YvBYSFrcStTPA6awtST_IQIM7iz6Vg",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/MA7UDncJj2-94oxT1XFlnWyhyZbapPcRJiYafdub_rUK46dmShN2QaJ2DFa1KTZga1oC0hTgJWq2AlmuQkmu",
-   "https://play-lh.googleusercontent.com/YspUYP7GG4QZMxTKdA8oagqENPKmUHOZ3wnbuZzoNk3_ECeDpowYFJxgIcQuUDVbuxYyHDCXtFllZf0ozWy0Hg",
-   "https://play-lh.googleusercontent.com/IfOLyVvB9CkrgGWQwA-V1Tt66BfCOvBpuBKjWYfYN0PXZW1OKB5UPVk6pwmafN8okpcIyFOwb62AHsy7yXo0N38",
-   "https://play-lh.googleusercontent.com/jKtv-B0OsIvoTGcRQozV4et0HMVPudw3VM26vquHeyLteuEeEXimr4nW7YH0XvgP64UDR50u6Nszd78-0NxWJxQ",
-   "https://play-lh.googleusercontent.com/CdjGfI23Ph-IV0BA9iG-vdXhdMvQT_URxCTxJ2UTRXr72--LGSQapjC2YQK0kGL_Bjw-1fW83t2p2MypCXMA",
-   "https://play-lh.googleusercontent.com/CgWdillm8Z0v39h50ZPAxBv-jb0jv1lbrG-lvpzGckBUGls8MNiR1G_IwT0Tyubx4MxZCzvsC6p68mAfggpe0w",
-   "https://play-lh.googleusercontent.com/0r923SOq7QgEgQtFubrYdfHnYXwTkgvSYhmkIRJNj0Qflkl5PEigRHCCWmFJ4s7YnSIQ-hVORNghGtj9wzkrVw",
-   "https://play-lh.googleusercontent.com/oCKqVCMiDlKDatc_06Nu1vEnq2GRYSra2NMHQVHuZhC0kA7G013VRCYerHd156y334sXK7jxtcsJKySlwp4bAg"
-  ],
-  "url": "https://play.google.com/store/apps/details?id=net.kairosoft.android.apartdx",
-  "playPass": true,
-  "similarity": 0.872,
-  "confidence": "verified",
-  "flags": [],
-  "query": "Dream House Days Off",
+  "appId": null,
+  "confidence": "null",
+  "reason": "set to null in data/overrides.json",
+  "queries": [],
   "checked": "2026-10-03"
  },
  "Dream Park Story": {
@@ -10684,7 +10622,7 @@
  "Ears and Burgers": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.72) and no Play Pass badge",
+  "reason": "closest match lacks 'ears' and no Play Pass badge",
   "queries": [
    "Ears and Burgers",
    "Ears and Burgers Play Pass"
@@ -10984,33 +10922,27 @@
   "checked": "2026-10-03"
  },
  "ElePant Car games for toddlers": {
-  "appId": "com.midwingames.toddlers.car.kids.racing.games.garage.boys.driving",
-  "matched": "Kids Car Games for Toddlers",
-  "developer": "Midwin Games",
-  "playGenre": "Educational",
-  "icon": "https://play-lh.googleusercontent.com/Jg_ipwuGNlC7-lelRgropi-8pMIyHqGcmcEhJcTt7cGvxNQGw6oVSkISW3BAzuAkv25yPymvaKeYTekCfVexY6E",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/i3yHCjulCqJrYew7kkNWWNukgKXpxebW1wcA7iqvuiHb9Qym6lFDAzyE26pvd0mMgXiMGgF5CAAwBMP_rvbp",
-   "https://play-lh.googleusercontent.com/bVab18UFQY6ANGOHbecq9UMbcw9d91cTLb5tj5j7WQrSB5EhEN4_2K1C2IqqhmrvaueuejywxeWAmW3D7iODGg",
-   "https://play-lh.googleusercontent.com/stnPI6_8AtvqHljFrH_aRUZ6LGo7ICk_CFTsup9RdhfYnxOoFXpvnj4cQ73iO4qYcZ4f2YztdlvxtK026TIX",
-   "https://play-lh.googleusercontent.com/Z_v9lLIolX_Sk-ay1na09bibTEHGQm817DdihrrqI9VNc9R0JIC5NsEqlSjW8iag0i7rHuy6oaDjKVVfgr_HNw",
-   "https://play-lh.googleusercontent.com/Rg5PZOUhPRWTSXrChXGXhJtI2-R-Zcb-p-0zobikczoxOCla1MKVs9DSqDQiiKG5zjgglRNG2CgDgeY3yk2K9g",
-   "https://play-lh.googleusercontent.com/zP_VgyxJOlnfHD1TQ5oOd_FwyGQioTUmUYbKaM3OEWOpx53GNoMbInE5Ku0j13HMm-d6rxLRpayM7NvFZ1eUrg",
-   "https://play-lh.googleusercontent.com/120h9JrEAti8cZ13cDDdWvsRlT1Zi8UPs2PW6fn_aoY7ZvXQAaesBMu9zdKZudJFGRyHA50HSVU-hgNZd7Y1_w",
-   "https://play-lh.googleusercontent.com/i3yHCjulCqJrYew7kkNWWNukgKXpxebW1wcA7iqvuiHb9Qym6lFDAzyE26pvd0mMgXiMGgF5CAAwBMP_rvbp"
+  "appId": null,
+  "confidence": "null",
+  "reason": "closest match lacks 'elepant' and no Play Pass badge",
+  "queries": [
+   "ElePant Car games for toddlers",
+   "ElePant Car games for toddlers Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.midwingames.toddlers.car.kids.racing.games.garage.boys.driving",
-  "playPass": true,
-  "similarity": 0.807,
-  "confidence": "verified",
-  "flags": [],
-  "query": "ElePant Car games for toddlers",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "car.kids.girls",
+   "title": "Baby Car Games for Toddlers",
+   "developer": "Meemu: Educational Learning Games for Kids age 2-5",
+   "playPass": false,
+   "sim": 0.842,
+   "flags": []
+  }
  },
  "ElePant Drawing Apps for Kids": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.82) and no Play Pass badge",
+  "reason": "closest match lacks 'elepant' and no Play Pass badge",
   "queries": [
    "ElePant Drawing Apps for Kids",
    "ElePant Drawing Apps for Kids Play Pass"
@@ -11026,22 +10958,28 @@
   }
  },
  "ElePant Kids Educational Games": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "title similarity too low (0.58) and no Play Pass badge",
-  "queries": [
-   "ElePant Kids Educational Games",
-   "ElePant Kids Educational Games Play Pass"
+  "appId": "com.GamesForKids.BabyPreschoolLearning.ToddlerGames",
+  "matched": "ElePant Kids Learning Games 2+",
+  "developer": "ElePant: Kids Learning Games for Toddlers & Baby",
+  "playGenre": "Educational",
+  "icon": "https://play-lh.googleusercontent.com/GasQ0S7JCJS1nRtpIepiQdgvD3ADSjt8zCforkO7NtOQwPIxCQJSCP0_dAQihR2q0ZbsOtLnuBL3R3VUyemA",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/uIgBGX41YFNIkwvn6l7UBtnqBGDaLsIMZiPR1WY34PHkOu2GQB7Y4VdvoOp_on6ep7dbD3bdAr_gaAnIuNp5Yw",
+   "https://play-lh.googleusercontent.com/KL8NVcO0ryL56vn1EJUGeR7c9hkwOq5F3Djo0idprxDBD3sGkVZTzFXhExIYeqjg25JalbrDTrQ6HrEctPkY0w",
+   "https://play-lh.googleusercontent.com/5gYrgfEcnu1zZyB9PIaBH-xo1JQy7lmVb-aV8lyleGFzPCjm1O6KBujBaH2R3ik7hEKaiMuONV3XciW4L72n",
+   "https://play-lh.googleusercontent.com/7vm2nk4IwObrPJL3XbEb0DaCrx8FzUYdxXpobWutqAGXN6yUhCIPzJ_wGRJMiWptZygILvaXIvvthYWlX8AspjA",
+   "https://play-lh.googleusercontent.com/x5mxcTN7R2qtnsZoxgXWU5RX315Q_3POtwsADcqOVYFiEdqjJQ4c07UqWEjvjlWwiU6duPMgFXYpmuqHZ5ulsQ",
+   "https://play-lh.googleusercontent.com/TWmYmYNmN9B3ehBMGIW49wXlUSOvxBeC_MQEINiYUeDx2ohrlbsb4WyH-PUYqKe_hKY9Zi1Kvo2ttMrzfXJhlg",
+   "https://play-lh.googleusercontent.com/toQKNxmZkTcRGDDbDWfka1gIhJF-s0pDNPyUlIk2US20IJIpG3vq627-HQg3EL3Fkvd1mF0mE6AqdePj71IY",
+   "https://play-lh.googleusercontent.com/2KdtC8N0bDYC5IVUMIOSeHSoVM0GrjEqXz-xmNhWXzDWvext55a_cNG4KQInrw2d6HqSrswI8KWMXvXG-p3KXQ"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "br.com.tapps.elephantevolution",
-   "title": "Elephant Evolution: Merge Idle",
-   "developer": "Tapps Games",
-   "playPass": false,
-   "sim": 0.576,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.GamesForKids.BabyPreschoolLearning.ToddlerGames",
+  "playPass": true,
+  "similarity": 0.78,
+  "confidence": "verified",
+  "flags": [],
+  "query": "ElePant Kids Educational Games",
+  "checked": "2026-10-03"
  },
  "ElePant Kid’s Learning Games 2+": {
   "appId": "com.GamesForKids.BabyPreschoolLearning.ToddlerGames",
@@ -11070,7 +11008,7 @@
  "ElePant: My Pet Care games app": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.53) and no Play Pass badge",
+  "reason": "closest match lacks 'care, app'",
   "queries": [
    "ElePant: My Pet Care games app",
    "ElePant",
@@ -11078,11 +11016,11 @@
   ],
   "checked": "2026-10-03",
   "candidate": {
-   "appId": "air.net.chicworld.littleelephantdaycare",
-   "title": "Little Elephant Day Care",
-   "developer": "Chic World",
-   "playPass": false,
-   "sim": 0.528,
+   "appId": "com.GamesForKids.BabyPreschoolLearning.ToddlerGames",
+   "title": "ElePant Kids Learning Games 2+",
+   "developer": "ElePant: Kids Learning Games for Toddlers & Baby",
+   "playPass": true,
+   "sim": 0.655,
    "flags": []
   }
  },
@@ -11695,25 +11633,23 @@
   "checked": "2026-10-03"
  },
  "Everyday – Newspaper Games": {
-  "appId": "com.dynamify.sodexo",
-  "matched": "Everyday",
-  "developer": "Dynamify",
-  "playGenre": "Food & Drink",
-  "icon": "https://play-lh.googleusercontent.com/onRLxkkcX7h5-F_Uhg84K_sTSNXxKdojCryiPG2AeOwz6q9WERcfnOsaCtzLshqiEJrkS42_wIxSg-aRiv9YHQ",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/2IseqavMJ8TTnVUdpw-fcgeV7sqAyuyDq0_wYcbe_c-S5yT58pHgs54Swf9Qbq1vKarYki5rmLQUYjPcj6wY",
-   "https://play-lh.googleusercontent.com/Gtqz7AIrje7bTmnx6PQYkDtaTSPelBn49myLMIOd3ln_FoURkx-YhD3MLZuQ4_-GMCa0TKvcER0z44jHjntdlw",
-   "https://play-lh.googleusercontent.com/8xH7jxBx0eJxvIvdbCHCD6Fek-3adKAWPEsLiBc5fhOWUOmdK9EJRmI0K3Znjmt2Pe33aSQ2xFMK7Y7HaXT7Hw",
-   "https://play-lh.googleusercontent.com/mNSToi7EqwEhmAWPaXq7FfslZZGTc7er9XPSO2BIePhJ_psl8EAvYI-AdC7Zlqj8F-ixp4IrTulRFdJvxfwi",
-   "https://play-lh.googleusercontent.com/0YtEkszetHZclJQxsJ9QIW_jRom1oxdq9LBQBpjQmF1Aor-w1xc9YZxydMPSY_nRzEyT_SGsH_mv-jLYmQHKVQ"
+  "appId": null,
+  "confidence": "null",
+  "reason": "closest match lacks 'newspaper' and no Play Pass badge",
+  "queries": [
+   "Everyday – Newspaper Games",
+   "Everyday",
+   "Everyday – Newspaper Games Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.dynamify.sodexo",
-  "playPass": false,
-  "similarity": 0.93,
-  "confidence": "strong",
-  "flags": [],
-  "query": "Everyday",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "com.dynamify.sodexo",
+   "title": "Everyday",
+   "developer": "Dynamify",
+   "playPass": false,
+   "sim": 0.93,
+   "flags": []
+  }
  },
  "Evo Explores": {
   "appId": "com.stampedegames.evoexplores",
@@ -11934,7 +11870,7 @@
  "Eyes Horror & Coop Multiplayer": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.61) and no Play Pass badge",
+  "reason": "closest match lacks 'eyes, coop' and no Play Pass badge",
   "queries": [
    "Eyes Horror & Coop Multiplayer",
    "Eyes Horror & Coop Multiplayer Play Pass"
@@ -11976,7 +11912,7 @@
  "Fairy Tale Mysteries 2: The Be": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.70) and no Play Pass badge",
+  "reason": "closest match lacks 'fairy, tale, be' and no Play Pass badge",
   "queries": [
    "Fairy Tale Mysteries 2: The Be",
    "Fairy Tale Mysteries 2",
@@ -12155,7 +12091,7 @@
  "Farm vs Aliens Merge TD": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.61) and no Play Pass badge",
+  "reason": "closest match lacks 'vs, aliens, td' and no Play Pass badge",
   "queries": [
    "Farm vs Aliens Merge TD",
    "Farm vs Aliens Merge TD Play Pass"
@@ -12406,22 +12342,28 @@
   "checked": "2026-10-03"
  },
  "Find The Difference": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "generic title and no Play Pass badge on the closest match",
-  "queries": [
-   "Find The Difference",
-   "Find The Difference Play Pass"
+  "appId": "com.gamma.find.diff",
+  "matched": "Find the Difference 1000+",
+  "developer": "Gamma Play",
+  "playGenre": "Puzzle",
+  "icon": "https://play-lh.googleusercontent.com/ZaI_Azr6Z4SeO_8KBJNUs9rJy7rYJlYwwo2XfcztFW46QF4lpwT2xb13ZPdm0rqaT2JQxsiuSDzlG_o_8oK5aQ",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/aIRsyYOCj7ESSLBR0SphrnfQ1D52BomDEE7axY3YyXvbNwcy1GmVy_Ymvt3bK9zXXfW21giTmW5HSrHgpsF3Qg",
+   "https://play-lh.googleusercontent.com/N-HZX-vZqz3_CN7cX3mdTkZxbbKh3nvBdII3-ALEGTNC2iIp_xP8-r6LnU2mjmajJBPplwb8URx7ptYhE1FCmw",
+   "https://play-lh.googleusercontent.com/yNMXx_SVcmdRZtf9VSFWYLpTdePLioJSVAt7pND2EyfAZny1L6lKkn6XkBYZiv3W2ES6nfRYGVec9oj-6FtakYg",
+   "https://play-lh.googleusercontent.com/6hgyW0rjYJaOckNb8jEvbjd6BhJR9kUbXzZ9vP-8ODDq7c6a4IPuIkMgzw1oj86DkCqQ4a6QD_od4uzRYuZmvM8",
+   "https://play-lh.googleusercontent.com/k5RozkwKqCALCK3OMOl3qWK_i0SVkp9WPRJR8Rx7wxDLR1Qjetzjb4dd_EmV8jjZZ5oVvxz6UfqOrY7rTKdDxg",
+   "https://play-lh.googleusercontent.com/xTX48DHfTjOpEJ4fz6G-0ImHOGeGKuLUVuov1hrP-FHjWo2WNJ9kdSpIZJeoLALcWsvWzY_ArwRsGjWdlCOp",
+   "https://play-lh.googleusercontent.com/GvHlku9XxIVmT5uMTCoZILCz1SlY_6l84n6wBvgNW7vxID13kwj03hwL5OmRNlHbDdU5hwE0XMGmw5m15du7mg",
+   "https://play-lh.googleusercontent.com/yhUK82K4n6-RZaS9ZQ5ST4mHsFkUD_HD80t_nbDHAjnTBzAdL2MEXtlrE9NHdfMcjFfXBYQK2wENDT_3qeA7"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.SkyDungeon.FindTheDifferenceLuxury",
-   "title": "Find The Difference: Luxury",
-   "developer": "SDG Studio",
-   "playPass": false,
-   "sim": 0.95,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.gamma.find.diff",
+  "playPass": true,
+  "similarity": 0.884,
+  "confidence": "verified",
+  "flags": [],
+  "query": "Find The Difference Play Pass",
+  "checked": "2026-10-03"
  },
  "Find the Difference 1000+": {
   "appId": "com.gamma.find.diff",
@@ -12760,28 +12702,23 @@
   "checked": "2026-10-03"
  },
  "Flick Solitaire – Card Games": {
-  "appId": "games.flick.solitaire",
-  "matched": "Art of Solitaire - Card Games",
-  "developer": "Flick Games - Solitaire & Patience Card Games",
-  "playGenre": "Card",
-  "icon": "https://play-lh.googleusercontent.com/CtVBO69wp-_ztEowvfww4KOc4K-nKRoHf-cepY9Voc0nQiBGi3_9cqDrumhbiRdxJl2CZF7MZQFPlhIKEOrs4Q",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/WqeDUom96ExIMr6zmI_sdybSZnFswLP2gpxqkxVhScakG6Zr1SaUc2twyvENfV8Zzu_3TUjz4mATH4Yj5hZu1C4",
-   "https://play-lh.googleusercontent.com/zdOw2dfLNFGxJ2x0oq2jA4lgWyWmb5BPxmvK5PSyQGcHZNt7xqqeIRlKU8y0_IIEdGWOe7H9kvSJDZQhU4BH",
-   "https://play-lh.googleusercontent.com/ONAXJS5PqBRd-cDQP3hY8t9dWb_aioilcR3GjXB4T8e2GRdMgSpzJC7axyUdKpYuyOrmyCq6lqIiGIIYXN-yzA",
-   "https://play-lh.googleusercontent.com/WG52sI9fez6ctgx1QcrflonS6N4lM3bKsGqX4gF0usHlPxEDjMq8wx-4LnIQsa7UgvmFlIKTnK2OW4aMEl--cOE",
-   "https://play-lh.googleusercontent.com/ANJ9OnZ2l4Y0aD4cw_RgT7FdpUr9oxFT0-r5BYvcZZL-XFhNMT3YOERbae6a9vG_ajOvjz3KJMPJpGoxexVNA8c",
-   "https://play-lh.googleusercontent.com/l_wJfM1t4jwLXQIJANjH8UU4Z-A18ebEJd_QlzJIaTLgHf5qh8Y8hWTdy-bZld-j8bDvDzdizC__HlLCvH-H7oI",
-   "https://play-lh.googleusercontent.com/8kkQuefdxZ7obbQQMP2ZZx20-CQs58KcaVghXaK0vSVrvI6YOuCGyZFi5Yjsxp7pd8yDCdioN5Zkhc0825WhQA0",
-   "https://play-lh.googleusercontent.com/xaL0yA7Oduuln6ghTlFok8VKdtDFqNqiyYLN5G5Ho0tf8vZrvsDoV4WDF3-XiXtWDOjKd8bgKcIeY3d7JxF8"
+  "appId": null,
+  "confidence": "null",
+  "reason": "closest match lacks 'flick' and no Play Pass badge",
+  "queries": [
+   "Flick Solitaire – Card Games",
+   "Flick Solitaire",
+   "Flick Solitaire – Card Games Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=games.flick.solitaire",
-  "playPass": true,
-  "similarity": 0.83,
-  "confidence": "verified",
-  "flags": [],
-  "query": "Flick Solitaire – Card Games",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "com.mintgames.king.solitaire",
+   "title": "Solitaire Card Game",
+   "developer": "Mint Games",
+   "playPass": false,
+   "sim": 0.844,
+   "flags": []
+  }
  },
  "Flipflop Solitaire": {
   "appId": "com.noodlecake.flipflopsolitaire",
@@ -12978,7 +12915,7 @@
  "Fluid- Trippy Stress Reliever": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.56) and no Play Pass badge",
+  "reason": "title similarity too low (0.56)",
   "queries": [
    "Fluid- Trippy Stress Reliever",
    "Fluid- Trippy Stress Reliever Play Pass"
@@ -13068,7 +13005,7 @@
  "Football CupPro 2024 Soccer": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.82) and no Play Pass badge",
+  "reason": "closest match lacks 'cuppro, 2024' and no Play Pass badge",
   "queries": [
    "Football CupPro 2024 Soccer",
    "Football CupPro 2024 Soccer Play Pass"
@@ -13278,7 +13215,7 @@
  "Franz: Scary Interactive Story": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.88) and no Play Pass badge",
+  "reason": "closest match lacks 'scary, interactive' and no Play Pass badge",
   "queries": [
    "Franz: Scary Interactive Story",
    "Franz",
@@ -13630,27 +13567,27 @@
   "checked": "2026-10-03"
  },
  "Game Dev Story – Dungeon Village": {
-  "appId": "net.kairosoft.android.gamedev3en",
-  "matched": "Game Dev Story",
+  "appId": "net.kairosoft.android.bouken_en",
+  "matched": "Dungeon Village",
   "developer": "Kairosoft",
-  "playGenre": "Simulation",
-  "icon": "https://play-lh.googleusercontent.com/WItUJEtP_zBJlE1fNkMnhw1JWbBmvBo-9zIFO3qT_JZuCrgI6Y8amrSr4ahkoLqyVvLPwPFd8e7AVAl4P7PYLA",
+  "playGenre": "Role Playing",
+  "icon": "https://play-lh.googleusercontent.com/9QkqHLjttAVY062Iexzm82vRt6cxkpLXT2SCHdiwr8bDD7ijCPBYy681y6dwCQYlEy2Z_HLCieTmyGQVTqJm",
   "screenshots": [
-   "https://play-lh.googleusercontent.com/IZZwNXmx5KvAFKrTrMrSyNW-3nqyjY1XQVn3AcUoYcnyJw23ZHHJ8nQ8KfUkTrXSJpTWqmXuWq0XD8ZcDaJN5Q",
-   "https://play-lh.googleusercontent.com/bSt_iWax7mKCpBjxIAJyicrYiD3GaauP-rSK8b-O5i2-5Vz9YmI1iAEdHrUDjsZ1EDKUS3ZFEUMoqXFewOI",
-   "https://play-lh.googleusercontent.com/y-7DQ2h-FKguqZAqyoZzcBIk5YpJmSG4Gk8axoxe4EfyKWyv4f2e4vZTInT2EqjWos5t8Xfs9Oxmd1eR8El8vFA",
-   "https://play-lh.googleusercontent.com/KfAdaME2IbBS7ruiAGQoZ2lPocQjJi_k94phATptgQzYcgpLxGl7TpZ1OWmFEHBIM2tbhepvEa6RNpscYVUyvw",
-   "https://play-lh.googleusercontent.com/PZ0q55bG-Jsaakm7ZwAPKsEnG7WSp-mHjlHmDR7C_pmWpe8U8x8fLRmZlhxzs0VmfgVojShP2RdddCzGn9COzi4",
-   "https://play-lh.googleusercontent.com/r6Bk_ucwQtZlsflSY_I729SK3prQzCId-ub1QLO1ofsNupOJrw4ktrgM9NK-gygJsTToM4aQiODVOVdaKc_WtA",
-   "https://play-lh.googleusercontent.com/9-mfOOdBhoFEf9s_TNgyp1N22BlTyqxOD8VrCJT2fZquIEt37hgD7jmfR784Cn8f1x2NNH6JipM4_ClKTDDBAg",
-   "https://play-lh.googleusercontent.com/BbW94_tXBcYXAy0X0-WyJDDkx2AH0OEpYgJLHPD7HykOhBoBCytsj1GkzZAqhz1aGeuD9tbEGLQ-iKVVXcr-s5s"
+   "https://play-lh.googleusercontent.com/4q1iXhKCPpnriy59VmPUe3BQwsg9Nve43Hqsq4k_W4N5hcc3hRvOu3bmCl7dIsOzonx20dBGQgyPzUv5BTbGwg",
+   "https://play-lh.googleusercontent.com/Gth24Y6oZQ5UF3gXWv1FFHZYbarcWYaFtXsawSS6n-Rkuo9KlZN34OXpl4P7acO2hZvaucMFQ2BG2HrAdhah",
+   "https://play-lh.googleusercontent.com/NVeZ1HCFopHknsDs-oBIvliY5RkLlBdqENV-TG6fKejkRrQEVZkHCYhKf36uKjyH8oA1rj1v2LsPjyZeOHW1s_Q",
+   "https://play-lh.googleusercontent.com/JRNSysHdPjWMp4-X1qBUE2ptAeD5wxBWY6fZduOky43F__vlKAwD60nN2rSvdSbqa46Or0G8BqIxD15BCTkR",
+   "https://play-lh.googleusercontent.com/LzqyJ2xseTexrfQkfhP7x6N7etO5l5OenFbmciAaPpNtM7ikOi972qmtLzSMGcrHcPQbbHcggR16sL9mwUhiqg",
+   "https://play-lh.googleusercontent.com/TLFbU9xsiDkKzI8iQN7JDI9tpFtS37pFVwoxJ4epqk0MML-0MOEtHeo_m1u8gF3SndpZArHFeOKNbi8NvbIofDw",
+   "https://play-lh.googleusercontent.com/PzC7F_4U-NjYFUcATNmACGjkrqVFaQ_7A7419iSABML6DIZyTj8o9V08NTYpCx_fElCUg16sfsJI1n-ORostUA",
+   "https://play-lh.googleusercontent.com/YotTbAKeSMVGz7hFaV3DXGup9Xopu-21xICTzEjnAM3woGAJ8rvBDYiOWzAfq93scBOu8PHY5x62ILujcaHNfg"
   ],
-  "url": "https://play.google.com/store/apps/details?id=net.kairosoft.android.gamedev3en",
+  "url": "https://play.google.com/store/apps/details?id=net.kairosoft.android.bouken_en",
   "playPass": true,
-  "similarity": 0.93,
-  "confidence": "verified",
+  "similarity": 0.667,
+  "confidence": "manual",
   "flags": [],
-  "query": "Game Dev Story – Dungeon Village",
+  "query": null,
   "checked": "2026-10-03"
  },
  "Game Dev Tycoon": {
@@ -14231,9 +14168,9 @@
   "url": "https://play.google.com/store/apps/details?id=gravity.premium",
   "playPass": false,
   "similarity": 0.93,
-  "confidence": "strong",
+  "confidence": "manual",
   "flags": [],
-  "query": "Gravity",
+  "query": null,
   "checked": "2026-10-03"
  },
  "Greak: Memories of Azur": {
@@ -14470,25 +14407,25 @@
   "checked": "2026-10-03"
  },
  "Gun Tactics": {
-  "appId": "com.pixelbite.xwt",
-  "matched": "Xenowerk Tactics",
-  "developer": "Pixelbite",
-  "playGenre": "Strategy",
-  "icon": "https://play-lh.googleusercontent.com/OQGcaOVbHmL3w9i3tNpBFOzd8SFOFFnkKBDGi05jYeM-wtFsww31cjZ1AdF-p6W8YHrGNzhRPjxHaripgeYMgQ",
+  "appId": "com.gimlegames.guntactics",
+  "matched": "Gun Tactics",
+  "developer": "Gimle Games",
+  "playGenre": "Card",
+  "icon": "https://play-lh.googleusercontent.com/OGx8v4Patx5Ew2DiaQigZwc92ZlqXR9qlODGErBRVkBqlfOc4A8Vkn6B8i7aFpPGElBJO-UhdsT9Rl_Ed0I2Hg",
   "screenshots": [
-   "https://play-lh.googleusercontent.com/CnNI7QrhcMoLd7kwdh9-RUTqN8lbjhiibItjTcyaAP7qTA3PrOcuIAcWFMGgEE6903uFh_bLxYQb3vl0Jche1A",
-   "https://play-lh.googleusercontent.com/i3kzqnymhBzoLWcAt7jmaaYLI8YEOG6-wmfi3EU7lbwb0WkSRLa8YuggNW1n3WiFbSC7hk3irZhrn5aoiNIJKw",
-   "https://play-lh.googleusercontent.com/WFQnVesYqVkFSM_XeHkjPICyphOjZ3y57PNLhuPRa7tdt2RuUUwpblsChBMaoSqZrh4OqBKo0bo7S3NfHWYn",
-   "https://play-lh.googleusercontent.com/yWYvTu-f6e8xDEe0oT9yq3nieguozmE59qXCd3iLfsNiM-6r6ZnHBET8wOBVyX68GGh_s0hLWedpVJAjgFrx27A",
-   "https://play-lh.googleusercontent.com/9rCudE-4ViAFsRONA8HWwshl8R-PjdLe7uirroLdjkhyF7Nc4CKzQW1uz5VzO64F1dbNWsZIEtReV8kmQkGy2w",
-   "https://play-lh.googleusercontent.com/r39-Qnd8Cf_WEgCk3zfJQ0oQZoa2i1Wwkp6yW7YCBopaJV_kembTX__6KWATX9fOO9ZV650nM15ffkjNYmVRUA",
-   "https://play-lh.googleusercontent.com/CnNI7QrhcMoLd7kwdh9-RUTqN8lbjhiibItjTcyaAP7qTA3PrOcuIAcWFMGgEE6903uFh_bLxYQb3vl0Jche1A",
-   "https://play-lh.googleusercontent.com/i3kzqnymhBzoLWcAt7jmaaYLI8YEOG6-wmfi3EU7lbwb0WkSRLa8YuggNW1n3WiFbSC7hk3irZhrn5aoiNIJKw"
+   "https://play-lh.googleusercontent.com/M3dYHMTMsmr07BKkR0Z6OInGMRF6gk1Qk2oV4mkS2RR9NCCKxQfkB3epB5gBG3v0uIdC010mgitrtOX8iWsMarU",
+   "https://play-lh.googleusercontent.com/BTWO1Kz9hK-Gp3fJnpSkC0AW3my0Zn0dYJhoKU2Hyzvw11rMn34XCFwU3i1PGAESQy5G1cEv1QsIADQFZ6w7-B0",
+   "https://play-lh.googleusercontent.com/bC0dc3HfZl5j9chfbgCi1JtgOZSxBSavwC3St7TT8HI6P2_t-YV2tgqZmcSJNug6sn0Bxaf51d19mKBD23779Q",
+   "https://play-lh.googleusercontent.com/xY1wfvkmRIeMuKbQKbK8THiLaEw-AIMq7xJt1rU2sKYzkurCqNQEddVzwp7ij3KnoK73gq4jyf4JReetD5zMbg",
+   "https://play-lh.googleusercontent.com/55nZnti5hGKhWjVyWGOJgA1FESgIGzTb1iQC0ywV2GteW-VIsMtfU2EAj7r-tG5RBVRIIcIvn3NK7imfkLzFFA",
+   "https://play-lh.googleusercontent.com/MKjHTdeemEZXnW7_QydGHUab3-WMvQ4fzqrzrAhC0Ubyx6nnoN2QWR-Dy6iuFPKlVd6wsECfWx4ZRYDAxBk-sA",
+   "https://play-lh.googleusercontent.com/5twINrN9LSO1dcgG6BHkeZUx0mhb9B3fZcpU18RZGphGSFP4Sgbu_sruFOAPHKw3PwrYtN-ywSMqsUD3u-NjGQ",
+   "https://play-lh.googleusercontent.com/j8PIyDPuYnc-hcTIptL2xpIoBSfz7dYxAHdjlOtu3lYirkRCPmGl54xy5WyQWXNm1V59YitNADVzyI2_bapgmA"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.pixelbite.xwt",
-  "playPass": true,
-  "similarity": 0.667,
-  "confidence": "verified",
+  "url": "https://play.google.com/store/apps/details?id=com.gimlegames.guntactics",
+  "playPass": false,
+  "similarity": 1.0,
+  "confidence": "strong",
   "flags": [],
   "query": "Gun Tactics",
   "checked": "2026-10-03"
@@ -14638,28 +14575,22 @@
   "checked": "2026-10-03"
  },
  "Hair Salon games for girls fun": {
-  "appId": "com.gamesforkids.girlsgames.hairsalon",
-  "matched": "Hair Salon games for girls fun",
-  "developer": "Ijjus World",
-  "playGenre": "Educational",
-  "icon": "https://play-lh.googleusercontent.com/1KXWlEhChl-P92b6nye8mtVeAz-rqHd-YncVIND1S-poyfAxPpyUC6FehhnaQyqlz96In65oUso7a9044RNO",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/3D5u2FJhIb_nYqk6gXOJ6xa01cqA49qzflTYRO66GHF2kErKRtWBxqRDLEJ1CQBdViXIesTuRAt8j9YN_65Rkg",
-   "https://play-lh.googleusercontent.com/wh5fng6T5MToyolctkn_AncuwSrTqRY13c0oRV8sb129zfOTSseHjsRp-TwT7XKVy_nNPVaRnovnVEHKHeG3LfE",
-   "https://play-lh.googleusercontent.com/1oa4wBif8626kJuGFNc8sD7PTnuFtBiV_Qy2H_PhJQ2gEzkviw7FWTQVGNIGXJv1tn6N48C4uVf_A93PBppJVw",
-   "https://play-lh.googleusercontent.com/zIwLGr5h3UM-5P7h-qcH6WR9inYhMMuXK6UEwx6tQnVjauzUcsYwCLGrtJZYzESkmtbTgW_R25bhqUwfHK-t",
-   "https://play-lh.googleusercontent.com/7ALtjVRpZuNr_CrSYEKyUjPOKHVNtbeBlxl5OFUgATWvPC0P_ieSFKQB3qoIRz3lAT1obnJfiN-tDGW3gXmflA",
-   "https://play-lh.googleusercontent.com/TH3uge576BLIvAxDq-ySiNnWPBn0eee7KYi3YhrAIkaM_lKyPTbAOCKq1q9mn-xVRVJcWbS8uCXj6PZ1Gnvn",
-   "https://play-lh.googleusercontent.com/k6m5esUrJNP7ZyjuQQK4X-T8FBQSwaDUDAKClAfk_xkfTEs-Wyw-WVsWAVSsPEDaBfRRegTilyaeBBdVk-aK37M",
-   "https://play-lh.googleusercontent.com/LHuZ8PpHIopufwn8NUS5yvL0z0kK_rlyjDw1nOJrygql7mZR03ar-OESRMMvmtQ3Dq6lW97BCmFF-EHl1yh-"
+  "appId": null,
+  "confidence": "null",
+  "reason": "generic title and no Play Pass badge on the closest match",
+  "queries": [
+   "Hair Salon games for girls fun",
+   "Hair Salon games for girls fun Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.gamesforkids.girlsgames.hairsalon",
-  "playPass": false,
-  "similarity": 1.0,
-  "confidence": "strong",
-  "flags": [],
-  "query": "Hair Salon games for girls fun Play Pass",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "com.gamesforkids.girlsgames.hairsalon",
+   "title": "Hair Salon games for girls fun",
+   "developer": "Ijjus World",
+   "playPass": false,
+   "sim": 1.0,
+   "flags": []
+  }
  },
  "Halls of Torment: Premium": {
   "appId": "com.halls.of.torment.paid.gp",
