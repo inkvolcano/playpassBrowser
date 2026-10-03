@@ -32955,27 +32955,10 @@
   "checked": "2026-10-03"
  },
  "Solitaire – Card Games": {
-  "appId": "com.mobilityware.freecell",
-  "matched": "FreeCell Solitaire: Card Games",
-  "developer": "MobilityWare",
-  "playGenre": "Card",
-  "icon": "https://play-lh.googleusercontent.com/s_j7l7uxcmAFdVaYvdPm_8PBWpsuxkEB-e2tw0fhrVuuIn2Q-qGWAZiIa8ShJb1v__yfRhi0MCZLDCS_bdo2Vw",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/cz6dJYpN-6gpyA2Ns9lih4WO0iagDImpo2vMyeqzNGi52V7KHMW_oEzY82jPRa3A7AxGwMlCtyuq21AZRZfB6g",
-   "https://play-lh.googleusercontent.com/49wNNnfcySDc7FSMAUWUih4VYrW0ClpSkhJQZZFKKZhmrHp0_5hSfPH6MFt-KpLep3Z557suYOoQXsV8vXPUTA",
-   "https://play-lh.googleusercontent.com/FiSXuNYgyCj6OX4YHxHYkZ6vAPJXmoBRX7w9B5VWrlNLtl4cAX2Wh_mvXudvuYml_Ibt5xuByY9sSle_frf1XfU",
-   "https://play-lh.googleusercontent.com/1JRzqBfn5rXzIt1fUBIDcLdOFXSun1LafHjoSVIm7-joofs4fM4B6tyoUj-tbGToQute92Z4hJX5OzC-brw7zbs",
-   "https://play-lh.googleusercontent.com/5J7mlrEOA5yX1JIT2BAPQLAndROEXt7By0huWfQEs0dagJsxlP6AArWdSpLj3PEBNxmGhLguP8Yj2jnoAhJSOw",
-   "https://play-lh.googleusercontent.com/IH1y4KxghztxRLcouPYvo3YaTTKk0NKsXJhod0iejoTi65jSqweKKWusSMx_VpG-IdAxbW4aFgg-1MId7AXcoC4",
-   "https://play-lh.googleusercontent.com/PyQiN00X5-A0P43iveFSyukOOtBOJqNducCMiBWQIRadBl0b5AjewDR6KY7v7O7RZv4tEBrx0YCplE8thoIn",
-   "https://play-lh.googleusercontent.com/BLNbVfdKmLhVC7i-7dTSoJK_MjH9mC2Jv5-z4aNgYTi7UM-PXI5p1-aR_Yui3KH8QFrPnJySNK8zFctDWDxxe6Q"
-  ],
-  "url": "https://play.google.com/store/apps/details?id=com.mobilityware.freecell",
-  "playPass": true,
-  "similarity": 0.875,
-  "confidence": "verified",
-  "flags": [],
-  "query": "Solitaire – Card Games",
+  "appId": null,
+  "confidence": "null",
+  "reason": "set to null in data/overrides.json",
+  "queries": [],
   "checked": "2026-10-03"
  },
  "Solitaire – Classic Card Games": {
