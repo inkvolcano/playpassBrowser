@@ -8,19 +8,24 @@ from `main`; every push to `main` updates it within a minute or two).
 You can also open `index.html` straight from disk. It is one self-contained file (the game data is
 embedded); only the screenshots, icons and fonts load from the web
 (`play-lh.googleusercontent.com`, Google Fonts). Each card has the game's icon,
-title, developer, genre and Play Store star rating, up to 12 screenshots that
-cycle when you tap them, and links to the Play Store page, a YouTube gameplay
-search and a Google Images search. You can search titles and developers, filter
-by genre, sort A–Z, by genre or by rating, show only games currently in Play
-Pass, and switch between light, dark and system themes. The Rating sort uses a
-weighted average (each game's ratings plus 1,000 at the catalogue average), so a
-5.0 from a handful of ratings doesn't outrank a 4.8 from thousands. Games without a confident Play Store match get a generated
-gradient cover and a Play Store search link.
+title, developer, genre, Play Store star rating and downloads, its Play Store
+tags, up to 12 screenshots that cycle when you tap them, and links to the Play
+Store page, a YouTube gameplay search and a Google Images search.
 
-A "Play Pass" tag means the game's Play Store page showed the Play Pass badge
-when it was last checked (US store; the date is in the page footer). Games
-whose page no longer shows it are tagged "Not in Play Pass": YTECHB's list
-still carries some games that have since left the service.
+You can search titles, developers and tags, filter by genre and by tag
+(Offline, Roguelike, Pixelated, ...; tap a tag on a card to filter by it), sort
+A–Z, by genre, by popularity or by rating, and switch between light, dark and
+system themes. Most popular sorts by Play Store downloads. Top rated uses a
+weighted average (each game's ratings plus 1,000 at the catalogue average), so
+a 5.0 from a handful of ratings doesn't outrank a 4.8 from thousands.
+
+The page lists only games whose Play Store page showed the Play Pass badge when
+it was last checked (US store; the date is in the page footer). YTECHB's list
+still carries games that have since left the service, plus a few that couldn't
+be matched to a Play Store app; both are left out (the footer gives the counts).
+`python3 build_index.py --all` builds a page that keeps them: games that have
+left are marked "Not in Play Pass", unmatched ones get a generated gradient
+cover and a Play Store search link.
 
 ## Files
 
@@ -31,7 +36,7 @@ still carries some games that have since left the service.
 | `build_index.py` | Builds `index.html` from `index.template.html` and the data files |
 | `index.template.html` | The page (HTML, CSS, JS) with a `__DATA__` placeholder |
 | `data/games.json` | The game list: `title`, `genre`, `source` |
-| `data/shots_cache.json` | Play Store data per game: `appId`, `icon`, `screenshots`, `url`, plus match details |
+| `data/shots_cache.json` | Play Store data per game: `appId`, `icon`, `screenshots`, `url`, `playPass`, `rating`, `ratings`, `installs`, `tags`, plus match details |
 | `data/overrides.json` | Hand-made fixes: title → appId, or title → `null` |
 | `data/sources.json` | Where the list came from and when it was last updated |
 
@@ -42,8 +47,8 @@ pip install google-play-scraper
 
 python3 fetch_games.py                # 1. refresh the game list from YTECHB
 python3 fill_screenshots.py           # 2. look up games not in the cache yet
-python3 fill_screenshots.py --refresh # 3. re-check every game's Play Pass status, rating and
-                                      #    screenshots, then rebuild index.html
+python3 fill_screenshots.py --refresh # 3. re-check every game's Play Pass status, rating,
+                                      #    downloads, tags and screenshots, then rebuild index.html
 ```
 
 `fill_screenshots.py` resumes from `data/shots_cache.json`, so it only looks up
@@ -61,6 +66,7 @@ python3 fill_screenshots.py --recheck all        # redo everything
 python3 fill_screenshots.py --only "Mini Metro" "Stardew valley"   # redo specific titles
 python3 fill_screenshots.py --commit-every 200 --push               # commit (and push) the cache as it goes
 python3 build_index.py                            # rebuild index.html without any lookups
+python3 build_index.py --all                      # ... also listing games that left Play Pass or have no match
 ```
 
 Run `python3 fill_screenshots.py --help` for the rest.

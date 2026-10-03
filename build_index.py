@@ -4,8 +4,14 @@
 The page is one self-contained file; the game data is embedded as JSON. Image
 URLs are stored without the googleusercontent host and get their size suffix
 (=s96 icons, =w526-h296 screenshots) in the page. Standard library only.
+
+By default the page lists only games whose Play Store page showed the Play Pass
+badge at the last check; --all also keeps games that have left Play Pass and
+games without a Play Store match (shown with a generated cover).
 """
+import argparse
 import json
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -27,12 +33,15 @@ def short(url):
     return url[len(IMG_HOST):] if url.startswith(IMG_HOST) else url
 
 
-def main():
+def main(argv=None):
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--all", action="store_true",
+                    help="also list games that have left Play Pass or have no Play Store match")
+    args = ap.parse_args(argv)
+
     games = load("games.json", [])
     cache = load("shots_cache.json", {})
     source = load("sources.json", {})
-    genres = sorted({g["genre"] for g in games})
-    index = {g: i for i, g in enumerate(genres)}
 
     # YTECHB sometimes lists one game under two names ("Flat machine" and
     # "Flat Machine: Post-Apocalyptic"): show each Play Store app once, under
@@ -44,20 +53,41 @@ def main():
         if a and (a not in keep or (e.get("similarity") or 0) > (cache[keep[a]].get("similarity") or 0)):
             keep[a] = g["title"]
 
-    rows, checked, pass_checked, merged = [], [], [], []
+    shown, merged, out_of_pass, unmatched = [], [], [], []
     for g in games:
         e = cache.get(g["title"]) or {}
         app_id = e.get("appId")
         if app_id and keep[app_id] != g["title"]:
             merged.append(f"{g['title']!r} (same app as {keep[app_id]!r})")
-            continue
+        elif not app_id:
+            unmatched.append(g["title"])
+            if args.all:
+                shown.append((g, e))
+        elif e.get("playPass") is not True:
+            out_of_pass.append(g["title"])
+            if args.all:
+                shown.append((g, e))
+        else:
+            shown.append((g, e))
+
+    genres = sorted({g["genre"] for g, _ in shown})
+    genre_index = {name: i for i, name in enumerate(genres)}
+    tag_counts = Counter(t for _, e in shown if e.get("appId") for t in (e.get("tags") or []))
+    tags = [t for t, _ in sorted(tag_counts.items(), key=lambda kv: (-kv[1], kv[0]))]
+    tag_index = {t: i for i, t in enumerate(tags)}
+
+    rows, checked, pass_checked = [], [], []
+    for g, e in shown:
+        app_id = e.get("appId")
         shots = [short(s) for s in (e.get("screenshots") or [])[:PAGE_SHOTS]] if app_id else []
         matched = e.get("matched") if app_id and e.get("matched") != g["title"] else None
         in_pass = {True: 1, False: 0}.get(e.get("playPass")) if app_id else None
         rated = app_id and e.get("rating") and e.get("ratings")
-        rows.append([g["title"], index[g["genre"]], app_id, short(e.get("icon")) if app_id else None,
+        rows.append([g["title"], genre_index[g["genre"]], app_id, short(e.get("icon")) if app_id else None,
                      shots, e.get("developer") if app_id else None, matched, in_pass,
-                     e["rating"] if rated else None, e["ratings"] if rated else None])
+                     e["rating"] if rated else None, e["ratings"] if rated else None,
+                     e.get("installs") if app_id else None,
+                     [tag_index[t] for t in (e.get("tags") or [])] if app_id else []])
         if e.get("checked"):
             checked.append(e["checked"])
         if app_id and e.get("passChecked"):
@@ -65,10 +95,13 @@ def main():
 
     data = {
         "genres": genres,
+        "tags": tags,
         "games": rows,
         "meta": {"listUrl": source.get("url"), "listUpdated": source.get("updated"),
                  "storeChecked": max(checked) if checked else None,
-                 "passChecked": max(pass_checked) if pass_checked else None},
+                 "passChecked": max(pass_checked) if pass_checked else None,
+                 "confirmedOnly": not args.all,
+                 "leftOutOfPass": len(out_of_pass), "leftOutUnmatched": len(unmatched)},
     }
     # "<" is escaped so nothing inside the JSON can close the <script> element.
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
@@ -78,9 +111,11 @@ def main():
     OUT.write_text(template.replace("__DATA__", blob), encoding="utf-8")
 
     with_shots = sum(1 for r in rows if r[4])
-    print(f"index.html: {len(rows)} games, {with_shots} with screenshots "
-          f"({sum(1 for r in rows if r[7])} carry the Play Pass badge, {sum(1 for r in rows if r[8])} rated), "
-          f"{len(rows) - with_shots} with generated covers, {OUT.stat().st_size / 1024:.0f} KB")
+    print(f"index.html: {len(rows)} games ({with_shots} with screenshots, {sum(1 for r in rows if r[8])} rated, "
+          f"{len(tags)} tags), {OUT.stat().st_size / 1024:.0f} KB")
+    if not args.all:
+        print(f"left out: {len(out_of_pass)} no longer in Play Pass, {len(unmatched)} without a Play Store match "
+              f"(use --all to keep them)")
     if merged:
         print(f"{len(merged)} duplicate listings shown once: " + "; ".join(merged))
 

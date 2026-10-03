@@ -722,7 +722,7 @@ def main():
             import build_index
         except ImportError:
             return
-        build_index.main()
+        build_index.main([])
 
 
 if __name__ == "__main__":
