@@ -221,7 +221,10 @@ h1 {
 @media (max-width: 640px) {
   .genres { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: -16px; padding-inline: 16px; }
   .genres::-webkit-scrollbar { display: none; }
-  .ghost .label { display: none; }
+  .ghost .label, .wide-only { display: none; }
+  .row { gap: 8px; }
+  .seg button { padding: 0 9px; }
+  .ghost { padding: 0 10px; }
 }
 
 /* ---------- grid + cards ---------- */
@@ -320,6 +323,9 @@ button.shots:hover img { filter: brightness(1.08); }
 .txt { min-width: 0; }
 .title { margin: 0; font: 650 15px/1.25 var(--f-body); overflow-wrap: anywhere; text-wrap: balance; }
 .dev { margin: 3px 0 0; font-size: 12.5px; line-height: 1.3; color: var(--muted); overflow-wrap: anywhere; }
+.rate { margin: 4px 0 0; display: flex; align-items: baseline; gap: 5px; font: 650 13px/1.2 var(--f-body); font-variant-numeric: tabular-nums; }
+.rate .star { color: var(--brass); }
+.rate .cnt { font-weight: 400; font-size: 12px; color: var(--muted); }
 .foot { margin-top: auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 14px 13px; }
 .tag { --h: 250; display: inline-flex; align-items: center; gap: 6px; font: 500 11px/1 var(--f-mono); color: var(--muted); letter-spacing: 0.02em; }
 .tag::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: oklch(68% 0.16 var(--h)); }
@@ -374,11 +380,12 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       </label>
       <div class="seg" role="group" aria-label="Sort order">
         <button type="button" id="sort-az" aria-pressed="true">A–Z</button>
-        <button type="button" id="sort-genre" aria-pressed="false">By genre</button>
+        <button type="button" id="sort-genre" aria-pressed="false">Genre</button>
+        <button type="button" id="sort-rating" aria-pressed="false" title="Highest Play Store rating first">Rating</button>
       </div>
       <button type="button" class="ghost" id="only-pass" aria-pressed="false" title="Show only games that carry the Play Pass badge on the Play Store">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3a2 2 0 0 0 0-4z" fill="currentColor"/></svg>
-        In Play Pass
+        <span><span class="wide-only">In </span>Play Pass</span>
       </button>
       <button type="button" class="ghost" id="theme" aria-label="Theme: match system">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg>
@@ -401,6 +408,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     <p id="foot-list"></p>
     <p id="foot-store"></p>
     <p id="foot-pass"></p>
+    <p id="foot-rating"></p>
   </footer>
 </div>
 
@@ -419,6 +427,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   };
   const $ = (id) => document.getElementById(id);
   const fmt = new Intl.NumberFormat("en");
+  const compact = new Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: 1 });
   const collator = new Intl.Collator("en", { numeric: true, sensitivity: "base" });
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const norm = (s) => String(s || "").normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase();
@@ -428,14 +437,22 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     set(k, v) { try { localStorage.setItem("ppb:" + k, v); } catch (e) { /* storage unavailable */ } }
   };
 
-  // games: [title, genreIndex, appId, icon, [screenshots], developer, playStoreTitle, inPlayPass 1/0/null]
+  // games: [title, genreIndex, appId, icon, [screenshots], developer, playStoreTitle, inPlayPass 1/0/null,
+  //         starRating, numberOfRatings]
   const games = D.games.map((g, i) => {
-    const [title, gi, appId, icon, shots, dev, matched, pass] = g;
+    const [title, gi, appId, icon, shots, dev, matched, pass, rating, ratings] = g;
     const genre = D.genres[gi];
-    return { i, title, gi, genre, appId, icon, shots: shots || [], dev, matched, pass,
+    return { i, title, gi, genre, appId, icon, shots: shots || [], dev, matched, pass, rating, ratings,
              key: norm([title, dev, matched].filter(Boolean).join(" ")), el: null };
   });
   const byTitle = games.slice().sort((a, b) => collator.compare(a.title, b.title));
+  // Rating sort: a weighted average that pulls games with few ratings toward the
+  // catalogue mean, so a 5.0 from three ratings doesn't outrank a 4.8 from 80,000.
+  const rated = games.filter((g) => g.rating);
+  const meanRating = rated.reduce((sum, g) => sum + g.rating, 0) / Math.max(1, rated.length);
+  const FULL_WEIGHT = 1000;  // ratings needed before a game's own average counts half
+  const weighted = (g) => g.rating ? (g.ratings * g.rating + FULL_WEIGHT * meanRating) / (g.ratings + FULL_WEIGHT) : -1;
+  const byRating = games.slice().sort((a, b) => weighted(b) - weighted(a) || collator.compare(a.title, b.title));
 
   function hash(s) {
     let h = 2166136261;
@@ -484,7 +501,10 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     return `<article class="card" style="--h:${HUES[g.genre] ?? 250}">` +
       shotsHtml(g) +
       `<div class="meta">${icon}<div class="txt"><h3 class="title">${esc(g.title)}</h3>` +
-      (g.dev ? `<p class="dev">${esc(g.dev)}</p>` : `<p class="dev">Not matched on the Play Store</p>`) + `</div></div>` +
+      (g.dev ? `<p class="dev">${esc(g.dev)}</p>` : `<p class="dev">Not matched on the Play Store</p>`) +
+      (g.rating ? `<p class="rate"><span class="star" aria-hidden="true">★</span><span class="sr-only">Rated </span>${g.rating.toFixed(1)}` +
+        `<span class="sr-only"> out of 5 from ${fmt.format(g.ratings)} ratings</span><span class="cnt" aria-hidden="true">${compact.format(g.ratings)} ratings</span></p>` : "") +
+      `</div></div>` +
       `<div class="foot"><span class="tag" style="--h:${HUES[g.genre] ?? 250}">${esc(g.genre)}</span><nav class="links" aria-label="Links for ${esc(g.title)}">` +
       `<a class="store" href="${esc(storeUrl)}" target="_blank" rel="noopener" aria-label="${g.appId ? "Open" : "Search for"} ${esc(g.title)} on Google Play">${ICONS.store}<span>${g.appId ? "Play" : "Find"}</span></a>` +
       `<a href="https://www.youtube.com/results?search_query=${q(g.title + " gameplay")}" target="_blank" rel="noopener" aria-label="Search YouTube for ${esc(g.title)} gameplay">${ICONS.video}<span>Gameplay</span></a>` +
@@ -513,6 +533,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     `${fmt.format(games.length - withShots)} games have no confident Play Store match; they show a generated cover and a Play Store search link instead.`;
   $("foot-pass").textContent = `“Play Pass” marks games whose Play Store page (US store) showed the Play Pass badge on ${dateText(m.passChecked)}. ` +
     `${fmt.format(leftPass)} matched games didn't, so they have probably left Play Pass; they're marked “Not in Play Pass”.`;
+  $("foot-rating").textContent = `Ratings are Play Store star ratings, checked on ${dateText(m.passChecked)}. ` +
+    `The Rating sort uses a weighted average: games with few ratings are pulled toward the catalogue average of ` +
+    `${meanRating.toFixed(1)}, so a 5.0 from a handful of ratings doesn't outrank a 4.8 from thousands.`;
 
   const counts = D.genres.map((_, gi) => games.filter((g) => g.gi === gi).length);
   $("genres").innerHTML =
@@ -522,18 +545,18 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   // ----- state
   const list = $("list"), q = $("q");
   let genre = -1;
-  let sort = store.get("sort") === "genre" ? "genre" : "az";
+  let sort = ["genre", "rating"].includes(store.get("sort")) ? store.get("sort") : "az";
   let onlyPass = store.get("pass") === "1";
   let groups = [];
 
   function layout() {
     list.textContent = "";
     groups = [];
-    if (sort === "az") {
+    if (sort !== "genre") {
       const grid = document.createElement("div");
       grid.className = "grid";
-      byTitle.forEach((g) => grid.append(g.el));
-      list.innerHTML = '<h2 class="sr-only">Games A to Z</h2>';
+      (sort === "rating" ? byRating : byTitle).forEach((g) => grid.append(g.el));
+      list.innerHTML = sort === "rating" ? '<h2 class="sr-only">Games by rating</h2>' : '<h2 class="sr-only">Games A to Z</h2>';
       list.append(grid);
     } else {
       D.genres.forEach((name, gi) => {
@@ -548,6 +571,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     }
     $("sort-az").setAttribute("aria-pressed", String(sort === "az"));
     $("sort-genre").setAttribute("aria-pressed", String(sort === "genre"));
+    $("sort-rating").setAttribute("aria-pressed", String(sort === "rating"));
     apply();
   }
 
@@ -566,9 +590,10 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     }
     const noun = (genre < 0 ? "" : `${D.genres[genre]} `) + (shown === 1 ? "game" : "games");
     const scope = noun + (onlyPass ? " in Play Pass" : "");
-    $("status").textContent = shown === games.length
+    $("status").textContent = (shown === games.length
       ? `Showing all ${fmt.format(shown)} games`
-      : `Showing ${fmt.format(shown)} ${scope}` + (terms.length ? ` matching “${q.value.trim()}”` : "");
+      : `Showing ${fmt.format(shown)} ${scope}` + (terms.length ? ` matching “${q.value.trim()}”` : "")) +
+      (sort === "rating" ? ", highest rated first" : "");
     $("empty").hidden = shown > 0;
     const none = (genre < 0 ? "" : `${D.genres[genre]} `) + "games" + (onlyPass ? " in Play Pass" : "");
     $("empty-text").textContent = terms.length ? `No ${none} match “${q.value.trim()}”.` : `No ${none} to show.`;
@@ -596,6 +621,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   });
   $("sort-az").addEventListener("click", () => { sort = "az"; store.set("sort", sort); layout(); });
   $("sort-genre").addEventListener("click", () => { sort = "genre"; store.set("sort", sort); layout(); });
+  $("sort-rating").addEventListener("click", () => { sort = "rating"; store.set("sort", sort); layout(); });
   $("clear").addEventListener("click", () => {
     q.value = ""; genre = -1; onlyPass = false;
     $("only-pass").setAttribute("aria-pressed", "false");

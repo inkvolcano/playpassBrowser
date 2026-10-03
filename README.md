@@ -8,11 +8,13 @@ from `main`; every push to `main` updates it within a minute or two).
 You can also open `index.html` straight from disk. It is one self-contained file (the game data is
 embedded); only the screenshots, icons and fonts load from the web
 (`play-lh.googleusercontent.com`, Google Fonts). Each card has the game's icon,
-title, developer and genre, up to 12 screenshots that cycle when you tap them,
-and links to the Play Store page, a YouTube gameplay search and a Google Images
-search. You can search titles and developers, filter by genre, sort A–Z or by
-genre, show only games currently in Play Pass, and switch between light, dark
-and system themes. Games without a confident Play Store match get a generated
+title, developer, genre and Play Store star rating, up to 12 screenshots that
+cycle when you tap them, and links to the Play Store page, a YouTube gameplay
+search and a Google Images search. You can search titles and developers, filter
+by genre, sort A–Z, by genre or by rating, show only games currently in Play
+Pass, and switch between light, dark and system themes. The Rating sort uses a
+weighted average (each game's ratings plus 1,000 at the catalogue average), so a
+5.0 from a handful of ratings doesn't outrank a 4.8 from thousands. Games without a confident Play Store match get a generated
 gradient cover and a Play Store search link.
 
 A "Play Pass" tag means the game's Play Store page showed the Play Pass badge
@@ -40,8 +42,8 @@ pip install google-play-scraper
 
 python3 fetch_games.py                # 1. refresh the game list from YTECHB
 python3 fill_screenshots.py           # 2. look up games not in the cache yet
-python3 fill_screenshots.py --refresh # 3. re-check every game's Play Pass status and screenshots,
-                                      #    then rebuild index.html
+python3 fill_screenshots.py --refresh # 3. re-check every game's Play Pass status, rating and
+                                      #    screenshots, then rebuild index.html
 ```
 
 `fill_screenshots.py` resumes from `data/shots_cache.json`, so it only looks up

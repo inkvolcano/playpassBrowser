@@ -54,8 +54,10 @@ def main():
         shots = [short(s) for s in (e.get("screenshots") or [])[:PAGE_SHOTS]] if app_id else []
         matched = e.get("matched") if app_id and e.get("matched") != g["title"] else None
         in_pass = {True: 1, False: 0}.get(e.get("playPass")) if app_id else None
+        rated = app_id and e.get("rating") and e.get("ratings")
         rows.append([g["title"], index[g["genre"]], app_id, short(e.get("icon")) if app_id else None,
-                     shots, e.get("developer") if app_id else None, matched, in_pass])
+                     shots, e.get("developer") if app_id else None, matched, in_pass,
+                     e["rating"] if rated else None, e["ratings"] if rated else None])
         if e.get("checked"):
             checked.append(e["checked"])
         if app_id and e.get("passChecked"):
@@ -77,7 +79,7 @@ def main():
 
     with_shots = sum(1 for r in rows if r[4])
     print(f"index.html: {len(rows)} games, {with_shots} with screenshots "
-          f"({sum(1 for r in rows if r[7])} carry the Play Pass badge), "
+          f"({sum(1 for r in rows if r[7])} carry the Play Pass badge, {sum(1 for r in rows if r[8])} rated), "
           f"{len(rows) - with_shots} with generated covers, {OUT.stat().st_size / 1024:.0f} KB")
     if merged:
         print(f"{len(merged)} duplicate listings shown once: " + "; ".join(merged))
