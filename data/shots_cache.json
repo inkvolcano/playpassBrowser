@@ -8245,7 +8245,9 @@
   "flags": [],
   "query": "Cafe Master Story",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.72,
+  "ratings": 3508
  },
  "Cafeteria Nipponica": {
   "appId": "net.kairosoft.android.restaurant_en",
@@ -8282,7 +8284,9 @@
   "flags": [],
   "query": "Cafeteria Nipponica",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.1,
+  "ratings": 3775
  },
  "Café Panic: Cooking games": {
   "appId": "com.Boomware.CafePanic",
@@ -8323,7 +8327,9 @@
   "flags": [],
   "query": "Café Panic: Cooking games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.5,
+  "ratings": 161289
  },
  "Cake Maker Kids Cooking Games": {
   "appId": "com.free.kids.cooking.games.girls.toddler.cake.maker.baking",
@@ -8364,7 +8370,9 @@
   "flags": [],
   "query": "Cake Maker Kids Cooking Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.56,
+  "ratings": 720
  },
  "Canasta": {
   "appId": "com.karmangames.canasta",
@@ -8403,7 +8411,9 @@
   "flags": [],
   "query": "Canasta",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.35,
+  "ratings": 57171
  },
  "Candleman": {
   "appId": "com.spotlightor.candleman",
@@ -8438,7 +8448,9 @@
   "flags": [],
   "query": "Candleman",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.9,
+  "ratings": 631
  },
  "Candy Disaster TD Premium": {
   "appId": "com.acegames.candy.disaster.full.gp",
@@ -8476,7 +8488,9 @@
   "flags": [],
   "query": "Candy Disaster TD Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.59,
+  "ratings": 1822
  },
  "Car City World: Montessori Fun": {
   "appId": "com.minimango.games.carcityworld",
@@ -8517,7 +8531,9 @@
   "flags": [],
   "query": "Car City World: Montessori Fun",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.11,
+  "ratings": 3742
  },
  "Car Crusher": {
   "appId": "com.car.crusher",
@@ -8555,7 +8571,9 @@
   "flags": [],
   "query": "Car Crusher",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.22,
+  "ratings": 31534
  },
  "Car Eats Car 3 Hill Climb Racing": {
   "appId": "com.smokoko.careatscar3",
@@ -8596,7 +8614,9 @@
   "flags": [],
   "query": null,
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.59,
+  "ratings": 118347
  },
  "Car Eats Car 5 – Battle Arena": {
   "appId": "com.smokoko.careatscar5",
@@ -8637,7 +8657,9 @@
   "flags": [],
   "query": "Car Eats Car 5 – Battle Arena",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.59,
+  "ratings": 4505
  },
  "Car games for kids & Toddlers": {
   "appId": null,
@@ -8715,7 +8737,9 @@
   "flags": [],
   "query": "Car Mechanic Play Pass",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.33,
+  "ratings": 96887
  },
  "Car Party! Friend Family Game": {
   "appId": "com.bombayplay.CardCrack",
@@ -8747,7 +8771,9 @@
   "flags": [],
   "query": "Car Party! Friend Family Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.44,
+  "ratings": 75841
  },
  "Car Rush 2048": {
   "appId": "com.goca.car",
@@ -8788,7 +8814,9 @@
   "flags": [],
   "query": "Car Rush 2048",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.41,
+  "ratings": 14735
  },
  "Car Simulator 2025": {
   "appId": "com.MobimiGames.CarSimulator2018",
@@ -8823,7 +8851,9 @@
   "flags": [],
   "query": "Car Simulator 2025",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.26,
+  "ratings": 65493
  },
  "Car Wash & Race Games for Kids": {
   "appId": "com.gamesforkids.kidscargames.carwash",
@@ -8861,7 +8891,9 @@
   "flags": [],
   "query": "Car Wash & Race Games for Kids",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.15,
+  "ratings": 4741
  },
  "Card Crawl": {
   "appId": "com.tinytouchtales.cardcrawl",
@@ -8896,7 +8928,9 @@
   "flags": [],
   "query": "Card Crawl",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.5,
+  "ratings": 27804
  },
  "Card Crawl Adventure": {
   "appId": "com.tinytouchtales.cardcrawladventure",
@@ -8931,7 +8965,9 @@
   "flags": [],
   "query": "Card Crawl Adventure",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.95,
+  "ratings": 1144
  },
  "Card Quest": {
   "appId": "com.winterspring.cardquest",
@@ -8972,7 +9008,9 @@
   "flags": [],
   "query": "Card Quest",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.8,
+  "ratings": 1093
  },
  "Card Thief": {
   "appId": "com.tinytouchtales.cardthief",
@@ -9005,7 +9043,9 @@
   "flags": [],
   "query": "Card Thief",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.55,
+  "ratings": 30729
  },
  "Carrion": {
   "appId": "com.devolverdigital.carrion",
@@ -9046,7 +9086,9 @@
   "flags": [],
   "query": "Carrion",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.32,
+  "ratings": 28489
  },
  "Cars Coloring Book Kids Game": {
   "appId": "com.gamesforkids.coloring.games.cars",
@@ -9087,7 +9129,9 @@
   "flags": [],
   "query": "Cars Coloring Book Kids Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.07,
+  "ratings": 1056
  },
  "Castle Cats – Idle Hero RPG": {
   "appId": "com.pocapp.castlecats",
@@ -9122,7 +9166,9 @@
   "flags": [],
   "query": "Castle Cats – Idle Hero RPG",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.72,
+  "ratings": 189547
  },
  "Castle Solitaire: Card Game": {
   "appId": "com.mobilityware.CastleSolitaire",
@@ -9163,7 +9209,9 @@
   "flags": [],
   "query": "Castle Solitaire: Card Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.66,
+  "ratings": 103169
  },
  "Casuality": {
   "appId": "com.lojugames.android.Causality",
@@ -9192,7 +9240,9 @@
   "flags": [],
   "query": "Casuality",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.26,
+  "ratings": 1172
  },
  "Cat Driving School Simulator": {
   "appId": "com.boombitgames.DrivingSchoolParking",
@@ -9230,7 +9280,9 @@
   "flags": [],
   "query": "Cat Driving School Simulator",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.47,
+  "ratings": 431404
  },
  "Cat Life Sim – Find the Killer": {
   "appId": "com.funcell.catlifesim",
@@ -9265,7 +9317,9 @@
   "flags": [],
   "query": "Cat Life Sim – Find the Killer",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.69,
+  "ratings": 5423
  },
  "Cat Museum": {
   "appId": "com.games751.catmuseum",
@@ -9306,7 +9360,9 @@
   "flags": [],
   "query": "Cat Museum",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.63,
+  "ratings": 15288
  },
  "Cat Quest": {
   "appId": "com.thegentlebros.catquest",
@@ -9346,7 +9402,9 @@
   "flags": [],
   "query": "Cat Quest",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.26,
+  "ratings": 7717
  },
  "Cat Simulator: Kitty Craft": {
   "appId": "com.hgamesart.catsimulator",
@@ -9387,7 +9445,9 @@
   "flags": [],
   "query": "Cat Simulator: Kitty Craft",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.07,
+  "ratings": 164345
  },
  "Catastrophe Restaurant": {
   "appId": "com.Zxima.Catastrope",
@@ -9428,7 +9488,9 @@
   "flags": [],
   "query": "Catastrophe Restaurant",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.88,
+  "ratings": 2481
  },
  "Catch the Candy Fun Puzzles": {
   "appId": "com.herocraft.game.cut.arcade.catchthecandy",
@@ -9469,7 +9531,9 @@
   "flags": [],
   "query": "Catch the Candy Fun Puzzles",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.65,
+  "ratings": 44156
  },
  "Catch The Candy Premium": {
   "appId": "com.herocraft.game.catchthecandy",
@@ -9501,7 +9565,9 @@
   "flags": [],
   "query": "Catch The Candy Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.4,
+  "ratings": 272
  },
  "Catherine The Vampire": {
   "appId": "com.THIRTEENDAYS.CatherineTheVampire",
@@ -9542,7 +9608,9 @@
   "flags": [],
   "query": "Catherine The Vampire",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.75,
+  "ratings": 683
  },
  "Cats in Time – Relaxing Puzzle": {
   "appId": "com.pinestudio.buildings",
@@ -9583,7 +9651,9 @@
   "flags": [],
   "query": "Cats in Time – Relaxing Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.29,
+  "ratings": 36452
  },
  "Caveman Games World for Kids": {
   "appId": "pretend.play.stone.age.games.kids.adventure",
@@ -9624,7 +9694,9 @@
   "flags": [],
   "query": "Caveman Games World for Kids",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.27,
+  "ratings": 6499
  },
  "Cavern Adventures": {
   "appId": "net.kairosoft.android.cave",
@@ -9665,7 +9737,9 @@
   "flags": [],
   "query": "Cavern Adventures",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.39,
+  "ratings": 2455
  },
  "Central Hospital Stories": {
   "appId": "com.playtoddlers.centralhospitalstories.free",
@@ -9688,7 +9762,9 @@
   "flags": [],
   "query": "Central Hospital Stories",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.53,
+  "ratings": 159059
  },
  "Chameleon Run": {
   "appId": "com.noodlecake.chameleonrun",
@@ -9720,7 +9796,9 @@
   "flags": [],
   "query": "Chameleon Run",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.2,
+  "ratings": 13052
  },
  "Charlie in Underworld": {
   "appId": "com.buffstudio.uwoffice2.charlie.novel.adventure.story.games",
@@ -9758,7 +9836,9 @@
   "flags": [],
   "query": "Charlie in Underworld",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.63,
+  "ratings": 796
  },
  "Check, please! – Dream Cafe": {
   "appId": "com.playmotional.cafe",
@@ -9793,7 +9873,9 @@
   "flags": [],
   "query": "Check, please! – Dream Cafe",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.52,
+  "ratings": 1061
  },
  "Checkers": {
   "appId": "com.dimcoms.checkers",
@@ -9834,7 +9916,9 @@
   "flags": [],
   "query": "Checkers",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.36,
+  "ratings": 734568
  },
  "Checkers Online": {
   "appId": "pl.lukok.draughts",
@@ -9875,7 +9959,9 @@
   "flags": [],
   "query": "Checkers Online",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.6,
+  "ratings": 1501918
  },
  "Chef Master Story": {
   "appId": null,
@@ -9906,7 +9992,9 @@
   "flags": [],
   "query": "Chef Story: Cooking Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 2.67,
+  "ratings": 121
  },
  "Chess": {
   "appId": "com.jetstartgames.chess",
@@ -9947,7 +10035,9 @@
   "flags": [],
   "query": "Chess",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.55,
+  "ratings": 2141098
  },
  "Chess Online and Offline": {
   "appId": "com.splendapps.checkmate",
@@ -9972,7 +10062,9 @@
   "flags": [],
   "query": "Chess Online and Offline",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.73,
+  "ratings": 514389
  },
  "Chessarama": {
   "appId": "com.minimolgames.chessarama",
@@ -10013,7 +10105,9 @@
   "flags": [],
   "query": "Chessarama",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.11,
+  "ratings": 58
  },
  "ChessFinity PREMIUM": {
   "appId": "com.hg.chessfinity.premium",
@@ -10040,7 +10134,9 @@
   "flags": [],
   "query": "ChessFinity PREMIUM",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.87,
+  "ratings": 107
  },
  "Chicken Police- Paint it RED": {
   "appId": "com.hg.chickenpolice",
@@ -10081,7 +10177,9 @@
   "flags": [],
   "query": "Chicken Police- Paint it RED",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.09,
+  "ratings": 590
  },
  "Chicktionary – Word Game": {
   "appId": "com.smgstudio.chicktionary",
@@ -10116,7 +10214,9 @@
   "flags": [],
   "query": "Chicktionary – Word Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.35,
+  "ratings": 290
  },
  "Children of Morta": {
   "appId": "com.playdigious.childrenofmorta",
@@ -10157,7 +10257,9 @@
   "flags": [],
   "query": "Children of Morta",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.51,
+  "ratings": 6208
  },
  "Chinchon – Spanish Card Game": {
   "appId": "com.quarzo.chinchon",
@@ -10190,7 +10292,9 @@
   "flags": [],
   "query": "Chinchon – Spanish Card Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.2,
+  "ratings": 10285
  },
  "Choice of Life: Middle Ages": {
   "appId": "com.BlazingPlanetStudio.TheChoiceofLifeMiddleAges",
@@ -10225,7 +10329,9 @@
   "flags": [],
   "query": "Choice of Life: Middle Ages",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.53,
+  "ratings": 1411
  },
  "Christmas Coloring Book Games": {
   "appId": "com.gamesforkids.coloring.games.christmas",
@@ -10266,7 +10372,9 @@
   "flags": [],
   "query": "Christmas Coloring Book Games Play Pass",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.31,
+  "ratings": 514
  },
  "Christmas Sweeper 4 – Match 3": {
   "appId": "com.smileygamer.christmassweeper4",
@@ -10304,7 +10412,9 @@
   "flags": [],
   "query": "Christmas Sweeper 4 – Match 3",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.36,
+  "ratings": 4884
  },
  "Chuchel": {
   "appId": "air.com.amanitadesign.chuchel.gp",
@@ -10345,7 +10455,9 @@
   "flags": [],
   "query": "Chuchel",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.25,
+  "ratings": 8894
  },
  "Cinema Business – Idle Games": {
   "appId": "com.okigen.cinemabusiness",
@@ -10380,7 +10492,9 @@
   "flags": [],
   "query": "Cinema Business – Idle Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.32,
+  "ratings": 2293
  },
  "City Demolish: Rocket Smash!": {
   "appId": "com.fourties.citydemolish",
@@ -10421,7 +10535,9 @@
   "flags": [],
   "query": "City Demolish: Rocket Smash!",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.42,
+  "ratings": 11536
  },
  "City Games Princess Dollhouse": {
   "appId": "com.my.city.town.home.design.dollhouse.princess.girls.games",
@@ -10459,7 +10575,9 @@
   "flags": [],
   "query": null,
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.32,
+  "ratings": 745
  },
  "Claire’s Café Tasty Cuisine": {
   "appId": "com.gamehouse.cc1",
@@ -10500,7 +10618,9 @@
   "flags": [],
   "query": "Claire’s Café Tasty Cuisine",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.53,
+  "ratings": 3941
  },
  "Classic Labyrinth 3D Maze": {
   "appId": "de.pictofun.labyrinthone",
@@ -10527,7 +10647,9 @@
   "flags": [],
   "query": "Classic Labyrinth 3D Maze",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.4,
+  "ratings": 141504
  },
  "Classic Words Plus": {
   "appId": "com.lulo.scrabble.classicwordsplus",
@@ -10565,7 +10687,9 @@
   "flags": [],
   "query": "Classic Words Plus",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.49,
+  "ratings": 9704
  },
  "Classy Wedding Salon": {
   "appId": "net.promediastudio.classyweddingsalon",
@@ -10602,7 +10726,9 @@
   "flags": [],
   "query": "Classy Wedding Salon",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.84,
+  "ratings": 19451
  },
  "Clay hunt Pro": {
   "appId": "com.aleksirantonen.clayhuntpro",
@@ -10632,7 +10758,9 @@
   "flags": [],
   "query": "Clay hunt Pro",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.09,
+  "ratings": 870
  },
  "Clean Up Kids": {
   "appId": "com.bubadu.cleanupkids",
@@ -10664,7 +10792,9 @@
   "flags": [],
   "query": "Clean Up Kids",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.64,
+  "ratings": 7951
  },
  "Clockwork Tales (Full)": {
   "appId": "com.artifexmundi.clockwork.gp.full",
@@ -10705,7 +10835,9 @@
   "flags": [],
   "query": "Clockwork Tales (Full)",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.34,
+  "ratings": 4086
  },
  "Clutch Hero": {
   "appId": "com.FurtleGame.ClutchHero",
@@ -10746,7 +10878,9 @@
   "flags": [],
   "query": "Clutch Hero",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.83,
+  "ratings": 21558
  },
  "Code Land: Coding for Kids": {
   "appId": "com.learnyland.codeland",
@@ -10787,7 +10921,9 @@
   "flags": [],
   "query": "Code Land: Coding for Kids",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.3,
+  "ratings": 3507
  },
  "Codewords": {
   "appId": "com.teazel.codeword.lite",
@@ -10820,7 +10956,9 @@
   "flags": [],
   "query": "Codewords",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.77,
+  "ratings": 3489
  },
  "Coding Games for Kids": {
   "appId": "com.internetdesignzone.kidlolandcoding",
@@ -10858,7 +10996,9 @@
   "flags": [],
   "query": "Coding Games for Kids",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.24,
+  "ratings": 3953
  },
  "Color Ball Blast": {
   "appId": "com.colorballblast.ballblast.cannon.bomber",
@@ -10899,7 +11039,9 @@
   "flags": [],
   "query": "Color Ball Blast",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.86,
+  "ratings": 7076
  },
  "Color by Number – Mandala Book": {
   "appId": "com.infocombinat.coloringbynumbersmandalavector",
@@ -10936,7 +11078,9 @@
   "flags": [],
   "query": "Color by Number – Mandala Book",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.75,
+  "ratings": 7856
  },
  "Color by Number – Pixel Art": {
   "appId": "com.europosit.pixelcoloring",
@@ -10977,7 +11121,9 @@
   "flags": [],
   "query": "Color by Number – Pixel Art",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.63,
+  "ratings": 2594950
  },
  "Color Music Hop Ball Games": {
   "appId": "it.haystudio.dancingbeat2",
@@ -11012,7 +11158,9 @@
   "flags": [],
   "query": "Color Music Hop Ball Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4,
+  "ratings": 4306
  },
  "Color Switch: Endless Play Fun": {
   "appId": "com.colorswitch.switch2",
@@ -11053,7 +11201,9 @@
   "flags": [],
   "query": "Color Switch: Endless Play Fun",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.64,
+  "ratings": 384697
  },
  "Color Water sort Puzzle Games": {
   "appId": "com.playspare.watersort3d",
@@ -11082,7 +11232,9 @@
   "flags": [],
   "query": "Color Water sort Puzzle Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.74,
+  "ratings": 545088
  },
  "Coloring Book games for Kids": {
   "appId": null,
@@ -11138,7 +11290,9 @@
   "flags": [],
   "query": "Coloring games and coloring kids Play Pass",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.9,
+  "ratings": 7492
  },
  "Coloring Games for Kds: Color": {
   "appId": "com.iz.coloring.games.kids.drawing.book.color.by.number",
@@ -11179,7 +11333,9 @@
   "flags": [],
   "query": "Coloring Games for Kds: Color",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.54,
+  "ratings": 30690
  },
  "Coloring pages: Mandala for Me": {
   "appId": "com.twodtwob.coloring.adult",
@@ -11214,7 +11370,9 @@
   "flags": [],
   "query": "Coloring pages: Mandala for Me",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.04,
+  "ratings": 57482
  },
  "Colorma: Color Sorting Puzzle": {
   "appId": "com.logisk.chroma",
@@ -11255,7 +11413,9 @@
   "flags": [],
   "query": "Colorma: Color Sorting Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.79,
+  "ratings": 4152
  },
  "ColorMe – Drawing and Painitng": {
   "appId": "com.adult.coloring.book.pages",
@@ -11290,7 +11450,9 @@
   "flags": [],
   "query": "ColorMe – Drawing and Painitng",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.43,
+  "ratings": 170314
  },
  "Colors Learning Toddler Games": {
   "appId": "com.kids.colors.games.free.toddlers.learning.coloring.preschool.baby.girls.boys.children",
@@ -11328,7 +11490,9 @@
   "flags": [],
   "query": "Colors Learning Toddler Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.76,
+  "ratings": 215
  },
  "Concentration": {
   "appId": null,
@@ -11387,7 +11551,9 @@
   "flags": [],
   "query": "Conenction Logic Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.39,
+  "ratings": 125284
  },
  "Connect Animal": {
   "appId": "games.spearmint.connectanimal",
@@ -11425,7 +11591,9 @@
   "flags": [],
   "query": "Connect Animal",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.55,
+  "ratings": 481485
  },
  "Conquistadorio": {
   "appId": "com.MorionStudio.ConquistadorioFull",
@@ -11466,7 +11634,9 @@
   "flags": [],
   "query": "Conquistadorio",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.21,
+  "ratings": 3699
  },
  "Construction Ramp Jumping": {
   "appId": "com.construction.ramp.jumping",
@@ -11504,7 +11674,9 @@
   "flags": [],
   "query": "Construction Ramp Jumping",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.28,
+  "ratings": 45969
  },
  "Construction Simulator 2": {
   "appId": "com.astragon.cs2016",
@@ -11539,7 +11711,9 @@
   "flags": [],
   "query": "Construction Simulator 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.2,
+  "ratings": 15976
  },
  "Construction Vehicles & Trucks": {
   "appId": "com.iz.kids.construction.vehicles.truck.building.games",
@@ -11580,7 +11754,9 @@
   "flags": [],
   "query": "Construction Vehicles & Trucks",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.23,
+  "ratings": 5504
  },
  "Convenience Stories": {
   "appId": "net.kairosoft.android.convenience",
@@ -11621,7 +11797,9 @@
   "flags": [],
   "query": "Convenience Stories",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.73,
+  "ratings": 8449
  },
  "Cookies Inc- idle Clicker": {
   "appId": "com.pixelcubestudios.android.cookiecollector2",
@@ -11642,7 +11820,9 @@
   "flags": [],
   "query": "Cookies Inc- idle Clicker",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.57,
+  "ratings": 53051
  },
  "Cookies Must Die": {
   "appId": "com.rebeltwins.cookiesmustdie",
@@ -11683,7 +11863,9 @@
   "flags": [],
   "query": "Cookies Must Die",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.5,
+  "ratings": 44782
  },
  "Cooking Chef – Food Fever": {
   "appId": "com.renderedideas.cookingchef",
@@ -11706,7 +11888,9 @@
   "flags": [],
   "query": "Cooking Chef – Food Fever",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.64,
+  "ratings": 55479
  },
  "Cooking Corner Chef Restaurant": {
   "appId": "com.renderedideas.cookingcorner",
@@ -11747,7 +11931,9 @@
   "flags": [],
   "query": "Cooking Corner Chef Restaurant",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.34,
+  "ratings": 8303
  },
  "Cooking Festival": {
   "appId": "com.boombit.cooking.festival",
@@ -11785,7 +11971,9 @@
   "flags": [],
   "query": "Cooking Festival",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.41,
+  "ratings": 3312
  },
  "Cooking Games for Kids and Girls": {
   "appId": "com.internetdesignzone.cookingforkids",
@@ -11826,7 +12014,9 @@
   "flags": [],
   "query": "Cooking Games for Kids and Girls",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.52,
+  "ratings": 17844
  },
  "Cops vs Robbers: Jailbreak": {
   "appId": null,
@@ -11883,7 +12073,9 @@
   "flags": [],
   "query": "Cornhole League Board Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.28,
+  "ratings": 48098
  },
  "Coromon": {
   "appId": "com.tragsoft.coromon",
@@ -11921,7 +12113,9 @@
   "flags": [],
   "query": "Coromon",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.55,
+  "ratings": 24107
  },
  "Cosmic Express": {
   "appId": "com.cosmicexpressgame",
@@ -11944,7 +12138,9 @@
   "flags": [],
   "query": "Cosmic Express",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.2,
+  "ratings": 740
  },
  "Cozy Home: Comfy Coloring Book": {
   "appId": "com.abovegames.coloringcozyhome",
@@ -11979,7 +12175,9 @@
   "flags": [],
   "query": "Cozy Home: Comfy Coloring Book",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.89,
+  "ratings": 10129
  },
  "Crash Dive 2": {
   "appId": "com.panicensuessoftware.crashdive2",
@@ -12020,7 +12218,9 @@
   "flags": [],
   "query": "Crash Dive 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.63,
+  "ratings": 1488
  },
  "Crashlands": {
   "appId": "com.bscotch.crashlands",
@@ -12059,7 +12259,9 @@
   "flags": [],
   "query": "Crashlands",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.25,
+  "ratings": 17384
  },
  "Crashlands 2": {
   "appId": "com.bscotch.crashlands2",
@@ -12100,7 +12302,9 @@
   "flags": [],
   "query": "Crashlands 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.65,
+  "ratings": 3348
  },
  "Crayola Create and Play": {
   "appId": "com.crayolallc.crayola_create_and_play",
@@ -12141,7 +12345,9 @@
   "flags": [],
   "query": "Crayola Create and Play",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.9,
+  "ratings": 7862
  },
  "Crayola Scribble Scrubbie Pets": {
   "appId": "com.crayolallc.crayola_scribble_scrubbie_pets",
@@ -12182,7 +12388,9 @@
   "flags": [],
   "query": "Crayola Scribble Scrubbie Pets",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.76,
+  "ratings": 18346
  },
  "Crazy Eights": {
   "appId": "com.mobilityware.CrazyEights",
@@ -12220,7 +12428,9 @@
   "flags": [],
   "query": "Crazy Eights",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.65,
+  "ratings": 19292
  },
  "Crazy Plane Landing": {
   "appId": "com.crazy.plane.landing",
@@ -12261,7 +12471,9 @@
   "flags": [],
   "query": "Crazy Plane Landing",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.74,
+  "ratings": 91646
  },
  "Crazy Traffic Control": {
   "appId": "com.traffic.control",
@@ -12296,7 +12508,9 @@
   "flags": [],
   "query": "Crazy Traffic Control",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.09,
+  "ratings": 25165
  },
  "Cribbage JD": {
   "appId": "com.jdsoftwarellc.cribbage",
@@ -12337,7 +12551,9 @@
   "flags": [],
   "query": "Cribbage JD",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.6,
+  "ratings": 28402
  },
  "Crossword (US)": {
   "appId": "com.teazel.crossword.us.full",
@@ -12371,7 +12587,9 @@
   "flags": [],
   "query": "Crossword (US)",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.28,
+  "ratings": 6179
  },
  "Crossword by Teazel Ltd": {
   "appId": "com.teazel.crossword.full",
@@ -12409,7 +12627,9 @@
   "flags": [],
   "query": "Crossword by Teazel Ltd",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.03,
+  "ratings": 5634
  },
  "Crossword Puzzles": {
   "appId": null,
