@@ -10053,7 +10053,19 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.72,
-  "ratings": 3508
+  "ratings": 3508,
+  "installs": 173464,
+  "tags": [
+   "Simulation",
+   "Management",
+   "Restaurant",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Light-hearted",
+   "Offline"
+  ]
  },
  "Cafeteria Nipponica": {
   "appId": "net.kairosoft.android.restaurant_en",
@@ -10092,7 +10104,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.1,
-  "ratings": 3775
+  "ratings": 3775,
+  "installs": 117378,
+  "tags": [
+   "Simulation",
+   "Management",
+   "Restaurant",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Café Panic: Cooking games": {
   "appId": "com.Boomware.CafePanic",
@@ -10135,7 +10157,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.5,
-  "ratings": 161289
+  "ratings": 161289,
+  "installs": 17011221,
+  "tags": [
+   "Simulation",
+   "Time management",
+   "Arcade",
+   "Single player",
+   "Stylized",
+   "Cooking",
+   "Food",
+   "Offline"
+  ]
  },
  "Cake Maker Kids Cooking Games": {
   "appId": "com.free.kids.cooking.games.girls.toddler.cake.maker.baking",
@@ -10178,7 +10211,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.56,
-  "ratings": 720
+  "ratings": 720,
+  "installs": 566065,
+  "tags": [
+   "Educational",
+   "Drawing",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Cute",
+   "Offline"
+  ]
  },
  "Canasta": {
   "appId": "com.karmangames.canasta",
@@ -10219,7 +10262,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.35,
-  "ratings": 57171
+  "ratings": 57171,
+  "installs": 2696209,
+  "tags": [
+   "Card",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Realistic",
+   "Offline"
+  ]
  },
  "Candleman": {
   "appId": "com.spotlightor.candleman",
@@ -10256,7 +10309,14 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.9,
-  "ratings": 631
+  "ratings": 631,
+  "installs": 48916,
+  "tags": [
+   "Adventure",
+   "Single player",
+   "Stylized",
+   "Dark"
+  ]
  },
  "Candy Disaster TD Premium": {
   "appId": "com.acegames.candy.disaster.full.gp",
@@ -10296,7 +10356,14 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.59,
-  "ratings": 1822
+  "ratings": 1822,
+  "installs": 62570,
+  "tags": [
+   "Strategy",
+   "Tower defense",
+   "Casual",
+   "Stylized"
+  ]
  },
  "Car City World: Montessori Fun": {
   "appId": "com.minimango.games.carcityworld",
@@ -10339,7 +10406,20 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.11,
-  "ratings": 3742
+  "ratings": 3742,
+  "installs": 9822789,
+  "tags": [
+   "Educational",
+   "Language",
+   "Abc",
+   "Casual",
+   "Minigames",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Cute",
+   "Offline"
+  ]
  },
  "Car Crusher": {
   "appId": "com.car.crusher",
@@ -10379,7 +10459,15 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.22,
-  "ratings": 31534
+  "ratings": 31534,
+  "installs": 10575049,
+  "tags": [
+   "Simulation",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Car Eats Car 3 Hill Climb Racing": {
   "appId": "com.smokoko.careatscar3",
@@ -10422,7 +10510,19 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.59,
-  "ratings": 118347
+  "ratings": 118347,
+  "installs": 26732804,
+  "tags": [
+   "Racing",
+   "Stunt driving",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Vehicles",
+   "Car",
+   "Monster truck",
+   "Offline"
+  ]
  },
  "Car Eats Car 5 – Battle Arena": {
   "appId": "com.smokoko.careatscar5",
@@ -10465,7 +10565,19 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.59,
-  "ratings": 4505
+  "ratings": 4505,
+  "installs": 723088,
+  "tags": [
+   "Racing",
+   "Stunt driving",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Competitive",
+   "Intense",
+   "Offline"
+  ]
  },
  "Car games for kids & Toddlers": {
   "appId": null,
@@ -10545,7 +10657,15 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.33,
-  "ratings": 96887
+  "ratings": 96887,
+  "installs": 12587630,
+  "tags": [
+   "Simulation",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Car Party! Friend Family Game": {
   "appId": "com.bombayplay.CardCrack",
@@ -10579,7 +10699,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.44,
-  "ratings": 75841
+  "ratings": 75841,
+  "installs": 7054439,
+  "tags": [
+   "Card",
+   "Last card",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Realistic",
+   "Cards",
+   "Modern"
+  ]
  },
  "Car Rush 2048": {
   "appId": "com.goca.car",
@@ -10622,7 +10753,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.41,
-  "ratings": 14735
+  "ratings": 14735,
+  "installs": 1250483,
+  "tags": [
+   "Puzzle"
+  ]
  },
  "Car Simulator 2025": {
   "appId": "com.MobimiGames.CarSimulator2018",
@@ -10659,7 +10794,19 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.26,
-  "ratings": 65493
+  "ratings": 65493,
+  "installs": 22515414,
+  "tags": [
+   "Simulation",
+   "Vehicle",
+   "Car sim",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Vehicles",
+   "Car",
+   "Offline"
+  ]
  },
  "Car Wash & Race Games for Kids": {
   "appId": "com.gamesforkids.kidscargames.carwash",
@@ -10699,7 +10846,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.15,
-  "ratings": 4741
+  "ratings": 4741,
+  "installs": 3523194,
+  "tags": [
+   "Simulation",
+   "Care",
+   "Vehicle care",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Card Crawl": {
   "appId": "com.tinytouchtales.cardcrawl",
@@ -10736,7 +10893,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.5,
-  "ratings": 27804
+  "ratings": 27804,
+  "installs": 1341166,
+  "tags": [
+   "Card",
+   "Card battler",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Fantasy",
+   "Medieval fantasy",
+   "Offline"
+  ]
  },
  "Card Crawl Adventure": {
   "appId": "com.tinytouchtales.cardcrawladventure",
@@ -10773,7 +10941,15 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.95,
-  "ratings": 1144
+  "ratings": 1144,
+  "installs": 236253,
+  "tags": [
+   "Card",
+   "Card battler",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Card Quest": {
   "appId": "com.winterspring.cardquest",
@@ -10816,7 +10992,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.8,
-  "ratings": 1093
+  "ratings": 1093,
+  "installs": 80971,
+  "tags": [
+   "Card",
+   "Single player",
+   "Stylized",
+   "Dungeon",
+   "Monster",
+   "Offline"
+  ]
  },
  "Card Thief": {
   "appId": "com.tinytouchtales.cardthief",
@@ -10851,7 +11036,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.55,
-  "ratings": 30729
+  "ratings": 30729,
+  "installs": 3941907,
+  "tags": [
+   "Card",
+   "Card battler",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Carrion": {
   "appId": "com.devolverdigital.carrion",
@@ -10894,7 +11088,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.32,
-  "ratings": 28489
+  "ratings": 28489,
+  "installs": 4579699,
+  "tags": [
+   "Action",
+   "Action-adventure",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Horror",
+   "Offline"
+  ]
  },
  "Cars Coloring Book Kids Game": {
   "appId": "com.gamesforkids.coloring.games.cars",
@@ -10937,7 +11141,15 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.07,
-  "ratings": 1056
+  "ratings": 1056,
+  "installs": 1142584,
+  "tags": [
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Handicraft",
+   "Offline"
+  ]
  },
  "Castle Cats – Idle Hero RPG": {
   "appId": "com.pocapp.castlecats",
@@ -10974,7 +11186,20 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.72,
-  "ratings": 189547
+  "ratings": 189547,
+  "installs": 7106562,
+  "tags": [
+   "Role Playing",
+   "Idle RPG",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Animals",
+   "Cat",
+   "Battling",
+   "Offline"
+  ]
  },
  "Castle Solitaire: Card Game": {
   "appId": "com.mobilityware.CastleSolitaire",
@@ -11017,7 +11242,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.66,
-  "ratings": 103169
+  "ratings": 103169,
+  "installs": 4933645,
+  "tags": [
+   "Card",
+   "Solitaire",
+   "Casual",
+   "Single player",
+   "Realistic",
+   "Cards",
+   "Modern",
+   "Offline"
+  ]
  },
  "Casuality": {
   "appId": "com.lojugames.android.Causality",
@@ -11048,7 +11284,13 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.26,
-  "ratings": 1172
+  "ratings": 1172,
+  "installs": 92450,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual"
+  ]
  },
  "Cat Driving School Simulator": {
   "appId": "com.boombitgames.DrivingSchoolParking",
@@ -11088,7 +11330,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.47,
-  "ratings": 431404
+  "ratings": 431404,
+  "installs": 60197349,
+  "tags": [
+   "Simulation",
+   "Vehicle",
+   "Parking simulator",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Driving",
+   "City"
+  ]
  },
  "Cat Life Sim – Find the Killer": {
   "appId": "com.funcell.catlifesim",
@@ -11125,7 +11378,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.69,
-  "ratings": 5423
+  "ratings": 5423,
+  "installs": 8858224,
+  "tags": [
+   "Casual"
+  ]
  },
  "Cat Museum": {
   "appId": "com.games751.catmuseum",
@@ -11168,7 +11425,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.63,
-  "ratings": 15288
+  "ratings": 15288,
+  "installs": 2157646,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Single player",
+   "Stylized",
+   "Mystery",
+   "Fantasy",
+   "Dark fantasy",
+   "Offline"
+  ]
  },
  "Cat Quest": {
   "appId": "com.thegentlebros.catquest",
@@ -11210,7 +11478,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.26,
-  "ratings": 7717
+  "ratings": 7717,
+  "installs": 238830,
+  "tags": [
+   "Role Playing",
+   "Action-strategy",
+   "Casual",
+   "Stylized",
+   "Animals",
+   "Cat",
+   "Immersive"
+  ]
  },
  "Cat Simulator: Kitty Craft": {
   "appId": "com.hgamesart.catsimulator",
@@ -11253,7 +11531,20 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.07,
-  "ratings": 164345
+  "ratings": 164345,
+  "installs": 44218767,
+  "tags": [
+   "Simulation",
+   "Life",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Stylized",
+   "Animals",
+   "Cat",
+   "Offline"
+  ]
  },
  "Catastrophe Restaurant": {
   "appId": "com.Zxima.Catastrope",
@@ -11296,7 +11587,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.88,
-  "ratings": 2481
+  "ratings": 2481,
+  "installs": 52092,
+  "tags": [
+   "Casual"
+  ]
  },
  "Catch the Candy Fun Puzzles": {
   "appId": "com.herocraft.game.cut.arcade.catchthecandy",
@@ -11339,7 +11634,19 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.65,
-  "ratings": 44156
+  "ratings": 44156,
+  "installs": 25022308,
+  "tags": [
+   "Puzzle",
+   "Physics",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Ragdoll",
+   "Cute",
+   "Offline"
+  ]
  },
  "Catch The Candy Premium": {
   "appId": "com.herocraft.game.catchthecandy",
@@ -11373,7 +11680,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.4,
-  "ratings": 272
+  "ratings": 272,
+  "installs": 27868,
+  "tags": [
+   "Puzzle",
+   "Physics",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Offline"
+  ]
  },
  "Catherine The Vampire": {
   "appId": "com.THIRTEENDAYS.CatherineTheVampire",
@@ -11416,7 +11733,15 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.75,
-  "ratings": 683
+  "ratings": 683,
+  "installs": 36209,
+  "tags": [
+   "Adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Cats in Time – Relaxing Puzzle": {
   "appId": "com.pinestudio.buildings",
@@ -11459,7 +11784,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.29,
-  "ratings": 36452
+  "ratings": 36452,
+  "installs": 1374368,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Caveman Games World for Kids": {
   "appId": "pretend.play.stone.age.games.kids.adventure",
@@ -11502,7 +11836,15 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.27,
-  "ratings": 6499
+  "ratings": 6499,
+  "installs": 4576819,
+  "tags": [
+   "Simulation",
+   "Life",
+   "Casual",
+   "Single player",
+   "Stylized"
+  ]
  },
  "Cavern Adventures": {
   "appId": "net.kairosoft.android.cave",
@@ -11545,7 +11887,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.39,
-  "ratings": 2455
+  "ratings": 2455,
+  "installs": 111951,
+  "tags": [
+   "Simulation",
+   "Management",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Monster",
+   "Dungeon"
+  ]
  },
  "Central Hospital Stories": {
   "appId": "com.playtoddlers.centralhospitalstories.free",
@@ -11570,7 +11922,19 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.53,
-  "ratings": 159059
+  "ratings": 159064,
+  "installs": 73302070,
+  "tags": [
+   "Simulation",
+   "Life",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Doctor",
+   "Hospital",
+   "Offline"
+  ]
  },
  "Chameleon Run": {
   "appId": "com.noodlecake.chameleonrun",
@@ -11604,7 +11968,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.2,
-  "ratings": 13052
+  "ratings": 13052,
+  "installs": 967578,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Runner",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Intense",
+   "Offline"
+  ]
  },
  "Charlie in Underworld": {
   "appId": "com.buffstudio.uwoffice2.charlie.novel.adventure.story.games",
@@ -11644,7 +12019,15 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.63,
-  "ratings": 796
+  "ratings": 796,
+  "installs": 23358,
+  "tags": [
+   "Adventure",
+   "Interactive story",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Check, please! – Dream Cafe": {
   "appId": "com.playmotional.cafe",
@@ -11681,7 +12064,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.52,
-  "ratings": 1061
+  "ratings": 1061,
+  "installs": 105649,
+  "tags": [
+   "Simulation",
+   "Time management",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Checkers": {
   "appId": "com.dimcoms.checkers",
@@ -11724,7 +12116,20 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.36,
-  "ratings": 734568
+  "ratings": 734569,
+  "installs": 157257251,
+  "tags": [
+   "Board",
+   "Abstract strategy",
+   "Checkers",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Realistic",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Checkers Online": {
   "appId": "pl.lukok.draughts",
@@ -11767,7 +12172,20 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.6,
-  "ratings": 1501918
+  "ratings": 1501927,
+  "installs": 148823888,
+  "tags": [
+   "Board",
+   "Abstract strategy",
+   "Checkers",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Realistic",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Chef Master Story": {
   "appId": null,
@@ -11800,7 +12218,14 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 2.67,
-  "ratings": 121
+  "ratings": 121,
+  "installs": 16767,
+  "tags": [
+   "Simulation",
+   "Time management",
+   "Stylized",
+   "Modern"
+  ]
  },
  "Chess": {
   "appId": "com.jetstartgames.chess",
@@ -11843,7 +12268,20 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.55,
-  "ratings": 2141098
+  "ratings": 2141099,
+  "installs": 338975880,
+  "tags": [
+   "Board",
+   "Abstract strategy",
+   "Chess",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Realistic",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Chess Online and Offline": {
   "appId": "com.splendapps.checkmate",
@@ -11870,7 +12308,20 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.73,
-  "ratings": 514389
+  "ratings": 514389,
+  "installs": 28708601,
+  "tags": [
+   "Board",
+   "Abstract strategy",
+   "Chess",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Realistic",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Chessarama": {
   "appId": "com.minimolgames.chessarama",
@@ -11913,7 +12364,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.11,
-  "ratings": 58
+  "ratings": 58,
+  "installs": 10968,
+  "tags": [
+   "Board"
+  ]
  },
  "ChessFinity PREMIUM": {
   "appId": "com.hg.chessfinity.premium",
@@ -11942,7 +12397,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.87,
-  "ratings": 107
+  "ratings": 107,
+  "installs": 7732,
+  "tags": [
+   "Casual"
+  ]
  },
  "Chicken Police- Paint it RED": {
   "appId": "com.hg.chickenpolice",
@@ -11985,7 +12444,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.09,
-  "ratings": 590
+  "ratings": 590,
+  "installs": 45042,
+  "tags": [
+   "Adventure",
+   "Interactive story",
+   "Casual",
+   "Stylized",
+   "Stylized-realistic",
+   "Police"
+  ]
  },
  "Chicktionary – Word Game": {
   "appId": "com.smgstudio.chicktionary",
@@ -12022,7 +12490,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.35,
-  "ratings": 290
+  "ratings": 290,
+  "installs": 30862,
+  "tags": [
+   "Word"
+  ]
  },
  "Children of Morta": {
   "appId": "com.playdigious.childrenofmorta",
@@ -12065,7 +12537,19 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.51,
-  "ratings": 6208
+  "ratings": 6208,
+  "installs": 137909,
+  "tags": [
+   "Role Playing",
+   "Action Role-Playing",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Immersive",
+   "Fantasy",
+   "Dark fantasy",
+   "Offline"
+  ]
  },
  "Chinchon – Spanish Card Game": {
   "appId": "com.quarzo.chinchon",
@@ -12100,7 +12584,20 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.2,
-  "ratings": 10285
+  "ratings": 10285,
+  "installs": 3170636,
+  "tags": [
+   "Card",
+   "Matching",
+   "Rummy",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Realistic",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Choice of Life: Middle Ages": {
   "appId": "com.BlazingPlanetStudio.TheChoiceofLifeMiddleAges",
@@ -12137,7 +12634,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.53,
-  "ratings": 1411
+  "ratings": 1411,
+  "installs": 120964,
+  "tags": [
+   "Card"
+  ]
  },
  "Christmas Coloring Book Games": {
   "appId": "com.gamesforkids.coloring.games.christmas",
@@ -12180,7 +12681,15 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.31,
-  "ratings": 514
+  "ratings": 514,
+  "installs": 483965,
+  "tags": [
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Handicraft",
+   "Offline"
+  ]
  },
  "Christmas Sweeper 4 – Match 3": {
   "appId": "com.smileygamer.christmassweeper4",
@@ -12220,7 +12729,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.36,
-  "ratings": 4884
+  "ratings": 4884,
+  "installs": 302889,
+  "tags": [
+   "Puzzle",
+   "Match 3",
+   "Match 3 adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Light-hearted",
+   "Offline"
+  ]
  },
  "Chuchel": {
   "appId": "air.com.amanitadesign.chuchel.gp",
@@ -12263,7 +12783,19 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.25,
-  "ratings": 8894
+  "ratings": 8894,
+  "installs": 693360,
+  "tags": [
+   "Puzzle",
+   "Brain teaser",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Puzzles",
+   "Monster",
+   "Offline"
+  ]
  },
  "Cinema Business – Idle Games": {
   "appId": "com.okigen.cinemabusiness",
@@ -12300,7 +12832,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.32,
-  "ratings": 2293
+  "ratings": 2293,
+  "installs": 1581616,
+  "tags": [
+   "Strategy"
+  ]
  },
  "City Demolish: Rocket Smash!": {
   "appId": "com.fourties.citydemolish",
@@ -12343,7 +12879,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.42,
-  "ratings": 11536
+  "ratings": 11536,
+  "installs": 1981988,
+  "tags": [
+   "Action",
+   "Shooter",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "City Games Princess Dollhouse": {
   "appId": "com.my.city.town.home.design.dollhouse.princess.girls.games",
@@ -12383,7 +12928,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.32,
-  "ratings": 745
+  "ratings": 745,
+  "installs": 426387,
+  "tags": [
+   "Educational"
+  ]
  },
  "Claire’s Café Tasty Cuisine": {
   "appId": "com.gamehouse.cc1",
@@ -12426,7 +12975,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.53,
-  "ratings": 3941
+  "ratings": 3941,
+  "installs": 273121,
+  "tags": [
+   "Simulation",
+   "Time management",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Classic Labyrinth 3D Maze": {
   "appId": "de.pictofun.labyrinthone",
@@ -12455,7 +13013,15 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.4,
-  "ratings": 141504
+  "ratings": 141504,
+  "installs": 17441170,
+  "tags": [
+   "Puzzle",
+   "Casual",
+   "Single player",
+   "Realistic",
+   "Offline"
+  ]
  },
  "Classic Words Plus": {
   "appId": "com.lulo.scrabble.classicwordsplus",
@@ -12495,7 +13061,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.49,
-  "ratings": 9704
+  "ratings": 9704,
+  "installs": 164067,
+  "tags": [
+   "Word",
+   "Word jumble",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Classy Wedding Salon": {
   "appId": "net.promediastudio.classyweddingsalon",
@@ -12534,7 +13111,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.84,
-  "ratings": 19451
+  "ratings": 19451,
+  "installs": 8800523,
+  "tags": [
+   "Simulation",
+   "Lifestyle",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Wedding",
+   "Offline"
+  ]
  },
  "Clay hunt Pro": {
   "appId": "com.aleksirantonen.clayhuntpro",
@@ -12566,7 +13153,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.09,
-  "ratings": 870
+  "ratings": 870,
+  "installs": 55655,
+  "tags": [
+   "Action",
+   "Shooter",
+   "Shooting range",
+   "Single player",
+   "Stylized",
+   "Weapons",
+   "Gun",
+   "Offline"
+  ]
  },
  "Clean Up Kids": {
   "appId": "com.bubadu.cleanupkids",
@@ -12600,7 +13198,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.64,
-  "ratings": 7951
+  "ratings": 7951,
+  "installs": 15486709,
+  "tags": [
+   "Simulation",
+   "Care",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Cute",
+   "Offline"
+  ]
  },
  "Clockwork Tales (Full)": {
   "appId": "com.artifexmundi.clockwork.gp.full",
@@ -12643,7 +13252,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.34,
-  "ratings": 4086
+  "ratings": 4086,
+  "installs": 103509,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Single player",
+   "Stylized",
+   "Stylized-realistic",
+   "Mystery",
+   "Offline"
+  ]
  },
  "Clutch Hero": {
   "appId": "com.FurtleGame.ClutchHero",
@@ -12686,7 +13305,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.83,
-  "ratings": 21558
+  "ratings": 21558,
+  "installs": 4918340,
+  "tags": [
+   "Simulation",
+   "Vehicle",
+   "Car sim",
+   "Casual",
+   "Single player",
+   "Stylized"
+  ]
  },
  "Code Land: Coding for Kids": {
   "appId": "com.learnyland.codeland",
@@ -12729,7 +13357,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.3,
-  "ratings": 3507
+  "ratings": 3507,
+  "installs": 738958,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Codewords": {
   "appId": "com.teazel.codeword.lite",
@@ -12764,7 +13401,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.77,
-  "ratings": 3489
+  "ratings": 3489,
+  "installs": 163094,
+  "tags": [
+   "Word",
+   "Crossword",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Coding Games for Kids": {
   "appId": "com.internetdesignzone.kidlolandcoding",
@@ -12804,7 +13450,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.24,
-  "ratings": 3953
+  "ratings": 3953,
+  "installs": 683420,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Offline"
+  ]
  },
  "Color Ball Blast": {
   "appId": "com.colorballblast.ballblast.cannon.bomber",
@@ -12847,7 +13503,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.86,
-  "ratings": 7076
+  "ratings": 7076,
+  "installs": 1206489,
+  "tags": [
+   "Action",
+   "Shooter",
+   "Bulletstorm",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Weapons",
+   "Offline"
+  ]
  },
  "Color by Number – Mandala Book": {
   "appId": "com.infocombinat.coloringbynumbersmandalavector",
@@ -12886,7 +13553,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.75,
-  "ratings": 7856
+  "ratings": 7856,
+  "installs": 1472730,
+  "tags": [
+   "Puzzle",
+   "Coloring",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Handicraft",
+   "Offline"
+  ]
  },
  "Color by Number – Pixel Art": {
   "appId": "com.europosit.pixelcoloring",
@@ -12929,7 +13606,14 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.63,
-  "ratings": 2594950
+  "ratings": 2594963,
+  "installs": 253775902,
+  "tags": [
+   "Puzzle",
+   "Coloring",
+   "Casual",
+   "Modern"
+  ]
  },
  "Color Music Hop Ball Games": {
   "appId": "it.haystudio.dancingbeat2",
@@ -12966,7 +13650,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4,
-  "ratings": 4306
+  "ratings": 4306,
+  "installs": 5286591,
+  "tags": [
+   "Music",
+   "Rhythm-action",
+   "Arcade",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Color Switch: Endless Play Fun": {
   "appId": "com.colorswitch.switch2",
@@ -13009,7 +13702,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.64,
-  "ratings": 384697
+  "ratings": 384697,
+  "installs": 68611749,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Runner",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Color Water sort Puzzle Games": {
   "appId": "com.playspare.watersort3d",
@@ -13040,7 +13743,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.74,
-  "ratings": 545088
+  "ratings": 545088,
+  "installs": 73609729,
+  "tags": [
+   "Puzzle",
+   "Sort",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Puzzles",
+   "Offline"
+  ]
  },
  "Coloring Book games for Kids": {
   "appId": null,
@@ -13098,7 +13811,15 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.9,
-  "ratings": 7492
+  "ratings": 7492,
+  "installs": 9808111,
+  "tags": [
+   "Educational",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Coloring Games for Kds: Color": {
   "appId": "com.iz.coloring.games.kids.drawing.book.color.by.number",
@@ -13141,7 +13862,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.54,
-  "ratings": 30690
+  "ratings": 30690,
+  "installs": 40262510,
+  "tags": [
+   "Educational",
+   "Drawing",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Handicraft",
+   "Offline"
+  ]
  },
  "Coloring pages: Mandala for Me": {
   "appId": "com.twodtwob.coloring.adult",
@@ -13178,7 +13909,15 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.04,
-  "ratings": 57482
+  "ratings": 57482,
+  "installs": 8350264,
+  "tags": [
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Handicraft",
+   "Offline"
+  ]
  },
  "Colorma: Color Sorting Puzzle": {
   "appId": "com.logisk.chroma",
@@ -13221,7 +13960,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.79,
-  "ratings": 4152
+  "ratings": 4152,
+  "installs": 305425,
+  "tags": [
+   "Puzzle"
+  ]
  },
  "ColorMe – Drawing and Painitng": {
   "appId": "com.adult.coloring.book.pages",
@@ -13258,7 +14001,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.43,
-  "ratings": 170314
+  "ratings": 170314,
+  "installs": 18629364,
+  "tags": [
+   "Educational",
+   "Drawing",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Handicraft",
+   "Offline"
+  ]
  },
  "Colors Learning Toddler Games": {
   "appId": "com.kids.colors.games.free.toddlers.learning.coloring.preschool.baby.girls.boys.children",
@@ -13298,7 +14051,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.76,
-  "ratings": 215
+  "ratings": 215,
+  "installs": 161598,
+  "tags": [
+   "Educational"
+  ]
  },
  "Concentration": {
   "appId": null,
@@ -13359,7 +14116,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.39,
-  "ratings": 125284
+  "ratings": 125284,
+  "installs": 5325964,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Light-hearted",
+   "Offline"
+  ]
  },
  "Connect Animal": {
   "appId": "games.spearmint.connectanimal",
@@ -13399,7 +14166,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.55,
-  "ratings": 481485
+  "ratings": 481485,
+  "installs": 32862594,
+  "tags": [
+   "Puzzle",
+   "Pair matching",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Animals",
+   "Offline"
+  ]
  },
  "Conquistadorio": {
   "appId": "com.MorionStudio.ConquistadorioFull",
@@ -13442,7 +14220,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.21,
-  "ratings": 3699
+  "ratings": 3699,
+  "installs": 134362,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Single player",
+   "Stylized",
+   "Mystery",
+   "Offline"
+  ]
  },
  "Construction Ramp Jumping": {
   "appId": "com.construction.ramp.jumping",
@@ -13482,7 +14269,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.28,
-  "ratings": 45969
+  "ratings": 45969,
+  "installs": 25572005,
+  "tags": [
+   "Racing"
+  ]
  },
  "Construction Simulator 2": {
   "appId": "com.astragon.cs2016",
@@ -13519,7 +14310,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.2,
-  "ratings": 15976
+  "ratings": 15976,
+  "installs": 617196,
+  "tags": [
+   "Simulation",
+   "Management",
+   "Single player",
+   "Stylized",
+   "Vehicles",
+   "Truck",
+   "Driving",
+   "Offline"
+  ]
  },
  "Construction Vehicles & Trucks": {
   "appId": "com.iz.kids.construction.vehicles.truck.building.games",
@@ -13562,7 +14364,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.23,
-  "ratings": 5504
+  "ratings": 5504,
+  "installs": 17924783,
+  "tags": [
+   "Simulation",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Vehicles",
+   "Truck",
+   "Offline"
+  ]
  },
  "Convenience Stories": {
   "appId": "net.kairosoft.android.convenience",
@@ -13605,7 +14417,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.73,
-  "ratings": 8449
+  "ratings": 8449,
+  "installs": 242428,
+  "tags": [
+   "Simulation",
+   "Management",
+   "Tycoon",
+   "Casual",
+   "Stylized",
+   "Pixelated",
+   "Light-hearted"
+  ]
  },
  "Cookies Inc- idle Clicker": {
   "appId": "com.pixelcubestudios.android.cookiecollector2",
@@ -13628,7 +14450,19 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.57,
-  "ratings": 53051
+  "ratings": 53051,
+  "installs": 2483332,
+  "tags": [
+   "Simulation",
+   "Idle",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Food",
+   "Dessert",
+   "Connect",
+   "Offline"
+  ]
  },
  "Cookies Must Die": {
   "appId": "com.rebeltwins.cookiesmustdie",
@@ -13671,7 +14505,21 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.5,
-  "ratings": 44782
+  "ratings": 44782,
+  "installs": 4380712,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Run & gun",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Weapons",
+   "Gun",
+   "Food",
+   "Candy",
+   "Offline"
+  ]
  },
  "Cooking Chef – Food Fever": {
   "appId": "com.renderedideas.cookingchef",
@@ -13696,7 +14544,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.64,
-  "ratings": 55479
+  "ratings": 55479,
+  "installs": 28401864,
+  "tags": [
+   "Simulation",
+   "Time management",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cooking",
+   "Offline"
+  ]
  },
  "Cooking Corner Chef Restaurant": {
   "appId": "com.renderedideas.cookingcorner",
@@ -13739,7 +14597,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.34,
-  "ratings": 8303
+  "ratings": 8303,
+  "installs": 10971089,
+  "tags": [
+   "Simulation",
+   "Time management",
+   "Arcade",
+   "Single player",
+   "Stylized",
+   "Cooking",
+   "Offline"
+  ]
  },
  "Cooking Festival": {
   "appId": "com.boombit.cooking.festival",
@@ -13779,7 +14647,15 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.41,
-  "ratings": 3312
+  "ratings": 3312,
+  "installs": 627301,
+  "tags": [
+   "Simulation",
+   "Time management",
+   "Casual",
+   "Single player",
+   "Stylized"
+  ]
  },
  "Cooking Games for Kids and Girls": {
   "appId": "com.internetdesignzone.cookingforkids",
@@ -13822,7 +14698,15 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.52,
-  "ratings": 17844
+  "ratings": 17844,
+  "installs": 7376026,
+  "tags": [
+   "Simulation",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Cops vs Robbers: Jailbreak": {
   "appId": null,
@@ -13881,7 +14765,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.28,
-  "ratings": 48098
+  "ratings": 48098,
+  "installs": 11267800,
+  "tags": [
+   "Sports",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Toys",
+   "Fantasy",
+   "Offline"
+  ]
  },
  "Coromon": {
   "appId": "com.tragsoft.coromon",
@@ -13921,7 +14815,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.55,
-  "ratings": 24107
+  "ratings": 24107,
+  "installs": 4851897,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Immersive",
+   "Offline"
+  ]
  },
  "Cosmic Express": {
   "appId": "com.cosmicexpressgame",
@@ -13946,7 +14850,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.2,
-  "ratings": 740
+  "ratings": 740,
+  "installs": 72195,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Cozy Home: Comfy Coloring Book": {
   "appId": "com.abovegames.coloringcozyhome",
@@ -13983,7 +14896,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.89,
-  "ratings": 10129
+  "ratings": 10129,
+  "installs": 668384,
+  "tags": [
+   "Board"
+  ]
  },
  "Crash Dive 2": {
   "appId": "com.panicensuessoftware.crashdive2",
@@ -14026,7 +14943,20 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.63,
-  "ratings": 1488
+  "ratings": 1488,
+  "installs": 101792,
+  "tags": [
+   "Action",
+   "Shooter",
+   "Vehicle combat",
+   "Single player",
+   "Realistic",
+   "Modern",
+   "Military",
+   "Naval",
+   "Immersive",
+   "Offline"
+  ]
  },
  "Crashlands": {
   "appId": "com.bscotch.crashlands",
@@ -14067,7 +14997,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.25,
-  "ratings": 17384
+  "ratings": 17384,
+  "installs": 542546,
+  "tags": [
+   "Action",
+   "Action-adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Immersive",
+   "Science fiction",
+   "Offline"
+  ]
  },
  "Crashlands 2": {
   "appId": "com.bscotch.crashlands2",
@@ -14110,7 +15051,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.65,
-  "ratings": 3348
+  "ratings": 3348,
+  "installs": 125014,
+  "tags": [
+   "Action",
+   "Action-adventure",
+   "Survival",
+   "Single player",
+   "Stylized",
+   "Immersive",
+   "Science fiction"
+  ]
  },
  "Crayola Create and Play": {
   "appId": "com.crayolallc.crayola_create_and_play",
@@ -14153,7 +15104,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.9,
-  "ratings": 7862
+  "ratings": 7862,
+  "installs": 4012506,
+  "tags": [
+   "Educational",
+   "Drawing",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Cute",
+   "Offline"
+  ]
  },
  "Crayola Scribble Scrubbie Pets": {
   "appId": "com.crayolallc.crayola_scribble_scrubbie_pets",
@@ -14196,7 +15158,19 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.76,
-  "ratings": 18346
+  "ratings": 18346,
+  "installs": 11232216,
+  "tags": [
+   "Simulation",
+   "Care",
+   "Pet",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Cute",
+   "Offline"
+  ]
  },
  "Crazy Eights": {
   "appId": "com.mobilityware.CrazyEights",
@@ -14236,7 +15210,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.65,
-  "ratings": 19292
+  "ratings": 19292,
+  "installs": 1169716,
+  "tags": [
+   "Casual"
+  ]
  },
  "Crazy Plane Landing": {
   "appId": "com.crazy.plane.landing",
@@ -14279,7 +15257,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.74,
-  "ratings": 91646
+  "ratings": 91648,
+  "installs": 81664889,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Crazy Traffic Control": {
   "appId": "com.traffic.control",
@@ -14316,7 +15303,14 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.09,
-  "ratings": 25165
+  "ratings": 25165,
+  "installs": 8120222,
+  "tags": [
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Cribbage JD": {
   "appId": "com.jdsoftwarellc.cribbage",
@@ -14359,7 +15353,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.6,
-  "ratings": 28402
+  "ratings": 28402,
+  "installs": 556816,
+  "tags": [
+   "Card",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Realistic",
+   "Offline"
+  ]
  },
  "Crossword (US)": {
   "appId": "com.teazel.crossword.us.full",
@@ -14395,7 +15399,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.28,
-  "ratings": 6179
+  "ratings": 6179,
+  "installs": 597773,
+  "tags": [
+   "Word",
+   "Crossword",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Crossword by Teazel Ltd": {
   "appId": "com.teazel.crossword.full",
@@ -14435,7 +15448,13 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.03,
-  "ratings": 5634
+  "ratings": 5634,
+  "installs": 125173,
+  "tags": [
+   "Word",
+   "Crossword",
+   "Abstract"
+  ]
  },
  "Crossword Puzzles": {
   "appId": null,
@@ -14493,7 +15512,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.33,
-  "ratings": 42
+  "ratings": 42,
+  "installs": 11248,
+  "tags": [
+   "Word"
+  ]
  },
  "Crown Solitaire Card Game": {
   "appId": "com.mobilityware.CrownSolitaire",
@@ -14527,7 +15550,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.69,
-  "ratings": 32594
+  "ratings": 32594,
+  "installs": 1882022,
+  "tags": [
+   "Card",
+   "Solitaire",
+   "Casual",
+   "Single player",
+   "Realistic",
+   "Offline"
+  ]
  },
  "Crush the Monsters: Fun Puzzle": {
   "appId": "com.herocraft.game.rpm",
@@ -14567,7 +15599,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.64,
-  "ratings": 37351
+  "ratings": 37351,
+  "installs": 3191066,
+  "tags": [
+   "Casual"
+  ]
  },
  "Crying Suns": {
   "appId": "com.altshift.cryingsuns",
@@ -14604,7 +15640,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.76,
-  "ratings": 11199
+  "ratings": 11199,
+  "installs": 322108,
+  "tags": [
+   "Strategy",
+   "Tactics",
+   "Stylized",
+   "Pixelated",
+   "Battling",
+   "Immersive"
+  ]
  },
  "Cryptex": {
   "appId": "com.kidga.cryptex",
@@ -14641,7 +15686,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.26,
-  "ratings": 152
+  "ratings": 152,
+  "installs": 24999,
+  "tags": [
+   "Word"
+  ]
  },
  "Cryptic Crossword": {
   "appId": "com.teazel.crossword.cryptic.full",
@@ -14678,7 +15727,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.45,
-  "ratings": 3465
+  "ratings": 3465,
+  "installs": 40213,
+  "tags": [
+   "Word",
+   "Crossword",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Cube Card": {
   "appId": "com.gimlegames.cubecard",
@@ -14721,7 +15779,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.8,
-  "ratings": 229
+  "ratings": 229,
+  "installs": 29296,
+  "tags": [
+   "Card",
+   "Card battler",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Anime",
+   "Dungeon",
+   "Offline"
+  ]
  },
  "Cube Garden": {
   "appId": "com.fukudanuki.CubeGarden",
@@ -14748,7 +15817,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.1,
-  "ratings": 145
+  "ratings": 145,
+  "installs": 11919,
+  "tags": [
+   "Puzzle"
+  ]
  },
  "CubeX: Solve, Timer, 3D Cube": {
   "appId": "diozz.cubex",
@@ -14791,7 +15864,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.58,
-  "ratings": 360053
+  "ratings": 360054,
+  "installs": 30520046,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Single player",
+   "Realistic",
+   "Offline"
+  ]
  },
  "Cubistry": {
   "appId": "com.TheHohngCompany.Cubistry",
@@ -14834,7 +15916,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.59,
-  "ratings": 6441
+  "ratings": 6441,
+  "installs": 368693,
+  "tags": [
+   "Puzzle",
+   "Pair matching",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Light-hearted",
+   "Offline"
+  ]
  },
  "Cultist Simulator": {
   "appId": "com.playdigious.cultist",
@@ -14877,7 +15969,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.62,
-  "ratings": 16038
+  "ratings": 16038,
+  "installs": 496980,
+  "tags": [
+   "Card",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cards",
+   "Fantasy",
+   "Offline"
+  ]
  },
  "Cut the Rope": {
   "appId": "com.zeptolab.ctr.ads",
@@ -14911,7 +16013,19 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.42,
-  "ratings": 2692398
+  "ratings": 2692402,
+  "installs": 266741897,
+  "tags": [
+   "Puzzle",
+   "Physics",
+   "Arcade",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Monster",
+   "Puzzles",
+   "Offline"
+  ]
  },
  "Cut The Rope 2": {
   "appId": "com.zeptolab.ctr2.f2p.google",
@@ -14952,7 +16066,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.48,
-  "ratings": 2273750
+  "ratings": 2273750,
+  "installs": 137123268,
+  "tags": [
+   "Puzzle",
+   "Physics",
+   "Arcade",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Cute",
+   "Offline"
+  ]
  },
  "Cut The Rope: Time Travel": {
   "appId": "com.zeptolab.timetravel.free.google",
@@ -14986,7 +16111,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.6,
-  "ratings": 1091367
+  "ratings": 1091367,
+  "installs": 66544536,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Monster"
+  ]
  },
  "Cyberlords – Arcology Premium": {
   "appId": "com.hg.cyberlords",
@@ -15018,7 +16153,15 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.28,
-  "ratings": 2240
+  "ratings": 2240,
+  "installs": 40601,
+  "tags": [
+   "Role Playing",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Cytus": {
   "appId": "com.rayark.Cytus.full",
@@ -15057,7 +16200,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.61,
-  "ratings": 574913
+  "ratings": 574913,
+  "installs": 10776974,
+  "tags": [
+   "Music",
+   "Performance",
+   "Arcade",
+   "Single player",
+   "Abstract",
+   "Intense",
+   "Offline"
+  ]
  },
  "Cytys II": {
   "appId": "com.rayark.cytus2",
@@ -15097,7 +16250,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.06,
-  "ratings": 136901
+  "ratings": 136901,
+  "installs": 4065868,
+  "tags": [
+   "Music",
+   "Performance",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Dj",
+   "Intense",
+   "Offline"
+  ]
  },
  "Daily Pastimes – Minigames": {
   "appId": "com.puzztime.pastimes",
@@ -15134,7 +16298,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.49,
-  "ratings": 6386
+  "ratings": 6386,
+  "installs": 762326,
+  "tags": [
+   "Trivia"
+  ]
  },
  "Dance School Stories": {
   "appId": "com.crazylabs.dance.school",
@@ -15171,7 +16339,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.31,
-  "ratings": 196724
+  "ratings": 196724,
+  "installs": 14677196,
+  "tags": [
+   "Simulation",
+   "Lifestyle",
+   "Dress-up",
+   "Single player",
+   "Stylized",
+   "Dancing",
+   "Offline"
+  ]
  },
  "Dandara: Trials of Fear Edition": {
   "appId": "com.rawfury.longhathouse.Dandara",
@@ -15214,7 +16392,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.09,
-  "ratings": 5189
+  "ratings": 5189,
+  "installs": 199542,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Hack & slash",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Dandy Ace": {
   "appId": "com.MadMimic.DandyAce",
@@ -15257,7 +16445,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 2.97,
-  "ratings": 186
+  "ratings": 186,
+  "installs": 15926,
+  "tags": [
+   "Role Playing",
+   "Roguelike",
+   "Single player",
+   "Stylized",
+   "Immersive",
+   "Offline"
+  ]
  },
  "Dark Heritage (Full)": {
   "appId": null,
@@ -15310,7 +16507,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.03,
-  "ratings": 5186
+  "ratings": 5186,
+  "installs": 69083,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Dead Cells": {
   "appId": "com.playdigious.deadcells.mobile",
@@ -15352,7 +16558,20 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.8,
-  "ratings": 134603
+  "ratings": 134603,
+  "installs": 2035967,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Hack & slash",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Battling",
+   "Monster",
+   "Offline"
+  ]
  },
  "Dead Paradise Car Race Shooter": {
   "appId": "com.herocraft.game.free.deadparadise",
@@ -15391,7 +16610,20 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.3,
-  "ratings": 75236
+  "ratings": 75236,
+  "installs": 14428248,
+  "tags": [
+   "Action",
+   "Shooter",
+   "Vehicle combat",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Vehicles",
+   "Car",
+   "Intense",
+   "Offline"
+  ]
  },
  "Dealer’s Life 2": {
   "appId": "com.AbyteEntertainment.DealersLife2",
@@ -15431,7 +16663,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.74,
-  "ratings": 9336
+  "ratings": 9337,
+  "installs": 820311,
+  "tags": [
+   "Simulation",
+   "Management",
+   "Tycoon",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Shop & supermarket",
+   "Light-hearted"
+  ]
  },
  "Dealer’s Life Pawn Shop Tycoon": {
   "appId": "com.AbyteEntertainment.DealersLifeFull",
@@ -15474,7 +16717,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.4,
-  "ratings": 7756
+  "ratings": 7756,
+  "installs": 417541,
+  "tags": [
+   "Simulation",
+   "Management",
+   "Tycoon",
+   "Casual",
+   "Stylized",
+   "Light-hearted"
+  ]
  },
  "Death Palette": {
   "appId": "jp.co.muse.matsuro",
@@ -15501,7 +16753,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.92,
-  "ratings": 276221
+  "ratings": 276221,
+  "installs": 4854074,
+  "tags": [
+   "Adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Horror",
+   "Offline"
+  ]
  },
  "Death Road To Canada": {
   "appId": "com.noodlecake.drtc",
@@ -15544,7 +16805,20 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.9,
-  "ratings": 5925
+  "ratings": 5925,
+  "installs": 517446,
+  "tags": [
+   "Action",
+   "Action-adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Zombie",
+   "Science fiction",
+   "Apocalyptic",
+   "Offline"
+  ]
  },
  "Death Squared": {
   "appId": "com.smgstudio.deathsquared",
@@ -15581,7 +16855,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.45,
-  "ratings": 695
+  "ratings": 695,
+  "installs": 45707,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Death Worm Deluxe": {
   "appId": "com.playcreek.DeathWorm",
@@ -15624,7 +16907,15 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.73,
-  "ratings": 10681
+  "ratings": 10681,
+  "installs": 378301,
+  "tags": [
+   "Action",
+   "Casual",
+   "Stylized",
+   "Monster",
+   "Intense"
+  ]
  },
  "Decipher: Brain Test": {
   "appId": "com.gamehouse.decipher.puzzle.logic.challenge",
@@ -15667,7 +16958,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.5,
-  "ratings": 12
+  "ratings": 12,
+  "installs": 854,
+  "tags": [
+   "Puzzle"
+  ]
  },
  "Deep Rock Galactic: Survivor": {
   "appId": "com.ghostshippublishing.deeprockgalacticsurvivor",
@@ -15709,8 +17004,17 @@
   "query": "Deep Rock Galactic: Survivor",
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
-  "rating": 4.77,
-  "ratings": 34902
+  "rating": 4.76,
+  "ratings": 34904,
+  "installs": 1493314,
+  "tags": [
+   "Role Playing",
+   "Roguelike",
+   "Stylized",
+   "Immersive",
+   "Science fiction",
+   "Space"
+  ]
  },
  "DefCom TD": {
   "appId": "ru.gamedevteam.bd",
@@ -15747,7 +17051,12 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.08,
-  "ratings": 449
+  "ratings": 449,
+  "installs": 20222,
+  "tags": [
+   "Strategy",
+   "Tower defense"
+  ]
  },
  "Defense Zone 2 HD": {
   "appId": "net.defensezone2",
@@ -15790,7 +17099,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.25,
-  "ratings": 14799
+  "ratings": 14799,
+  "installs": 601568,
+  "tags": [
+   "Strategy",
+   "Tower defense",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Immersive",
+   "Modern",
+   "Military"
+  ]
  },
  "Defense Zone HD": {
   "appId": "net.defensezone",
@@ -15833,7 +17153,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.67,
-  "ratings": 3572
+  "ratings": 3572,
+  "installs": 253940,
+  "tags": [
+   "Strategy",
+   "Tower defense",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Immersive",
+   "Offline"
+  ]
  },
  "Delight Games Premium Library": {
   "appId": "com.delightgames.delightgamespremium",
@@ -15876,7 +17206,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.68,
-  "ratings": 9720
+  "ratings": 9720,
+  "installs": 155182,
+  "tags": [
+   "Screen reader-friendly"
+  ]
  },
  "Delivery From the Pain:Premium": {
   "appId": "com.HuaYiGame.DeliveryFromThePain.GooglePlay",
@@ -15917,7 +17251,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.08,
-  "ratings": 2074
+  "ratings": 2074,
+  "installs": 102860,
+  "tags": [
+   "Action",
+   "Action-adventure",
+   "Survival",
+   "Casual",
+   "Stylized",
+   "Zombie",
+   "Immersive"
+  ]
  },
  "Demetrios": {
   "appId": "com.cowcat.Demetrios",
@@ -15960,7 +17304,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.89,
-  "ratings": 1669
+  "ratings": 1669,
+  "installs": 179291,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Demon Hunter (Full)": {
   "appId": null,
@@ -16016,7 +17369,13 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.3,
-  "ratings": 8973
+  "ratings": 8973,
+  "installs": 191114,
+  "tags": [
+   "Role Playing",
+   "Single player",
+   "Stylized"
+  ]
  },
  "Dentist Doctor Games for Kids": {
   "appId": "com.iz.dentist.doctor.hospital.dental.baby.teeth.kids.games",
@@ -16059,7 +17418,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.18,
-  "ratings": 248
+  "ratings": 248,
+  "installs": 139754,
+  "tags": [
+   "Educational"
+  ]
  },
  "Dentist Games": {
   "appId": "com.edujoy.dentist",
@@ -16093,7 +17456,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.46,
-  "ratings": 105935
+  "ratings": 105936,
+  "installs": 60590955,
+  "tags": [
+   "Simulation",
+   "Care",
+   "Dentist",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Dentures and Demons": {
   "appId": "com.suiarts.DenturesAndDemons",
@@ -16117,7 +17490,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.64,
-  "ratings": 88584
+  "ratings": 88584,
+  "installs": 2518885,
+  "tags": [
+   "Adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Dentures and Demons 2": {
   "appId": "com.suiarts.DenturesAndDemons2",
@@ -16143,7 +17525,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.66,
-  "ratings": 43602
+  "ratings": 43602,
+  "installs": 1379679,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Desert Golfing": {
   "appId": "com.captaingames.golf",
@@ -16177,7 +17569,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.92,
-  "ratings": 4985
+  "ratings": 4985,
+  "installs": 119374,
+  "tags": [
+   "Sports",
+   "Golf",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Despotism 3k": {
   "appId": "com.KonfaGames.Despotism3k",
@@ -16220,7 +17621,15 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.09,
-  "ratings": 4860
+  "ratings": 4860,
+  "installs": 426884,
+  "tags": [
+   "Strategy",
+   "Tactics",
+   "Casual",
+   "Stylized",
+   "Pixelated"
+  ]
  },
  "Destination: Focus Training": {
   "appId": "com.NcznDesign.OneBallPuzzleGames.BrainTeasers",
@@ -16263,7 +17672,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.63,
-  "ratings": 30016
+  "ratings": 30016,
+  "installs": 1418575,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Light-hearted",
+   "Offline"
+  ]
  },
  "Detective Mimo": {
   "appId": "com.Itaotuo.PocketCat.googleplay",
@@ -16304,7 +17723,13 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.4,
-  "ratings": 1309
+  "ratings": 1309,
+  "installs": 54878,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Stylized"
+  ]
  },
  "Devil’’s Attorney": {
   "appId": "com.senri.da",
@@ -16341,7 +17766,13 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.48,
-  "ratings": 18034
+  "ratings": 18034,
+  "installs": 567288,
+  "tags": [
+   "Strategy",
+   "Casual",
+   "Stylized"
+  ]
  },
  "Dexter Stardust": {
   "appId": "com.snapbreak.dexterstardust",
@@ -16384,7 +17815,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.35,
-  "ratings": 774
+  "ratings": 774,
+  "installs": 35308,
+  "tags": [
+   "Casual"
+  ]
  },
  "Diaster Will Strike": {
   "appId": null,
@@ -16442,7 +17877,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.86,
-  "ratings": 570
+  "ratings": 570,
+  "installs": 87510,
+  "tags": [
+   "Strategy",
+   "Single player",
+   "Stylized",
+   "Immersive",
+   "Fantasy",
+   "Offline"
+  ]
  },
  "Dino Coloring Encyclopedia": {
   "appId": "com.infokombinat.coloringbynumbersvectordino",
@@ -16485,7 +17929,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.71,
-  "ratings": 3929
+  "ratings": 3929,
+  "installs": 870688,
+  "tags": [
+   "Puzzle",
+   "Coloring",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Handicraft",
+   "Offline"
+  ]
  },
  "Dino Quake": {
   "appId": "com.neutronized.dinoquake",
@@ -16522,7 +17976,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.04,
-  "ratings": 97
+  "ratings": 97,
+  "installs": 11799,
+  "tags": [
+   "Arcade"
+  ]
  },
  "Dino Run: Dinosaur Runner Game": {
   "appId": "com.spiky.DinoRun",
@@ -16565,7 +18023,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.68,
-  "ratings": 22810
+  "ratings": 22810,
+  "installs": 7609889,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Dinosaur Park Game": {
   "appId": "com.razmobi.kidsdinosaurgame",
@@ -16608,7 +18075,19 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.95,
-  "ratings": 6081
+  "ratings": 6081,
+  "installs": 15758030,
+  "tags": [
+   "Simulation",
+   "Life",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Low poly",
+   "Animals",
+   "Dinosaur",
+   "Offline"
+  ]
  },
  "Dinosaur Plane Games for Kids": {
   "appId": "com.imayi.dinosaurplane",
@@ -16651,7 +18130,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.53,
-  "ratings": 3275
+  "ratings": 3275,
+  "installs": 1510182,
+  "tags": [
+   "Adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Cute",
+   "Offline"
+  ]
  },
  "Dinosaur Police Car kids Game": {
   "appId": "com.yateland.dinopolice",
@@ -16694,7 +18183,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.25,
-  "ratings": 527
+  "ratings": 527,
+  "installs": 146266,
+  "tags": [
+   "Role Playing"
+  ]
  },
  "Dinosaur Smash Car Games": {
   "appId": "com.imayi.dinodrivefree",
@@ -16737,7 +18230,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.07,
-  "ratings": 4852
+  "ratings": 4852,
+  "installs": 2470900,
+  "tags": [
+   "Racing",
+   "Stunt driving",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Dinosaur Truck games for Kids": {
   "appId": "com.imayi.dinotruckfree",
@@ -16780,7 +18284,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.46,
-  "ratings": 8185
+  "ratings": 8185,
+  "installs": 5293653,
+  "tags": [
+   "Adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Cute",
+   "Offline"
+  ]
  },
  "Dirt Trackin 2": {
   "appId": null,
@@ -16858,7 +18372,14 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.25,
-  "ratings": 59127
+  "ratings": 59129,
+  "installs": 37216685,
+  "tags": [
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Dissembler": {
   "appId": "com.ianmaclarty.dissembler",
@@ -16901,7 +18422,14 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.66,
-  "ratings": 197
+  "ratings": 197,
+  "installs": 26429,
+  "tags": [
+   "Puzzle",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Do Not feed The Monkeys": {
   "appId": "com.alawar.monkeysfulll",
@@ -16944,7 +18472,15 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.8,
-  "ratings": 2369
+  "ratings": 2369,
+  "installs": 253830,
+  "tags": [
+   "Adventure",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Doctor Games for kids Hospital": {
   "appId": "com.elepant.kids.doctor.games.toddlers.hospital.dentist.girls",
@@ -16987,7 +18523,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.18,
-  "ratings": 662
+  "ratings": 662,
+  "installs": 577875,
+  "tags": [
+   "Educational"
+  ]
  },
  "Doctor Kids 2": {
   "appId": "com.bubadu.doctorkids2",
@@ -17027,7 +18567,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.97,
-  "ratings": 46431
+  "ratings": 46431,
+  "installs": 19681529,
+  "tags": [
+   "Simulation",
+   "Care",
+   "Doctor",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Doctor Kids 4": {
   "appId": "com.bubadu.doctorkids4",
@@ -17064,7 +18614,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.28,
-  "ratings": 19704
+  "ratings": 19704,
+  "installs": 4577823,
+  "tags": [
+   "Simulation",
+   "Care",
+   "Doctor",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Dog Hotel Premium": {
   "appId": null,
@@ -17122,7 +18682,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.44,
-  "ratings": 69520
+  "ratings": 69520,
+  "installs": 29058121,
+  "tags": [
+   "Simulation",
+   "Life",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Dog Simulator Puppy Craft": {
   "appId": "com.hgamesart.dogsimulator",
@@ -17165,7 +18734,19 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.77,
-  "ratings": 38546
+  "ratings": 38546,
+  "installs": 9610714,
+  "tags": [
+   "Simulation",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Stylized",
+   "Animals",
+   "Dog",
+   "Offline"
+  ]
  },
  "Dog World Premium – My Puppy": {
   "appId": null,
@@ -17221,7 +18802,11 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 2.53,
-  "ratings": 91
+  "ratings": 91,
+  "installs": 10911,
+  "tags": [
+   "Puzzle"
+  ]
  },
  "Doll Dress Up: Sweet Girl": {
   "appId": "com.bravestars.doll.dressup.princess.coloringgame",
@@ -17258,7 +18843,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.29,
-  "ratings": 30905
+  "ratings": 30905,
+  "installs": 62080748,
+  "tags": [
+   "Simulation",
+   "Lifestyle",
+   "Dress-up",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Anime",
+   "Offline"
+  ]
  },
  "Domino – Dominos online game": {
   "appId": "ru.skillcap.dominoes",
@@ -17301,7 +18897,21 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.5,
-  "ratings": 147691
+  "ratings": 147694,
+  "installs": 36765013,
+  "tags": [
+   "Board",
+   "Abstract strategy",
+   "Dominos",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Realistic",
+   "Board games",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Dominos Online Jogatina: Game": {
   "appId": "air.com.jogatina.domino.android",
@@ -17344,7 +18954,19 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.3,
-  "ratings": 386264
+  "ratings": 386264,
+  "installs": 45336636,
+  "tags": [
+   "Board",
+   "Abstract strategy",
+   "Dominos",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Realistic",
+   "Offline"
+  ]
  },
  "Doodle God": {
   "appId": "joybits.doodlegod",
@@ -17378,7 +19000,13 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.58,
-  "ratings": 19893
+  "ratings": 19893,
+  "installs": 854775,
+  "tags": [
+   "Simulation",
+   "Casual",
+   "Stylized"
+  ]
  },
  "Doodle Kingdom": {
   "appId": "com.joybits.doodlekingdom",
@@ -17407,7 +19035,14 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.49,
-  "ratings": 2156
+  "ratings": 2156,
+  "installs": 73283,
+  "tags": [
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Doom and Destiny Worlds": {
   "appId": "hb.DoomAndDestiny3",
@@ -17447,7 +19082,15 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.3,
-  "ratings": 726
+  "ratings": 726,
+  "installs": 25653,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Casual",
+   "Stylized",
+   "Pixelated"
+  ]
  },
  "Door Kickers": {
   "appId": "com.khg.doorkickers",
@@ -17490,7 +19133,19 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.07,
-  "ratings": 21597
+  "ratings": 21597,
+  "installs": 894480,
+  "tags": [
+   "Strategy",
+   "Tactics",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Police",
+   "Weapons",
+   "Gun",
+   "Offline"
+  ]
  },
  "Door Kickers: Action Squad": {
   "appId": "com.khg.actionsquad",
@@ -17530,7 +19185,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.17,
-  "ratings": 7132
+  "ratings": 7132,
+  "installs": 496535,
+  "tags": [
+   "Action",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Weapons",
+   "Gun",
+   "Intense",
+   "Offline"
+  ]
  },
  "Doors: Awakening": {
   "appId": "com.snapbreak.doors",
@@ -17573,7 +19239,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.62,
-  "ratings": 42909
+  "ratings": 42909,
+  "installs": 2482466,
+  "tags": [
+   "Puzzle",
+   "Escape",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Doors: origins": {
   "appId": "com.snapbreak.doors2",
@@ -17616,7 +19291,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.64,
-  "ratings": 54955
+  "ratings": 54955,
+  "installs": 2904596,
+  "tags": [
+   "Puzzle",
+   "Escape",
+   "Single player",
+   "Stylized",
+   "Mystery",
+   "Offline"
+  ]
  },
  "Doors: Paradox": {
   "appId": "com.snapbreak.doors3",
@@ -17659,7 +19343,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.66,
-  "ratings": 28815
+  "ratings": 28815,
+  "installs": 1496615,
+  "tags": [
+   "Puzzle",
+   "Escape",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Mystery",
+   "Offline"
+  ]
  },
  "Down in Bermuda": {
   "appId": "co.yakand.downinbermuda",
@@ -17702,7 +19396,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.83,
-  "ratings": 4719
+  "ratings": 4719,
+  "installs": 139941,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Low poly",
+   "Mystery",
+   "Offline"
+  ]
  },
  "Downhill Race League": {
   "appId": "com.downhill.race.league",
@@ -17742,7 +19447,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.09,
-  "ratings": 51092
+  "ratings": 51092,
+  "installs": 38291833,
+  "tags": [
+   "Racing",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Downwell": {
   "appId": "com.devolver.downwell_rerelease",
@@ -17779,7 +19493,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.02,
-  "ratings": 8281
+  "ratings": 8281,
+  "installs": 381596,
+  "tags": [
+   "Action",
+   "Action-adventure",
+   "Arcade",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Drag’n’Boom": {
   "appId": "com.ankama.dragnboom",
@@ -17813,7 +19537,19 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.77,
-  "ratings": 289066
+  "ratings": 289066,
+  "installs": 22477308,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Hack & slash",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Dragon",
+   "Intense",
+   "Offline"
+  ]
  },
  "Draw a Stickman: EPIC 2": {
   "appId": "com.hitcents.drawastickmanepic2free",
@@ -17847,7 +19583,19 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.71,
-  "ratings": 378075
+  "ratings": 378076,
+  "installs": 41403561,
+  "tags": [
+   "Action",
+   "Action-adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Handicraft",
+   "Stickman",
+   "Crafting",
+   "Offline"
+  ]
  },
  "Draw a Stickman: EPIC 3": {
   "appId": "com.hitcents.drawastickmanepic3",
@@ -17887,7 +19635,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.75,
-  "ratings": 40045
+  "ratings": 40045,
+  "installs": 9978138,
+  "tags": [
+   "Action",
+   "Action-adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Handicraft",
+   "Stickman"
+  ]
  },
  "Draw Chilly": {
   "appId": "com.azamatika.drawchilly",
@@ -17913,7 +19671,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.81,
-  "ratings": 2096
+  "ratings": 2096,
+  "installs": 45270,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Hack & slash",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Draw Rider 2 Plus": {
   "appId": "com.Studio17.drawrider2plus",
@@ -17956,7 +19725,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 2.66,
-  "ratings": 249
+  "ratings": 249,
+  "installs": 29368,
+  "tags": [
+   "Racing",
+   "Stunt driving",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Draw Rider Plus": {
   "appId": "com.Studio17.drawriderplus",
@@ -17999,7 +19777,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 3.28,
-  "ratings": 4558
+  "ratings": 4558,
+  "installs": 247975,
+  "tags": [
+   "Racing",
+   "Stunt driving",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Vehicles",
+   "Bicycle",
+   "Offline"
+  ]
  },
  "Drawing for Kids Coloring Game": {
   "appId": null,
@@ -18060,7 +19849,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.51,
-  "ratings": 745
+  "ratings": 745,
+  "installs": 65376,
+  "tags": [
+   "Simulation",
+   "Management",
+   "Tycoon",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Light-hearted"
+  ]
  },
  "Dream House Days Off": {
   "appId": null,
@@ -18110,7 +19910,18 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.67,
-  "ratings": 4591
+  "ratings": 4591,
+  "installs": 142058,
+  "tags": [
+   "Simulation",
+   "Management",
+   "Tycoon",
+   "Casual",
+   "Stylized",
+   "Pixelated",
+   "Theme park",
+   "Light-hearted"
+  ]
  },
  "Dream Town island": {
   "appId": "net.kairosoft.android.towns",
@@ -18153,7 +19964,21 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.85,
-  "ratings": 10502
+  "ratings": 10503,
+  "installs": 190289,
+  "tags": [
+   "Simulation",
+   "Management",
+   "City-building",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Business & profession",
+   "Business empire",
+   "City",
+   "Offline"
+  ]
  },
  "Dreamatorium 2 (Full)": {
   "appId": null,
