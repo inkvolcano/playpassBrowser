@@ -301,12 +301,14 @@ def is_generic(title):
     return bool(toks) and all(t in GENERIC_WORDS for t in toks)
 
 
-def missing_words(game_title, cand_title):
+def missing_words(game_title, cand_title, cand_dev=""):
     """Distinctive words of the list title that the candidate lacks ("Bob" in
-    "Bob Jigsaw Puzzles for Kids" vs "Jigsaw Puzzles for Kids"). Typos pass."""
+    "Bob Jigsaw Puzzles for Kids" vs "Jigsaw Puzzles for Kids"). Typos pass, and
+    so do words from the developer's name ("ElePant Car games" by ElePant)."""
     hint = developer_hint(game_title)
-    have = norm(cand_title).split()
-    compounds = {"".join(have[i:j]) for i in range(len(have)) for j in range(i + 2, len(have) + 1)}  # "mini games"
+    words = norm(cand_title).split()
+    have = words + norm(cand_dev).split()
+    compounds = {"".join(words[i:j]) for i in range(len(words)) for j in range(i + 2, len(words) + 1)}  # "mini games"
     return [w for w in norm(hint[0] if hint else game_title).split()
             if w not in GENERIC_WORDS and w not in compounds
             and not any(SequenceMatcher(None, w, h).ratio() >= 0.8 for h in have)]
@@ -430,7 +432,7 @@ def lookup(game):
     def badge_confirms(c):
         # a badged app missing a distinctive word is usually a sibling ("2 Player Games - Pastimes" vs "- Sports")
         return (c.get("playPass") and not c["flags"] and c["score"] >= verify_min
-                and (c["sim"] >= 0.85 or not missing_words(title, c.get("title"))))
+                and (c["sim"] >= 0.85 or not missing_words(title, c.get("title"), c.get("developer"))))
 
     for q in query_variants(title):
         tried.append(q)
@@ -454,7 +456,7 @@ def lookup(game):
         # short titles must match exactly: "Replica" is not "Replicat"
         typo_ok = best and (best["sim"] >= 1.0 or len(norm(title)) >= 12)
         if (best and typo_ok and best["score"] >= STRONG_MIN and not best["flags"] and not generic
-                and not missing_words(title, best.get("title")) and not rivals(best, pool)):
+                and not missing_words(title, best.get("title"), best.get("developer")) and not rivals(best, pool)):
             if len(best.get("screenshots") or []) < 2 and not best.get("detailed"):
                 merge(best, app_details(best["appId"], lang, country))
             return entry_from(best, title, "strong", best["query"], best["flags"])
@@ -462,7 +464,7 @@ def lookup(game):
     best = max(pool.values(), key=lambda c: c["score"], default=None)
     if not best:
         return null_entry("no search results", None, tried)
-    missing = missing_words(title, best.get("title"))
+    missing = missing_words(title, best.get("title"), best.get("developer"))
     no_badge = "" if best.get("playPass") else " and no Play Pass badge"
     if best["flags"]:
         reason = "closest match flagged: " + ", ".join(best["flags"])
