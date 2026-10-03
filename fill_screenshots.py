@@ -394,9 +394,10 @@ def install_count(c):
 
 
 def copycat(c):
-    """Under 1,000 installs: usually a copycat listing of a delisted game."""
+    """Under 100 installs: a copycat listing of a delisted game (real Play Pass
+    editions can be small: GameHouse's Decipher has 500+)."""
     n = install_count(c)
-    return n is not None and n < 1000
+    return n is not None and n < 100
 
 
 def rivals(best, pool):
@@ -491,7 +492,7 @@ def lookup(game):
     elif best["score"] >= STRONG_MIN and rivals(best, pool):
         reason = f"{len(rivals(best, pool)) + 1} apps share this title and none has the Play Pass badge"
     elif best["score"] >= STRONG_MIN and copycat(best):
-        reason = "closest match has under 1,000 installs and no Play Pass badge (likely a copycat)"
+        reason = "closest match has under 100 installs and no Play Pass badge (likely a copycat)"
     elif missing and best["sim"] >= 0.6:
         reason = f"closest match lacks {', '.join(missing)!r}{no_badge}"
     else:
