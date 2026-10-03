@@ -16739,7 +16739,7 @@
  "Iris and the Giant": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.56) and no Play Pass badge",
+  "reason": "title similarity too low (0.56)",
   "queries": [
    "Iris and the Giant",
    "Iris and the Giant Play Pass"
