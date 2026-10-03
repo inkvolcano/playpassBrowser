@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parent
 TEMPLATE = ROOT / "index.template.html"
 OUT = ROOT / "index.html"
 IMG_HOST = "https://play-lh.googleusercontent.com/"
-PAGE_SHOTS = 6  # screenshots per card
+PAGE_SHOTS = 12  # screenshots per card
 
 
 def load(name, default):
@@ -44,7 +44,7 @@ def main():
         if a and (a not in keep or (e.get("similarity") or 0) > (cache[keep[a]].get("similarity") or 0)):
             keep[a] = g["title"]
 
-    rows, checked, merged = [], [], []
+    rows, checked, pass_checked, merged = [], [], [], []
     for g in games:
         e = cache.get(g["title"]) or {}
         app_id = e.get("appId")
@@ -53,16 +53,20 @@ def main():
             continue
         shots = [short(s) for s in (e.get("screenshots") or [])[:PAGE_SHOTS]] if app_id else []
         matched = e.get("matched") if app_id and e.get("matched") != g["title"] else None
+        in_pass = {True: 1, False: 0}.get(e.get("playPass")) if app_id else None
         rows.append([g["title"], index[g["genre"]], app_id, short(e.get("icon")) if app_id else None,
-                     shots, e.get("developer") if app_id else None, matched])
+                     shots, e.get("developer") if app_id else None, matched, in_pass])
         if e.get("checked"):
             checked.append(e["checked"])
+        if app_id and e.get("passChecked"):
+            pass_checked.append(e["passChecked"])
 
     data = {
         "genres": genres,
         "games": rows,
         "meta": {"listUrl": source.get("url"), "listUpdated": source.get("updated"),
-                 "storeChecked": max(checked) if checked else None},
+                 "storeChecked": max(checked) if checked else None,
+                 "passChecked": max(pass_checked) if pass_checked else None},
     }
     # "<" is escaped so nothing inside the JSON can close the <script> element.
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
@@ -72,7 +76,8 @@ def main():
     OUT.write_text(template.replace("__DATA__", blob), encoding="utf-8")
 
     with_shots = sum(1 for r in rows if r[4])
-    print(f"index.html: {len(rows)} games, {with_shots} with screenshots, "
+    print(f"index.html: {len(rows)} games, {with_shots} with screenshots "
+          f"({sum(1 for r in rows if r[7])} carry the Play Pass badge), "
           f"{len(rows) - with_shots} with generated covers, {OUT.stat().st_size / 1024:.0f} KB")
     if merged:
         print(f"{len(merged)} duplicate listings shown once: " + "; ".join(merged))

@@ -146,7 +146,7 @@ h1 {
   .stub-num { grid-area: num; font-size: 34px; }
   .stub-label { grid-area: label; }
   .stub-bar { grid-area: bar; width: 100%; margin: 0; align-self: end; }
-  .stub-small { grid-area: small; margin: 0; align-self: start; }
+  .stub-small { grid-area: small; margin: 0; align-self: start; font-size: 9.5px; }
 }
 
 /* ---------- sticky controls ---------- */
@@ -192,6 +192,7 @@ h1 {
 .seg button[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
 .ghost { height: 42px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); display: inline-flex; align-items: center; gap: 7px; }
 .ghost svg { width: 17px; height: 17px; }
+.ghost[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--surface); }
 .genres { display: flex; gap: 6px; flex-wrap: wrap; }
 .genre {
   --h: 250;
@@ -271,6 +272,17 @@ button.shots { cursor: pointer; }
   font: 500 10.5px/1 var(--f-mono);
   font-variant-numeric: tabular-nums;
 }
+.pass-tag {
+  position: absolute; top: 8px; left: 8px;
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 3px 8px 3px 6px;
+  border-radius: 999px;
+  font: 650 10.5px/1.1 var(--f-body);
+  letter-spacing: 0.02em;
+}
+.pass-tag svg { width: 12px; height: 12px; flex: none; }
+.pass-tag.yes { background: var(--brass); color: #2a1a00; }
+.pass-tag.no { background: rgb(0 0 0 / 0.62); color: #fff; }
 .dots { position: absolute; left: 0; right: 0; bottom: 7px; display: flex; justify-content: center; gap: 5px; pointer-events: none; }
 .dots i { width: 6px; height: 6px; border-radius: 50%; background: rgb(255 255 255 / 0.4); box-shadow: 0 0 2px rgb(0 0 0 / 0.5); }
 .dots i.on { background: #fff; }
@@ -361,6 +373,10 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
         <button type="button" id="sort-az" aria-pressed="true">A–Z</button>
         <button type="button" id="sort-genre" aria-pressed="false">By genre</button>
       </div>
+      <button type="button" class="ghost" id="only-pass" aria-pressed="false" title="Show only games that carry the Play Pass badge on the Play Store">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3a2 2 0 0 0 0-4z" fill="currentColor"/></svg>
+        In Play Pass
+      </button>
       <button type="button" class="ghost" id="theme" aria-label="Theme: match system">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg>
         <span class="label" id="theme-label">System</span>
@@ -381,6 +397,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   <footer>
     <p id="foot-list"></p>
     <p id="foot-store"></p>
+    <p id="foot-pass"></p>
   </footer>
 </div>
 
@@ -408,11 +425,11 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     set(k, v) { try { localStorage.setItem("ppb:" + k, v); } catch (e) { /* storage unavailable */ } }
   };
 
-  // games: [title, genreIndex, appId, icon, [screenshots], developer, playStoreTitle]
+  // games: [title, genreIndex, appId, icon, [screenshots], developer, playStoreTitle, inPlayPass 1/0/null]
   const games = D.games.map((g, i) => {
-    const [title, gi, appId, icon, shots, dev, matched] = g;
+    const [title, gi, appId, icon, shots, dev, matched, pass] = g;
     const genre = D.genres[gi];
-    return { i, title, gi, genre, appId, icon, shots: shots || [], dev, matched,
+    return { i, title, gi, genre, appId, icon, shots: shots || [], dev, matched, pass,
              key: norm([title, dev, matched].filter(Boolean).join(" ")), el: null };
   });
   const byTitle = games.slice().sort((a, b) => collator.compare(a.title, b.title));
@@ -436,8 +453,11 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   const ICONS = {
     store: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z" fill="currentColor"/></svg>',
     video: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m10.5 9.5 4.5 2.5-4.5 2.5z" fill="currentColor"/></svg>',
-    images: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="10" r="1.6" fill="currentColor"/><path d="m5 17 4.5-4.5 3 3 2.5-2.5L19 17" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>'
+    images: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="10" r="1.6" fill="currentColor"/><path d="m5 17 4.5-4.5 3 3 2.5-2.5L19 17" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>',
+    ticket: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3a2 2 0 0 0 0-4z" fill="currentColor"/></svg>'
   };
+  const passTag = (g) => g.pass === 1 ? `<span class="pass-tag yes">${ICONS.ticket}Play Pass</span>`
+    : g.pass === 0 ? '<span class="pass-tag no">Not in Play Pass</span>' : "";
 
   function shotsHtml(g) {
     const n = g.shots.length;
@@ -445,7 +465,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       return `<div class="shots cover" style="${coverVars(g)}"><b aria-hidden="true">${esc(initials(g.title))}</b>` +
              `<em>No Play Store match</em></div>`;
     }
-    const pic = `<img src="${esc(img(g.shots[0], SHOT))}" alt="" loading="lazy" decoding="async">`;
+    const pic = `<img src="${esc(img(g.shots[0], SHOT))}" alt="" loading="lazy" decoding="async">${passTag(g)}`;
     if (n === 1) return `<div class="shots">${pic}</div>`;
     const dots = Array.from({ length: n }, (_, k) => `<i${k ? "" : ' class="on"'}></i>`).join("");
     return `<button type="button" class="shots" data-i="${g.i}" data-k="0" aria-label="${esc(g.title)}: screenshot 1 of ${n}, show next">` +
@@ -477,15 +497,19 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   // ----- header, footer, chips
   const m = D.meta;
   const withShots = games.filter((g) => g.shots.length).length;
+  const inPass = games.filter((g) => g.pass === 1).length;
+  const leftPass = games.filter((g) => g.pass === 0).length;
   const dateText = (iso) => iso ? new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }) : "";
   $("stub-num").textContent = fmt.format(games.length);
   $("stub-bar").style.width = (100 * withShots / Math.max(1, games.length)).toFixed(1) + "%";
-  $("stub-small").textContent = `${fmt.format(withShots)} with screenshots`;
+  $("stub-small").innerHTML = `${fmt.format(withShots)} with screenshots<br>${fmt.format(inPass)} in Play Pass`;
   $("sources").innerHTML = `List: <a href="${esc(m.listUrl)}" target="_blank" rel="noopener">YTECHB</a>, updated ${esc(dateText(m.listUpdated))} · Store data: ${esc(dateText(m.storeChecked))}`;
   $("q").placeholder = `Search ${fmt.format(games.length)} games or developers`;
   $("foot-list").innerHTML = `Game list from <a href="${esc(m.listUrl)}" target="_blank" rel="noopener">YTECHB's Play Pass list</a>, updated ${esc(dateText(m.listUpdated))}. Genres follow its sections, with Trivia and Word merged.`;
   $("foot-store").textContent = `Screenshots, icons and links come from Google Play, checked ${dateText(m.storeChecked)}. ` +
     `${fmt.format(games.length - withShots)} games have no confident Play Store match; they show a generated cover and a Play Store search link instead.`;
+  $("foot-pass").textContent = `“Play Pass” marks games whose Play Store page (US store) showed the Play Pass badge on ${dateText(m.passChecked)}. ` +
+    `${fmt.format(leftPass)} matched games didn't, so they have probably left Play Pass; they're marked “Not in Play Pass”.`;
 
   const counts = D.genres.map((_, gi) => games.filter((g) => g.gi === gi).length);
   $("genres").innerHTML =
@@ -496,6 +520,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   const list = $("list"), q = $("q");
   let genre = -1;
   let sort = store.get("sort") === "genre" ? "genre" : "az";
+  let onlyPass = store.get("pass") === "1";
   let groups = [];
 
   function layout() {
@@ -528,7 +553,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     const shownBy = new Array(D.genres.length).fill(0);
     let shown = 0;
     for (const g of games) {
-      const ok = (genre < 0 || g.gi === genre) && terms.every((t) => g.key.includes(t));
+      const ok = (genre < 0 || g.gi === genre) && (!onlyPass || g.pass === 1) && terms.every((t) => g.key.includes(t));
       g.el.hidden = !ok;
       if (ok) { shown++; shownBy[g.gi]++; }
     }
@@ -536,12 +561,14 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       grp.sec.hidden = shownBy[grp.gi] === 0;
       grp.count.textContent = `${shownBy[grp.gi]} ${shownBy[grp.gi] === 1 ? "game" : "games"}`;
     }
-    const scope = genre < 0 ? "games" : `${D.genres[genre]} games`;
+    const noun = (genre < 0 ? "" : `${D.genres[genre]} `) + (shown === 1 ? "game" : "games");
+    const scope = noun + (onlyPass ? " in Play Pass" : "");
     $("status").textContent = shown === games.length
       ? `Showing all ${fmt.format(shown)} games`
-      : `Showing ${fmt.format(shown)} ${shown === 1 ? scope.replace(/s$/, "") : scope}` + (terms.length ? ` matching “${q.value.trim()}”` : "");
+      : `Showing ${fmt.format(shown)} ${scope}` + (terms.length ? ` matching “${q.value.trim()}”` : "");
     $("empty").hidden = shown > 0;
-    $("empty-text").textContent = terms.length ? `No ${scope} match “${q.value.trim()}”.` : `No ${scope} to show.`;
+    const none = (genre < 0 ? "" : `${D.genres[genre]} `) + "games" + (onlyPass ? " in Play Pass" : "");
+    $("empty-text").textContent = terms.length ? `No ${none} match “${q.value.trim()}”.` : `No ${none} to show.`;
   }
 
   let timer = 0;
@@ -557,10 +584,19 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     document.querySelectorAll(".genre").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
     apply();
   });
+  $("only-pass").setAttribute("aria-pressed", String(onlyPass));
+  $("only-pass").addEventListener("click", () => {
+    onlyPass = !onlyPass;
+    $("only-pass").setAttribute("aria-pressed", String(onlyPass));
+    store.set("pass", onlyPass ? "1" : "");
+    apply();
+  });
   $("sort-az").addEventListener("click", () => { sort = "az"; store.set("sort", sort); layout(); });
   $("sort-genre").addEventListener("click", () => { sort = "genre"; store.set("sort", sort); layout(); });
   $("clear").addEventListener("click", () => {
-    q.value = ""; genre = -1;
+    q.value = ""; genre = -1; onlyPass = false;
+    $("only-pass").setAttribute("aria-pressed", "false");
+    store.set("pass", "");
     document.querySelectorAll(".genre").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.g === "-1")));
     apply();
   });

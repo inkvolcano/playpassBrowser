@@ -5,11 +5,17 @@ A single-page catalogue of every Google Play Pass game: `index.html`.
 Open `index.html` in a browser. It is one self-contained file (the game data is
 embedded); only the screenshots, icons and fonts load from the web
 (`play-lh.googleusercontent.com`, Google Fonts). Each card has the game's icon,
-title, developer and genre, screenshots that cycle when you tap them, and links
-to the Play Store page, a YouTube gameplay search and a Google Images search.
-You can search titles and developers, filter by genre, sort A–Z or by genre,
-and switch between light, dark and system themes. Games without a confident
-Play Store match get a generated gradient cover and a Play Store search link.
+title, developer and genre, up to 12 screenshots that cycle when you tap them,
+and links to the Play Store page, a YouTube gameplay search and a Google Images
+search. You can search titles and developers, filter by genre, sort A–Z or by
+genre, show only games currently in Play Pass, and switch between light, dark
+and system themes. Games without a confident Play Store match get a generated
+gradient cover and a Play Store search link.
+
+A "Play Pass" tag means the game's Play Store page showed the Play Pass badge
+when it was last checked (US store; the date is in the page footer). Games
+whose page no longer shows it are tagged "Not in Play Pass": YTECHB's list
+still carries some games that have since left the service.
 
 ## Files
 
@@ -29,14 +35,18 @@ Play Store match get a generated gradient cover and a Play Store search link.
 ```sh
 pip install google-play-scraper
 
-python3 fetch_games.py         # 1. refresh the game list from YTECHB
-python3 fill_screenshots.py    # 2. look up games not in the cache yet, then rebuild index.html
+python3 fetch_games.py                # 1. refresh the game list from YTECHB
+python3 fill_screenshots.py           # 2. look up games not in the cache yet
+python3 fill_screenshots.py --refresh # 3. re-check every game's Play Pass status and screenshots,
+                                      #    then rebuild index.html
 ```
 
 `fill_screenshots.py` resumes from `data/shots_cache.json`, so it only looks up
 games it hasn't seen; stop it at any time (Ctrl-C saves progress) and run it
 again to continue. A full run over ~1,800 games takes about 45 minutes because
 requests are throttled (`--delay`, 0.6 s by default) to avoid rate limiting.
+`--refresh` keeps every match and re-reads each app's store page (about 35
+minutes); it resumes too, skipping games already refreshed that day.
 
 Useful options:
 
