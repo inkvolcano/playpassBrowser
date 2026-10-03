@@ -386,6 +386,13 @@ def query_variants(title):
     return list(dict.fromkeys(q for q in out if q.strip()))
 
 
+def install_count(c):
+    if isinstance(c.get("minInstalls"), int):
+        return c["minInstalls"]
+    m = re.match(r"[\d,.]+", str(c.get("installs") or ""))
+    return int(re.sub(r"\D", "", m.group(0))) if m else None
+
+
 def rivals(best, pool):
     """Other developers' apps with an equally close title ("Knock Knock" x3)."""
     return [c for c in pool.values() if c is not best and c["sim"] >= best["sim"] - 0.02
@@ -428,7 +435,8 @@ def lookup(game):
 
     def merge(c, details):
         if details:
-            c.update({k: details.get(k) for k in ("title", "developer", "genre", "icon", "screenshots", "playPass")})
+            c.update({k: details.get(k) for k in ("title", "developer", "genre", "icon", "screenshots", "playPass",
+                                                  "installs", "minInstalls")})
             c["detailed"] = True
         c["score"], c["sim"], c["flags"] = assess(title, c, genre)
 
@@ -458,7 +466,8 @@ def lookup(game):
         best = ranked[0] if ranked else None
         # short titles must match exactly: "Replica" is not "Replicat"
         typo_ok = best and (best["sim"] >= 1.0 or len(norm(title)) >= 12)
-        if (best and typo_ok and best["score"] >= STRONG_MIN and not best["flags"] and not generic
+        clone = best and (install_count(best) or 1000) < 1000  # a copycat listing of a delisted game
+        if (best and typo_ok and not clone and best["score"] >= STRONG_MIN and not best["flags"] and not generic
                 and not missing_words(title, best.get("title"), best.get("developer")) and not rivals(best, pool)):
             if len(best.get("screenshots") or []) < 2 and not best.get("detailed"):
                 merge(best, app_details(best["appId"], lang, country))
@@ -475,6 +484,8 @@ def lookup(game):
         reason = "generic title and no Play Pass badge on the closest match"
     elif best["score"] >= STRONG_MIN and rivals(best, pool):
         reason = f"{len(rivals(best, pool)) + 1} apps share this title and none has the Play Pass badge"
+    elif best["score"] >= STRONG_MIN and (install_count(best) or 1000) < 1000:
+        reason = "closest match has under 1,000 installs and no Play Pass badge (likely a copycat)"
     elif missing and best["sim"] >= 0.6:
         reason = f"closest match lacks {', '.join(missing)!r}{no_badge}"
     else:
