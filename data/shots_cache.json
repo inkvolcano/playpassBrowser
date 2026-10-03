@@ -35516,22 +35516,28 @@
   "checked": "2026-10-03"
  },
  "Symbol Sieres": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "title similarity too low (0.85) and no Play Pass badge",
-  "queries": [
-   "Symbol Sieres",
-   "Symbol Sieres Play Pass"
+  "appId": "com.asgardsoft.symbols",
+  "matched": "Symbol Series",
+  "developer": "AsgardSoft",
+  "playGenre": "Puzzle",
+  "icon": "https://play-lh.googleusercontent.com/wFrgvzZBqCj6M9melMEyx6JR42q6tjc4nX3tBaYVnUvrRvkAs1MBTGucZ1mlxyzcLiCcciW-hZmBt1UjV-trghs",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/tvX13Lb9Cdoq4WfB-543br_cM9asoIKYoVrqOjcKzzS_MJMSDpbHxXkivq5avBaVnhq1O-etTXL_3SziD9ePcQ",
+   "https://play-lh.googleusercontent.com/-uE8-MWitk5SFt1-DmbXIUqfwT6Q4Xu0tSrA5ujHU13Rg6CUta6Zs_qKxpYq0ysp7yshn14LwL3gWsOR056wTHU",
+   "https://play-lh.googleusercontent.com/p6jjtFdJNws47J-60FD6oFQOf9BcbRBmua4EFugljD1qW0ejyJWzX0cxbIBH7TX0ID7BY4EKZSw_kTOkqdsGxQ",
+   "https://play-lh.googleusercontent.com/lhkx1u2sh27GpV6jymKQ_7zchNHGpeXiEixVzfbUV1rGSEPuR-1r97m5BbUP4UrnNk7eWAujA1Yi9y4Pm_dl_Q",
+   "https://play-lh.googleusercontent.com/etGWMkUHfPntPFZ3dImxYllTOmDh10KriGYkgLT4nZ_1XrSiDaGjFapbgmsR70kzT417RmJeWaAzABgaFOhiEQ",
+   "https://play-lh.googleusercontent.com/1WV-4ubKGSPDVYCSejNHRWN-cr_PvdJqfh3WBDfWNkodd3EgxJx0tKynoKAECEziF2KJNUfeqWWZdlNq-OeQ",
+   "https://play-lh.googleusercontent.com/_cXUmlN3ur7dh3AO1qEsd5uHhWxRZQc6ZqsCOWV7cnp0rSricjM8WUT98m5Rfe33pTpY5Zc2AlTO6rtXH5bajA",
+   "https://play-lh.googleusercontent.com/a0a4QnwWXcLUdh8tkgFAP99uVYp7LMs-4e5CfALADgHF6WYXwpeKDN9f1t1LMn1oQb1fPWTElxTo_gcxTATR"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.asgardsoft.symbols",
-   "title": "Symbol Series",
-   "developer": "AsgardSoft",
-   "playPass": false,
-   "sim": 0.846,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.asgardsoft.symbols",
+  "playPass": false,
+  "similarity": 0.846,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Talisman: Classic Edition": {
   "appId": "com.nomadgames.talisman",
@@ -35656,7 +35662,7 @@
  "Teacup": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.75) and no Play Pass badge",
+  "reason": "closest match lacks 'teacup' and no Play Pass badge",
   "queries": [
    "Teacup",
    "Teacup Play Pass"
@@ -35770,7 +35776,7 @@
  "Tender: Creature Comforts": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.71) and no Play Pass badge",
+  "reason": "closest match lacks 'tender, comforts' and no Play Pass badge",
   "queries": [
    "Tender: Creature Comforts",
    "Tender",
@@ -35811,22 +35817,28 @@
   "checked": "2026-10-03"
  },
  "Tennis Club History": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "title similarity too low (0.76) and no Play Pass badge",
-  "queries": [
-   "Tennis Club History",
-   "Tennis Club History Play Pass"
+  "appId": "net.kairosoft.android.tennis_en",
+  "matched": "Tennis Club Story",
+  "developer": "Kairosoft",
+  "playGenre": "Sports",
+  "icon": "https://play-lh.googleusercontent.com/ALz8nJNCYmgtfo8uXQmBztq8P0Y-0PzW6_Xa7kT7Nn9rrRb3meVdgiiddUOmZHa6xoa8wfCYQ-S8XJ6eYAzPbg",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/5sWPLti-K1BKIfWTBhVJixRszP7LlUzJbkSDfWlqI4lWmm_LOvdblM23vTu7IA-K15DXd7n-OZRPKPxuCGA5",
+   "https://play-lh.googleusercontent.com/lJkFicT3qvX827tKjDPdoyylnku1s6BTtNqV-24TVxvyCE2w5Zdv8Ei9onZ5-8uRhl-O0KyZ4-_P9b_HitsSAQ",
+   "https://play-lh.googleusercontent.com/OYDavc4A3cxswK5LkYS4_07auHfLRpQ6yELgCTGlFAwzj8HDswm3cKz2vfHLwCWpHYDZjo5YNHYGZ9yRogys",
+   "https://play-lh.googleusercontent.com/_eHKzLqm_pWfcbtW24su2O4V4yNx0mDIm6PCnSllLr1sgHC0UAMw_Te6u3CnwvQA9IvBXhEVFLARPVhLcda7",
+   "https://play-lh.googleusercontent.com/FcXc3XQ1dlBY8y7KD2l7l1rTvOhcVuurgCHsJHC1CkLki85MNVvlWR_tF6Qq-XOfqd4eGkifVc0YIluE0SWx",
+   "https://play-lh.googleusercontent.com/NnXkFBGHy0dIjTU1ip7kTut9uxFFznXWFXQLxMGsVwbjSgkd0CWKnBi_QDfGVImwef-s-r2CrcqgriHaxwT0oOM",
+   "https://play-lh.googleusercontent.com/SFnAms3zQsdlCfTwg3PDqAmiGZ2n1Xscq6xjk0jYhS16r0Zgb5EhNo-yNTPdYgQg-9jlvre9uHyUnf443vQSdQ",
+   "https://play-lh.googleusercontent.com/dAVxlpmK07_JDXxkAkm47W4So9KDuidClyXj0MCs-HXWWO0VDPi-gHK7KCzUT9vQt7reJAYbWSgKBPlqtI0"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.livexperience.tennisclubamiens",
-   "title": "TENNIS CLUB AMIENS",
-   "developer": "LiveXperience app",
-   "playPass": false,
-   "sim": 0.757,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=net.kairosoft.android.tennis_en",
+  "playPass": true,
+  "similarity": 0.944,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Tents and Trees Puzzles": {
   "appId": "com.frozax.tentsandtrees",
@@ -35944,27 +35956,10 @@
   "checked": "2026-10-03"
  },
  "Tetragram – Puzzle Game": {
-  "appId": "studio.onepixel.tangrambee",
-  "matched": "Tangram - Puzzle Game",
-  "developer": "OnePixel Studio",
-  "playGenre": "Puzzle",
-  "icon": "https://play-lh.googleusercontent.com/vfWGIsnQZG1fMa8Xhi2Uxxurb7Aq4H_KsH3pZuQPWMaLbyrijfC1ke0_AMpKtuQFqnLMWmbPKA0-0liwl5Gz7w",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/rMJxaWQK6-ZocwAcLTiA8LObHciqx2M0YsoEhF9xR_FUpDQBVYr7SwADkfWGMDCDZSooBkSa-v2ZfXGP7OCh",
-   "https://play-lh.googleusercontent.com/dm8gUebolFz3ysaHZRTEskbFvpFm288jVdLQ6b97gyb_CorXBQuXoPCP8ws_oIdLgii7sCJpWfUaCkqUPm15pQ",
-   "https://play-lh.googleusercontent.com/4brWFvLoHWkUmSVCBzqLvX1q8IP8u8W1xIweAyetq-OTIILaPp0o5_WMuCrfFAKSGTdovW5b-_11v9aUjFG-_A",
-   "https://play-lh.googleusercontent.com/_E2NtcUFvmFndAFHiXo0vkqelvslZNcSY7vzlZmrRHr5hlqhQY9f5jXdqtzHeikyp78ZY8rQ-Zkqo5_eIlavsg",
-   "https://play-lh.googleusercontent.com/Fjpv1lUjVglnsYRRM9XjxTa4l2BoppCQAjm0WRcFmc-AzOXX6Tt4JE6DYJ2OyVU_Pu8Qqmd-lGVpn0O8qqGaaA",
-   "https://play-lh.googleusercontent.com/3AjWJ49G4zuhC_WRX2ji6xINqErSV_WNF436lUKcY4PtLcymtoisedgvhlUxK6xW9pLHOAXDYt7tFeP_6uAgAdw",
-   "https://play-lh.googleusercontent.com/rMJxaWQK6-ZocwAcLTiA8LObHciqx2M0YsoEhF9xR_FUpDQBVYr7SwADkfWGMDCDZSooBkSa-v2ZfXGP7OCh",
-   "https://play-lh.googleusercontent.com/dm8gUebolFz3ysaHZRTEskbFvpFm288jVdLQ6b97gyb_CorXBQuXoPCP8ws_oIdLgii7sCJpWfUaCkqUPm15pQ"
-  ],
-  "url": "https://play.google.com/store/apps/details?id=studio.onepixel.tangrambee",
-  "playPass": false,
-  "similarity": 0.9,
-  "confidence": "strong",
-  "flags": [],
-  "query": "Tetragram – Puzzle Game",
+  "appId": null,
+  "confidence": "null",
+  "reason": "set to null in data/overrides.json",
+  "queries": [],
   "checked": "2026-10-03"
  },
  "The 7th Guest: Remastered": {
@@ -36016,24 +36011,10 @@
   "checked": "2026-10-03"
  },
  "The Academy: The First Riddle": {
-  "appId": "com.rubeacon.theacademyam",
-  "matched": "The Academy",
-  "developer": "ru-beacon",
-  "playGenre": "Food & Drink",
-  "icon": "https://play-lh.googleusercontent.com/c7xdkAmKdbyiSuYLlr8J3_uKrWDvtH2KKbhXRokm-xwhfgC75Dlc3irPbAAZDi0y1lLXHBRfU5VQbiHsflkNOw",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/i2psAh-dYQncnm2hjplY_y5NkvvulFfXFjf9snPzFP2YHpdC7gdPQR0ApUgYB9A5JkwjZ5fPLvsbENUrefq64VY",
-   "https://play-lh.googleusercontent.com/NsMRs1c7gmGeY7K7MKcqm_vIKCOsbQebZqxgB2nxDc7Rfc999xdTfS4z88pWZCbHiWGzWz_Uy1npawfTlOB0EA",
-   "https://play-lh.googleusercontent.com/W-sxkXdxG1xpZLqM7flIJpqqrE2BS_c8VqE9RxLFoEY776jD4vY2dL2X0d-FPXtXQ-aiMhlcImPGbhO6PIqm",
-   "https://play-lh.googleusercontent.com/qow2stb1aem2p5mgwyWcTy7TCXgRid135j3_z63dIa7G4ayYo5ICuRL413Mu8x_GQ7A1mQXRPKsRBP-a124-",
-   "https://play-lh.googleusercontent.com/tN8gYxcMEKoNdZAgQqOvL0BE9IAoUfU-CTLzlOo7eZgBpXR03gAWuq-2SiJEkVhZYpvsPDE8P-eg7UHX48XHDi8"
-  ],
-  "url": "https://play.google.com/store/apps/details?id=com.rubeacon.theacademyam",
-  "playPass": false,
-  "similarity": 0.93,
-  "confidence": "strong",
-  "flags": [],
-  "query": "The Academy",
+  "appId": null,
+  "confidence": "null",
+  "reason": "set to null in data/overrides.json",
+  "queries": [],
   "checked": "2026-10-03"
  },
  "The Almost Gone": {
@@ -36535,7 +36516,7 @@
  "The Heroic Legend of Eagarlnia": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.67) and no Play Pass badge",
+  "reason": "closest match lacks 'eagarlnia' and no Play Pass badge",
   "queries": [
    "The Heroic Legend of Eagarlnia",
    "The Heroic Legend of Eagarlnia Play Pass"
@@ -37046,24 +37027,28 @@
   "checked": "2026-10-03"
  },
  "The Sequence 2": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "closest match flagged: different number",
-  "queries": [
-   "The Sequence 2",
-   "The Sequence 2 Play Pass"
+  "appId": "com.onemanband.thesequence2",
+  "matched": "the Sequence [2]",
+  "developer": "One Man Band",
+  "playGenre": "Puzzle",
+  "icon": "https://play-lh.googleusercontent.com/qcJGK2YFiaOX8yT2CrAFjB45xp3evzCW68BNyJMD0d2OiRPdrb8wqSB-4uwOGEvHpzqByJaRzBtAKk3Pf5I68g",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/thxWXPgwFzH5bC8P6cgOr3Ny4uU56n4k5ES3p0YUytGdgWbB0K2cLAZojRyIJt4OSPjhHF0bPAnTW3rWAvkaOw",
+   "https://play-lh.googleusercontent.com/U1ZYWxgI1FN3pckxmh0M_46DItEuI8zmu21ZHZLMnV9l-1jldG_n0-J9UQ2EchwIxcxgdlN_wYI6669tjt5JxA",
+   "https://play-lh.googleusercontent.com/Bd_GLOF6LqTlcVftDp8DCMHUQ7oYNw3BJqzFjgSpXyW1ul-QrpdnOZcQKSdBTXuJ2sEkV8wX_39e9q1Wuos",
+   "https://play-lh.googleusercontent.com/PV46_dJAI44ZzyxNSarFcKGO8nnzGPKb-IaJLxxFXBMW90oHN64hQPj3R4szRro2uJXaYc5WfVJt1ykwZho6Kg4",
+   "https://play-lh.googleusercontent.com/rwFTe9axm-OSalXb1haMNKHvMYKr249mO4nVc-dlFTKGKrGDDCBMXlVnjN6mw1tkxvvwcxr6ZbLIb1pPKKzv",
+   "https://play-lh.googleusercontent.com/J-rk_6JB3QlDNL0RBr2awO0L6o2J4SypTEw8BMy1b8qaeP-pl00-WDxZKYoCwDOVrKiXuTPpfXue0FuizQY3bw",
+   "https://play-lh.googleusercontent.com/bYPknTevAl44SEfkIn0Ngiomnil0NOAqef-liyT5etL6UqBnrYriNhkLtzFzYLY7bXUAz0K5_vWI1RQBFTSWp7E",
+   "https://play-lh.googleusercontent.com/thxWXPgwFzH5bC8P6cgOr3Ny4uU56n4k5ES3p0YUytGdgWbB0K2cLAZojRyIJt4OSPjhHF0bPAnTW3rWAvkaOw"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.onemanband.thesequence2",
-   "title": "the Sequence [2]",
-   "developer": "One Man Band",
-   "playPass": true,
-   "sim": 1.0,
-   "flags": [
-    "different number"
-   ]
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.onemanband.thesequence2",
+  "playPass": true,
+  "similarity": 1.0,
+  "confidence": "verified",
+  "flags": [],
+  "query": "The Sequence 2",
+  "checked": "2026-10-03"
  },
  "The Smurfs – Educational Games": {
   "appId": "com.edujoy.smurfs.educational.village",
@@ -38142,28 +38127,22 @@
   "checked": "2026-10-03"
  },
  "Timpy Sweet Bakery Cake games": {
-  "appId": "com.iz.kids.happy.birthday.party.game.baby.celebration",
-  "matched": "Timpy Kids Birthday Party Game",
-  "developer": "Timpy Games For Kids, Toddlers & Baby",
-  "playGenre": "Educational",
-  "icon": "https://play-lh.googleusercontent.com/qB9fjnlFPiAUVS1n7FljMMCdNi6eYmIf9YAZpNSFR7LN80d5HP53_auT77rsz8TsrBh2r3n31biYPe_UME9O",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/V-G3HRMbMfhshp64CG1I7bv9qYRlzqY49y_5-HI53fVIjYvTtGH3rSqPM4N-qd_fRdNbcN-qAj-UNslgyctdViA",
-   "https://play-lh.googleusercontent.com/KLy0bFYL2tz3pCT4B4M_RtJffCcnaDqTMOU-52IHkGoaBW5Yn-_PitcSmiN9cKwZ4xGbd8vbh04mbOIyjSvg4P4",
-   "https://play-lh.googleusercontent.com/LpKJMuShPhgQ7zWsLK4ZLTyneaT98D2zYg4dDzGDVNALJ0Ly0jSNJi_JBmjYd4QLaMTRci0khLmU7KWupjYebw",
-   "https://play-lh.googleusercontent.com/5-JUrc9uU2pkrtCHMrrFi1MECCw8KbwTr1PNDPVmQ7fev3D3xcR0VIAT2HeLe1CYgRn0ZiacYVr55kLvAOLYSg",
-   "https://play-lh.googleusercontent.com/fbvB5RPtHE0wnpspZOCuKheubFgioxY2iUZ9vPXiZ4ihtV_NrXxb7qfzPRUgFouRKD5LLHXkO_xHCRoCQ9vijw",
-   "https://play-lh.googleusercontent.com/bE-ry8c3J6MHqZQ_GHzDBeIdUBYrgTs_TJ6-UMEDl-vb1c0qmzqq2_9CDEonsBpTMbl_sKMGyjvga0ZsQvmb",
-   "https://play-lh.googleusercontent.com/JtyjIgZ9tOEyBQ2pEzEsB9v-128uTAcAp8I0ZkeChoE1x8BG-IfW-5qCUDY2SgPJ00wsVJe_jwvVEJwwolGv",
-   "https://play-lh.googleusercontent.com/6Owtb8TgbSUBvjH3DU0s-hE1DAHAziShq52ugF_ZCVgJ8lte15g4Aa-koIcWXD6emjbIVMCHGmxsUBeyCVp9ieY"
+  "appId": null,
+  "confidence": "null",
+  "reason": "closest match lacks 'timpy' and no Play Pass badge",
+  "queries": [
+   "Timpy Sweet Bakery Cake games",
+   "Timpy Sweet Bakery Cake games Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.iz.kids.happy.birthday.party.game.baby.celebration",
-  "playPass": true,
-  "similarity": 0.61,
-  "confidence": "verified",
-  "flags": [],
-  "query": "Timpy Sweet Bakery Cake games",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "com.sms.bakingames.dessertcooking.cookinggames",
+   "title": "Sweet Bakery: Baking Cake Game",
+   "developer": "Sweet Maker Shop",
+   "playPass": false,
+   "sim": 0.759,
+   "flags": []
+  }
  },
  "Timpy Town World: Kids games": {
   "appId": "com.iz.baby.town.my.world.little.mini.kids.games",
@@ -38360,7 +38339,7 @@
  "Tiny watch": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.64) and no Play Pass badge",
+  "reason": "closest match lacks 'watch' and no Play Pass badge",
   "queries": [
    "Tiny watch",
    "Tiny watch Play Pass"
@@ -39291,7 +39270,7 @@
  "TOHU": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.75) and no Play Pass badge",
+  "reason": "closest match lacks 'tohu' and no Play Pass badge",
   "queries": [
    "TOHU",
    "TOHU Play Pass"
@@ -40187,28 +40166,22 @@
   "checked": "2026-10-03"
  },
  "Truck games for kids car gadi": {
-  "appId": "com.imayi.dinotruckfree",
-  "matched": "Dinosaur Truck games for kids",
-  "developer": "Yateland Games for kids",
-  "playGenre": "Educational",
-  "icon": "https://play-lh.googleusercontent.com/13ZXQOtb_7TouCAACN2kAtIUKQyeZ-OdawGxC360ILDAn9rutTyJdNd9PrWaDPzAxb6-wLHnwoc1zaEl3y6bgA0",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/i8Ptn-hOHFPcIznX-qqVPIg-3qc7OK-ayd0FUwe8ioB099O9oeFvxGMtQrw_KJpowwUo5za0QTNPVkCdcJbA",
-   "https://play-lh.googleusercontent.com/TexkNbFIvPTjThpKv2OmQ9pC2oB930FC8SIR83cjlsjJrNBxG7Dtw2yDZC1a2eo0EA6iXSns0M85EuEvYo9suNk",
-   "https://play-lh.googleusercontent.com/L9SuIGcRTSusLhIwa40w3q26gpObEo9ZCR_TVbj6S8KKJmmFFCX2s7q_IQiChKhowUZ14qIUDfqP76h3k7H6wYw",
-   "https://play-lh.googleusercontent.com/Akezd0MoZ-h7t_OXi4lTYglhrKfgjHicoeOAjgu1msBvB1hnSlX7InGhisdtG0PqXEiHkXBYj_LOe2AbZRVr",
-   "https://play-lh.googleusercontent.com/KsNGNvBEATbImaUEUYzq5pt8BdzeJfU87Z-ndu1Iuz7x10K2WnPmtBP1PKXexaiJ_jE4qXxTEdC15jvTURadRQ",
-   "https://play-lh.googleusercontent.com/RC4WyjvygQFuVtiykxxievQ9SCk5FcyqFBjgrp0uKPNpea0f89_JJJboDZwowteSswv5--IlMiNOm9G93Zuy",
-   "https://play-lh.googleusercontent.com/nR7TnmJtmPbuenqmMcMDedZHxxMkJQwZPy-MMMwZryDMiHWaprr2kKhtUofexbMnkIkSoE1k4y8mV-FDbtn1",
-   "https://play-lh.googleusercontent.com/ICevjGaNIDlC7qv9es3p_SI_i17glwumAlFYDlJkeqM5em_LruGNI9Tz1HioUCV8Tb3Zny2RmKMM7qH8BZjaLg"
+  "appId": null,
+  "confidence": "null",
+  "reason": "closest match lacks 'gadi'",
+  "queries": [
+   "Truck games for kids car gadi",
+   "Truck games for kids car gadi Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.imayi.dinotruckfree",
-  "playPass": true,
-  "similarity": 0.69,
-  "confidence": "verified",
-  "flags": [],
-  "query": "Truck games for kids car gadi",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "com.imayi.truckdriverfree",
+   "title": "Truck Driver - Games for kids",
+   "developer": "Yateland Games for kids",
+   "playPass": true,
+   "sim": 0.714,
+   "flags": []
+  }
  },
  "Truck Games – build a house": {
   "appId": "com.gokids.transportbuilding",
@@ -40657,7 +40630,7 @@
  "Unholy Adventure 2: Mystery": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.68) and no Play Pass badge",
+  "reason": "closest match lacks 'unholy' and no Play Pass badge",
   "queries": [
    "Unholy Adventure 2: Mystery",
    "Unholy Adventure 2",
@@ -41029,28 +41002,23 @@
   "checked": "2026-10-03"
  },
  "Vampire Legends (Full)": {
-  "appId": "com.vampironi.vampirelegends",
-  "matched": "Vampire Legends",
-  "developer": "Vampironi",
-  "playGenre": "Arcade",
-  "icon": "https://play-lh.googleusercontent.com/oNjrfhCa4HVe8zVC1gzKgaown9n_YQ8EvoYWakHBEHnhn8r4IGJN7mvLd1Ve8JfMl6RobJOTYI2jDdo-_aKm6Q",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/V-qWHq_UiMPZDbPGP6l-BLxIMD3KgSLR3d9Z4Cm1CcbEddru0YjYgLJ76bXbk2P9bFxS4BGTss747YWOZtI8BA",
-   "https://play-lh.googleusercontent.com/Tfe2CJAAqKviqACsiiCjz0vVz51u0Qw7Tk6k2LrN1es9-WNRHxG8_LP07KFr3nD_FflrfUb9BqryTuAwWbv_X8s",
-   "https://play-lh.googleusercontent.com/YTezF3ka7d5Su4kcUV6PqE5zalR_MA9M_giKq-Nm-uE2sY-9igYcVfxztZal9L0nB_O8cNf11qU9O37XRAEbQIc",
-   "https://play-lh.googleusercontent.com/b0nYavte_v-s1e7bvVetooDK3Yj1mM1Qj_7362eEZ_ySMNy4mUJmFqIcbdiMY0Tv6sNMXAa9TmiolgDk3je0SQ",
-   "https://play-lh.googleusercontent.com/OyyOzdk9YtJrNN9qKHjVFUvOR-QtNp2lB7q2UTsaMPPpKrrRhdxNX4wNHaUhsfLfwJ-wscwLbtevDnPs-jihAA",
-   "https://play-lh.googleusercontent.com/mOVOXhHuKTyBuQkmi3BgQYEBbYB1Osi0bveKm8Uj-0PGPou7LqgwtFD0zPN3a-VXMZnJk8gyQ_-LRUy82vwBbQ",
-   "https://play-lh.googleusercontent.com/bEboZDZfKtNJibgnvAyaBEccL9RHzq3_0vB9EzuDwxvCs-7LLecAy_TLR78iCShxKq0KA6ksAhekXECohIzf",
-   "https://play-lh.googleusercontent.com/cbTa3BkHc0viTPhjS2jDScNKcBGaFxlNToXrkKrUSxSoL_ACfwQDVfVg6AcukoHv7Rh9tSTnISQcVhq1ANAq"
+  "appId": null,
+  "confidence": "null",
+  "reason": "closest match lacks 'full' and no Play Pass badge",
+  "queries": [
+   "Vampire Legends (Full)",
+   "Vampire Legends",
+   "Vampire Legends (Full) Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.vampironi.vampirelegends",
-  "playPass": false,
-  "similarity": 0.93,
-  "confidence": "strong",
-  "flags": [],
-  "query": "Vampire Legends (Full)",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "com.vampironi.vampirelegends",
+   "title": "Vampire Legends",
+   "developer": "Vampironi",
+   "playPass": false,
+   "sim": 0.93,
+   "flags": []
+  }
  },
  "Vector Classic": {
   "appId": "com.nekki.vector.paid",
@@ -41215,24 +41183,28 @@
   "checked": "2026-10-03"
  },
  "Vlad and Nikki 2 Playeers": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "closest match flagged: different number",
-  "queries": [
-   "Vlad and Nikki 2 Playeers",
-   "Vlad and Nikki 2 Playeers Play Pass"
+  "appId": "com.edujoy.vlad.niki.twoplayers",
+  "matched": "Vlad and Niki - 2 Players",
+  "developer": "AppQuiz",
+  "playGenre": "Educational",
+  "icon": "https://play-lh.googleusercontent.com/W2pkpVDJtPVedlKu8QGUF2hKHf80sIKjXQifwuaS5xBQqImFlXvCePAr70jev_nOX3HMAYFFocAHBMkLQnKXeg",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/LIrJ3LCv6iAgmPGDejTBpi49S8WLup2ePlPSj3vGxh6W9mE6_xweFN6uN1oYxteSCqBjG-nV0ioaKXg0JM0siNo",
+   "https://play-lh.googleusercontent.com/Hn4pD5J7rCcPxpvbir1jBLQ5VEB_6NdoX8sUXjUKXC5mBE6oVhIXzAjIVsLpvn7mCu7V0gDGYkeaUNfyhsJeJQ",
+   "https://play-lh.googleusercontent.com/OBm_mnzE9WOhv4lWWn_3QNtWzgnfCHRGnay-C3pGsNRZ-2UVSp1rc5M_4nmzvy4LpwphPRUVkbn2-Y6doewLtg",
+   "https://play-lh.googleusercontent.com/rlS2GHBkV0sWBslSU0UoLHVYD__gX79fbF0ekD4xOvdrepD-j7yxyGP0fPIDQGizUepLREa90oKr_6nmYlKd9is",
+   "https://play-lh.googleusercontent.com/54Mijuadtt1GRtxRXV8TU61qd-gdlflc9ywQs1Rb33nRaKM5MuyltNH4QZtzikNE3hC9quUw_z2UQPFp5oAA6A",
+   "https://play-lh.googleusercontent.com/w9sCKH2dotCYWNZvhIgY87ra6pXr9PEE3N4hVBVdot3rmstQLtldLF-KuyIcTaGPQfSNuDYzX4291cJCk37P",
+   "https://play-lh.googleusercontent.com/OPEUvWhA0G_zZrsL17xehGUZBHR8SupBz1rZT-VtxjkCqZhSJWjlNcsN2wQuVnhPnHqdeNlAg3rymmz3mYRc",
+   "https://play-lh.googleusercontent.com/RLsVpaQhjgSjWKwKceOpFWzOvr0sj4a3avLUuIafCP0lfjF7jp_B04h1GDua3UvBMm8EhMLBtZ0KUPlXwnY4Vho"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.edujoy.vlad.niki.twoplayers",
-   "title": "Vlad and Niki - 2 Players",
-   "developer": "AppQuiz",
-   "playPass": true,
-   "sim": 0.958,
-   "flags": [
-    "different number"
-   ]
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.edujoy.vlad.niki.twoplayers",
+  "playPass": true,
+  "similarity": 0.958,
+  "confidence": "verified",
+  "flags": [],
+  "query": "Vlad and Nikki 2 Playeers",
+  "checked": "2026-10-03"
  },
  "Vlad and Nikki Educational Game": {
   "appId": "com.edujoy.vlad.nikita",
@@ -41333,7 +41305,7 @@
  "Wanna Survive": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.61) and no Play Pass badge",
+  "reason": "closest match lacks 'wanna' and no Play Pass badge",
   "queries": [
    "Wanna Survive",
    "Wanna Survive Play Pass"
@@ -41991,27 +41963,27 @@
   "checked": "2026-10-03"
  },
  "Word Relax": {
-  "appId": "com.tgmedia.wordrelax",
-  "matched": "Word Relax: Word Puzzle Games",
-  "developer": "MASTERMIND WORD GAMES",
+  "appId": "com.epicpandagames.word.match",
+  "matched": "Word Relax",
+  "developer": "EPIC PANDA GAMES",
   "playGenre": "Word",
-  "icon": "https://play-lh.googleusercontent.com/UoB0xeNSUMqRqulZsoxyvKkOhUajTASMxR2XgZ2fx9JyUlyUdZxp98h9bnsYS05t0q4Vm4D0kQ4-EmjVPjJ8",
+  "icon": "https://play-lh.googleusercontent.com/l44whFfrsazPNQ5krSdG-ImvagIFaEvlqN0Za-ptxpWYmF3VSrgKIcci6eHTdJYT-WcJs874mcEM7pRp-6-n4A",
   "screenshots": [
-   "https://play-lh.googleusercontent.com/9ftnpClczlmgBgdskpnJaVgJky_kNMgC5aEQ9hMBqD77xPj4AFGHzv-wGhgkzFoz8ffpNANVxcYKkkLIPLOawA",
-   "https://play-lh.googleusercontent.com/ASNeIh9cuSyWBYpR0f1si6gFLoH089l_GWvwEu8sqfH07_2xb-Cp32ZvM788Md-o74dnCpqubVJyhd6AD_sBPsQ",
-   "https://play-lh.googleusercontent.com/MCOOOsOlPVUXX2ujdRJgcVzPAKI1QcFHUFzoF0I8sWNeTd1KlI1r3rsca2pVuGGTczbqH5_REVAlqB3cSmFgHjE",
-   "https://play-lh.googleusercontent.com/7k4Igni6oW_pxbt3fawgks769kSSdZJ4PdB7jIBKy52kXelPI56sAEy8K48bQZLAY7OLBTykjgcGmaNRF3tUXA",
-   "https://play-lh.googleusercontent.com/8ZOJWZv4ONJxI3_jba-oDkQSKETJm_6ICLxmxVIIZf21Yi6ymMKzQ28JaUaYXsTvuGMuigfUQDzIBtLESebc3A",
-   "https://play-lh.googleusercontent.com/fz8hctlXYZXoF6uGTz3mFbrggxNbRjeQ8X-eaYAQJ-Xp86yoe4q1NLJ_FTlsOCOqxtVNPIcpoWadVh3PncwF-g",
-   "https://play-lh.googleusercontent.com/DgC1FHxWJu2x-6ZrPAAc3KOpP9ehpsfybh_Lp-3NKtlGq2SOXn_dEYaOOl-UAEguDxF74tNJNHX-imzulMZL",
-   "https://play-lh.googleusercontent.com/BJW4oJ9gMOBTuVgxzEgza9YPdSQPCoQfilFsaW8aqeBHQAWM8PlCX93F4qwLo0TzrkcAntrXVFDurZzgzC5_IQ"
+   "https://play-lh.googleusercontent.com/oShr_P0h4E_8QbpOPHzmr_2PqAzgTbSiVVDP5fP9_wUHU8pYXwui8QrhpOMBs524AjYFi3Hg_hZOhKcI5dGQ",
+   "https://play-lh.googleusercontent.com/J5euTAvVIzUADkd0wvQpfLlI78VuJeHusM78caFvviTKDy4vZrtmNCuYMOR9NhUgKeZvaHLihrwZfZOR7x9pBY0",
+   "https://play-lh.googleusercontent.com/NZdzuIVKavEDhMzAt1jcnfJRBXnWspARvePoKYJCB5NAHrIU0bKDwjzA2cXHq4PySnOs1_bsl-JXaq5RDSEcFQ",
+   "https://play-lh.googleusercontent.com/Mvx0VCRLIcaAz2WuYTU-szGuSwQGqpe1j0X5yWAtybcf9Osaoz-kWeQxEWymS3KThNpHtpL5Yiu6BYzIXMNA",
+   "https://play-lh.googleusercontent.com/7ojLgVnbtFg5lWrzIabFkkTAa85E41ya2hu8MuWFLvYF7PwXFbRJDTqMTgYwbepG3ELOCi9LAQrmNny0L-67bA",
+   "https://play-lh.googleusercontent.com/qSukBNvdalNqyh9rrpkACWwdk6zlc86LXJBilYpItBeJ8iIw1cIyTF0N8F6pzJs-mWN5NHM2COZLCl0mMCrN",
+   "https://play-lh.googleusercontent.com/y1KvJl8iW1moDxnr7_8Cwemcj5wxSlnojZWuNFxP4PHf2RjnTpGO1ZN8bBsOFu1fkQHQwZX_1uCWH-khU9wZmTA",
+   "https://play-lh.googleusercontent.com/EU4UJPZO5l_aE0c4-tdW_zw1wk_z5MilLbxwOz4q1zpFsoMUQzESqRBfeVip-_jWxbR4ycxu5SC0qWP-fjn45fs"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.tgmedia.wordrelax",
-  "playPass": false,
-  "similarity": 0.95,
-  "confidence": "strong",
+  "url": "https://play.google.com/store/apps/details?id=com.epicpandagames.word.match",
+  "playPass": true,
+  "similarity": 1.0,
+  "confidence": "verified",
   "flags": [],
-  "query": "Word Relax",
+  "query": "Word Relax Play Pass",
   "checked": "2026-10-03"
  },
  "Word Search": {
@@ -42721,7 +42693,7 @@
  "Zombie Sniper War 3D: Dead FPS": {
   "appId": null,
   "confidence": "null",
-  "reason": "title similarity too low (0.69) and no Play Pass badge",
+  "reason": "closest match lacks 'war, dead' and no Play Pass badge",
   "queries": [
    "Zombie Sniper War 3D: Dead FPS",
    "Zombie Sniper War 3D",
@@ -42858,26 +42830,22 @@
   "checked": "2026-10-03"
  },
  "ザ・ファイナルタクシー 終末ドライブゲーム": {
-  "appId": "com.zxima.finaltaxi",
-  "matched": "ザ・ファイナルタクシー 終末ドライブアドベンチャー",
-  "developer": "合同会社ズィーマ",
-  "playGenre": "アドベンチャー",
-  "icon": "https://play-lh.googleusercontent.com/RAqtwAHuw2UuawYlsXg9JbtAeuiP7kVG3ypWjbLNGYxBnEaw0JcbOT-WDOjJVa5kCB4HP_mN3R4ytcLLmGvd78E",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/09AAk2Gat47udAoLQW2W4aRwaZjQO6pb5RaPnCaz0BgtyuEAGfiNQMeYY0CbqVSRc7CAvv09nd6olnwyLfaYEg",
-   "https://play-lh.googleusercontent.com/xejirQ7D3eeKW6C_2gsvf6isRBTIlE6U0A3i0aNDLGU0waTCRSlIUIT9kBRSpRw0b1QiWZKn0-vOVVWe5PXEjo8",
-   "https://play-lh.googleusercontent.com/s06seijUdo8nrjsIbaOSmYys4acMUBig06Khx5r2XTiF6ogcTJL5NIkt4Mt0ExiIUbtzw8hzEh9tmMCQokw1aw",
-   "https://play-lh.googleusercontent.com/jmEkncspLxlDWqmot9zlUWNqqxWFg1UYQzvkQdgL4OAqt9W6-s9hUfo_zZMWm43Sf7NKglnKyUppm8KN0r9bNg",
-   "https://play-lh.googleusercontent.com/F8gInk8qiP1OQYpbEz6EyvX7yPMEmNLwaeYVzEHBrVGG3d5sI_aV_MWfOXMs-ZcBH7Ki7Kl29dsKCunMN1rh",
-   "https://play-lh.googleusercontent.com/6Z6bgwOylTZkeaiMNt6Au4JixTVdpMdzsEjUSZenOIuf1E8qBF07IfM9rNQtEVgjQQdRilTZeDxtQxRRJ2tS7Q"
+  "appId": null,
+  "confidence": "null",
+  "reason": "closest match lacks '終末トライフケーム'",
+  "queries": [
+   "ザ・ファイナルタクシー 終末ドライブゲーム",
+   "ザ・ファイナルタクシー 終末ドライブゲーム Play Pass"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.zxima.finaltaxi",
-  "playPass": true,
-  "similarity": 0.826,
-  "confidence": "verified",
-  "flags": [],
-  "query": "ザ・ファイナルタクシー 終末ドライブゲーム",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "candidate": {
+   "appId": "com.zxima.finaltaxi",
+   "title": "ザ・ファイナルタクシー 終末ドライブアドベンチャー",
+   "developer": "合同会社ズィーマ",
+   "playPass": true,
+   "sim": 0.826,
+   "flags": []
+  }
  },
  "旅かえる": {
   "appId": "jp.co.hit_point.tabikaeru",
