@@ -66608,7 +66608,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": false,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "RPG Dragon Takers": {
   "appId": "kemco.vgd.dragontakers",
@@ -66662,7 +66668,13 @@
    "Immersive",
    "Fantasy",
    "Eastern fantasy"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "RPG Eve of the Genesis": {
   "appId": "kemco.wws.eog.hd",
@@ -66712,7 +66724,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "RPG Fairy Elements Premium": {
   "appId": "kemco.execreate.fairyelementspremium",
@@ -66761,7 +66779,13 @@
    "Single player",
    "Stylized",
    "Anime"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": false,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "RPG Fern gate Premium": {
   "appId": "kemco.execreate.fernzgatepremium",
@@ -66808,7 +66832,13 @@
    "Action Role-Playing",
    "Stylized",
    "Anime"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": false,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "RPG gate fo Windoria Premium": {
   "appId": "kemco.hitpoint.windheropremium",
@@ -66862,7 +66892,13 @@
    "Immersive",
    "Fantasy",
    "Medieval fantasy"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": false,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "RPG GloriousSavior Premium": {
   "appId": "kemco.execreate.glorioussaviorpremium",
@@ -66908,7 +66944,13 @@
    "Role Playing",
    "Stylized",
    "Anime"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": false,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "RPG Grinsia": {
   "appId": "kemco.magitec.grinsia",
@@ -66959,7 +67001,13 @@
    "Pixelated",
    "Immersive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "RPG Infinite Links Premium": {
   "appId": "kemco.execreate.infinitelinkspremium",
@@ -67010,7 +67058,13 @@
    "Casual",
    "Stylized",
    "Pixelated"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": false,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "RPG Isekai Rondo Premium": {
   "appId": "kemco.execreate.isekaipremium",
@@ -67066,7 +67120,13 @@
    "Isekai",
    "Immersive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": false,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "RPG Legend of the Tetrarchs": {
   "appId": "kemco.hitpoint.legerrior",
@@ -67119,7 +67179,13 @@
    "Pixelated",
    "Immersive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "RPG Liege Dragon": {
   "appId": "kemco.execreate.lostdragon",
@@ -67169,7 +67235,13 @@
    "Turn-based RPG",
    "Stylized",
    "Pixelated"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": false,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "RPG Maiden Tower": {
   "appId": "kemco.execreate.innocentrevenger",
@@ -67225,7 +67297,13 @@
    "Fantasy",
    "Eastern fantasy",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": false,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "RPG Monster Viator": {
   "appId": "kemco.hitpoint.viator",
@@ -67277,7 +67355,13 @@
    "Pixelated",
    "Immersive",
    "Fantasy"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "RPG Revenant Dogma Premium": {
   "appId": "kemco.execreate.revenantdogmapremium",
@@ -67324,7 +67408,13 @@
    "Turn-based RPG",
    "Stylized",
    "Anime"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": false,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "RPG Ruinverse": {
   "appId": "kemco.execreate.ruinverse",
@@ -67377,7 +67467,13 @@
    "Pixelated",
    "Immersive",
    "Fantasy"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": false,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "RPG Sword of Elpisia Premium": {
   "appId": "kemco.execreate.makenpremium",
@@ -67428,7 +67524,13 @@
    "Casual",
    "Stylized",
    "Pixelated"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": false,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "RPG Symphony of Eternity": {
   "appId": "kemco.wws.soe",
@@ -67475,7 +67577,13 @@
    "Fantasy",
    "Medieval fantasy",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Rummikub": {
   "appId": "com.kinkajoo.RummikubHD",
@@ -67516,7 +67624,13 @@
    "Abstract strategy",
    "Casual",
    "Realistic"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Runic Curse": {
   "appId": "com.AlexeySuslin.RunicCurse",
@@ -67569,7 +67683,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Running Fable": {
   "appId": "com.SeashellStudio.RunningFable",
@@ -67608,7 +67728,13 @@
   "installs": 38722,
   "tags": [
    "Racing"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Ruro train Simulator 2 game": {
   "appId": "com.HighbrowInteractive.EuroTrainSim2",
@@ -67645,7 +67771,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Rush Rally 2": {
   "appId": "brownmonster.app.game.rushrally2",
@@ -67701,7 +67833,13 @@
    "Car",
    "Competitive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Rush Rally 3": {
   "appId": "brownmonster.app.game.rushrally3",
@@ -67757,7 +67895,13 @@
    "Race car",
    "Competitive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Rush Rally Origins": {
   "appId": "brownmonster.app.game.rushrallyremastered",
@@ -67810,7 +67954,13 @@
    "Competitive multiplayer",
    "Stylized",
    "Competitive"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Rusted Warfare – RTS Strategy": {
   "appId": "com.corrodinggames.rts",
@@ -67864,7 +68014,13 @@
    "Stylized",
    "Immersive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Rymdkapsel": {
   "appId": "com.grapefrukt.games.rymdkapsel1",
@@ -67909,7 +68065,13 @@
    "Casual",
    "Single player",
    "Abstract"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sage Solitaire": {
   "appId": null,
@@ -67969,7 +68131,13 @@
    "Stylized",
    "Cartoon",
    "Cute"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sagrada": {
   "appId": "com.direwolfdigital.sagrada",
@@ -68022,7 +68190,13 @@
    "Stylized",
    "Competitive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sally’s Law": {
   "appId": "com.Nanali.SallysLaw",
@@ -68068,7 +68242,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Samorost 2": {
   "appId": "net.amanita_design.Samorost2",
@@ -68116,7 +68296,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Samorost 3": {
   "appId": "amanita_design.samorost3.GP",
@@ -68162,7 +68348,13 @@
    "Stylized",
    "Puzzles",
    "Mystery"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Samurai II: Vengeance": {
   "appId": "com.madfingergames.SamuraiIIAll",
@@ -68214,7 +68406,13 @@
    "Stylized",
    "Samurai",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Save the Dog – Draw to Save": {
   "appId": "com.gameease.savethedoggy",
@@ -68260,7 +68458,13 @@
    "Single player",
    "Stylized",
    "Handicraft"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Save The Puppies Premium": {
   "appId": "com.hg.savethepuppies",
@@ -68303,7 +68507,13 @@
    "Stylized",
    "Cartoon",
    "Animals"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Scalak: Relaxing Puzzle game": {
   "appId": "com.hamsteroncoke.scalak",
@@ -68354,7 +68564,13 @@
    "Casual",
    "Single player",
    "Abstract"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Scoring Champion": {
   "appId": "com.scoring.champion",
@@ -68405,7 +68621,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "ScourgeBringer": {
   "appId": "com.pid.scourgebringer",
@@ -68450,7 +68672,13 @@
    "Casual",
    "Stylized",
    "Pixelated"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Scrap Friends: Robot Walk": {
   "appId": "com.zxima.scrapfriends",
@@ -68497,7 +68725,13 @@
   "installs": 21644,
   "tags": [
    "Adventure"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Scritchy Scratchy": {
   "appId": "com.fundaygames.scritchyscratchy",
@@ -68546,7 +68780,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sea battle 2: Warship Online": {
   "appId": "com.byril.seabattle2",
@@ -68604,7 +68844,13 @@
    "Warship",
    "Competitive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Senior Word Game": {
   "appId": "com.epicpandagames.word.connect.search",
@@ -68656,7 +68902,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sentinels of the Multiverse": {
   "appId": "com.handelabra.Sentinels",
@@ -68702,7 +68954,13 @@
    "Stylized",
    "Fantasy",
    "Super heroes"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Serial Cleaner": {
   "appId": "com.pid.serialcleaner",
@@ -68743,7 +69001,13 @@
   "installs": 55964,
   "tags": [
    "Action"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sesame Street Alphabet Kitchen": {
   "appId": "com.sesameworkshop.alphabetkitchen.play",
@@ -68779,7 +69043,13 @@
    "Cartoon",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sesame Street Games Club": {
   "appId": "com.storytoys.sesame.street.mecha.builders.googleplay",
@@ -68823,7 +69093,13 @@
    "Cartoon",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sesame Street Mecha Builders": {
   "appId": "com.storytoys.sesame.street.mecha.builders.googleplay",
@@ -68867,7 +69143,13 @@
    "Cartoon",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Shadow Blade": {
   "appId": null,
@@ -68921,7 +69203,13 @@
    "Stylized",
    "Battling",
    "Ninja"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Shadow of Naught Story Drama": {
   "appId": "studio.taawoos.shadowofnaught",
@@ -68963,7 +69251,13 @@
    "Interactive story",
    "Casual",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Shadow Trick": {
   "appId": "com.neutronized.shadowtrick",
@@ -69004,7 +69298,13 @@
   "installs": 191816,
   "tags": [
    "Action"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Shadowmatic": {
   "appId": "com.triadastudio.shadowmatic",
@@ -69056,7 +69356,13 @@
    "Single player",
    "Realistic",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Shapes and Colors Games for Kids": {
   "appId": "com.iz.dino.kids.colors.shapes.toddler.games.preschool.kindergarten.learning",
@@ -69108,7 +69414,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Shapes: Abstract Graphic Games": {
   "appId": "com.infinitygames.shapes",
@@ -69154,7 +69466,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Shapez – Factory Game": {
   "appId": "com.playdigious.shapez",
@@ -69201,7 +69519,13 @@
   "installs": 515614,
   "tags": [
    "Simulation"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Shards of Infinity": {
   "appId": "com.templegatesgames.ShardsAndroid",
@@ -69237,7 +69561,13 @@
    "Card battler",
    "Single player",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Shatterbrain: Physics Puzzles": {
   "appId": "com.orbital.donttouchit",
@@ -69289,7 +69619,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Shine – Journey Of Light": {
   "appId": "com.foxandsheep.loomies",
@@ -69334,7 +69670,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Shiny Ski Resort": {
   "appId": "net.kairosoft.android.ski_en",
@@ -69388,7 +69730,13 @@
    "Stylized",
    "Pixelated",
    "Light-hearted"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Ship Ramp Jumping": {
   "appId": "com.ship.ramp.jumping",
@@ -69432,7 +69780,13 @@
   "installs": 9706268,
   "tags": [
    "Simulation"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Shotgun Club: PvP Multiplayer": {
   "appId": "com.shooting.club",
@@ -69479,7 +69833,13 @@
   "installs": 476150,
   "tags": [
    "Sports"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Shredder Chess": {
   "appId": "com.shredderchess.android",
@@ -69529,7 +69889,13 @@
    "Abstract strategy",
    "Chess",
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Shuttle Shuffle: Aliens Panic": {
   "appId": "com.LozangeLab.ShuttleShuffle",
@@ -69575,7 +69941,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sigma Theory": {
   "appId": "com.pid.sigmatheory",
@@ -69627,7 +69999,13 @@
    "Single player",
    "Stylized",
    "Immersive"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Silly Royale – Devil Amongst Us": {
   "appId": null,
@@ -69685,7 +70063,13 @@
    "Adventure",
    "Stylized",
    "Dark"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Silver Screen Story": {
   "appId": "net.kairosoft.android.pictures",
@@ -69738,7 +70122,13 @@
    "Stylized",
    "Pixelated",
    "Light-hearted"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Simon the Sorcerer": {
   "appId": "com.mojotouch.simon",
@@ -69786,7 +70176,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Simon the Sorcerer – Mucusade": {
   "appId": "com.mojotouch.simon2",
@@ -69837,7 +70233,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "SimplePlanes": {
   "appId": "com.jundroo.SimplePlanes",
@@ -69883,7 +70285,13 @@
    "Casual",
    "Single player",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sink the Fleet – Sea War": {
   "appId": "com.tellmewow.senior.battleship",
@@ -69928,7 +70336,13 @@
    "Stylized",
    "Competitive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Skate Jam Pro Skateboarding": {
   "appId": "com.skateboard.skatejam",
@@ -69967,7 +70381,13 @@
    "Casual",
    "Single player",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Skateboard Party 2": {
   "appId": "com.ratrodstudio.skateparty2lite",
@@ -70019,7 +70439,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Skateboard Party 3": {
   "appId": "com.ratrodstudio.skateparty3lite",
@@ -70069,7 +70495,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Skel and Defense": {
   "appId": "com.buffstudio.skel.defense.dungeon.roguelike",
@@ -70118,7 +70550,13 @@
    "Role Playing",
    "Roguelike",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Skul: The Hero Slayer": {
   "appId": "com.playdigious.skul",
@@ -70174,7 +70612,13 @@
    "Fantasy",
    "Dark fantasy",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sky Aces 2": {
   "appId": "ru.gamedevteam.skyaces2",
@@ -70216,7 +70660,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Slash Quest!": {
   "appId": "com.biggreenpillow.slashquest",
@@ -70266,7 +70716,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Slaughter 2: Prison Assault": {
   "appId": "com.venomizedArt.Slaughter2",
@@ -70317,7 +70773,13 @@
    "Modern",
    "Military",
    "Special forces"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Slaughter 3: The Rebels": {
   "appId": "com.venomizedArt.SlaughterRebels",
@@ -70365,7 +70827,13 @@
    "Weapons",
    "Gun",
    "Intense"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Slaughter: The Lost Outpost": {
   "appId": "com.VenomizedArt.Slaughter4",
@@ -70407,7 +70875,13 @@
    "Tactical shooter",
    "Stylized",
    "Intense"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Slay": {
   "appId": "com.windowsgames.slay",
@@ -70442,7 +70916,13 @@
   "installs": 48936,
   "tags": [
    "Strategy"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Slay The Spire": {
   "appId": "com.humble.SlayTheSpire",
@@ -70491,7 +70971,13 @@
    "Stylized",
    "Competitive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Slayaway Camp 2: Puzzle Horror": {
   "appId": "com.bluewizard.slayawaycamp2",
@@ -70538,7 +71024,13 @@
   "installs": 10234,
   "tags": [
    "Puzzle"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Slayaway Camp: Horror Puzzle": {
   "appId": "com.bluewizard.slayawaycamp",
@@ -70584,7 +71076,13 @@
    "Pixelated",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Slender Last Sleep": {
   "appId": "com.Studio17.slender",
@@ -70622,7 +71120,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Slender Threads": {
   "appId": "com.blyts.slenderthreads",
@@ -70672,7 +71176,13 @@
    "Puzzle-adventure",
    "Stylized",
    "Mystery"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Slime Labs 2": {
   "appId": "com.neutronized.slimelabs2",
@@ -70719,7 +71229,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sling Drift: Car Drifting Games": {
   "appId": "com.rubygames.slingdrift",
@@ -70771,7 +71287,13 @@
    "Stylized",
    "Intense",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sling Kong": {
   "appId": "com.protostar.sling",
@@ -70820,7 +71342,13 @@
    "Cartoon",
    "Intense",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Slingshot Stunt Driver & Sport": {
   "appId": "com.slingshot.car",
@@ -70872,7 +71400,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Slingshot Train": {
   "appId": "com.slingshot.train",
@@ -70919,7 +71453,13 @@
   "installs": 1790408,
   "tags": [
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Small living world Unlocked": {
   "appId": "smalllivingworld.com.Unlocked",
@@ -70954,7 +71494,13 @@
    "Casual",
    "Stylized",
    "Pixelated"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Smart Brain: Mind-Blowing Game": {
   "appId": "game.mind.teaser.smartbrain",
@@ -71006,7 +71552,13 @@
    "Single player",
    "Stylized",
    "Funny"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Smarter – Brain Training Games": {
   "appId": "net.rention.smarter",
@@ -71045,7 +71597,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Smash Hit": {
   "appId": "com.mediocre.smashhit",
@@ -71092,7 +71650,13 @@
    "Intense",
    "Shoot",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Smashy Road: Arena": {
   "appId": "com.bearbit.smashyroadarena",
@@ -71141,7 +71705,13 @@
    "Vehicles",
    "Car",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Smashy Road: Wanted": {
   "appId": "com.rkgames.smashywanted",
@@ -71193,7 +71763,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Snail Bob 1: Adventure Puzzle": {
   "appId": "com.hunterhamster.snailbob",
@@ -71246,7 +71822,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Snail Bob 2": {
   "appId": "com.hunterhamster.snailbob2.gp",
@@ -71293,7 +71875,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Snail Bob 3": {
   "appId": "com.hunterhamster.snailbob3",
@@ -71344,7 +71932,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Snake.io – Fun Snake .io Games": {
   "appId": "com.amelosinteractive.snake",
@@ -71398,7 +71992,13 @@
    "Snake",
    "Battling",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Snakes and Ladders Board Games": {
   "appId": "com.idz.snakes.and.ladders.dice.board.games",
@@ -71453,7 +72053,13 @@
    "Stylized",
    "Competitive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sneaker Art! – Coloring Games": {
   "appId": "com.majorfrank.sneakerart",
@@ -71501,7 +72107,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Snowboard Party: World Tour": {
   "appId": "com.ratrodstudio.snowparty2lite",
@@ -71553,7 +72165,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Snowman Story": {
   "appId": "com.rpgsnack.snowman",
@@ -71605,7 +72223,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Soccer Cup Pro 2025 – Football": {
   "appId": "eu.inlogic.footballcuppro",
@@ -71652,7 +72276,13 @@
    "Stylized",
    "Competitive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "SocialChess – Online Chess": {
   "appId": "com.woodchop.chess",
@@ -71706,7 +72336,13 @@
    "Competitive multiplayer",
    "Realistic",
    "Competitive"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Solitaire": {
   "appId": "com.mobilityware.solitaire",
@@ -71751,7 +72387,13 @@
    "Cards",
    "Fantasy",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Solitaire (Full)": {
   "appId": null,
@@ -71824,7 +72466,13 @@
    "Single player",
    "Realistic",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Solitaire Klondike Quest": {
   "appId": "com.mobirix.ldstkd",
@@ -71871,7 +72519,13 @@
   "installs": 37251,
   "tags": [
    "Puzzle"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Solitaire Plus": {
   "appId": "com.infinitygames.solitaire",
@@ -71923,7 +72577,13 @@
    "Single player",
    "Realistic",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Solitaire Pro": {
   "appId": "uk.co.aifactory.solitaire",
@@ -71975,7 +72635,13 @@
    "Single player",
    "Realistic",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Solitaire Spanish Pack": {
   "appId": null,
@@ -72039,7 +72705,13 @@
    "Single player",
    "Realistic",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Solitaire – Card Games": {
   "appId": null,
@@ -72091,7 +72763,13 @@
    "Cards",
    "Fantasy",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Someday": {
   "appId": "com.THIRTEENDAYS.SOMEDAY",
@@ -72142,7 +72820,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sonic The Hedgehog 2 Classic": {
   "appId": null,
@@ -72219,7 +72903,13 @@
    "Interactive story",
    "Single player",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sorcery 4": {
   "appId": "com.inkle.sorcery4",
@@ -72245,7 +72935,13 @@
   "tags": [
    "Casual",
    "Single player"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sorcery!": {
   "appId": "com.inkle.sorcery1",
@@ -72280,7 +72976,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sorcery! 2": {
   "appId": "com.inkle.sorcery2",
@@ -72316,7 +73018,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sorting Ball Quiz": {
   "appId": "com.mobirix.bsq",
@@ -72368,7 +73076,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Soulvars": {
   "appId": "com.ginolabo.soulvars",
@@ -72407,7 +73121,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Space Gladiators: Premium": {
   "appId": "com.space.gladiators.mobile.paid.gp",
@@ -72454,7 +73174,13 @@
   "installs": 21222,
   "tags": [
    "Action"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Space Legends: Adventure Game": {
   "appId": "com.absolutist.spacelegendsfree",
@@ -72507,7 +73233,13 @@
    "Stylized",
    "Stylized-realistic",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Space Marshals": {
   "appId": "com.pixelbite.sg",
@@ -72560,7 +73292,13 @@
    "Science fiction",
    "Space",
    "Intense"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Space Marshals 2": {
   "appId": "com.pixelbite.sm2",
@@ -72608,7 +73346,13 @@
    "History",
    "Competitive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Space Marshals 3": {
   "appId": "com.pixelbite.sm3",
@@ -72662,7 +73406,13 @@
    "Science fiction",
    "Space",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Space Raiders RPG": {
   "appId": "com.geekgames.DeepSpace",
@@ -72714,7 +73464,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Space Squad Survival": {
   "appId": "com.rebeltwins.spacesquadsurvival",
@@ -72755,7 +73511,13 @@
   "installs": 107831,
   "tags": [
    "Action"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Spaceflight Simulator": {
   "appId": "com.StefMorojna.SpaceflightSimulator",
@@ -72809,7 +73571,13 @@
    "Rocket",
    "Launch",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Spaceplan": {
   "appId": "com.devolver.spaceplan",
@@ -72855,7 +73623,13 @@
    "Idle",
    "Casual",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Spades": {
   "appId": "com.mobilityware.Spades",
@@ -72904,7 +73678,13 @@
    "Cards",
    "Peaceful",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Spades Offline Card Game": {
   "appId": "com.zariba.spades.offline",
@@ -72951,7 +73731,13 @@
   "installs": 1007245,
   "tags": [
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Spades: Classic Card Games": {
   "appId": "com.mobilityware.Spades",
@@ -73000,7 +73786,13 @@
    "Cards",
    "Peaceful",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sparkle 2": {
   "appId": "com.the10tons.sparkle.two",
@@ -73039,7 +73831,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sparklite": {
   "appId": "com.playdigious.sparklite",
@@ -73092,7 +73890,13 @@
    "Pixelated",
    "Immersive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Speed JD": {
   "appId": "com.jimmyinteractive.speed",
@@ -73145,7 +73949,13 @@
    "Single player",
    "Realistic",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Spellforce: Heroes and Magic": {
   "appId": "com.hg.spellforce",
@@ -73180,7 +73990,13 @@
    "Immersive",
    "Fantasy",
    "Medieval fantasy"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sphaze Sci-fi Puzzle game": {
   "appId": null,
@@ -73263,7 +74079,13 @@
    "Cards",
    "Peaceful",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Spider Solitaire Plus": {
   "appId": "com.infinitygames.spidersolitaire",
@@ -73316,7 +74138,13 @@
    "Single player",
    "Realistic",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Spin Hero": {
   "appId": "spherestudios.spinheromobile",
@@ -73363,7 +74191,13 @@
   "installs": 76839,
   "tags": [
    "Strategy"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Spirit": {
   "appId": "com.jakyl.spirithd",
@@ -73402,7 +74236,13 @@
   "installs": 289349,
   "tags": [
    "Action"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Spirit of the Island": {
   "appId": "com.pid.spirit",
@@ -73455,7 +74295,13 @@
    "Multiplayer",
    "Stylized",
    "Immersive"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Spirit Roots": {
   "appId": "com.fireart.SpiritRootsP",
@@ -73507,7 +74353,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sproggiwodd": {
   "appId": "com.freeholdgames.sproggiwood",
@@ -73548,7 +74400,13 @@
    "Roguelike",
    "Stylized",
    "Dungeon"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Square Paint": {
   "appId": "com.infinitygames.squareit",
@@ -73600,7 +74458,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sqube Darkness": {
   "appId": "com.RHPOSITIVE.squbedarkness",
@@ -73654,7 +74518,13 @@
    "Single player",
    "Abstract",
    "Dark"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sqube Darkness 2": {
   "appId": "com.rhpositive.squbedarkness2",
@@ -73701,7 +74571,13 @@
   "installs": 189617,
   "tags": [
    "Arcade"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sqube Escape": {
   "appId": "com.rhpositive.squbeescape",
@@ -73755,7 +74631,13 @@
    "Fantasy",
    "Dark fantasy",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "SSC 22 – Super Soccer Champs": {
   "appId": "com.jakyl.supersoccerchamps",
@@ -73807,7 +74689,13 @@
    "Competitive multiplayer",
    "Stylized",
    "Competitive"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Stacky Bird: Fun Offline Game": {
   "appId": "com.kooapps.stackybirdandroid",
@@ -73859,7 +74747,13 @@
    "Bird",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Star Survivor: Premium": {
   "appId": "com.star.survivor.games.paid.gp",
@@ -73914,7 +74808,13 @@
    "Space",
    "Intense",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Star Viking Forever": {
   "appId": null,
@@ -73979,7 +74879,13 @@
    "Battling",
    "Fantasy",
    "Sci-fi fantasy"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Stardew valley": {
   "appId": "com.chucklefish.stardewvalley",
@@ -74031,7 +74937,13 @@
    "Stylized",
    "Pixelated",
    "Light-hearted"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Starlit kart Racing": {
   "appId": "com.rockhead.starlit.kartracing",
@@ -74086,7 +74998,13 @@
    "Go-kart",
    "Competitive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Starman": {
   "appId": "games.nadastudio.android.starman",
@@ -74117,7 +75035,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Station Manager": {
   "appId": "net.kairosoft.android.densha_en",
@@ -74168,7 +75092,13 @@
    "Stylized",
    "Pixelated",
    "Light-hearted"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Stick vs Zombies: Platformer": {
   "appId": "com.aurecas.stickmanzombieshooter",
@@ -74221,7 +75151,13 @@
    "Abstract",
    "Zombie",
    "Stickman"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Stormhill Mystery (Full)": {
   "appId": "com.specialbit.lurking.android.full",
@@ -74267,7 +75203,13 @@
    "Stylized",
    "Stylized-realistic",
    "Mystery"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Strange Horticulture": {
   "appId": "com.pid.strangehorticulture",
@@ -74317,7 +75259,13 @@
    "Puzzle-adventure",
    "Stylized",
    "Mystery"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Stranger Cases: Mystery Escape": {
   "appId": "com.snapbreak.strangercases",
@@ -74364,7 +75312,13 @@
    "Cartoon",
    "Mystery",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Strawberry Shortcake Bake shop": {
   "appId": "com.budgestudios.StrawberryShortcakeBakeShare",
@@ -74417,7 +75371,13 @@
    "Cartoon",
    "Cafe & restaurant",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Stray Souls: Dollhouse Story.": {
   "appId": "com.alawar.straysoulsFull",
@@ -74461,7 +75421,13 @@
    "Stylized",
    "Stylized-realistic",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Streets of Rage 4": {
   "appId": "com.playdigious.sor4",
@@ -74516,7 +75482,13 @@
    "Stylized",
    "Intense",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Stress-Relief: Sensispark": {
   "appId": "com.iz.antistress.relaxing.satisfying.sensory.magic.games",
@@ -74560,7 +75532,13 @@
   "installs": 26635,
   "tags": [
    "Simulation"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Strike Master Bowling": {
   "appId": "com.rubicon.dev.strikemaster",
@@ -74603,7 +75581,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Strikers 1945 Classic": {
   "appId": null,
@@ -74671,7 +75655,13 @@
    "Casual",
    "Single player",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Stuntman Ragdoll Action Movie": {
   "appId": "com.stuntman.ragdoll.action.movie",
@@ -74712,7 +75702,13 @@
   "installs": 1668550,
   "tags": [
    "Simulation"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Stylist Girl Make Me Fabulos": {
   "appId": "com.cocoplay.stylist.girl",
@@ -74756,7 +75752,13 @@
    "Stylized",
    "Celebrity & idol",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Subnautica": {
   "appId": "com.unknownworlds.subnautica",
@@ -74810,7 +75812,13 @@
    "Stylized-realistic",
    "Immersive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Subper Pool": {
   "appId": "com.grapefrukt.games.tilebreaker",
@@ -74856,7 +75864,13 @@
   "tags": [
    "Sports",
    "Billiards"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sudoku": {
   "appId": null,
@@ -74926,7 +75940,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sudoku Classic Brain Puzzle": {
   "appId": "com.unicostudio.sudoku",
@@ -74978,7 +75998,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sudoku master- Classic Puzzle": {
   "appId": "com.soodexlabs.sudoku2",
@@ -75024,7 +76050,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sudoku Plus: brain Puzzle": {
   "appId": "com.infinitygames.sudokunew",
@@ -75077,7 +76109,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sudoku – Classic Puzzle Game": {
   "appId": "com.pinkpointer.sudoku",
@@ -75127,7 +76165,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sudoku.com – Classic Sudoku": {
   "appId": "com.easybrain.sudoku.android",
@@ -75181,7 +76225,13 @@
    "Abstract",
    "Puzzles",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sudplu": {
   "appId": null,
@@ -75238,7 +76288,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sumi Sumi Matching Puzzle": {
   "appId": "jp.co.imagineer.sumikkogurashi.sumisumi",
@@ -75292,7 +76348,13 @@
    "Cartoon",
    "Puzzles",
    "Light-hearted"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sumikogurashi Farm": {
   "appId": "jp.co.imagineer.sumikkogurashi.farm",
@@ -75339,7 +76401,13 @@
    "Stylized",
    "Cartoon",
    "Farm"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Summer Catchers": {
   "appId": "com.noodlecake.summercatchers",
@@ -75392,7 +76460,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Summer Wheelie": {
   "appId": "com.big.summerwheelie",
@@ -75438,7 +76512,13 @@
    "Stylized",
    "Intense",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "SumoRoll – road to Yokozuna": {
   "appId": "com.StudioKingmo.SumoRoll",
@@ -75485,7 +76565,13 @@
   "installs": 73402,
   "tags": [
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sunday Lawn Seasons": {
   "appId": "com.donutgames.sundaylawnseasons",
@@ -75530,7 +76616,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Sunset Hills": {
   "appId": "com.cottongame.sunsethills",
@@ -75561,7 +76653,13 @@
   "installs": 11017,
   "tags": [
    "Adventure"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Super Arcade Racing": {
   "appId": "com.outofthebit.superarcaderacing",
@@ -75613,7 +76711,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Super Cat Tales 2": {
   "appId": "com.neutronized.supercattales2",
@@ -75664,7 +76768,13 @@
    "Cat",
    "Intense",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Super Cat Tales: PAWS": {
   "appId": "com.neutronized.supercattalespaws",
@@ -75714,7 +76824,13 @@
    "Animals",
    "Cat",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Super Chicken Jumper": {
   "appId": "com.sewercat.superchickenjumper",
@@ -75744,7 +76860,13 @@
   "tags": [
    "Action",
    "Platformer"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Super Drop Land": {
   "appId": "com.lamington.spooky",
@@ -75791,7 +76913,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Super Flappy Golf": {
   "appId": "com.noodlecake.superflappygolf",
@@ -75838,7 +76966,13 @@
   "installs": 27992,
   "tags": [
    "Arcade"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Super Glitch Dash": {
   "appId": null,
@@ -75897,7 +77031,13 @@
   "installs": 7333300,
   "tags": [
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Super Meat Boy Forever": {
   "appId": "com.thunderful.smbf",
@@ -75948,7 +77088,13 @@
    "Single player",
    "Stylized",
    "Intense"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Super Mombo Quest": {
   "appId": "com.orube.supermomboquest",
@@ -75997,7 +77143,13 @@
    "Pixelated",
    "Intense",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Super Starfish": {
   "appId": "com.protostar.starfish",
@@ -76048,7 +77200,13 @@
    "Science fiction",
    "Space",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Super Sucker 3D": {
   "appId": "com.luckykat.supersucker",
@@ -76095,7 +77253,13 @@
   "installs": 2983386,
   "tags": [
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Super Wings – Baby Games": {
   "appId": "com.edujoy.superwings",
@@ -76148,7 +77312,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Super Wings: Educational Games": {
   "appId": "com.edujoy.superwings",
@@ -76201,7 +77371,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Superliminal": {
   "appId": "com.noodlecake.superliminal",
@@ -76248,7 +77424,13 @@
   "installs": 1133295,
   "tags": [
    "Puzzle"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Supermarket Game Kids Shopping": {
   "appId": "com.elepant.kids.shopping.games.girls.supermarket.free",
@@ -76300,7 +77482,13 @@
    "Cartoon",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Surivval RPG 1: Island Escape": {
   "appId": "com.bewgames.survivaladventure",
@@ -76354,7 +77542,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Surivval RPG 3: Lost in time 2D": {
   "appId": "com.bewgames.lostintime",
@@ -76408,7 +77602,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Surivvial RPG Open World Pixel": {
   "appId": "com.bewgames.openworld",
