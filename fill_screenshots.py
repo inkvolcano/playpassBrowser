@@ -183,7 +183,8 @@ def search_hits(query, lang, country):
     except Exception as e:  # layout surprises
         print(f"    ! search({query!r}) failed: {type(e).__name__}: {e}", flush=True)
         return []
-    return [dict(h, rank=rank, query=query) for rank, h in enumerate(hits) if h.get("appId")]
+    # "score" is the store's star rating here; matching reuses that key for its own score
+    return [dict(h, rank=rank, query=query, rating=h.get("score")) for rank, h in enumerate(hits) if h.get("appId")]
 
 
 def app_details(app_id, lang, country):
@@ -408,6 +409,10 @@ def rivals(best, pool):
             and norm(c.get("developer")) != norm(best.get("developer"))]
 
 
+def star_rating(v):
+    return round(v, 2) if isinstance(v, (int, float)) and v > 0 else None
+
+
 def entry_from(c, game_title, confidence, query, flags):
     shots = [s for s in (c.get("screenshots") or []) if s][:MAX_SHOTS]
     return {
@@ -419,6 +424,8 @@ def entry_from(c, game_title, confidence, query, flags):
         "screenshots": shots,
         "url": f"https://play.google.com/store/apps/details?id={c['appId']}",
         "playPass": c.get("playPass"),
+        "rating": star_rating(c.get("rating")),
+        "ratings": c.get("ratings"),
         "similarity": c.get("sim"),
         "confidence": confidence,
         "flags": flags,
@@ -446,7 +453,7 @@ def lookup(game):
     def merge(c, details):
         if details:
             c.update({k: details.get(k) for k in ("title", "developer", "genre", "icon", "screenshots", "playPass",
-                                                  "installs", "minInstalls")})
+                                                  "installs", "minInstalls", "ratings")}, rating=details.get("score"))
             c["detailed"] = True
         c["score"], c["sim"], c["flags"] = assess(title, c, genre)
 
@@ -510,14 +517,14 @@ def from_override(game, app_id):
     d = app_details(app_id, lang, country)
     if not d:
         return null_entry(f"override {app_id} not found on the Play Store", None, [])
-    c = dict(d, appId=app_id)
+    c = dict(d, appId=app_id, rating=d.get("score"))
     c["score"], c["sim"], c["flags"] = assess(game["title"], c, game.get("genre"))
     return entry_from(c, game["title"], "manual", None, c["flags"])
 
 
 def refresh_entry(game, e):
-    """Re-read a matched app's store page: its full screenshot set and whether
-    it carries the Play Pass badge today. The match itself is kept."""
+    """Re-read a matched app's store page: its full screenshot set, star rating,
+    and whether it carries the Play Pass badge today. The match itself is kept."""
     lang, country = ("ja", "jp") if CJK_RE.search(game["title"]) else ("en", "us")
     key = (e["appId"], lang, country)
     for attempt, wait in enumerate((0, 3, 10)):
@@ -539,7 +546,7 @@ def refresh_entry(game, e):
     shots = [s for s in (d.get("screenshots") or []) if s][:MAX_SHOTS]
     return dict(e, screenshots=shots or e["screenshots"], icon=d.get("icon") or e["icon"],
                 matched=d.get("title") or e["matched"], developer=d.get("developer") or e["developer"],
-                playPass=bool(d.get("playPass")))
+                playPass=bool(d.get("playPass")), rating=star_rating(d.get("score")), ratings=d.get("ratings"))
 
 
 # ---------------------------------------------------------------- cache / git
@@ -600,8 +607,8 @@ def main():
                     help="redo nulls, unbadged matches and loose title matches (doubtful), only nulls, or everything")
     ap.add_argument("--only", nargs="+", metavar="TITLE", help="(re)do just these titles")
     ap.add_argument("--refresh", action="store_true",
-                    help="re-read every matched app's store page (all screenshots, current Play Pass "
-                         "status) instead of looking games up; resumes where a refresh stopped today")
+                    help="re-read every matched app's store page (all screenshots, rating, current Play "
+                         "Pass status) instead of looking games up; resumes where a refresh stopped today")
     ap.add_argument("--limit", type=int, help="stop after this many lookups")
     ap.add_argument("--delay", type=float, default=0.6, help="seconds between requests (default 0.6)")
     ap.add_argument("--commit-every", type=int, default=0, metavar="N",
@@ -633,7 +640,7 @@ def main():
     if args.refresh:
         today = date.today().isoformat()
         queue = [g for g in games if (cache.get(g["title"]) or {}).get("appId")
-                 and cache[g["title"]].get("passChecked") != today]
+                 and (cache[g["title"]].get("passChecked") != today or cache[g["title"]].get("ratings") is None)]
         print(f"{len(queue)} matched games to refresh", flush=True)
     else:
         queue = [g for g in games if todo(g)]
@@ -655,7 +662,7 @@ def main():
                 e = refresh_entry(g, cache[t])
                 status = "store page incomplete, kept" if e.get("passError") else \
                     {True: "in Play Pass", False: "NOT in Play Pass", None: "store page gone"}[e["playPass"]]
-                info = f"{status}, shots={len(e['screenshots'])}"
+                info = f"{status}, shots={len(e['screenshots'])}, rating={e.get('rating')} ({e.get('ratings')})"
             else:
                 e = from_override(g, overrides[t]) if t in overrides else lookup(g)
                 if e["appId"]:

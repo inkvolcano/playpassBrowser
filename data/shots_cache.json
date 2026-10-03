@@ -38,7 +38,9 @@
   "flags": [],
   "query": null,
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.23,
+  "ratings": 136844
  },
  "1024 Puzzle Numbers Game": {
   "appId": "game2048.b2048game.twozerofoureight2048.game",
@@ -64,7 +66,9 @@
   "flags": [],
   "query": "1024 Puzzle Numbers Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.59,
+  "ratings": 280394
  },
  "12 labours of Hercules": {
   "appId": "com.jetdogs.hercules1",
@@ -99,7 +103,9 @@
   "flags": [],
   "query": "12 labours of Hercules",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.39,
+  "ratings": 1296
  },
  "123 Game for toddlers counting": {
   "appId": "com.midwin.learn.numbers.numbers123.gameforkids.tracing.counting.toddler.preschool.recognition",
