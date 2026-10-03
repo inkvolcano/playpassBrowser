@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Play Pass Browser</title>
+<meta name="description" content="Every Google Play Pass game with Play Store screenshots, searchable and sortable by genre.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://play-lh.googleusercontent.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@75..150,500..900&family=Figtree:wght@400;500;600;700&family=Martian+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a Play Pass ticket as the header (stub holds the live count), a sticky
+   search + genre strip, then an auto-fill grid of game cards with a dark "screen". */
+:root {
+  --bg: #edf0f6;
+  --surface: #ffffff;
+  --surface-2: #f5f7fb;
+  --ink: #151826;
+  --muted: #5a6279;
+  --line: #d6dbe7;
+  --brass: #f0ae35;
+  --brass-ink: #7a4d00;
+  --screen: #1a1e2d;
+  --focus: #2d6ae6;
+  --veil: rgb(237 240 246 / 0.86);
+  --shadow: 0 1px 2px rgb(21 24 38 / 0.05), 0 6px 18px rgb(21 24 38 / 0.06);
+  --f-display: "Anybody", "Arial Narrow", "Helvetica Neue", system-ui, sans-serif;
+  --f-body: "Figtree", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --f-mono: "Martian Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --chip-l: 52%;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1120; --surface: #161a2c; --surface-2: #1c2137; --ink: #e8ebf5; --muted: #9ba3bc;
+    --line: #2a3052; --brass: #f2b544; --brass-ink: #f6c96f; --screen: #090b15; --focus: #8eb1ff;
+    --veil: rgb(14 17 32 / 0.84); --shadow: none; --chip-l: 74%; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1120; --surface: #161a2c; --surface-2: #1c2137; --ink: #e8ebf5; --muted: #9ba3bc;
+  --line: #2a3052; --brass: #f2b544; --brass-ink: #f6c96f; --screen: #090b15; --focus: #8eb1ff;
+  --veil: rgb(14 17 32 / 0.84); --shadow: none; --chip-l: 74%; color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px));
+  padding-block: max(20px, env(safe-area-inset-top, 0px)) max(32px, env(safe-area-inset-bottom, 0px));
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 15px/1.5 var(--f-body);
+}
+.wrap { max-width: 1320px; margin-inline: auto; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 6px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- ticket header ---------- */
+.pass {
+  --stub: clamp(112px, 22vw, 190px);
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--stub);
+  background: var(--surface);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.pass-main { padding: clamp(18px, 3.2vw, 34px) clamp(18px, 3.4vw, 40px); min-width: 0; }
+.eyebrow {
+  margin: 0 0 6px;
+  font: 500 11px/1.4 var(--f-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brass-ink);
+}
+h1 {
+  margin: 0;
+  font-family: var(--f-display);
+  font-weight: 850;
+  font-variation-settings: "wdth" 132;
+  font-size: clamp(30px, 6.4vw, 64px);
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+.lede { margin: 12px 0 0; max-width: 60ch; color: var(--muted); font-size: clamp(14px, 1.6vw, 16.5px); }
+.sources { margin: 14px 0 0; font: 400 11.5px/1.6 var(--f-mono); color: var(--muted); }
+.sources a { text-underline-offset: 2px; }
+.stub {
+  position: relative;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 2px;
+  padding: 16px 8px;
+  border-left: 2px dashed var(--line);
+  background: var(--surface-2);
+  text-align: center;
+}
+/* ticket notches where the perforation meets the edge */
+.stub::before, .stub::after {
+  content: "";
+  position: absolute;
+  left: -14px;
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: var(--bg);
+}
+.stub::before { top: -13px; }
+.stub::after { bottom: -13px; }
+.stub-num {
+  font-family: var(--f-display);
+  font-weight: 800;
+  font-variation-settings: "wdth" 88;
+  font-size: clamp(30px, 5.6vw, 58px);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.stub-label { font: 500 11px/1.3 var(--f-mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.stub-bar { width: 70%; height: 6px; margin-top: 10px; border-radius: 3px; background: var(--line); overflow: hidden; }
+.stub-bar i { display: block; height: 100%; background: var(--brass); }
+.stub-small { font: 400 10.5px/1.4 var(--f-mono); color: var(--muted); margin-top: 4px; }
+@media (max-width: 560px) {
+  .pass { grid-template-columns: minmax(0, 1fr); }
+  .stub {
+    grid-template-columns: auto auto minmax(0, 1fr);
+    grid-template-areas: "num label bar" "num label small";
+    place-content: stretch;
+    justify-items: start;
+    align-items: center;
+    column-gap: 12px;
+    padding: 14px 20px;
+    border-left: 0;
+    border-top: 2px dashed var(--line);
+    text-align: left;
+  }
+  .stub::before { top: -14px; left: -13px; }
+  .stub::after { top: -14px; bottom: auto; left: auto; right: -13px; }
+  .stub-num { grid-area: num; font-size: 34px; }
+  .stub-label { grid-area: label; }
+  .stub-bar { grid-area: bar; width: 100%; margin: 0; align-self: end; }
+  .stub-small { grid-area: small; margin: 0; align-self: start; }
+}
+
+/* ---------- sticky controls ---------- */
+.bar {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 5;
+  margin: 18px calc(-1 * max(16px, env(safe-area-inset-left, 0px))) 0;
+  padding: 12px max(16px, env(safe-area-inset-left, 0px)) 10px;
+  background: var(--veil);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.bar-inner { max-width: 1320px; margin-inline: auto; display: grid; gap: 10px; }
+.row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.search { flex: 1 1 260px; min-width: 0; position: relative; display: flex; align-items: center; }
+.search svg { position: absolute; left: 12px; width: 18px; height: 18px; color: var(--muted); pointer-events: none; }
+.search input {
+  width: 100%;
+  height: 42px;
+  padding: 0 14px 0 38px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+.search input::placeholder { color: var(--muted); }
+.search input:focus-visible { outline: 3px solid var(--focus); outline-offset: 0; }
+.seg { display: inline-flex; padding: 3px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.seg button, .ghost {
+  height: 34px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--muted);
+  font: 600 13.5px/1 var(--f-body);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
+.ghost { height: 42px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); display: inline-flex; align-items: center; gap: 7px; }
+.ghost svg { width: 17px; height: 17px; }
+.genres { display: flex; gap: 6px; flex-wrap: wrap; }
+.genre {
+  --h: 250;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 11px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font: 500 13px/1 var(--f-body);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.genre::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: oklch(68% 0.16 var(--h)); }
+.genre.all::before { background: var(--brass); }
+.genre small { font: 400 10.5px/1 var(--f-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.genre[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--surface); }
+.genre[aria-pressed="true"] small { color: inherit; opacity: 0.75; }
+.status { margin: 0; font: 400 12px/1.4 var(--f-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+@media (max-width: 640px) {
+  .genres { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: -16px; padding-inline: 16px; }
+  .genres::-webkit-scrollbar { display: none; }
+  .ghost .label { display: none; }
+}
+
+/* ---------- grid + cards ---------- */
+main { margin-top: 18px; }
+.group + .group { margin-top: 30px; }
+.group-head { display: flex; align-items: baseline; gap: 10px; margin: 0 0 12px; }
+.group-head h2 {
+  --h: 250;
+  margin: 0;
+  font-family: var(--f-display);
+  font-weight: 800;
+  font-variation-settings: "wdth" 120;
+  font-size: clamp(20px, 2.6vw, 26px);
+  line-height: 1.1;
+  display: inline-flex; align-items: center; gap: 10px;
+}
+.group-head h2::before { content: ""; width: 12px; height: 12px; border-radius: 4px; background: oklch(68% 0.16 var(--h)); }
+.group-head span { font: 400 12px/1 var(--f-mono); color: var(--muted); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 248px), 1fr)); gap: 16px; }
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 330px;
+}
+.shots {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 526 / 296;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: var(--screen);
+  overflow: hidden;
+}
+button.shots { cursor: pointer; }
+.shots img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.shots .n {
+  position: absolute; top: 8px; right: 8px;
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: rgb(0 0 0 / 0.55);
+  color: #fff;
+  font: 500 10.5px/1 var(--f-mono);
+  font-variant-numeric: tabular-nums;
+}
+.dots { position: absolute; left: 0; right: 0; bottom: 7px; display: flex; justify-content: center; gap: 5px; pointer-events: none; }
+.dots i { width: 6px; height: 6px; border-radius: 50%; background: rgb(255 255 255 / 0.4); box-shadow: 0 0 2px rgb(0 0 0 / 0.5); }
+.dots i.on { background: #fff; }
+button.shots:hover img { filter: brightness(1.08); }
+.cover {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(var(--a, 135deg), oklch(58% 0.15 var(--h1, 250)), oklch(30% 0.11 var(--h2, 290)));
+  color: #fff;
+}
+.cover b {
+  font-family: var(--f-display);
+  font-weight: 850;
+  font-variation-settings: "wdth" 125;
+  font-size: clamp(40px, 5vw, 56px);
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 12px rgb(0 0 0 / 0.25);
+}
+.cover em {
+  position: absolute; left: 10px; bottom: 9px;
+  font: 400 10px/1 var(--f-mono); font-style: normal;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: rgb(255 255 255 / 0.8);
+}
+.meta { display: flex; gap: 12px; align-items: center; padding: 12px 14px 4px; min-width: 0; }
+.icon { flex: none; width: 48px; height: 48px; border-radius: 12px; background: var(--surface-2); object-fit: cover; }
+.icon.tile {
+  display: grid; place-items: center;
+  background: linear-gradient(var(--a, 135deg), oklch(58% 0.15 var(--h1, 250)), oklch(30% 0.11 var(--h2, 290)));
+  color: #fff; font: 800 17px/1 var(--f-display);
+}
+.txt { min-width: 0; }
+.title { margin: 0; font: 650 15px/1.25 var(--f-body); overflow-wrap: anywhere; text-wrap: balance; }
+.dev { margin: 3px 0 0; font-size: 12.5px; line-height: 1.3; color: var(--muted); overflow-wrap: anywhere; }
+.foot { margin-top: auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 14px 13px; }
+.tag { --h: 250; display: inline-flex; align-items: center; gap: 6px; font: 500 11px/1 var(--f-mono); color: var(--muted); letter-spacing: 0.02em; }
+.tag::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: oklch(68% 0.16 var(--h)); }
+.links { display: flex; gap: 4px; }
+.links a {
+  display: inline-flex; align-items: center; gap: 5px;
+  height: 30px; padding: 0 9px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  color: var(--ink);
+  text-decoration: none;
+  font: 600 12px/1 var(--f-body);
+}
+.links a:hover { border-color: var(--muted); }
+.links svg { width: 14px; height: 14px; flex: none; }
+.links a.store { background: var(--brass); border-color: var(--brass); color: #2a1a00; }
+.links a.store:hover { filter: brightness(1.05); }
+.empty { padding: 48px 16px; text-align: center; color: var(--muted); }
+.empty button { margin-top: 12px; }
+footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+footer p { margin: 0 0 6px; max-width: 75ch; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }
+@media (max-width: 420px) { .links a span { display: none; } .links a { padding: 0 10px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="pass">
+    <div class="pass-main">
+      <p class="eyebrow">Google Play Pass catalogue</p>
+      <h1>Play Pass Browser</h1>
+      <p class="lede" id="lede">Every game in Google Play Pass, with screenshots, icons and links from the Play Store. Tap a screenshot to see the next one.</p>
+      <p class="sources" id="sources"></p>
+    </div>
+    <div class="stub" aria-label="Catalogue size">
+      <span class="stub-num" id="stub-num">0</span>
+      <span class="stub-label">games</span>
+      <span class="stub-bar" aria-hidden="true"><i id="stub-bar"></i></span>
+      <span class="stub-small" id="stub-small"></span>
+    </div>
+  </header>
+</div>
+
+<div class="bar">
+  <div class="bar-inner">
+    <div class="row">
+      <label class="search">
+        <span class="sr-only">Search games</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="q" type="search" placeholder="Search games or developers" autocomplete="off" spellcheck="false">
+      </label>
+      <div class="seg" role="group" aria-label="Sort order">
+        <button type="button" id="sort-az" aria-pressed="true">A–Z</button>
+        <button type="button" id="sort-genre" aria-pressed="false">By genre</button>
+      </div>
+      <button type="button" class="ghost" id="theme" aria-label="Theme: match system">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg>
+        <span class="label" id="theme-label">System</span>
+      </button>
+    </div>
+    <div class="genres" id="genres" role="group" aria-label="Filter by genre"></div>
+    <p class="status" id="status" aria-live="polite"></p>
+  </div>
+</div>
+
+<div class="wrap">
+  <main id="list"></main>
+  <div class="empty" id="empty" hidden>
+    <p id="empty-text">No games match your search.</p>
+    <button type="button" class="ghost" id="clear">Clear search and filters</button>
+  </div>
+  <noscript><p class="empty">This catalogue needs JavaScript to show the games.</p></noscript>
+  <footer>
+    <p id="foot-list"></p>
+    <p id="foot-store"></p>
+  </footer>
+</div>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(() => {
+  "use strict";
+  const D = JSON.parse(document.getElementById("data").textContent);
+  const IMG_HOST = "https://play-lh.googleusercontent.com/";
+  const ICON = "s96";
+  const SHOT = "w526-h296";
+  const HUES = {
+    "Action": 25, "Adventure": 145, "Arcade": 330, "Board": 70, "Card": 195, "Casual": 110,
+    "Educational": 245, "Music": 300, "Puzzle": 280, "Racing": 5, "Role-Playing": 170,
+    "Simulation": 220, "Sports": 125, "Strategy": 45, "Word & Trivia": 350
+  };
+  const $ = (id) => document.getElementById(id);
+  const fmt = new Intl.NumberFormat("en");
+  const collator = new Intl.Collator("en", { numeric: true, sensitivity: "base" });
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const norm = (s) => String(s || "").normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const img = (path, size) => (/^https?:/.test(path) ? path : IMG_HOST + path).split("=")[0] + "=" + size;
+  const store = {
+    get(k) { try { return localStorage.getItem("ppb:" + k); } catch (e) { return null; } },
+    set(k, v) { try { localStorage.setItem("ppb:" + k, v); } catch (e) { /* storage unavailable */ } }
+  };
+
+  // games: [title, genreIndex, appId, icon, [screenshots], developer, playStoreTitle]
+  const games = D.games.map((g, i) => {
+    const [title, gi, appId, icon, shots, dev, matched] = g;
+    const genre = D.genres[gi];
+    return { i, title, gi, genre, appId, icon, shots: shots || [], dev, matched,
+             key: norm([title, dev, matched].filter(Boolean).join(" ")), el: null };
+  });
+  const byTitle = games.slice().sort((a, b) => collator.compare(a.title, b.title));
+
+  function hash(s) {
+    let h = 2166136261;
+    for (const ch of s) { h ^= ch.codePointAt(0); h = Math.imul(h, 16777619); }
+    return h >>> 0;
+  }
+  function initials(title) {
+    const words = title.replace(/[^\p{L}\p{N}\s]/gu, " ").trim().split(/\s+/).filter(Boolean);
+    if (!words.length) return "?";
+    if (/[぀-ヿ㐀-鿿]/.test(words[0])) return [...words[0]].slice(0, 2).join("");
+    return (words[0][0] + (words[1] ? words[1][0] : "")).toUpperCase();
+  }
+  function coverVars(g) {
+    const h = hash(g.title), base = HUES[g.genre] ?? 250;
+    const h1 = (base + (h % 50) - 25 + 360) % 360, h2 = (h1 + 35 + ((h >>> 8) % 70)) % 360;
+    return `--h1:${h1};--h2:${h2};--a:${(h >>> 16) % 360}deg`;
+  }
+  const ICONS = {
+    store: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z" fill="currentColor"/></svg>',
+    video: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m10.5 9.5 4.5 2.5-4.5 2.5z" fill="currentColor"/></svg>',
+    images: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="10" r="1.6" fill="currentColor"/><path d="m5 17 4.5-4.5 3 3 2.5-2.5L19 17" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>'
+  };
+
+  function shotsHtml(g) {
+    const n = g.shots.length;
+    if (!n) {
+      return `<div class="shots cover" style="${coverVars(g)}"><b aria-hidden="true">${esc(initials(g.title))}</b>` +
+             `<em>No Play Store match</em></div>`;
+    }
+    const pic = `<img src="${esc(img(g.shots[0], SHOT))}" alt="" loading="lazy" decoding="async">`;
+    if (n === 1) return `<div class="shots">${pic}</div>`;
+    const dots = Array.from({ length: n }, (_, k) => `<i${k ? "" : ' class="on"'}></i>`).join("");
+    return `<button type="button" class="shots" data-i="${g.i}" data-k="0" aria-label="${esc(g.title)}: screenshot 1 of ${n}, show next">` +
+           `${pic}<span class="n">1/${n}</span><span class="dots">${dots}</span></button>`;
+  }
+  function cardHtml(g) {
+    const q = (s) => encodeURIComponent(s);
+    const storeUrl = g.appId ? `https://play.google.com/store/apps/details?id=${q(g.appId)}`
+                             : `https://play.google.com/store/search?q=${q(g.title)}&c=apps`;
+    const icon = g.icon
+      ? `<img class="icon" src="${esc(img(g.icon, ICON))}" alt="" width="48" height="48" loading="lazy" decoding="async">`
+      : `<span class="icon tile" style="${coverVars(g)}" aria-hidden="true">${esc(initials(g.title))}</span>`;
+    return `<article class="card" style="--h:${HUES[g.genre] ?? 250}">` +
+      shotsHtml(g) +
+      `<div class="meta">${icon}<div class="txt"><h3 class="title">${esc(g.title)}</h3>` +
+      (g.dev ? `<p class="dev">${esc(g.dev)}</p>` : `<p class="dev">Not matched on the Play Store</p>`) + `</div></div>` +
+      `<div class="foot"><span class="tag" style="--h:${HUES[g.genre] ?? 250}">${esc(g.genre)}</span><nav class="links" aria-label="Links for ${esc(g.title)}">` +
+      `<a class="store" href="${esc(storeUrl)}" target="_blank" rel="noopener" aria-label="${g.appId ? "Open" : "Search for"} ${esc(g.title)} on Google Play">${ICONS.store}<span>${g.appId ? "Play" : "Find"}</span></a>` +
+      `<a href="https://www.youtube.com/results?search_query=${q(g.title + " gameplay")}" target="_blank" rel="noopener" aria-label="Search YouTube for ${esc(g.title)} gameplay">${ICONS.video}<span>Gameplay</span></a>` +
+      `<a href="https://www.google.com/search?tbm=isch&amp;q=${q(g.title + " game")}" target="_blank" rel="noopener" aria-label="Search Google Images for ${esc(g.title)}">${ICONS.images}<span>Images</span></a>` +
+      `</nav></div></article>`;
+  }
+
+  // Build every card once; sorting moves the same elements around.
+  const factory = document.createElement("div");
+  factory.innerHTML = games.map(cardHtml).join("");
+  Array.from(factory.children).forEach((el, i) => { games[i].el = el; });
+
+  // ----- header, footer, chips
+  const m = D.meta;
+  const withShots = games.filter((g) => g.shots.length).length;
+  const dateText = (iso) => iso ? new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }) : "";
+  $("stub-num").textContent = fmt.format(games.length);
+  $("stub-bar").style.width = (100 * withShots / Math.max(1, games.length)).toFixed(1) + "%";
+  $("stub-small").textContent = `${fmt.format(withShots)} with screenshots`;
+  $("sources").innerHTML = `List: <a href="${esc(m.listUrl)}" target="_blank" rel="noopener">YTECHB</a>, updated ${esc(dateText(m.listUpdated))} · Store data: ${esc(dateText(m.storeChecked))}`;
+  $("q").placeholder = `Search ${fmt.format(games.length)} games or developers`;
+  $("foot-list").innerHTML = `Game list from <a href="${esc(m.listUrl)}" target="_blank" rel="noopener">YTECHB's Play Pass list</a>, updated ${esc(dateText(m.listUpdated))}. Genres follow its sections, with Trivia and Word merged.`;
+  $("foot-store").textContent = `Screenshots, icons and links come from Google Play, checked ${dateText(m.storeChecked)}. ` +
+    `${fmt.format(games.length - withShots)} games have no confident Play Store match; they show a generated cover and a Play Store search link instead.`;
+
+  const counts = D.genres.map((_, gi) => games.filter((g) => g.gi === gi).length);
+  $("genres").innerHTML =
+    `<button type="button" class="genre all" data-g="-1" aria-pressed="true">All <small>${fmt.format(games.length)}</small></button>` +
+    D.genres.map((name, gi) => `<button type="button" class="genre" data-g="${gi}" style="--h:${HUES[name] ?? 250}" aria-pressed="false">${esc(name)} <small>${counts[gi]}</small></button>`).join("");
+
+  // ----- state
+  const list = $("list"), q = $("q");
+  let genre = -1;
+  let sort = store.get("sort") === "genre" ? "genre" : "az";
+  let groups = [];
+
+  function layout() {
+    list.textContent = "";
+    groups = [];
+    if (sort === "az") {
+      const grid = document.createElement("div");
+      grid.className = "grid";
+      byTitle.forEach((g) => grid.append(g.el));
+      list.innerHTML = '<h2 class="sr-only">Games A to Z</h2>';
+      list.append(grid);
+    } else {
+      D.genres.forEach((name, gi) => {
+        const sec = document.createElement("section");
+        sec.className = "group";
+        sec.innerHTML = `<div class="group-head"><h2 style="--h:${HUES[name] ?? 250}">${esc(name)}</h2><span></span></div><div class="grid"></div>`;
+        const grid = sec.lastElementChild;
+        byTitle.forEach((g) => { if (g.gi === gi) grid.append(g.el); });
+        groups.push({ gi, sec, count: sec.querySelector(".group-head span") });
+        list.append(sec);
+      });
+    }
+    $("sort-az").setAttribute("aria-pressed", String(sort === "az"));
+    $("sort-genre").setAttribute("aria-pressed", String(sort === "genre"));
+    apply();
+  }
+
+  function apply() {
+    const terms = norm(q.value).split(/\s+/).filter(Boolean);
+    const shownBy = new Array(D.genres.length).fill(0);
+    let shown = 0;
+    for (const g of games) {
+      const ok = (genre < 0 || g.gi === genre) && terms.every((t) => g.key.includes(t));
+      g.el.hidden = !ok;
+      if (ok) { shown++; shownBy[g.gi]++; }
+    }
+    for (const grp of groups) {
+      grp.sec.hidden = shownBy[grp.gi] === 0;
+      grp.count.textContent = `${shownBy[grp.gi]} ${shownBy[grp.gi] === 1 ? "game" : "games"}`;
+    }
+    const scope = genre < 0 ? "games" : `${D.genres[genre]} games`;
+    $("status").textContent = shown === games.length
+      ? `Showing all ${fmt.format(shown)} games`
+      : `Showing ${fmt.format(shown)} ${shown === 1 ? scope.replace(/s$/, "") : scope}` + (terms.length ? ` matching “${q.value.trim()}”` : "");
+    $("empty").hidden = shown > 0;
+    $("empty-text").textContent = terms.length ? `No ${scope} match “${q.value.trim()}”.` : `No ${scope} to show.`;
+  }
+
+  let timer = 0;
+  q.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(apply, 90); });
+  q.addEventListener("keydown", (e) => { if (e.key === "Escape") { q.value = ""; apply(); } });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "/" && document.activeElement !== q && !e.ctrlKey && !e.metaKey && !e.altKey) { e.preventDefault(); q.focus(); }
+  });
+  $("genres").addEventListener("click", (e) => {
+    const b = e.target.closest(".genre");
+    if (!b) return;
+    genre = Number(b.dataset.g);
+    document.querySelectorAll(".genre").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    apply();
+  });
+  $("sort-az").addEventListener("click", () => { sort = "az"; store.set("sort", sort); layout(); });
+  $("sort-genre").addEventListener("click", () => { sort = "genre"; store.set("sort", sort); layout(); });
+  $("clear").addEventListener("click", () => {
+    q.value = ""; genre = -1;
+    document.querySelectorAll(".genre").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.g === "-1")));
+    apply();
+  });
+
+  // ----- screenshot cycling (one delegated listener for every card)
+  function nextShot(btn) {
+    const g = games[Number(btn.dataset.i)], n = g.shots.length;
+    const k = (Number(btn.dataset.k) + 1) % n;
+    btn.dataset.k = String(k);
+    btn.querySelector("img").src = img(g.shots[k], SHOT);
+    btn.querySelector(".n").textContent = `${k + 1}/${n}`;
+    btn.querySelectorAll(".dots i").forEach((d, j) => d.classList.toggle("on", j === k));
+    btn.setAttribute("aria-label", `${g.title}: screenshot ${k + 1} of ${n}, show next`);
+    preload(btn, k);
+  }
+  function preload(btn, k) {
+    const g = games[Number(btn.dataset.i)];
+    const nxt = g.shots[(k + 1) % g.shots.length];
+    if (nxt) new Image().src = img(nxt, SHOT);
+  }
+  list.addEventListener("click", (e) => { const b = e.target.closest("button.shots"); if (b) nextShot(b); });
+  list.addEventListener("pointerover", (e) => {
+    const b = e.target.closest("button.shots");
+    if (b && !b.dataset.warm) { b.dataset.warm = "1"; preload(b, Number(b.dataset.k)); }
+  });
+  // A missing image falls back to the generated cover / initials tile.
+  list.addEventListener("error", (e) => {
+    const im = e.target;
+    if (!(im instanceof HTMLImageElement)) return;
+    const card = im.closest(".card"), g = games.find((x) => x.el === card);
+    if (!g) return;
+    if (im.classList.contains("icon")) {
+      im.outerHTML = `<span class="icon tile" style="${coverVars(g)}" aria-hidden="true">${esc(initials(g.title))}</span>`;
+    } else {
+      const box = im.closest(".shots");
+      const cover = document.createElement("div");
+      cover.className = "shots cover";
+      cover.setAttribute("style", coverVars(g));
+      cover.innerHTML = `<b aria-hidden="true">${esc(initials(g.title))}</b>`;
+      box.replaceWith(cover);
+    }
+  }, true);
+
+  // ----- theme: system -> light -> dark
+  const THEMES = ["system", "light", "dark"];
+  let theme = THEMES.includes(store.get("theme")) ? store.get("theme") : "system";
+  function setTheme(t) {
+    theme = t;
+    if (t === "system") delete document.documentElement.dataset.theme;
+    else document.documentElement.dataset.theme = t;
+    const label = { system: "System", light: "Light", dark: "Dark" }[t];
+    $("theme-label").textContent = label;
+    $("theme").setAttribute("aria-label", `Theme: ${t === "system" ? "match system" : label.toLowerCase()}. Change theme`);
+    store.set("theme", t);
+  }
+  $("theme").addEventListener("click", () => setTheme(THEMES[(THEMES.indexOf(theme) + 1) % THEMES.length]));
+  setTheme(theme);
+
+  layout();
+})();
+</script>
+</body>
+</html>
