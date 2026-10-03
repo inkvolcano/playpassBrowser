@@ -57017,7 +57017,22 @@
   "flags": [],
   "query": "Reigns",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.28,
+  "ratings": 147658,
+  "installs": 1550577,
+  "tags": [
+   "Adventure",
+   "Interactive story",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Low poly",
+   "Cards",
+   "Fantasy",
+   "Medieval fantasy",
+   "Offline"
+  ]
  },
  "Reigns: Game of Thrones": {
   "appId": "com.devolver.reignsGot",
@@ -57058,7 +57073,19 @@
   "flags": [],
   "query": "Reigns: Game of Thrones",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.57,
+  "ratings": 20750,
+  "installs": 369077,
+  "tags": [
+   "Strategy",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Low poly",
+   "Theme park",
+   "Offline"
+  ]
  },
  "Reigns: Her Majesty": {
   "appId": "com.devolver.reigns2",
@@ -57090,7 +57117,17 @@
   "flags": [],
   "query": "Reigns: Her Majesty",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.61,
+  "ratings": 30067,
+  "installs": 526501,
+  "tags": [
+   "Adventure",
+   "Interactive story",
+   "Casual",
+   "Stylized",
+   "Low poly"
+  ]
  },
  "Relaxing Rain Sounds Amayadori": {
   "appId": "com.Amayadori",
@@ -57128,7 +57165,18 @@
   "flags": [],
   "query": "Relaxing Rain Sounds Amayadori",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.9,
+  "ratings": 1587,
+  "installs": 91775,
+  "tags": [
+   "Simulation",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Anime",
+   "Offline"
+  ]
  },
  "Religion Inc. God Simulator": {
   "appId": "com.gamefirst.religioninc",
@@ -57161,7 +57209,19 @@
   "flags": [],
   "query": "Religion Inc. God Simulator",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.11,
+  "ratings": 13421,
+  "installs": 340819,
+  "tags": [
+   "Simulation",
+   "Sandbox",
+   "Single player",
+   "Stylized",
+   "Low poly",
+   "Immersive",
+   "Offline"
+  ]
  },
  "Reller Skating Girls": {
   "appId": "com.cocoplay.roller.girl",
@@ -57193,7 +57253,18 @@
   "flags": [],
   "query": "Reller Skating Girls",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.36,
+  "ratings": 296162,
+  "installs": 50676443,
+  "tags": [
+   "Simulation",
+   "Lifestyle",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Remember: Room Escape": {
   "appId": "com.dave.dubya.games.remember.full",
@@ -57234,7 +57305,17 @@
   "flags": [],
   "query": "Remember: Room Escape",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.38,
+  "ratings": 2103,
+  "installs": 86249,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Casual",
+   "Single player",
+   "Stylized"
+  ]
  },
  "Repit": {
   "appId": null,
@@ -57305,7 +57386,18 @@
   "flags": [],
   "query": "Reporter 2 – Scary Horror Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.91,
+  "ratings": 7574,
+  "installs": 576595,
+  "tags": [
+   "Action",
+   "Action-adventure",
+   "Survival horror",
+   "Single player",
+   "Stylized",
+   "Horror"
+  ]
  },
  "Reporter – Scary Horror Game": {
   "appId": "com.agaming.reporter",
@@ -57337,7 +57429,19 @@
   "flags": [],
   "query": "Reporter – Scary Horror Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.63,
+  "ratings": 13929,
+  "installs": 1013706,
+  "tags": [
+   "Action",
+   "Action-adventure",
+   "Survival horror",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Horror"
+  ]
  },
  "Rescue Agent: Shoot & Hunt": {
   "appId": "com.game.rescueagent",
@@ -57372,7 +57476,13 @@
   "flags": [],
   "query": "Rescue Agent: Shoot & Hunt",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.4,
+  "ratings": 19907,
+  "installs": 4009190,
+  "tags": [
+   "Action"
+  ]
  },
  "RETSNOM": {
   "appId": null,
@@ -57431,7 +57541,19 @@
   "flags": [],
   "query": "Return to Monkey Island",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.2,
+  "ratings": 1517,
+  "installs": 122131,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Mystery",
+   "Offline"
+  ]
  },
  "Reventure": {
   "appId": null,
@@ -57476,7 +57598,18 @@
   "flags": [],
   "query": "ReversEstory",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.56,
+  "ratings": 5901,
+  "installs": 325092,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Reviver: Premium": {
   "appId": "com.cottongame.reviver",
@@ -57501,7 +57634,13 @@
   "flags": [],
   "query": "Reviver: Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.34,
+  "ratings": 336,
+  "installs": 16629,
+  "tags": [
+   "Casual"
+  ]
  },
  "Rhythm Realms: Funkin’ RPG": {
   "appId": "com.Agonalea.BeatArena",
@@ -57539,7 +57678,19 @@
   "flags": [],
   "query": "Rhythm Realms: Funkin’ RPG",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.77,
+  "ratings": 419,
+  "installs": 120697,
+  "tags": [
+   "Music",
+   "Performance",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Low poly",
+   "Offline"
+  ]
  },
  "Rhythmic Gymnastics Dream Team": {
   "appId": "com.cocoplay.gymnastics.simulator",
@@ -57571,7 +57722,19 @@
   "flags": [],
   "query": "Rhythmic Gymnastics Dream Team",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.6,
+  "ratings": 62264,
+  "installs": 12201301,
+  "tags": [
+   "Simulation",
+   "Lifestyle",
+   "Dress-up",
+   "Single player",
+   "Stylized",
+   "Sports",
+   "Offline"
+  ]
  },
  "Rich Girl Mall – Shopping Game": {
   "appId": "com.cocoplay.richgirl",
@@ -57603,7 +57766,20 @@
   "flags": [],
   "query": "Rich Girl Mall – Shopping Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.28,
+  "ratings": 241090,
+  "installs": 35914848,
+  "tags": [
+   "Simulation",
+   "Lifestyle",
+   "Dress-up",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Shop & supermarket",
+   "Offline"
+  ]
  },
  "Rich Girls Shopping Games": {
   "appId": "com.beansprites.richgirlsclubFREE",
@@ -57632,7 +57808,17 @@
   "flags": [],
   "query": "Rich Girls Shopping Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.24,
+  "ratings": 31317,
+  "installs": 11506105,
+  "tags": [
+   "Simulation",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Riddle Test: Brain Teaser Game": {
   "appId": "com.matchingham.braindom3",
@@ -57673,7 +57859,19 @@
   "flags": [],
   "query": "Riddle Test: Brain Teaser Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.95,
+  "ratings": 38425,
+  "installs": 6334518,
+  "tags": [
+   "Puzzle",
+   "Brain teaser",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Offline"
+  ]
  },
  "Rilakkuma Farm Games": {
   "appId": "jp.co.imagineer.rilakkuma.farm",
@@ -57714,7 +57912,19 @@
   "flags": [],
   "query": "Rilakkuma Farm Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.42,
+  "ratings": 25924,
+  "installs": 1835580,
+  "tags": [
+   "Simulation",
+   "Management",
+   "Farming",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Farm"
+  ]
  },
  "Riptide GP2": {
   "appId": "com.vectorunit.red",
@@ -57755,7 +57965,24 @@
   "flags": [],
   "query": "Riptide GP2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.67,
+  "ratings": 244692,
+  "installs": 56392070,
+  "tags": [
+   "Racing",
+   "Water racing",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Stylized",
+   "Stylized-realistic",
+   "Vehicles",
+   "Boat",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Riptide GP: Renegade": {
   "appId": "com.vectorunit.silver.googleplay",
