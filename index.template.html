@@ -539,13 +539,14 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   const ALL_REGIONS = (1 << REGIONS.length) - 1;
 
   // games: [title, genreIndex, appId, icon, [screenshots], developer, playStoreTitle, inPlayPass 1/0/null,
-  //         starRating, numberOfRatings, installs, [tag indexes into D.tags], region bits]
+  //         starRating, numberOfRatings, installs, [tag indexes into D.tags], region bits,
+  //         per-region store id when a country sells its own edition (or null)]
   const games = D.games.map((g, i) => {
-    const [title, gi, appId, icon, shots, dev, matched, pass, rating, ratings, installs, tagIds, rbits] = g;
+    const [title, gi, appId, icon, shots, dev, matched, pass, rating, ratings, installs, tagIds, rbits, alt] = g;
     const genre = D.genres[gi];
     const tags = (tagIds || []).map((t) => D.tags[t]);
     return { i, title, gi, genre, appId, icon, shots: shots || [], dev, matched, pass, rating, ratings,
-             installs: installs || 0, tagIds: tagIds || [], rbits: rbits ?? ALL_REGIONS,
+             installs: installs || 0, tagIds: tagIds || [], rbits: rbits ?? ALL_REGIONS, alt: alt || null,
              key: norm([title, dev, matched, ...tags].filter(Boolean).join(" ")), el: null };
   });
   const confirmedOnly = !!D.meta.confirmedOnly;
@@ -712,6 +713,10 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   let pool = [];  // games the current region's store offers
   function renderRegion() {
     pool = games.filter(inRegion);
+    // a country that sells its own edition of a game gets a Play link to that edition
+    games.forEach((g) => {
+      if (g.alt) g.el.querySelector("a.store").href = `https://play.google.com/store/apps/details?id=${encodeURIComponent(g.alt[region] || g.appId)}`;
+    });
     const r = REGIONS[region];
     const withShots = pool.filter((g) => g.shots.length).length;
     $("stub-num").textContent = fmt.format(pool.length);

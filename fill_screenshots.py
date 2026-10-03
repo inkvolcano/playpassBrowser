@@ -576,10 +576,27 @@ def refresh_entry(game, e):
                 installs=install_total(d), tags=store_tags(d.get("categories")))
 
 
-def search_ids(query, country):
-    """App ids that a Play Store search from this country returns, or None if the search failed."""
+REGION_SUFFIX_RE = re.compile(r"(?:[._-]?(?:na|eu|us|uk|jp|ww|global|asia|row|intl))+$")
+
+
+def package_core(app_id):
+    """Package name without a trailing region marker: com.Level5.LT1RNA and com.Level5.LT1REU -> com.level5.lt1r."""
+    return REGION_SUFFIX_RE.sub("", app_id.lower())
+
+
+def is_twin(e, h):
+    """Whether a search hit is a regional edition of the matched app: same developer, and the
+    same title or the same package name up to a region marker (Level-5 sells Layton as
+    com.Level5.LT1RNA in the US and com.Level5.LT1REU in Europe)."""
+    if not h.get("appId") or h["appId"] == e["appId"] or norm(h.get("developer")) != norm(e.get("developer")):
+        return False
+    return norm(h.get("title")) == norm(e.get("matched")) or package_core(h["appId"]) == package_core(e["appId"])
+
+
+def region_search(query, country):
+    """Search hits from this country's Play Store, or None if the search failed."""
     try:
-        return [h["appId"] for h in _call(gp_search, query, "en", country, 50, False) if h.get("appId")]
+        return [h for h in _call(gp_search, query, "en", country, 50, False) if h.get("appId")]
     except NotFoundError:
         return None
     except Blocked:
@@ -590,23 +607,36 @@ def search_ids(query, country):
 
 
 def region_available(e, country):
-    """Whether the app is offered in this country's Play Store.
+    """Whether the game is offered in this country's Play Store: (available, twin appId).
 
     A details page loads from any country and the Play Pass badge shows
     everywhere, but search only returns apps offered in the searcher's country.
-    True: a search from the country finds the app. False: it doesn't, while the
-    same searches from a reference country (US, or GB for the US) do. None:
-    no search finds it anywhere, so there's no telling."""
+    True: a search from the country finds the app, or a regional edition of it
+    that carries the Play Pass badge (returned as the twin). False: neither,
+    while the same searches from a reference country (US, or GB for the US)
+    find the app. None: no search finds it anywhere, so there's no telling."""
     app_id, name = e["appId"], e.get("matched") or ""
     queries = list(dict.fromkeys(q for q in (name, f"{name} {e.get('developer') or ''}".strip(), app_id) if q))
+    failed, twins = False, []
     for q in queries:
-        if app_id in (search_ids(q, country) or []):
-            return True
+        hits = region_search(q, country)
+        if hits is None:
+            failed = True  # a failed search proves nothing
+            continue
+        if any(h["appId"] == app_id for h in hits):
+            return True, None
+        twins += [h["appId"] for h in hits if is_twin(e, h) and h["appId"] not in twins]
+    for twin in twins:
+        d = app_details(twin, "en", country)
+        if d and d.get("playPass"):
+            return True, twin
+    if failed:
+        return None, None
     ref = "gb" if country == "us" else "us"
     for q in queries:
-        if app_id in (search_ids(q, ref) or []):
-            return False
-    return None
+        if any(h["appId"] == app_id for h in region_search(q, ref) or []):
+            return False, None
+    return None, None
 
 
 # ---------------------------------------------------------------- cache / git
@@ -703,9 +733,18 @@ def main():
 
     today = date.today().isoformat()
     if args.region:
-        def region_todo(e):
-            return any(((e.get("regions") or {}).get(cc) or {}).get("checked") != today for cc in args.region)
-        queue = [g for g in games if (cache.get(g["title"]) or {}).get("appId") and region_todo(cache[g["title"]])]
+        def region_todo(t, e):
+            if args.only:
+                return t in args.only
+            done_ = [((e.get("regions") or {}).get(cc) or {}) for cc in args.region]
+            if args.recheck == "all":
+                return True
+            if args.recheck in ("doubtful", "nulls"):  # not found offered (doubtful) / unknown (nulls)
+                bad = (lambda r: r.get("available") is not True) if args.recheck == "doubtful" \
+                    else (lambda r: r.get("available") is None)
+                return any(bad(r) for r in done_)
+            return any(r.get("checked") != today for r in done_)
+        queue = [g for g in games if (cache.get(g["title"]) or {}).get("appId") and region_todo(g["title"], cache[g["title"]])]
         print(f"{len(queue)} matched games to check in: {', '.join(args.region)}", flush=True)
     elif args.refresh:
         queue = [g for g in games if (cache.get(g["title"]) or {}).get("appId")
@@ -737,8 +776,10 @@ def main():
                     k = (e["appId"], cc)
                     if k not in seen:
                         seen[k] = region_available(e, cc)
-                    e["regions"][cc] = {"available": seen[k], "checked": today}
+                    available, twin = seen[k]
+                    e["regions"][cc] = dict({"available": available, "checked": today}, **({"appId": twin} if twin else {}))
                 info = ", ".join(f"{cc}: {({True: 'offered', False: 'NOT OFFERED', None: 'unknown'})[e['regions'][cc]['available']]}"
+                                 + (f" as {e['regions'][cc]['appId']}" if e["regions"][cc].get("appId") else "")
                                  for cc in args.region)
             elif args.refresh:
                 e = refresh_entry(g, cache[t])

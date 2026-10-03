@@ -44,6 +44,13 @@ def offered(e, cc):
     return ((e.get("regions") or {}).get(cc) or {}).get("available") is not False
 
 
+def alt_ids(e, regions):
+    """Per region, the regional edition a country's store sells instead of the US app
+    (Layton's European listings, say), or None when there's none anywhere."""
+    ids = [((e.get("regions") or {}).get(cc) or {}).get("appId") for cc in regions]
+    return ids if any(ids) else None
+
+
 def time_zones():
     """Country code -> its IANA time zones, so the page can guess the visitor's country."""
     zones = {}
@@ -117,7 +124,8 @@ def main(argv=None):
                      e["rating"] if rated else None, e["ratings"] if rated else None,
                      e.get("installs") if app_id else None,
                      [tag_index[t] for t in (e.get("tags") or [])] if app_id else [],
-                     sum(1 << i for i, cc in enumerate(regions) if not app_id or offered(e, cc))])
+                     sum(1 << i for i, cc in enumerate(regions) if not app_id or offered(e, cc)),
+                     alt_ids(e, regions) if app_id else None])
         if e.get("checked"):
             checked.append(e["checked"])
         if app_id and e.get("passChecked"):
