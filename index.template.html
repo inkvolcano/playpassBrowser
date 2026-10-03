@@ -689,7 +689,8 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   }
   let region = guessRegion();
   const inRegion = (g) => (g.rbits >> region) & 1;
-  $("region").innerHTML = REGIONS.map((r, i) => `<option value="${i}">${esc(regionName(r))}</option>`).join("");
+  $("region").innerHTML = REGIONS.map((r, i) => ({ r, i })).sort((a, b) => collator.compare(regionName(a.r), regionName(b.r)))
+    .map(({ r, i }) => `<option value="${i}">${esc(regionName(r))}</option>`).join("");
   $("region").value = String(region);
   $("region-box").hidden = REGIONS.length < 2;
   $("sources").innerHTML = `List: <a href="${esc(m.listUrl)}" target="_blank" rel="noopener">YTECHB</a>, updated ${esc(dateText(m.listUpdated))} · Store data: ${esc(dateText(m.passChecked || m.storeChecked))}`;

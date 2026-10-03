@@ -35,8 +35,10 @@ import re
 import ssl
 import subprocess
 import sys
+import threading
 import time
 import unicodedata
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date
 from difflib import SequenceMatcher
 from pathlib import Path
@@ -156,13 +158,15 @@ class Throttle:
 
 
 THROTTLE = Throttle(0.6)
+_tls = threading.local()  # parallel region checks give each thread its own throttle
 _app_memo = {}
 
 
 def _call(fn, *args, **kw):
     """Throttled call; backs off on 429/5xx/network errors. NotFoundError passes through."""
+    throttle = getattr(_tls, "throttle", None) or THROTTLE
     for backoff in (10, 30, 90, None):
-        THROTTLE.wait()
+        throttle.wait()
         try:
             return fn(*args, **kw)
         except NotFoundError:
@@ -613,8 +617,8 @@ def region_available(e, country):
     everywhere, but search only returns apps offered in the searcher's country.
     True: a search from the country finds the app, or a regional edition of it
     that carries the Play Pass badge (returned as the twin). False: neither,
-    while the same searches from a reference country (US, or GB for the US)
-    find the app. None: no search finds it anywhere, so there's no telling."""
+    while the same searches from a reference country (US, UK or Japan) find
+    the app. None: no search finds it anywhere, so there's no telling."""
     app_id, name = e["appId"], e.get("matched") or ""
     queries = list(dict.fromkeys(q for q in (name, f"{name} {e.get('developer') or ''}".strip(), app_id) if q))
     failed, twins = False, []
@@ -632,10 +636,10 @@ def region_available(e, country):
             return True, twin
     if failed:
         return None, None
-    ref = "gb" if country == "us" else "us"
-    for q in queries:
-        if any(h["appId"] == app_id for h in region_search(q, ref) or []):
-            return False, None
+    for ref in [r for r in ("us", "gb", "jp") if r != country]:
+        for q in queries:
+            if any(h["appId"] == app_id for h in region_search(q, ref) or []):
+                return False, None
     return None, None
 
 
@@ -689,6 +693,77 @@ def summarize(cache, games):
             print(f"  shared appId {a}: {titles}")
 
 
+# ---------------------------------------------------------------- regions
+
+def region_todo(e, cc, recheck, today):
+    r = (e.get("regions") or {}).get(cc) or {}
+    if recheck == "all":
+        return True
+    if recheck == "doubtful":  # anything not found offered
+        return r.get("available") is not True
+    if recheck == "nulls":  # unknown or never checked
+        return r.get("available") is None
+    return r.get("checked") != today
+
+
+def run_regions(args, games, order, cache, today):
+    """--region: check every matched game in each country. Countries run in
+    parallel threads (--jobs at a time), each with its own throttle."""
+    queues = {cc: [g["title"] for g in games if (cache.get(g["title"]) or {}).get("appId")
+                   and (g["title"] in args.only if args.only else region_todo(cache[g["title"]], cc, args.recheck, today))]
+              for cc in args.region}
+    total = sum(map(len, queues.values()))
+    print(f"{total} checks: " + ", ".join(f"{cc} {len(q)}" for cc, q in queues.items()), flush=True)
+    label = {True: "offered", False: "NOT OFFERED", None: "unknown"}
+    lock, stop, done = threading.Lock(), threading.Event(), [0]
+
+    def message():
+        return f"Check Play Store availability ({', '.join(args.region)}): {done[0]}/{total} checks"
+
+    def run(cc):
+        _tls.throttle = Throttle(args.delay)
+        seen = {}  # appId -> result, for apps YTECHB lists twice
+        for i, t in enumerate(queues[cc], 1):
+            if stop.is_set():
+                return
+            e = cache[t]
+            if e["appId"] not in seen:
+                seen[e["appId"]] = region_available(e, cc)
+            available, twin = seen[e["appId"]]
+            r = dict({"available": available, "checked": today}, **({"appId": twin} if twin else {}))
+            with lock:
+                cache[t] = dict(cache[t], regions=dict(cache[t].get("regions") or {}, **{cc: r}))
+                done[0] += 1
+                print(f"[{cc} {i}/{len(queues[cc])}] {t} -> {label[available]}" + (f" as {twin}" if twin else ""), flush=True)
+                if done[0] % 20 == 0:
+                    save_cache(cache, order)
+                if args.commit_every and done[0] % args.commit_every == 0:
+                    save_cache(cache, order)
+                    git_commit(message(), args.push)
+
+    pool = ThreadPoolExecutor(max_workers=max(1, args.jobs))
+    try:
+        for f in as_completed([pool.submit(run, cc) for cc in args.region]):
+            f.result()
+    except BaseException as e:
+        stop.set()  # let the other countries finish the game they're on, then save
+        print("STOPPED - looks blocked or rate-limited: " + str(e) if isinstance(e, Blocked)
+              else f"stopping ({type(e).__name__}) - saving progress", flush=True)
+        pool.shutdown(wait=True)
+        save_cache(cache, order)
+        sys.exit(2 if isinstance(e, Blocked) else 130 if isinstance(e, KeyboardInterrupt) else 1)
+    pool.shutdown()
+    save_cache(cache, order)
+    if args.commit_every and done[0]:
+        git_commit(message(), args.push)
+    for cc in args.region:
+        res = [(cache[t].get("regions") or {}).get(cc) or {} for t in queues[cc]]
+        print(f"{cc}: {sum(1 for r in res if r.get('available') is True)} offered "
+              f"({sum(1 for r in res if r.get('appId'))} as a regional edition), "
+              f"{sum(1 for r in res if r.get('available') is False)} not offered, "
+              f"{sum(1 for r in res if r.get('available') is None)} unknown", flush=True)
+
+
 # ---------------------------------------------------------------- main
 
 def main():
@@ -703,6 +778,8 @@ def main():
     ap.add_argument("--region", nargs="+", metavar="CC", type=str.lower,
                     help="check which matched apps these countries' Play Stores offer (two-letter codes, "
                          "e.g. nl de); resumes where a check stopped today")
+    ap.add_argument("--jobs", type=int, default=1, metavar="N",
+                    help="with --region: check N countries at the same time (default 1)")
     ap.add_argument("--limit", type=int, help="stop after this many lookups")
     ap.add_argument("--delay", type=float, default=0.6, help="seconds between requests (default 0.6)")
     ap.add_argument("--commit-every", type=int, default=0, metavar="N",
@@ -733,20 +810,11 @@ def main():
 
     today = date.today().isoformat()
     if args.region:
-        def region_todo(t, e):
-            if args.only:
-                return t in args.only
-            done_ = [((e.get("regions") or {}).get(cc) or {}) for cc in args.region]
-            if args.recheck == "all":
-                return True
-            if args.recheck in ("doubtful", "nulls"):  # not found offered (doubtful) / unknown (nulls)
-                bad = (lambda r: r.get("available") is not True) if args.recheck == "doubtful" \
-                    else (lambda r: r.get("available") is None)
-                return any(bad(r) for r in done_)
-            return any(r.get("checked") != today for r in done_)
-        queue = [g for g in games if (cache.get(g["title"]) or {}).get("appId") and region_todo(g["title"], cache[g["title"]])]
-        print(f"{len(queue)} matched games to check in: {', '.join(args.region)}", flush=True)
-    elif args.refresh:
+        run_regions(args, games, order, cache, today)
+        if not args.no_build:
+            rebuild()
+        return
+    if args.refresh:
         queue = [g for g in games if (cache.get(g["title"]) or {}).get("appId")
                  and (cache[g["title"]].get("passChecked") != today or cache[g["title"]].get("ratings") is None
                       or cache[g["title"]].get("tags") is None)]
@@ -759,29 +827,15 @@ def main():
         queue = queue[:args.limit]
 
     def checkpoint_message():
-        if args.region:
-            return f"Check Play Store availability ({', '.join(args.region)}): {done}/{len(queue)} games"
         if args.refresh:
             return f"Refresh Play Store data: {done}/{len(queue)} games"
         return f"Cache Play Store data: {sum(1 for x in order if x in cache)}/{len(order)} games"
 
     done = 0
-    seen = {}  # (appId, country) -> result, for apps YTECHB lists twice
     try:
         for i, g in enumerate(queue, 1):
             t = g["title"]
-            if args.region:
-                e = dict(cache[t], regions=dict(cache[t].get("regions") or {}))
-                for cc in args.region:
-                    k = (e["appId"], cc)
-                    if k not in seen:
-                        seen[k] = region_available(e, cc)
-                    available, twin = seen[k]
-                    e["regions"][cc] = dict({"available": available, "checked": today}, **({"appId": twin} if twin else {}))
-                info = ", ".join(f"{cc}: {({True: 'offered', False: 'NOT OFFERED', None: 'unknown'})[e['regions'][cc]['available']]}"
-                                 + (f" as {e['regions'][cc]['appId']}" if e["regions"][cc].get("appId") else "")
-                                 for cc in args.region)
-            elif args.refresh:
+            if args.refresh:
                 e = refresh_entry(g, cache[t])
                 status = "store page incomplete, kept" if e.get("passError") else \
                     {True: "in Play Pass", False: "NOT in Play Pass", None: "store page gone"}[e["playPass"]]
@@ -814,13 +868,16 @@ def main():
     if args.commit_every and done:
         git_commit(checkpoint_message(), args.push)
     summarize(cache, games)
-
     if not args.no_build:
-        try:
-            import build_index
-        except ImportError:
-            return
-        build_index.main([])
+        rebuild()
+
+
+def rebuild():
+    try:
+        import build_index
+    except ImportError:
+        return
+    build_index.main([])
 
 
 if __name__ == "__main__":

@@ -162,8 +162,10 @@ def main(argv=None):
         off = sum(1 for r in rows if not r[12] >> i & 1)
         checked = sum(1 for g, e in shown if e.get("appId") and cc in (e.get("regions") or {}))
         note = "" if cc == HOME_REGION and not checked else f", checked {checked}/{matched_rows}"
+        # the home store is only checked for games not matched through its own search
+        partial = cc != HOME_REGION and checked and checked < matched_rows
         print(f"region {cc}: {len(rows) - off} offered, {off} not{note}"
-              + (" - INCOMPLETE: unchecked games count as offered" if checked and checked < matched_rows else ""))
+              + (" - INCOMPLETE: unchecked games count as offered" if partial else ""))
     if nowhere:
         print(f"left out, offered in none of the regions: {len(nowhere)}: " + "; ".join(nowhere))
     if merged:

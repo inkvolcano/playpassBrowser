@@ -27,10 +27,11 @@ be matched to a Play Store app; both are left out (the footer gives the counts).
 left are marked "Not in Play Pass", unmatched ones get a generated gradient
 cover and a Play Store search link.
 
-Not every game is offered everywhere. The country menu in the header (United
-States and the Netherlands so far) hides games that country's Play Store
-doesn't offer; on a first visit the page picks the country from your time zone
-or browser language. The list itself comes from the US store, so games that
+Not every game is offered everywhere. The country menu in the header hides
+games that country's Play Store doesn't offer: Australia, Belgium, Brazil,
+Canada, France, Germany, Italy, Japan, the Netherlands, Spain, the United
+Kingdom and the United States so far. On a first visit the page picks the
+country from your time zone or browser language. The list itself comes from the US store, so games that
 are in Play Pass only outside the US are missing.
 
 ## Files
@@ -55,7 +56,8 @@ python3 fetch_games.py                # 1. refresh the game list from YTECHB
 python3 fill_screenshots.py           # 2. look up games not in the cache yet
 python3 fill_screenshots.py --refresh # 3. re-check every game's Play Pass status, rating,
                                       #    downloads, tags and screenshots, then rebuild index.html
-python3 fill_screenshots.py --region nl  # 4. re-check which games the Dutch Play Store offers
+python3 fill_screenshots.py --region au be br ca de es fr gb it jp nl --jobs 4
+                                      # 4. re-check which games each country's store offers
 ```
 
 `fill_screenshots.py` resumes from `data/shots_cache.json`, so it only looks up
@@ -64,9 +66,12 @@ again to continue. A full run over ~1,800 games takes about 45 minutes because
 requests are throttled (`--delay`, 0.6 s by default) to avoid rate limiting.
 `--refresh` keeps every match and re-reads each app's store page (about 35
 minutes); it resumes too, skipping games already refreshed that day. So does
-`--region` (about 25 minutes per country). To add a country, run it with that
-country's two-letter code (`--region de`, or several: `--region de be`); the
-next build adds it to the page's country menu.
+`--region` (about 25 minutes per country; `--jobs 4` checks four countries at
+once). To add a country, run it with that country's two-letter code
+(`--region se`, or several: `--region se pl`); the next build adds it to the
+page's country menu. The US store, where the list comes from, only needs
+checking for games that weren't matched through a US search (manual overrides
+and Japanese titles).
 
 Useful options:
 
@@ -131,9 +136,8 @@ in every country (even ones without Play Pass), so neither says what a country
 offers. Search does: a Play Store search from a country only returns apps
 offered there. For each app, `--region` searches its store name, then name plus
 developer, then its package name, from that country. If a search finds the app,
-it's offered. If none does, the same searches run from the US (from the UK
-when checking the US); when they find the app there, it's marked as not
-offered. When no search finds it anywhere, it's unknown and stays listed.
+it's offered. If none does, the same searches run from the US, the UK or
+Japan; when they find the app there, it's marked as not offered. When no search finds it anywhere, it's unknown and stays listed.
 Some games are sold under a separate listing per region (Level-5's Layton games
 have European editions): when a country's search turns up an app from the same
 developer with the same title or the same package name apart from a region
