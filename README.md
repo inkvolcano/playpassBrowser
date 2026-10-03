@@ -2,7 +2,10 @@
 
 A single-page catalogue of every Google Play Pass game: `index.html`.
 
-Open `index.html` in a browser. It is one self-contained file (the game data is
+**Live: https://inkvolcano.github.io/playpassBrowser/** (GitHub Pages, published
+from `main`; every push to `main` updates it within a minute or two).
+
+You can also open `index.html` straight from disk. It is one self-contained file (the game data is
 embedded); only the screenshots, icons and fonts load from the web
 (`play-lh.googleusercontent.com`, Google Fonts). Each card has the game's icon,
 title, developer and genre, up to 12 screenshots that cycle when you tap them,
