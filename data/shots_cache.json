@@ -33505,7 +33505,13 @@
    "Stylized",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hidden Objects Island": {
   "appId": "hidden.objects.island.game",
@@ -33544,7 +33550,13 @@
   "installs": 248963,
   "tags": [
    "Puzzle"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hidden Through Time": {
   "appId": "com.CrazyMonkeyStudios.Hidden",
@@ -33589,7 +33601,13 @@
    "Casual",
    "Stylized",
    "Light-hearted"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hidden Through Time 2: Magic": {
   "appId": "com.Rogueside.HTT2",
@@ -33639,7 +33657,13 @@
    "Hidden object",
    "Casual",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hidden Through Time: Discovery": {
   "appId": "com.Rogueside.HTT3",
@@ -33690,7 +33714,13 @@
    "Stylized",
    "Light-hearted",
    "Modern"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "High Heels!": {
   "appId": "com.uncosoft.highheels",
@@ -33742,7 +33772,13 @@
    "Single player",
    "Stylized",
    "Fashion"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "High School Popular Girls": {
   "appId": "com.LithGames.FirstDay",
@@ -33791,7 +33827,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "High Sea Saga DX": {
   "appId": "net.kairosoft.android.piratedx",
@@ -33839,7 +33881,13 @@
   "tags": [
    "Stylized",
    "Pixelated"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Highrise Heroes Word Challenge": {
   "appId": "com.fallentreegames.google.highriseheroes",
@@ -33883,7 +33931,13 @@
    "Search",
    "Casual",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hit The Button Maths": {
   "appId": null,
@@ -33946,7 +34000,13 @@
    "Science fiction",
    "Space",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hocus 2": {
   "appId": "com.gamebrain.hocus2",
@@ -33992,7 +34052,13 @@
    "Abstract",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hocus Pocus Alfie Atkins": {
   "appId": "no.hypergames.hokuspokuspremium",
@@ -34044,7 +34110,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Holedown": {
   "appId": "com.grapefrukt.games.bore",
@@ -34091,7 +34163,13 @@
    "Brick break",
    "Abstract",
    "Light-hearted"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Home Design Dreams house games": {
   "appId": null,
@@ -34160,7 +34238,13 @@
    "Casual",
    "Stylized",
    "Pixelated"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Homo Machina": {
   "appId": null,
@@ -34227,7 +34311,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hoop World Flip Dunk Game 3D": {
   "appId": "com.tapped.dunkworld",
@@ -34271,7 +34361,13 @@
   "installs": 11152581,
   "tags": [
    "Sports"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hoplite": {
   "appId": "com.magmafortress.hoplite",
@@ -34303,7 +34399,13 @@
    "Fantasy",
    "Medieval fantasy",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Horizon Chase Arcade Racing": {
   "appId": null,
@@ -34365,7 +34467,13 @@
    "Modern",
    "Crime",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Horror Tale 2: Samantha": {
   "appId": "com.eg.horrortale2",
@@ -34412,7 +34520,13 @@
    "Stylized",
    "Horror",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Horror Tale 3: The Witch": {
   "appId": "com.eg.horrortale3",
@@ -34462,7 +34576,13 @@
    "Action-adventure",
    "Survival horror",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Horse Quest": {
   "appId": "com.StudioTwoBeans.HorseQuest",
@@ -34516,7 +34636,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Horse Shoe 3D – Toss Games": {
   "appId": "com.RoshanGames.HorseShoe3D",
@@ -34563,7 +34689,13 @@
   "installs": 995031,
   "tags": [
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Horse Show Jumping Premium": {
   "appId": "com.tivola.ShowJumping.premium",
@@ -34610,7 +34742,13 @@
   "installs": 16032,
   "tags": [
    "Simulation"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Horses World Premium": {
   "appId": "com.tivola.horseworld.full.gp",
@@ -34657,7 +34795,13 @@
   "installs": 62172,
   "tags": [
    "Simulation"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hot Lap League Racing Mania": {
   "appId": "com.ultimatestudio.hotlapleague.premium",
@@ -34705,7 +34849,13 @@
    "Single player",
    "Stylized",
    "Competitive"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hot SPrings Story": {
   "appId": "net.kairosoft.android.onsen_en",
@@ -34756,7 +34906,13 @@
    "Pixelated",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hot Springs Story 2": {
   "appId": "net.kairosoft.android.onsen2",
@@ -34809,7 +34965,13 @@
    "Stylized",
    "Pixelated",
    "Light-hearted"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "How Do Things Fly?": {
   "appId": "com.learnyland.howthingsfly",
@@ -34856,7 +35018,13 @@
   "installs": 31490,
   "tags": [
    "Educational"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Humans Fall Flat": {
   "appId": "com.and.games505.humanfallflat",
@@ -34911,7 +35079,13 @@
    "Low poly",
    "Stickman",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hundred Days": {
   "appId": "com.brokenarmsgames.hundred",
@@ -34957,7 +35131,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hungry For Home: A Cat’s tail": {
   "appId": "jp.co.toho.ouchinikaeritai",
@@ -35003,7 +35183,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hungry hearts Diner": {
   "appId": "jp.co.gagex.orionEN",
@@ -35050,7 +35236,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hungry Hearts Diner 2": {
   "appId": "jp.co.gagex.orion2",
@@ -35105,7 +35297,13 @@
    "Cooking",
    "Japan",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hungry hearts Diner Neo": {
   "appId": "jp.co.gagex.orion3",
@@ -35161,7 +35359,13 @@
    "Cooking",
    "Japan",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hungry Hearts Diner: Memories": {
   "appId": "jp.co.gagex.orion4",
@@ -35215,7 +35419,13 @@
    "Stylized",
    "Cafe & restaurant",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hungry Hearts Restaurant": {
   "appId": "jp.co.gagex.rigel",
@@ -35268,7 +35478,13 @@
    "Stylized",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hungry Shark Evolution": {
   "appId": "com.fgol.HungrySharkEvolution",
@@ -35307,7 +35523,13 @@
    "Shark",
    "Ocean",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hyperburner": {
   "appId": "com.badpotion.hyperburner",
@@ -35358,7 +35580,13 @@
    "Intense",
    "Science fiction",
    "Space"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Hyperforma Premium": {
   "appId": "com.herocraft.game.hyperforma.cyber.hack.arcade.premium",
@@ -35410,7 +35638,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "I Love Hue Too": {
   "appId": "com.zutgames.ilovehue2",
@@ -35455,7 +35689,13 @@
    "Abstract",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "iBasketball Manager 23": {
   "appId": "com.uplaybasketball.ibm2023",
@@ -35503,7 +35743,13 @@
   "tags": [
    "Sports",
    "Coaching"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Ice Cream Games: Ice Cream DIY": {
   "appId": "com.iz.timpy.ice.cream.cone.bar.maker.shop.truck.game",
@@ -35550,7 +35796,13 @@
   "installs": 217443,
   "tags": [
    "Simulation"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Ice Cream Shop Games for Kids": {
   "appId": "com.iz.ice.cream.shop.strawberry.popsicle.maker.truck.games",
@@ -35603,7 +35855,13 @@
    "Cartoon",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Ice Creame Inc. ASMR DIY Games": {
   "appId": "com.RedLineGames.Game49",
@@ -35656,7 +35914,13 @@
    "Food",
    "Ice cream",
    "Fantasy"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Idle Bank – Money Games": {
   "appId": "com.doublefun.moneyflow",
@@ -35707,7 +35971,13 @@
    "Stylized",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Idle Inventor – Factory Tycoon": {
   "appId": "com.boombitgames.IdlePolyCarFactory",
@@ -35763,7 +36033,13 @@
    "Business & profession",
    "Business empire",
    "Renovation"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Idle Royal Stories: Tycoon Games": {
   "appId": "com.outloud.idleroyalstories",
@@ -35816,7 +36092,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Illuminaria": {
   "appId": "com.selvaInteractive.illuminaria",
@@ -35860,7 +36142,13 @@
    "Tower defense",
    "Casual",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "IMAGEine Premium": {
   "appId": "se.rx.imageine.premium",
@@ -35899,7 +36187,13 @@
   "tags": [
    "Puzzle",
    "Jigsaw"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Indian Train Simulator Game": {
   "appId": "com.HighbrowInteractive.IndianTrainSim",
@@ -35950,7 +36244,13 @@
    "Stylized",
    "Vehicles",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Infamous Machine": {
   "appId": "com.blyts.infamousmachine",
@@ -35995,7 +36295,13 @@
    "Fantasy",
    "Sci-fi fantasy",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Infant Games for 1-2 Year Olds": {
   "appId": "com.iz.baby.infant.toddler.kids.children.toys.games",
@@ -36042,7 +36348,13 @@
   "installs": 117357,
   "tags": [
    "Educational"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Infection": {
   "appId": "com.canvassoft.Infection",
@@ -36086,7 +36398,13 @@
    "Single player",
    "Zombie",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": false,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Infinity Loop: Relaxing Puzzle": {
   "appId": "com.balysv.loop",
@@ -36138,7 +36456,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Inked": {
   "appId": "com.somniumgames.inked",
@@ -36179,7 +36503,13 @@
   "installs": 74135,
   "tags": [
    "Samurai"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "INKS.": {
   "appId": "com.noodlecake.inks",
@@ -36227,7 +36557,13 @@
    "Casual",
    "Single player",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "INMOST": {
   "appId": "com.hiddenlayergames.inmost",
@@ -36279,7 +36615,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "inReverse – Backwards Karaoke": {
   "appId": "com.silentapps.inreverse2",
@@ -36310,7 +36652,13 @@
   "installs": 303322,
   "tags": [
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Intellijoy Kids Academy": {
   "appId": "com.intellijoy.kids.academy",
@@ -36360,7 +36708,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Inua – A Story in Ice and Time": {
   "appId": "com.arte.inua",
@@ -36410,7 +36764,13 @@
    "Interactive story",
    "Casual",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Invert – The FlippinG Puzzles": {
   "appId": "com.noodlecake.invert",
@@ -36454,7 +36814,13 @@
    "Logic",
    "Casual",
    "Abstract"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Iris and the Giant": {
   "appId": null,
@@ -36502,7 +36868,13 @@
   "installs": 42037,
   "tags": [
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Iron marines 2 – Invasion RTS": {
   "appId": "com.ironhidegames.android.ironmarines.invasion.rts",
@@ -36552,7 +36924,13 @@
    "Space",
    "Immersive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Iron Marines offline strategy": {
   "appId": "com.ironhidegames.android.ironmarines",
@@ -36600,7 +36978,13 @@
    "Business & profession",
    "Construction",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Is This Yours?": {
   "appId": "com.crevasse.lostandfound",
@@ -36641,7 +37025,13 @@
   "installs": 11718,
   "tags": [
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Isle of Arrows – Tower Defense": {
   "appId": "com.gridpop.isleofarrowsandroid",
@@ -36687,7 +37077,13 @@
    "Stylized",
    "Low poly",
    "Immersive"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "It’s Literally Just Mowing": {
   "appId": "com.protostar.mowing",
@@ -36738,7 +37134,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Jetscout: Mystery of the Valuni": {
   "appId": "com.okshur.JetscoutValunians",
@@ -36779,7 +37181,13 @@
   "installs": 12174,
   "tags": [
    "Adventure"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Jewel Ninja Shadow": {
   "appId": "com.v2r.JewelNinjaShadow",
@@ -36809,7 +37217,13 @@
   "installs": 44875,
   "tags": [
    "Puzzle"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Jewel Symphony of Orchestra": {
   "appId": "com.v2r.JewelSymphonyOrchestra",
@@ -36840,7 +37254,13 @@
   "installs": 54942,
   "tags": [
    "Puzzle"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Jigsaw Puzzles Epic": {
   "appId": "com.kristanix.android.jigsawpuzzleepic",
@@ -36889,7 +37309,13 @@
    "Realistic",
    "Puzzles",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Jigsaw Puzzles Real": {
   "appId": "com.rottzgames.realjigsaw",
@@ -36941,7 +37367,13 @@
    "Single player",
    "Realistic",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Jigsaw Puzzles – Puzzle games": {
   "appId": "com.easybrain.jigsaw.puzzles",
@@ -36995,7 +37427,13 @@
    "Puzzles",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Johnny Bonasera 1": {
   "appId": "com.bladecoder.lj",
@@ -37045,7 +37483,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Johnny Bonasera 2": {
   "appId": "com.bladecoder.bonasera2",
@@ -37092,7 +37536,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Juicy Realm": {
   "appId": "net.spacecan.juicyrealm.android",
@@ -37139,7 +37589,13 @@
    "Stylized",
    "Immersive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Jumbo Airport Story": {
   "appId": "net.kairosoft.android.airport",
@@ -37194,7 +37650,13 @@
    "Vehicles",
    "Airplane",
    "Light-hearted"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Jump into the Plane": {
   "appId": "com.jump.into.plane.stunt",
@@ -37241,7 +37703,13 @@
   "installs": 25901567,
   "tags": [
    "Racing"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Jungle Adventures": {
   "appId": "com.renderedideas.jungleadventures",
@@ -37275,7 +37743,13 @@
    "Cartoon",
    "Jungle",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Jungle Adventures 2": {
   "appId": "com.renderedideas.jungleadventures2",
@@ -37330,7 +37804,13 @@
    "Cartoon",
    "Jungle",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Jungle Adventures 3": {
   "appId": "com.renderedideas.jungleadventures3",
@@ -37381,7 +37861,13 @@
    "Stylized",
    "Jungle",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Juno: New Origins Complete Ed.": {
   "appId": "com.jundroo.SimpleRockets2",
@@ -37434,7 +37920,13 @@
    "Science fiction",
    "Space",
    "Imaginative"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Jurassic Dig- Games for Kids": {
   "appId": "com.imayi.jurassicdigfree",
@@ -37487,7 +37979,13 @@
    "Cartoon",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Jurassic Rescue Dinosaur games": {
   "appId": "com.imayi.jurassicrescuefree",
@@ -37541,7 +38039,13 @@
    "Animals",
    "Dinosaur",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Jurassic World – Dinosaurs": {
   "appId": "com.sinyee.babybus.dinosaur",
@@ -37585,7 +38089,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Just King": {
   "appId": "com.vishgamestudio.king",
@@ -37640,7 +38150,13 @@
    "Pixelated",
    "Immersive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kafka’s Metamorphosis": {
   "appId": "com.mazm.kafka",
@@ -37684,7 +38200,13 @@
   "installs": 103218,
   "tags": [
    "Adventure"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kairobotica": {
   "appId": "net.kairosoft.android.starkairo_en",
@@ -37735,7 +38257,13 @@
    "Casual",
    "Stylized",
    "Pixelated"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kakuro (Cross Sums)": {
   "appId": "com.pinkpointer.kakuro",
@@ -37787,7 +38315,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kamla – Horror Exorcism Escape": {
   "appId": "com.madmantragames.kamla",
@@ -37842,7 +38376,13 @@
    "Fantasy",
    "Dark fantasy",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kathy Rain": {
   "appId": "com.rawfury.kathy",
@@ -37895,7 +38435,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kawaii mansion: Find It Out": {
   "appId": "co.imba.kawaiimansion",
@@ -37933,7 +38479,13 @@
    "House & garden",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Keep Talking and Nobody Explodes": {
   "appId": "com.steelcrategames.keeptalkingandnobodyexplodes",
@@ -37984,7 +38536,13 @@
    "Multiplayer",
    "Cooperative multiplayer",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kensho": {
   "appId": "com.fiftytwo.kensho_android",
@@ -38036,7 +38594,13 @@
    "Single player",
    "Stylized",
    "Light-hearted"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kick the Buddy – Fun Action Game": {
   "appId": "com.playgendary.kickthebuddy",
@@ -38089,7 +38653,13 @@
    "Cartoon",
    "Ragdoll",
    "Funny"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kid Car Games for toddlers fun": {
   "appId": "com.midwingames.toddlers.car.kids.racing.games.garage.boys.driving",
@@ -38141,7 +38711,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kid-E-Cats Educational Games": {
   "appId": null,
@@ -38204,7 +38780,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Animals Jigsaw Puzzles": {
   "appId": "se.appfamily.superpuzzlefree",
@@ -38254,7 +38836,13 @@
    "Stylized",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Cake Maker Cooking Games": {
   "appId": "com.iz.sweet.bakery.cake.shop.dessert.pastry.kids.games",
@@ -38305,7 +38893,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Car Racing Game": {
   "appId": "se.appfamily.car.racing.game.free",
@@ -38352,7 +38946,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Cars Ganes build a truck": {
   "appId": "com.gokids.transport2",
@@ -38403,7 +39003,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Coloring Pages & Book": {
   "appId": "com.iz.coloring.games.kids.drawing.color.book.painting.learning.baby.toddlers",
@@ -38457,7 +39063,13 @@
    "Cartoon",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Connect the Dots": {
   "appId": "com.anahoret.android.dots",
@@ -38506,7 +39118,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Draw Shapes": {
   "appId": "com.intellijoy.drawwithshapes",
@@ -38554,7 +39172,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Drawing & Coloring Games": {
   "appId": "com.iz.kitty.coloring.book.kids.drawing.cat.games.girls.color.by.number.learn.draw.paint.animal",
@@ -38607,7 +39231,13 @@
    "Stylized",
    "Handicraft",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Drawing & Painting Games": {
   "appId": "com.iz.drawing.kids.coloring.baby.toddler.painting.doodle.draw.learning.games",
@@ -38660,7 +39290,13 @@
    "Stylized",
    "Handicraft",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Hamburger Cooking Games": {
   "appId": "com.burger.recipes.hamburger.restaurante.cooking.games.kids.kitchen",
@@ -38707,7 +39343,13 @@
   "installs": 38094,
   "tags": [
    "Educational"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Kindergarten Math": {
   "appId": "com.intellijoy.kids.math",
@@ -38758,7 +39400,13 @@
    "Casual",
    "Stylized",
    "Cartoon"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Learn About animals": {
   "appId": "net.cleverbit.LearnAnimalsEx",
@@ -38808,7 +39456,13 @@
    "Casual",
    "Single player",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Learn About Animals (Intellijoy)": {
   "appId": "com.nightboost.kids.animals",
@@ -38860,7 +39514,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Learn Colors": {
   "appId": "com.anahoret.android.colors",
@@ -38905,7 +39565,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Learn Letter Sounds": {
   "appId": "com.intellijoy.android.phonics",
@@ -38958,7 +39624,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Learn Shapes 2": {
   "appId": "com.intellijoy.shapes2",
@@ -39004,7 +39676,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Learn To Count 123": {
   "appId": "com.intellijoy.counting",
@@ -39056,7 +39734,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Learn To Read": {
   "appId": "com.intellijoy.android.reading",
@@ -39106,7 +39790,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Learn to Sort": {
   "appId": "com.intellijoy.sorting",
@@ -39151,7 +39841,13 @@
    "Cartoon",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Lunch Box: Food Lunchbox": {
   "appId": "com.sushi.lunchbox.organizer.bento.lunch.box.food.kids.games",
@@ -39192,7 +39888,13 @@
   "installs": 50300,
   "tags": [
    "Educational"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Pixel Art Coloring Games": {
   "appId": "com.KidsFreeGames.coloring.pixel.art.tangram.puzzles.toddlers",
@@ -39239,7 +39941,13 @@
   "installs": 145952,
   "tags": [
    "Educational"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Pizza Maker Cooking Games": {
   "appId": "com.elepant.free.kids.cooking.games.girls.pizza.baking",
@@ -39289,7 +39997,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Puzzle Games for Toddlers": {
   "appId": "com.midwingames.early.learning.toddler.jigsaw.puzzle.kids",
@@ -39334,7 +40048,13 @@
    "Stylized",
    "Cartoon",
    "Cute"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Puzzles #2 (Full game)": {
   "appId": "net.cleverbit.SafariPuzzlesFull",
@@ -39383,7 +40103,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Puzzles for Toddlers": {
   "appId": "com.iz.puzzles.games.kids.learning.baby.toddlers.jigsaw.children.educational",
@@ -39436,7 +40162,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Reading Sight Words": {
   "appId": "com.intellijoy.sightwords",
@@ -39478,7 +40210,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Spelling & Reading Games": {
   "appId": "com.iz.kids.word.search.games.spelling.words.vocabulary.letters.kindergarten.preschool.learning",
@@ -39530,7 +40268,13 @@
    "Single player",
    "Stylized",
    "Cartoon"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Tractor Games- Farm games": {
   "appId": "com.iz.kids.tractor.farming.truck3d.construction.vehicle.building.games",
@@ -39583,7 +40327,13 @@
    "Cartoon",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kids Write ABC Letter Animals": {
   "appId": null,
@@ -39651,7 +40401,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "King of Dragon Pass: text RPG": {
   "appId": "com.herocraft.kodp",
@@ -39698,7 +40454,13 @@
    "Interactive story",
    "Casual",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kingdom Rush 5 Alliance TD": {
   "appId": "com.ironhidegames.android.kingdomrush.alliance",
@@ -39752,7 +40514,13 @@
    "Fantasy",
    "Medieval fantasy",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kingdom Rush Frontiers TD": {
   "appId": "com.ironhidegames.android.kingdomrushfrontiers",
@@ -39801,7 +40569,13 @@
    "Battling",
    "Fantasy",
    "Medieval fantasy"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kingdom Rush Origins – TD": {
   "appId": "com.ironhidegames.android.kingdomrushorigins",
@@ -39845,7 +40619,13 @@
    "Battling",
    "Renovation",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kingdom Rush Tower Defense TD": {
   "appId": "com.ironhidegames.android.kingdomrush",
@@ -39900,7 +40680,13 @@
    "Historical",
    "Medieval",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kingdom Rush vengeance TD game": {
   "appId": "com.ironhidegames.android.kingdomrush4",
@@ -39948,7 +40734,13 @@
    "Battling",
    "Forest",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kingdom Two Corwns": {
   "appId": "com.rawfury.kingdom2crowns",
@@ -40003,7 +40795,13 @@
    "Civilization",
    "Evolution",
    "Immersive"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kingdom: New Lands": {
   "appId": "nl.noio.kingdom",
@@ -40045,7 +40843,13 @@
    "Historical",
    "Medieval",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "King’s League II": {
   "appId": "com.kurechii.kingsleagueii",
@@ -40092,7 +40896,13 @@
   "installs": 35850,
   "tags": [
    "Strategy"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "King’s League Odyssey": {
   "appId": "com.gamenauts.klo",
@@ -40134,7 +40944,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kiwanuka": {
   "appId": "com.jakyl.kiwanuka",
@@ -40176,7 +40992,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Knights of Grayfang Premium": {
   "appId": "kemco.execreate.grevampremium",
@@ -40230,7 +41052,13 @@
    "Vampire",
    "Fantasy",
    "Medieval fantasy"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": false,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Knights of San Francisco": {
   "appId": "egamebook.com.flutteregamebook",
@@ -40279,7 +41107,13 @@
    "Adventure",
    "Interactive story",
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Knock Knock": {
   "appId": null,
@@ -40349,7 +41183,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kooply Run: Play and Create!": {
   "appId": "com.creations.runnergame",
@@ -40387,7 +41227,13 @@
    "Stylized",
    "Intense",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Kung Fu Zombie": {
   "appId": "com.tinytitanstudios.kfz",
@@ -40434,7 +41280,13 @@
    "Martial arts",
    "Zombie",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "L.O.L Surprise! Beauty Salon": {
   "appId": "com.psv.lol.surprise.beauty_salon",
@@ -40487,7 +41339,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "La Escoba – Scopa 15 card game": {
   "appId": "com.quarzo.escoba",
@@ -40533,7 +41391,13 @@
    "Single player",
    "Realistic",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Labyrinth City": {
   "appId": "com.storeriderprod.labyrinthecity",
@@ -40585,7 +41449,13 @@
    "Stylized",
    "Mystery",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Lanternium": {
   "appId": "com.BlazingPlanetStudio.Lanternium",
@@ -40626,7 +41496,13 @@
   "installs": 4421,
   "tags": [
    "Puzzle"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Laser Logic Game": {
   "appId": null,
@@ -40697,7 +41573,13 @@
    "Stylized",
    "Low poly",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Layton: Curious Village in HD": {
   "appId": "com.Level5.LT1RNA",
@@ -40742,7 +41624,13 @@
    "Single player",
    "Stylized",
    "Mystery"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": false,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Layton: Pandora’s BOX in HD": {
   "appId": "com.Level5.LT2RNA",
@@ -40792,7 +41680,13 @@
    "Stylized",
    "Anime",
    "Mystery"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": false,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Layton’s Mystery Journey": {
   "appId": "com.Level5.LaytonMJNA",
@@ -40838,7 +41732,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": false,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Leap On!": {
   "appId": "com.noodlecake.leapon",
@@ -40889,7 +41789,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Learn 123 Number, Trace, Count": {
   "appId": "com.gamesforkids.numbers123.tracing",
@@ -40935,7 +41841,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Learn 123 Numbers Kids Games": {
   "appId": "com.gamesforkids.numbers123.tracing",
@@ -40981,7 +41893,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Learn Letters with Captain Cat": {
   "appId": "com.anahoret.android.letters",
@@ -41034,7 +41952,13 @@
    "Single player",
    "Stylized",
    "Cartoon"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Learn to Read Phonics – ABC": {
   "appId": "net.cleverbit.LearnToRead",
@@ -41078,7 +42002,13 @@
    "Single player",
    "Realistic",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Learning Games for Kids 3-5": {
   "appId": "com.iz.kids.preschool.learning.toddler.educational.games",
@@ -41125,7 +42055,13 @@
   "installs": 37922,
   "tags": [
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Learning Numbers Kids Games": {
   "appId": "com.Ilugon.counting.learning.numbers.tracing",
@@ -41176,7 +42112,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Legacy 2 – the Ancient Curse": {
   "appId": "com.nosignalproductions.legacytwo",
@@ -41226,7 +42168,13 @@
    "Escape",
    "Stylized",
    "Mystery"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Legacy 3 – The Hidden Relic": {
   "appId": "com.nosignalproductions.legacyhidden",
@@ -41278,7 +42226,13 @@
    "Single player",
    "Stylized",
    "Mystery"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Legacy 4: Tomb of Secrets": {
   "appId": "com.nosignalproductions.Legacytomb",
@@ -41327,7 +42281,13 @@
    "Stylized",
    "Mystery",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Legacy – Reawakening": {
   "appId": "com.nosignalproductions.Legacyawake",
@@ -41380,7 +42340,13 @@
    "Stylized-realistic",
    "Mystery",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Legend of Gladiator": {
   "appId": "com.onestepstudio.legendofgladiator",
@@ -41431,7 +42397,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Legend of Keepers": {
   "appId": "com.playdigious.legendofkeepers",
@@ -41484,7 +42456,13 @@
    "Pixelated",
    "Immersive",
    "Fantasy"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Legend of the Skyfish 2": {
   "appId": "br.com.mothergaia.skyfish2",
@@ -41536,7 +42514,13 @@
    "Stylized",
    "Immersive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Legends of Heropolis DX": {
   "appId": "net.kairosoft.android.fightdx",
@@ -41589,7 +42573,13 @@
    "Stylized",
    "Pixelated",
    "Light-hearted"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "LEGO Bricktales": {
   "appId": "com.thunderful.legobricktales",
@@ -41640,7 +42630,13 @@
    "Cartoon",
    "Imaginative",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "LEGO Duplo Peppa Pig": {
   "appId": "com.storytoys.lego.duplo.peppa.pig.googleplay",
@@ -41693,7 +42689,13 @@
    "Cartoon",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "LEGO Duplo World": {
   "appId": "com.storytoys.lego.duplo.world.kids.play.free.friends.animals.android.googleplay",
@@ -41748,7 +42750,13 @@
    "Puzzles",
    "Field",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "LEGO Friends: Heartlake Rush": {
   "appId": "com.lego.friends.heartlake",
@@ -41801,7 +42809,13 @@
    "Car",
    "Intense",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Leo’s Fortune": {
   "appId": "com.leosfortune",
@@ -41851,7 +42865,13 @@
    "Action-adventure",
    "Stylized",
    "Cartoon"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Levelhead": {
   "appId": "com.bscotch.levelhead",
@@ -41904,7 +42924,13 @@
    "Robot",
    "Intense",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Lia: Hacking Destiny": {
   "appId": "com.orube.liahd",
@@ -41956,7 +42982,13 @@
    "Stylized",
    "Pixelated",
    "Intense"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Lichtspeer": {
   "appId": "com.noodlecake.lichtspeer",
@@ -41998,7 +43030,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Lief Gallery": {
   "appId": "com.Games751.LifeGallery",
@@ -42034,7 +43072,13 @@
    "Stylized",
    "Horror",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Life Choices: Life Simulator": {
   "appId": "com.unicostudio.lifechoices",
@@ -42086,7 +43130,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Light Bike Flying Stunts": {
   "appId": "com.ga.light.bike.flying.stunts",
@@ -42134,7 +43184,13 @@
    "Vehicles",
    "Motorcycle",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Light Bulb Puzzle game": {
   "appId": "com.bhima.lightbulb",
@@ -42178,7 +43234,13 @@
   "installs": 266443,
   "tags": [
    "Puzzle"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "LIMBO": {
   "appId": "com.playdead.limbo.full",
@@ -42232,7 +43294,13 @@
    "Puzzles",
    "Forest",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Limelight": {
   "appId": "com.mydogzorro.linelight",
@@ -42275,7 +43343,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Linea Cozy Puzzle Stories": {
   "appId": null,
@@ -42345,7 +43419,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Lines: Physics Drawing Puzzles": {
   "appId": "com.leodesol.games.linesthegame",
@@ -42398,7 +43478,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Lineverse: One Line Coloring": {
   "appId": "com.mythicowl.asmr.oneline.color.puzzle.shapes",
@@ -42451,7 +43537,13 @@
    "Stylized",
    "Low poly",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Lineweight": {
   "appId": null,
@@ -42513,7 +43605,13 @@
   "installs": 1388112,
   "tags": [
    "Simulation"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "LISA: The Joyful": {
   "appId": "com.SerenityForge.LISATheJoyfulDefinitiveEdition",
@@ -42560,7 +43658,13 @@
   "installs": 5881,
   "tags": [
    "Adventure"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "LISA: The Painful": {
   "appId": "com.SerenityForge.LISAThePainfulDefinitiveEdition",
@@ -42608,7 +43712,13 @@
   "tags": [
    "Science fiction",
    "Apocalyptic"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Little Berry Forest 1": {
   "appId": "com.LittleBerryGames.ForestStory",
@@ -42657,7 +43767,13 @@
    "Simulation",
    "Casual",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Little Big workshop": {
   "appId": "com.hg.lbw",
@@ -42709,7 +43825,13 @@
    "Casual",
    "Stylized",
    "Light-hearted"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Little Fiox Bubble Spinner": {
   "appId": "de.pictofun.classic.bubble.spinner.puzzle.pop",
@@ -42746,7 +43868,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Little Fox Animal Doctor": {
   "appId": "com.foxandsheep.animaldoctor",
@@ -42792,7 +43920,13 @@
    "Cartoon",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Little Kitty Town": {
   "appId": "com.tutotoons.app.littlekittytown.free",
@@ -42846,7 +43980,13 @@
    "Cartoon",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Little Nightmares": {
   "appId": "com.playdigious.littlenightmare",
@@ -42894,7 +44034,13 @@
    "Survival horror",
    "Horror",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Little Panda Fireman": {
   "appId": "com.sinyee.babybus.fireman",
@@ -42936,7 +44082,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Little Panda Shark Family": {
   "appId": "com.sinyee.babybus.loveshark",
@@ -42982,7 +44134,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Little Panda’s Food Cooking": {
   "appId": "com.sinyee.babybus.foodstreetII",
@@ -43029,7 +44187,13 @@
    "Cartoon",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Living in the Ending World": {
   "appId": null,
@@ -43116,7 +44280,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Logicorss Crossword Puzzle": {
   "appId": "com.unicostudio.cryptoletter",
@@ -43167,7 +44337,13 @@
    "Casual",
    "Single player",
    "Abstract"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Lonesome Village": {
   "appId": "com.ogrepixel.lvillage",
@@ -43216,7 +44392,13 @@
    "Adventure",
    "Casual",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Looking for Aliens": {
   "appId": "com.pid.lfa",
@@ -43262,7 +44444,13 @@
    "Funny",
    "Science fiction",
    "Space"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Loop Hero": {
   "appId": "com.playdigious.loophero",
@@ -43316,7 +44504,13 @@
    "Fantasy",
    "Dark fantasy",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Lost Echo": {
   "appId": "com.KickBack.LostEchoAdventure",
@@ -43368,7 +44562,13 @@
    "Stylized",
    "Mystery",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Lost for Swords": {
   "appId": "org.maxbytes.lfs",
