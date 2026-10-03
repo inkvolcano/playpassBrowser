@@ -8,7 +8,7 @@ index.html is rebuilt.
 
 How a match is chosen
 - Every search hit is scored 0-1 on title similarity, minus penalties for
-  Lite/Free/Demo editions, Netflix editions, companion apps (guides, save
+  Lite/Free/Demo editions, Netflix/Crunchyroll editions, companion apps (guides, save
   editors, trackers...), different sequel numbers, a developer that doesn't
   match a "... by <developer>" title, and non-game categories.
 - The Play Store badges Play Pass apps: the top search card carries the badge,
@@ -332,16 +332,17 @@ def assess(game_title, c, game_genre):
             flags.append(f"developer is not {hint[1]}")
     if EDITION_RE.search(nt) and not EDITION_RE.search(na):
         flags.append("lite/free/demo edition")
-    if "netflix" in dev.casefold():
-        flags.append("Netflix edition")
+    for service in ("Netflix", "Crunchyroll"):  # streaming-service editions aren't the Play Pass ones
+        if service.casefold() in dev.casefold() or nt.startswith(service.casefold() + " "):
+            flags.append(f"{service} edition")
     if COMPANION_RE.search(nt) and not COMPANION_RE.search(na):
         flags.append("companion app")
     if number_mismatch(game_title, t):
         flags.append("different number")
     if c.get("genre") in NON_GAME_GENRES and game_genre != "Educational":
         flags.append(f"category {c.get('genre')}")
-    penalty = {"lite/free/demo edition": .3, "Netflix edition": .6, "companion app": .5,
-               "different number": .25}
+    penalty = {"lite/free/demo edition": .3, "Netflix edition": .6, "Crunchyroll edition": .6,
+               "companion app": .5, "different number": .25}
     score = sim - sum(penalty.get(f, .2) for f in flags) + (0.02 if spelling(t) == spelling(game_title) else 0)
     return round(score, 3), round(sim, 3), flags
 

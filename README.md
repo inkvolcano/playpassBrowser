@@ -53,7 +53,7 @@ Run `python3 fill_screenshots.py --help` for the rest.
 ## How games are matched
 
 For each title the script runs a Play Store search and scores every hit on
-title similarity, with penalties for Lite/Free/Demo editions, Netflix editions,
+title similarity, with penalties for Lite/Free/Demo editions, Netflix and Crunchyroll editions,
 companion apps (guides, save editors, trackers), different sequel numbers, a
 developer that doesn't match a "... by Developer" title, and non-game
 categories. The Play Store shows a Play Pass badge on included apps; the script
