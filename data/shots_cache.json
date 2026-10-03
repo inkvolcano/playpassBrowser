@@ -35175,23 +35175,28 @@
   "checked": "2026-10-03"
  },
  "Surivval RPG 1: Island Escape": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "closest match lacks 'island'",
-  "queries": [
-   "Surivval RPG 1: Island Escape",
-   "Surivval RPG 1",
-   "Surivval RPG 1: Island Escape Play Pass"
+  "appId": "com.bewgames.survivaladventure",
+  "matched": "Survival RPG 1: Lost Treasure",
+  "developer": "Bew Games inc.",
+  "playGenre": "Role Playing",
+  "icon": "https://play-lh.googleusercontent.com/Zk7BPm-eXXcQABMWo7LCOuDWj-A06jUfKKc_vUxEU5R3gsRBKSqdT74NyOioclpOR2b4QJbL6T0LISUuV1wLGw",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/aB9Q-j1upZ8FyHPqLtzW2KyPIgITOm7LvNU5YfJcBAdq4K93LexBGuESK7pRQ1YR_x798fcN__hDUiCGJSGIEA",
+   "https://play-lh.googleusercontent.com/rbKqh1fpZHY4fioCX-GNrotwuU0-DbB_i8b1bxSZeyp30kIfbSGNANhOHql604AOW11yNRjTLcwiaTbZM32skA",
+   "https://play-lh.googleusercontent.com/_aBO24ZJJc0xZQ4A9AJyyv1SzmqlGR_rMp1PoogH_myG6r4iaCUkhOrnxWq8NIEnh5dmTPMSi9fKKu4kk_F6sw",
+   "https://play-lh.googleusercontent.com/H4plWKtv0lvPzNo4M596aL3Lqgh3vWBYxS6fAErLB94mNQvM19C2MEbGsB7sUtLszouKroP12XuCDjdnzcHSXQ",
+   "https://play-lh.googleusercontent.com/9lSNjYyioyQuKtpV8ayByjvA-R2wDpL1g0yapA05w9UHr1al0PfkGABrS3qhPEI-GNEBW49dpWUuk7Z-b2UZXg",
+   "https://play-lh.googleusercontent.com/3R0ljtinM6IzvvR_2KmnkwMd1iwmfaJvXZdqwPaFy5Ubck_jLYcW2h_3np6hSiX82FnJ2n5kf20vMludLFJUTJM",
+   "https://play-lh.googleusercontent.com/PQkuLflmQl9-fdoGSrPdXpXgitqoNVek_tl1-qsgSXz_TCgwiHm5l6KMTBY-AgG0lSeemsvWnZLfeHMS1W4Nhw",
+   "https://play-lh.googleusercontent.com/xyjB5OlJSlcvHudmLmOJn-5LWVzxF15_SEnXsukyLyR-oKvjT3sI8USSsWqsOCLYZTjqWt4tctDwB0_dkGxv"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.bewgames.survivaladventure",
-   "title": "Survival RPG 1: Lost Treasure",
-   "developer": "Bew Games inc.",
-   "playPass": true,
-   "sim": 0.607,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.bewgames.survivaladventure",
+  "playPass": true,
+  "similarity": 0.607,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Surivval RPG 3: Lost in time 2D": {
   "appId": "com.bewgames.lostintime",
@@ -35314,27 +35319,29 @@
   "checked": "2026-10-03"
  },
  "Survival: RPG Lost in time 2D": {
-  "appId": "com.bewgames.survivaladventure",
-  "matched": "Survival RPG 1: Lost Treasure",
+  "appId": "com.bewgames.lostintime",
+  "matched": "Survival RPG 3:Lost in time 2D",
   "developer": "Bew Games inc.",
   "playGenre": "Role Playing",
-  "icon": "https://play-lh.googleusercontent.com/Zk7BPm-eXXcQABMWo7LCOuDWj-A06jUfKKc_vUxEU5R3gsRBKSqdT74NyOioclpOR2b4QJbL6T0LISUuV1wLGw",
+  "icon": "https://play-lh.googleusercontent.com/amkt7lO1sdr3qB_MYf78qpH0YlSYCpI1DKV-NOtceI_rqXIhS5Kpc0pdY0DaC2xdBd2d_b7OrQBSPPM4ZRoe_g",
   "screenshots": [
-   "https://play-lh.googleusercontent.com/aB9Q-j1upZ8FyHPqLtzW2KyPIgITOm7LvNU5YfJcBAdq4K93LexBGuESK7pRQ1YR_x798fcN__hDUiCGJSGIEA",
-   "https://play-lh.googleusercontent.com/rbKqh1fpZHY4fioCX-GNrotwuU0-DbB_i8b1bxSZeyp30kIfbSGNANhOHql604AOW11yNRjTLcwiaTbZM32skA",
-   "https://play-lh.googleusercontent.com/_aBO24ZJJc0xZQ4A9AJyyv1SzmqlGR_rMp1PoogH_myG6r4iaCUkhOrnxWq8NIEnh5dmTPMSi9fKKu4kk_F6sw",
-   "https://play-lh.googleusercontent.com/H4plWKtv0lvPzNo4M596aL3Lqgh3vWBYxS6fAErLB94mNQvM19C2MEbGsB7sUtLszouKroP12XuCDjdnzcHSXQ",
-   "https://play-lh.googleusercontent.com/9lSNjYyioyQuKtpV8ayByjvA-R2wDpL1g0yapA05w9UHr1al0PfkGABrS3qhPEI-GNEBW49dpWUuk7Z-b2UZXg",
-   "https://play-lh.googleusercontent.com/3R0ljtinM6IzvvR_2KmnkwMd1iwmfaJvXZdqwPaFy5Ubck_jLYcW2h_3np6hSiX82FnJ2n5kf20vMludLFJUTJM",
-   "https://play-lh.googleusercontent.com/PQkuLflmQl9-fdoGSrPdXpXgitqoNVek_tl1-qsgSXz_TCgwiHm5l6KMTBY-AgG0lSeemsvWnZLfeHMS1W4Nhw",
-   "https://play-lh.googleusercontent.com/xyjB5OlJSlcvHudmLmOJn-5LWVzxF15_SEnXsukyLyR-oKvjT3sI8USSsWqsOCLYZTjqWt4tctDwB0_dkGxv"
+   "https://play-lh.googleusercontent.com/m0Bg5Horq3WZhhWnPJYYkULD1I_JN4WCw4Pvd02EYvLkR60ECW80vD7-1I2xB6p4sq5ZrAXp6AepNYixAoUYTQ",
+   "https://play-lh.googleusercontent.com/H0L4KOVQi0f7Pg_2_KKvUYss8gpkbLSVDhF_Kk5tLz-1Gd4s8qJs3hZsPRUGgTcPl4Tmb9Kz7g7_j2fmnpjq7g",
+   "https://play-lh.googleusercontent.com/d6A2wb-iK_3dDdURtF68HaHeYgdS-w_Cp8sN-TycZG3gIFDwkn7cGIYmDpT2TsxP7HJziOmYCnOy_l_DKI0f8D0",
+   "https://play-lh.googleusercontent.com/VAKvpvJqZVsecF8Ige82kJH1ly_MwKkpPWerGJRHoa5sEKj8zEgjZvHpvULKI8MtzlePzTP4vRpTJ9GhQ8A8Yw",
+   "https://play-lh.googleusercontent.com/thSXW0_EB7XpPpWGH1JZQyof80XS3E8Hf_Zaf_SnaQeUu9llUAQMQnsRgmHdQiEHxUcYZzeRRNH8JbzRFslcgn0",
+   "https://play-lh.googleusercontent.com/qDAG7sAuMCK4fZMHymZSqnL3BGAKiNXGORzLo3hdaYTRPmQeg84NJzU8vQIDupCLTOuB63t3fdilyIohZ_Qrdg",
+   "https://play-lh.googleusercontent.com/x-GwVnZXMqOhoMRApvelWKFmwOovt3C-6aygBqvW-G7-2T8AhKNUDIw5k4ykpF9DkqdsBgBZbcDLDgiANaiAQA",
+   "https://play-lh.googleusercontent.com/Gpan0hGKWmWg8zSNr4cpiD-wKf-Qn6OLi59gGtkAKhYZ2tzzf7ZbL4kDc2Gbqa5iPNd_kwE3xvHo_SPH-Tvjog"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.bewgames.survivaladventure",
+  "url": "https://play.google.com/store/apps/details?id=com.bewgames.lostintime",
   "playPass": true,
-  "similarity": 0.714,
-  "confidence": "verified",
-  "flags": [],
-  "query": "Survival: RPG Lost in time 2D",
+  "similarity": 0.966,
+  "confidence": "manual",
+  "flags": [
+   "different number"
+  ],
+  "query": null,
   "checked": "2026-10-03"
  },
  "Sushi Maker Games Kids Cooking": {
@@ -36530,7 +36537,7 @@
  "The Heroic Legend of Eagarlnia": {
   "appId": null,
   "confidence": "null",
-  "reason": "closest match lacks 'eagarlnia' and no Play Pass badge",
+  "reason": "title similarity too low (0.59) and no Play Pass badge",
   "queries": [
    "The Heroic Legend of Eagarlnia",
    "The Heroic Legend of Eagarlnia Play Pass"
@@ -36538,10 +36545,10 @@
   "checked": "2026-10-03",
   "candidate": {
    "appId": "net.heroiclegends",
-   "title": "Heroic Legends Reborn",
+   "title": "Heroic Legends",
    "developer": "Ben Humphries",
    "playPass": false,
-   "sim": 0.667,
+   "sim": 0.591,
    "flags": []
   }
  },
@@ -37877,51 +37884,34 @@
   "checked": "2026-10-03"
  },
  "Timpy Baby Kids Toddler Games": {
-  "appId": "com.iz.educational.kids.computer.baby.games",
-  "matched": "Timpy Baby Kids Computer Games",
-  "developer": "Timpy Games For Kids, Toddlers & Baby",
-  "playGenre": "Educational",
-  "icon": "https://play-lh.googleusercontent.com/oY4VvFsdmF8PG5Gu_R1-BMtA881FvlJdkIB2tgMb64h7hY4O5mlXP2DQrlrX7DkngdtpEIV7sGFo-mqrFdu1Rw",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/a8wp3OkrfbcjKnwyWHFH6Hp53mKnmgpSWQTsMvP7OYctGYyGrTZc6WT-JdKbYnNKux1P-V5vVbBB7TrOikAv",
-   "https://play-lh.googleusercontent.com/1dOVC2JuJa3NfBOpnTYXjbIQzAJfersaly30mD7lPFlMSI2zME2rMamhysGu4ns6vaLFOL7-zC__avQhlZexVA",
-   "https://play-lh.googleusercontent.com/OZ_yLOYodkA6H0-nA3baiJjgxXlloG7UGTPn9uKS-VQR4ttl8rFV7pe2kryh9K3qMbOVynSashRuwoukNBO05w",
-   "https://play-lh.googleusercontent.com/mZdaYQMTiOADWLQC0O2Adqs1WopyHI3L2ijk5s2dlXFCZiik5mEjTFhwpcxZQaLhQRw3LiVDBWWjB97hB-wGyQ",
-   "https://play-lh.googleusercontent.com/NLujOgVom2z-0_rHL4uD-VVSIZdT-bk9O8miR0h6VaoxrRQ0TRiDPG-J5laM5wn4ISJlWvJ2-dJqE4Q-ZKgC",
-   "https://play-lh.googleusercontent.com/UP1_qoHTTJftXwtlm7hJE0sDOBNXIda-j9QP8sdBqTcQ1isz8R_jtBEGnd8EnYTgfTM6-m5XKSGX5Vg5mHP1gw",
-   "https://play-lh.googleusercontent.com/uVSdMfKt3iUeq5TaZyCs8XrIv9ljQf3Q6IDP-TKo0xRZTPaOGPWOJkV9Rf5uefinaoI4cIwent2cm7izlfwAqQ",
-   "https://play-lh.googleusercontent.com/dxgRllGOyMvLwbkBQzstrH4WXOi0ssWm_vIBtKb9DV02NOUmZa7Z8WySjIwl77_KitxS6AegevgDE7GC2I8d8gc"
-  ],
-  "url": "https://play.google.com/store/apps/details?id=com.iz.educational.kids.computer.baby.games",
-  "playPass": true,
-  "similarity": 0.847,
-  "confidence": "verified",
-  "flags": [],
-  "query": "Timpy Baby Kids Toddler Games",
+  "appId": null,
+  "confidence": "null",
+  "reason": "set to null in data/overrides.json",
+  "queries": [],
   "checked": "2026-10-03"
  },
  "Timpy baby Princess Phone Game": {
-  "appId": "com.iz.baby.phone.games.glow",
-  "matched": "Timpy Baby Glow Phone Games",
+  "appId": "com.iz.princess.phone.baby.toy.play.kids.game",
+  "matched": "Princess Phone Game For Girls",
   "developer": "Timpy Games For Kids, Toddlers & Baby",
   "playGenre": "Educational",
-  "icon": "https://play-lh.googleusercontent.com/sDwbV4nZVMlZYvHgAo1dOp88e1gEhEkdBcVtG1X0yCumCEhkSEU5XJUbqcPD9C-7NvFbE8C-9EGD-gY--yUe0w",
+  "icon": "https://play-lh.googleusercontent.com/EoD1V5al8RvdREcX_4NRfrFYJZpTsD2HNBy_ia_YMwr212yv6CIc0Cv_fhyu7alA9Kun4bFvXTj3Hoo-hSN7",
   "screenshots": [
-   "https://play-lh.googleusercontent.com/X56-Yr42Hyji4yJXxpHIb5xPpcfwFTQ0Um9gYti4vj6QksxXlB34T3YFpzIp1t8OEvR43dewRd0-DIjqVXTeVQ",
-   "https://play-lh.googleusercontent.com/wFyTRTSKY4S-Vb-aManT74LKorQPaGijJRo1puupGLmhFYcVLpaLjnzKNEXpeCFSS9WR06cWHj2iyoxQBlC7YQ",
-   "https://play-lh.googleusercontent.com/UC32K_GC73drwi_nxuyKSo_MwaT-xfU8Im7FjjhROuMJgGHDnTs1rVRfxELOKM880xGbXXGzURw61BTGuFfehg",
-   "https://play-lh.googleusercontent.com/pvS_Eyv4rv9zt0pJ_FFDcfvWwhCAzaNeaJDCFL1U4nW-xuGlVaWE_B4oTJ37VbVK5AoNcXhj8-Ot3BxToHA_",
-   "https://play-lh.googleusercontent.com/AHa5MChKWhL1PiVNxIKOMbnPpphkihbI8wHJGJmrvGURyzO_NDz7MZ3RBWhmHQus7REMWeN-_eZ6YqOpq8Efjw",
-   "https://play-lh.googleusercontent.com/O0TO38l69dMh09XOnDEKJJESfUISUOq_Kz-SIHwi6L_f7oxIlZ1R1ZwU9TUX2ZlwpiPTW_6ZmCzHmmGiBROkCg",
-   "https://play-lh.googleusercontent.com/_W2gpiG9yRMtJvuJ3FdeetvLx2bQk8958eT1Y4MbpCEuzT70LlXje5iFQv8tRuiMKlEZ0vpQ_SHu5qtF4AHdgA",
-   "https://play-lh.googleusercontent.com/_9zpXvl_AZzKFzv4kgiModlS0rtYOLm-3XClshKA5ldBSDmRwE9scpuZWUl0PtpV_Rf-6uVnSG8O-K-Qyz8Low"
+   "https://play-lh.googleusercontent.com/LeTGVgf53tQaGD4GjxVzD3L0wBbJL2Jq2WDCvWEJ6VdkKVR5QyrJZcV5ajY6mlPwpeU-QTnXRXrPvz2ZVA-uWEI",
+   "https://play-lh.googleusercontent.com/jgzEboqqfbkfzKPaGpyULmLwXPGRbY3rZrikoucnAPymRhg46baHS-7EPCm-n1A8vM-TSLkjjNPeV5fJ-6GFctg",
+   "https://play-lh.googleusercontent.com/AuLXUObUxuE2UYHTvSbnho0PmSKktkNug1qO-wyNvh0gMfRjDNfWMMpdxuIlNc9FpSgYTnFs5bb-iWvM0PqZ1XE",
+   "https://play-lh.googleusercontent.com/MAyHEUqpYGNG3or6tnrywddv0fMmsJJ3JqmrfX3QmKqsy4UjG69ubYGdf6QqB2MEWn3RH5jFD3jUqUdKTCEe",
+   "https://play-lh.googleusercontent.com/i6xoFlggILKioLGWStr3PeuBm0JAaZXAmtK4KaFk80WTeDHKALXWEfTk6R-k6vwcBNJYmszhFeJ7h8F1RlqYLA",
+   "https://play-lh.googleusercontent.com/VixZGFryYowqe9rMALBpadLgWzYV9Oojfo9P1kMbIoFmavY-ptiAKW-PkJnh7X44vLc0NZKLBkr_kBD2aiMySEk",
+   "https://play-lh.googleusercontent.com/VBcpx_TgWN6h2XpNg6Svn_4V4hrRyxw4KOvufhjbXJ5tugtIy4pEVWYNWLenphuWYffN2T7HF-CvY4CRZWnWuw",
+   "https://play-lh.googleusercontent.com/mMOJRp9w4dj0SP6ucv2nQLvhHGxS3R_q-kPKyYK6wWUcWL5ii1Z58m9sajvjGEAfHkHhYCzmCHOBOPTAGG2S9w"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.iz.baby.phone.games.glow",
+  "url": "https://play.google.com/store/apps/details?id=com.iz.princess.phone.baby.toy.play.kids.game",
   "playPass": true,
-  "similarity": 0.772,
-  "confidence": "verified",
+  "similarity": 0.644,
+  "confidence": "manual",
   "flags": [],
-  "query": "Timpy baby Princess Phone Game",
+  "query": null,
   "checked": "2026-10-03"
  },
  "Timpy Cooking Breakfast Games": {
@@ -38141,22 +38131,28 @@
   "checked": "2026-10-03"
  },
  "Timpy Sweet Bakery Cake games": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "closest match lacks 'timpy' and no Play Pass badge",
-  "queries": [
-   "Timpy Sweet Bakery Cake games",
-   "Timpy Sweet Bakery Cake games Play Pass"
+  "appId": "com.iz.sweet.bakery.cake.shop.dessert.pastry.kids.games",
+  "matched": "Kids Cake Maker Cooking games",
+  "developer": "Timpy Games For Kids, Toddlers & Baby",
+  "playGenre": "Educational",
+  "icon": "https://play-lh.googleusercontent.com/u9yTdcUXwY_dOUkAsFiN0fn4HWeIB1eukZTBftlPYQfnNlus1_FGlpACVtY-IWjgwT-vjQO97a8heAN-pFjOgg",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/Apu24maD3vejgLb_ezg4NBOUrqFm6knHGNW0avwcqekFqVfooJPajV_nzh9zzNZFjH4myRM-Uk7ETjumLb5MtA",
+   "https://play-lh.googleusercontent.com/3lKwg-daIPaohxezZoGlA2xIK1fKZRUw1tqv0A_S9LR8yR9PHoixugjOX3PkmFwEDTUSMCCqF7SMfIBugCRxh5E",
+   "https://play-lh.googleusercontent.com/E3_7IZKuFMCRfmTjAi8dYirXCSFNnYC9Nsryt7NpNO-cEfO0eqgjJkVJ-wMvNSr70IRhs_5QGJXqyoD-CNSSlw",
+   "https://play-lh.googleusercontent.com/Fw3ZDE1upMdESZFusKC6Zal-Wr4znASrLDFtFK6uh3R2pLhwRX0Mv_j3BHLxvp5_g9MuVHkajkepm12tzox_ZtM",
+   "https://play-lh.googleusercontent.com/-fNBDOUiMZvi_63WvH4F9culU_UWwbrTkEwGTwt9O7UeTqHH2tQXMvTBGPMMLwepe0tc2P2lQx8eBv7SWoeJFQ",
+   "https://play-lh.googleusercontent.com/fRyVMVejvCGahbiDHo_dHsXxTay-N6zBNdJoeyS_-3EGyFoZ5PBKxMf1oyDHuHuKoCLHyCRT6eFIOobcYYMi",
+   "https://play-lh.googleusercontent.com/HyGJOdNsUGZGbkPYDPWiZG_DyMiibLjN_m7cYso2GiblutM9_mF3OiOlHWL5NFROqm7p5dEXkQJMibeQsmzYuA",
+   "https://play-lh.googleusercontent.com/M7H5wLtQI41Tyk2WhECw5w-bWsGDeQ0_tNzPESLn0gKIf7pWKzf8tqmD-jkYplWDET8_fBuBzrP3Xzi5zugd0g"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.sms.bakingames.dessertcooking.cookinggames",
-   "title": "Sweet Bakery: Baking Cake Game",
-   "developer": "Sweet Maker Shop",
-   "playPass": false,
-   "sim": 0.759,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.iz.sweet.bakery.cake.shop.dessert.pastry.kids.games",
+  "playPass": true,
+  "similarity": 0.448,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Timpy Town World: Kids games": {
   "appId": "com.iz.baby.town.my.world.little.mini.kids.games",
@@ -38921,27 +38917,27 @@
   "checked": "2026-10-03"
  },
  "Tizi Town: Doll Dress Up Games": {
-  "appId": "com.iz.world.pretend.play.life.my.princess.games.town.city.house.wonder.doll",
-  "matched": "Tizi Town: My Home World Games",
+  "appId": "com.tizi.dolls.avatar.dress.up.magic.princess.fashion.games",
+  "matched": "Doll Dress Up Games For Girls",
   "developer": "Tizi Town Games",
-  "playGenre": "Simulation",
-  "icon": "https://play-lh.googleusercontent.com/xrw13jpjd4VDx9gEfX86GGhHl2nbi-J_jg4H3sSi4FWDpsKhIg4fUwcssys_AoQzHAzHCHCj7tB6MchdqzqiMWA",
+  "playGenre": "Casual",
+  "icon": "https://play-lh.googleusercontent.com/ci4rwNP-nDQcPz_Hvf5DYI3GVmSe1W1a_TFkyeK8D72FIwZUMaiKI9fpTnfZYp7irK5XP4J3mN5WSuMuSSu2zQ",
   "screenshots": [
-   "https://play-lh.googleusercontent.com/y5rnKxV86yblysDgmVNlN4pmSdCasMKrs_EZ9OsazPaHYYU-U0murZYkuYqWBdGuwJMMqHjtttEQYPECK1Q-",
-   "https://play-lh.googleusercontent.com/Z_Bi5Ga8c0EmKcYYxSQI9jD0ce4_-vdAfIOXE4K59VgJa7OhiI0xz380e57XSXMxmmSwWWYl8Nv2thKKcwztAME",
-   "https://play-lh.googleusercontent.com/HPn4Veh1508MWd67LNACSKb6GFS7NIfLlNXiiHhR9Lj0f_MTUMh_gBOYNimOqZihlala9-yPEyYs1ndReWF-",
-   "https://play-lh.googleusercontent.com/oYjxCXwrv-tz844ORbqNBEjGh87SxDrjAi0EyWYQBzm9rwhsteb1_1jFwnBCBVfWM13l_xhfN_Af0d43DxuqRok",
-   "https://play-lh.googleusercontent.com/QE2O9P4XZ5jnxtexoKjHIredtDGuOfNcrp27nNT-E0uhBmy8r_9lT-m5Jgjps4aq6IiYYUU7o1qH7d-Fbz42",
-   "https://play-lh.googleusercontent.com/jmrsYP7O_lKE35hjEdHhMoNBdBanTnMmoh3SNCOCXEm2Zphh6Vp0xmoLCrjJD2vOQGFeYEtMc0s7HOivCRfp",
-   "https://play-lh.googleusercontent.com/2UeaE_TK0tGx1AvbPJMAPefw6UcilsJgt2IIv8b4Egs0mHm-8uzYeEXr4O565zX-UirD6DerIZrSKp9D16Q_Lw",
-   "https://play-lh.googleusercontent.com/GxKlVSFnFGxU0kJ11iaGQZnNN8AeYcKxiC34qz2fEnv95jI3-GTTA_qBhOJ6cjtvvNIdx8P4aUBd11j_nz11kg"
+   "https://play-lh.googleusercontent.com/-yKvkPdx2zQ1eFqTcZNPvIurr6d76fjG2dXz_HD9ho-xG2u08f31QpL-cOu5VxpwJ9AaNCKRRBmxZjo_3nPwfw",
+   "https://play-lh.googleusercontent.com/uRVZa7jZm7rjxfu2bfkF8JdXFDxyPfcszAvXrY5wI5VhrCk0_wntlWXO_4GJ2rhgj_NG_51NkfpRV6w_poYkmUs",
+   "https://play-lh.googleusercontent.com/VUjgCdDxLOxUhMSHmaQn9YTZNkyvbkt7sQCGAidaq43joVy-vFEjC336UNLPoplnJeCw5ZSj6-SqjjbKxzlv",
+   "https://play-lh.googleusercontent.com/ItVcKdfCihv87OTweysQmaN_TkNAhs7ZlZC7hBIQ8vuvYkRTPE1TZP64enwpDRGp-T_9NxoUyCHTvpolB-AahA",
+   "https://play-lh.googleusercontent.com/UYHxHUaKgvfhpzukPsugdiyhdtSjVBbuargA7giNyQAHx63c3Hs-78x12RmMWzskVPCoTTeiK1SRlRHJgObj",
+   "https://play-lh.googleusercontent.com/y3L0eb2PmAUgWnOeZaqxzvZCypXozYbQSJXTESxRMXvNvQXx-6zdLZsk3sWBlg8tMj903swYTi85tOURWeKAIA",
+   "https://play-lh.googleusercontent.com/7LSvXWntw8xUirJQskV7tRRJN3yia_XBAE2D5GJOpzfWyoVmZDGhiESfQ8GSs7b7vduMPsEd2vYXNgtxpDvCnw",
+   "https://play-lh.googleusercontent.com/-yKvkPdx2zQ1eFqTcZNPvIurr6d76fjG2dXz_HD9ho-xG2u08f31QpL-cOu5VxpwJ9AaNCKRRBmxZjo_3nPwfw"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.iz.world.pretend.play.life.my.princess.games.town.city.house.wonder.doll",
-  "playPass": true,
-  "similarity": 0.88,
-  "confidence": "verified",
+  "url": "https://play.google.com/store/apps/details?id=com.tizi.dolls.avatar.dress.up.magic.princess.fashion.games",
+  "playPass": false,
+  "similarity": 0.655,
+  "confidence": "manual",
   "flags": [],
-  "query": "Tizi Town: Doll Dress Up Games",
+  "query": null,
   "checked": "2026-10-03"
  },
  "Tizi Town: Shopping Mall Games": {
@@ -39017,27 +39013,27 @@
   "checked": "2026-10-03"
  },
  "Tizi World: Dream Avatar House": {
-  "appId": "com.my.tizi.town.life.city.games.family.simulator",
-  "matched": "Tizi World: Avatar City Life",
+  "appId": "com.my.tizi.town.world.city.life.avatar.wonder.home.design.dream",
+  "matched": "Tizi Town World Avatar Games",
   "developer": "Tizi Town Games",
   "playGenre": "Simulation",
-  "icon": "https://play-lh.googleusercontent.com/I_FRWUioNqMMgp8w9tstOf6-On-qxExzFFGWwRz5u_Qw1KiPNKYzHHuotYYuHfFuulY_zlOAWyVLv80BLIr-HA",
+  "icon": "https://play-lh.googleusercontent.com/7DYabHxYQpnRXyGqEcZla5mIb22J_2qlEUTZUxVPcZOx5mJWvPumBUi3ggqAQ6XSkrRfh9Agm6f08NMFzWkbJY8",
   "screenshots": [
-   "https://play-lh.googleusercontent.com/htaWHbEu2f4S3EuaKt18MDR2vxXUdlsMrCTMXuRUKJpadEvmtxBVLGf-WdFsFNliTLXgleIygwaNWu0cTYEEzA",
-   "https://play-lh.googleusercontent.com/ifXhdQUWR7eN0L8YEO-Bc_dv2bdjl7W1GdpaARNUGBEvoalsp--KWJdQmViO6FjosWpx822CjNlCd5nW8URySG8",
-   "https://play-lh.googleusercontent.com/ydjR9bQ4spXuZg-1qSxlhvjKx4Ofm4zgUC58omJN1XiOygbNrolMd1FxwpvnKU-ZJuTX9QhOjvXKF_0-OEhHnQ",
-   "https://play-lh.googleusercontent.com/FUiLSDqoR_iyDxTGg-8Xqw7A955pqxBRzCTBM9rAuQCODqiXU9NmiOSPtRJWgs4-ZuzqdEncPhaZLYpxQx77Ubo",
-   "https://play-lh.googleusercontent.com/IuB_ZWBugbcK4RvYYyxnM431dJWyz7oxIl4r4hr8o27YUeFAfN1bhrribbj--5jAsN2_N0AMgcCf8BrML3GT",
-   "https://play-lh.googleusercontent.com/VaR_GfObbt4u0qp4yxbGQzO7TRTtGDhauCttjvXAfqFdne2LRkQ-rV1P2B_L_wJsWRnUylzbK4-YBuaJzcUkJxc",
-   "https://play-lh.googleusercontent.com/CXMEMPxWtRTLuj7PwuWsx_hCLak_jcxHZLiue6-CaYVruXalkPK2cnvSmESBeQudf8SUqG2ti-nn4wg3OMdTBg",
-   "https://play-lh.googleusercontent.com/YWKYtpbhKH7k0IoPJyd1Tz58Ns-M0dIwE5lPWMgY2ZGOmocwUkURTLWicbG-mUlew6JUh48LMb-LiGGsaTU1"
+   "https://play-lh.googleusercontent.com/npNqA_BcMU5AL2dVYBT5yB3SJVLlQHjBQRvr9_LvMjy-nlL9DUyaKVU_uwYr52lMXXM4Wvg5CLDX_0Z9RMlb",
+   "https://play-lh.googleusercontent.com/NwmWrRA0g99D3uuYb0S2wMj1y1X4WRX5qytHD7TLVIUEST7n9XFSEfTbVivkCCcCH8S5ETXkyNbhFmSs3kfe-ZY",
+   "https://play-lh.googleusercontent.com/LZLYHQFiH4f5bsScKS7SKdKKlKPpR_eVIBoX9ZJlb-_uKKBfUFX-Juyo8CvDvQRRdNS83hfX8Ahwwg__M6fv",
+   "https://play-lh.googleusercontent.com/FIY9M8o8-BoyBQv0BIgGHZO3E6Wb6oZP5DbnvnnuMMPcUnAenxW3QitsNPrYefJD8RlB3ns17n3X8z_8bTlswRY",
+   "https://play-lh.googleusercontent.com/aE6anJYLA9lzgBGDe4SCtORAPIziECSUMADy7q1oWqnRFBOnNjjf7TTNFz-bgJCQw1EawKwo5Mla9Bg8wf0O-Q",
+   "https://play-lh.googleusercontent.com/4OMfKG2SSTXg394f8MIEn4nzvNOkhaZYjvvtgwjGSZeYsfzTZWx3YjzTmNwzys7AAWcaJqr1GSiaGDUTCH1bHg",
+   "https://play-lh.googleusercontent.com/0YBlPTaJhUzNGckzSML8JNML1xDBGGRG8MTMDEVuTYyhmJXg7nY2IwNzIRmG5tQ4Sam1yc0WvxbI3XEX7iVz",
+   "https://play-lh.googleusercontent.com/RNrdA6tntksSA2tY4FDUlPqS7dLmJxxAY7JBr68mV_95y2-Kjlbur4YbJP-ZvoLHzLh1rNUiUAg1GHEUBAcz"
   ],
-  "url": "https://play.google.com/store/apps/details?id=com.my.tizi.town.life.city.games.family.simulator",
+  "url": "https://play.google.com/store/apps/details?id=com.my.tizi.town.world.city.life.avatar.wonder.home.design.dream",
   "playPass": true,
-  "similarity": 0.88,
-  "confidence": "verified",
+  "similarity": 0.667,
+  "confidence": "manual",
   "flags": [],
-  "query": "Tizi World: Dream Avatar House",
+  "query": null,
   "checked": "2026-10-03"
  },
  "TMNT: Shredder’s Revenge": {
@@ -40182,20 +40178,9 @@
  "Truck games for kids car gadi": {
   "appId": null,
   "confidence": "null",
-  "reason": "closest match lacks 'gadi'",
-  "queries": [
-   "Truck games for kids car gadi",
-   "Truck games for kids car gadi Play Pass"
-  ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.imayi.truckdriverfree",
-   "title": "Truck Driver - Games for kids",
-   "developer": "Yateland Games for kids",
-   "playPass": true,
-   "sim": 0.714,
-   "flags": []
-  }
+  "reason": "set to null in data/overrides.json",
+  "queries": [],
+  "checked": "2026-10-03"
  },
  "Truck Games – build a house": {
   "appId": "com.gokids.transportbuilding",
@@ -40685,27 +40670,10 @@
   "checked": "2026-10-03"
  },
  "Unicorn Coloring Book and Games": {
-  "appId": "com.gamesforkids.glittercoloringpages.unicorns.girlgames",
-  "matched": "Unicorn Coloring Girl Games",
-  "developer": "Ijjus World",
-  "playGenre": "Casual",
-  "icon": "https://play-lh.googleusercontent.com/J9EyMZyLhCktr7MlzXN-GsdqKTeXU6_KCZ7oWQM61YFbmMydvOovzu0Zd6pRllXqPZzuZS07UxV-e2R3QGLk2tM",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/q3puO5HH-png9QoIqqmOpJcUl6A11se9uzO77vmKz_Xz_rhOnuFaPejpmzT2bCg7CNu2-TzLSRHXgg6m40W6dQ",
-   "https://play-lh.googleusercontent.com/wTm9NdAbsuHQ64_sntCBqKAetrLorbnrybwv3FW5lPuH1L_epCLDZZ8FpFf-IwotY9Ad4LWZRnCHBpXOevBmhQ",
-   "https://play-lh.googleusercontent.com/cJTpaQEfxWo_PR-NfcEzKm-V9TqwXWl2xyumdNGBXHW7i7LDtGlemW_197VP9C9VSFY2aWbQTcyktwkEcy_Oaw",
-   "https://play-lh.googleusercontent.com/Y3rLX3fdcL3iMKmoKVN-xBDZRmgaYRZZoZCY8ITx3Ki3fxWzDr1YXB-LcrdaJL_y7bAAIx3pRplUfzJuHRam",
-   "https://play-lh.googleusercontent.com/5segzqtXfrZH94DgoITFvs4mrRyx7H1HTFmk4YWMEw5C0SWVyLX6mP-UJ8wmAuDoyuNfTT0Qvsit6KXarNSTNTg",
-   "https://play-lh.googleusercontent.com/ac4oWdm7CQDVCdrf9us0GRdH4kELlpJOUjKRjqFdYN1c5zudjXX1q9XcnlwZgZWn4-MKkMo7IRxpXoysrDcABg",
-   "https://play-lh.googleusercontent.com/9y2cTErbKX3MHmkRnPUq4C2ZG9A8UGnwIZykrNMeZVIqELW3tzm0P7FWnoaL7-oiGvX-vIcSh2Ul4VKdhuOp",
-   "https://play-lh.googleusercontent.com/YKEf4tgS-Cb50NZUTkPwUz4EdTDDQ5ROeBAzxPlSeDyxAnXiTmw-2a7aHZy6PVcREs_9oCwsCx_xU8vWZuhwy_U"
-  ],
-  "url": "https://play.google.com/store/apps/details?id=com.gamesforkids.glittercoloringpages.unicorns.girlgames",
-  "playPass": true,
-  "similarity": 0.793,
-  "confidence": "verified",
-  "flags": [],
-  "query": "Unicorn Coloring Book and Games",
+  "appId": null,
+  "confidence": "null",
+  "reason": "set to null in data/overrides.json",
+  "queries": [],
   "checked": "2026-10-03"
  },
  "Unicorn Coloring Game For Kids": {
@@ -41016,23 +40984,28 @@
   "checked": "2026-10-03"
  },
  "Vampire Legends (Full)": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "closest match lacks 'full' and no Play Pass badge",
-  "queries": [
-   "Vampire Legends (Full)",
-   "Vampire Legends",
-   "Vampire Legends (Full) Play Pass"
+  "appId": "com.vampironi.vampirelegends",
+  "matched": "Vampire Legends",
+  "developer": "Vampironi",
+  "playGenre": "Arcade",
+  "icon": "https://play-lh.googleusercontent.com/oNjrfhCa4HVe8zVC1gzKgaown9n_YQ8EvoYWakHBEHnhn8r4IGJN7mvLd1Ve8JfMl6RobJOTYI2jDdo-_aKm6Q",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/V-qWHq_UiMPZDbPGP6l-BLxIMD3KgSLR3d9Z4Cm1CcbEddru0YjYgLJ76bXbk2P9bFxS4BGTss747YWOZtI8BA",
+   "https://play-lh.googleusercontent.com/Tfe2CJAAqKviqACsiiCjz0vVz51u0Qw7Tk6k2LrN1es9-WNRHxG8_LP07KFr3nD_FflrfUb9BqryTuAwWbv_X8s",
+   "https://play-lh.googleusercontent.com/YTezF3ka7d5Su4kcUV6PqE5zalR_MA9M_giKq-Nm-uE2sY-9igYcVfxztZal9L0nB_O8cNf11qU9O37XRAEbQIc",
+   "https://play-lh.googleusercontent.com/b0nYavte_v-s1e7bvVetooDK3Yj1mM1Qj_7362eEZ_ySMNy4mUJmFqIcbdiMY0Tv6sNMXAa9TmiolgDk3je0SQ",
+   "https://play-lh.googleusercontent.com/OyyOzdk9YtJrNN9qKHjVFUvOR-QtNp2lB7q2UTsaMPPpKrrRhdxNX4wNHaUhsfLfwJ-wscwLbtevDnPs-jihAA",
+   "https://play-lh.googleusercontent.com/mOVOXhHuKTyBuQkmi3BgQYEBbYB1Osi0bveKm8Uj-0PGPou7LqgwtFD0zPN3a-VXMZnJk8gyQ_-LRUy82vwBbQ",
+   "https://play-lh.googleusercontent.com/bEboZDZfKtNJibgnvAyaBEccL9RHzq3_0vB9EzuDwxvCs-7LLecAy_TLR78iCShxKq0KA6ksAhekXECohIzf",
+   "https://play-lh.googleusercontent.com/cbTa3BkHc0viTPhjS2jDScNKcBGaFxlNToXrkKrUSxSoL_ACfwQDVfVg6AcukoHv7Rh9tSTnISQcVhq1ANAq"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.vampironi.vampirelegends",
-   "title": "Vampire Legends",
-   "developer": "Vampironi",
-   "playPass": false,
-   "sim": 0.93,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.vampironi.vampirelegends",
+  "playPass": false,
+  "similarity": 0.93,
+  "confidence": "strong",
+  "flags": [],
+  "query": "Vampire Legends (Full)",
+  "checked": "2026-10-03"
  },
  "Vector Classic": {
   "appId": "com.nekki.vector.paid",
@@ -42049,24 +42022,28 @@
   "checked": "2026-10-03"
  },
  "Word Search by Quarzzo Apps": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "generic title and no Play Pass badge on the closest match",
-  "queries": [
-   "Word Search by Quarzzo Apps",
-   "Word Search Quarzzo Apps",
-   "Word Search",
-   "Word Search by Quarzzo Apps Play Pass"
+  "appId": "com.jdpapps.wordsearch",
+  "matched": "Word Search",
+  "developer": "Quarzo Apps",
+  "playGenre": "Word",
+  "icon": "https://play-lh.googleusercontent.com/5WpPyWa4ej0YKYTaZz_iPZdYF2VHJCqg1KtSzSVJ8J6feMwatWKzH5coCp4OUpToo6JKsa1x9tgWsPHlX9Gf",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/aGfWyKeECB8ZxoQBIWdrTwfeW__chB0KqMYebtHNBW48J7C4cE159bEA2B_CCpdEmkqU_jVNG0q92HgoEnLIJA",
+   "https://play-lh.googleusercontent.com/IHya7V1XVqT0iBnJ-d5HxpStTsK8vcdK9rnB2oREqfdb4coigcCfxkSxi8gnfe2KJ74tYX5OpvAiZARWthGz3Q",
+   "https://play-lh.googleusercontent.com/AdhEVqEkOsPB6eEb4NMtrrDuNHKMqmkHX41Sr_1MQQD13jiaLLNxNWWCtkSjDoZPTW7U-s4cNic6Ni8OcJCM",
+   "https://play-lh.googleusercontent.com/JBs1RvVjJtrJ4gUjCoVRRK6AtYlvlWv_usTw4cHAjJYwlfeGR5_SAayvgBCzNg2Vf64FakUg-kdQMwlrgrDo",
+   "https://play-lh.googleusercontent.com/diq4Vg3uY8B_YVWze89l4QomP9iAbV6FTtrFO0UNBy-WyImx0h2K0dIaq4XhY3qrwyijagzgxSQDzYjlHDJjtw",
+   "https://play-lh.googleusercontent.com/3DcDdLNhcsuTMNslxiC6l2P2pQPNv8lHh_TCA5WyD51BREWhKUFFj-NXqfFHOPK9STUV2mt2TA2RDsVHYA2Mmg",
+   "https://play-lh.googleusercontent.com/PlHmmXNqfXIuvAYdRTpdbfhjuUfuEvFSQMk-g6YPFC4_w2hL1fMEDUQVdCL55zO3UiXtiOkv-A550JdbfPc_yeA",
+   "https://play-lh.googleusercontent.com/he2zVFXvS3bLx2WgFqDX_4TmWGvAyc8oanJiVJ8ps6zLvz-yZR7Zpqp_S-UXhBp7lby5F-8RhSGzQykEbulMBZI"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.jdpapps.wordsearch",
-   "title": "Word Search",
-   "developer": "Quarzo Apps",
-   "playPass": false,
-   "sim": 1.0,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.jdpapps.wordsearch",
+  "playPass": false,
+  "similarity": 1.0,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Word Search Find The Words": {
   "appId": null,
@@ -42844,22 +42821,26 @@
   "checked": "2026-10-03"
  },
  "ザ・ファイナルタクシー 終末ドライブゲーム": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "closest match lacks '終末トライフケーム'",
-  "queries": [
-   "ザ・ファイナルタクシー 終末ドライブゲーム",
-   "ザ・ファイナルタクシー 終末ドライブゲーム Play Pass"
+  "appId": "com.zxima.finaltaxi",
+  "matched": "ザ・ファイナルタクシー 終末ドライブアドベンチャー",
+  "developer": "合同会社ズィーマ",
+  "playGenre": "アドベンチャー",
+  "icon": "https://play-lh.googleusercontent.com/RAqtwAHuw2UuawYlsXg9JbtAeuiP7kVG3ypWjbLNGYxBnEaw0JcbOT-WDOjJVa5kCB4HP_mN3R4ytcLLmGvd78E",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/09AAk2Gat47udAoLQW2W4aRwaZjQO6pb5RaPnCaz0BgtyuEAGfiNQMeYY0CbqVSRc7CAvv09nd6olnwyLfaYEg",
+   "https://play-lh.googleusercontent.com/xejirQ7D3eeKW6C_2gsvf6isRBTIlE6U0A3i0aNDLGU0waTCRSlIUIT9kBRSpRw0b1QiWZKn0-vOVVWe5PXEjo8",
+   "https://play-lh.googleusercontent.com/s06seijUdo8nrjsIbaOSmYys4acMUBig06Khx5r2XTiF6ogcTJL5NIkt4Mt0ExiIUbtzw8hzEh9tmMCQokw1aw",
+   "https://play-lh.googleusercontent.com/jmEkncspLxlDWqmot9zlUWNqqxWFg1UYQzvkQdgL4OAqt9W6-s9hUfo_zZMWm43Sf7NKglnKyUppm8KN0r9bNg",
+   "https://play-lh.googleusercontent.com/F8gInk8qiP1OQYpbEz6EyvX7yPMEmNLwaeYVzEHBrVGG3d5sI_aV_MWfOXMs-ZcBH7Ki7Kl29dsKCunMN1rh",
+   "https://play-lh.googleusercontent.com/6Z6bgwOylTZkeaiMNt6Au4JixTVdpMdzsEjUSZenOIuf1E8qBF07IfM9rNQtEVgjQQdRilTZeDxtQxRRJ2tS7Q"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.zxima.finaltaxi",
-   "title": "ザ・ファイナルタクシー 終末ドライブアドベンチャー",
-   "developer": "合同会社ズィーマ",
-   "playPass": true,
-   "sim": 0.826,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.zxima.finaltaxi",
+  "playPass": true,
+  "similarity": 0.826,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "旅かえる": {
   "appId": "jp.co.hit_point.tabikaeru",
