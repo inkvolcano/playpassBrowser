@@ -309,8 +309,11 @@ def missing_words(game_title, cand_title, cand_dev=""):
     words = norm(cand_title).split()
     have = words + norm(cand_dev).split()
     compounds = {"".join(words[i:j]) for i in range(len(words)) for j in range(i + 2, len(words) + 1)}  # "mini games"
-    return [w for w in norm(hint[0] if hint else game_title).split()
-            if w not in GENERIC_WORDS and w not in compounds
+    mine = norm(hint[0] if hint else game_title).split()
+    joined = {k for i in range(len(mine)) for j in range(i + 2, len(mine) + 1)  # "off road" vs "offroad"
+              if "".join(mine[i:j]) in words for k in range(i, j)}
+    return [w for k, w in enumerate(mine)
+            if k not in joined and w not in GENERIC_WORDS and w not in compounds
             and not any(SequenceMatcher(None, w, h).ratio() >= 0.8 for h in have)]
 
 
