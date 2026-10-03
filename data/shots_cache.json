@@ -79422,7 +79422,21 @@
   "flags": [],
   "query": "TV Studio Story",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.75,
+  "ratings": 2334,
+  "installs": 92912,
+  "tags": [
+   "Simulation",
+   "Management",
+   "Tycoon",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Light-hearted",
+   "Offline"
+  ]
  },
  "Twin Cobra classic": {
   "appId": "com.mobirix.jp.TwinCobra",
@@ -79463,7 +79477,19 @@
   "flags": [],
   "query": "Twin Cobra classic",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.41,
+  "ratings": 11884,
+  "installs": 1001069,
+  "tags": [
+   "Action",
+   "Shooter",
+   "Bulletstorm",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Twinfold": {
   "appId": null,
@@ -79522,7 +79548,18 @@
   "flags": [],
   "query": "Twinworld Survivor",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.68,
+  "ratings": 2939,
+  "installs": 68605,
+  "tags": [
+   "Role Playing",
+   "Roguelike",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Immersive"
+  ]
  },
  "Two Eyes – Nonogram": {
   "appId": "com.gamefox.twoeyes",
@@ -79563,7 +79600,20 @@
   "flags": [],
   "query": "Two Eyes – Nonogram",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.66,
+  "ratings": 77914,
+  "installs": 3527126,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Nonogram",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Ultimate Chicken Horse": {
   "appId": "com.noodlecake.UltimateChickenHorse",
@@ -79604,7 +79654,21 @@
   "flags": [],
   "query": "Ultimate Chicken Horse",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.45,
+  "ratings": 2221,
+  "installs": 540004,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Unbroken Soul": {
   "appId": "com.Chorrus.UnbrokenSoul",
@@ -79645,7 +79709,21 @@
   "flags": [],
   "query": "Unbroken Soul",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.79,
+  "ratings": 1509,
+  "installs": 106984,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Hack & slash",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Intense",
+   "Offline"
+  ]
  },
  "Undead Horde": {
   "appId": "com.the10tons.UndeadHorde",
@@ -79679,7 +79757,21 @@
   "flags": [],
   "query": "Undead Horde",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.87,
+  "ratings": 1420,
+  "installs": 247670,
+  "tags": [
+   "Role Playing",
+   "Action Role-Playing",
+   "Single player",
+   "Stylized",
+   "Low poly",
+   "Immersive",
+   "Fantasy",
+   "Dark fantasy",
+   "Offline"
+  ]
  },
  "Underworld Office": {
   "appId": "com.buffstudio.uwoffice",
@@ -79717,7 +79809,19 @@
   "flags": [],
   "query": "Underworld Office",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.52,
+  "ratings": 6411,
+  "installs": 146507,
+  "tags": [
+   "Adventure",
+   "Interactive story",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Horror",
+   "Offline"
+  ]
  },
  "Unhatched": {
   "appId": "pl.loster.filip.unhatched",
@@ -79746,7 +79850,18 @@
   "flags": [],
   "query": "Unhatched",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.95,
+  "ratings": 478,
+  "installs": 29810,
+  "tags": [
+   "Card",
+   "Card battler",
+   "Single player",
+   "Stylized",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Unholy Adventure 2: Mystery": {
   "appId": null,
@@ -79806,7 +79921,13 @@
   "flags": [],
   "query": "Unicorn Cake Cooking Games 2-6",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.33,
+  "ratings": 615,
+  "installs": 249923,
+  "tags": [
+   "Educational"
+  ]
  },
  "Unicorn Coloring Book and Games": {
   "appId": null,
@@ -79854,7 +79975,13 @@
   "flags": [],
   "query": "Unicorn Coloring Game For Kids",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.03,
+  "ratings": 1586,
+  "installs": 1684466,
+  "tags": [
+   "Casual"
+  ]
  },
  "Unicorn Coloring Girl Games": {
   "appId": "com.gamesforkids.glittercoloringpages.unicorns.girlgames",
@@ -79895,7 +80022,16 @@
   "flags": [],
   "query": "Unicorn Coloring Girl Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.39,
+  "ratings": 2632,
+  "installs": 1328635,
+  "tags": [
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Unicorn Games for 2+ Year Olds": {
   "appId": "com.iz.unicorn.girl.dress.up.rainbow.run.baby.pony.runner.flyer.kids.fun.toddler.games",
@@ -79936,7 +80072,20 @@
   "flags": [],
   "query": "Unicorn Games for 2+ Year Olds",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.22,
+  "ratings": 5772,
+  "installs": 4580161,
+  "tags": [
+   "Educational",
+   "Language",
+   "Abc",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Cute",
+   "Offline"
+  ]
  },
  "Unicorn Glitter Coloring Games": {
   "appId": "com.iz.unicorn.coloring.book.games.glitter.free.colouring.pages.pony.princess.animal.drawing.girls.color",
@@ -79977,7 +80126,17 @@
   "flags": [],
   "query": "Unicorn Glitter Coloring Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.11,
+  "ratings": 5911,
+  "installs": 6207703,
+  "tags": [
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Handicraft",
+   "Offline"
+  ]
  },
  "Unicorn Phone for Kids Games": {
   "appId": "com.iz.pink.unicorn.baby.toy.phone.princess.game",
@@ -80018,7 +80177,13 @@
   "flags": [],
   "query": "Unicorn Phone for Kids Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.89,
+  "ratings": 592,
+  "installs": 277521,
+  "tags": [
+   "Educational"
+  ]
  },
  "Unit 404": {
   "appId": null,
@@ -80079,7 +80244,13 @@
   "flags": [],
   "query": "Universe For Sale",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.5,
+  "ratings": 53,
+  "installs": 5967,
+  "tags": [
+   "Adventure"
+  ]
  },
  "Unknown Knights": {
   "appId": "com.teamarex.troop",
@@ -80103,7 +80274,21 @@
   "flags": [],
   "query": "Unknown Knights",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.93,
+  "ratings": 2567,
+  "installs": 137709,
+  "tags": [
+   "Role Playing",
+   "Idle RPG",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Fantasy",
+   "Dark fantasy",
+   "Immersive",
+   "Offline"
+  ]
  },
  "unmemory: Puzzle Story": {
   "appId": "com.pid.unmemory",
@@ -80144,7 +80329,17 @@
   "flags": [],
   "query": "unmemory: Puzzle Story",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.42,
+  "ratings": 524,
+  "installs": 37686,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Single player",
+   "Mystery",
+   "Offline"
+  ]
  },
  "Unreal Life": {
   "appId": "net.room6.unreallife",
@@ -80177,7 +80372,18 @@
   "flags": [],
   "query": "Unreal Life",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.51,
+  "ratings": 1111,
+  "installs": 71221,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated"
+  ]
  },
  "Unwanted Experiment": {
   "appId": "air.com.darkdome.unwanted.experiment",
@@ -80218,7 +80424,19 @@
   "flags": [],
   "query": "Unwanted Experiment",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.57,
+  "ratings": 111770,
+  "installs": 6231575,
+  "tags": [
+   "Puzzle",
+   "Escape",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Monster",
+   "Offline"
+  ]
  },
  "Urban City Stories: World Game": {
   "appId": "com.playtoddlers.urbancitystories.free",
@@ -80243,7 +80461,20 @@
   "flags": [],
   "query": "Urban City Stories: World Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.53,
+  "ratings": 203151,
+  "installs": 56683862,
+  "tags": [
+   "Simulation",
+   "Life",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "City",
+   "Cute",
+   "Offline"
+  ]
  },
  "Utsuro’s diary (Full version)": {
   "appId": "com.FeeUtsuro",
@@ -80284,7 +80515,13 @@
   "flags": [],
   "query": "Utsuro’s diary (Full version)",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.71,
+  "ratings": 76,
+  "installs": 2517,
+  "tags": [
+   "Word"
+  ]
  },
  "Vampire Legends (Full)": {
   "appId": null,
@@ -80332,7 +80569,20 @@
   "flags": [],
   "query": "Vector Classic",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.82,
+  "ratings": 78804,
+  "installs": 1978691,
+  "tags": [
+   "Sports",
+   "Parkour",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Experiences",
+   "Fantasy",
+   "Urban fantasy"
+  ]
  },
  "Vendetta: Mafia Shooting Game": {
   "appId": "com.big.vendetta",
@@ -80373,7 +80623,20 @@
   "flags": [],
   "query": "Vendetta: Mafia Shooting Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.5,
+  "ratings": 35605,
+  "installs": 1756049,
+  "tags": [
+   "Action",
+   "Shooter",
+   "Single player",
+   "Stylized",
+   "Modern",
+   "Crime",
+   "Intense",
+   "Offline"
+  ]
  },
  "Venture Towns": {
   "appId": "net.kairosoft.android.zaibatu3",
@@ -80414,7 +80677,21 @@
   "flags": [],
   "query": "Venture Towns",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.93,
+  "ratings": 4394,
+  "installs": 195772,
+  "tags": [
+   "Simulation",
+   "Management",
+   "City-building",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Light-hearted",
+   "Offline"
+  ]
  },
  "Vertical Adventure The Hardest": {
   "appId": null,
@@ -80467,7 +80744,19 @@
   "flags": [],
   "query": "Very Little Nightmares",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.42,
+  "ratings": 23412,
+  "installs": 1204928,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Single player",
+   "Stylized",
+   "Monster",
+   "Puzzles",
+   "Offline"
+  ]
  },
  "Vikings: an Archer’s Journey": {
   "appId": "com.pinpinteam.vikings",
@@ -80502,7 +80791,21 @@
   "flags": [],
   "query": "Vikings: an Archer’s Journey",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.98,
+  "ratings": 11180,
+  "installs": 1586100,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Fantasy",
+   "Mythology",
+   "Western myths",
+   "Offline"
+  ]
  },
  "Vita Fighters": {
   "appId": "com.Angrydevs.VitaFighters",
@@ -80543,7 +80846,18 @@
   "flags": [],
   "query": "Vita Fighters",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.84,
+  "ratings": 12795,
+  "installs": 2648700,
+  "tags": [
+   "Action",
+   "Fighting",
+   "Single player",
+   "Stylized",
+   "Low poly",
+   "Offline"
+  ]
  },
  "Vlad and Nikki 2 Playeers": {
   "appId": "com.edujoy.vlad.niki.twoplayers",
@@ -80580,7 +80894,22 @@
   "flags": [],
   "query": "Vlad and Nikki 2 Playeers",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.51,
+  "ratings": 6078,
+  "installs": 4190729,
+  "tags": [
+   "Board",
+   "Party",
+   "Casual",
+   "Minigames",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Stylized",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Vlad and Nikki Educational Game": {
   "appId": "com.edujoy.vlad.nikita",
@@ -80621,7 +80950,19 @@
   "flags": [],
   "query": "Vlad and Nikki Educational Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.25,
+  "ratings": 9076,
+  "installs": 10386522,
+  "tags": [
+   "Educational",
+   "Mathematics",
+   "Casual",
+   "Minigames",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Vlad and Nikki – Smart Games": {
   "appId": "com.edujoy.vlad.niki",
@@ -80662,7 +81003,18 @@
   "flags": [],
   "query": "Vlad and Nikki – Smart Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.45,
+  "ratings": 60901,
+  "installs": 41400818,
+  "tags": [
+   "Educational",
+   "Casual",
+   "Minigames",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "VolleyBall King": {
   "appId": "com.mobirix.scvb",
@@ -80703,7 +81055,18 @@
   "flags": [],
   "query": "VolleyBall King",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.12,
+  "ratings": 17586,
+  "installs": 8410541,
+  "tags": [
+   "Sports",
+   "Single player",
+   "Stylized",
+   "Anime",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Wall of Insanity": {
   "appId": "com.VenomizedArt.WallOfInsanity",
@@ -80744,7 +81107,21 @@
   "flags": [],
   "query": "Wall of Insanity",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.95,
+  "ratings": 4039,
+  "installs": 343641,
+  "tags": [
+   "Action",
+   "Action-adventure",
+   "Survival horror",
+   "Single player",
+   "Stylized",
+   "Weapons",
+   "Gun",
+   "Horror",
+   "Offline"
+  ]
  },
  "Wanna Survive": {
   "appId": null,
@@ -80803,7 +81180,13 @@
   "flags": [],
   "query": "War for Terra- 3D RTS",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.52,
+  "ratings": 106,
+  "installs": 10765,
+  "tags": [
+   "Strategy"
+  ]
  },
  "Water Sort Quest": {
   "appId": "com.mobirix.wspuzzle",
@@ -80844,7 +81227,19 @@
   "flags": [],
   "query": "Water Sort Quest",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.89,
+  "ratings": 41634,
+  "installs": 19148649,
+  "tags": [
+   "Puzzle",
+   "Sort",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Light-hearted",
+   "Offline"
+  ]
  },
  "Water Sort Quiz": {
   "appId": "com.mobirix.ldwsq",
@@ -80885,7 +81280,13 @@
   "flags": [],
   "query": "Water Sort Quiz",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.5,
+  "ratings": 1309,
+  "installs": 672567,
+  "tags": [
+   "Puzzle"
+  ]
  },
  "Watermelon Maker 2048": {
   "appId": "com.mobirix.ldwm",
@@ -80926,7 +81327,20 @@
   "flags": [],
   "query": "Watermelon Maker 2048",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.78,
+  "ratings": 5765,
+  "installs": 4414244,
+  "tags": [
+   "Puzzle",
+   "Merge",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Light-hearted",
+   "Offline"
+  ]
  },
  "We Are Cooking: Taste of Life": {
   "appId": "com.matryoshka.cooking.vibes",
@@ -80967,7 +81381,17 @@
   "flags": [],
   "query": "We Are Cooking: Taste of Life",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.66,
+  "ratings": 39175,
+  "installs": 7717132,
+  "tags": [
+   "Simulation",
+   "Time management",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Welcome To Everdell": {
   "appId": "com.direwolfdigital.mylileverdell",
@@ -81008,7 +81432,15 @@
   "flags": [],
   "query": "Welcome To Everdell",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.63,
+  "ratings": 758,
+  "installs": 40883,
+  "tags": [
+   "Board",
+   "Abstract strategy",
+   "Casual"
+  ]
  },
  "Whale Trail Classic": {
   "appId": "com.jakyl.whaletrail",
@@ -81043,7 +81475,16 @@
   "flags": [],
   "query": "Whale Trail Classic",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.33,
+  "ratings": 1521,
+  "installs": 45352,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Arcade",
+   "Stylized"
+  ]
  },
  "What’s Inside the Box?": {
   "appId": "air.com.bartbonte.thebox",
@@ -81072,7 +81513,18 @@
   "flags": [],
   "query": "What’s Inside the Box?",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.14,
+  "ratings": 25030,
+  "installs": 2870377,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Single player",
+   "Realistic",
+   "Offline"
+  ]
  },
  "Wheel of Fame – Guess words": {
   "appId": "com.tellmewow.senior.wheel.fortune",
@@ -81107,7 +81559,20 @@
   "flags": [],
   "query": "Wheel of Fame – Guess words",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.51,
+  "ratings": 228091,
+  "installs": 16485547,
+  "tags": [
+   "Word",
+   "Search",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Puzzles",
+   "Entertainment",
+   "Offline"
+  ]
  },
  "Whispering Willows": {
   "appId": "com.nightlightinteractive.ww",
@@ -81140,7 +81605,16 @@
   "flags": [],
   "query": "Whispering Willows",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.05,
+  "ratings": 1390,
+  "installs": 41695,
+  "tags": [
+   "Adventure",
+   "Casual",
+   "Stylized",
+   "Horror"
+  ]
  },
  "Whispers of a Machine": {
   "appId": "com.rawfury.woam",
@@ -81172,7 +81646,18 @@
   "flags": [],
   "query": "Whispers of a Machine",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.41,
+  "ratings": 1445,
+  "installs": 45354,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Single player",
+   "Stylized",
+   "Mystery",
+   "Offline"
+  ]
  },
  "White Night": {
   "appId": "com.playdigious.whitenight",
@@ -81204,7 +81689,18 @@
   "flags": [],
   "query": "White Night",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.15,
+  "ratings": 283,
+  "installs": 15148,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Single player",
+   "Stylized",
+   "Horror",
+   "Offline"
+  ]
  },
  "Who Is Awesome": {
   "appId": "com.azamatika.whoisawesome",
@@ -81245,7 +81741,17 @@
   "flags": [],
   "query": "Who Is Awesome",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.02,
+  "ratings": 916,
+  "installs": 29249,
+  "tags": [
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "Who is? 2 Brain Puzzle & Chats": {
   "appId": "com.unicostudio.whois2",
@@ -81286,7 +81792,13 @@
   "flags": [],
   "query": "Who is? 2 Brain Puzzle & Chats",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.62,
+  "ratings": 20229,
+  "installs": 1299211,
+  "tags": [
+   "Casual"
+  ]
  },
  "Who is? Brain Teaser & Riddles": {
   "appId": "com.unicostudio.whois",
@@ -81327,7 +81839,18 @@
   "flags": [],
   "query": "Who is? Brain Teaser & Riddles",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.67,
+  "ratings": 1803824,
+  "installs": 78882890,
+  "tags": [
+   "Puzzle",
+   "Brain teaser",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Will It Shred? ASMR Game": {
   "appId": "com.satisfying.shredder",
@@ -81368,7 +81891,16 @@
   "flags": [],
   "query": "Will It Shred? ASMR Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.18,
+  "ratings": 39128,
+  "installs": 15319087,
+  "tags": [
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Wind Peaks": {
   "appId": "com.actoonstudio.windpeaks",
@@ -81409,7 +81941,19 @@
   "flags": [],
   "query": "Wind Peaks",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.39,
+  "ratings": 1026,
+  "installs": 87839,
+  "tags": [
+   "Puzzle",
+   "Hidden object",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Light-hearted",
+   "Offline"
+  ]
  },
  "WitchSpring4": {
   "appId": null,
@@ -81468,7 +82012,19 @@
   "flags": [],
   "query": "Wonder Woollies Play World",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.05,
+  "ratings": 8920,
+  "installs": 5465594,
+  "tags": [
+   "Simulation",
+   "Life",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cute",
+   "Offline"
+  ]
  },
  "Wood Blocks 3D": {
   "appId": "com.infinitygames.woodblocks3d",
@@ -81509,7 +82065,18 @@
   "flags": [],
   "query": "Wood Blocks 3D",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.32,
+  "ratings": 1480,
+  "installs": 164056,
+  "tags": [
+   "Puzzle",
+   "Block",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Woody Sort: Ball Sort Puzzle": {
   "appId": "com.unicostudio.balltubes",
@@ -81550,7 +82117,18 @@
   "flags": [],
   "query": "Woody Sort: Ball Sort Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.7,
+  "ratings": 136248,
+  "installs": 8723860,
+  "tags": [
+   "Puzzle",
+   "Sort",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Woolly Boy and the Circus": {
   "appId": "com.cottongame.BigPineappleCircus",
@@ -81591,7 +82169,18 @@
   "flags": [],
   "query": "Woolly Boy and the Circus",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4,
+  "ratings": 820,
+  "installs": 57625,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Single player",
+   "Stylized",
+   "Mystery",
+   "Offline"
+  ]
  },
  "Word Breaker": {
   "appId": "com.firecrackersw.wordbreaker",
@@ -81621,7 +82210,18 @@
   "flags": [],
   "query": "Word Breaker",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.41,
+  "ratings": 36606,
+  "installs": 2880432,
+  "tags": [
+   "Word",
+   "Word jumble",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Word City Classic: Word Search": {
   "appId": "com.bigstarkids.wordtravelclassic",
@@ -81662,7 +82262,18 @@
   "flags": [],
   "query": "Word City Classic: Word Search",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.66,
+  "ratings": 11850,
+  "installs": 467286,
+  "tags": [
+   "Word",
+   "Search",
+   "Casual",
+   "Single player",
+   "Realistic",
+   "Offline"
+  ]
  },
  "Word Master – Pro": {
   "appId": "jaguargames.wordmasterpro",
@@ -81702,7 +82313,16 @@
   "flags": [],
   "query": "Word Master – Pro",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.68,
+  "ratings": 2090,
+  "installs": 48940,
+  "tags": [
+   "Word",
+   "Word jumble",
+   "Casual",
+   "Abstract"
+  ]
  },
  "Word Match: Conenctions Game": {
   "appId": "com.unicostudio.wordassociation",
@@ -81743,7 +82363,13 @@
   "flags": [],
   "query": "Word Match: Conenctions Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.73,
+  "ratings": 12463,
+  "installs": 1501976,
+  "tags": [
+   "Word"
+  ]
  },
  "Word Pearls: Word Games": {
   "appId": "com.oakgames.wordgame",
@@ -81784,7 +82410,17 @@
   "flags": [],
   "query": "Word Pearls: Word Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.71,
+  "ratings": 45808,
+  "installs": 5476597,
+  "tags": [
+   "Word",
+   "Casual",
+   "Single player",
+   "Realistic",
+   "Offline"
+  ]
  },
  "Word Relax": {
   "appId": "com.epicpandagames.word.match",
@@ -81825,7 +82461,13 @@
   "flags": [],
   "query": "Word Relax Play Pass",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.22,
+  "ratings": 400,
+  "installs": 38168,
+  "tags": [
+   "Word"
+  ]
  },
  "Word Search": {
   "appId": "com.tellmewow.senior.word.search",
@@ -81866,7 +82508,18 @@
   "flags": [],
   "query": "Word Search Play Pass",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.64,
+  "ratings": 100872,
+  "installs": 9898573,
+  "tags": [
+   "Word",
+   "Search",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Word Search by AsgardSoft": {
   "appId": "com.asgardsoft.words",
@@ -81898,7 +82551,18 @@
   "flags": [],
   "query": "Word Search by AsgardSoft",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.67,
+  "ratings": 108976,
+  "installs": 25547623,
+  "tags": [
+   "Word",
+   "Search",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Word Search by Quarzzo Apps": {
   "appId": "com.jdpapps.wordsearch",
@@ -81939,7 +82603,18 @@
   "flags": [],
   "query": null,
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.24,
+  "ratings": 177898,
+  "installs": 60275244,
+  "tags": [
+   "Word",
+   "Search",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Word Search Find The Words": {
   "appId": null,
@@ -81992,7 +82667,18 @@
   "flags": [],
   "query": "Word Search Games in English Play Pass",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.5,
+  "ratings": 143807,
+  "installs": 77039929,
+  "tags": [
+   "Word",
+   "Search",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Word Tower: Relaxing Word Game": {
   "appId": "com.bigstarkids.wordtower",
@@ -82033,7 +82719,18 @@
   "flags": [],
   "query": "Word Tower: Relaxing Word Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.59,
+  "ratings": 31587,
+  "installs": 3236871,
+  "tags": [
+   "Word",
+   "Search",
+   "Casual",
+   "Single player",
+   "Realistic",
+   "Offline"
+  ]
  },
  "Word Voyage: Word Search": {
   "appId": "com.unicostudio.wordpirates",
@@ -82074,7 +82771,17 @@
   "flags": [],
   "query": "Word Voyage: Word Search",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.75,
+  "ratings": 38000,
+  "installs": 4514838,
+  "tags": [
+   "Word",
+   "Casual",
+   "Single player",
+   "Realistic",
+   "Offline"
+  ]
  },
  "Worde: Daily & Unlimited": {
   "appId": "com.chinloyal.wordle",
@@ -82112,7 +82819,19 @@
   "flags": [],
   "query": "Worde: Daily & Unlimited",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.32,
+  "ratings": 11249,
+  "installs": 608866,
+  "tags": [
+   "Word",
+   "Search",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Abstract"
+  ]
  },
  "Wordling: Daily Word Challenge": {
   "appId": "io.digitalsnacks.wordchallenge",
@@ -82144,7 +82863,21 @@
   "flags": [],
   "query": "Wordling: Daily Word Challenge",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.86,
+  "ratings": 38542,
+  "installs": 5786945,
+  "tags": [
+   "Word",
+   "Search",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Abstract",
+   "Light-hearted",
+   "Offline"
+  ]
  },
  "WordPix – Crossword Puzzle": {
   "appId": "app.wordpix.android",
@@ -82185,7 +82918,17 @@
   "flags": [],
   "query": "WordPix – Crossword Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.59,
+  "ratings": 81998,
+  "installs": 3082297,
+  "tags": [
+   "Word",
+   "Crossword",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Competitive"
+  ]
  },
  "World Cruise Story": {
   "appId": "net.kairosoft.android.cruise_en",
@@ -82226,7 +82969,21 @@
   "flags": [],
   "query": "World Cruise Story",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.42,
+  "ratings": 3102,
+  "installs": 97069,
+  "tags": [
+   "Simulation",
+   "Management",
+   "Restaurant",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Light-hearted",
+   "Offline"
+  ]
  },
  "Worms 3": {
   "appId": "com.worms3.app",
@@ -82261,7 +83018,17 @@
   "flags": [],
   "query": "Worms 3",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.22,
+  "ratings": 72543,
+  "installs": 1531380,
+  "tags": [
+   "Action",
+   "Shooter",
+   "Artillery shooter",
+   "Casual",
+   "Stylized"
+  ]
  },
  "Worms Zone .io – Hungry Snake": {
   "appId": "com.wildspike.wormszone",
@@ -82302,7 +83069,21 @@
   "flags": [],
   "query": "Worms Zone .io – Hungry Snake",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.34,
+  "ratings": 3244059,
+  "installs": 681960844,
+  "tags": [
+   "Action",
+   "IO game",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Animals",
+   "Worm",
+   "Insect",
+   "Offline"
+  ]
  },
  "X2 Puzzle Number Merge 2048": {
   "appId": "com.unicostudio.x2number",
@@ -82343,7 +83124,13 @@
   "flags": [],
   "query": "X2 Puzzle Number Merge 2048",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.72,
+  "ratings": 41337,
+  "installs": 4346217,
+  "tags": [
+   "Casual"
+  ]
  },
  "Xenowerk Tactics": {
   "appId": "com.pixelbite.xwt",
@@ -82378,7 +83165,20 @@
   "flags": [],
   "query": "Xenowerk Tactics",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.56,
+  "ratings": 10096,
+  "installs": 556710,
+  "tags": [
+   "Strategy",
+   "Tactics",
+   "Single player",
+   "Stylized",
+   "Stylized-realistic",
+   "Intense",
+   "Science fiction",
+   "Offline"
+  ]
  },
  "Yachty": {
   "appId": "com.rubicon.dev.yachty",
@@ -82407,7 +83207,20 @@
   "flags": [],
   "query": "Yachty",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.63,
+  "ratings": 39779,
+  "installs": 2317715,
+  "tags": [
+   "Board",
+   "Abstract strategy",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Realistic",
+   "Offline"
+  ]
  },
  "Yes, Your Grace": {
   "appId": "com.noodlecake.yesyourgrace",
@@ -82448,7 +83261,16 @@
   "flags": [],
   "query": "Yes, Your Grace",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.63,
+  "ratings": 19778,
+  "installs": 923999,
+  "tags": [
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Yodanji The Roguelike": {
   "appId": "kemco.yodanji",
@@ -82489,7 +83311,18 @@
   "flags": [],
   "query": "Yodanji The Roguelike",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.64,
+  "ratings": 400,
+  "installs": 23788,
+  "tags": [
+   "Role Playing",
+   "Roguelike",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "You Are Hope": {
   "appId": "com.wereviz.evolution",
@@ -82528,7 +83361,13 @@
   "flags": [],
   "query": "You Are Hope",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 2.78,
+  "ratings": 5559,
+  "installs": 131331,
+  "tags": [
+   "Stylized"
+  ]
  },
  "Youtuber’s Life: Gaming Channel": {
   "appId": "com.uplayonline.youtubers",
@@ -82569,7 +83408,18 @@
   "flags": [],
   "query": "Youtuber’s Life: Gaming Channel",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.44,
+  "ratings": 14696,
+  "installs": 641822,
+  "tags": [
+   "Simulation",
+   "Life",
+   "Single player",
+   "Stylized",
+   "Connect",
+   "Offline"
+  ]
  },
  "Z.O.N.A Shadow of Limansh Redu": {
   "appId": "com.agaming.zona.shadow.of.limansk.redux",
@@ -82609,7 +83459,19 @@
   "flags": [],
   "query": "Z.O.N.A Shadow of Limansh Redu",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.02,
+  "ratings": 3111,
+  "installs": 342121,
+  "tags": [
+   "Action",
+   "Shooter",
+   "Single player",
+   "Weapons",
+   "Gun",
+   "Science fiction",
+   "Apocalyptic"
+  ]
  },
  "zCube – 3D RTS": {
   "appId": "ru.gamedevteam.wz",
@@ -82644,7 +83506,17 @@
   "flags": [],
   "query": "zCube – 3D RTS",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.6,
+  "ratings": 362,
+  "installs": 14587,
+  "tags": [
+   "Strategy",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Zelle – Occult Adventure-": {
   "appId": "com.odencat.zelle",
@@ -82676,7 +83548,17 @@
   "flags": [],
   "query": "Zelle – Occult Adventure-",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.2,
+  "ratings": 1442,
+  "installs": 27091,
+  "tags": [
+   "Adventure",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Zen Koi Pro": {
   "appId": "com.landsharkgames.zenkoipro.android",
@@ -82717,7 +83599,17 @@
   "flags": [],
   "query": "Zen Koi Pro",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.77,
+  "ratings": 3338,
+  "installs": 177902,
+  "tags": [
+   "Simulation",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Zen Squares: Flat Rubik’s Cube": {
   "appId": "com.gamehouse.puzzle.zen.squares.logic.relaxing.minimalist.brain.training",
@@ -82746,7 +83638,13 @@
   "flags": [],
   "query": "Zen Squares: Flat Rubik’s Cube",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": null,
+  "ratings": null,
+  "installs": 2182,
+  "tags": [
+   "Puzzle"
+  ]
  },
  "Zenge – beautiful Puzzle Game": {
   "appId": "com.hamsteroncoke.zenge",
@@ -82784,7 +83682,18 @@
   "flags": [],
   "query": "Zenge – beautiful Puzzle Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.47,
+  "ratings": 16498,
+  "installs": 1181925,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "Zero Gunner 2 Classic": {
   "appId": null,
@@ -82843,7 +83752,18 @@
   "flags": [],
   "query": "Zoeti",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.83,
+  "ratings": 132,
+  "installs": 30440,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Single player",
+   "Stylized",
+   "Competitive",
+   "Fantasy"
+  ]
  },
  "Zombie Night Terror": {
   "appId": "com.pid.znt",
@@ -82877,7 +83797,18 @@
   "flags": [],
   "query": "Zombie Night Terror",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.74,
+  "ratings": 1871,
+  "installs": 239277,
+  "tags": [
+   "Action",
+   "Casual",
+   "Stylized",
+   "Pixelated",
+   "Zombie",
+   "Dark"
+  ]
  },
  "Zombie Sniper War 3: Fire FPS": {
   "appId": "com.JESoftware.LastHopeSniper3",
@@ -82909,7 +83840,22 @@
   "flags": [],
   "query": "Zombie Sniper War 3: Fire FPS",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.68,
+  "ratings": 151187,
+  "installs": 12464563,
+  "tags": [
+   "Action",
+   "Shooter",
+   "Bulletstorm",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Weapons",
+   "Gun",
+   "Zombie",
+   "Offline"
+  ]
  },
  "Zombie Sniper War 3D: Dead FPS": {
   "appId": null,
@@ -82966,7 +83912,19 @@
   "flags": [],
   "query": "Zombie Survival Apocalypse",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.97,
+  "ratings": 5222,
+  "installs": 495839,
+  "tags": [
+   "Action",
+   "Shooter",
+   "Bulletstorm",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "Zoo Park Story": {
   "appId": "net.kairosoft.android.zoo",
@@ -83007,7 +83965,18 @@
   "flags": [],
   "query": "Zoo Park Story",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.5,
+  "ratings": 2064,
+  "installs": 106379,
+  "tags": [
+   "Simulation",
+   "Management",
+   "Casual",
+   "Stylized",
+   "Pixelated",
+   "Light-hearted"
+  ]
  },
  "ZOOKEEPER DX TouchEdition": {
   "appId": "jp.kiteretsu.zookeeper_dx",
@@ -83032,7 +84001,18 @@
   "flags": [],
   "query": "ZOOKEEPER DX TouchEdition",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.21,
+  "ratings": 3456,
+  "installs": 376171,
+  "tags": [
+   "Puzzle",
+   "Match 3",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "ねぇAI、本当の事がしりたい": {
   "appId": "com.kotoriyama.hey_ai",
@@ -83067,7 +84047,13 @@
   "flags": [],
   "query": "ねぇAI、本当の事がしりたい",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.27,
+  "ratings": 233,
+  "installs": 5700,
+  "tags": [
+   "言葉"
+  ]
  },
  "ねこのデザイナー モカのさがし絵ジグソーパズル": {
   "appId": "com.kotoriyama.mocha",
@@ -83099,7 +84085,13 @@
   "flags": [],
   "query": "ねこのデザイナー モカのさがし絵ジグソーパズル",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.08,
+  "ratings": 64,
+  "installs": 3357,
+  "tags": [
+   "パズル"
+  ]
  },
  "ザ・ファイナルタクシー 終末ドライブゲーム": {
   "appId": "com.zxima.finaltaxi",
@@ -83122,7 +84114,16 @@
   "flags": [],
   "query": null,
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.58,
+  "ratings": 342,
+  "installs": 23811,
+  "tags": [
+   "シングル プレーヤー",
+   "スタイライズド",
+   "ピクセル化",
+   "オフライン"
+  ]
  },
  "旅かえる": {
   "appId": "jp.co.hit_point.tabikaeru",
@@ -83157,6 +84158,16 @@
   "flags": [],
   "query": "旅かえる",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.37,
+  "ratings": 59849,
+  "installs": 5279969,
+  "tags": [
+   "シミュレーション",
+   "シングル プレーヤー",
+   "スタイライズド",
+   "動物",
+   "オフライン"
+  ]
  }
 }
