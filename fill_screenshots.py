@@ -232,6 +232,8 @@ objects difference differences sticker stickers story stories book books english
 about how what where who is it this that all me you we lets let go play time
 adult adults senior seniors family teen teens relax relaxing daily unlimited challenge
 challenges master mania blast christmas xmas halloween easter santa holiday spooky concentration
+nail nails salon hair makeup makeover fashion spa beauty art arts craft crafts pet pets house
+home design dream dreams mandala mandalas ludo carrom parcheesi
 """.split()) | {str(n) for n in range(21)}
 YEAR_RE = re.compile(r"19[5-9]\d|20[0-3]\d")
 
@@ -362,6 +364,12 @@ def query_variants(title):
     return list(dict.fromkeys(q for q in out if q.strip()))
 
 
+def rivals(best, pool):
+    """Other developers' apps with an equally close title ("Knock Knock" x3)."""
+    return [c for c in pool.values() if c is not best and c["sim"] >= best["sim"] - 0.02
+            and norm(c.get("developer")) != norm(best.get("developer"))]
+
+
 def entry_from(c, game_title, confidence, query, flags):
     shots = [s for s in (c.get("screenshots") or []) if s][:MAX_SHOTS]
     return {
@@ -427,7 +435,7 @@ def lookup(game):
         ranked = sorted(pool.values(), key=lambda c: (-c["score"], c["rank"]))
         best = ranked[0] if ranked else None
         if (best and best["score"] >= STRONG_MIN and not best["flags"] and not generic
-                and not missing_words(title, best.get("title"))):
+                and not missing_words(title, best.get("title")) and not rivals(best, pool)):
             if len(best.get("screenshots") or []) < 2 and not best.get("detailed"):
                 merge(best, app_details(best["appId"], lang, country))
             return entry_from(best, title, "strong", best["query"], best["flags"])
@@ -441,6 +449,8 @@ def lookup(game):
         reason = "closest match flagged: " + ", ".join(best["flags"])
     elif generic and best["score"] >= STRONG_MIN:
         reason = "generic title and no Play Pass badge on the closest match"
+    elif best["score"] >= STRONG_MIN and rivals(best, pool):
+        reason = f"{len(rivals(best, pool)) + 1} apps share this title and none has the Play Pass badge"
     elif missing and best["sim"] >= 0.6:
         reason = f"closest match lacks {', '.join(missing)!r}{no_badge}"
     else:
