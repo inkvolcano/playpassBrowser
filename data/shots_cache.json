@@ -15692,22 +15692,10 @@
   "checked": "2026-10-03"
  },
  "Horizon Chase Arcade Racing": {
-  "appId": "com.playgame.horizonchase",
-  "matched": "Horizon Chase – Arcade Racing",
-  "developer": "ArenaKick Games",
-  "playGenre": "Racing",
-  "icon": "https://play-lh.googleusercontent.com/58mzDtzf-YlO0DIb1DKMp1XKLcEWwG0EgqL_uw2YVHc_yfCMjWQZ_-0zwwQhmbksnH9DzZtc9ait8UlAlRmSjpw",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/GhepBGrVoCcgQ112rOV2xm6XoPrQu8QBHqZjRpWKfejWsAEy4UFmAobGcNCL42r4s0OyhRpeDRWUXeRrEIfXQX0",
-   "https://play-lh.googleusercontent.com/-CzFBEwhVMnuqNVR_AjuHMosD9AaaM85kSr4wflDSik_Nx4OKYo5thVrDsPq5rqqsLZo74sV7JQeL6970YDPtxQ",
-   "https://play-lh.googleusercontent.com/eezjlOq0qcnoyLqOsVIy0XXR09fxBJFiA-s9gBrRkJxJ5bo1cat25IxVFTO01uFnHVVCIo97DIsg-eZSsDO2mgc"
-  ],
-  "url": "https://play.google.com/store/apps/details?id=com.playgame.horizonchase",
-  "playPass": false,
-  "similarity": 1.0,
-  "confidence": "strong",
-  "flags": [],
-  "query": "Horizon Chase Arcade Racing",
+  "appId": null,
+  "confidence": "null",
+  "reason": "set to null in data/overrides.json",
+  "queries": [],
   "checked": "2026-10-03"
  },
  "Horror Tale 1: Kidnapper": {
@@ -40984,27 +40972,10 @@
   "checked": "2026-10-03"
  },
  "Vampire Legends (Full)": {
-  "appId": "com.vampironi.vampirelegends",
-  "matched": "Vampire Legends",
-  "developer": "Vampironi",
-  "playGenre": "Arcade",
-  "icon": "https://play-lh.googleusercontent.com/oNjrfhCa4HVe8zVC1gzKgaown9n_YQ8EvoYWakHBEHnhn8r4IGJN7mvLd1Ve8JfMl6RobJOTYI2jDdo-_aKm6Q",
-  "screenshots": [
-   "https://play-lh.googleusercontent.com/V-qWHq_UiMPZDbPGP6l-BLxIMD3KgSLR3d9Z4Cm1CcbEddru0YjYgLJ76bXbk2P9bFxS4BGTss747YWOZtI8BA",
-   "https://play-lh.googleusercontent.com/Tfe2CJAAqKviqACsiiCjz0vVz51u0Qw7Tk6k2LrN1es9-WNRHxG8_LP07KFr3nD_FflrfUb9BqryTuAwWbv_X8s",
-   "https://play-lh.googleusercontent.com/YTezF3ka7d5Su4kcUV6PqE5zalR_MA9M_giKq-Nm-uE2sY-9igYcVfxztZal9L0nB_O8cNf11qU9O37XRAEbQIc",
-   "https://play-lh.googleusercontent.com/b0nYavte_v-s1e7bvVetooDK3Yj1mM1Qj_7362eEZ_ySMNy4mUJmFqIcbdiMY0Tv6sNMXAa9TmiolgDk3je0SQ",
-   "https://play-lh.googleusercontent.com/OyyOzdk9YtJrNN9qKHjVFUvOR-QtNp2lB7q2UTsaMPPpKrrRhdxNX4wNHaUhsfLfwJ-wscwLbtevDnPs-jihAA",
-   "https://play-lh.googleusercontent.com/mOVOXhHuKTyBuQkmi3BgQYEBbYB1Osi0bveKm8Uj-0PGPou7LqgwtFD0zPN3a-VXMZnJk8gyQ_-LRUy82vwBbQ",
-   "https://play-lh.googleusercontent.com/bEboZDZfKtNJibgnvAyaBEccL9RHzq3_0vB9EzuDwxvCs-7LLecAy_TLR78iCShxKq0KA6ksAhekXECohIzf",
-   "https://play-lh.googleusercontent.com/cbTa3BkHc0viTPhjS2jDScNKcBGaFxlNToXrkKrUSxSoL_ACfwQDVfVg6AcukoHv7Rh9tSTnISQcVhq1ANAq"
-  ],
-  "url": "https://play.google.com/store/apps/details?id=com.vampironi.vampirelegends",
-  "playPass": false,
-  "similarity": 0.93,
-  "confidence": "strong",
-  "flags": [],
-  "query": "Vampire Legends (Full)",
+  "appId": null,
+  "confidence": "null",
+  "reason": "set to null in data/overrides.json",
+  "queries": [],
   "checked": "2026-10-03"
  },
  "Vector Classic": {
