@@ -5242,22 +5242,28 @@
   "checked": "2026-10-03"
  },
  "Car Eats Car 3 Hill Climb Racing": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "closest match lacks 'hill, climb'",
-  "queries": [
-   "Car Eats Car 3 Hill Climb Racing",
-   "Car Eats Car 3 Hill Climb Racing Play Pass"
+  "appId": "com.smokoko.careatscar3",
+  "matched": "Car Eats Car 3 Survival Racing",
+  "developer": "SMOKOKO LTD",
+  "playGenre": "Racing",
+  "icon": "https://play-lh.googleusercontent.com/Y-y-KCuWgXb9NGd5uhcwbjdCw36sLiznI8AnmHFXatR315Iyv9x_5LfZPgr7UgeUW9TYrfX4bL0MfW9DaZUwtQ",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/0uMCMsa2JK2wx0CrP-8_-8PQoOVbAwBYau-yGYBWvQB2e7wMPq4M2_WknyRJ-jD8Xmw2rn7_jmdCeqVUeiZx",
+   "https://play-lh.googleusercontent.com/SOM8ag1Qag3lETnPd-_R0WSrnG4oG7al9_Gtrk1Qn_SZoRUkjEJ7TodJI3i0IDKK4PIbzt1btng7w-jwWywoE6E",
+   "https://play-lh.googleusercontent.com/7ScPtO--En5yqoKJfp1RRwRQjYkQeqnunPusyd93rGcPwgcswInmcBfv8PPp5Y6WBbjjcjCynT-u4VXhJ-jc",
+   "https://play-lh.googleusercontent.com/D3k1fqNBObus4rfXLISHoelo_DVgcYEuMKBcRKVaEMS1gJzWM0rRi5P36JvMi2rpgchiVaKP6fET6ivJ9gEh4Qc",
+   "https://play-lh.googleusercontent.com/1BocR1InoQ0sjioJKfHkGt_4cqZCS_CO_FIn6Y-JOxNBsuX2BJEBjMCqmiUULqt3BQ9_-D-tXyW6_ifJs5915g",
+   "https://play-lh.googleusercontent.com/Ay6M2wxChibgfZxcTPB_dYKEhLwGNITU3EY5ZsGLIGzmV5j9LjpsSGrYOCBnvsJfjJUY1act2B2NcYsJFq6q",
+   "https://play-lh.googleusercontent.com/O3-6sK7Y8Rne_6uy0QIMrcq_pqz-Bu3eN89MLXdzsDrbTcR9FVFnVUt9xUSQ4GC4gT9o_dxwpkG8HUOAbmXRsg",
+   "https://play-lh.googleusercontent.com/hnHmXeYaAh2hXEZoYn7KSp-LGlhENCaj0xyYKHOiw5_x35LnLkLRNZGc5hQD8VA0waOdkWA8sLhUEmg77FQ5UA"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.smokoko.careatscar3",
-   "title": "Car Eats Car 3 Survival Racing",
-   "developer": "SMOKOKO LTD",
-   "playPass": true,
-   "sim": 0.774,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.smokoko.careatscar3",
+  "playPass": true,
+  "similarity": 0.774,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Car Eats Car 5 – Battle Arena": {
   "appId": "com.smokoko.careatscar5",
@@ -8272,7 +8278,7 @@
  "Dark Heritage (Full)": {
   "appId": null,
   "confidence": "null",
-  "reason": "closest match lacks 'dark, full' and no Play Pass badge",
+  "reason": "closest match lacks 'dark' and no Play Pass badge",
   "queries": [
    "Dark Heritage (Full)",
    "Dark Heritage",
@@ -8699,7 +8705,7 @@
  "Demon Hunter (Full)": {
   "appId": null,
   "confidence": "null",
-  "reason": "closest match lacks 'full' and no Play Pass badge",
+  "reason": "title similarity too low (0.88) and no Play Pass badge",
   "queries": [
    "Demon Hunter (Full)",
    "Demon Hunter",
@@ -11868,22 +11874,28 @@
   "checked": "2026-10-03"
  },
  "Eyes Horror & Coop Multiplayer": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "closest match lacks 'eyes, coop' and no Play Pass badge",
-  "queries": [
-   "Eyes Horror & Coop Multiplayer",
-   "Eyes Horror & Coop Multiplayer Play Pass"
+  "appId": "com.eyesthegame.eyes",
+  "matched": "Eyes - The Horror Game",
+  "developer": "Fearless Games sp. j.",
+  "playGenre": "Adventure",
+  "icon": "https://play-lh.googleusercontent.com/E1YAxY5YgAqI9kR5MAo8lzsfaSbgsS0tevynKQIaVxbCOKLeYi6d8NYaLQRlsGpAzfcU6Kgt1H2ntiY89Aow",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/xD9gOJWmBK5IdfPyNpxQdQ0r8kb6LODVhXWcFC5Zpsys3C3xXGXvqo5xIC8w_q7h581bZQtcL_bRgLAJgd-QvQ",
+   "https://play-lh.googleusercontent.com/tjtKeGcYaVPJyiZWp_8cJbHfySnk7pb2lgG2x7lwy9NlNO0cx3fkBVVxc_2rUg_pcDsZHV6EpRp58RrXh--zOw",
+   "https://play-lh.googleusercontent.com/tux5eNCiXcyA2sNV6peWjdrNzHuyjxAV-YmCi8n8R4oV7jZaKi_ET09MpIT8jFkG46hUYxTpYFloE034Jo-cl-A",
+   "https://play-lh.googleusercontent.com/wHrnz-5wy8sS485vxKJiC6fo4FYildDFVVNsDDIwSq9mAuCecJV6KX9Nx9j4-8O3bllQl45jztevrgwWLe16W-s",
+   "https://play-lh.googleusercontent.com/M2rD_A3FQ-M5RDtvntMalEQVIFQmLXYYN5HijNhJwKZxHAmQWdnh6VsyNcHdHP6Wdw6WBx0b82c1QMjNBRtYsQ",
+   "https://play-lh.googleusercontent.com/ZwciHH25s1FKa_eRsSgX7nCNYJjuOecsUmVfZECqkJH0FhoRj7wT2FE227c0yY2fMpg12EoOycnqJNI3BeO46g",
+   "https://play-lh.googleusercontent.com/xD9gOJWmBK5IdfPyNpxQdQ0r8kb6LODVhXWcFC5Zpsys3C3xXGXvqo5xIC8w_q7h581bZQtcL_bRgLAJgd-QvQ",
+   "https://play-lh.googleusercontent.com/tjtKeGcYaVPJyiZWp_8cJbHfySnk7pb2lgG2x7lwy9NlNO0cx3fkBVVxc_2rUg_pcDsZHV6EpRp58RrXh--zOw"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.skytecgames.survival",
-   "title": "Horrorfield Multiplayer horror",
-   "developer": "CHEELY APPS (CHILI APPS), TOO",
-   "playPass": false,
-   "sim": 0.613,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=com.eyesthegame.eyes",
+  "playPass": true,
+  "similarity": 0.577,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Eyes: Nonogram": {
   "appId": "com.gamefox.eyes",
@@ -12702,23 +12714,28 @@
   "checked": "2026-10-03"
  },
  "Flick Solitaire – Card Games": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "closest match lacks 'flick' and no Play Pass badge",
-  "queries": [
-   "Flick Solitaire – Card Games",
-   "Flick Solitaire",
-   "Flick Solitaire – Card Games Play Pass"
+  "appId": "games.flick.solitaire",
+  "matched": "Art of Solitaire - Card Games",
+  "developer": "Flick Games - Solitaire & Patience Card Games",
+  "playGenre": "Card",
+  "icon": "https://play-lh.googleusercontent.com/CtVBO69wp-_ztEowvfww4KOc4K-nKRoHf-cepY9Voc0nQiBGi3_9cqDrumhbiRdxJl2CZF7MZQFPlhIKEOrs4Q",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/WqeDUom96ExIMr6zmI_sdybSZnFswLP2gpxqkxVhScakG6Zr1SaUc2twyvENfV8Zzu_3TUjz4mATH4Yj5hZu1C4",
+   "https://play-lh.googleusercontent.com/zdOw2dfLNFGxJ2x0oq2jA4lgWyWmb5BPxmvK5PSyQGcHZNt7xqqeIRlKU8y0_IIEdGWOe7H9kvSJDZQhU4BH",
+   "https://play-lh.googleusercontent.com/ONAXJS5PqBRd-cDQP3hY8t9dWb_aioilcR3GjXB4T8e2GRdMgSpzJC7axyUdKpYuyOrmyCq6lqIiGIIYXN-yzA",
+   "https://play-lh.googleusercontent.com/WG52sI9fez6ctgx1QcrflonS6N4lM3bKsGqX4gF0usHlPxEDjMq8wx-4LnIQsa7UgvmFlIKTnK2OW4aMEl--cOE",
+   "https://play-lh.googleusercontent.com/ANJ9OnZ2l4Y0aD4cw_RgT7FdpUr9oxFT0-r5BYvcZZL-XFhNMT3YOERbae6a9vG_ajOvjz3KJMPJpGoxexVNA8c",
+   "https://play-lh.googleusercontent.com/l_wJfM1t4jwLXQIJANjH8UU4Z-A18ebEJd_QlzJIaTLgHf5qh8Y8hWTdy-bZld-j8bDvDzdizC__HlLCvH-H7oI",
+   "https://play-lh.googleusercontent.com/8kkQuefdxZ7obbQQMP2ZZx20-CQs58KcaVghXaK0vSVrvI6YOuCGyZFi5Yjsxp7pd8yDCdioN5Zkhc0825WhQA0",
+   "https://play-lh.googleusercontent.com/xaL0yA7Oduuln6ghTlFok8VKdtDFqNqiyYLN5G5Ho0tf8vZrvsDoV4WDF3-XiXtWDOjKd8bgKcIeY3d7JxF8"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.mintgames.king.solitaire",
-   "title": "Solitaire Card Game",
-   "developer": "Mint Games",
-   "playPass": false,
-   "sim": 0.844,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=games.flick.solitaire",
+  "playPass": true,
+  "similarity": 0.83,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Flipflop Solitaire": {
   "appId": "com.noodlecake.flipflopsolitaire",
@@ -12913,22 +12930,28 @@
   "checked": "2026-10-03"
  },
  "Fluid- Trippy Stress Reliever": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "title similarity too low (0.56)",
-  "queries": [
-   "Fluid- Trippy Stress Reliever",
-   "Fluid- Trippy Stress Reliever Play Pass"
+  "appId": "games.paveldogreat.fluidsim",
+  "matched": "Fluid - Magic Antistress",
+  "developer": "DoGreat Technologies",
+  "playGenre": "Simulation",
+  "icon": "https://play-lh.googleusercontent.com/7Venk-njOxmoiOKN436LizxPDXv6B5wasmodqQ0r150oCliISD4ZmMifljeHAXKy6sEp8gZo_pFLwHIrTUftRQ",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/Ix7PSqf8MaWHijhnqyB_b9wIPQBq1Y3MtABaSILTQ3NL7UdXKVTYQ7BJUPF5JD5QQymO8nReaYR6dDVsyYLlmw",
+   "https://play-lh.googleusercontent.com/iER5xB1i7AJjYqcfYqL4_tnbh3l3PofNGUxcS82Jae2WfK-Gh515NvXAzcPOjmcH2L8c267bc9GtZ5xNOw3SyQ",
+   "https://play-lh.googleusercontent.com/T0liNGVNv34aBQaJQBz3z7pBy8Me5y6TAkBpF55mtZNdQOmYwGkPV65ReXIYwx1T7TwUiVVZhpAerU0gCDe8FQ",
+   "https://play-lh.googleusercontent.com/e09Yv90vhUHBmIp4hrQqRhv8Vb5cRRgWKIyo7NI2WvzYbU1ynV2YZXWkH0d-rVnjv9vPk8zn6J37fYG73Ci_bA",
+   "https://play-lh.googleusercontent.com/QvYerR0HVfFRPiBtlFEE9LzW434BhJWLlV3WbfG6mRvETyO50sEevxW6iN_24fBDLgvuPNXnA5zypP1-rxU3CMc",
+   "https://play-lh.googleusercontent.com/74f0TRTjXSDYv8dl3gaLRWrcvMgl1qpq5UiAmOh7COXcdh0ZGmS1bvD4q5754SunJI1krI8iX-jnTcJD0vZ99bQ",
+   "https://play-lh.googleusercontent.com/na1QRcP-O6SXsHwxGyfu8DQrGn59LDXy2j-DaPErgaSkg9nQK8fXrf6xKI65hrfx8hr9DFc4ADSAaAk-vyw",
+   "https://play-lh.googleusercontent.com/wVldYkFyq98D_bENhzX79RXK2KvcAFyptSZLB3HZiCJVIQhQrQFtskQo1PIAFoXO67xQ5cOGgGXxSImCMxDN"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "games.paveldogreat.fluidsim",
-   "title": "Fluid - Magic Antistress",
-   "developer": "DoGreat Technologies",
-   "playPass": true,
-   "sim": 0.56,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=games.paveldogreat.fluidsim",
+  "playPass": true,
+  "similarity": 0.56,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Foat Simulator": {
   "appId": "com.coffeestainstudios.goatsimulator",
@@ -13003,22 +13026,28 @@
   "checked": "2026-10-03"
  },
  "Football CupPro 2024 Soccer": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "closest match lacks 'cuppro, 2024' and no Play Pass badge",
-  "queries": [
-   "Football CupPro 2024 Soccer",
-   "Football CupPro 2024 Soccer Play Pass"
+  "appId": "eu.inlogic.footballcuppro",
+  "matched": "Soccer Cup Pro 2026 - Football",
+  "developer": "INLOGIC SPORTS - football tennis golf soccer",
+  "playGenre": "Sports",
+  "icon": "https://play-lh.googleusercontent.com/LqG-70suCH4JRmdUAN0HrvK5fosQv_cvnNtBKn7zSH019jDPeXdyqxxQgb6892vJ80Tth6pBJgOzEFrUdytA4g",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/uvoLJyFUSnHG8FU2hFuJjZ9_Xo8Irb0gJimSYRvNV7J9G_mSJyXhR9mDjvOhK1Is048Vty7y9qe1SppbRQkd",
+   "https://play-lh.googleusercontent.com/snWFbj4d8d0C-0lKobJXvnNahofuCsQG8QMrZUwtt25a9WnLLIJzfMZcp3LsvjquwStjUD--Am24JArsKp6lQw",
+   "https://play-lh.googleusercontent.com/a5DkgGa1wHTaMBmYipAXelYefbDQqY73VmlYMojl5wirJX9ooF0Ticw7JMRgIDslTDUrkOi8Ear_-kuMmFGhvg",
+   "https://play-lh.googleusercontent.com/_2cVTbO8UFM0Ld4mSG8AiuKkodfJLRUpOaGmT4cXFoKmRuNopDhmk5FcN8PcxNkzF5G0dj2eDfJN9dWiMY9t",
+   "https://play-lh.googleusercontent.com/qOa4r6sOombGAjYLCwgba0mIVh6b34k8hXyvvNoiI7Al6YWSr_EjY-i3au4OqMVYnzVjGoY7aaa_thernKSDag",
+   "https://play-lh.googleusercontent.com/NvAVBe1X0DdQX8lVKmsDlmy_bxydgXSlHWKBUAbhVIzTnfK8WAwFJR8DfhCubg6iBRPNZNa8J-6GNsKw1dDK8w",
+   "https://play-lh.googleusercontent.com/uvoLJyFUSnHG8FU2hFuJjZ9_Xo8Irb0gJimSYRvNV7J9G_mSJyXhR9mDjvOhK1Is048Vty7y9qe1SppbRQkd",
+   "https://play-lh.googleusercontent.com/snWFbj4d8d0C-0lKobJXvnNahofuCsQG8QMrZUwtt25a9WnLLIJzfMZcp3LsvjquwStjUD--Am24JArsKp6lQw"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "com.tes.world.soccer.league.football",
-   "title": "Football Cup 2026- Soccer Game",
-   "developer": "Mini CH Games",
-   "playPass": false,
-   "sim": 0.821,
-   "flags": []
-  }
+  "url": "https://play.google.com/store/apps/details?id=eu.inlogic.footballcuppro",
+  "playPass": true,
+  "similarity": 0.393,
+  "confidence": "manual",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-03"
  },
  "Football kicks Pro – Soccer": {
   "appId": "sk.inlogic.footballkicksprosoccer",
