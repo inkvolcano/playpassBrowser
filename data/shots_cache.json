@@ -88885,7 +88885,13 @@
    "Stylized",
    "Immersive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Turnip Boy Commits Tax Evasion": {
   "appId": "com.pid.turnipboy",
@@ -88938,7 +88944,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Turnip Boy Robs a Bank": {
   "appId": "com.pid.tbrab",
@@ -88981,7 +88993,13 @@
    "Action",
    "Action-adventure",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "TV Studio Story": {
   "appId": "net.kairosoft.android.television",
@@ -89036,7 +89054,13 @@
    "Pixelated",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Twin Cobra classic": {
   "appId": "com.mobirix.jp.TwinCobra",
@@ -89089,7 +89113,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Twinfold": {
   "appId": null,
@@ -89159,7 +89189,13 @@
    "Stylized",
    "Pixelated",
    "Immersive"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Two Eyes – Nonogram": {
   "appId": "com.gamefox.twoeyes",
@@ -89213,7 +89249,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Ultimate Chicken Horse": {
   "appId": "com.noodlecake.UltimateChickenHorse",
@@ -89268,7 +89310,13 @@
    "Cartoon",
    "Competitive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Unbroken Soul": {
   "appId": "com.Chorrus.UnbrokenSoul",
@@ -89323,7 +89371,13 @@
    "Pixelated",
    "Intense",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Undead Horde": {
   "appId": "com.the10tons.UndeadHorde",
@@ -89371,7 +89425,13 @@
    "Fantasy",
    "Dark fantasy",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Underworld Office": {
   "appId": "com.buffstudio.uwoffice",
@@ -89421,7 +89481,13 @@
    "Stylized",
    "Horror",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Unhatched": {
   "appId": "pl.loster.filip.unhatched",
@@ -89461,7 +89527,13 @@
    "Stylized",
    "Competitive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Unholy Adventure 2: Mystery": {
   "appId": null,
@@ -89527,7 +89599,13 @@
   "installs": 249923,
   "tags": [
    "Educational"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Unicorn Coloring Book and Games": {
   "appId": null,
@@ -89581,7 +89659,13 @@
   "installs": 1684466,
   "tags": [
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Unicorn Coloring Girl Games": {
   "appId": "com.gamesforkids.glittercoloringpages.unicorns.girlgames",
@@ -89631,7 +89715,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Unicorn Games for 2+ Year Olds": {
   "appId": "com.iz.unicorn.girl.dress.up.rainbow.run.baby.pony.runner.flyer.kids.fun.toddler.games",
@@ -89685,7 +89775,13 @@
    "Cartoon",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Unicorn Glitter Coloring Games": {
   "appId": "com.iz.unicorn.coloring.book.games.glitter.free.colouring.pages.pony.princess.animal.drawing.girls.color",
@@ -89736,7 +89832,13 @@
    "Stylized",
    "Handicraft",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Unicorn Phone for Kids Games": {
   "appId": "com.iz.pink.unicorn.baby.toy.phone.princess.game",
@@ -89783,7 +89885,13 @@
   "installs": 277521,
   "tags": [
    "Educational"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Unit 404": {
   "appId": null,
@@ -89850,7 +89958,13 @@
   "installs": 5967,
   "tags": [
    "Adventure"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Unknown Knights": {
   "appId": "com.teamarex.troop",
@@ -89888,7 +90002,13 @@
    "Dark fantasy",
    "Immersive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "unmemory: Puzzle Story": {
   "appId": "com.pid.unmemory",
@@ -89939,7 +90059,13 @@
    "Single player",
    "Mystery",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Unreal Life": {
   "appId": "net.room6.unreallife",
@@ -89983,7 +90109,13 @@
    "Single player",
    "Stylized",
    "Pixelated"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Unwanted Experiment": {
   "appId": "air.com.darkdome.unwanted.experiment",
@@ -90036,7 +90168,13 @@
    "Stylized",
    "Monster",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Urban City Stories: World Game": {
   "appId": "com.playtoddlers.urbancitystories.free",
@@ -90074,7 +90212,13 @@
    "City",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Utsuro’s diary (Full version)": {
   "appId": "com.FeeUtsuro",
@@ -90121,7 +90265,13 @@
   "installs": 2517,
   "tags": [
    "Word"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Vampire Legends (Full)": {
   "appId": null,
@@ -90182,7 +90332,13 @@
    "Experiences",
    "Fantasy",
    "Urban fantasy"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Vendetta: Mafia Shooting Game": {
   "appId": "com.big.vendetta",
@@ -90236,7 +90392,13 @@
    "Crime",
    "Intense",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Venture Towns": {
   "appId": "net.kairosoft.android.zaibatu3",
@@ -90291,7 +90453,13 @@
    "Pixelated",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Vertical Adventure The Hardest": {
   "appId": null,
@@ -90356,7 +90524,13 @@
    "Monster",
    "Puzzles",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Vikings: an Archer’s Journey": {
   "appId": "com.pinpinteam.vikings",
@@ -90405,7 +90579,13 @@
    "Mythology",
    "Western myths",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Vita Fighters": {
   "appId": "com.Angrydevs.VitaFighters",
@@ -90457,7 +90637,13 @@
    "Stylized",
    "Low poly",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Vlad and Nikki 2 Playeers": {
   "appId": "com.edujoy.vlad.niki.twoplayers",
@@ -90509,7 +90695,13 @@
    "Stylized",
    "Competitive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Vlad and Nikki Educational Game": {
   "appId": "com.edujoy.vlad.nikita",
@@ -90562,7 +90754,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Vlad and Nikki – Smart Games": {
   "appId": "com.edujoy.vlad.niki",
@@ -90614,7 +90812,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "VolleyBall King": {
   "appId": "com.mobirix.scvb",
@@ -90666,7 +90870,13 @@
    "Anime",
    "Competitive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Wall of Insanity": {
   "appId": "com.VenomizedArt.WallOfInsanity",
@@ -90721,7 +90931,13 @@
    "Gun",
    "Horror",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Wanna Survive": {
   "appId": null,
@@ -90786,7 +91002,13 @@
   "installs": 10765,
   "tags": [
    "Strategy"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Water Sort Quest": {
   "appId": "com.mobirix.wspuzzle",
@@ -90839,7 +91061,13 @@
    "Abstract",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Water Sort Quiz": {
   "appId": "com.mobirix.ldwsq",
@@ -90886,7 +91114,13 @@
   "installs": 672567,
   "tags": [
    "Puzzle"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Watermelon Maker 2048": {
   "appId": "com.mobirix.ldwm",
@@ -90940,7 +91174,13 @@
    "Cartoon",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "We Are Cooking: Taste of Life": {
   "appId": "com.matryoshka.cooking.vibes",
@@ -90991,7 +91231,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Welcome To Everdell": {
   "appId": "com.direwolfdigital.mylileverdell",
@@ -91040,7 +91286,13 @@
    "Board",
    "Abstract strategy",
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Whale Trail Classic": {
   "appId": "com.jakyl.whaletrail",
@@ -91084,7 +91336,13 @@
    "Platformer",
    "Arcade",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "What’s Inside the Box?": {
   "appId": "air.com.bartbonte.thebox",
@@ -91124,7 +91382,13 @@
    "Single player",
    "Realistic",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Wheel of Fame – Guess words": {
   "appId": "com.tellmewow.senior.wheel.fortune",
@@ -91172,7 +91436,13 @@
    "Puzzles",
    "Entertainment",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Whispering Willows": {
   "appId": "com.nightlightinteractive.ww",
@@ -91214,7 +91484,13 @@
    "Casual",
    "Stylized",
    "Horror"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Whispers of a Machine": {
   "appId": "com.rawfury.woam",
@@ -91257,7 +91533,13 @@
    "Stylized",
    "Mystery",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "White Night": {
   "appId": "com.playdigious.whitenight",
@@ -91300,7 +91582,13 @@
    "Stylized",
    "Horror",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Who Is Awesome": {
   "appId": "com.azamatika.whoisawesome",
@@ -91351,7 +91639,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Who is? 2 Brain Puzzle & Chats": {
   "appId": "com.unicostudio.whois2",
@@ -91398,7 +91692,13 @@
   "installs": 1299211,
   "tags": [
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Who is? Brain Teaser & Riddles": {
   "appId": "com.unicostudio.whois",
@@ -91450,7 +91750,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Will It Shred? ASMR Game": {
   "appId": "com.satisfying.shredder",
@@ -91500,7 +91806,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Wind Peaks": {
   "appId": "com.actoonstudio.windpeaks",
@@ -91553,7 +91865,13 @@
    "Stylized",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "WitchSpring4": {
   "appId": null,
@@ -91624,7 +91942,13 @@
    "Stylized",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Wood Blocks 3D": {
   "appId": "com.infinitygames.woodblocks3d",
@@ -91676,7 +92000,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Woody Sort: Ball Sort Puzzle": {
   "appId": "com.unicostudio.balltubes",
@@ -91728,7 +92058,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Woolly Boy and the Circus": {
   "appId": "com.cottongame.BigPineappleCircus",
@@ -91780,7 +92116,13 @@
    "Stylized",
    "Mystery",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Word Breaker": {
   "appId": "com.firecrackersw.wordbreaker",
@@ -91821,7 +92163,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Word City Classic: Word Search": {
   "appId": "com.bigstarkids.wordtravelclassic",
@@ -91873,7 +92221,13 @@
    "Single player",
    "Realistic",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Word Master – Pro": {
   "appId": "jaguargames.wordmasterpro",
@@ -91922,7 +92276,13 @@
    "Word jumble",
    "Casual",
    "Abstract"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Word Match: Conenctions Game": {
   "appId": "com.unicostudio.wordassociation",
@@ -91969,7 +92329,13 @@
   "installs": 1501976,
   "tags": [
    "Word"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Word Pearls: Word Games": {
   "appId": "com.oakgames.wordgame",
@@ -92020,7 +92386,13 @@
    "Single player",
    "Realistic",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Word Relax": {
   "appId": "com.epicpandagames.word.match",
@@ -92067,7 +92439,13 @@
   "installs": 38168,
   "tags": [
    "Word"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Word Search": {
   "appId": "com.tellmewow.senior.word.search",
@@ -92119,7 +92497,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Word Search by AsgardSoft": {
   "appId": "com.asgardsoft.words",
@@ -92162,7 +92546,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Word Search by Quarzzo Apps": {
   "appId": "com.jdpapps.wordsearch",
@@ -92214,7 +92604,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Word Search Find The Words": {
   "appId": null,
@@ -92278,7 +92674,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Word Tower: Relaxing Word Game": {
   "appId": "com.bigstarkids.wordtower",
@@ -92330,7 +92732,13 @@
    "Single player",
    "Realistic",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Word Voyage: Word Search": {
   "appId": "com.unicostudio.wordpirates",
@@ -92381,7 +92789,13 @@
    "Single player",
    "Realistic",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Worde: Daily & Unlimited": {
   "appId": "com.chinloyal.wordle",
@@ -92431,7 +92845,13 @@
    "Competitive multiplayer",
    "Single player",
    "Abstract"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Wordling: Daily Word Challenge": {
   "appId": "io.digitalsnacks.wordchallenge",
@@ -92477,7 +92897,13 @@
    "Abstract",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "WordPix – Crossword Puzzle": {
   "appId": "app.wordpix.android",
@@ -92528,7 +92954,13 @@
    "Multiplayer",
    "Competitive multiplayer",
    "Competitive"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "World Cruise Story": {
   "appId": "net.kairosoft.android.cruise_en",
@@ -92583,7 +93015,13 @@
    "Pixelated",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Worms 3": {
   "appId": "com.worms3.app",
@@ -92628,7 +93066,13 @@
    "Artillery shooter",
    "Casual",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Worms Zone .io – Hungry Snake": {
   "appId": "com.wildspike.wormszone",
@@ -92683,7 +93127,13 @@
    "Worm",
    "Insect",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "X2 Puzzle Number Merge 2048": {
   "appId": "com.unicostudio.x2number",
@@ -92730,7 +93180,13 @@
   "installs": 4346217,
   "tags": [
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Xenowerk Tactics": {
   "appId": "com.pixelbite.xwt",
@@ -92778,7 +93234,13 @@
    "Intense",
    "Science fiction",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Yachty": {
   "appId": "com.rubicon.dev.yachty",
@@ -92820,7 +93282,13 @@
    "Single player",
    "Realistic",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Yes, Your Grace": {
   "appId": "com.noodlecake.yesyourgrace",
@@ -92870,7 +93338,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Yodanji The Roguelike": {
   "appId": "kemco.yodanji",
@@ -92922,7 +93396,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "You Are Hope": {
   "appId": "com.wereviz.evolution",
@@ -92967,7 +93447,13 @@
   "installs": 131331,
   "tags": [
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Youtuber’s Life: Gaming Channel": {
   "appId": "com.uplayonline.youtubers",
@@ -93019,7 +93505,13 @@
    "Stylized",
    "Connect",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Z.O.N.A Shadow of Limansh Redu": {
   "appId": "com.agaming.zona.shadow.of.limansk.redux",
@@ -93071,7 +93563,13 @@
    "Gun",
    "Science fiction",
    "Apocalyptic"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "zCube – 3D RTS": {
   "appId": "ru.gamedevteam.wz",
@@ -93116,7 +93614,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Zelle – Occult Adventure-": {
   "appId": "com.odencat.zelle",
@@ -93158,7 +93662,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Zen Koi Pro": {
   "appId": "com.landsharkgames.zenkoipro.android",
@@ -93209,7 +93719,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Zen Squares: Flat Rubik’s Cube": {
   "appId": "com.gamehouse.puzzle.zen.squares.logic.relaxing.minimalist.brain.training",
@@ -93244,7 +93760,13 @@
   "installs": 2182,
   "tags": [
    "Puzzle"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Zenge – beautiful Puzzle Game": {
   "appId": "com.hamsteroncoke.zenge",
@@ -93293,7 +93815,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Zero Gunner 2 Classic": {
   "appId": null,
@@ -93363,7 +93891,13 @@
    "Stylized",
    "Competitive",
    "Fantasy"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Zombie Night Terror": {
   "appId": "com.pid.znt",
@@ -93408,7 +93942,13 @@
    "Pixelated",
    "Zombie",
    "Dark"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Zombie Sniper War 3: Fire FPS": {
   "appId": "com.JESoftware.LastHopeSniper3",
@@ -93455,7 +93995,13 @@
    "Gun",
    "Zombie",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Zombie Sniper War 3D: Dead FPS": {
   "appId": null,
@@ -93524,7 +94070,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Zoo Park Story": {
   "appId": "net.kairosoft.android.zoo",
@@ -93576,7 +94128,13 @@
    "Stylized",
    "Pixelated",
    "Light-hearted"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "ZOOKEEPER DX TouchEdition": {
   "appId": "jp.kiteretsu.zookeeper_dx",
@@ -93612,7 +94170,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "ねぇAI、本当の事がしりたい": {
   "appId": "com.kotoriyama.hey_ai",
@@ -93653,7 +94217,13 @@
   "installs": 5700,
   "tags": [
    "言葉"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": false,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "ねこのデザイナー モカのさがし絵ジグソーパズル": {
   "appId": "com.kotoriyama.mocha",
@@ -93691,7 +94261,13 @@
   "installs": 3357,
   "tags": [
    "パズル"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "ザ・ファイナルタクシー 終末ドライブゲーム": {
   "appId": "com.zxima.finaltaxi",
@@ -93723,7 +94299,13 @@
    "スタイライズド",
    "ピクセル化",
    "オフライン"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": false,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "旅かえる": {
   "appId": "jp.co.hit_point.tabikaeru",
@@ -93768,6 +94350,12 @@
    "スタイライズド",
    "動物",
    "オフライン"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  }
 }
