@@ -230,6 +230,8 @@ dice domino dominoes backgammon reversi othello spider freecell klondike pyramid
 spades euchre rummy cribbage blackjack poker yahtzee 2048 maze mazes escape room hidden object
 objects difference differences sticker stickers story stories book books english spanish
 about how what where who is it this that all me you we lets let go play time
+adult adults senior seniors family teen teens relax relaxing daily unlimited challenge
+challenges master mania blast
 """.split()) | {str(n) for n in range(21)}
 
 
@@ -262,6 +264,15 @@ def is_generic(title):
     m = BY_RE.match(title)
     toks = norm(base(m.group(1) if m else title)).split()
     return bool(toks) and all(t in GENERIC_WORDS for t in toks)
+
+
+def missing_words(game_title, cand_title):
+    """Distinctive words of the list title that the candidate lacks ("Bob" in
+    "Bob Jigsaw Puzzles for Kids" vs "Jigsaw Puzzles for Kids"). Typos pass."""
+    m = BY_RE.match(game_title)
+    have = norm(cand_title).split()
+    return [w for w in norm(m.group(1) if m else game_title).split()
+            if w not in GENERIC_WORDS and not any(SequenceMatcher(None, w, h).ratio() >= 0.8 for h in have)]
 
 
 def similarity(a_title, b_title):
@@ -392,7 +403,8 @@ def lookup(game):
                 return entry_from(c, title, "verified", c["query"], c["flags"])
         ranked = sorted(pool.values(), key=lambda c: (-c["score"], c["rank"]))
         best = ranked[0] if ranked else None
-        if best and best["score"] >= STRONG_MIN and not best["flags"] and not generic:
+        if (best and best["score"] >= STRONG_MIN and not best["flags"] and not generic
+                and not missing_words(title, best.get("title"))):
             if len(best.get("screenshots") or []) < 2 and not best.get("detailed"):
                 merge(best, app_details(best["appId"], lang, country))
             return entry_from(best, title, "strong", best["query"], best["flags"])
@@ -402,6 +414,8 @@ def lookup(game):
         return null_entry("no search results", None, tried)
     if generic and best["score"] >= STRONG_MIN:
         reason = "generic title and no Play Pass badge on the closest match"
+    elif best["score"] >= STRONG_MIN and missing_words(title, best.get("title")):
+        reason = f"closest match lacks {', '.join(missing_words(title, best.get('title')))!r} and has no Play Pass badge"
     elif best["flags"]:
         reason = "closest match flagged: " + ", ".join(best["flags"])
     else:
