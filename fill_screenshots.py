@@ -233,7 +233,8 @@ about how what where who is it this that all me you we lets let go play time
 adult adults senior seniors family teen teens relax relaxing daily unlimited challenge
 challenges master mania blast christmas xmas halloween easter santa holiday spooky concentration
 nail nails salon hair makeup makeover fashion spa beauty art arts craft crafts pet pets house
-home design dream dreams mandala mandalas ludo carrom parcheesi
+home design dream dreams mandala mandalas ludo carrom parcheesi full complete version remastered
+definitive
 """.split()) | {str(n) for n in range(21)}
 YEAR_RE = re.compile(r"19[5-9]\d|20[0-3]\d")
 
