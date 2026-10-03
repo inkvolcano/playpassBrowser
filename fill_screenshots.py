@@ -396,6 +396,24 @@ def install_count(c):
     return int(re.sub(r"\D", "", m.group(0))) if m else None
 
 
+def install_total(d):
+    """Exact install count when the store gives it, else the lower bound ("1,000,000+")."""
+    if isinstance(d.get("realInstalls"), int) and d["realInstalls"] > 0:
+        return d["realInstalls"]
+    return install_count(d)
+
+
+def store_tags(categories):
+    """The store's genre and tags for an app: ["Puzzle", "Logic", "Casual", "Offline"]."""
+    seen, out = set(), []
+    for c in categories or []:
+        name = (c.get("name") if isinstance(c, dict) else c) or ""
+        if name and name != "Miscellaneous" and name.casefold() not in seen:
+            seen.add(name.casefold())
+            out.append(name)
+    return out
+
+
 def copycat(c):
     """Under 100 installs: a copycat listing of a delisted game (real Play Pass
     editions can be small: GameHouse's Decipher has 500+)."""
@@ -426,6 +444,8 @@ def entry_from(c, game_title, confidence, query, flags):
         "playPass": c.get("playPass"),
         "rating": star_rating(c.get("rating")),
         "ratings": c.get("ratings"),
+        "installs": install_total(c),
+        "tags": store_tags(c["categories"]) if c.get("categories") is not None else None,
         "similarity": c.get("sim"),
         "confidence": confidence,
         "flags": flags,
@@ -453,7 +473,8 @@ def lookup(game):
     def merge(c, details):
         if details:
             c.update({k: details.get(k) for k in ("title", "developer", "genre", "icon", "screenshots", "playPass",
-                                                  "installs", "minInstalls", "ratings")}, rating=details.get("score"))
+                                                  "installs", "minInstalls", "realInstalls", "ratings",
+                                                  "categories")}, rating=details.get("score"))
             c["detailed"] = True
         c["score"], c["sim"], c["flags"] = assess(title, c, genre)
 
@@ -524,7 +545,8 @@ def from_override(game, app_id):
 
 def refresh_entry(game, e):
     """Re-read a matched app's store page: its full screenshot set, star rating,
-    and whether it carries the Play Pass badge today. The match itself is kept."""
+    installs, tags, and whether it carries the Play Pass badge today. The match
+    itself is kept."""
     lang, country = ("ja", "jp") if CJK_RE.search(game["title"]) else ("en", "us")
     key = (e["appId"], lang, country)
     for attempt, wait in enumerate((0, 3, 10)):
@@ -546,7 +568,8 @@ def refresh_entry(game, e):
     shots = [s for s in (d.get("screenshots") or []) if s][:MAX_SHOTS]
     return dict(e, screenshots=shots or e["screenshots"], icon=d.get("icon") or e["icon"],
                 matched=d.get("title") or e["matched"], developer=d.get("developer") or e["developer"],
-                playPass=bool(d.get("playPass")), rating=star_rating(d.get("score")), ratings=d.get("ratings"))
+                playPass=bool(d.get("playPass")), rating=star_rating(d.get("score")), ratings=d.get("ratings"),
+                installs=install_total(d), tags=store_tags(d.get("categories")))
 
 
 # ---------------------------------------------------------------- cache / git
@@ -607,8 +630,9 @@ def main():
                     help="redo nulls, unbadged matches and loose title matches (doubtful), only nulls, or everything")
     ap.add_argument("--only", nargs="+", metavar="TITLE", help="(re)do just these titles")
     ap.add_argument("--refresh", action="store_true",
-                    help="re-read every matched app's store page (all screenshots, rating, current Play "
-                         "Pass status) instead of looking games up; resumes where a refresh stopped today")
+                    help="re-read every matched app's store page (all screenshots, rating, installs, tags, "
+                         "current Play Pass status) instead of looking games up; resumes where a refresh "
+                         "stopped today")
     ap.add_argument("--limit", type=int, help="stop after this many lookups")
     ap.add_argument("--delay", type=float, default=0.6, help="seconds between requests (default 0.6)")
     ap.add_argument("--commit-every", type=int, default=0, metavar="N",
@@ -640,7 +664,8 @@ def main():
     if args.refresh:
         today = date.today().isoformat()
         queue = [g for g in games if (cache.get(g["title"]) or {}).get("appId")
-                 and (cache[g["title"]].get("passChecked") != today or cache[g["title"]].get("ratings") is None)]
+                 and (cache[g["title"]].get("passChecked") != today or cache[g["title"]].get("ratings") is None
+                      or cache[g["title"]].get("tags") is None)]
         print(f"{len(queue)} matched games to refresh", flush=True)
     else:
         queue = [g for g in games if todo(g)]
@@ -662,7 +687,8 @@ def main():
                 e = refresh_entry(g, cache[t])
                 status = "store page incomplete, kept" if e.get("passError") else \
                     {True: "in Play Pass", False: "NOT in Play Pass", None: "store page gone"}[e["playPass"]]
-                info = f"{status}, shots={len(e['screenshots'])}, rating={e.get('rating')} ({e.get('ratings')})"
+                info = (f"{status}, shots={len(e['screenshots'])}, rating={e.get('rating')} ({e.get('ratings')}), "
+                        f"installs={e.get('installs')}, tags={len(e.get('tags') or [])}")
             else:
                 e = from_override(g, overrides[t]) if t in overrides else lookup(g)
                 if e["appId"]:

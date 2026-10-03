@@ -40,7 +40,17 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.23,
-  "ratings": 136844
+  "ratings": 136846,
+  "installs": 16605334,
+  "tags": [
+   "Puzzle",
+   "Escape",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "School",
+   "Offline"
+  ]
  },
  "1024 Puzzle Numbers Game": {
   "appId": "game2048.b2048game.twozerofoureight2048.game",
@@ -68,7 +78,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.59,
-  "ratings": 280394
+  "ratings": 280394,
+  "installs": 22771007,
+  "tags": [
+   "Puzzle",
+   "Merge",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Offline"
+  ]
  },
  "12 labours of Hercules": {
   "appId": "com.jetdogs.hercules1",
@@ -105,7 +124,16 @@
   "checked": "2026-10-03",
   "passChecked": "2026-10-03",
   "rating": 4.39,
-  "ratings": 1296
+  "ratings": 1296,
+  "installs": 60334,
+  "tags": [
+   "Simulation",
+   "Management",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "123 Game for toddlers counting": {
   "appId": "com.midwin.learn.numbers.numbers123.gameforkids.tracing.counting.toddler.preschool.recognition",
@@ -16407,7 +16435,9 @@
   "flags": [],
   "query": "Dredge",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.46,
+  "ratings": 3701
  },
  "Drive Simulator": {
   "appId": "com.dualcarbon.drivesimulator2016Lite",
@@ -16448,7 +16478,9 @@
   "flags": [],
   "query": "Drive Simulator",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.0,
+  "ratings": 209522
  },
  "Drop Wizard": {
   "appId": "com.neutronized.dropwizard",
@@ -16483,7 +16515,9 @@
   "flags": [],
   "query": "Drop Wizard",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.96,
+  "ratings": 108
  },
  "DUAL!": {
   "appId": "com.Seabaa.Dual",
@@ -16511,7 +16545,9 @@
   "flags": [],
   "query": "DUAL!",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.72,
+  "ratings": 148334
  },
  "Duck Detective: Ghost Glamping": {
   "appId": "com.happybroccoligames.duckdetective2",
@@ -16546,7 +16582,9 @@
   "flags": [],
   "query": "Duck Detective: Ghost Glamping",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.78,
+  "ratings": 2124
  },
  "Duck Detective: Secret Salami": {
   "appId": "com.snapbreak.duckdetective",
@@ -16580,7 +16618,9 @@
   "flags": [],
   "query": "Duck Detective: Secret Salami",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.49,
+  "ratings": 6989
  },
  "Duckz!": {
   "appId": "com.shotgungaming.duckz",
@@ -16603,7 +16643,9 @@
   "flags": [],
   "query": "Duckz!",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.93,
+  "ratings": 4793
  },
  "Duddu – My Virtual Pet Dog": {
   "appId": "com.bubadu.duddu",
@@ -16644,7 +16686,9 @@
   "flags": [],
   "query": "Duddu – My Virtual Pet Dog",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.11,
+  "ratings": 303836
  },
  "Dumb Ways to Die 2: The Games": {
   "appId": "air.au.com.metro.DumbWaysToDie2",
@@ -16685,7 +16729,9 @@
   "flags": [],
   "query": "Dumb Ways to Die 2: The Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.85,
+  "ratings": 1742533
  },
  "Dummy Ragdoll Dismount": {
   "appId": "com.slap.master.simulator",
@@ -16720,7 +16766,9 @@
   "flags": [],
   "query": "Dummy Ragdoll Dismount",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.24,
+  "ratings": 951
  },
  "Dungeon and Gravestone": {
   "appId": "com.wlkzinc.dandg",
@@ -16761,7 +16809,9 @@
   "flags": [],
   "query": "Dungeon and Gravestone",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 2.81,
+  "ratings": 287
  },
  "Dungeon Clawler": {
   "appId": "com.strayfawnstudio.dungeonclawlermobile",
@@ -16796,7 +16846,9 @@
   "flags": [],
   "query": "Dungeon Clawler",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.85,
+  "ratings": 26333
  },
  "Dungeon Dogs – Idle RPG": {
   "appId": "com.pocapp.dungeondogsgame",
@@ -16837,7 +16889,9 @@
   "flags": [],
   "query": "Dungeon Dogs – Idle RPG",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.76,
+  "ratings": 42234
  },
  "Dungeon of the Endless Apogee": {
   "appId": "com.playdigious.dungeonoftheendless",
@@ -16878,7 +16932,9 @@
   "flags": [],
   "query": "Dungeon of the Endless Apogee",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.19,
+  "ratings": 3332
  },
  "Dungeon Shooter: Dark Temple": {
   "appId": "com.imcrazy.ds2",
@@ -16916,7 +16972,9 @@
   "flags": [],
   "query": "Dungeon Shooter: Dark Temple",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.37,
+  "ratings": 30711
  },
  "Dungeon Village 2": {
   "appId": "net.kairosoft.android.bouken2",
@@ -16957,7 +17015,9 @@
   "flags": [],
   "query": "Dungeon Village 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.82,
+  "ratings": 50566
  },
  "Dungeon Warfare": {
   "appId": "valsar.dungeonwarfare",
@@ -16998,7 +17058,9 @@
   "flags": [],
   "query": "Dungeon Warfare",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.16,
+  "ratings": 2115
  },
  "Dungeon Warfare 2": {
   "appId": "valsar.dungeonwarfare2",
@@ -17039,7 +17101,9 @@
   "flags": [],
   "query": "Dungeon Warfare 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.88,
+  "ratings": 2613
  },
  "Dungeons of Deadrock": {
   "appId": "com.goongames.DungeonsofDreadrock",
@@ -17074,7 +17138,9 @@
   "flags": [],
   "query": "Dungeons of Deadrock",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.15,
+  "ratings": 46265
  },
  "Dungeons of Deadrock 2": {
   "appId": "com.goongames.DungeonsofDreadrock2",
@@ -17097,7 +17163,9 @@
   "flags": [],
   "query": "Dungeons of Deadrock 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.22,
+  "ratings": 930
  },
  "Dwarf Journey": {
   "appId": "com.OrubeGameStudio.DwarfJourney",
@@ -17138,7 +17206,9 @@
   "flags": [],
   "query": "Dwarf Journey",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.47,
+  "ratings": 4445
  },
  "Dysmantle": {
   "appId": "com.the10tons.dysmantle",
@@ -17176,7 +17246,9 @@
   "flags": [],
   "query": "Dysmantle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.36,
+  "ratings": 4987
  },
  "Ears and Burgers": {
   "appId": null,
@@ -17232,7 +17304,9 @@
   "flags": [],
   "query": "Easy Delivery Co.",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.64,
+  "ratings": 3824
  },
  "Eco Power Towns": {
   "appId": "com.crevasse.ecopowertowns",
@@ -17273,7 +17347,9 @@
   "flags": [],
   "query": "Eco Power Towns",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 2.58,
+  "ratings": 79
  },
  "Educational games for Kids 3-4": {
   "appId": null,
@@ -17334,7 +17410,9 @@
   "flags": [],
   "query": "Egg Maker",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.62,
+  "ratings": 1125
  },
  "Einstein’s Riddle Logic Puzzle": {
   "appId": "com.rottzgames.logic",
@@ -17375,7 +17453,9 @@
   "flags": [],
   "query": "Einstein’s Riddle Logic Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.77,
+  "ratings": 175138
  },
  "El Hijo – A Wild West Tale": {
   "appId": "com.hg.elhijo",
@@ -17416,7 +17496,9 @@
   "flags": [],
   "query": "El Hijo – A Wild West Tale",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.49,
+  "ratings": 289
  },
  "Elderand": {
   "appId": "com.pid.elderand",
@@ -17451,7 +17533,9 @@
   "flags": [],
   "query": "Elderand",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.53,
+  "ratings": 384
  },
  "Eldrum: Black Dust – CRPG": {
   "appId": "com.actnone.blackdust",
@@ -17492,7 +17576,9 @@
   "flags": [],
   "query": "Eldrum: Black Dust – CRPG",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.61,
+  "ratings": 1213
  },
  "Eldrum: Red Tide – Text RPG": {
   "appId": "com.gotterdammerung.redtide",
@@ -17533,7 +17619,9 @@
   "flags": [],
   "query": "Eldrum: Red Tide – Text RPG",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.49,
+  "ratings": 3961
  },
  "Eldrum: Untold, Text-based RPG": {
   "appId": "com.gotterdammerung.untold",
@@ -17574,7 +17662,9 @@
   "flags": [],
   "query": "Eldrum: Untold, Text-based RPG",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.33,
+  "ratings": 3962
  },
  "Electric Trains Pro": {
   "appId": "com.ekindiegames.ElectricTrainsPro",
@@ -17599,7 +17689,9 @@
   "flags": [],
   "query": "Electric Trains Pro",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.84,
+  "ratings": 662
  },
  "Elements Box": {
   "appId": "com.kidga.elements.flow",
@@ -17640,7 +17732,9 @@
   "flags": [],
   "query": "Elements Box",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.32,
+  "ratings": 119
  },
  "ElePant Car games for toddlers": {
   "appId": null,
@@ -17717,7 +17811,9 @@
   "flags": [],
   "query": "ElePant Kids Educational Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.24,
+  "ratings": 3351
  },
  "ElePant Kid’s Learning Games 2+": {
   "appId": "com.GamesForKids.BabyPreschoolLearning.ToddlerGames",
@@ -17758,7 +17854,9 @@
   "flags": [],
   "query": "ElePant Kid’s Learning Games 2+",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.24,
+  "ratings": 3351
  },
  "ElePant: My Pet Care games app": {
   "appId": null,
@@ -17818,7 +17916,9 @@
   "flags": [],
   "query": "Elmo Calls by Sesame Street",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.71,
+  "ratings": 9979
  },
  "Elmo’s World and You": {
   "appId": "com.sesameworkshop.eway.play",
@@ -17853,7 +17953,9 @@
   "flags": [],
   "query": "Elmo’s World and You",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.49,
+  "ratings": 53
  },
  "ELOH": {
   "appId": "es.brokenrul.eloh",
@@ -17877,7 +17979,9 @@
   "flags": [],
   "query": "ELOH",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.5,
+  "ratings": 842
  },
  "Emma’s Journey Fashion Shop": {
   "appId": "net.promediastudio.emmasjourney",
@@ -17918,7 +18022,9 @@
   "flags": [],
   "query": "Emma’s Journey Fashion Shop",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.51,
+  "ratings": 10561
  },
  "Emma’s World Town and Family": {
   "appId": "com.beansprites.emmasworldtownandfamilyFREE",
@@ -17943,7 +18049,9 @@
   "flags": [],
   "query": "Emma’s World Town and Family",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.83,
+  "ratings": 38456
  },
  "Endless Quiz Pro": {
   "appId": "com.timleg.quizPro",
@@ -17984,7 +18092,9 @@
   "flags": [],
   "query": "Endless Quiz Pro",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.73,
+  "ratings": 2961
  },
  "Endling *Extinction is Forever": {
   "appId": "com.hg.endling",
@@ -18022,7 +18132,9 @@
   "flags": [],
   "query": "Endling *Extinction is Forever",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.33,
+  "ratings": 1504
  },
  "Energy: Anti Stress Loops": {
   "appId": "com.infinitygames.loopenergy",
@@ -18063,7 +18175,9 @@
   "flags": [],
   "query": "Energy: Anti Stress Loops",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.55,
+  "ratings": 870784
  },
  "English for Kids": {
   "appId": null,
@@ -18109,7 +18223,9 @@
   "flags": [],
   "query": "English Guess the Phrase",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.1,
+  "ratings": 4943
  },
  "Enigmatis 2 (Full)": {
   "appId": null,
@@ -18171,7 +18287,9 @@
   "flags": [],
   "query": "Enter the Gungeon DEMO",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.71,
+  "ratings": 4130
  },
  "Epic Astro Story": {
   "appId": "net.kairosoft.android.frontier_en",
@@ -18212,7 +18330,9 @@
   "flags": [],
   "query": "Epic Astro Story",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.25,
+  "ratings": 2146
  },
  "Epic Little War Game": {
   "appId": "com.rubicon.dev.elwg",
@@ -18247,7 +18367,9 @@
   "flags": [],
   "query": "Epic Little War Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.88,
+  "ratings": 757
  },
  "Escape from the Shadows": {
   "appId": "air.com.darkdome.escape.from.shadows",
@@ -18288,7 +18410,9 @@
   "flags": [],
   "query": "Escape from the Shadows",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.78,
+  "ratings": 89238
  },
  "Escape Funky Island": {
   "appId": "com.snapbreak.escapefunkyisland",
@@ -18323,7 +18447,9 @@
   "flags": [],
   "query": "Escape Funky Island",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.34,
+  "ratings": 2488
  },
  "Escape Logan Estate": {
   "appId": null,
@@ -18382,7 +18508,9 @@
   "flags": [],
   "query": "Escape Machine City",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.13,
+  "ratings": 54423
  },
  "Escape Machine City: Airborne": {
   "appId": "com.snapbreak.escapemachinecity2",
@@ -18423,7 +18551,9 @@
   "flags": [],
   "query": "Escape Machine City: Airborne",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.53,
+  "ratings": 14150
  },
  "Escape Z Town": {
   "appId": "ru.gamedevteam.ezt",
@@ -18458,7 +18588,9 @@
   "flags": [],
   "query": "Escape Z Town",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.69,
+  "ratings": 289
  },
  "Escapists 2: Pocket Breakout": {
   "appId": "com.team17.escapists2",
@@ -18494,7 +18626,9 @@
   "flags": [],
   "query": "Escapists 2: Pocket Breakout",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.24,
+  "ratings": 19610
  },
  "Euchre": {
   "appId": "com.karmangames.euchre",
@@ -18535,7 +18669,9 @@
   "flags": [],
   "query": "Euchre",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.43,
+  "ratings": 31219
  },
  "Euchre Jogatina Cards Online": {
   "appId": "com.gazeus.euchre",
@@ -18570,7 +18706,9 @@
   "flags": [],
   "query": "Euchre Jogatina Cards Online",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.41,
+  "ratings": 12474
  },
  "Euchre Pro": {
   "appId": "uk.co.aifactory.euchre",
@@ -18611,7 +18749,9 @@
   "flags": [],
   "query": "Euchre Pro",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.34,
+  "ratings": 1241
  },
  "Eureka – Brain training": {
   "appId": "com.infinitygames.eureka",
@@ -18652,7 +18792,9 @@
   "flags": [],
   "query": "Eureka – Brain training",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.52,
+  "ratings": 19502
  },
  "Euro Train Simulator 2: Game": {
   "appId": "com.HighbrowInteractive.EuroTrainSim2",
@@ -18677,7 +18819,9 @@
   "flags": [],
   "query": "Euro Train Simulator 2: Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.26,
+  "ratings": 44672
  },
  "Everyday – Newspaper Games": {
   "appId": null,
@@ -18737,7 +18881,9 @@
   "flags": [],
   "query": "Evo Explores",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.83,
+  "ratings": 6249
  },
  "EvoCreo – Pocket Monster Game": {
   "appId": "ilmfinity.evocreo.main.android",
@@ -18778,7 +18924,9 @@
   "flags": [],
   "query": "EvoCreo – Pocket Monster Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.45,
+  "ratings": 55440
  },
  "Evoland": {
   "appId": "air.com.shirogames.evoland12",
@@ -18819,7 +18967,9 @@
   "flags": [],
   "query": "Evoland",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.28,
+  "ratings": 16634
  },
  "Evoland 2": {
   "appId": "com.playdigious.evoland2",
@@ -18859,7 +19009,9 @@
   "flags": [],
   "query": "Evoland 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.17,
+  "ratings": 18046
  },
  "Evolution Board Game": {
   "appId": "com.northstargames.evolutiongame",
@@ -18900,7 +19052,9 @@
   "flags": [],
   "query": "Evolution Board Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.31,
+  "ratings": 7091
  },
  "Exit the Gungeon DEMO": {
   "appId": "com.Devolver.ExittheGungeon",
@@ -18935,7 +19089,9 @@
   "flags": [],
   "query": "Exit the Gungeon DEMO",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 2.98,
+  "ratings": 1442
  },
  "Exploding Kittens 2": {
   "appId": "com.marmalade.explodingkittens",
@@ -18970,7 +19126,9 @@
   "flags": [],
   "query": "Exploding Kittens 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.65,
+  "ratings": 3235
  },
  "Extreme Balancer 3": {
   "appId": "com.enteriosoft.extremebalancer3",
@@ -19007,7 +19165,9 @@
   "flags": [],
   "query": "Extreme Balancer 3",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.18,
+  "ratings": 208403
  },
  "Extreme Landings Pro": {
   "appId": "it.rortos.extremelandingspro",
@@ -19042,7 +19202,9 @@
   "flags": [],
   "query": "Extreme Landings Pro",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.92,
+  "ratings": 10368
  },
  "Eyes Horror & Coop Multiplayer": {
   "appId": "com.eyesthegame.eyes",
@@ -19077,7 +19239,9 @@
   "flags": [],
   "query": null,
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.47,
+  "ratings": 894773
  },
  "Eyes: Nonogram": {
   "appId": "com.gamefox.eyes",
@@ -19118,7 +19282,9 @@
   "flags": [],
   "query": "Eyes: Nonogram",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.38,
+  "ratings": 21045
  },
  "Fairy Tale Mysteries 2: The Be": {
   "appId": null,
@@ -19178,7 +19344,9 @@
   "flags": [],
   "query": "Fake Island: Demolish!",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.4,
+  "ratings": 85940
  },
  "Falling Art Ragdoll Simulator": {
   "appId": "com.falling.art.ragdoll.simulator",
@@ -19219,7 +19387,9 @@
   "flags": [],
   "query": "Falling Art Ragdoll Simulator",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.76,
+  "ratings": 66294
  },
  "Fancy Pants Adventures": {
   "appId": "com.overthetopgames.fancypants",
@@ -19254,7 +19424,9 @@
   "flags": [],
   "query": "Fancy Pants Adventures",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.47,
+  "ratings": 119559
  },
  "FAR: Lone Sails": {
   "appId": "ch.misterwhale.far",
@@ -19295,7 +19467,9 @@
   "flags": [],
   "query": "FAR: Lone Sails",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.59,
+  "ratings": 5736
  },
  "Faraway Puzzle Escape": {
   "appId": null,
@@ -19336,7 +19510,9 @@
   "flags": [],
   "query": "Farm Frenzy Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.74,
+  "ratings": 6859
  },
  "Farm Invasion USA – Premium": {
   "appId": "com.hg.farminvasion",
@@ -19368,7 +19544,9 @@
   "flags": [],
   "query": "Farm Invasion USA – Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.79,
+  "ratings": 1594
  },
  "Farm vs Aliens Merge TD": {
   "appId": null,
@@ -19427,7 +19605,9 @@
   "flags": [],
   "query": "Farming Simulator 20",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.71,
+  "ratings": 48694
  },
  "Fashion Doll Dress Up Makeup": {
   "appId": "com.tizi.fashion.doll.avatar.girls.dress.up.games.makeup.gudiya",
@@ -19468,7 +19648,9 @@
   "flags": [],
   "query": "Fashion Doll Dress Up Makeup",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": null,
+  "ratings": null
  },
  "Fashion Dress up girls games": {
   "appId": "com.gokids.tbdoll",
@@ -19509,7 +19691,9 @@
   "flags": [],
   "query": "Fashion Dress up girls games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.15,
+  "ratings": 49221
  },
  "Fast Ball Jump – Going Ball 3D": {
   "appId": "com.garena.ball.run.goingball.ironball.rollingball",
@@ -19544,7 +19728,9 @@
   "flags": [],
   "query": "Fast Ball Jump – Going Ball 3D",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.28,
+  "ratings": 6046
  },
  "Feign": {
   "appId": "com.tenekekafalar.Feign",
@@ -19585,7 +19771,9 @@
   "flags": [],
   "query": "Feign",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.74,
+  "ratings": 8635
  },
  "Fight For Goodness": {
   "appId": "com.unicostudio.usa.war.america",
@@ -19626,7 +19814,9 @@
   "flags": [],
   "query": "Fight For Goodness",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.53,
+  "ratings": 6676
  },
  "Fight Master": {
   "appId": "com.fight.master",
@@ -19664,7 +19854,9 @@
   "flags": [],
   "query": "Fight Master",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.96,
+  "ratings": 14330
  },
  "Fighters of Fate: Card Duel": {
   "appId": null,
@@ -19722,7 +19914,9 @@
   "flags": [],
   "query": "Fill-in Corsswords",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.75,
+  "ratings": 15942
  },
  "Final Freeway": {
   "appId": "com.oyatsukai.finalfwy",
@@ -19763,7 +19957,9 @@
   "flags": [],
   "query": "Final Freeway",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.6,
+  "ratings": 351
  },
  "Find The Difference": {
   "appId": "com.gamma.find.diff",
@@ -19804,7 +20000,9 @@
   "flags": [],
   "query": "Find The Difference Play Pass",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.77,
+  "ratings": 576512
  },
  "Find the Difference 1000+": {
   "appId": "com.gamma.find.diff",
@@ -19845,7 +20043,9 @@
   "flags": [],
   "query": "Find the Difference 1000+",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.77,
+  "ratings": 576512
  },
  "Fire Truck Games Firefighter": {
   "appId": "com.iz.kids.fireman.fire.station.fighter.truck.safety.games",
@@ -19883,7 +20083,9 @@
   "flags": [],
   "query": "Fire Truck Games Firefighter Play Pass",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.09,
+  "ratings": 1840
  },
  "Fire Truck Rescue for Kids": {
   "appId": "com.imayi.dinofiretruckfree",
@@ -19924,7 +20126,9 @@
   "flags": [],
   "query": "Fire Truck Rescue for Kids",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.39,
+  "ratings": 10704
  },
  "Fireball Wizard": {
   "appId": "com.pid.fireballwizard",
@@ -19959,7 +20163,9 @@
   "flags": [],
   "query": "Fireball Wizard",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.73,
+  "ratings": 1749
  },
  "Fireballz": {
   "appId": "com.infinitygames.fireballz",
@@ -20000,7 +20206,9 @@
   "flags": [],
   "query": "Fireballz",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4,
+  "ratings": 594
  },
  "Firefight": {
   "appId": "com.windowsgames.firefight",
@@ -20035,7 +20243,9 @@
   "flags": [],
   "query": "Firefight",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.34,
+  "ratings": 1750
  },
  "First Strike Classic": {
   "appId": "ch.feinheit.games.firststrike",
@@ -20067,7 +20277,9 @@
   "flags": [],
   "query": "First Strike Classic",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 1.97,
+  "ratings": 13974
  },
  "Fisher-Price Play & Learn": {
   "appId": "com.edujoy.fisher.price.toys",
@@ -20105,7 +20317,9 @@
   "flags": [],
   "query": "Fisher-Price Play & Learn",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.54,
+  "ratings": 1029
  },
  "Fishing Paradiso": {
   "appId": "com.rpgsnack.fishingparadise",
@@ -20146,7 +20360,9 @@
   "flags": [],
   "query": "Fishing Paradiso",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.57,
+  "ratings": 32697
  },
  "Fitz 2: magic Match 3": {
   "appId": "air.com.absolutist.fitz2puzzlefree",
@@ -20187,7 +20403,9 @@
   "flags": [],
   "query": "Fitz 2: magic Match 3",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.8,
+  "ratings": 996
  },
  "Fiz: Brewery management game": {
   "appId": "com.bitbybitstudios.fiz",
@@ -20228,7 +20446,9 @@
   "flags": [],
   "query": "Fiz: Brewery management game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.83,
+  "ratings": 8241
  },
  "Flashback Tricky Fin Riddles": {
   "appId": "com.matchingham.flashback.tricky.riddles",
@@ -20269,7 +20489,9 @@
   "flags": [],
   "query": "Flashback Tricky Fin Riddles",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.8,
+  "ratings": 584894
  },
  "Flat machine": {
   "appId": "com.zxima.gatekeeper",
@@ -20310,7 +20532,9 @@
   "flags": [],
   "query": "Flat machine",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.7,
+  "ratings": 1643
  },
  "Flat Machine: Post-Apocalyptic": {
   "appId": "com.zxima.gatekeeper",
@@ -20351,7 +20575,9 @@
   "flags": [],
   "query": "Flat Machine: Post-Apocalyptic",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.7,
+  "ratings": 1643
  },
  "Flick Solitaire – Card Games": {
   "appId": "games.flick.solitaire",
@@ -20376,7 +20602,9 @@
   "flags": [],
   "query": null,
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.03,
+  "ratings": 15799
  },
  "Flipflop Solitaire": {
   "appId": "com.noodlecake.flipflopsolitaire",
@@ -20411,7 +20639,9 @@
   "flags": [],
   "query": "Flipflop Solitaire",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.94,
+  "ratings": 2477
  },
  "Flipping Legend": {
   "appId": "com.noodlecake.flippinglegend",
@@ -20446,7 +20676,9 @@
   "flags": [],
   "query": "Flipping Legend",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.56,
+  "ratings": 11572
  },
  "Flow Free": {
   "appId": "com.bigduckgames.flow",
@@ -20478,7 +20710,9 @@
   "flags": [],
   "query": "Flow Free",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.69,
+  "ratings": 1545075
  },
  "Flow Free: Bridges": {
   "appId": "com.bigduckgames.flowbridges",
@@ -20510,7 +20744,9 @@
   "flags": [],
   "query": "Flow Free: Bridges",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.68,
+  "ratings": 201151
  },
  "Flow Free: Hexes": {
   "appId": "com.bigduckgames.flowhexes",
@@ -20542,7 +20778,9 @@
   "flags": [],
   "query": "Flow Free: Hexes",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.67,
+  "ratings": 49051
  },
  "Flow Free: Shapes": {
   "appId": "com.bigduckgames.flowshapes",
@@ -20583,7 +20821,9 @@
   "flags": [],
   "query": "Flow Free: Shapes",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.72,
+  "ratings": 5931
  },
  "Flow Free: Wraps": {
   "appId": "com.bigduckgames.flowwarps",
@@ -20615,7 +20855,9 @@
   "flags": [],
   "query": "Flow Free: Wraps",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.71,
+  "ratings": 15104
  },
  "Fluffy Run": {
   "appId": "com.infinitygames.fluffyracing",
@@ -20650,7 +20892,9 @@
   "flags": [],
   "query": "Fluffy Run",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.86,
+  "ratings": 970
  },
  "Fluid- Trippy Stress Reliever": {
   "appId": "games.paveldogreat.fluidsim",
@@ -20691,7 +20935,9 @@
   "flags": [],
   "query": null,
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.87,
+  "ratings": 34863
  },
  "Foat Simulator": {
   "appId": "com.coffeestainstudios.goatsimulator",
@@ -20729,7 +20975,9 @@
   "flags": [],
   "query": "Foat Simulator",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.08,
+  "ratings": 105948
  },
  "Follow the meaning": {
   "appId": "com.HiKingMind.FollowTheMeaning",
@@ -20755,7 +21003,9 @@
   "flags": [],
   "query": "Follow the meaning",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.68,
+  "ratings": 530
  },
  "Food Truck Pup: Cooking Chef": {
   "appId": "jp.gamestart.Shibainu",
@@ -20790,7 +21040,9 @@
   "flags": [],
   "query": "Food Truck Pup: Cooking Chef",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.55,
+  "ratings": 35171
  },
  "Football CupPro 2024 Soccer": {
   "appId": "eu.inlogic.footballcuppro",
@@ -20825,7 +21077,9 @@
   "flags": [],
   "query": null,
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.33,
+  "ratings": 1802
  },
  "Football kicks Pro – Soccer": {
   "appId": "sk.inlogic.footballkicksprosoccer",
@@ -20860,7 +21114,9 @@
   "flags": [],
   "query": "Football kicks Pro – Soccer",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.01,
+  "ratings": 478
  },
  "Football Referee Simulator": {
   "appId": "com.VladimirPlyashkun.FootballReferee",
@@ -20901,7 +21157,9 @@
   "flags": [],
   "query": "Football Referee Simulator",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.47,
+  "ratings": 8383
  },
  "Forest Camp Story": {
   "appId": "net.kairosoft.android.camp",
@@ -20942,7 +21200,9 @@
   "flags": [],
   "query": "Forest Camp Story",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.78,
+  "ratings": 12765
  },
  "Forest Golf Planner": {
   "appId": "net.kairosoft.android.golf",
@@ -20983,7 +21243,9 @@
   "flags": [],
   "query": "Forest Golf Planner",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.63,
+  "ratings": 1920
  },
  "Forgotton Anne": {
   "appId": "com.hitcents.forgottonanne",
@@ -21024,7 +21286,9 @@
   "flags": [],
   "query": "Forgotton Anne",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.52,
+  "ratings": 32243
  },
  "Fortress Merge: Puzzle Defense": {
   "appId": "com.ttt.fortressmerge",
@@ -21065,7 +21329,9 @@
   "flags": [],
   "query": "Fortress Merge: Puzzle Defense",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.25,
+  "ratings": 57427
  },
  "Fortune Words – Lucky Spin": {
   "appId": "com.unicostudio.fortunewords",
@@ -21106,7 +21372,9 @@
   "flags": [],
   "query": "Fortune Words – Lucky Spin",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.62,
+  "ratings": 3320
  },
  "Fractal Space HD": {
   "appId": "com.hazegames.fractalspacetv",
@@ -21144,7 +21412,9 @@
   "flags": [],
   "query": "Fractal Space HD",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.62,
+  "ratings": 9301
  },
  "Franz: Scary Interactive Story": {
   "appId": null,
@@ -21200,7 +21470,9 @@
   "flags": [],
   "query": "FreeCell Play Pass",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.73,
+  "ratings": 43717
  },
  "FreeCell Solitaire: Card Games": {
   "appId": "com.mobilityware.freecell",
@@ -21232,7 +21504,9 @@
   "flags": [],
   "query": "FreeCell Solitaire: Card Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.6,
+  "ratings": 341561
  },
  "Freecell – Kemco": {
   "appId": "kemco.making.frcl1",
@@ -21267,7 +21541,9 @@
   "flags": [],
   "query": "Freecell – Kemco",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 2.75,
+  "ratings": 35
  },
  "Fruit Merge Blast Puzzle": {
   "appId": "com.epicpandagames.fruit.merge",
@@ -21308,7 +21584,9 @@
   "flags": [],
   "query": "Fruit Merge Blast Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.97,
+  "ratings": 244
  },
  "Fruits Coloring – Food Coloring": {
   "appId": "com.kidsfreegames.fruitsdrawingbook.coloringgames",
@@ -21349,7 +21627,9 @@
   "flags": [],
   "query": "Fruits Coloring – Food Coloring",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.12,
+  "ratings": 2379
  },
  "Fun Carnival Games For Kids": {
   "appId": "com.iz.carnival.kids.games.toddler.theme.park",
@@ -21387,7 +21667,9 @@
   "flags": [],
   "query": "Fun Carnival Games For Kids",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.25,
+  "ratings": 192
  },
  "Furious Car Driving 2025": {
   "appId": "com.MobimiGames.FuriousCarDriving",
@@ -21428,7 +21710,9 @@
   "flags": [],
   "query": "Furious Car Driving 2025",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.57,
+  "ratings": 145267
  },
  "Fury unleashed": {
   "appId": "com.AwesomeGamesStudio.FuryUnleashed",
@@ -21469,7 +21753,9 @@
   "flags": [],
   "query": "Fury unleashed",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.62,
+  "ratings": 524
  },
  "Furzies: Block Puzzle Game": {
   "appId": "com.infinitygames.furzies",
@@ -21510,7 +21796,9 @@
   "flags": [],
   "query": "Furzies: Block Puzzle Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.2,
+  "ratings": 553
  },
  "Fuzzy House Premium": {
   "appId": "com.fuzzyhouse.FuzzyHousePremium",
@@ -21551,7 +21839,9 @@
   "flags": [],
   "query": "Fuzzy House Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.76,
+  "ratings": 384
  },
  "G30 A Memory Maze": {
   "appId": "com.IvanKovalov.G30Android",
@@ -21592,7 +21882,9 @@
   "flags": [],
   "query": "G30 A Memory Maze",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.34,
+  "ratings": 1009
  },
  "G4A: Indian Rummy": {
   "appId": "org.games4all.android.games.indianrummy.prod",
@@ -21616,7 +21908,9 @@
   "flags": [],
   "query": "G4A: Indian Rummy",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.36,
+  "ratings": 22115
  },
  "Gallery Bowling 3D": {
   "appId": "com.driftwood.galaxybowl.free",
@@ -21654,7 +21948,9 @@
   "flags": [],
   "query": "Gallery Bowling 3D",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.48,
+  "ratings": 83972
  },
  "Game Dev Story": {
   "appId": "net.kairosoft.android.gamedev3en",
@@ -21695,7 +21991,9 @@
   "flags": [],
   "query": "Game Dev Story",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.7,
+  "ratings": 82323
  },
  "Game Dev Story – Dungeon Village": {
   "appId": "net.kairosoft.android.bouken_en",
@@ -21726,7 +22024,9 @@
   "flags": [],
   "query": null,
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.71,
+  "ratings": 28660
  },
  "Game Dev Tycoon": {
   "appId": "com.greenheartgames.gdt",
@@ -21758,7 +22058,9 @@
   "flags": [],
   "query": "Game Dev Tycoon",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.8,
+  "ratings": 177105
  },
  "Games for Kids 2 3 4 years old": {
   "appId": null,
@@ -21817,7 +22119,9 @@
   "flags": [],
   "query": "Games For Kids Toddlers 3-4",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.63,
+  "ratings": 706
  },
  "Gang Racers": {
   "appId": "com.gang.racers",
@@ -21843,7 +22147,9 @@
   "flags": [],
   "query": "Gang Racers",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.46,
+  "ratings": 17557
  },
  "Garage Master – games for Kids": {
   "appId": null,
@@ -21897,7 +22203,9 @@
   "flags": [],
   "query": "Garden Game for Kids",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.62,
+  "ratings": 11016
  },
  "Gemdoku: Wood Block Puzzle": {
   "appId": "com.unicostudio.gemdoku",
@@ -21938,7 +22246,9 @@
   "flags": [],
   "query": "Gemdoku: Wood Block Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.66,
+  "ratings": 15499
  },
  "Geometry Loop": {
   "appId": "com.kidga.loop",
@@ -21979,7 +22289,9 @@
   "flags": [],
   "query": "Geometry Loop",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.11,
+  "ratings": 2969
  },
  "Getting Over It": {
   "appId": "com.noodlecake.gettingoverit",
@@ -22011,7 +22323,9 @@
   "flags": [],
   "query": "Getting Over It",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.41,
+  "ratings": 17600
  },
  "Ghost Case": {
   "appId": "air.com.darkdome.the.ghost.mistery",
@@ -22052,7 +22366,9 @@
   "flags": [],
   "query": "Ghost Case",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.63,
+  "ratings": 41626
  },
  "Ghost In The Mirror": {
   "appId": "com.suiarts.GhostInTheMirror",
@@ -22077,7 +22393,9 @@
   "flags": [],
   "query": "Ghost In The Mirror",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.52,
+  "ratings": 1237
  },
  "Giant Dancing Plushies": {
   "appId": null,
@@ -22136,7 +22454,9 @@
   "flags": [],
   "query": "Giant Rush! – Fighting Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.52,
+  "ratings": 471430
  },
  "Glow Doodle Art – Color and Draw": {
   "appId": "com.gamesforkids.doodlecoloringgame.glowart",
@@ -22177,7 +22497,9 @@
   "flags": [],
   "query": "Glow Doodle Art – Color and Draw",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.58,
+  "ratings": 3426
  },
  "Go Escape! – Casual Ball Games": {
   "appId": "com.custom.goescape",
@@ -22218,7 +22540,9 @@
   "flags": [],
   "query": "Go Escape! – Casual Ball Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.9,
+  "ratings": 139348
  },
  "Golazo!": {
   "appId": "com.purpletreestudio.golazo",
@@ -22259,7 +22583,9 @@
   "flags": [],
   "query": "Golazo!",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.64,
+  "ratings": 9685
  },
  "Gold for Words: guess the word": {
   "appId": "com.HeatMachine.WordAndWord",
@@ -22297,7 +22623,9 @@
   "flags": [],
   "query": "Gold for Words: guess the word",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.7,
+  "ratings": 5220
  },
  "Golf Orbit – Golf Games": {
   "appId": "com.derwinstudio.golforbit",
@@ -22335,7 +22663,9 @@
   "flags": [],
   "query": "Golf Orbit – Golf Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.36,
+  "ratings": 43119
  },
  "Golf Peaks": {
   "appId": "com.Afterburn.GolfPeaks",
@@ -22370,7 +22700,9 @@
   "flags": [],
   "query": "Golf Peaks",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.33,
+  "ratings": 2307
  },
  "Grand Action Simulator New York": {
   "appId": "com.hgamesart.crimedriver",
@@ -22411,7 +22743,9 @@
   "flags": [],
   "query": "Grand Action Simulator New York",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.04,
+  "ratings": 146838
  },
  "Grand Mountain Adventure": {
   "appId": "com.toppluva.grandmountain",
