@@ -44620,7 +44620,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Lost Grimoires 3 (Full)": {
   "appId": "com.artifexmundi.lg3.gp.full",
@@ -44666,7 +44672,13 @@
    "Adventure",
    "Puzzle-adventure",
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Lost in Play": {
   "appId": "com.snapbreak.lip",
@@ -44717,7 +44729,13 @@
    "Stylized",
    "Cartoon",
    "Mystery"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Love You to Bits": {
   "appId": "air.com.A3donkeys.loveBits",
@@ -44770,7 +44788,13 @@
    "Stylized",
    "Science fiction",
    "Space"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Lovecraft’s Untold Stories": {
   "appId": "com.blinigames.lus",
@@ -44819,7 +44843,13 @@
    "Pixelated",
    "Immersive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Lucid Dream Adventure 2: Story": {
   "appId": "games.dali.adventure.lucid.dream.part.two",
@@ -44870,7 +44900,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Lucid Lenses": {
   "appId": null,
@@ -44921,7 +44957,13 @@
    "Casual",
    "Stylized",
    "Pixelated"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Ludo Offline Dice Board Game": {
   "appId": "com.iz.ludo.saga.king.star.dice.board.games",
@@ -44968,7 +45010,13 @@
    "Stylized",
    "Competitive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Ludo Punch": {
   "appId": "com.shuttergames.ludopunch",
@@ -45017,7 +45065,13 @@
    "Board",
    "Abstract strategy",
    "Ludo"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Ludo – Board Games": {
   "appId": null,
@@ -45082,7 +45136,13 @@
    "Adventure",
    "Puzzle-adventure",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "MA 1 – President Simulator Pro": {
   "appId": "com.oxiwyle.modernagepremium",
@@ -45133,7 +45193,13 @@
    "Government",
    "Casual",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Machinarium": {
   "appId": "air.net.machinarium.Machinarium.GP",
@@ -45187,7 +45253,13 @@
    "Puzzles",
    "Robot",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Machinika Atlas": {
   "appId": "com.pid.machinikaatlas",
@@ -45239,7 +45311,13 @@
    "Stylized",
    "Stylized-realistic",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Machinika Museum": {
   "appId": "com.littlefieldstudio.MachinikaMuseum",
@@ -45292,7 +45370,13 @@
    "Stylized",
    "Mystery",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Magazine Mogul": {
   "appId": "net.kairosoft.android.magazine_en",
@@ -45345,7 +45429,13 @@
    "Stylized",
    "Pixelated",
    "Light-hearted"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Magic Finger 3D": {
   "appId": "com.ASmallGame.themagicfinger",
@@ -45397,7 +45487,13 @@
    "Stylized",
    "Low poly",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Magic Rampage": {
   "appId": "com.asanteegames.magicrampage",
@@ -45452,7 +45548,13 @@
    "Battling",
    "Dungeon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Magnet ball: Physics Puzzle": {
   "appId": "com.crazyowl.MagnetBalls",
@@ -45504,7 +45606,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Magnet balls 2: Physics Puzzle": {
   "appId": "com.crazyowl.MagnetBalls2",
@@ -45556,7 +45664,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Magnet balls PRO Puzzle": {
   "appId": "com.crazyowl.MagnetBallsProNoAds",
@@ -45607,7 +45721,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mahjong (Full)": {
   "appId": "com.onecwireless.mahjong.full",
@@ -45661,7 +45781,13 @@
    "Realistic",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mahjong 3 (Full)": {
   "appId": "com.onecwireless.mahjong3.google.full",
@@ -45704,7 +45830,13 @@
   "installs": 58037,
   "tags": [
    "Puzzle"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mahjong Epic": {
   "appId": "com.kristanix.android.mahjongsolitaireepic",
@@ -45753,7 +45885,13 @@
    "Stylized",
    "Peaceful",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mahjong Solitaire": {
   "appId": "com.mobilityware.MahjongSolitaire",
@@ -45807,7 +45945,13 @@
    "Stylized",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mahjong Titan": {
   "appId": "com.kristanix.android.mahjongsolitairetitan",
@@ -45857,7 +46001,13 @@
    "Stylized",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Main Street Pets Village Town": {
   "appId": "com.beansprites.mainstreetpetsFREE",
@@ -45900,7 +46050,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Majesty – Teh Fantasy Kingdom": {
   "appId": "com.herocraft.game.majesty",
@@ -45937,7 +46093,13 @@
   "installs": 253391,
   "tags": [
    "Strategy"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Majesty – Teh Northern Expansion": {
   "appId": "com.herocraft.game.majesty_ne",
@@ -45984,7 +46146,13 @@
    "Build & battle",
    "Stylized",
    "Pixelated"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Majotori": {
   "appId": "com.Majorariatto.Majotori_v2",
@@ -46036,7 +46204,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Make It Fly!": {
   "appId": "com.make.it.fly",
@@ -46089,7 +46263,13 @@
    "Stylized",
    "Low poly",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mandala Coloring Book": {
   "appId": null,
@@ -46148,7 +46328,13 @@
   "installs": 8743,
   "tags": [
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Marble Legend Pro": {
   "appId": "com.easygame.marblelegendpay",
@@ -46188,7 +46374,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "March to a Million": {
   "appId": "net.kairosoft.android.ongaku2_en",
@@ -46243,7 +46435,13 @@
    "Pixelated",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mars: Mars": {
   "appId": "com.pomelogames.MarsGame",
@@ -46299,7 +46497,13 @@
    "Space",
    "Intense",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Match Puzzle Travel": {
   "appId": "com.mobirix.mbtm",
@@ -46351,7 +46555,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Matching king": {
   "appId": "com.mobirix.cardmatch",
@@ -46398,7 +46608,13 @@
    "Competitive multiplayer",
    "Single player",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Matexo Addictive Math Puzzle": {
   "appId": "com.logisk.matexo",
@@ -46445,7 +46661,13 @@
   "installs": 74881,
   "tags": [
    "Puzzle"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Math for Kids: learning games": {
   "appId": null,
@@ -46512,7 +46734,13 @@
    "Cartoon",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Math Games Kids Learn Addition": {
   "appId": "com.kids.maths.games.free.toddler.learning.counting.addition.arithmetic.subtraction.game.math",
@@ -46559,7 +46787,13 @@
   "installs": 535828,
   "tags": [
    "Educational"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Math Games Learn Add Multiply": {
   "appId": "com.GamesForKids.Mathgames.MultiplicationTables",
@@ -46613,7 +46847,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Math Games – Maths Tricks": {
   "appId": "com.maths.games.add.subtract.multiply.divide",
@@ -46666,7 +46906,13 @@
    "Competitive multiplayer",
    "Single player",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Math Land: Math Games for Kids": {
   "appId": "com.EducaGames.MathLandFull",
@@ -46706,7 +46952,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Maze Machina": {
   "appId": null,
@@ -46775,7 +47027,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Maze: Puzzle and Relaxing Game": {
   "appId": "com.rikudogames.maze",
@@ -46827,7 +47085,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mazes and More": {
   "appId": "com.leodesol.games.classic.maze.labyrinth",
@@ -46879,7 +47143,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "McWheelie Logic games for Kids": {
   "appId": "ru.jeka.DoctorMacWheelie.free",
@@ -46931,7 +47201,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mechanic Max – Kids game": {
   "appId": "com.bubadu.mechanicmax",
@@ -46977,7 +47253,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "MechCom 2 3D RTS": {
   "appId": "ru.gamedevteam.mechcom2",
@@ -47019,7 +47301,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "MechCom 3 3D RTS": {
   "appId": "ru.gamedevteam.mechcom3",
@@ -47061,7 +47349,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "MechCom 3D RTS": {
   "appId": "ru.gamedevteam.mechcom",
@@ -47102,7 +47396,13 @@
    "Casual",
    "Single player",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mega Mall Story": {
   "appId": "net.kairosoft.android.depart_en",
@@ -47146,7 +47446,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mega Mall Story 2": {
   "appId": "net.kairosoft.android.depart2",
@@ -47201,7 +47507,13 @@
    "Pixelated",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mega Ramp Car Jumping": {
   "appId": "com.meg.car.jumping",
@@ -47250,7 +47562,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Memory games brain training": {
   "appId": "com.memory.brain.training.games",
@@ -47288,7 +47606,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Memory Word Game": {
   "appId": "com.epicpandagames.word.merge.app",
@@ -47335,7 +47659,13 @@
   "installs": 34608,
   "tags": [
    "Word"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mental Hospital IV Horror Game": {
   "appId": "com.agaming.mentalhospitaliv",
@@ -47384,7 +47714,13 @@
    "Single player",
    "Stylized",
    "Horror"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mental Hospital V – 3D Creepy": {
   "appId": "com.agaming.mentalhospitalV",
@@ -47428,7 +47764,13 @@
    "Single player",
    "Horror",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mental Hospital VI (Horror)": {
   "appId": "com.agaming.mentalhospital6",
@@ -47477,7 +47819,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Merge Cookies: Idle Match Game": {
   "appId": "com.pixelcubestudios.mergecookies",
@@ -47518,7 +47866,13 @@
   "installs": 40464,
   "tags": [
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Merge Evolution: Idle Clicker": {
   "appId": "com.azurgames.idle",
@@ -47567,7 +47921,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Merge Kitchen": {
   "appId": "com.FATSTAR.MergeKitchen",
@@ -47609,7 +47969,13 @@
   "installs": 128455,
   "tags": [
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mermaid Glitter Cupcake Chef": {
   "appId": "com.beansprites.mermaidcupcakechefFREE",
@@ -47647,7 +48013,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mermaids": {
   "appId": "com.coloring.mermaids",
@@ -47698,7 +48070,13 @@
    "Stylized",
    "Handicraft",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "METBOY!": {
   "appId": "com.rebuild.met",
@@ -47742,7 +48120,13 @@
    "Single player",
    "Stylized",
    "Cartoon"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Meterofall: Journeys": {
   "appId": "com.slothwerks.meteorfall",
@@ -47784,7 +48168,13 @@
    "Fantasy",
    "Medieval fantasy",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Meterofall: Krumit’s Tale": {
   "appId": "com.slothwerks.krumit",
@@ -47831,7 +48221,13 @@
    "Stylized",
    "Competitive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Meterofall: Rustbowl Rumble": {
   "appId": "com.slothwerks.bramble",
@@ -47873,7 +48269,13 @@
   "installs": 11272,
   "tags": [
    "Card"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Metro Quester – Hack & Slash": {
   "appId": "kemco.thousandgames.metroquester",
@@ -47915,7 +48317,13 @@
   "tags": [
    "Science fiction",
    "Apocalyptic"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Miffy – Education kids game": {
   "appId": "com.edujoy.Miffy.Games",
@@ -47969,7 +48377,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Miga Town: My World": {
   "appId": "com.miga.world",
@@ -48023,7 +48437,13 @@
    "Connect",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mike V: Skateboard Party": {
   "appId": "com.ratrodstudio.mikevskatepartylite",
@@ -48075,7 +48495,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mind Games Pro": {
   "appId": "mindware.mindgamespro",
@@ -48117,7 +48543,13 @@
    "Casual",
    "Single player",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mindblow: Guess the Word!": {
   "appId": "dev.minis.popcorn",
@@ -48164,7 +48596,13 @@
   "installs": 2934177,
   "tags": [
    "Word"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mindcell": {
   "appId": "com.VenomizedArt.Mindcell",
@@ -48212,7 +48650,13 @@
    "Immersive",
    "Science fiction",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mindsweeper: Puzzle Adventure": {
   "appId": "com.snapbreak.mindsweeper",
@@ -48259,7 +48703,13 @@
    "Low poly",
    "Mystery",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mine & Slash: Arcade RPG Games": {
   "appId": "com.mining.fever",
@@ -48310,7 +48760,13 @@
    "Casual",
    "Single player",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Minesweeper Pro": {
   "appId": "mindware.minegamespro",
@@ -48348,7 +48804,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mini Airways: Premium": {
   "appId": "com.mini.airways.paid.gp",
@@ -48400,7 +48862,13 @@
    "Stylized",
    "Vehicles",
    "Airplane"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mini Golf 3D Multiplayer Rival": {
   "appId": "com.MobileSportsTime.MiniGolfEldoradoGolfCourse",
@@ -48456,7 +48924,13 @@
    "Stylized",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mini Metro": {
   "appId": "nz.co.codepoint.minimetro",
@@ -48505,7 +48979,13 @@
    "Construction",
    "Renovation",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mini Racing Adventures": {
   "appId": null,
@@ -48561,7 +49041,13 @@
    "Pixelated",
    "Romance",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Minipuzzles – Daily Challenges": {
   "appId": "newspaper.games",
@@ -48610,7 +49096,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Miracle Merchant": {
   "appId": "com.tinytouchtales.alchi",
@@ -48655,7 +49147,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "MMA Manager 2: Ultimate Fight": {
   "appId": "com.funrock.mma.manager",
@@ -48696,7 +49194,13 @@
    "Stylized",
    "MMA",
    "Arena"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mmm Fingers": {
   "appId": "com.noodlecake.mmmfingers",
@@ -48745,7 +49249,13 @@
    "Stylized",
    "Monster",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mmm Fingers 2": {
   "appId": null,
@@ -48830,7 +49340,13 @@
   "installs": 30145,
   "tags": [
    "Action"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Modern Defnese HD": {
   "appId": "net.moderndefense",
@@ -48876,7 +49392,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Momlife Simulator": {
   "appId": "com.funcell.momlifesimulator",
@@ -48923,7 +49445,13 @@
    "Care",
    "Single player",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Monster Squad Rush": {
   "appId": "com.hyperhoop.pocketmonsters",
@@ -48970,7 +49498,13 @@
    "Stylized",
    "Anime",
    "Monster"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Monster Train": {
   "appId": "com.ShinyShoe.MonsterTrain",
@@ -49017,7 +49551,13 @@
    "Stylized",
    "Monster",
    "Immersive"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Monster Truck Kids Car Games": {
   "appId": "com.monster.truck.racing.kids.games.car.wash.boys.toddlers",
@@ -49072,7 +49612,13 @@
    "Cartoon",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Monster Trucks game for Kids 2": {
   "appId": "com.razmobi.monstertrucks2",
@@ -49127,7 +49673,13 @@
    "Vehicles",
    "Monster truck",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Monster Trucks game for Kids 3": {
   "appId": "com.razmobi.monstertrucks3",
@@ -49182,7 +49734,13 @@
    "Vehicles",
    "Monster truck",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Monument Valley": {
   "appId": "com.ustwo.monumentvalley",
@@ -49236,7 +49794,13 @@
    "Puzzles",
    "Princess",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Monument Valley 2": {
   "appId": "com.ustwo.monumentvalley2",
@@ -49284,7 +49848,13 @@
    "Princess",
    "Puzzles",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Morgiana: Mysteries (Full)": {
   "appId": "com.absolutist.morgiana_full",
@@ -49334,7 +49904,13 @@
    "Puzzle-adventure",
    "Stylized",
    "Stylized-realistic"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Morphite Premium – Sci-Fi FPS": {
   "appId": null,
@@ -49407,7 +49983,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mosaic Puzzles Art Game Kids": {
   "appId": "com.KidsFreeGames.Mosaic.Puzzles",
@@ -49458,7 +50040,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Moth Lake: A Horror Story": {
   "appId": "com.suiarts.MothLake",
@@ -49512,7 +50100,13 @@
    "Pixelated",
    "Mystery",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Moto X3M Bike Race game": {
   "appId": "air.com.aceviral.motox3m",
@@ -49558,7 +50152,13 @@
    "Motorcycle",
    "Intense",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mouse Trap – Hasbro Board Game": {
   "appId": "com.marmalade.mousetrap",
@@ -49610,7 +50210,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mouse Trap – The Board Game": {
   "appId": "com.marmalade.mousetrap",
@@ -49662,7 +50268,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "MouseBot": {
   "appId": "com.vectorunit.mercury.googleplay",
@@ -49713,7 +50325,13 @@
    "Stylized",
    "Intense",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mousebusters": {
   "appId": "com.rpgsnack.apartmenteden",
@@ -49764,7 +50382,13 @@
    "Fantasy",
    "Urban fantasy",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mowing Mazes": {
   "appId": "com.protostar.hedgemaze",
@@ -49816,7 +50440,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Murders on Budapest": {
   "appId": "com.buffstudio.murder.budapest.novel.adventure.story.games",
@@ -49866,7 +50496,13 @@
    "Interactive story",
    "Single player",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mushroom 11": {
   "appId": "com.untame.mushroom11",
@@ -49903,7 +50539,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Music Tower: Tap Tiles": {
   "appId": "com.twelvemoments.musicparty",
@@ -49955,7 +50597,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mutant Fighting Cup Original": {
   "appId": "com.aceviral.mutantfightingcuppaid",
@@ -50002,7 +50650,13 @@
   "installs": 14713,
   "tags": [
    "Action"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Baby Care Newborn Games": {
   "appId": "com.beansprites.mybabycareFREE",
@@ -50043,7 +50697,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Baby Unicorn – Pet Care Sim": {
   "appId": "com.beansprites.babyunicornpandaFREE",
@@ -50085,7 +50745,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My bakery Empire: Bake A Cake": {
   "appId": "com.cocoplay.sweet.bakery",
@@ -50133,7 +50799,13 @@
    "Stylized",
    "Cooking",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My City: Hotel": {
   "appId": "mycity.hotel",
@@ -50180,7 +50852,13 @@
    "Cartoon",
    "House & garden",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Cute Friends Coloring Book": {
   "appId": "com.abovegames.coloringcozyfriends",
@@ -50221,7 +50899,13 @@
   "installs": 1048546,
   "tags": [
    "Board"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Diggy Dog": {
   "appId": "ru.kingbird.doggame",
@@ -50267,7 +50951,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Diggy Dog 2": {
   "appId": "com.kingbirdgames.dig",
@@ -50314,7 +51004,13 @@
    "Action-adventure",
    "Stylized",
    "Cartoon"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Friend Pedro: Ripe for Reve": {
   "appId": "com.devolverdigital.myfriendpedro",
@@ -50369,7 +51065,13 @@
    "Gun",
    "Intense",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My hair Salon – Beauty salon": {
   "appId": "com.edujoy.hairsalon",
@@ -50416,7 +51118,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Home Makeover: House Design": {
   "appId": null,
@@ -50491,7 +51199,13 @@
    "Horse",
    "Crafting",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Little Pony Rainbow Runners": {
   "appId": "com.budgestudios.googleplay.MyLittlePonyRainbowRunners",
@@ -50542,7 +51256,13 @@
    "Horse",
    "Jump",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Little Pony: Harmony Quest": {
   "appId": "com.budgestudios.MyLittlePonyHarmonyQuest",
@@ -50591,7 +51311,13 @@
    "Animals",
    "Horse",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Little Work – Garage": {
   "appId": "se.filimundus.mlwgarage",
@@ -50639,7 +51365,13 @@
    "Vehicles",
    "Car",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Magical Town Fairy Land": {
   "appId": "com.iz.magical.town.city.pretend.play.fairy.land.magic.games.fantasy.fairyland.fairies",
@@ -50690,7 +51422,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Pretend Airport Travel Town": {
   "appId": "com.beansprites.mypretendairportFREE",
@@ -50729,7 +51467,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Pretend Home & Family Town": {
   "appId": "com.beansprites.mypretendhomenewFREE",
@@ -50771,7 +51515,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Princess House – Doll Games": {
   "appId": "com.iz.princess.games.kids.doll.house.my.town.pretend.play.home",
@@ -50824,7 +51574,13 @@
    "Stylized",
    "Cartoon",
    "Princess"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Spa Resort: Grow and Build": {
   "appId": "com.cherrypickgames.mybeautyfactory",
@@ -50876,7 +51632,13 @@
    "Single player",
    "Stylized",
    "Resort & hotel"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Town – Build a City Life": {
   "appId": "mytown.friendsclub",
@@ -50922,7 +51684,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Town: Beach Picnic": {
   "appId": "mytown.beach",
@@ -50970,7 +51738,13 @@
    "Cartoon",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Town: Fashion Show Game": {
   "appId": "mytown.fashion",
@@ -51016,7 +51790,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Town: Hospital": {
   "appId": "mytown.hospital",
@@ -51060,7 +51840,13 @@
    "Life",
    "Casual",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Town: School": {
   "appId": "mytown.school",
@@ -51103,7 +51889,13 @@
    "Stylized",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Town: Stories": {
   "appId": "mytown.stores",
@@ -51148,7 +51940,13 @@
    "Cartoon",
    "Cute",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Town: Wedding": {
   "appId": "mytown.wedding",
@@ -51195,7 +51993,13 @@
    "Stylized",
    "Cartoon",
    "Cute"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My very Hungry Caterpillar": {
   "appId": "com.storytoys.myveryhungrycaterpillar.free.android.googleplay",
@@ -51244,7 +52048,13 @@
    "Insect",
    "Toys",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "My Zombie World": {
   "appId": "com.sixtysevenbits.zombieworld",
@@ -51291,7 +52101,13 @@
   "installs": 116260,
   "tags": [
    "Role Playing"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Mystic Pillars: A Puzzle game": {
   "appId": "com.HolyCow.MysticPillars",
@@ -51342,7 +52158,13 @@
    "Stylized",
    "Mystery",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Nail Salon Game Girls Nail Art": {
   "appId": null,
@@ -51407,7 +52229,13 @@
   "installs": 2203027,
   "tags": [
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Neat Nexus: Idle Tower Defense": {
   "appId": "com.infinitygames.NeatNexus",
@@ -51454,7 +52282,13 @@
   "installs": 64608,
   "tags": [
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Neighbors from Hell 1 Premium": {
   "appId": "com.nordigames.nfh.premium",
@@ -51487,7 +52321,13 @@
    "Single player",
    "Stylized",
    "Funny"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Neighbours back From Hell": {
   "appId": "com.hg.NbFH",
@@ -51538,7 +52378,13 @@
    "Casual",
    "Stylized",
    "Cartoon"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Neko Atsume: Kitty Collector": {
   "appId": "jp.co.hit_point.nekoatsume",
@@ -51588,7 +52434,13 @@
    "Animals",
    "Cat",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Nekograms": {
   "appId": "com.hungrysky.nekograms",
@@ -51633,7 +52485,13 @@
    "Casual",
    "Stylized",
    "Cartoon"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Neptune vs Mermaid: Fish Prank": {
   "appId": "com.joybits.sosfish",
@@ -51664,7 +52522,13 @@
   "installs": 1541016,
   "tags": [
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Nerd Survivors": {
   "appId": "com.heartbit.nerdsurvivors",
@@ -51717,7 +52581,13 @@
    "Pixelated",
    "Immersive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Nerts Pounce JD": {
   "appId": "com.jimmyinteractive.nertz",
@@ -51765,7 +52635,13 @@
    "Casual",
    "Single player",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Niffelheim": {
   "appId": "com.elladagames.niffelheim",
@@ -51819,7 +52695,13 @@
    "Immersive",
    "Fantasy",
    "Medieval fantasy"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Night Reverie": {
   "appId": "com.somberpixel.nightreverie",
@@ -51860,7 +52742,13 @@
   "installs": 35925,
   "tags": [
    "Adventure"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Ninja Hero": {
   "appId": "com.hg.ninjaherocats",
@@ -51903,7 +52791,13 @@
    "Animals",
    "Cat",
    "Ninja"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Ninja Hero Cats Premium": {
   "appId": "com.hg.ninjaherocats",
@@ -51946,7 +52840,13 @@
    "Animals",
    "Cat",
    "Ninja"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Ninja Village": {
   "appId": "net.kairosoft.android.ninja_en",
@@ -51996,7 +52896,13 @@
    "Build & battle",
    "Stylized",
    "Pixelated"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "No Place for Bravery": {
   "appId": "br.com.theglitchfactory.noplaceforbravery",
@@ -52047,7 +52953,13 @@
    "Casual",
    "Stylized",
    "Pixelated"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Nobodies: Murder Cleaner": {
   "appId": "com.blyts.nobodies",
@@ -52101,7 +53013,13 @@
    "Modern",
    "Crime",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Nonogram.com – Logic Games": {
   "appId": "com.easybrain.nonogram",
@@ -52151,7 +53069,13 @@
    "Connect",
    "Peaceful",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Northgard": {
   "appId": "com.playdigious.northgard",
@@ -52206,7 +53130,13 @@
    "Stylized",
    "Viking",
    "Renovation"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Not Exactly a Hero: Story Game": {
   "appId": "com.buffstudio.not.exactly.hero.visual.novel.adventure.story.games",
@@ -52256,7 +53186,13 @@
    "Interactive story",
    "Casual",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Not Not 2 – A Brain Challenge": {
   "appId": "com.altshift.notnot2",
@@ -52286,7 +53222,13 @@
   "installs": 199034,
   "tags": [
    "Puzzle"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Note Fighter": {
   "appId": "net.notefighter.android",
@@ -52335,7 +53277,13 @@
    "Music",
    "Music sim",
    "Piano"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Nowhere House": {
   "appId": "air.com.darkdome.nowhere.house",
@@ -52388,7 +53336,13 @@
    "Mystery",
    "Horror",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Number Blocks Puzzles": {
   "appId": "com.rikudogames.numblocks",
@@ -52440,7 +53394,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Number Mazes: Rikudo Puzzles": {
   "appId": "com.rikudo.numbers",
@@ -52481,7 +53441,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Numbers Logic Puzzle Game": {
   "appId": "air.com.absolutist.numbers",
@@ -52533,7 +53499,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Nursery Rhymes Songs for Kids": {
   "appId": "com.KidsFreeGames.Puzzles.NurseyRhymes",
@@ -52587,7 +53559,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "NyxQuest: Kindred Spirit": {
   "appId": "com.overthetopgames.nyxquest",
@@ -52629,7 +53607,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Oaken": {
   "appId": "com.lakistudios.oaken",
@@ -52668,7 +53652,13 @@
   "rating": 2.33,
   "ratings": 51,
   "installs": 10106,
-  "tags": []
+  "tags": [],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Oath of Giants": {
   "appId": "com.JourneyBoundGames.PathofGaints",
@@ -52720,7 +53710,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Ocean Fishing King": {
   "appId": "com.mobirix.fhk",
@@ -52767,7 +53763,13 @@
   "installs": 461952,
   "tags": [
    "Sports"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Oculux": {
   "appId": "com.logisk.oculux",
@@ -52818,7 +53820,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Odysseus Kosmos: Point and Click": {
   "appId": "com.herocraft.game.free.odysseus1",
@@ -52864,7 +53872,13 @@
    "Stylized",
    "Pixelated",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Off-road Driver Pro": {
   "appId": "com.logicmiracle.offroaddrivepro",
@@ -52914,7 +53928,13 @@
    "Offroad",
    "Realistic",
    "Vehicles"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Offline Games – No Wifi Games": {
   "appId": "com.shuttergames.offlinegames",
@@ -52961,7 +53981,13 @@
   "installs": 430247,
   "tags": [
    "Casual"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Offroad Climb 4×4": {
   "appId": "com.offroad.climb.awd",
@@ -53005,7 +54031,13 @@
   "installs": 2511943,
   "tags": [
    "Racing"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Offroad Legends 2": {
   "appId": "com.dogbytegames.offroadlegends2",
@@ -53052,7 +54084,13 @@
    "Stylized",
    "Vehicles",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Oh! Edo Towers": {
   "appId": "net.kairosoft.android.edotowns",
@@ -53108,7 +54146,13 @@
    "Historical",
    "Medieval",
    "Light-hearted"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "OK Golf": {
   "appId": "com.okidokico.okgolf",
@@ -53158,7 +54202,13 @@
    "Low poly",
    "Competitive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Old Man’s Journey": {
   "appId": "es.brokenrul.oldmansjourney",
@@ -53192,7 +54242,13 @@
    "Stylized",
    "Mystery",
    "Modern"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "One Deck Dungeon": {
   "appId": "com.handelabra.OneDeckDungeon",
@@ -53240,7 +54296,13 @@
    "Dungeon",
    "Competitive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "One Hand Clapping": {
   "appId": "com.hg.ohc",
@@ -53289,7 +54351,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "One Line: Drawing Puzzle Game": {
   "appId": "com.draw.one.line",
@@ -53341,7 +54409,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "One Line: One Touch Puzzle": {
   "appId": "com.infinitygames.oneline",
@@ -53393,7 +54467,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "One More Button": {
   "appId": "com.tommysoereide.onemorebutton",
@@ -53436,7 +54516,13 @@
   "installs": 17734,
   "tags": [
    "Puzzle"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "One More Line": {
   "appId": "com.smgstudio.onemoreline",
@@ -53481,7 +54567,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "One Way: The Elevator": {
   "appId": "com.cottongame.elevator",
@@ -53527,7 +54619,13 @@
    "Stylized",
    "Cartoon",
    "Mystery"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "OrbaDrone – Robot Escape": {
   "appId": "com.qookie.orbadrone2",
@@ -53562,7 +54660,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Orbia": {
   "appId": "com.joxdev.orbia",
@@ -53616,7 +54720,13 @@
    "Abstract",
    "Launch",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Ord.": {
   "appId": null,
@@ -53667,7 +54777,13 @@
    "Platformer",
    "Casual",
    "Stylized"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Orixo": {
   "appId": "com.logisk.orixo",
@@ -53718,7 +54834,13 @@
    "Single player",
    "Abstract",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Oroject terrarium": {
   "appId": "com.snapbreak.terrarium",
@@ -53770,7 +54892,13 @@
    "Single player",
    "Stylized",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "OTTTD: Over The Top TD": {
   "appId": "com.smgstudio.otttd",
@@ -53820,7 +54948,13 @@
    "Stylized",
    "Immersive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Out of the Loop": {
   "appId": "com.tastyrook.loop",
@@ -53857,7 +54991,13 @@
    "Competitive multiplayer",
    "Competitive",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Out There:Omega Edition": {
   "appId": "com.miclos.google.games.outthere",
@@ -53897,7 +55037,13 @@
    "Science fiction",
    "Space",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Outliver: Tribulation": {
   "appId": "com.Gbrossoft.OutliverTribulation",
@@ -53938,7 +55084,13 @@
   "installs": 12902,
   "tags": [
    "Action"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Overtake Race Masters": {
   "appId": "com.overtake.race.masters",
@@ -53985,7 +55137,13 @@
   "installs": 1986662,
   "tags": [
    "Racing"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Ovivo": {
   "appId": "ru.izhard",
@@ -54038,7 +55196,13 @@
    "Stylized",
    "Dark",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Ozymandias": {
   "appId": "com.goblinzpublishing.ozymandias",
@@ -54084,7 +55248,13 @@
    "Immersive",
    "Historical",
    "Medieval"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Package Inc – Management games": {
   "appId": "com.infinitygames.packageinc",
@@ -54139,7 +55309,13 @@
    "Low poly",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Panda Preschool Baby Games": {
   "appId": "iz.com.baby.panda.preschool.kids.learning.toddler.town.games",
@@ -54170,7 +55346,13 @@
   "installs": 71875,
   "tags": [
    "Educational"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Pandamino – Color Slide Puzzle": {
   "appId": "com.exovoidgames.pandamino",
@@ -54209,7 +55391,13 @@
    "Stylized",
    "Cartoon",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Pango Bakery Restaurant": {
   "appId": "com.studiopango.bakery",
@@ -54258,7 +55446,13 @@
    "Cartoon",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Pango Bakery: Obstacle Course": {
   "appId": "com.studiopango.bakery",
@@ -54307,7 +55501,13 @@
    "Cartoon",
    "Light-hearted",
    "Offline"
-  ]
+  ],
+  "regions": {
+   "nl": {
+    "available": true,
+    "checked": "2026-10-03"
+   }
+  }
  },
  "Pango Build Amusement Park": {
   "appId": "com.studiopango.pangobuildpark",
