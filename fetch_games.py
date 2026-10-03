@@ -43,6 +43,13 @@ GENRES = {
     "word": "Word & Trivia",
 }
 
+# Names YTECHB lists twice in one genre because two different Play Pass apps
+# use them (checked on the Play Store). First listing -> title for the second.
+SAME_NAME_APPS = {
+    "Kids Learn About animals": "Kids Learn About Animals (Intellijoy)",
+    "Toddler games for 3 year olds": "Toddler Games for 3 Year Olds+",
+}
+
 
 class GenreListParser(HTMLParser):
     """Collects the <li> text that follows each '<h2|h3 id="<genre>-games">' heading."""
@@ -101,8 +108,11 @@ def main():
     games, seen, dupes = [], {}, []
     for section, title in p.items:
         k = dedupe_key(title)
-        if k in seen:  # listed under two genres: keep the first
-            dupes.append(f"{title} ({GENRES[section]}; kept {seen[k]['genre']})")
+        if k in seen and seen[k]["title"] in SAME_NAME_APPS:
+            title = SAME_NAME_APPS[seen[k]["title"]]
+            k += "#2"
+        if k in seen:  # same game listed twice (usually under two genres): keep the first
+            dupes.append(f"{title} ({GENRES[section]}; kept {seen[k]['title']!r}, {seen[k]['genre']})")
             continue
         seen[k] = {"title": title, "genre": GENRES[section], "source": SOURCE_URL}
         games.append(seen[k])
