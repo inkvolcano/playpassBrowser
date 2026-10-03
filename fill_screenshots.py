@@ -231,8 +231,9 @@ spades euchre rummy cribbage blackjack poker yahtzee 2048 maze mazes escape room
 objects difference differences sticker stickers story stories book books english spanish
 about how what where who is it this that all me you we lets let go play time
 adult adults senior seniors family teen teens relax relaxing daily unlimited challenge
-challenges master mania blast
+challenges master mania blast christmas xmas halloween easter santa holiday spooky concentration
 """.split()) | {str(n) for n in range(21)}
+YEAR_RE = re.compile(r"19[5-9]\d|20[0-3]\d")
 
 
 def norm(s):
@@ -255,24 +256,41 @@ def spelling(title):
 
 
 def numbers(title):
-    toks = norm(base(title)).split()
-    return {ROMAN.get(t, t) for t in toks if t.isdigit() or t in ROMAN} - {
-        t for t in toks if re.fullmatch(r"(19|20)\d\d", t)}
+    return {ROMAN.get(t, t) for t in norm(title).split()
+            if (t.isdigit() or t in ROMAN) and not YEAR_RE.fullmatch(t)}
+
+
+def number_mismatch(game_title, cand_title):
+    """Sequel numbers differ: the list title's numbers must all appear in the
+    candidate, and the candidate's main title may not add any (bar a "1")."""
+    want = numbers(game_title)
+    return bool(want - numbers(cand_title) or numbers(base(cand_title)) - want - {"1"})
+
+
+def developer_hint(title):
+    """("Crossword", "Teazel Ltd") for "Crossword by Teazel Ltd"; None for names
+    like "Color by Number – Pixel Art", "Murder by Numbers" or "Stand by Me"."""
+    m = BY_RE.match(title)
+    if not m or SUBTITLE_RE.search(m.group(2)):
+        return None
+    first = (norm(m.group(2)).split() or [""])[0]
+    return None if first in {"number", "numbers", "me", "night", "day", "step", "the"} else (m.group(1), m.group(2))
 
 
 def is_generic(title):
-    m = BY_RE.match(title)
-    toks = norm(base(m.group(1) if m else title)).split()
+    hint = developer_hint(title)
+    toks = norm(base(hint[0] if hint else title)).split()
     return bool(toks) and all(t in GENERIC_WORDS for t in toks)
 
 
 def missing_words(game_title, cand_title):
     """Distinctive words of the list title that the candidate lacks ("Bob" in
     "Bob Jigsaw Puzzles for Kids" vs "Jigsaw Puzzles for Kids"). Typos pass."""
-    m = BY_RE.match(game_title)
-    have = norm(cand_title).split()
-    return [w for w in norm(m.group(1) if m else game_title).split()
-            if w not in GENERIC_WORDS and not any(SequenceMatcher(None, w, h).ratio() >= 0.8 for h in have)]
+    hint = developer_hint(game_title)
+    have, joined = norm(cand_title).split(), norm(cand_title).replace(" ", "")
+    return [w for w in norm(hint[0] if hint else game_title).split()
+            if w not in GENERIC_WORDS and w not in joined
+            and not any(SequenceMatcher(None, w, h).ratio() >= 0.8 for h in have)]
 
 
 def similarity(a_title, b_title):
@@ -305,21 +323,20 @@ def assess(game_title, c, game_genre):
     nt, na = norm(t), norm(game_title)
     sim = similarity(game_title, t)
     flags = []
-    m = BY_RE.match(game_title)
-    if m and f"by {norm(m.group(2))}" not in nt:  # skip names like "Murder by Numbers"
-        want = norm(m.group(2))
+    hint = developer_hint(game_title)
+    if hint and f"by {norm(hint[1])}" not in nt:  # the candidate may carry "by X" in its own name
+        want = norm(hint[1])
         if want and (want in norm(dev) or SequenceMatcher(None, want, norm(dev)).ratio() > 0.8):
-            sim = max(sim, similarity(m.group(1), t))
+            sim = max(sim, similarity(hint[0], t))
         else:
-            flags.append(f"developer is not {m.group(2)}")
+            flags.append(f"developer is not {hint[1]}")
     if EDITION_RE.search(nt) and not EDITION_RE.search(na):
         flags.append("lite/free/demo edition")
     if "netflix" in dev.casefold():
         flags.append("Netflix edition")
     if COMPANION_RE.search(nt) and not COMPANION_RE.search(na):
         flags.append("companion app")
-    na_nums, nt_nums = numbers(game_title), numbers(t)
-    if na_nums != nt_nums and (na_nums or nt_nums - {"1"}):
+    if number_mismatch(game_title, t):
         flags.append("different number")
     if c.get("genre") in NON_GAME_GENRES and game_genre != "Educational":
         flags.append(f"category {c.get('genre')}")
@@ -331,9 +348,9 @@ def assess(game_title, c, game_genre):
 
 def query_variants(title):
     out = [title]
-    m = BY_RE.match(title)
-    if m:
-        out += [f"{m.group(1)} {m.group(2)}", m.group(1)]
+    hint = developer_hint(title)
+    if hint:
+        out += [f"{hint[0]} {hint[1]}", hint[0]]
     b = base(title)
     if b != title and len(norm(b)) >= 3:
         out.append(b)
@@ -384,6 +401,11 @@ def lookup(game):
             c["detailed"] = True
         c["score"], c["sim"], c["flags"] = assess(title, c, genre)
 
+    def badge_confirms(c):
+        # a badged app missing a distinctive word is usually a sibling ("2 Player Games - Pastimes" vs "- Sports")
+        return (c.get("playPass") and not c["flags"] and c["score"] >= verify_min
+                and (c["sim"] >= 0.85 or not missing_words(title, c.get("title"))))
+
     for q in query_variants(title):
         tried.append(q)
         for h in search_hits(q, lang, country):
@@ -399,7 +421,7 @@ def lookup(game):
             # top card already says whether it's Play Pass; other hits need the details page
             if not c.get("detailed") and (c.get("playPass") is None or len(c.get("screenshots") or []) < 2):
                 merge(c, app_details(c["appId"], lang, country))
-            if c.get("playPass") and c["score"] >= verify_min and not c["flags"]:
+            if badge_confirms(c):
                 return entry_from(c, title, "verified", c["query"], c["flags"])
         ranked = sorted(pool.values(), key=lambda c: (-c["score"], c["rank"]))
         best = ranked[0] if ranked else None
@@ -412,14 +434,16 @@ def lookup(game):
     best = max(pool.values(), key=lambda c: c["score"], default=None)
     if not best:
         return null_entry("no search results", None, tried)
-    if generic and best["score"] >= STRONG_MIN:
-        reason = "generic title and no Play Pass badge on the closest match"
-    elif best["score"] >= STRONG_MIN and missing_words(title, best.get("title")):
-        reason = f"closest match lacks {', '.join(missing_words(title, best.get('title')))!r} and has no Play Pass badge"
-    elif best["flags"]:
+    missing = missing_words(title, best.get("title"))
+    no_badge = "" if best.get("playPass") else " and no Play Pass badge"
+    if best["flags"]:
         reason = "closest match flagged: " + ", ".join(best["flags"])
+    elif generic and best["score"] >= STRONG_MIN:
+        reason = "generic title and no Play Pass badge on the closest match"
+    elif missing and best["sim"] >= 0.6:
+        reason = f"closest match lacks {', '.join(missing)!r}{no_badge}"
     else:
-        reason = f"title similarity too low ({best['sim']:.2f}) and no Play Pass badge"
+        reason = f"title similarity too low ({best['sim']:.2f}){no_badge}"
     return null_entry(reason, best, tried)
 
 
@@ -489,7 +513,7 @@ def summarize(cache, games):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--recheck", choices=["doubtful", "nulls", "all"],
-                    help="redo nulls + non-verified matches (doubtful), only nulls, or everything")
+                    help="redo nulls, unbadged matches and loose title matches (doubtful), only nulls, or everything")
     ap.add_argument("--only", nargs="+", metavar="TITLE", help="(re)do just these titles")
     ap.add_argument("--limit", type=int, help="stop after this many lookups")
     ap.add_argument("--delay", type=float, default=0.6, help="seconds between requests (default 0.6)")
@@ -515,9 +539,9 @@ def main():
             if overrides[t] is None:
                 return e.get("reason") != "set to null in data/overrides.json"
             return e.get("confidence") != "manual" or e.get("appId") != overrides[t]
-        return {"all": True,
-                "nulls": e.get("appId") is None,
-                "doubtful": e.get("appId") is None or e.get("confidence") == "strong"}.get(args.recheck, False)
+        doubtful = (e.get("appId") is None or e.get("confidence") == "strong"
+                    or (e.get("confidence") == "verified" and (e.get("similarity") or 0) < 0.9))
+        return {"all": True, "nulls": e.get("appId") is None, "doubtful": doubtful}.get(args.recheck, False)
 
     queue = [g for g in games if todo(g)]
     if args.limit:
