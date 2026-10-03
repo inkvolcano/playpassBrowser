@@ -34,10 +34,23 @@ def main():
     genres = sorted({g["genre"] for g in games})
     index = {g: i for i, g in enumerate(genres)}
 
-    rows, checked = [], []
+    # YTECHB sometimes lists one game under two names ("Flat machine" and
+    # "Flat Machine: Post-Apocalyptic"): show each Play Store app once, under
+    # the title closest to its store name.
+    keep = {}
+    for g in games:
+        e = cache.get(g["title"]) or {}
+        a = e.get("appId")
+        if a and (a not in keep or (e.get("similarity") or 0) > (cache[keep[a]].get("similarity") or 0)):
+            keep[a] = g["title"]
+
+    rows, checked, merged = [], [], []
     for g in games:
         e = cache.get(g["title"]) or {}
         app_id = e.get("appId")
+        if app_id and keep[app_id] != g["title"]:
+            merged.append(f"{g['title']!r} (same app as {keep[app_id]!r})")
+            continue
         shots = [short(s) for s in (e.get("screenshots") or [])[:PAGE_SHOTS]] if app_id else []
         matched = e.get("matched") if app_id and e.get("matched") != g["title"] else None
         rows.append([g["title"], index[g["genre"]], app_id, short(e.get("icon")) if app_id else None,
@@ -61,6 +74,8 @@ def main():
     with_shots = sum(1 for r in rows if r[4])
     print(f"index.html: {len(rows)} games, {with_shots} with screenshots, "
           f"{len(rows) - with_shots} with generated covers, {OUT.stat().st_size / 1024:.0f} KB")
+    if merged:
+        print(f"{len(merged)} duplicate listings shown once: " + "; ".join(merged))
 
 
 if __name__ == "__main__":
