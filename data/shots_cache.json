@@ -12685,7 +12685,9 @@
   "flags": [],
   "query": "Crosswords (Fill-Ins+Chainword)",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.33,
+  "ratings": 42
  },
  "Crown Solitaire Card Game": {
   "appId": "com.mobilityware.CrownSolitaire",
@@ -12717,7 +12719,9 @@
   "flags": [],
   "query": "Crown Solitaire Card Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.69,
+  "ratings": 32594
  },
  "Crush the Monsters: Fun Puzzle": {
   "appId": "com.herocraft.game.rpm",
@@ -12755,7 +12759,9 @@
   "flags": [],
   "query": "Crush the Monsters: Fun Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.64,
+  "ratings": 37351
  },
  "Crying Suns": {
   "appId": "com.altshift.cryingsuns",
@@ -12790,7 +12796,9 @@
   "flags": [],
   "query": "Crying Suns",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.76,
+  "ratings": 11199
  },
  "Cryptex": {
   "appId": "com.kidga.cryptex",
@@ -12825,7 +12833,9 @@
   "flags": [],
   "query": "Cryptex",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.26,
+  "ratings": 152
  },
  "Cryptic Crossword": {
   "appId": "com.teazel.crossword.cryptic.full",
@@ -12860,7 +12870,9 @@
   "flags": [],
   "query": "Cryptic Crossword",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.45,
+  "ratings": 3465
  },
  "Cube Card": {
   "appId": "com.gimlegames.cubecard",
@@ -12901,7 +12913,9 @@
   "flags": [],
   "query": "Cube Card",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.8,
+  "ratings": 229
  },
  "Cube Garden": {
   "appId": "com.fukudanuki.CubeGarden",
@@ -12926,7 +12940,9 @@
   "flags": [],
   "query": "Cube Garden",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.1,
+  "ratings": 145
  },
  "CubeX: Solve, Timer, 3D Cube": {
   "appId": "diozz.cubex",
@@ -12967,7 +12983,9 @@
   "flags": [],
   "query": "CubeX: Solve, Timer, 3D Cube",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.58,
+  "ratings": 360053
  },
  "Cubistry": {
   "appId": "com.TheHohngCompany.Cubistry",
@@ -13008,7 +13026,9 @@
   "flags": [],
   "query": "Cubistry",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.59,
+  "ratings": 6441
  },
  "Cultist Simulator": {
   "appId": "com.playdigious.cultist",
@@ -13049,7 +13069,9 @@
   "flags": [],
   "query": "Cultist Simulator",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.62,
+  "ratings": 16038
  },
  "Cut the Rope": {
   "appId": "com.zeptolab.ctr.ads",
@@ -13081,7 +13103,9 @@
   "flags": [],
   "query": "Cut the Rope",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.42,
+  "ratings": 2692398
  },
  "Cut The Rope 2": {
   "appId": "com.zeptolab.ctr2.f2p.google",
@@ -13120,7 +13144,9 @@
   "flags": [],
   "query": "Cut The Rope 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.48,
+  "ratings": 2273750
  },
  "Cut The Rope: Time Travel": {
   "appId": "com.zeptolab.timetravel.free.google",
@@ -13152,7 +13178,9 @@
   "flags": [],
   "query": "Cut The Rope: Time Travel",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.6,
+  "ratings": 1091367
  },
  "Cyberlords – Arcology Premium": {
   "appId": "com.hg.cyberlords",
@@ -13182,7 +13210,9 @@
   "flags": [],
   "query": "Cyberlords – Arcology Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.28,
+  "ratings": 2240
  },
  "Cytus": {
   "appId": "com.rayark.Cytus.full",
@@ -13219,7 +13249,9 @@
   "flags": [],
   "query": "Cytus",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.61,
+  "ratings": 574913
  },
  "Cytys II": {
   "appId": "com.rayark.cytus2",
@@ -13257,7 +13289,9 @@
   "flags": [],
   "query": "Cytys II",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.06,
+  "ratings": 136901
  },
  "Daily Pastimes – Minigames": {
   "appId": "com.puzztime.pastimes",
@@ -13292,7 +13326,9 @@
   "flags": [],
   "query": "Daily Pastimes – Minigames",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.49,
+  "ratings": 6386
  },
  "Dance School Stories": {
   "appId": "com.crazylabs.dance.school",
@@ -13327,7 +13363,9 @@
   "flags": [],
   "query": "Dance School Stories",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.31,
+  "ratings": 196724
  },
  "Dandara: Trials of Fear Edition": {
   "appId": "com.rawfury.longhathouse.Dandara",
@@ -13368,7 +13406,9 @@
   "flags": [],
   "query": "Dandara: Trials of Fear Edition",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.09,
+  "ratings": 5189
  },
  "Dandy Ace": {
   "appId": "com.MadMimic.DandyAce",
@@ -13409,7 +13449,9 @@
   "flags": [],
   "query": "Dandy Ace",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 2.97,
+  "ratings": 186
  },
  "Dark Heritage (Full)": {
   "appId": null,
@@ -13460,7 +13502,9 @@
   "flags": [],
   "query": "Dark Strokes: Hidden Object",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.03,
+  "ratings": 5186
  },
  "Dead Cells": {
   "appId": "com.playdigious.deadcells.mobile",
@@ -13500,7 +13544,9 @@
   "flags": [],
   "query": "Dead Cells",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.8,
+  "ratings": 134603
  },
  "Dead Paradise Car Race Shooter": {
   "appId": "com.herocraft.game.free.deadparadise",
@@ -13537,7 +13583,9 @@
   "flags": [],
   "query": "Dead Paradise Car Race Shooter",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.3,
+  "ratings": 75236
  },
  "Dealer’s Life 2": {
   "appId": "com.AbyteEntertainment.DealersLife2",
@@ -13575,7 +13623,9 @@
   "flags": [],
   "query": "Dealer’s Life 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.74,
+  "ratings": 9336
  },
  "Dealer’s Life Pawn Shop Tycoon": {
   "appId": "com.AbyteEntertainment.DealersLifeFull",
@@ -13616,7 +13666,9 @@
   "flags": [],
   "query": "Dealer’s Life Pawn Shop Tycoon",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.4,
+  "ratings": 7756
  },
  "Death Palette": {
   "appId": "jp.co.muse.matsuro",
@@ -13641,7 +13693,9 @@
   "flags": [],
   "query": "Death Palette",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.92,
+  "ratings": 276221
  },
  "Death Road To Canada": {
   "appId": "com.noodlecake.drtc",
@@ -13682,7 +13736,9 @@
   "flags": [],
   "query": "Death Road To Canada",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.9,
+  "ratings": 5925
  },
  "Death Squared": {
   "appId": "com.smgstudio.deathsquared",
@@ -13717,7 +13773,9 @@
   "flags": [],
   "query": "Death Squared",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.45,
+  "ratings": 695
  },
  "Death Worm Deluxe": {
   "appId": "com.playcreek.DeathWorm",
@@ -13758,7 +13816,9 @@
   "flags": [],
   "query": "Death Worm Deluxe",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.73,
+  "ratings": 10681
  },
  "Decipher: Brain Test": {
   "appId": "com.gamehouse.decipher.puzzle.logic.challenge",
