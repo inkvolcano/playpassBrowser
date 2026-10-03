@@ -519,8 +519,21 @@ def refresh_entry(game, e):
     """Re-read a matched app's store page: its full screenshot set and whether
     it carries the Play Pass badge today. The match itself is kept."""
     lang, country = ("ja", "jp") if CJK_RE.search(game["title"]) else ("en", "us")
-    d = app_details(e["appId"], lang, country)
-    e = dict(e, passChecked=date.today().isoformat())
+    key = (e["appId"], lang, country)
+    for attempt, wait in enumerate((0, 3, 10)):
+        if attempt:
+            time.sleep(wait)
+            _app_memo.pop(key, None)
+        d = app_details(*key)
+        # The store sometimes serves a page without the app's data (no title, no
+        # screenshots, no badge); that must not count as "not in Play Pass".
+        if d and d.get("title") and d.get("screenshots"):
+            break
+    else:
+        if d:  # still incomplete: keep the entry as it was, retry on the next refresh
+            return dict(e, passError="store page incomplete")
+    e = {k: v for k, v in e.items() if k != "passError"}
+    e["passChecked"] = date.today().isoformat()
     if not d:  # store page gone: the app has been removed since it was matched
         return dict(e, playPass=None)
     shots = [s for s in (d.get("screenshots") or []) if s][:MAX_SHOTS]
@@ -640,7 +653,8 @@ def main():
             t = g["title"]
             if args.refresh:
                 e = refresh_entry(g, cache[t])
-                status = {True: "in Play Pass", False: "NOT in Play Pass", None: "store page gone"}[e["playPass"]]
+                status = "store page incomplete, kept" if e.get("passError") else \
+                    {True: "in Play Pass", False: "NOT in Play Pass", None: "store page gone"}[e["playPass"]]
                 info = f"{status}, shots={len(e['screenshots'])}"
             else:
                 e = from_override(g, overrides[t]) if t in overrides else lookup(g)
