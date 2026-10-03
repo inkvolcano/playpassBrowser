@@ -24,6 +24,8 @@ How a match is chosen
     python3 fill_screenshots.py                      # resume: look up games not in the cache
     python3 fill_screenshots.py --recheck doubtful   # redo nulls and unverified matches
     python3 fill_screenshots.py --only "Mini Metro"  # (re)do specific titles
+    python3 fill_screenshots.py --refresh            # re-read every matched app: all
+                                                     # screenshots + today's Play Pass status
 """
 import argparse
 import json
@@ -56,7 +58,7 @@ GAMES_JSON = ROOT / "data" / "games.json"
 CACHE_JSON = ROOT / "data" / "shots_cache.json"
 OVERRIDES_JSON = ROOT / "data" / "overrides.json"
 
-MAX_SHOTS = 8          # screenshots kept per game
+MAX_SHOTS = 24         # screenshots kept per game
 VERIFY_MIN = 0.6       # score needed with a Play Pass badge
 STRONG_MIN = 0.9       # score needed without one
 CANDIDATE_MIN = 0.45   # hits below this are never considered
@@ -422,6 +424,7 @@ def entry_from(c, game_title, confidence, query, flags):
         "flags": flags,
         "query": query,
         "checked": date.today().isoformat(),
+        "passChecked": date.today().isoformat(),
     }
 
 
@@ -512,6 +515,20 @@ def from_override(game, app_id):
     return entry_from(c, game["title"], "manual", None, c["flags"])
 
 
+def refresh_entry(game, e):
+    """Re-read a matched app's store page: its full screenshot set and whether
+    it carries the Play Pass badge today. The match itself is kept."""
+    lang, country = ("ja", "jp") if CJK_RE.search(game["title"]) else ("en", "us")
+    d = app_details(e["appId"], lang, country)
+    e = dict(e, passChecked=date.today().isoformat())
+    if not d:  # store page gone: the app has been removed since it was matched
+        return dict(e, playPass=None)
+    shots = [s for s in (d.get("screenshots") or []) if s][:MAX_SHOTS]
+    return dict(e, screenshots=shots or e["screenshots"], icon=d.get("icon") or e["icon"],
+                matched=d.get("title") or e["matched"], developer=d.get("developer") or e["developer"],
+                playPass=bool(d.get("playPass")))
+
+
 # ---------------------------------------------------------------- cache / git
 
 def load_json(path, default):
@@ -548,9 +565,10 @@ def summarize(cache, games):
         e = cache.get(g["title"])
         k = "missing" if e is None else e.get("confidence")
         counts[k] = counts.get(k, 0) + 1
-    with_shots = sum(1 for g in games if (cache.get(g["title"]) or {}).get("screenshots"))
+    matched = [cache[g["title"]] for g in games if (cache.get(g["title"]) or {}).get("appId")]
+    in_pass = sum(1 for e in matched if e.get("playPass"))
     print("summary: " + ", ".join(f"{k} {v}" for k, v in sorted(counts.items(), key=lambda kv: -kv[1]))
-          + f" | {with_shots}/{len(games)} games have screenshots")
+          + f" | {len(matched)}/{len(games)} games have screenshots, {in_pass} carry the Play Pass badge")
     dup = {}
     for g in games:
         a = (cache.get(g["title"]) or {}).get("appId")
@@ -568,6 +586,9 @@ def main():
     ap.add_argument("--recheck", choices=["doubtful", "nulls", "all"],
                     help="redo nulls, unbadged matches and loose title matches (doubtful), only nulls, or everything")
     ap.add_argument("--only", nargs="+", metavar="TITLE", help="(re)do just these titles")
+    ap.add_argument("--refresh", action="store_true",
+                    help="re-read every matched app's store page (all screenshots, current Play Pass "
+                         "status) instead of looking games up; resumes where a refresh stopped today")
     ap.add_argument("--limit", type=int, help="stop after this many lookups")
     ap.add_argument("--delay", type=float, default=0.6, help="seconds between requests (default 0.6)")
     ap.add_argument("--commit-every", type=int, default=0, metavar="N",
@@ -596,30 +617,46 @@ def main():
                     or (e.get("confidence") == "verified" and (e.get("similarity") or 0) < 0.9))
         return {"all": True, "nulls": e.get("appId") is None, "doubtful": doubtful}.get(args.recheck, False)
 
-    queue = [g for g in games if todo(g)]
+    if args.refresh:
+        today = date.today().isoformat()
+        queue = [g for g in games if (cache.get(g["title"]) or {}).get("appId")
+                 and cache[g["title"]].get("passChecked") != today]
+        print(f"{len(queue)} matched games to refresh", flush=True)
+    else:
+        queue = [g for g in games if todo(g)]
+        print(f"{len(games)} games, {sum(1 for g in games if g['title'] in cache)} cached, "
+              f"{len(queue)} to look up", flush=True)
     if args.limit:
         queue = queue[:args.limit]
-    print(f"{len(games)} games, {sum(1 for g in games if g['title'] in cache)} cached, {len(queue)} to look up", flush=True)
+
+    def checkpoint_message():
+        if args.refresh:
+            return f"Refresh Play Store data: {done}/{len(queue)} games"
+        return f"Cache Play Store data: {sum(1 for x in order if x in cache)}/{len(order)} games"
 
     done = 0
     try:
         for i, g in enumerate(queue, 1):
             t = g["title"]
-            e = from_override(g, overrides[t]) if t in overrides else lookup(g)
+            if args.refresh:
+                e = refresh_entry(g, cache[t])
+                status = {True: "in Play Pass", False: "NOT in Play Pass", None: "store page gone"}[e["playPass"]]
+                info = f"{status}, shots={len(e['screenshots'])}"
+            else:
+                e = from_override(g, overrides[t]) if t in overrides else lookup(g)
+                if e["appId"]:
+                    info = f"{e['matched']!r} [{e['appId']}] {e['confidence']} sim={e['similarity']}" \
+                           f"{' PP' if e['playPass'] else ''} shots={len(e['screenshots'])}"
+                else:
+                    info = f"NULL ({e['reason']})"
             cache[t] = e
             done += 1
-            if e["appId"]:
-                info = f"{e['matched']!r} [{e['appId']}] {e['confidence']} sim={e['similarity']}" \
-                       f"{' PP' if e['playPass'] else ''} shots={len(e['screenshots'])}"
-            else:
-                info = f"NULL ({e['reason']})"
             print(f"[{i}/{len(queue)}] {t} -> {info}", flush=True)
             if i % 10 == 0:
                 save_cache(cache, order)
             if args.commit_every and done % args.commit_every == 0:
                 save_cache(cache, order)
-                n = sum(1 for x in order if x in cache)
-                git_commit(f"Cache Play Store data: {n}/{len(order)} games", args.push)
+                git_commit(checkpoint_message(), args.push)
     except Blocked as e:
         print(f"STOPPED - looks blocked or rate-limited: {e}", flush=True)
         save_cache(cache, order)
@@ -630,8 +667,7 @@ def main():
         sys.exit(130)
     save_cache(cache, order)
     if args.commit_every and done:
-        n = sum(1 for x in order if x in cache)
-        git_commit(f"Cache Play Store data: {n}/{len(order)} games", args.push)
+        git_commit(checkpoint_message(), args.push)
     summarize(cache, games)
 
     if not args.no_build:

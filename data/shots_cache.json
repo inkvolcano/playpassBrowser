@@ -13,6 +13,22 @@
    "https://play-lh.googleusercontent.com/fITsovaRnyYuPCzDDLtzip9eOHmuQpSUVjJ18HIL186NFofLcK7BwoqAjnN2RHIeiIpZD_QJiBJvN4TNiEAXyTM",
    "https://play-lh.googleusercontent.com/XrqRMeR05eOMW5JtHwseu_50dooCDgVYK1cbZ8iyTRc2-LP7lqcIp2I2AX097vjQVWh2iioPo7MAPJjPDOTN",
    "https://play-lh.googleusercontent.com/0ftwvWNGsYo_3HvbirlbqXHHCVfvYrZzb_YqzZMuNZ3ilwoO95mqIgX0RxUIQyRoD6uJvbJ1tqSM1tFZFhU1Kw",
+   "https://play-lh.googleusercontent.com/VWQh-46P67NSCDuC7ubll2Tki4YcyhJq_xHktKwiSy-kJAxu1I43M5bR24zVV57JmlWRFdLPmJ82xqoO97S-qQ",
+   "https://play-lh.googleusercontent.com/6TZgPWc_PMYIUB0OTWsEhlQYiVy1a0NN_4X4V3hSqLSwF-M1_JbLg93XZUwPKGmzAH0_Rbond7mCqW82syzAVw",
+   "https://play-lh.googleusercontent.com/BmpRoNTHlBD1eaFb5_NEc6T09tbmI2k0mog0wnyJzzHVQBG8JE3WNFa2UHJihnEZGYfGADIoX5NwjOIL3DgWQQ",
+   "https://play-lh.googleusercontent.com/tcHss0ZzBYwuL8l2ZAZ5fHaH1vlVq0YivVEV1MHgyUiDpluDipX0g7gZEiQWOIGFrG0Ig2H7JmtuAdV0Wr8ang",
+   "https://play-lh.googleusercontent.com/_wFvsY3fC57AaSTX3nsAUyTAqSerXmCucKs9nD9Vn4EWbEiuCTYlvXL-4W5VqQkufnHkZAOhcC-179fGlIAc",
+   "https://play-lh.googleusercontent.com/fITsovaRnyYuPCzDDLtzip9eOHmuQpSUVjJ18HIL186NFofLcK7BwoqAjnN2RHIeiIpZD_QJiBJvN4TNiEAXyTM",
+   "https://play-lh.googleusercontent.com/XrqRMeR05eOMW5JtHwseu_50dooCDgVYK1cbZ8iyTRc2-LP7lqcIp2I2AX097vjQVWh2iioPo7MAPJjPDOTN",
+   "https://play-lh.googleusercontent.com/0ftwvWNGsYo_3HvbirlbqXHHCVfvYrZzb_YqzZMuNZ3ilwoO95mqIgX0RxUIQyRoD6uJvbJ1tqSM1tFZFhU1Kw",
+   "https://play-lh.googleusercontent.com/VWQh-46P67NSCDuC7ubll2Tki4YcyhJq_xHktKwiSy-kJAxu1I43M5bR24zVV57JmlWRFdLPmJ82xqoO97S-qQ",
+   "https://play-lh.googleusercontent.com/6TZgPWc_PMYIUB0OTWsEhlQYiVy1a0NN_4X4V3hSqLSwF-M1_JbLg93XZUwPKGmzAH0_Rbond7mCqW82syzAVw",
+   "https://play-lh.googleusercontent.com/BmpRoNTHlBD1eaFb5_NEc6T09tbmI2k0mog0wnyJzzHVQBG8JE3WNFa2UHJihnEZGYfGADIoX5NwjOIL3DgWQQ",
+   "https://play-lh.googleusercontent.com/tcHss0ZzBYwuL8l2ZAZ5fHaH1vlVq0YivVEV1MHgyUiDpluDipX0g7gZEiQWOIGFrG0Ig2H7JmtuAdV0Wr8ang",
+   "https://play-lh.googleusercontent.com/_wFvsY3fC57AaSTX3nsAUyTAqSerXmCucKs9nD9Vn4EWbEiuCTYlvXL-4W5VqQkufnHkZAOhcC-179fGlIAc",
+   "https://play-lh.googleusercontent.com/fITsovaRnyYuPCzDDLtzip9eOHmuQpSUVjJ18HIL186NFofLcK7BwoqAjnN2RHIeiIpZD_QJiBJvN4TNiEAXyTM",
+   "https://play-lh.googleusercontent.com/XrqRMeR05eOMW5JtHwseu_50dooCDgVYK1cbZ8iyTRc2-LP7lqcIp2I2AX097vjQVWh2iioPo7MAPJjPDOTN",
+   "https://play-lh.googleusercontent.com/0ftwvWNGsYo_3HvbirlbqXHHCVfvYrZzb_YqzZMuNZ3ilwoO95mqIgX0RxUIQyRoD6uJvbJ1tqSM1tFZFhU1Kw",
    "https://play-lh.googleusercontent.com/VWQh-46P67NSCDuC7ubll2Tki4YcyhJq_xHktKwiSy-kJAxu1I43M5bR24zVV57JmlWRFdLPmJ82xqoO97S-qQ"
   ],
   "url": "https://play.google.com/store/apps/details?id=com.hundred_doors_game.escape_from_school",
@@ -21,7 +37,8 @@
   "confidence": "manual",
   "flags": [],
   "query": null,
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "passChecked": "2026-10-03"
  },
  "1024 Puzzle Numbers Game": {
   "appId": "game2048.b2048game.twozerofoureight2048.game",
@@ -37,7 +54,8 @@
    "https://play-lh.googleusercontent.com/30OXtQQxZ7BHiTRGv_SPdWRpjR7a3tspGFy1YHnnQnymhCclXbhYVVJtZ8Z9A4aYeOiKQO3qM4UUAM2gA6cZZg",
    "https://play-lh.googleusercontent.com/kWNv5FHo81SLl46oT3NbMR2WWceN8ziA5V8vzXDVEYVZOU-S2s5IhPJU7h1rOvSw1AK04KY0Yb1ahA0u0Gyy1kM",
    "https://play-lh.googleusercontent.com/oD5-oT90aLHhk1GuWfRgVEVGRUdDj69lLb5ARjJaiccQuRjfDmDfe3a0w7UfRzVXedu3kIJj_T_Vd4gnuDuFGw",
-   "https://play-lh.googleusercontent.com/2iQ-kH163UtNM-U8K-pRG4cMNrU9Nx7nmsta9q4dR8IsfMfoQ4PldH3pqM4pQVeZPc07eySMJzGE312k0R1cwA"
+   "https://play-lh.googleusercontent.com/2iQ-kH163UtNM-U8K-pRG4cMNrU9Nx7nmsta9q4dR8IsfMfoQ4PldH3pqM4pQVeZPc07eySMJzGE312k0R1cwA",
+   "https://play-lh.googleusercontent.com/JPqFQf7zD4G2lwtjZ2AIDFULb5Fp2hykgZUw7yubviU00cPBBQkk-DVehF0W9J-y5h4meyZFOUL7AN3F6QHg"
   ],
   "url": "https://play.google.com/store/apps/details?id=game2048.b2048game.twozerofoureight2048.game",
   "playPass": true,
@@ -45,7 +63,8 @@
   "confidence": "verified",
   "flags": [],
   "query": "1024 Puzzle Numbers Game",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "passChecked": "2026-10-03"
  },
  "12 labours of Hercules": {
   "appId": "com.jetdogs.hercules1",
@@ -61,7 +80,17 @@
    "https://play-lh.googleusercontent.com/O-ZgSwRPuzhLCEatSz-YVZx0QRrzGwFYShMURGH5y20z0hcSmW2bfb8VnMvW0O4XkCCWBP_LkxFRys_Flis5QA",
    "https://play-lh.googleusercontent.com/BQHxWBKMH8zgGSlnK3VF42srhtdSSNOy7WdtnXbww8-h492d0rSvumyEJE3T0ztOR3AEq3VFw7otMvfIICgo",
    "https://play-lh.googleusercontent.com/4xlygyj7ePle0KxGn2IvezWi0OVCjjiCNtMvH0Rz8X2gLjxQlV7_vN3rZFPRqbMogJYUWmKJHUImZBhkJs_9",
-   "https://play-lh.googleusercontent.com/Muo7qoyPOKJ739zJeNIXs53dWPDn6qNLsTbWnjnIGoQHfu17Ax6wwlBWI7B6W7XFWzRyt8Z9d8aNjggXxQAemg"
+   "https://play-lh.googleusercontent.com/Muo7qoyPOKJ739zJeNIXs53dWPDn6qNLsTbWnjnIGoQHfu17Ax6wwlBWI7B6W7XFWzRyt8Z9d8aNjggXxQAemg",
+   "https://play-lh.googleusercontent.com/SRoF6zfNjnc6kulUW9BpugdUdtZgSp8sB2dAffI6c8f7oNB3MIV6NezBru_uGQOBdjlLurhTPErpMV3F0H0-uQ",
+   "https://play-lh.googleusercontent.com/bvfchVyMN-l81t8vdSlPf_bvIfrVbxOuoNqZYKv0Vf0eHAMFoGuKD9iJ3jTkd0Zi-RoMOEEE8TTkQXhVzPZoLQ",
+   "https://play-lh.googleusercontent.com/D_68gNPdQ--g_ukCAUKujx2tRbSJQ9tapam6wLlimr_ia0KvqUffm5W1YzEQephAvcswKRJCqBoCELi9kXaBZQ",
+   "https://play-lh.googleusercontent.com/Dzr-1NFnH-t6-zr99bw_BuvZx3kZLdvq9RTeuN8tW0ILrByBxp3uy-W2-ZLdK5KHaOrAuc3yOf0f-PfYRlYl",
+   "https://play-lh.googleusercontent.com/Fme0Rammjd5n1iv4_ugrXOv-Nq6eGXvNGScPwLQGfBHvDVMd6_yW8vBoSz5XbsVz_uZY8RWs4n9nnzVwsCB2DQ",
+   "https://play-lh.googleusercontent.com/KAdPcWP0s2yROvXVtGV9d_HADOr54N0j63Mt4YtH8oP9-fD5V-JQkqy1ro5ygtA2P9T7sI0komdABwmaxADSQg",
+   "https://play-lh.googleusercontent.com/jQoe825iM4KO8sxDQx0LR0f2teWmtFtRk2CMh--QGy9yrRjbXcjIUwiq3eAzx-wTSnHF6W1HwcjMuGxAgMkb6C8",
+   "https://play-lh.googleusercontent.com/bGaRfiIzGCQ9DmcHtBghNomP8B6PBKH18jZdpkdZlHYP9wPpGyfNpRbeqZjbFZ26dzvs9VEJpcHWjb6HZqB7pg",
+   "https://play-lh.googleusercontent.com/8i4_FOgHDeNBebNOLriSJjBrh3prW8nW6yikPdHD68SQiza-CuEIk6aDc6DdLMP6DPDhJ9VSZ67k07MLG6XeNQ",
+   "https://play-lh.googleusercontent.com/HQ0dVSb2axxYxMn5hgcf0vK8M2LmN7BtKtv2Plzi7YpSBUDJUgtpnaLp5xDe4zdFrMcBF5mtO_1XDc1agrHp"
   ],
   "url": "https://play.google.com/store/apps/details?id=com.jetdogs.hercules1",
   "playPass": true,
@@ -69,7 +98,8 @@
   "confidence": "verified",
   "flags": [],
   "query": "12 labours of Hercules",
-  "checked": "2026-10-03"
+  "checked": "2026-10-03",
+  "passChecked": "2026-10-03"
  },
  "123 Game for toddlers counting": {
   "appId": "com.midwin.learn.numbers.numbers123.gameforkids.tracing.counting.toddler.preschool.recognition",
