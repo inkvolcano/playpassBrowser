@@ -143,7 +143,9 @@
   "flags": [],
   "query": "123 Game for toddlers counting Play Pass",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.13,
+  "ratings": 641
  },
  "123 Number Kids Counting Games": {
   "appId": "com.kids.numbers.games.tracing.counting.toddlers.learn123",
@@ -181,7 +183,9 @@
   "flags": [],
   "query": "123 Number Kids Counting Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4,
+  "ratings": 151
  },
  "123 Numbers Tracing & Counting": {
   "appId": "com.iz.dino.numbers.kids.toddler.games.preschool.kindergarten.learning",
@@ -222,7 +226,9 @@
   "flags": [],
   "query": "123 Numbers Tracing & Counting",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.78,
+  "ratings": 191
  },
  "123 Tracing Numbers for Kids": {
   "appId": "com.super4.learn.write123.numbers.count.trace.preschool.educational.games",
@@ -263,7 +269,9 @@
   "flags": [],
   "query": "123 Tracing Numbers for Kids",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.62,
+  "ratings": 356
  },
  "1f y0u’re a gh0st ca11 me here": {
   "appId": "kemco.furoshikilab.ifme",
@@ -301,7 +309,9 @@
   "flags": [],
   "query": "1f y0u’re a gh0st ca11 me here",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": null,
+  "ratings": null
  },
  "1Line- One Line with One Touch": {
   "appId": "com.one1line.onetouch.onestroke.dotgame",
@@ -333,7 +343,9 @@
   "flags": [],
   "query": "1Line- One Line with One Touch",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.41,
+  "ratings": 543436
  },
  "2 Minutes in Space Missiles!": {
   "appId": "com.rarepixels.avoidasteroids",
@@ -368,7 +380,9 @@
   "flags": [],
   "query": "2 Minutes in Space Missiles!",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.22,
+  "ratings": 13644
  },
  "2 Player Games – Pastimes": {
   "appId": "com.tellmewow.senior.pastimes",
@@ -403,7 +417,9 @@
   "flags": [],
   "query": "2 Player Games – Pastimes",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.54,
+  "ratings": 209443
  },
  "2 Player Games – Sports": {
   "appId": null,
@@ -451,7 +467,9 @@
   "flags": [],
   "query": "20 Minutes Till Dawn",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.59,
+  "ratings": 159164
  },
  "2048 Balls: Number Puzzle": {
   "appId": "com.unicostudio.balls2048",
@@ -492,7 +510,9 @@
   "flags": [],
   "query": "2048 Balls: Number Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.53,
+  "ratings": 339
  },
  "2048 Blast Merge Numbers 2248": {
   "appId": "com.unicostudio.blast2048",
@@ -533,7 +553,9 @@
   "flags": [],
   "query": "2048 Blast Merge Numbers 2248",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.72,
+  "ratings": 50194
  },
  "2048 Shapes": {
   "appId": "com.infinitygames.merge",
@@ -574,7 +596,9 @@
   "flags": [],
   "query": "2048 Shapes",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.53,
+  "ratings": 3068
  },
  "21 Smash": {
   "appId": "com.norristockholm.twentyonesmash",
@@ -603,7 +627,9 @@
   "flags": [],
   "query": "21 Smash",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.4,
+  "ratings": 2175
  },
  "2112TD Tower Defense Survival": {
   "appId": "com.refineryproductions_2112td",
@@ -644,7 +670,9 @@
   "flags": [],
   "query": "2112TD Tower Defense Survival",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.68,
+  "ratings": 15083
  },
  "2248 Number Puzzle 2048": {
   "appId": "com.oakgames.linked2248.numberpuzzle",
@@ -685,7 +713,9 @@
   "flags": [],
   "query": "2248 Number Puzzle 2048",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.61,
+  "ratings": 40502
  },
  "248: Number Connect": {
   "appId": "com.bigstarkids.numberspuzzle248",
@@ -726,7 +756,9 @@
   "flags": [],
   "query": "248: Number Connect",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.66,
+  "ratings": 61722
  },
  "250+ Solitaire Collection": {
   "appId": "com.anoshenko.android.solitaires",
@@ -763,7 +795,9 @@
   "flags": [],
   "query": "250+ Solitaire Collection",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.92,
+  "ratings": 88014
  },
  "4 in a Row": {
   "appId": "com.quarzo.fourinarow",
@@ -804,7 +838,9 @@
   "flags": [],
   "query": "4 in a Row",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.56,
+  "ratings": 13365
  },
  "50 Tiny Room Escape": {
   "appId": "com.kiarygames.tinydoors",
@@ -839,7 +875,9 @@
   "flags": [],
   "query": "50 Tiny Room Escape",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.02,
+  "ratings": 12026
  },
  "60 Parsecs!": {
   "appId": "com.RobotGentleman.sixtyParsecs.mobile",
@@ -880,7 +918,9 @@
   "flags": [],
   "query": "60 Parsecs!",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.42,
+  "ratings": 3471
  },
  "60 Seconds! Atomic Adventure": {
   "appId": "com.robotgentleman.game60seconds",
@@ -917,7 +957,9 @@
   "flags": [],
   "query": "60 Seconds! Atomic Adventure",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.7,
+  "ratings": 26043
  },
  "60 Seconds! Reatomized": {
   "appId": "com.RobotGentleman.game60SecondsReatomized",
@@ -958,7 +1000,9 @@
   "flags": [],
   "query": "60 Seconds! Reatomized",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.7,
+  "ratings": 4513
  },
  "7Days: Offline Mystery Story": {
   "appId": "com.buffstudio.sevendays",
@@ -993,7 +1037,9 @@
   "flags": [],
   "query": "7Days: Offline Mystery Story",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.13,
+  "ratings": 8595
  },
  "8-bit Farm": {
   "appId": "net.kairosoft.android.bokujou_en",
@@ -1034,7 +1080,9 @@
   "flags": [],
   "query": "8-bit Farm",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.51,
+  "ratings": 473
  },
  "80 days": {
   "appId": "com.inkle.eightydays",
@@ -1072,7 +1120,9 @@
   "flags": [],
   "query": "80 days",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.47,
+  "ratings": 8697
  },
  "9th Dawn III RPG": {
   "appId": "com.valorware.ninthdawniii",
@@ -1113,7 +1163,9 @@
   "flags": [],
   "query": "9th Dawn III RPG",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.26,
+  "ratings": 1811
  },
  "9th Dawn Remake RPG": {
   "appId": "com.Valorware.NinthDawnRemake",
@@ -1154,7 +1206,9 @@
   "flags": [],
   "query": "9th Dawn Remake RPG",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.19,
+  "ratings": 235
  },
  "[Premium] RPG Novel Rogue": {
   "appId": "kemco.execreate.nroguepremium",
@@ -1192,7 +1246,9 @@
   "flags": [],
   "query": "[Premium] RPG Novel Rogue",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.29,
+  "ratings": 100
  },
  "[Premium] RPG Overrogue": {
   "appId": "kemco.execreate.dungeoncardroguepremium",
@@ -1233,7 +1289,9 @@
   "flags": [],
   "query": "[Premium] RPG Overrogue",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.2,
+  "ratings": 804
  },
  "A Dark Room": {
   "appId": "com.yourcompany.adarkroom",
@@ -1270,7 +1328,9 @@
   "flags": [],
   "query": "A Dark Room",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.66,
+  "ratings": 10046
  },
  "A Hero and a Garden HD": {
   "appId": "com.npckc.gardenhd",
@@ -1296,7 +1356,9 @@
   "flags": [],
   "query": "A Hero and a Garden HD",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.31,
+  "ratings": 261
  },
  "A Little to the Left": {
   "appId": "com.SecretModeLimited.ALittletotheLeft",
@@ -1337,7 +1399,9 @@
   "flags": [],
   "query": "A Little to the Left Play Pass",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.23,
+  "ratings": 8469
  },
  "A Normal Lost Phone": {
   "appId": null,
@@ -1396,7 +1460,9 @@
   "flags": [],
   "query": "A Story of A Company",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.4,
+  "ratings": 373
  },
  "A Tavern for Tea": {
   "appId": "com.npckc.tavern",
@@ -1421,7 +1487,9 @@
   "flags": [],
   "query": "A Tavern for Tea",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.8,
+  "ratings": 23147
  },
  "A Tiny Sticker Sale": {
   "appId": "com.ogrepixel.atinystickertale",
@@ -1462,7 +1530,9 @@
   "flags": [],
   "query": "A Tiny Sticker Sale",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.36,
+  "ratings": 168
  },
  "A Webbing Journey": {
   "appId": "com.FireTotemGames.AWebbingJourney",
@@ -1502,7 +1572,9 @@
   "flags": [],
   "query": "A Webbing Journey",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.75,
+  "ratings": 22517
  },
  "A Year of Springs": {
   "appId": "com.npckc.ayos",
@@ -1527,7 +1599,9 @@
   "flags": [],
   "query": "A Year of Springs",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.48,
+  "ratings": 401
  },
  "Abandon Ship": {
   "appId": "com.pid.abandonship",
@@ -1568,7 +1642,9 @@
   "flags": [],
   "query": "Abandon Ship",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.41,
+  "ratings": 2950
  },
  "ABC Tracing alphabets for kids": {
   "appId": "com.super4.preschool.early.learn.games.kids.alphabets.phonics.toddler.abc.tracing",
@@ -1609,7 +1685,9 @@
   "flags": [],
   "query": "ABC Tracing alphabets for kids",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.92,
+  "ratings": 360
  },
  "ABC Tracing Preschool games 2+": {
   "appId": "com.gamesforkids.preschoolworksheets.alphabets",
@@ -1647,7 +1725,9 @@
   "flags": [],
   "query": "ABC Tracing Preschool games 2+",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.12,
+  "ratings": 21972
  },
  "Absolute Drift": {
   "appId": "com.noodlecake.absolutedrift",
@@ -1685,7 +1765,9 @@
   "flags": [],
   "query": "Absolute Drift",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 2.69,
+  "ratings": 1652
  },
  "Aces of the Luftwaffle Squadron": {
   "appId": "com.hg.aotls",
@@ -1723,7 +1805,9 @@
   "flags": [],
   "query": "Aces of the Luftwaffle Squadron",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.22,
+  "ratings": 423
  },
  "Addition and Subtraction Games": {
   "appId": "com.idz.additionsubtractiongames",
@@ -1764,7 +1848,9 @@
   "flags": [],
   "query": "Addition and Subtraction Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.06,
+  "ratings": 6089
  },
  "Adore": {
   "appId": "com.cadabragames.adore",
@@ -1805,7 +1891,9 @@
   "flags": [],
   "query": "Adore",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 2.69,
+  "ratings": 90
  },
  "Adventure Reborn: Story Game": {
   "appId": null,
@@ -1865,7 +1953,9 @@
   "flags": [],
   "query": "After Inc.",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.7,
+  "ratings": 125944
  },
  "Agent A : A Puzzle in Disguise": {
   "appId": "co.yakand.agentaapuzzleindisguise",
@@ -1903,7 +1993,9 @@
   "flags": [],
   "query": "Agent A",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.73,
+  "ratings": 81462
  },
  "Airplane Games for Kids Racing": {
   "appId": "com.airport.games.kids.airplane.aeroplane.toddlers.boys.race",
@@ -1938,7 +2030,9 @@
   "flags": [],
   "query": "Airplane Games for Kids Racing",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.02,
+  "ratings": 597
  },
  "AK-xolotl": {
   "appId": "com.Playstack.AKxolotl",
@@ -1979,7 +2073,9 @@
   "flags": [],
   "query": "AK-xolotl",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.22,
+  "ratings": 311
  },
  "Alaphabet for Kids ABC Learning": {
   "appId": "com.firststep.alphabats",
@@ -2020,7 +2116,9 @@
   "flags": [],
   "query": "Alaphabet for Kids ABC Learning",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.14,
+  "ratings": 12373
  },
  "Alien Shooter": {
   "appId": "com.sigmateam.alienshootermobile",
@@ -2052,7 +2150,9 @@
   "flags": [],
   "query": "Alien Shooter",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.05,
+  "ratings": 5865
  },
  "Alpha Guns": {
   "appId": "com.renderedideas.alphaguns",
@@ -2090,7 +2190,9 @@
   "flags": [],
   "query": "Alpha Guns",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.93,
+  "ratings": 106429
  },
  "Alpha Guns 2": {
   "appId": "com.renderedideas.alphaguns2",
@@ -2125,7 +2227,9 @@
   "flags": [],
   "query": "Alpha Guns 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.54,
+  "ratings": 72121
  },
  "Alter Ego": {
   "appId": "com.caracolu.alterego",
@@ -2166,7 +2270,9 @@
   "flags": [],
   "query": "Alter Ego",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.83,
+  "ratings": 143874
  },
  "Alter Ego Complex": {
   "appId": "com.caracolu.alterego.complex",
@@ -2201,7 +2307,9 @@
   "flags": [],
   "query": "Alter Ego Complex",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.78,
+  "ratings": 6629
  },
  "ALTER: Between Two Worlds": {
   "appId": "com.Fivestones.Alter",
@@ -2242,7 +2350,9 @@
   "flags": [],
   "query": "ALTER: Between Two Worlds",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 2.58,
+  "ratings": 1567
  },
  "Alto’s Adventure": {
   "appId": "com.noodlecake.altosadventure",
@@ -2283,7 +2393,9 @@
   "flags": [],
   "query": "Alto’s Adventure",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.33,
+  "ratings": 657448
  },
  "Alto’s Odyssey": {
   "appId": "com.noodlecake.altosodyssey",
@@ -2323,7 +2435,9 @@
   "flags": [],
   "query": "Alto’s Odyssey",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.54,
+  "ratings": 286822
  },
  "Amazing Crime Rope Stickman": {
   "appId": "com.hgamesart.ropestickman",
@@ -2358,7 +2472,9 @@
   "flags": [],
   "query": "Amazing Crime Rope Stickman",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.27,
+  "ratings": 31141
  },
  "American Block Sniper Survival": {
   "appId": "com.topgamestudio.americanblocksnipersurvival",
@@ -2390,7 +2506,9 @@
   "flags": [],
   "query": "American Block Sniper Survival",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.45,
+  "ratings": 250911
  },
  "American Sniper 3D – Gun Games": {
   "appId": "com.ddd.americansniper3d",
@@ -2431,7 +2549,9 @@
   "flags": [],
   "query": "American Sniper 3D – Gun Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.64,
+  "ratings": 8871
  },
  "Among the Sleep": {
   "appId": "com.snapbreak.amongthesleep",
@@ -2465,7 +2585,9 @@
   "flags": [],
   "query": "Among the Sleep",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.72,
+  "ratings": 4600
  },
  "Andoku Sudoku 3": {
   "appId": "com.andoku.three.gp",
@@ -2492,7 +2614,9 @@
   "flags": [],
   "query": "Andoku Sudoku 3",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.63,
+  "ratings": 56498
  },
  "Angelo and Deemon (Full)": {
   "appId": "com.specialbit.angelo.deemon.full",
@@ -2525,7 +2649,9 @@
   "flags": [],
   "query": "Angelo and Deemon (Full)",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.97,
+  "ratings": 919
  },
  "Animal Hunter: Wild Shooting": {
   "appId": "com.animal.hunter.sniper",
@@ -2566,7 +2692,9 @@
   "flags": [],
   "query": "Animal Hunter: Wild Shooting",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.82,
+  "ratings": 444010
  },
  "Animal Puzzle and Games for Kids": {
   "appId": "com.gamesforkids.animals.puzzles.jigsaw",
@@ -2607,7 +2735,9 @@
   "flags": [],
   "query": "Animal Puzzle and Games for Kids Play Pass",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.37,
+  "ratings": 3469
  },
  "Animal Puzzles for Kids": {
   "appId": "net.cleverbit.AnimalJigsaw",
@@ -2648,7 +2778,9 @@
   "flags": [],
   "query": "Animal Puzzles for Kids",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.06,
+  "ratings": 3937
  },
  "Animals for Kids:Color and Draw": {
   "appId": "com.kidsgame.animal.sound",
@@ -2683,7 +2815,9 @@
   "flags": [],
   "query": "Animals for Kids:Color and Draw",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.1,
+  "ratings": 274
  },
  "Anime Studio Story": {
   "appId": "net.kairosoft.android.animestudio_en",
@@ -2724,7 +2858,9 @@
   "flags": [],
   "query": "Anime Studio Story",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.35,
+  "ratings": 3926
  },
  "Annelids: Online Battle": {
   "appId": "cz.gdmt.AnnelidsDemo",
@@ -2765,7 +2901,9 @@
   "flags": [],
   "query": "Annelids: Online Battle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.38,
+  "ratings": 568932
  },
  "Anodyne": {
   "appId": "air.Anodyne.mobile",
@@ -2800,7 +2938,9 @@
   "flags": [],
   "query": "Anodyne",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.75,
+  "ratings": 616
  },
  "Ant Colony: Wild Forest Game": {
   "appId": "com.PIXELCELLS.AntColony2",
@@ -2829,7 +2969,9 @@
   "flags": [],
   "query": "Ant Colony: Wild Forest Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.13,
+  "ratings": 36066
  },
  "Aquatic Party Puzzle": {
   "appId": "com.kidga.pool.puzzle",
@@ -2864,7 +3006,9 @@
   "flags": [],
   "query": "Aquatic Party Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": null,
+  "ratings": null
  },
  "Archetype Arcadia": {
   "appId": "kemco.waterphoenix.archetypearcadia",
@@ -2905,7 +3049,9 @@
   "flags": [],
   "query": "Archetype Arcadia",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4,
+  "ratings": 73
  },
  "Argo’s Choice Offline Game": {
   "appId": "com.buffstudio.argo.choice.visual.novel.adventure.story.games",
@@ -2946,7 +3092,9 @@
   "flags": [],
   "query": "Argo’s Choice Offline Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.12,
+  "ratings": 735
  },
  "ARia’s Legacy – AR Mystery Escape": {
   "appId": "com.AfternoonAppsInc.ARia",
@@ -2968,7 +3116,9 @@
   "flags": [],
   "query": "ARia’s Legacy – AR Mystery Escape",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.1,
+  "ratings": 284
  },
  "ARIDA: Backland’s Awakening": {
   "appId": "com.AocaGameLab.Arida",
@@ -2991,7 +3141,9 @@
   "flags": [],
   "query": "ARIDA: Backland’s Awakening",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.1,
+  "ratings": 3506
  },
  "Arloon Plants": {
   "appId": null,
@@ -3036,7 +3188,9 @@
   "flags": [],
   "query": "Arrog",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.95,
+  "ratings": 901
  },
  "ARROW Premium – Minimal Puzzle": {
   "appId": "com.alecgames.arrow.pro",
@@ -3077,7 +3231,9 @@
   "flags": [],
   "query": "ARROW Premium – Minimal Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.63,
+  "ratings": 317
  },
  "Art Master: Art Puzzle": {
   "appId": "art.master.puzzle",
@@ -3115,7 +3271,9 @@
   "flags": [],
   "query": "Art Master: Art Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.88,
+  "ratings": 58537
  },
  "Art of Puzzles – Jigsaw Pictures": {
   "appId": "com.zimad.art.puzzles",
@@ -3153,7 +3311,9 @@
   "flags": [],
   "query": "Art of Puzzles – Jigsaw Pictures",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.79,
+  "ratings": 162085
  },
  "Art Story Puzzle: Color Merge": {
   "appId": "com.rc.artStoryPuzzle",
@@ -3194,7 +3354,9 @@
   "flags": [],
   "query": "Art Story Puzzle: Color Merge",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.77,
+  "ratings": 33592
  },
  "Art Story: Jigsaw Art Puzzle": {
   "appId": "yomi.studio.art.story.picture.novels.puzzle.free.art.games",
@@ -3235,7 +3397,9 @@
   "flags": [],
   "query": "Art Story: Jigsaw Art Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.55,
+  "ratings": 37865
  },
  "Ash & Snow: Cat Pop’n Match": {
   "appId": "com.ignm.catspuzzle",
@@ -3270,7 +3434,9 @@
   "flags": [],
   "query": "Ash & Snow: Cat Pop’n Match",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.75,
+  "ratings": 986
  },
  "Astrea: Six-Sided Oracles": {
   "appId": "com.littleleogames.astreasixsidedoracles",
@@ -3293,7 +3459,9 @@
   "flags": [],
   "query": "Astrea: Six-Sided Oracles",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.86,
+  "ratings": 283
  },
  "Atom RPG": {
   "appId": "com.atomrpg",
@@ -3334,7 +3502,9 @@
   "flags": [],
   "query": "Atom RPG",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.01,
+  "ratings": 3930
  },
  "Atomic Bomber Full": {
   "appId": "org.lukeallen.bomberfull",
@@ -3357,7 +3527,9 @@
   "flags": [],
   "query": "Atomic Bomber Full",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.53,
+  "ratings": 9989
  },
  "Azkend 2 – The World Beneath": {
   "appId": "com.the10tons.azkend_2",
@@ -3392,7 +3564,9 @@
   "flags": [],
   "query": "Azkend 2 – The World Beneath",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.74,
+  "ratings": 335
  },
  "AZNANA": {
   "appId": "com.caracolu.aznana",
@@ -3433,7 +3607,9 @@
   "flags": [],
   "query": "AZNANA",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.78,
+  "ratings": 11348
  },
  "Baby balloon Pop": {
   "appId": "com.appquiz.baby.ballons",
@@ -3468,7 +3644,9 @@
   "flags": [],
   "query": "Baby balloon Pop",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.4,
+  "ratings": 49005
  },
  "Baby Balloons Pop 2- Toys": {
   "appId": "com.edujoy.baby.ballons.pop",
@@ -3505,7 +3683,9 @@
   "flags": [],
   "query": "Baby Balloons Pop 2- Toys",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.62,
+  "ratings": 6725
  },
  "Baby Care Games Kids Daycare": {
   "appId": "com.baby.care.games.day.toys.cry.babies.doll.girls.bath",
@@ -3546,7 +3726,9 @@
   "flags": [],
   "query": "Baby Care Games Kids Daycare",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.52,
+  "ratings": 467
  },
  "Baby Care, Dress Up Kids games": {
   "appId": "com.gamesforkids.babygames.babycare",
@@ -3584,7 +3766,9 @@
   "flags": [],
   "query": "Baby Care, Dress Up Kids games Play Pass",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.26,
+  "ratings": 3125
  },
  "Baby Coloring Games for Kids": {
   "appId": null,
@@ -3643,7 +3827,9 @@
   "flags": [],
   "query": "Baby Game for 2 3 4 Year Olds",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.96,
+  "ratings": 10884
  },
  "Baby Games Balloon Pop Games": {
   "appId": "com.iz.baby.balloon.bubble.pop.kids.toddler.games",
@@ -3684,7 +3870,9 @@
   "flags": [],
   "query": "Baby Games Balloon Pop Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.93,
+  "ratings": 191
  },
  "Baby Games Bubble Pop it": {
   "appId": "com.edujoy.baby.bubbles",
@@ -3717,7 +3905,9 @@
   "flags": [],
   "query": "Baby Games Bubble Pop it",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.69,
+  "ratings": 1278
  },
  "Baby games for 2-5 Year Olds": {
   "appId": "com.iz.baby.world.kids.learning.games.balloon.popping.educational",
@@ -3758,7 +3948,9 @@
   "flags": [],
   "query": "Baby games for 2-5 Year Olds",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.7,
+  "ratings": 9874
  },
  "Baby Games for Kids Learning": {
   "appId": "com.gamesforkids.toddlers.baby.games.girls.learning.coloring.easy",
@@ -3799,7 +3991,9 @@
   "flags": [],
   "query": "Baby Games for Kids Learning",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.26,
+  "ratings": 535
  },
  "Baby games: Phone For kids App": {
   "appId": "com.iz.baby.phone.games.kids.toddler.learning.preschool.children",
@@ -3840,7 +4034,9 @@
   "flags": [],
   "query": "Baby games: Phone For kids App",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.32,
+  "ratings": 6103
  },
  "Baby Panda Car Racing": {
   "appId": "com.sinyee.babybus.karting.global",
@@ -3875,7 +4071,9 @@
   "flags": [],
   "query": "Baby Panda Car Racing",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.86,
+  "ratings": 8999
  },
  "Baby Panda Cooking Party": {
   "appId": "com.sinyee.babybus.diet",
@@ -3910,7 +4108,9 @@
   "flags": [],
   "query": "Baby Panda Cooking Party",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.15,
+  "ratings": 23037
  },
  "Baby panda Kindergarten": {
   "appId": "com.sinyee.babybus.kindergarten",
@@ -3945,7 +4145,9 @@
   "flags": [],
   "query": "Baby panda Kindergarten",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.92,
+  "ratings": 35343
  },
  "Baby Panda’s Bath Time": {
   "appId": "com.sinyee.babybus.bathing",
@@ -3977,7 +4179,9 @@
   "flags": [],
   "query": "Baby Panda’s Bath Time",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.3,
+  "ratings": 10431
  },
  "Baby Panda’s House Games": {
   "appId": "com.sinyee.babybus.talk2kiki.global",
@@ -4012,7 +4216,9 @@
   "flags": [],
   "query": "Baby Panda’s House Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.28,
+  "ratings": 63145
  },
  "Baby Panda’s Ice Cream Truck": {
   "appId": "com.sinyee.babybus.drinks.global",
@@ -4047,7 +4253,9 @@
   "flags": [],
   "query": "Baby Panda’s Ice Cream Truck",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.07,
+  "ratings": 24773
  },
  "Baby Panda’s Kids Party": {
   "appId": "com.sinyee.babybus.meet",
@@ -4079,7 +4287,9 @@
   "flags": [],
   "query": "Baby Panda’s Kids Party",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.13,
+  "ratings": 24243
  },
  "Baby Panda’s Supermarket": {
   "appId": "com.sinyee.babybus.shopping",
@@ -4117,7 +4327,9 @@
   "flags": [],
   "query": "Baby Panda’s Supermarket",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.59,
+  "ratings": 423156
  },
  "Baby Pet Care Game for Toddler": {
   "appId": "com.petgames.daycaregames.babygames.petcare.toddlergames.dogs.cats.pets.girlgames.elepant",
@@ -4158,7 +4370,9 @@
   "flags": [],
   "query": "Baby Pet Care Game for Toddler",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.35,
+  "ratings": 699
  },
  "Baby Phone for Toddlers Games": {
   "appId": "babyphone.freebabygames.com.babyphone",
@@ -4199,7 +4413,9 @@
   "flags": [],
   "query": "Baby Phone for Toddlers Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.6,
+  "ratings": 136837
  },
  "Baby Phone Kids Game": {
   "appId": "com.appquiz.Baby_Phone",
@@ -4228,7 +4444,9 @@
   "flags": [],
   "query": "Baby Phone Kids Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.39,
+  "ratings": 24075
  },
  "Baby Piano games and Kids Music": {
   "appId": "com.KidsFreeGame.Piano.Rhymes.Rhymes",
@@ -4266,7 +4484,9 @@
   "flags": [],
   "query": "Baby Piano games and Kids Music",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.32,
+  "ratings": 5524
  },
  "Baby Playground – Learn words": {
   "appId": "com.edujoy.baby.playground",
@@ -4298,7 +4518,9 @@
   "flags": [],
   "query": "Baby Playground – Learn words",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.63,
+  "ratings": 24128
  },
  "Baby Pop It": {
   "appId": "com.edujoy.fidget.pop.it",
@@ -4338,7 +4560,9 @@
   "flags": [],
   "query": "Baby Pop It",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.43,
+  "ratings": 20071
  },
  "Baby Pop It – Animals": {
   "appId": "com.edujoy.pop.it.toy",
@@ -4375,7 +4599,9 @@
   "flags": [],
   "query": "Baby Pop It – Animals",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.45,
+  "ratings": 2261
  },
  "Baby Puzzles": {
   "appId": "com.edujoy.Baby_puzzles",
@@ -4416,7 +4642,9 @@
   "flags": [],
   "query": "Baby Puzzles",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.24,
+  "ratings": 25976
  },
  "Baby Smart Phone Kids Game 1-5": {
   "appId": "com.freebabygames.babyphone.call.phone.toddlers.kids.infant",
@@ -4457,7 +4685,9 @@
   "flags": [],
   "query": "Baby Smart Phone Kids Game 1-5",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.37,
+  "ratings": 749
  },
  "Baby Supermarket – Go Shopping": {
   "appId": "com.Edujoy.supermarket",
@@ -4492,7 +4722,9 @@
   "flags": [],
   "query": "Baby Supermarket – Go Shopping",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.48,
+  "ratings": 6111
  },
  "Baby Wooden Blocks Puzzle": {
   "appId": "com.appquiz.Baby_Blocks",
@@ -4533,7 +4765,9 @@
   "flags": [],
   "query": "Baby Wooden Blocks Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.58,
+  "ratings": 19578
  },
  "Backflip madness": {
   "appId": "com.gamesoulstudio.backflipmadness",
@@ -4574,7 +4808,9 @@
   "flags": [],
   "query": "Backflip madness",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.48,
+  "ratings": 26840
  },
  "Bad End Theater": {
   "appId": "com.nomnomnami.badendtheater",
@@ -4597,7 +4833,9 @@
   "flags": [],
   "query": "Bad End Theater",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.87,
+  "ratings": 3386
  },
  "BAIKOH Word Challenegs": {
   "appId": "org.duckdodo.baikoh",
@@ -4635,7 +4873,9 @@
   "flags": [],
   "query": "BAIKOH Word Challenegs",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.63,
+  "ratings": 20802
  },
  "Ball Sort: Color Sort Puzzle": {
   "appId": "com.Gimzat.ColorsSorting",
@@ -4676,7 +4916,9 @@
   "flags": [],
   "query": "Ball Sort: Color Sort Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.72,
+  "ratings": 76788
  },
  "Balloon Pop Kids Learning Game": {
   "appId": "com.freeBabyGames.balloonPopKids",
@@ -4717,7 +4959,9 @@
   "flags": [],
   "query": "Balloon Pop Kids Learning Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.33,
+  "ratings": 6157
  },
  "Barbie Magical Fashion": {
   "appId": "com.budgestudios.BarbieMagicalFashion",
@@ -4752,7 +4996,9 @@
   "flags": [],
   "query": "Barbie Magical Fashion",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.43,
+  "ratings": 416695
  },
  "Basketball Club Story": {
   "appId": "net.kairosoft.android.basket",
@@ -4793,7 +5039,9 @@
   "flags": [],
   "query": "Basketball Club Story",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.56,
+  "ratings": 8017
  },
  "Bathory – The Bloody Countess": {
   "appId": "com.absolutist.bathory",
@@ -4834,7 +5082,9 @@
   "flags": [],
   "query": "Bathory – The Bloody Countess",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.9,
+  "ratings": 726
  },
  "Battle Tank": {
   "appId": "net.wenee.wnbattletank",
@@ -4857,7 +5107,9 @@
   "flags": [],
   "query": "Battle Tank",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.33,
+  "ratings": 1497
  },
  "Beach Buggy Racing": {
   "appId": "com.vectorunit.purple.googleplay",
@@ -4898,7 +5150,9 @@
   "flags": [],
   "query": "Beach Buggy Racing",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.5,
+  "ratings": 3060614
  },
  "Bear’s Restaurant": {
   "appId": "com.rpgsnack.bearsrestaurant",
@@ -4939,7 +5193,9 @@
   "flags": [],
   "query": "Bear’s Restaurant",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.78,
+  "ratings": 60641
  },
  "Beastie Bay DX": {
   "appId": "net.kairosoft.android.mujindx",
@@ -4977,7 +5233,9 @@
   "flags": [],
   "query": "Beastie Bay DX",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.43,
+  "ratings": 758
  },
  "Beat Workers": {
   "appId": "fr.naturalpad.beatworkers",
@@ -5016,7 +5274,9 @@
   "flags": [],
   "query": "Beat Workers",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.79,
+  "ratings": 205
  },
  "Beholder": {
   "appId": "com.creativemobile.beholder",
@@ -5054,7 +5314,9 @@
   "flags": [],
   "query": "Beholder",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.57,
+  "ratings": 14135
  },
  "Beholder 2": {
   "appId": "com.alawar.beholder2",
@@ -5095,7 +5357,9 @@
   "flags": [],
   "query": "Beholder 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.29,
+  "ratings": 2519
  },
  "Bermuda Triangle": {
   "appId": "com.czs.bermudatriangle",
@@ -5120,7 +5384,9 @@
   "flags": [],
   "query": "Bermuda Triangle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.75,
+  "ratings": 144
  },
  "BestForPuz: Cryptic Crossword": {
   "appId": "best.cryptic.crossword",
@@ -5161,7 +5427,9 @@
   "flags": [],
   "query": "BestForPuz: Cryptic Crossword",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.49,
+  "ratings": 3257
  },
  "BestForPuzzles Quick Crossword": {
   "appId": "best.quick.crossword",
@@ -5198,7 +5466,9 @@
   "flags": [],
   "query": "BestForPuzzles Quick Crossword",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.21,
+  "ratings": 323
  },
  "Beyond the Room": {
   "appId": "air.com.darkdome.beyond.the.room",
@@ -5239,7 +5509,9 @@
   "flags": [],
   "query": "Beyond the Room",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.75,
+  "ratings": 65342
  },
  "Beyond Ynth HD": {
   "appId": "com.FDGEntertainment.BeyondYnth",
@@ -5276,7 +5548,9 @@
   "flags": [],
   "query": "Beyond Ynth HD",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.4,
+  "ratings": 2706
  },
  "Bike Jump": {
   "appId": "com.bike.jump",
@@ -5317,7 +5591,9 @@
   "flags": [],
   "query": "Bike Jump",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.16,
+  "ratings": 126716
  },
  "Bike Life Moto Stunt Games": {
   "appId": "com.big.bikelife",
@@ -5352,7 +5628,9 @@
   "flags": [],
   "query": "Bike Life Moto Stunt Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.66,
+  "ratings": 92579
  },
  "Billiard Up": {
   "appId": "com.easyclapgames.billiardrun",
@@ -5393,7 +5671,9 @@
   "flags": [],
   "query": "Billiard Up",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 2.97,
+  "ratings": 482
  },
  "Bingo": {
   "appId": "com.tellmewow.senior.bingo",
@@ -5425,7 +5705,9 @@
   "flags": [],
   "query": "Bingo Play Pass",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.52,
+  "ratings": 101504
  },
  "Bird Alone": {
   "appId": "com.GeorgeBatchelor.BirdAlone",
@@ -5463,7 +5745,9 @@
   "flags": [],
   "query": "Bird Alone",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.37,
+  "ratings": 44267
  },
  "Bird Sort Quest": {
   "appId": "com.mobirix.ldbis",
@@ -5504,7 +5788,9 @@
   "flags": [],
   "query": "Bird Sort Quest",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.51,
+  "ratings": 1970
  },
  "Birthday Cake Decoration Games": {
   "appId": null,
@@ -5563,7 +5849,9 @@
   "flags": [],
   "query": "Biz Builder Deluxe",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4,
+  "ratings": 4187
  },
  "Black Border Patrol Simulator+": {
   "appId": "com.bitzooma.blackborder",
@@ -5604,7 +5892,9 @@
   "flags": [],
   "query": "Black Border Patrol Simulator+",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.52,
+  "ratings": 10248
  },
  "Blacken Slash": {
   "appId": "com.ehmprah.blackenslash",
@@ -5639,7 +5929,9 @@
   "flags": [],
   "query": "Blacken Slash",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.75,
+  "ratings": 319
  },
  "Blacksmith of the Sand Kingdom": {
   "appId": "kemco.rideonjapan.sandkingdom",
@@ -5680,7 +5972,9 @@
   "flags": [],
   "query": "Blacksmith of the Sand Kingdom",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.62,
+  "ratings": 4452
  },
  "Blast Friends – Match 3 Puzzle": {
   "appId": "com.unicostudio.blastfriends",
@@ -5721,7 +6015,9 @@
   "flags": [],
   "query": "Blast Friends – Match 3 Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.57,
+  "ratings": 35307
  },
  "Block Puzzle and Conquer": {
   "appId": "biz.mtoy.blockpuzzle.revolution",
@@ -5756,7 +6052,9 @@
   "flags": [],
   "query": "Block Puzzle and Conquer Play Pass",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.12,
+  "ratings": 391825
  },
  "Blue Wednesday": {
   "appId": "com.buffstudio.bluewednesday",
@@ -5797,7 +6095,9 @@
   "flags": [],
   "query": "Blue Wednesday",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.3,
+  "ratings": 194
  },
  "Bluff knight: offline Idle RPG": {
   "appId": "com.buffstudio.onthehero",
@@ -5838,7 +6138,9 @@
   "flags": [],
   "query": "Bluff knight: offline Idle RPG",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.5,
+  "ratings": 24229
  },
  "Bob Jigsaw Puzzles for Kids": {
   "appId": null,
@@ -5897,7 +6199,9 @@
   "flags": [],
   "query": "Boba Tea Games: Bubble Tea DIY",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.9,
+  "ratings": 328
  },
  "Bobbin Sort: Knit Color Puzzle": {
   "appId": "com.knitting.sort.puzzle",
@@ -5938,7 +6242,9 @@
   "flags": [],
   "query": "Bobbin Sort: Knit Color Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.24,
+  "ratings": 1244
  },
  "Booba Educational Games": {
   "appId": "com.edujoy.booba",
@@ -5977,7 +6283,9 @@
   "flags": [],
   "query": "Booba Educational Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.37,
+  "ratings": 12642
  },
  "Bored Button Play Pass Games": {
   "appId": null,
@@ -6030,7 +6338,9 @@
   "flags": [],
   "query": "Boson X",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.09,
+  "ratings": 2260
  },
  "Botanicula": {
   "appId": "air.com.amanitadesign.botanicula",
@@ -6071,7 +6381,9 @@
   "flags": [],
   "query": "Botanicula",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.31,
+  "ratings": 9240
  },
  "Bouncefield: Brick Breaker": {
   "appId": "com.BrightGlade.Bouncefield",
@@ -6108,7 +6420,9 @@
   "flags": [],
   "query": "Bouncefield: Brick Breaker",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.5,
+  "ratings": 72204
  },
  "Bouncy Hoops": {
   "appId": "com.noodlecake.bouncyhoops",
@@ -6143,7 +6457,9 @@
   "flags": [],
   "query": "Bouncy Hoops",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.09,
+  "ratings": 4535
  },
  "Bounty of One: Premium": {
   "appId": "com.bountyofone.premium.mobile.gp",
@@ -6184,7 +6500,9 @@
   "flags": [],
   "query": "Bounty of One: Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.67,
+  "ratings": 6807
  },
  "Bowmasters: Archery Shooting": {
   "appId": "com.playgendary.bowmasters",
@@ -6225,7 +6543,9 @@
   "flags": [],
   "query": "Bowmasters: Archery Shooting",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.27,
+  "ratings": 806971
  },
  "Box Blocks": {
   "appId": "com.kidga.box.blocks",
@@ -6266,7 +6586,9 @@
   "flags": [],
   "query": "Box Blocks",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.26,
+  "ratings": 1931
  },
  "Boxes: Lost Fragments": {
   "appId": "com.snapbreak.boxes",
@@ -6307,7 +6629,9 @@
   "flags": [],
   "query": "Boxes: Lost Fragments",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.72,
+  "ratings": 339155
  },
  "Boxing Gym Story": {
   "appId": "net.kairosoft.android.boxing",
@@ -6348,7 +6672,9 @@
   "flags": [],
   "query": "Boxing Gym Story",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.54,
+  "ratings": 5533
  },
  "BQM SP": {
   "appId": "com.wlkzinc.bqmsp",
@@ -6389,7 +6715,9 @@
   "flags": [],
   "query": "BQM SP",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.12,
+  "ratings": 32
  },
  "Brain game for Kids: PreSchool": {
   "appId": "com.gamesforkids.memory.animals",
@@ -6424,7 +6752,9 @@
   "flags": [],
   "query": "Brain game for Kids: PreSchool",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.44,
+  "ratings": 591
  },
  "Brain game. Picture Match.": {
   "appId": "com.alcamasoft.memorymatch",
@@ -6459,7 +6789,9 @@
   "flags": [],
   "query": "Brain game. Picture Match.",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.61,
+  "ratings": 115259
  },
  "Brain Games for Adults": {
   "appId": null,
@@ -6512,7 +6844,9 @@
   "flags": [],
   "query": "Brain it Out – Physics Puzzles",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.31,
+  "ratings": 524543
  },
  "Brain Test 3: Tricky Quests": {
   "appId": "com.unicostudio.braintest3",
@@ -6553,7 +6887,9 @@
   "flags": [],
   "query": "Brain Test 3: Tricky Quests",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.72,
+  "ratings": 392186
  },
  "Brain Test: Tricky Words": {
   "appId": "com.unicostudio.trickywords",
@@ -6594,7 +6930,9 @@
   "flags": [],
   "query": "Brain Test: Tricky Words",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.62,
+  "ratings": 39184
  },
  "Brain Who? Tricky Riddle Tests": {
   "appId": "com.braindom2riddle",
@@ -6635,7 +6973,9 @@
   "flags": [],
   "query": "Brain Who? Tricky Riddle Tests",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.75,
+  "ratings": 1989955
  },
  "Braindom: Brain Game Test": {
   "appId": "com.braindom",
@@ -6676,7 +7016,9 @@
   "flags": [],
   "query": "Braindom: Brain Game Test",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.62,
+  "ratings": 2212686
  },
  "Braindom: Brain Games Test": {
   "appId": "com.braindom",
@@ -6717,7 +7059,9 @@
   "flags": [],
   "query": "Braindom: Brain Games Test",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.62,
+  "ratings": 2212686
  },
  "Braveland": {
   "appId": "com.tortugateam.braveland.v2",
@@ -6749,7 +7093,9 @@
   "flags": [],
   "query": "Braveland",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.56,
+  "ratings": 3596
  },
  "Braveland Pirate": {
   "appId": "com.tortugateam.bravelandpirate",
@@ -6781,7 +7127,9 @@
   "flags": [],
   "query": "Braveland Pirate",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.73,
+  "ratings": 957
  },
  "Braveland Wizard": {
   "appId": "com.tortugateam.bravelandwizard",
@@ -6813,7 +7161,9 @@
   "flags": [],
   "query": "Braveland Wizard",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.77,
+  "ratings": 1318
  },
  "Brick breaker Journeys": {
   "appId": "com.mobilityware.utbrickbreakerjourneys",
@@ -6851,7 +7201,9 @@
   "flags": [],
   "query": "Brick breaker Journeys",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.03,
+  "ratings": 2560
  },
  "Brick Builder 3D Brick Games": {
   "appId": "com.cleverturtle.brickbuilder",
@@ -6892,7 +7244,9 @@
   "flags": [],
   "query": "Brick Builder 3D Brick Games",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.41,
+  "ratings": 37312
  },
  "Bricks Breaker Dash": {
   "appId": "com.mobirix.bbp2",
@@ -6933,7 +7287,9 @@
   "flags": [],
   "query": "Bricks Breaker Dash",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.13,
+  "ratings": 784
  },
  "Bricks Breaker Quest": {
   "appId": "com.mobirix.swipebrick2",
@@ -6974,7 +7330,9 @@
   "flags": [],
   "query": "Bricks Breaker Quest",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.19,
+  "ratings": 605421
  },
  "Bridge Constructor": {
   "appId": "com.headupgames.bridgeconstructor",
@@ -7012,7 +7370,9 @@
   "flags": [],
   "query": "Bridge Constructor",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.32,
+  "ratings": 53341
  },
  "Bridge Constructor Portal": {
   "appId": "com.headupgames.bridgeconstructorportal",
@@ -7051,7 +7411,9 @@
   "flags": [],
   "query": "Bridge Constructor Portal",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.63,
+  "ratings": 21686
  },
  "Bridge Constructor TWD": {
   "appId": "com.headupgames.bridgeconstructortwd",
@@ -7086,7 +7448,9 @@
   "flags": [],
   "query": "Bridge Constructor TWD",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.93,
+  "ratings": 232
  },
  "Briscola – La Brisca Spanish": {
   "appId": "com.quarzo.brisca",
@@ -7127,7 +7491,9 @@
   "flags": [],
   "query": "Briscola – La Brisca Spanish",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.86,
+  "ratings": 10177
  },
  "BROK The InvestiGator": {
   "appId": "com.cowcat.brok",
@@ -7168,7 +7534,9 @@
   "flags": [],
   "query": "BROK The InvestiGator",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.65,
+  "ratings": 1023
  },
  "Broken Sword: Reforged": {
   "appId": "uk.co.revolution.bs1r.google",
@@ -7209,7 +7577,9 @@
   "flags": [],
   "query": "Broken Sword: Reforged",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.46,
+  "ratings": 2281
  },
  "Brotato: Premium": {
   "appId": "com.brotato.shooting.survivors.games.paid.android",
@@ -7246,7 +7616,9 @@
   "flags": [],
   "query": "Brotato: Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.82,
+  "ratings": 60738
  },
  "Bubble Shooting Quest": {
   "appId": "com.mobirix.bsmb",
@@ -7287,7 +7659,9 @@
   "flags": [],
   "query": "Bubble Shooting Quest",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.46,
+  "ratings": 492
  },
  "Bubble Tale – Bunny Quest": {
   "appId": "com.banhca.bubble",
@@ -7325,7 +7699,9 @@
   "flags": [],
   "query": "Bubble Tale – Bunny Quest",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.6,
+  "ratings": 13984
  },
  "Bubblez: Bubble Defense": {
   "appId": "air.com.absolutist.match3puzzle.bubblezbubbledefence",
@@ -7366,7 +7742,9 @@
   "flags": [],
   "query": "Bubblez: Bubble Defense",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 2.79,
+  "ratings": 661
  },
  "Bubbu & Mimmi World": {
   "appId": "com.bubadu.mimmi",
@@ -7407,7 +7785,9 @@
   "flags": [],
   "query": "Bubbu & Mimmi World",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.91,
+  "ratings": 23801
  },
  "Bubbu 2 – My Pet Kingdom": {
   "appId": "com.bubadu.bubbu2",
@@ -7448,7 +7828,9 @@
   "flags": [],
   "query": "Bubbu 2 – My Pet Kingdom",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.91,
+  "ratings": 46262
  },
  "Bubbu Jewels – Merge Puzzle": {
   "appId": "com.bubadu.bubbugems",
@@ -7489,7 +7871,9 @@
   "flags": [],
   "query": "Bubbu Jewels – Merge Puzzle",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.04,
+  "ratings": 11022
  },
  "Bubbu Restaurant – My Cat Game": {
   "appId": "com.bubadu.bubburestaurant",
@@ -7530,7 +7914,9 @@
   "flags": [],
   "query": "Bubbu Restaurant – My Cat Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.14,
+  "ratings": 117298
  },
  "Bubbu School – My Virtual Pets": {
   "appId": "com.bubadu.bubbuschool",
@@ -7571,7 +7957,9 @@
   "flags": [],
   "query": "Bubbu School – My Virtual Pets",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.87,
+  "ratings": 147940
  },
  "Bubbu – My Virtual Pet Cat": {
   "appId": "com.bubadu.bubbu",
@@ -7612,7 +8000,9 @@
   "flags": [],
   "query": "Bubbu – My Virtual Pet Cat",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.14,
+  "ratings": 1132998
  },
  "Build a Bridge!": {
   "appId": "com.boombitgames.BridgeLowpoly",
@@ -7653,7 +8043,9 @@
   "flags": [],
   "query": "Build a Bridge!",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.14,
+  "ratings": 524109
  },
  "Bullet Boy": {
   "appId": "com.pomelogames.bulletboy.google",
@@ -7688,7 +8080,9 @@
   "flags": [],
   "query": "Bullet Boy",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.54,
+  "ratings": 59601
  },
  "Burger Bistro Story": {
   "appId": "net.kairosoft.android.burger",
@@ -7729,7 +8123,9 @@
   "flags": [],
   "query": "Burger Bistro Story",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.71,
+  "ratings": 10935
  },
  "Burger Shop 2": {
   "appId": "com.gobit.burgershop2",
@@ -7764,7 +8160,9 @@
   "flags": [],
   "query": "Burger Shop 2",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.73,
+  "ratings": 105807
  },
  "Bury me, My Love": {
   "appId": "com.plug_in_digital.emma",
@@ -7786,7 +8184,9 @@
   "flags": [],
   "query": "Bury me, My Love",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.32,
+  "ratings": 1352
  },
  "Cactus, Cactus!": {
   "appId": null,
