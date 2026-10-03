@@ -58023,7 +58023,21 @@
   "flags": [],
   "query": "Riptide GP: Renegade",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.52,
+  "ratings": 13828,
+  "installs": 762511,
+  "tags": [
+   "Racing",
+   "Water racing",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Stylized",
+   "Competitive",
+   "Offline"
+  ]
  },
  "Rise Up: Balloon Game": {
   "appId": "com.riseup.game",
@@ -58058,7 +58072,19 @@
   "flags": [],
   "query": "Rise Up: Balloon Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.8,
+  "ratings": 1438688,
+  "installs": 261763313,
+  "tags": [
+   "Action",
+   "Platformer",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Intense",
+   "Offline"
+  ]
  },
  "Rock Crawling: Racing Games 3D": {
   "appId": "com.pinpinteam.rockcrawling",
@@ -58099,7 +58125,13 @@
   "flags": [],
   "query": "Rock Crawling: Racing Games 3D",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.25,
+  "ratings": 20123,
+  "installs": 11184783,
+  "tags": [
+   "Adventure"
+  ]
  },
  "Rogue Adventure card Roguelike": {
   "appId": "it.sharklab.rogueadventure",
@@ -58121,7 +58153,20 @@
   "flags": [],
   "query": "Rogue Adventure card Roguelike",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.61,
+  "ratings": 77805,
+  "installs": 2406347,
+  "tags": [
+   "Card",
+   "Card battler",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Fantasy",
+   "Medieval fantasy",
+   "Offline"
+  ]
  },
  "RollerCoaster Tycoon Classic": {
   "appId": "com.atari.mobile.rctclassic",
@@ -58156,7 +58201,21 @@
   "flags": [],
   "query": "RollerCoaster Tycoon Classic",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.88,
+  "ratings": 6693,
+  "installs": 427039,
+  "tags": [
+   "Simulation",
+   "Management",
+   "Tycoon",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Business & profession",
+   "Business empire",
+   "Theme park"
+  ]
  },
  "Romantic HOLIC: Otome Game": {
   "appId": "com.buffstudio.luciddream.visual.novel.adventure.story.games",
@@ -58197,7 +58256,19 @@
   "flags": [],
   "query": "Romantic HOLIC: Otome Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.37,
+  "ratings": 1321,
+  "installs": 70571,
+  "tags": [
+   "Adventure",
+   "Interactive story",
+   "Single player",
+   "Stylized",
+   "Anime",
+   "Romance",
+   "Offline"
+  ]
  },
  "ROOMS: The Toymaker’s Mansion": {
   "appId": "rooms.handmadegame.net",
@@ -58238,7 +58309,16 @@
   "flags": [],
   "query": "ROOMS: The Toymaker’s Mansion",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.69,
+  "ratings": 710,
+  "installs": 108564,
+  "tags": [
+   "Adventure",
+   "Puzzle-adventure",
+   "Casual",
+   "Stylized"
+  ]
  },
  "Rope Frog Ninja Hero Car Vegas": {
   "appId": "com.assassingames.ninjafrogrope",
@@ -58279,7 +58359,19 @@
   "flags": [],
   "query": "Rope Frog Ninja Hero Car Vegas",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.14,
+  "ratings": 435025,
+  "installs": 95610779,
+  "tags": [
+   "Action",
+   "Action-adventure",
+   "Single player",
+   "Stylized",
+   "Fantasy",
+   "Super heroes",
+   "Offline"
+  ]
  },
  "Roundguard": {
   "appId": "com.wonderbellygames.roundguard",
@@ -58320,7 +58412,17 @@
   "flags": [],
   "query": "Roundguard",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.43,
+  "ratings": 2224,
+  "installs": 108316,
+  "tags": [
+   "Role Playing",
+   "Puzzle Role-playing",
+   "Physics-puzzle RPG",
+   "Casual",
+   "Stylized"
+  ]
  },
  "Royal Cooking – Cooking Game": {
   "appId": "com.matryoshka.royal.cooking.kitchen.madness",
@@ -58361,7 +58463,19 @@
   "flags": [],
   "query": "Royal Cooking – Cooking Game",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.68,
+  "ratings": 724738,
+  "installs": 54744542,
+  "tags": [
+   "Simulation",
+   "Time management",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cooking",
+   "Offline"
+  ]
  },
  "Royal Girls – Princess Salon": {
   "appId": "net.promediastudio.royalgirlsprincesssalon",
@@ -58402,7 +58516,19 @@
   "flags": [],
   "query": "Royal Girls – Princess Salon",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.13,
+  "ratings": 118253,
+  "installs": 64106588,
+  "tags": [
+   "Simulation",
+   "Lifestyle",
+   "Dress-up",
+   "Single player",
+   "Stylized",
+   "Princess",
+   "Offline"
+  ]
  },
  "Royal Merge!": {
   "appId": "com.cherrypickgames.royalmerge",
@@ -58443,7 +58569,17 @@
   "flags": [],
   "query": "Royal Merge!",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.16,
+  "ratings": 1699,
+  "installs": 229127,
+  "tags": [
+   "Puzzle",
+   "Merge",
+   "Casual",
+   "Single player",
+   "Stylized"
+  ]
  },
  "Royal Solitaire": {
   "appId": "com.onur.grandroyal",
@@ -58472,7 +58608,18 @@
   "flags": [],
   "query": "Royal Solitaire Play Pass",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.18,
+  "ratings": 170,
+  "installs": 22357,
+  "tags": [
+   "Card",
+   "Solitaire",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "RPG Aeon Avenger KEMCO": {
   "appId": "kemco.wws.einereise",
@@ -58513,7 +58660,17 @@
   "flags": [],
   "query": "RPG Aeon Avenger KEMCO",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.47,
+  "ratings": 530,
+  "installs": 24757,
+  "tags": [
+   "Role Playing",
+   "Action Role-Playing",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ]
  },
  "RPG Alphadia": {
   "appId": "kemco.execreate.alphadia",
@@ -58545,7 +58702,18 @@
   "flags": [],
   "query": "RPG Alphadia",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.34,
+  "ratings": 539,
+  "installs": 28882,
+  "tags": [
+   "Role Playing",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "RPG Alphadia 1 and 2 Premium": {
   "appId": "kemco.execreate.alphadiaoneandtwopremium",
@@ -58586,7 +58754,18 @@
   "flags": [],
   "query": "RPG Alphadia 1 and 2 Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.6,
+  "ratings": 678,
+  "installs": 17628,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Immersive"
+  ]
  },
  "RPG Alphadia Neo Premium": {
   "appId": "kemco.execreate.alphadianeopremium",
@@ -58627,7 +58806,20 @@
   "flags": [],
   "query": "RPG Alphadia Neo Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.73,
+  "ratings": 406,
+  "installs": 7078,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Stylized",
+   "Pixelated",
+   "Fantasy",
+   "Eastern fantasy",
+   "Isekai",
+   "Immersive"
+  ]
  },
  "RPG Aphadia 2": {
   "appId": null,
@@ -58686,7 +58878,18 @@
   "flags": [],
   "query": "RPG Armed Emeth Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.98,
+  "ratings": 279,
+  "installs": 30970,
+  "tags": [
+   "Role Playing",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "RPG Asdivine Cross Premium": {
   "appId": "kemco.execreate.asdivinecrosspremium",
@@ -58724,7 +58927,19 @@
   "flags": [],
   "query": "RPG Asdivine Cross Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.71,
+  "ratings": 701,
+  "installs": 17118,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "RPG Asdivine Hearts": {
   "appId": "kemco.execreate.asdivinehearts",
@@ -58759,7 +58974,21 @@
   "flags": [],
   "query": "RPG Asdivine Hearts",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.69,
+  "ratings": 4545,
+  "installs": 54684,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Casual",
+   "Stylized",
+   "Pixelated",
+   "Fantasy",
+   "Eastern fantasy",
+   "Isekai",
+   "Immersive"
+  ]
  },
  "RPG Asdivine Kamura": {
   "appId": "kemco.execreate.asdivinekamura",
@@ -58797,7 +59026,19 @@
   "flags": [],
   "query": "RPG Asdivine Kamura",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.59,
+  "ratings": 1389,
+  "installs": 16521,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Single player",
+   "Stylized",
+   "Anime",
+   "Fantasy",
+   "Eastern fantasy"
+  ]
  },
  "RPG Asdivine Laumra": {
   "appId": "kemco.execreate.asdivinekamura",
@@ -58835,7 +59076,19 @@
   "flags": [],
   "query": "RPG Asdivine Laumra",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.59,
+  "ratings": 1389,
+  "installs": 16521,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Single player",
+   "Stylized",
+   "Anime",
+   "Fantasy",
+   "Eastern fantasy"
+  ]
  },
  "RPG Asdivine Saga Premium": {
   "appId": null,
@@ -58883,7 +59136,20 @@
   "flags": [],
   "query": "RPG Astral Takers",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.47,
+  "ratings": 69,
+  "installs": 3697,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Immersive",
+   "Fantasy",
+   "Offline"
+  ]
  },
  "RPG Astrune Academy Premium": {
   "appId": "kemco.execreate.magicalgirlspremium",
@@ -58924,7 +59190,20 @@
   "flags": [],
   "query": "RPG Astrune Academy Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.39,
+  "ratings": 414,
+  "installs": 8592,
+  "tags": [
+   "Role Playing",
+   "Action Role-Playing",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Immersive",
+   "Fantasy",
+   "Offline"
+  ]
  },
  "RPG Crystal Ortha": {
   "appId": "kemco.hitpoint.crystalortha",
@@ -58965,7 +59244,20 @@
   "flags": [],
   "query": "RPG Crystal Ortha",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.47,
+  "ratings": 546,
+  "installs": 10994,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Casual",
+   "Stylized",
+   "Pixelated",
+   "Immersive",
+   "Fantasy",
+   "Medieval fantasy"
+  ]
  },
  "RPG Dragon Lapis Premium": {
   "appId": "kemco.execreate.lapispremium",
@@ -59003,7 +59295,17 @@
   "flags": [],
   "query": "RPG Dragon Lapis Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.62,
+  "ratings": 1364,
+  "installs": 16849,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Casual",
+   "Stylized",
+   "Pixelated"
+  ]
  },
  "RPG Dragon Prana PRemium": {
   "appId": "kemco.execreate.dragonpranapremium",
@@ -59044,7 +59346,16 @@
   "flags": [],
   "query": "RPG Dragon Prana PRemium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.57,
+  "ratings": 1043,
+  "installs": 42355,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Stylized",
+   "Pixelated"
+  ]
  },
  "RPG Dragon Sinker Premium": {
   "appId": "kemco.execreate.dragonsinkerpremium",
@@ -59085,7 +59396,19 @@
   "flags": [],
   "query": "RPG Dragon Sinker Premium",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 4.47,
+  "ratings": 951,
+  "installs": 35717,
+  "tags": [
+   "Role Playing",
+   "Action Role-Playing",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Offline"
+  ]
  },
  "RPG Dragon Takers": {
   "appId": "kemco.vgd.dragontakers",
@@ -59126,7 +59449,20 @@
   "flags": [],
   "query": "RPG Dragon Takers",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.3,
+  "ratings": 93,
+  "installs": 5489,
+  "tags": [
+   "Role Playing",
+   "Turn-based RPG",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Immersive",
+   "Fantasy",
+   "Eastern fantasy"
+  ]
  },
  "RPG Eve of the Genesis": {
   "appId": "kemco.wws.eog.hd",
@@ -59165,7 +59501,18 @@
   "flags": [],
   "query": "RPG Eve of the Genesis",
   "checked": "2026-10-03",
-  "passChecked": "2026-10-03"
+  "passChecked": "2026-10-03",
+  "rating": 3.82,
+  "ratings": 543,
+  "installs": 29834,
+  "tags": [
+   "Role Playing",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Offline"
+  ]
  },
  "RPG Fairy Elements Premium": {
   "appId": "kemco.execreate.fairyelementspremium",
