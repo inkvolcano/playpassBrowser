@@ -2539,8 +2539,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.bokujou_ja"
    },
    "br": {
     "available": true,
@@ -2984,7 +2985,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -3000,7 +3001,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -6151,7 +6152,7 @@
    },
    "jp": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "br": {
     "available": true,
@@ -6724,8 +6725,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.animestudio_ja"
    },
    "br": {
     "available": true,
@@ -8033,7 +8035,7 @@
    },
    "br": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    }
   }
  },
@@ -13895,8 +13897,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.townshop_ja"
    },
    "br": {
     "available": true,
@@ -19541,8 +19544,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.restaurant_ja"
    },
    "br": {
     "available": true,
@@ -22337,7 +22341,7 @@
    },
    "fr": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -25327,31 +25331,31 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "gb": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "fr": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "it": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "ca": {
     "available": true,
@@ -32372,27 +32376,27 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "gb": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "fr": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "ca": {
     "available": true,
@@ -32400,7 +32404,7 @@
    },
    "it": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "au": {
     "available": true,
@@ -36300,7 +36304,7 @@
    },
    "br": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    }
   }
  },
@@ -36590,7 +36594,7 @@
    },
    "au": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "jp": {
     "available": true,
@@ -43004,8 +43008,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.frontier_ja"
    },
    "br": {
     "available": true,
@@ -48028,7 +48033,7 @@
    },
    "fr": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -48121,7 +48126,7 @@
    },
    "fr": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -49901,7 +49906,7 @@
    },
    "jp": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "br": {
     "available": true,
@@ -51526,8 +51531,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.gamedev3"
    },
    "br": {
     "available": true,
@@ -51617,8 +51623,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.bouken_ja"
    },
    "br": {
     "available": true,
@@ -53471,8 +53478,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.paddock_ja"
    },
    "br": {
     "available": true,
@@ -58841,8 +58849,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.baseball_ja"
    },
    "br": {
     "available": true,
@@ -59989,8 +59998,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.onsen_ja"
    },
    "br": {
     "available": true,
@@ -60287,7 +60297,7 @@
    },
    "jp": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    }
   }
  },
@@ -60563,8 +60573,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "jp.co.gagex.orion"
    }
   }
  },
@@ -62526,27 +62537,27 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "gb": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "fr": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "ca": {
     "available": true,
@@ -62554,7 +62565,7 @@
    },
    "it": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "au": {
     "available": true,
@@ -65824,8 +65835,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.starkairo_ja"
    }
   }
  },
@@ -65923,7 +65935,7 @@
    },
    "jp": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    }
   }
  },
@@ -70584,7 +70596,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -70596,7 +70608,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "fr": {
     "available": true,
@@ -71605,7 +71617,7 @@
    },
    "jp": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    }
   }
  },
@@ -71710,7 +71722,7 @@
    },
    "jp": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    }
   }
  },
@@ -71810,7 +71822,7 @@
    },
    "jp": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    }
   }
  },
@@ -78110,8 +78122,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.magazine_ja"
    }
   }
  },
@@ -78703,7 +78716,7 @@
    },
    "jp": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    }
   }
  },
@@ -78792,7 +78805,7 @@
    },
    "jp": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    }
   }
  },
@@ -79840,8 +79853,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.ongaku2_ja"
    }
   }
  },
@@ -81572,7 +81586,7 @@
    },
    "jp": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    }
   }
  },
@@ -84842,7 +84856,7 @@
    },
    "fr": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -91021,8 +91035,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.ninja_ja"
    }
   }
  },
@@ -93368,7 +93383,7 @@
    },
    "jp": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    }
   }
  },
@@ -96920,7 +96935,7 @@
    },
    "fr": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "gb": {
     "available": true,
@@ -101094,8 +101109,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.school2_ja"
    }
   }
  },
@@ -101471,8 +101487,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.fukuya_ja"
    }
   }
  },
@@ -101569,8 +101586,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.noujou_ja"
    }
   }
  },
@@ -101666,8 +101684,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.soccer_ja"
    }
   }
  },
@@ -101853,8 +101872,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.horse_ja"
    }
   }
  },
@@ -103249,11 +103269,11 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -103542,11 +103562,11 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -103642,11 +103662,11 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -103847,11 +103867,11 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -103943,7 +103963,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -103951,7 +103971,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "gb": {
     "available": true,
@@ -104039,7 +104059,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -104047,7 +104067,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "gb": {
     "available": true,
@@ -104139,7 +104159,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -104147,7 +104167,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "gb": {
     "available": true,
@@ -104235,7 +104255,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -104243,7 +104263,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "gb": {
     "available": true,
@@ -104332,7 +104352,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -104344,7 +104364,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "fr": {
     "available": true,
@@ -104434,7 +104454,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -104450,7 +104470,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -104530,7 +104550,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -104546,7 +104566,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -104627,7 +104647,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -104643,7 +104663,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -104663,7 +104683,7 @@
    },
    "br": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "jp": {
     "available": true,
@@ -104726,7 +104746,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -104742,7 +104762,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -104824,7 +104844,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -104840,7 +104860,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -104921,7 +104941,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -104937,7 +104957,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -108525,7 +108545,7 @@
    },
    "fr": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "be": {
     "available": true,
@@ -113643,7 +113663,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -113659,7 +113679,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -113855,7 +113875,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -113871,7 +113891,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -113891,7 +113911,7 @@
    },
    "br": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "jp": {
     "available": true,
@@ -114046,7 +114066,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -114062,7 +114082,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -114082,7 +114102,7 @@
    },
    "br": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "jp": {
     "available": true,
@@ -114142,7 +114162,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -114158,7 +114178,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -114178,7 +114198,7 @@
    },
    "br": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "jp": {
     "available": true,
@@ -114349,7 +114369,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -114365,7 +114385,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -114543,7 +114563,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -114559,7 +114579,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -114579,7 +114599,7 @@
    },
    "br": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "jp": {
     "available": true,
@@ -114639,7 +114659,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -114655,7 +114675,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -114738,7 +114758,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -114754,7 +114774,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -114774,7 +114794,7 @@
    },
    "br": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "jp": {
     "available": true,
@@ -115029,7 +115049,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -115045,7 +115065,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -115122,7 +115142,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -115138,7 +115158,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -115158,7 +115178,7 @@
    },
    "br": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "jp": {
     "available": true,
@@ -115222,7 +115242,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "us": {
     "available": true,
@@ -115242,7 +115262,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -115318,7 +115338,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -115334,7 +115354,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -115354,7 +115374,7 @@
    },
    "br": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "jp": {
     "available": true,
@@ -115512,7 +115532,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -115528,7 +115548,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -115614,7 +115634,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -115630,7 +115650,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -115809,7 +115829,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -115825,7 +115845,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -115911,7 +115931,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -115927,7 +115947,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -115947,7 +115967,7 @@
    },
    "br": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "jp": {
     "available": true,
@@ -116102,7 +116122,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -116118,7 +116138,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -116201,7 +116221,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": true,
@@ -116217,7 +116237,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -116298,7 +116318,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "us": {
     "available": true,
@@ -116318,7 +116338,7 @@
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": true,
@@ -118395,7 +118415,7 @@
    },
    "fr": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "be": {
     "available": true,
@@ -120195,8 +120215,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.ski_ja"
    }
   }
  },
@@ -123647,7 +123668,7 @@
    },
    "br": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "jp": {
     "available": true,
@@ -123745,7 +123766,7 @@
    },
    "br": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "jp": {
     "available": true,
@@ -129437,8 +129458,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.densha_ja"
    }
   }
  },
@@ -131271,7 +131293,7 @@
    },
    "jp": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    }
   }
  },
@@ -132119,7 +132141,7 @@
    },
    "jp": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    }
   }
  },
@@ -136136,8 +136158,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.tennis_ja"
    }
   }
  },
@@ -136272,27 +136295,27 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "gb": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "fr": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "ca": {
     "available": true,
@@ -136300,7 +136323,7 @@
    },
    "it": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "au": {
     "available": true,
@@ -136414,7 +136437,7 @@
    },
    "jp": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    }
   }
  },
@@ -137579,7 +137602,7 @@
    },
    "jp": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    }
   }
  },
@@ -138244,7 +138267,7 @@
    },
    "jp": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    }
   }
  },
@@ -138378,27 +138401,27 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "de": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "gb": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "fr": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "ca": {
     "available": true,
@@ -138406,7 +138429,7 @@
    },
    "it": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "au": {
     "available": true,
@@ -139690,8 +139713,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.manga_ippon_ja"
    }
   }
  },
@@ -140234,7 +140258,7 @@
    },
    "jp": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    }
   }
  },
@@ -140429,7 +140453,7 @@
    },
    "jp": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    }
   }
  },
@@ -141030,8 +141054,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.sushi_ja"
    }
   }
  },
@@ -151117,7 +151142,7 @@
    },
    "jp": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    }
   }
  },
@@ -151212,7 +151237,7 @@
    },
    "jp": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    }
   }
  },
@@ -160116,8 +160141,9 @@
     "checked": "2026-10-03"
    },
    "jp": {
-    "available": false,
-    "checked": "2026-10-03"
+    "available": true,
+    "checked": "2026-10-04",
+    "appId": "net.kairosoft.android.cruise_ja"
    }
   }
  },
@@ -162159,7 +162185,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "us": {
     "available": true,
@@ -162167,23 +162193,23 @@
    },
    "de": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "gb": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "fr": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "ca": {
     "available": true,
@@ -162191,7 +162217,7 @@
    },
    "it": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "au": {
     "available": true,
@@ -162329,7 +162355,7 @@
   "regions": {
    "nl": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "us": {
     "available": true,
@@ -162337,23 +162363,23 @@
    },
    "de": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "gb": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "fr": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "be": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "es": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "ca": {
     "available": true,
@@ -162361,7 +162387,7 @@
    },
    "it": {
     "available": false,
-    "checked": "2026-10-03"
+    "checked": "2026-10-04"
    },
    "au": {
     "available": true,
