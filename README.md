@@ -1,23 +1,39 @@
 # playpassBrowser
 
-A single-page catalogue of every Google Play Pass game: `index.html`.
+A single-page catalogue of every Google Play Pass game (and the Play Pass apps
+that aren't games): `index.html`.
 
 **Live: https://inkvolcano.github.io/playpassBrowser/** (GitHub Pages, published
 from `main`; every push to `main` updates it within a minute or two).
 
 You can also open `index.html` straight from disk. It is one self-contained file (the game data is
 embedded); only the screenshots, icons and fonts load from the web
-(`play-lh.googleusercontent.com`, Google Fonts). Each card has the game's icon,
-title, developer, genre, Play Store star rating and downloads, its Play Store
-tags, up to 12 screenshots that cycle when you tap them, and links to the Play
-Store page, a YouTube gameplay search and a Google Images search.
+(`play-lh.googleusercontent.com`, Google Fonts), and the detail view reads its
+text from `details/` on the published site. Each card has the game's icon,
+title (the Play Store's own, not YTECHB's spelling), developer, genre, Play Store
+star rating and downloads, its Play Store tags, up to 12 screenshots that cycle
+when you tap them, and links to the Play Store page, a YouTube gameplay search
+and a Google Images search. Games added to Play Pass or released in the last 30
+days carry a "New" label.
 
-You can search titles, developers and tags, filter by genre and by tag
-(Offline, Roguelike, Pixelated, ...; tap a tag on a card to filter by it), sort
-A–Z, by genre, by popularity or by rating, and switch between light, dark and
-system themes. Most popular sorts by Play Store downloads. Top rated uses a
-weighted average (each game's ratings plus 1,000 at the catalogue average), so
-a 5.0 from a handful of ratings doesn't outrank a 4.8 from thousands.
+Tap a title for the detail view: the store description, every screenshot, the
+trailer, the age rating (PEGI and ESRB), what the game costs without Play Pass,
+release and update dates, the countries that offer it, and a share button.
+
+You can search titles (YTECHB's names work too), developers and tags; filter by
+genre, by tag (Offline, Roguelike, Pixelated, ...; tap a tag on a card to filter
+by it), by age rating (PEGI 3, 7, 12 or 16 and under) and by developer (tap a
+developer's name); sort A–Z, by genre, by popularity, by rating or newest first;
+and switch between light, dark and system themes. Most popular sorts by Play
+Store downloads. Top rated uses a weighted average (each game's ratings plus
+1,000 at the catalogue average), so a 5.0 from a handful of ratings doesn't
+outrank a 4.8 from thousands. Newest sorts by the day a game was first seen in
+Play Pass (tracked since 4 October 2026), then by release date. The Apps chip
+switches to the Play Pass apps that aren't games (photo, music, kids' learning
+and tool apps).
+
+The address bar keeps the search, filters, sort, country and open game, so a
+link opens the same view; "Copy link" copies it.
 
 The page lists only games whose Play Store page showed the Play Pass badge when
 it was last checked (US store; the date is in the page footer). YTECHB's list
@@ -46,8 +62,9 @@ are in Play Pass only outside the US are missing.
 | `data/games.json` | YTECHB's game list: `title`, `genre`, `source` |
 | `data/discovered.json` | Play Pass games found on Google Play that YTECHB's list lacks: `appId`, `title`, `genre` |
 | `data/discovery_report.json` | How the two lists cover each other (written by each crawl) |
+| `details/<appId>.json` | Detail-view data per app: description, trailer, age ratings, price, dates, all screenshots |
 | `GAP_ANALYSIS.md` | What each list misses, data gaps on the page, and feature ideas |
-| `data/shots_cache.json` | Play Store data per game: `appId`, `icon`, `screenshots`, `url`, `playPass`, `rating`, `ratings`, `installs`, `tags`, `regions` (availability per country), plus match details |
+| `data/shots_cache.json` | Play Store data per game: `appId`, `icon`, `screenshots`, `url`, `playPass`, `rating`, `ratings`, `installs`, `tags`, `regions` (availability per country), `firstSeen` / `leftOn` (Play Pass badge history), `pegi`, `esrb`, `price`, `released`, `updated`, plus match details |
 | `data/overrides.json` | Hand-made fixes: title → appId, or title → `null` |
 | `data/sources.json` | Where the list came from and when it was last updated |
 
@@ -63,7 +80,11 @@ python3 fill_screenshots.py --refresh # 3. re-check every game's Play Pass statu
                                       #    downloads, tags and screenshots, then rebuild index.html
 python3 fill_screenshots.py --region au be br ca de es fr gb it jp nl us --jobs 6
                                       # 4. re-check which games each country's store offers
+python3 fill_screenshots.py --details --jobs 6   # 5. descriptions, age ratings, prices, dates (~10 min)
 ```
+
+Run these every week or so: the "New" label and the Newest sort depend on
+spotting games the day they join Play Pass, so the history grows with each run.
 
 `fill_screenshots.py` resumes from `data/shots_cache.json`, so it only looks up
 games it hasn't seen; stop it at any time (Ctrl-C saves progress) and run it

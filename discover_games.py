@@ -11,7 +11,8 @@ page, a search for each developer's name, and the games home page. Every
 badged app it sees is queued in turn, until no new ones turn up.
 
 Badged games that YTECHB's list doesn't have go to data/discovered.json
-(appId, store title, genre); earlier finds stay. data/discovery_report.json
+(appId, store title, genre), and so do badged apps that aren't games (genre
+"Apps"); earlier finds stay. data/discovery_report.json
 says how well the two lists cover each other: which known games turned up on
 some other Google Play page (so the crawl alone would find them) and which
 only YTECHB's list knows. fill_screenshots.py then
@@ -44,7 +45,8 @@ DETAILS_RE = re.compile(r"details\?id=([A-Za-z0-9._]+)")
 DEVELOPER_RE = re.compile(r"/store/apps/(dev\?id=\d+|developer\?id=[^\"&\\]+)")
 
 # Play Store genre -> the page's genre. Anything else (Tools, Photography...) is
-# a Play Pass app rather than a game and is left out.
+# a Play Pass app rather than a game; those are listed under "Apps".
+APPS = "Apps"
 GENRES = {
     "Action": "Action", "Adventure": "Adventure", "Arcade": "Arcade", "Board": "Board",
     "Card": "Card", "Casino": "Card", "Casual": "Casual", "Educational": "Educational",
@@ -199,13 +201,13 @@ def main():
             genre = GENRES.get(d.get("genre"))
             if not genre:
                 apps.append(f"{d['title']} ({d.get('genre')})")
-                continue
-            out.append({"appId": a, "title": d["title"], "genre": genre, "playGenre": d.get("genre"),
+            out.append({"appId": a, "title": d["title"], "genre": genre or APPS, "playGenre": d.get("genre"),
                         "developer": d.get("developer"), "found": today})
     out.sort(key=lambda d: d["title"].casefold())
     DISCOVERED_JSON.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(f"{len(out)} Play Pass games that YTECHB's list doesn't have -> {DISCOVERED_JSON.relative_to(ROOT)}"
-          f"; {len(apps)} badged apps that aren't games left out: " + "; ".join(apps), flush=True)
+    print(f"{sum(1 for d in out if d['genre'] != APPS)} Play Pass games that YTECHB's list doesn't have and "
+          f"{sum(1 for d in out if d['genre'] == APPS)} Play Pass apps -> {DISCOVERED_JSON.relative_to(ROOT)}"
+          + (f"; new apps: " + "; ".join(apps) if apps else ""), flush=True)
 
 
 if __name__ == "__main__":

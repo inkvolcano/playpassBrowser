@@ -39,7 +39,7 @@ import threading
 import time
 import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import date
+from datetime import date, datetime
 from difflib import SequenceMatcher
 from pathlib import Path
 from urllib.error import URLError
@@ -59,6 +59,7 @@ ssl._create_default_https_context = ssl.create_default_context
 ROOT = Path(__file__).resolve().parent
 GAMES_JSON = ROOT / "data" / "games.json"
 CACHE_JSON = ROOT / "data" / "shots_cache.json"
+DETAILS_DIR = ROOT / "details"  # one JSON file per app for the page's detail view
 OVERRIDES_JSON = ROOT / "data" / "overrides.json"
 
 MAX_SHOTS = 24         # screenshots kept per game
@@ -460,6 +461,7 @@ def entry_from(c, game_title, confidence, query, flags):
         "query": query,
         "checked": date.today().isoformat(),
         "passChecked": date.today().isoformat(),
+        "firstSeen": date.today().isoformat() if c.get("playPass") else None,
     }
 
 
@@ -575,6 +577,13 @@ def refresh_entry(game, e):
     if not d:  # store page gone: the app has been removed since it was matched
         return dict(e, playPass=None)
     shots = [s for s in (d.get("screenshots") or []) if s][:MAX_SHOTS]
+    today, badged = date.today().isoformat(), bool(d.get("playPass"))
+    if badged:
+        e = {k: v for k, v in e.items() if k != "leftOn"}
+        e.setdefault("firstSeen", None)
+        e["firstSeen"] = e["firstSeen"] or today
+    elif e.get("playPass"):  # had the badge at the last check
+        e["leftOn"] = today
     return dict(e, screenshots=shots or e["screenshots"], icon=d.get("icon") or e["icon"],
                 matched=d.get("title") or e["matched"], developer=d.get("developer") or e["developer"],
                 playPass=bool(d.get("playPass")), rating=star_rating(d.get("score")), ratings=d.get("ratings"),
@@ -698,6 +707,93 @@ def summarize(cache, games):
             print(f"  shared appId {a}: {titles}")
 
 
+# ---------------------------------------------------------------- details
+
+def iso_date(text):
+    """'Jun 6, 2019' -> '2019-06-06'."""
+    try:
+        return datetime.strptime(text, "%b %d, %Y").date().isoformat()
+    except (TypeError, ValueError):
+        return None
+
+
+def pegi_age(rating):
+    m = re.search(r"PEGI (\d+)", rating or "")
+    return int(m.group(1)) if m else None
+
+
+def details_for(app_id):
+    """Store data the cards don't need: (cache fields, detail file) or (None, None).
+    Age rating from a European store (PEGI) and the US one (ESRB); the rest from the US store."""
+    us = app_details(app_id, "en", "us")
+    if not us or not us.get("title"):
+        return None, None
+    eu = app_details(app_id, "en", "nl") or {}
+    updated = us.get("updated")
+    small = {
+        "pegi": pegi_age(eu.get("contentRating")),
+        "esrb": us.get("contentRating"),
+        "price": us.get("price") if isinstance(us.get("price"), (int, float)) else None,
+        "currency": us.get("currency"),
+        "iap": bool(us.get("offersIAP")),
+        "released": iso_date(us.get("released")),
+        "updated": date.fromtimestamp(updated).isoformat() if isinstance(updated, (int, float)) and updated > 0 else None,
+        "detailsChecked": date.today().isoformat(),
+    }
+    big = {
+        "summary": us.get("summary"),
+        "description": re.sub(r"\n{3,}", "\n\n", re.sub(r"\r\n?", "\n", us.get("description") or "").strip()),
+        "esrbNotes": us.get("contentRatingDescription"),
+        "pegiNotes": eu.get("contentRatingDescription"),
+        "iapPrices": us.get("inAppProductPrice"),
+        "video": us.get("video"),
+        "header": us.get("headerImage"),
+        "screenshots": [x for x in (us.get("screenshots") or []) if x][:MAX_SHOTS],
+        "website": us.get("developerWebsite"),
+    }
+    big.update({k: small[k] for k in ("pegi", "esrb", "price", "currency", "iap", "released", "updated")})
+    return small, big
+
+
+def run_details(args, games, order, cache, today):
+    """--details: fetch detail-view data for every matched app, --jobs threads."""
+    by_app = {}
+    for g in games:
+        e = cache.get(g["title"]) or {}
+        if e.get("appId") and (args.recheck == "all" or e.get("detailsChecked") != today
+                               or not (DETAILS_DIR / f"{e['appId']}.json").exists()):
+            by_app.setdefault(e["appId"], []).append(g["title"])
+    apps = sorted(by_app)
+    print(f"{len(apps)} apps to fetch details for", flush=True)
+    DETAILS_DIR.mkdir(exist_ok=True)
+    lock, done = threading.Lock(), [0]
+
+    def run(chunk):
+        _tls.throttle = Throttle(args.delay)
+        for a in chunk:
+            small, big = details_for(a)
+            with lock:
+                done[0] += 1
+                if small:
+                    (DETAILS_DIR / f"{a}.json").write_text(json.dumps(big, ensure_ascii=False, separators=(",", ":")),
+                                                           encoding="utf-8")
+                    for t in by_app[a]:
+                        cache[t] = dict(cache[t], **small)
+                print(f"[{done[0]}/{len(apps)}] {a} -> " + (f"PEGI {small['pegi']}, {small['esrb']}, "
+                      f"{small['price']} {small['currency']}, released {small['released']}" if small else "no store page"),
+                      flush=True)
+                if done[0] % 50 == 0:
+                    save_cache(cache, order)
+
+    jobs = max(1, args.jobs)
+    with ThreadPoolExecutor(max_workers=jobs) as pool:
+        for f in as_completed([pool.submit(run, apps[k::jobs]) for k in range(jobs)]):
+            f.result()
+    save_cache(cache, order)
+    if args.commit_every:
+        git_commit(f"Fetch detail-view data: {done[0]} apps", args.push)
+
+
 # ---------------------------------------------------------------- regions
 
 def region_todo(e, cc, recheck, today):
@@ -788,6 +884,9 @@ def main():
     ap.add_argument("--region", nargs="+", metavar="CC", type=str.lower,
                     help="check which matched apps these countries' Play Stores offer (two-letter codes, "
                          "e.g. nl de); resumes where a check stopped today")
+    ap.add_argument("--details", action="store_true",
+                    help="fetch detail-view data (description, trailer, age ratings, price, dates) for every "
+                         "matched app into details/ and the cache; resumes where a run stopped today")
     ap.add_argument("--jobs", type=int, default=1, metavar="N",
                     help="with --region: N threads, one country each (a country gets several when N is "
                          "larger than the number of countries); default 1")
@@ -823,6 +922,11 @@ def main():
         return {"all": True, "nulls": e.get("appId") is None, "doubtful": doubtful}.get(args.recheck, False)
 
     today = date.today().isoformat()
+    if args.details:
+        run_details(args, games, order, cache, today)
+        if not args.no_build:
+            rebuild()
+        return
     if args.region:
         run_regions(args, games, order, cache, today)
         if not args.no_build:
@@ -845,6 +949,11 @@ def main():
             return f"Refresh Play Store data: {done}/{len(queue)} games"
         return f"Cache Play Store data: {sum(1 for x in order if x in cache)}/{len(order)} games"
 
+    # first day each app was seen with the badge, whichever title it came in under
+    first_seen = {}
+    for x in cache.values():
+        if x.get("appId") and x.get("firstSeen"):
+            first_seen[x["appId"]] = min(first_seen.get(x["appId"], x["firstSeen"]), x["firstSeen"])
     done = 0
     try:
         for i, g in enumerate(queue, 1):
@@ -863,6 +972,10 @@ def main():
                            f"{' PP' if e['playPass'] else ''} shots={len(e['screenshots'])}"
                 else:
                     info = f"NULL ({e['reason']})"
+            if e.get("appId") and first_seen.get(e["appId"]):
+                e["firstSeen"] = first_seen[e["appId"]]
+            elif e.get("appId") and e.get("firstSeen"):
+                first_seen[e["appId"]] = e["firstSeen"]
             cache[t] = e
             done += 1
             print(f"[{i}/{len(queue)}] {t} -> {info}", flush=True)

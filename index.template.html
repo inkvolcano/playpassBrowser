@@ -75,13 +75,15 @@ a { color: inherit; }
   box-shadow: var(--shadow);
   overflow: hidden;
 }
-.pass-main { padding: clamp(18px, 3.2vw, 34px) clamp(18px, 3.4vw, 40px); min-width: 0; }
+.pass-main { position: relative; padding: clamp(18px, 3.2vw, 34px) clamp(18px, 3.4vw, 40px); min-width: 0; }
+.theme-btn { position: absolute; top: 14px; right: 14px; width: 40px; height: 40px; padding: 0; justify-content: center; border-radius: 50%; }
 .eyebrow {
   margin: 0 0 6px;
   font: 500 11px/1.4 var(--f-mono);
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--brass-ink);
+  padding-right: 48px;
 }
 h1 {
   margin: 0;
@@ -275,7 +277,45 @@ h1 {
 .genre small { font: 400 10.5px/1 var(--f-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
 .genre[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--surface); }
 .genre[aria-pressed="true"] small { color: inherit; opacity: 0.75; }
-.status { margin: 0; font: 400 12px/1.4 var(--f-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.status-row { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; }
+.status { flex: 1 1 16em; margin: 0; font: 400 12px/1.4 var(--f-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.active { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.active:empty { display: none; }
+.linkish {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font: 500 12px/1.4 var(--f-mono);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 26px;
+  padding: 0 4px 0 11px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--surface);
+  font: 600 12px/1 var(--f-body);
+}
+.filter-chip button {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgb(127 127 127 / 0.4);
+  color: inherit;
+  font: 600 13px/1 var(--f-body);
+  cursor: pointer;
+}
 @media (max-width: 640px) {
   .genres { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: -16px; padding-inline: 16px; }
   .genres::-webkit-scrollbar { display: none; }
@@ -284,10 +324,11 @@ h1 {
   .ghost { padding: 0 10px; }
 }
 @media (max-width: 900px) { .ghost .label { display: none; } }
-@media (max-width: 760px) {
+@media (max-width: 920px) {
   /* search gets its own row; the menus share the next one */
   .search { flex-basis: 100%; }
   .select { flex: 1 1 0; min-width: 0; }
+  #sort-box { flex-grow: 1.35; }
   .select select { flex: 1 1 0; min-width: 0; max-width: none; }
 }
 @media (max-width: 460px) {
@@ -297,6 +338,7 @@ h1 {
   .select select { padding-right: 22px; }
   .select::after { right: 9px; }
 }
+@media (max-width: 350px) { .select select { font-size: 12.5px; } #sort-box { flex-grow: 1.6; } }
 
 /* ---------- grid + cards ---------- */
 main { margin-top: 18px; }
@@ -349,8 +391,17 @@ button.shots { cursor: pointer; }
   font: 500 10.5px/1 var(--f-mono);
   font-variant-numeric: tabular-nums;
 }
+.pills { position: absolute; top: 8px; left: 8px; display: flex; gap: 4px; }
+.pill-new {
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: oklch(80% 0.17 150);
+  color: #06210f;
+  font: 750 10px/1.1 var(--f-body);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
 .pass-tag {
-  position: absolute; top: 8px; left: 8px;
   display: inline-flex; align-items: center; gap: 4px;
   padding: 3px 8px 3px 6px;
   border-radius: 999px;
@@ -393,7 +444,11 @@ button.shots:hover img { filter: brightness(1.08); }
 }
 .txt { min-width: 0; }
 .title { margin: 0; font: 650 15px/1.25 var(--f-body); overflow-wrap: anywhere; text-wrap: balance; }
+.title .open, .dev button { padding: 0; border: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.title .open:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.icon[data-open] { cursor: pointer; }
 .dev { margin: 3px 0 0; font-size: 12.5px; line-height: 1.3; color: var(--muted); overflow-wrap: anywhere; }
+.dev button:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
 /* rating line: items wrap as whole units; a separator that lands at the start of a line is clipped */
 .rate { margin: 4px 0 0; overflow: hidden; font: 650 13px/1.3 var(--f-body); font-variant-numeric: tabular-nums; }
 .rate-in { display: flex; flex-wrap: wrap; align-items: baseline; margin-left: -13px; }
@@ -435,6 +490,64 @@ button.shots:hover img { filter: brightness(1.08); }
 .links a.store:hover { filter: brightness(1.05); }
 .empty { padding: 48px 16px; text-align: center; color: var(--muted); }
 .empty button { margin-top: 12px; }
+/* ---------- detail view ---------- */
+dialog.detail {
+  width: min(780px, calc(100vw - 32px));
+  max-height: calc(100vh - 40px);
+  max-height: calc(100dvh - 40px);
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 24px 64px rgb(0 0 0 / 0.35);
+  overflow: hidden;
+}
+dialog.detail[open] { display: flex; flex-direction: column; }
+dialog.detail::backdrop { background: rgb(8 10 20 / 0.6); }
+.d-scroll { overflow-y: auto; overscroll-behavior: contain; }
+.d-close {
+  position: absolute; top: 10px; right: 10px; z-index: 2;
+  width: 38px; height: 38px;
+  border: 1px solid var(--line); border-radius: 50%;
+  background: var(--surface); color: var(--ink);
+  font: 400 22px/1 var(--f-body);
+  cursor: pointer;
+}
+.d-banner { display: block; width: 100%; aspect-ratio: 1024 / 500; max-height: 230px; object-fit: cover; background: var(--screen); }
+.d-head { display: flex; gap: 14px; align-items: center; padding: 16px 60px 8px 18px; }
+.d-head .icon { width: 64px; height: 64px; border-radius: 16px; }
+.d-title { margin: 0; font: 750 21px/1.2 var(--f-body); overflow-wrap: anywhere; }
+.d-sub { margin: 4px 0 0; font-size: 13px; color: var(--muted); }
+.d-sub .linkish { font: inherit; }
+.d-head .rate { margin-top: 6px; }
+.d-gallery { display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x proximity; padding: 8px 18px 14px; }
+.d-gallery img { flex: none; height: 220px; width: auto; max-width: 92%; border-radius: 10px; background: var(--screen); scroll-snap-align: start; }
+.d-facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px 18px; margin: 0; padding: 4px 18px 14px; }
+.d-facts dt { font: 500 10.5px/1.3 var(--f-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.d-facts dd { margin: 3px 0 0; font-size: 14px; line-height: 1.45; }
+.d-section { padding: 0 18px 14px; }
+.d-section > p { margin: 0 0 10px; }
+.d-summary { font-weight: 650; }
+.d-desc-text { font-size: 14.5px; line-height: 1.6; overflow-wrap: anywhere; }
+.d-desc-text p { margin: 0 0 10px; }
+.d-desc-text.clamped { max-height: 12.5em; overflow: hidden; -webkit-mask-image: linear-gradient(#000 60%, transparent); mask-image: linear-gradient(#000 60%, transparent); }
+.d-tags { padding: 0 18px 14px; }
+.d-links { flex-wrap: wrap; gap: 6px; padding: 4px 18px 20px; }
+.d-links button {
+  display: inline-flex; align-items: center; gap: 5px;
+  height: 30px; padding: 0 10px;
+  border-radius: 8px; border: 1px solid var(--line);
+  background: var(--surface-2); color: var(--ink);
+  font: 600 12px/1 var(--f-body);
+  cursor: pointer;
+}
+.muted { color: var(--muted); }
+@media (max-width: 560px) {
+  dialog.detail { width: 100%; max-width: 100%; height: 100%; max-height: 100%; margin: 0; border: 0; border-radius: 0; }
+  .d-gallery img { height: 180px; }
+  .d-links a span, .d-links button span { display: inline; }
+}
 footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
 footer p { margin: 0 0 6px; max-width: 75ch; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }
@@ -447,8 +560,11 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     <div class="pass-main">
       <p class="eyebrow">Google Play Pass catalogue</p>
       <h1>Play Pass Browser</h1>
-      <p class="lede" id="lede">Every game in Google Play Pass, with screenshots, icons and links from the Play Store. Tap a screenshot to see the next one.</p>
+      <p class="lede" id="lede">Every game in Google Play Pass, with screenshots, icons and links from the Play Store. Tap a title for details, a screenshot to see the next one.</p>
       <p class="sources" id="sources"></p>
+      <button type="button" class="ghost theme-btn" id="theme" aria-label="Theme: match system">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg>
+      </button>
     </div>
     <div class="stub" aria-label="Catalogue size">
       <span class="stub-num" id="stub-num">0</span>
@@ -467,28 +583,38 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         <input id="q" type="search" placeholder="Search games or developers" autocomplete="off" spellcheck="false">
       </label>
-      <label class="select"><span>Sort</span>
+      <label class="select" id="sort-box"><span>Sort</span>
         <select id="sort">
           <option value="az">A–Z</option>
           <option value="popular">Most popular</option>
           <option value="rating">Top rated</option>
+          <option value="newest">Newest</option>
           <option value="genre">By genre</option>
         </select>
       </label>
       <label class="select" id="tag-box"><span>Tag</span>
         <select id="tag"><option value="-1">All tags</option></select>
       </label>
+      <label class="select" id="age-box" title="Only games with this PEGI age rating or lower"><span>Max age</span>
+        <select id="age">
+          <option value="0">All ages</option>
+          <option value="3">PEGI 3</option>
+          <option value="7">PEGI 7</option>
+          <option value="12">PEGI 12</option>
+          <option value="16">PEGI 16</option>
+        </select>
+      </label>
       <button type="button" class="ghost" id="only-pass" aria-pressed="false" title="Show only games that carry the Play Pass badge on the Play Store">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3a2 2 0 0 0 0-4z" fill="currentColor"/></svg>
         <span><span class="wide-only">In </span>Play Pass</span>
       </button>
-      <button type="button" class="ghost" id="theme" aria-label="Theme: match system">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg>
-        <span class="label" id="theme-label">System</span>
-      </button>
     </div>
     <div class="genres" id="genres" role="group" aria-label="Filter by genre"></div>
-    <p class="status" id="status" aria-live="polite"></p>
+    <div class="status-row">
+      <p class="status" id="status" aria-live="polite"></p>
+      <span class="active" id="active"></span>
+      <button type="button" class="linkish" id="copy">Copy link</button>
+    </div>
   </div>
 </div>
 
@@ -504,9 +630,15 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     <p id="foot-store"></p>
     <p id="foot-pass"></p>
     <p id="foot-region"></p>
+    <p id="foot-new"></p>
     <p id="foot-rating"></p>
   </footer>
 </div>
+
+<dialog class="detail" id="detail" aria-labelledby="d-title">
+  <button type="button" class="d-close" id="d-close" aria-label="Close details">×</button>
+  <div class="d-scroll" id="d-body"></div>
+</dialog>
 
 <script id="data" type="application/json">__DATA__</script>
 <script>
@@ -538,18 +670,32 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   const REGIONS = D.regions && D.regions.length ? D.regions : [{ code: "US", tz: [] }];
   const ALL_REGIONS = (1 << REGIONS.length) - 1;
 
-  // games: [title, genreIndex, appId, icon, [screenshots], developer, playStoreTitle, inPlayPass 1/0/null,
-  //         starRating, numberOfRatings, installs, [tag indexes into D.tags], region bits,
-  //         per-region store id when a country sells its own edition (or null)]
+  // games: [title (store name), genreIndex, appId, icon, [screenshots], developer, YTECHB's name when it differs,
+  //         inPlayPass 1/0/null, starRating, numberOfRatings, installs, [tag indexes into D.tags], region bits,
+  //         per-region store id when a country sells its own edition (or null), PEGI age, first day seen with
+  //         the Play Pass badge, release date, store category (apps only)]
   const games = D.games.map((g, i) => {
-    const [title, gi, appId, icon, shots, dev, matched, pass, rating, ratings, installs, tagIds, rbits, alt] = g;
+    const [title, gi, appId, icon, shots, dev, listedAs, pass, rating, ratings, installs, tagIds, rbits, alt,
+           pegi, firstSeen, released, category] = g;
     const genre = D.genres[gi];
     const tags = (tagIds || []).map((t) => D.tags[t]);
-    return { i, title, gi, genre, appId, icon, shots: shots || [], dev, matched, pass, rating, ratings,
+    return { i, title, gi, genre, appId, icon, shots: shots || [], dev, listedAs, pass, rating, ratings,
              installs: installs || 0, tagIds: tagIds || [], rbits: rbits ?? ALL_REGIONS, alt: alt || null,
-             key: norm([title, dev, matched, ...tags].filter(Boolean).join(" ")), el: null };
+             pegi: pegi ?? null, firstSeen: firstSeen || null, released: released || null, category: category || null,
+             key: norm([title, dev, listedAs, category, ...tags].filter(Boolean).join(" ")), el: null };
   });
   const confirmedOnly = !!D.meta.confirmedOnly;
+  const APPS = D.genres.indexOf("Apps");  // Play Pass apps that aren't games get their own section
+  const isApp = (g) => g.gi === APPS;
+  // "New": added to Play Pass in the last 30 days (tracked since D.meta.trackingSince), or released in the
+  // last 30 days (a game can't join Play Pass before it's out).
+  const NEW_DAYS = 30, since = D.meta.trackingSince, now = Date.now();
+  const daysSince = (iso) => iso ? (now - Date.parse(iso + "T00:00:00Z")) / 864e5 : Infinity;
+  games.forEach((g) => {
+    const added = g.firstSeen && since && g.firstSeen > since ? daysSince(g.firstSeen) : Infinity;
+    const out = daysSince(g.released);
+    g.isNew = added <= NEW_DAYS || (out >= 0 && out <= NEW_DAYS);
+  });
   // Tags: the store's own genre names go in their own group of the Tag menu.
   const STORE_GENRES = new Set(["Action", "Adventure", "Arcade", "Board", "Card", "Casino", "Casual", "Educational",
     "Music", "Puzzle", "Racing", "Role Playing", "Simulation", "Sports", "Strategy", "Trivia", "Word"]);
@@ -560,7 +706,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   // Card chips skip the tag that repeats the card's genre and put tags most games
   // share (Single player, Offline, Casual...) after the more telling ones.
   games.forEach((g) => {
-    const own = new Set(g.genre.split("&").map(letters));
+    const own = new Set((g.category || g.genre).split("&").map(letters));
     const common = (t) => tagCounts[t] > games.length / 3;
     g.chips = g.tagIds.filter((t) => !own.has(letters(D.tags[t])))
       .sort((a, b) => common(a) - common(b));
@@ -576,8 +722,12 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   // Most popular: Play Store downloads, then number of ratings.
   const byPopular = games.slice().sort((a, b) => b.installs - a.installs || (b.ratings || 0) - (a.ratings || 0)
     || collator.compare(a.title, b.title));
-  const ORDERS = { az: byTitle, popular: byPopular, rating: byRating };
-  const SORT_NOTE = { popular: ", most popular first", rating: ", highest rated first" };
+  // Newest: latest to join Play Pass first, then latest released.
+  const byNewest = games.slice().sort((a, b) => (b.firstSeen || "").localeCompare(a.firstSeen || "")
+    || (b.released || "").localeCompare(a.released || "") || collator.compare(a.title, b.title));
+  const ORDERS = { az: byTitle, popular: byPopular, rating: byRating, newest: byNewest };
+  const SORT_NOTE = { popular: ", most popular first", rating: ", highest rated first", newest: ", newest first" };
+  const SORTS = ["az", "popular", "rating", "newest", "genre"];
 
   function hash(s) {
     let h = 2166136261;
@@ -599,10 +749,17 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     store: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z" fill="currentColor"/></svg>',
     video: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m10.5 9.5 4.5 2.5-4.5 2.5z" fill="currentColor"/></svg>',
     images: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="10" r="1.6" fill="currentColor"/><path d="m5 17 4.5-4.5 3 3 2.5-2.5L19 17" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>',
-    ticket: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3a2 2 0 0 0 0-4z" fill="currentColor"/></svg>'
+    ticket: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3a2 2 0 0 0 0-4z" fill="currentColor"/></svg>',
+    share: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
   };
   const passTag = (g) => confirmedOnly ? "" : g.pass === 1 ? `<span class="pass-tag yes">${ICONS.ticket}Play Pass</span>`
     : g.pass === 0 ? '<span class="pass-tag no">Not in Play Pass</span>' : "";
+  const pills = (g) => {
+    const p = (g.isNew ? '<span class="pill-new">New</span>' : "") + passTag(g);
+    return p ? `<span class="pills">${p}</span>` : "";
+  };
+  const enc = (s) => encodeURIComponent(s);
+  const storeHref = (id) => `https://play.google.com/store/apps/details?id=${enc(id)}`;
 
   function shotsHtml(g) {
     const n = g.shots.length;
@@ -610,7 +767,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       return `<div class="shots cover" style="${coverVars(g)}"><b aria-hidden="true">${esc(initials(g.title))}</b>` +
              `<em>No Play Store match</em></div>`;
     }
-    const pic = `<img src="${esc(img(g.shots[0], SHOT))}" alt="" loading="lazy" decoding="async">${passTag(g)}`;
+    const pic = `<img src="${esc(img(g.shots[0], SHOT))}" alt="" loading="lazy" decoding="async">${pills(g)}`;
     if (n === 1) return `<div class="shots">${pic}</div>`;
     const dots = Array.from({ length: n }, (_, k) => `<i${k ? "" : ' class="on"'}></i>`).join("");
     return `<button type="button" class="shots" data-i="${g.i}" data-k="0" aria-label="${esc(g.title)}: screenshot 1 of ${n}, show next">` +
@@ -637,24 +794,23 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     }
     return items.length ? `<p class="rate"><span class="rate-in">${items.join("")}</span></p>` : "";
   }
+  const iconHtml = (g, size) => g.icon
+    ? `<img class="icon" src="${esc(img(g.icon, ICON))}" alt="" width="${size}" height="${size}" loading="lazy" decoding="async" data-open="${g.i}">`
+    : `<span class="icon tile" style="${coverVars(g)}" aria-hidden="true" data-open="${g.i}">${esc(initials(g.title))}</span>`;
   function cardHtml(g) {
-    const q = (s) => encodeURIComponent(s);
-    const storeUrl = g.appId ? `https://play.google.com/store/apps/details?id=${q(g.appId)}`
-                             : `https://play.google.com/store/search?q=${q(g.title)}&c=apps`;
-    const icon = g.icon
-      ? `<img class="icon" src="${esc(img(g.icon, ICON))}" alt="" width="48" height="48" loading="lazy" decoding="async">`
-      : `<span class="icon tile" style="${coverVars(g)}" aria-hidden="true">${esc(initials(g.title))}</span>`;
+    const storeUrl = g.appId ? storeHref(g.appId) : `https://play.google.com/store/search?q=${enc(g.title)}&c=apps`;
     return `<article class="card" style="--h:${HUES[g.genre] ?? 250}">` +
       shotsHtml(g) +
-      `<div class="meta">${icon}<div class="txt"><h3 class="title">${esc(g.title)}</h3>` +
-      (g.dev ? `<p class="dev">${esc(g.dev)}</p>` : `<p class="dev">Not matched on the Play Store</p>`) +
+      `<div class="meta">${iconHtml(g, 48)}<div class="txt"><h3 class="title"><button type="button" class="open" data-open="${g.i}">${esc(g.title)}</button></h3>` +
+      (g.dev ? `<p class="dev"><button type="button" data-dev="${g.i}" aria-label="Show everything by ${esc(g.dev)}">${esc(g.dev)}</button></p>`
+             : `<p class="dev">Not matched on the Play Store</p>`) +
       rateHtml(g) +
       `</div></div>` +
       tagsHtml(g) +
-      `<div class="foot"><span class="tag" style="--h:${HUES[g.genre] ?? 250}">${esc(g.genre)}</span><nav class="links" aria-label="Links for ${esc(g.title)}">` +
+      `<div class="foot"><span class="tag" style="--h:${HUES[g.genre] ?? 250}">${esc(g.category || g.genre)}</span><nav class="links" aria-label="Links for ${esc(g.title)}">` +
       `<a class="store" href="${esc(storeUrl)}" target="_blank" rel="noopener" aria-label="${g.appId ? "Open" : "Search for"} ${esc(g.title)} on Google Play">${ICONS.store}<span>${g.appId ? "Play" : "Find"}</span></a>` +
-      `<a href="https://www.youtube.com/results?search_query=${q(g.title + " gameplay")}" target="_blank" rel="noopener" aria-label="Search YouTube for ${esc(g.title)} gameplay">${ICONS.video}<span>Gameplay</span></a>` +
-      `<a href="https://www.google.com/search?tbm=isch&amp;q=${q(g.title + " game")}" target="_blank" rel="noopener" aria-label="Search Google Images for ${esc(g.title)}">${ICONS.images}<span>Images</span></a>` +
+      `<a href="https://www.youtube.com/results?search_query=${enc(g.title + (isApp(g) ? "" : " gameplay"))}" target="_blank" rel="noopener" aria-label="Search YouTube for ${esc(g.title)}${isApp(g) ? "" : " gameplay"}">${ICONS.video}<span>${isApp(g) ? "Videos" : "Gameplay"}</span></a>` +
+      `<a href="https://www.google.com/search?tbm=isch&amp;q=${enc(g.title + (isApp(g) ? " app" : " game"))}" target="_blank" rel="noopener" aria-label="Search Google Images for ${esc(g.title)}">${ICONS.images}<span>Images</span></a>` +
       `</nav></div></article>`;
   }
 
@@ -687,21 +843,27 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     }
     return 0;
   }
-  let region = guessRegion();
+  const homeRegion = guessRegion();  // the visitor's own country (links only mention another one)
+  let region = homeRegion;
   const inRegion = (g) => (g.rbits >> region) & 1;
   $("region").innerHTML = REGIONS.map((r, i) => ({ r, i })).sort((a, b) => collator.compare(regionName(a.r), regionName(b.r)))
     .map(({ r, i }) => `<option value="${i}">${esc(regionName(r))}</option>`).join("");
-  $("region").value = String(region);
   $("region-box").hidden = REGIONS.length < 2;
   const fromGoogle = m.fromGoogle || 0;
+  const appCount = games.filter(isApp).length;
   $("sources").innerHTML = `List: <a href="${esc(m.listUrl)}" target="_blank" rel="noopener">YTECHB</a>, updated ${esc(dateText(m.listUpdated))}` +
     (fromGoogle ? ` + ${fmt.format(fromGoogle)} found on Google Play` : "") + ` · Store data: ${esc(dateText(m.passChecked || m.storeChecked))}`;
   $("foot-list").innerHTML = `Game list: <a href="${esc(m.listUrl)}" target="_blank" rel="noopener">YTECHB's Play Pass list</a>, updated ${esc(dateText(m.listUpdated))}` +
     (fromGoogle ? `, plus ${fmt.format(fromGoogle)} games it doesn't have, found by following Google Play's own Play Pass badges from game to game` : "") +
-    `. Genres follow YTECHB's sections, with Trivia and Word merged` + (fromGoogle ? `; games found on Google Play use the store's genre.` : ".");
+    `. Genres follow YTECHB's sections, with Trivia and Word merged` + (fromGoogle ? `; games found on Google Play use the store's genre.` : ".") +
+    (appCount ? ` The ${fmt.format(appCount)} Play Pass apps that aren't games were found the same way and are under Apps.` : "") +
+    ` Titles are the Play Store's own; the names YTECHB uses still work in the search.`;
   $("foot-rating").textContent = `Most popular sorts by Play Store downloads. Top rated uses a weighted average: games with few ` +
     `ratings are pulled toward the catalogue average of ${meanRating.toFixed(1)}, so a 5.0 from a handful of ratings doesn't ` +
     `outrank a 4.8 from thousands.`;
+  $("foot-new").textContent = `“New” marks games added to Play Pass in the last ${NEW_DAYS} days` +
+    (since ? ` (tracked since ${dateText(since)})` : "") + ` or released in the last ${NEW_DAYS} days; Newest sorts by the same dates. ` +
+    `Age ratings are PEGI ratings from the Dutch Play Store; picking an age hides games without one.`;
 
   const tagOptions = (pick) => D.tags.map((name, t) => ({ name, t })).filter((x) => tagCounts[x.t] && pick(x.name))
     .sort((a, b) => collator.compare(a.name, b.name))
@@ -714,54 +876,62 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     `<button type="button" class="genre all" data-g="-1" aria-pressed="true">All <small></small></button>` +
     D.genres.map((name, gi) => `<button type="button" class="genre" data-g="${gi}" style="--h:${HUES[name] ?? 250}" aria-pressed="false">${esc(name)} <small></small></button>`).join("");
 
-  // Everything that counts games follows the region: the stub, chips, Tag menu, footer.
-  let pool = [];  // games the current region's store offers
-  function renderRegion() {
-    pool = games.filter(inRegion);
-    // a country that sells its own edition of a game gets a Play link to that edition
-    games.forEach((g) => {
-      if (g.alt) g.el.querySelector("a.store").href = `https://play.google.com/store/apps/details?id=${encodeURIComponent(g.alt[region] || g.appId)}`;
-    });
-    const r = REGIONS[region];
-    const withShots = pool.filter((g) => g.shots.length).length;
-    $("stub-num").textContent = fmt.format(pool.length);
-    $("stub-small").innerHTML = confirmedOnly
-      ? `in Play Pass<br>checked ${esc(shortDate(m.passChecked))}`
-      : `${fmt.format(withShots)} with screenshots<br>${fmt.format(pool.filter((g) => g.pass === 1).length)} in Play Pass`;
-    $("q").placeholder = `Search ${fmt.format(pool.length)} games or developers`;
+  // ----- state
+  const list = $("list"), q = $("q");
+  let genre = -1;
+  let sort = SORTS.includes(store.get("sort")) ? store.get("sort") : "az";
+  let tag = -1, age = 0, dev = "";
+  let onlyPass = !confirmedOnly && store.get("pass") === "1";
+  let groups = [];
+  let current = null;  // the game open in the detail view
+
+  // Everything that counts follows the region and the section (games, or apps).
+  let pool = [];  // what the current region's store offers in the current section
+  function renderCounts() {
+    const offered = games.filter(inRegion);
+    const gamesHere = offered.filter((g) => !isApp(g));
+    pool = genre === APPS ? offered.filter(isApp) : gamesHere;
+    $("stub-num").textContent = fmt.format(gamesHere.length);
+    $("q").placeholder = genre === APPS ? `Search ${fmt.format(pool.length)} apps` : `Search ${fmt.format(gamesHere.length)} games or developers`;
     const byGenre = D.genres.map(() => 0), byTag = D.tags.map(() => 0);
-    pool.forEach((g) => { byGenre[g.gi]++; g.tagIds.forEach((t) => { byTag[t]++; }); });
+    offered.forEach((g) => { byGenre[g.gi]++; });
+    pool.forEach((g) => g.tagIds.forEach((t) => { byTag[t]++; }));
     document.querySelectorAll(".genre small").forEach((el) => {
       const gi = Number(el.parentElement.dataset.g);
-      el.textContent = fmt.format(gi < 0 ? pool.length : byGenre[gi]);
+      el.textContent = fmt.format(gi < 0 ? gamesHere.length : byGenre[gi]);
     });
     $("tag").querySelectorAll("optgroup option").forEach((o) => {
       const t = Number(o.value);
       o.textContent = `${D.tags[t]} (${fmt.format(byTag[t])})`;
       o.disabled = !byTag[t] && t !== tag;
     });
+  }
+  function renderRegion() {
+    // a country that sells its own edition of a game gets a Play link to that edition
+    games.forEach((g) => {
+      if (g.alt) g.el.querySelector("a.store").href = storeHref(g.alt[region] || g.appId);
+    });
+    renderCounts();
+    const r = REGIONS[region];
+    const gamesHere = games.filter((g) => inRegion(g) && !isApp(g));
+    const withShots = gamesHere.filter((g) => g.shots.length).length;
+    $("stub-small").innerHTML = confirmedOnly
+      ? `in Play Pass<br>checked ${esc(shortDate(m.passChecked))}`
+      : `${fmt.format(withShots)} with screenshots<br>${fmt.format(gamesHere.filter((g) => g.pass === 1).length)} in Play Pass`;
     $("foot-store").textContent = `Screenshots, icons, ratings, downloads and tags come from the US Play Store, checked ${dateText(m.passChecked)}.` +
-      (pool.length > withShots ? ` ${fmt.format(pool.length - withShots)} games have no confident Play Store match; they show a generated cover and a Play Store search link instead.` : "");
+      (gamesHere.length > withShots ? ` ${fmt.format(gamesHere.length - withShots)} games have no confident Play Store match; they show a generated cover and a Play Store search link instead.` : "");
     $("foot-pass").textContent = confirmedOnly
       ? `Only games whose Play Store page showed the Play Pass badge on ${dateText(m.passChecked)} are listed. ` +
         `Of YTECHB's list, ${fmt.format(m.leftOutOfPass)} games no longer had it and ${fmt.format(m.leftOutUnmatched)} couldn't be found on the Play Store, so they're left out.`
       : `“Play Pass” marks games whose Play Store page showed the Play Pass badge on ${dateText(m.passChecked)}. ` +
-        `${fmt.format(pool.filter((g) => g.pass === 0).length)} matched games didn't, so they have probably left Play Pass; they're marked “Not in Play Pass”.`;
-    const missing = games.length - pool.length;
+        `${fmt.format(gamesHere.filter((g) => g.pass === 0).length)} matched games didn't, so they have probably left Play Pass; they're marked “Not in Play Pass”.`;
+    const missing = games.filter((g) => !isApp(g)).length - gamesHere.length;
     $("foot-region").textContent = REGIONS.length < 2 ? "" :
       (r.checked ? `In ${theName(r)}, a game is listed when a Play Store search from there finds it (checked ${dateText(r.checked)}); ` +
         (missing ? `${fmt.format(missing)} ${missing === 1 ? "game in the catalogue isn't" : "games in the catalogue aren't"} offered there. `
           : "every game in the catalogue is offered there. ") : "") +
       (region === 0 ? "The list itself comes from the US Play Store; pick your country in the header." : "Ratings are from the US store.");
   }
-
-  // ----- state
-  const list = $("list"), q = $("q");
-  let genre = -1;
-  let sort = ["popular", "rating", "genre"].includes(store.get("sort")) ? store.get("sort") : "az";
-  let tag = -1;
-  let onlyPass = !confirmedOnly && store.get("pass") === "1";
-  let groups = [];
 
   function layout() {
     list.textContent = "";
@@ -770,7 +940,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       const grid = document.createElement("div");
       grid.className = "grid";
       ORDERS[sort].forEach((g) => grid.append(g.el));
-      list.innerHTML = `<h2 class="sr-only">${{ az: "Games A to Z", popular: "Most popular games", rating: "Top rated games" }[sort]}</h2>`;
+      list.innerHTML = `<h2 class="sr-only">${{ az: "Games A to Z", popular: "Most popular games", rating: "Top rated games", newest: "Newest games" }[sort]}</h2>`;
       list.append(grid);
     } else {
       D.genres.forEach((name, gi) => {
@@ -790,44 +960,252 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   function apply() {
     const terms = norm(q.value).split(/\s+/).filter(Boolean);
     const shownBy = new Array(D.genres.length).fill(0);
-    let shown = 0, elsewhere = 0;  // elsewhere: matches the region's store doesn't offer
+    let shown = 0, elsewhere = 0, appHits = 0;  // elsewhere: matches the region's store doesn't offer
+    const passes = (g) => (tag < 0 || g.tagIds.includes(tag)) && (!onlyPass || g.pass === 1)
+      && (!age || (g.pegi != null && g.pegi <= age)) && (!dev || g.dev === dev) && terms.every((t) => g.key.includes(t));
     for (const g of games) {
-      const match = (genre < 0 || g.gi === genre) && (tag < 0 || g.tagIds.includes(tag)) && (!onlyPass || g.pass === 1)
-        && terms.every((t) => g.key.includes(t));
+      const inSection = genre < 0 ? !isApp(g) : g.gi === genre;  // "All" means all games
+      const match = inSection && passes(g);
       const ok = match && inRegion(g);
       g.el.hidden = !ok;
       if (ok) { shown++; shownBy[g.gi]++; } else if (match) elsewhere++;
+      else if (genre < 0 && isApp(g) && (terms.length || dev) && inRegion(g) && passes(g)) appHits++;
     }
     for (const grp of groups) {
-      grp.sec.hidden = shownBy[grp.gi] === 0;
-      grp.count.textContent = `${shownBy[grp.gi]} ${shownBy[grp.gi] === 1 ? "game" : "games"}`;
+      const n = shownBy[grp.gi];
+      grp.sec.hidden = n === 0;
+      grp.count.textContent = `${n} ${grp.gi === APPS ? (n === 1 ? "app" : "apps") : (n === 1 ? "game" : "games")}`;
     }
-    const noun = (genre < 0 ? "" : `${D.genres[genre]} `) + (shown === 1 ? "game" : "games");
+    const appsView = genre >= 0 && genre === APPS;
+    const kind = (n) => appsView ? (n === 1 ? "app" : "apps") : (genre < 0 ? "" : `${D.genres[genre]} `) + (n === 1 ? "game" : "games");
     const tagged = tag < 0 ? "" : ` tagged “${D.tags[tag]}”`;
-    const scope = noun + tagged + (onlyPass ? " in Play Pass" : "");
+    const rated = age ? ` rated PEGI ${age} or lower` : "";
+    const by = dev ? ` by ${dev}` : "";
+    const scope = (n) => kind(n) + tagged + rated + by + (onlyPass ? " in Play Pass" : "");
+    const filtered = (genre >= 0 && !appsView) || tag >= 0 || age || dev || onlyPass || terms.length;
     const notHere = elsewhere ? ` · ${fmt.format(elsewhere)} not offered ${inRegionName(REGIONS[region])}` : "";
-    $("status").textContent = (shown === pool.length
-      ? `Showing all ${fmt.format(shown)} games`
-      : `Showing ${fmt.format(shown)} ${scope}` + (terms.length ? ` matching “${q.value.trim()}”` : "")) +
-      (SORT_NOTE[sort] || "") + notHere;
+    $("status").textContent = (filtered
+      ? `Showing ${fmt.format(shown)} ${scope(shown)}` + (terms.length ? ` matching “${q.value.trim()}”` : "")
+      : `Showing all ${fmt.format(shown)} ${appsView ? "apps" : "games"}`) + (SORT_NOTE[sort] || "") + notHere;
+    $("active").innerHTML =
+      (dev ? `<span class="filter-chip">by ${esc(dev)}<button type="button" data-clear-dev aria-label="Stop showing only ${esc(dev)}">×</button></span>` : "") +
+      (appHits ? `<button type="button" class="linkish" data-goto-apps>${fmt.format(appHits)} matching ${appHits === 1 ? "app" : "apps"}</button>` : "");
     $("empty").hidden = shown > 0;
-    const none = (genre < 0 ? "" : `${D.genres[genre]} `) + "games" + tagged + (onlyPass ? " in Play Pass" : "");
+    const none = scope(2);
     $("empty-text").textContent = (terms.length ? `No ${none} match “${q.value.trim()}”` : `No ${none} to show`) +
-      (elsewhere ? ` ${inRegionName(REGIONS[region])}: ${fmt.format(elsewhere)} ${elsewhere === 1 ? "game" : "games"} would, but its Play Store doesn't offer ${elsewhere === 1 ? "it" : "them"}.` : ".");
+      (elsewhere ? ` ${inRegionName(REGIONS[region])}: ${fmt.format(elsewhere)} would, but its Play Store doesn't offer ${elsewhere === 1 ? "it" : "them"}.` : ".");
+    syncUrl(false);
   }
 
+  // ----- shareable links: the URL's #hash mirrors search, filters, sort, country and the open game
+  function urlParams(withCountry) {
+    const p = new URLSearchParams();
+    const text = q.value.trim();
+    if (text) p.set("q", text);
+    if (genre >= 0) p.set("genre", D.genres[genre]);
+    if (tag >= 0) p.set("tag", D.tags[tag]);
+    if (age) p.set("age", String(age));
+    if (dev) p.set("dev", dev);
+    if (sort !== "az") p.set("sort", sort);
+    if (REGIONS.length > 1 && (withCountry || region !== homeRegion)) p.set("country", REGIONS[region].code.toLowerCase());
+    if (current && current.appId) p.set("game", current.appId);
+    return p.toString();
+  }
+  function syncUrl(push) {
+    const s = urlParams(false);
+    if (s === location.hash.slice(1) && !push) return;
+    const url = location.pathname + location.search + (s ? "#" + s : "");
+    try {
+      if (push) history.pushState({ game: true }, "", url);
+      else history.replaceState(history.state, "", url);
+    } catch (e) { /* history unavailable (sandboxed frame) */ }
+  }
+  const shareUrl = () => location.href.split("#")[0] + "#" + urlParams(true);
+  // Read the #hash: on load, and when someone edits it or goes back/forward.
+  function readUrl() {
+    const p = new URLSearchParams(location.hash.slice(1));
+    q.value = p.get("q") || "";
+    genre = D.genres.indexOf(p.get("genre") || "");
+    tag = D.tags.indexOf(p.get("tag") || "");
+    age = [3, 7, 12, 16].includes(Number(p.get("age"))) ? Number(p.get("age")) : 0;
+    dev = p.get("dev") || "";
+    if (SORTS.includes(p.get("sort"))) sort = p.get("sort");
+    const r = REGIONS.findIndex((x) => x.code === (p.get("country") || "").toUpperCase());
+    region = r >= 0 ? r : homeRegion;
+    return p.get("game");
+  }
+  function showControls() {
+    document.querySelectorAll(".genre").forEach((x) => x.setAttribute("aria-pressed", String(Number(x.dataset.g) === genre)));
+    $("tag").value = String(tag);
+    $("tag-box").classList.toggle("active", tag >= 0);
+    $("age").value = String(age);
+    $("age-box").classList.toggle("active", age > 0);
+    $("region").value = String(region);
+    list.querySelectorAll(".tags [data-tag]").forEach((b) => b.setAttribute("aria-pressed", String(Number(b.dataset.tag) === tag)));
+  }
+  function onUrl() {
+    const before = sort;
+    const game = readUrl();
+    const g = game ? games.find((x) => x.appId === game) : null;
+    if (!g && current) closeDetail(true);  // first, so apply() doesn't write the game back into the URL
+    showControls();
+    renderRegion();
+    if (sort !== before) layout(); else apply();
+    if (g && current !== g) openDetail(g, false);
+  }
+  addEventListener("popstate", onUrl);
+  addEventListener("hashchange", onUrl);
+
+  async function share(url, title) {
+    if (navigator.share && matchMedia("(pointer: coarse)").matches) {
+      try { await navigator.share({ url, title }); return ""; } catch (e) { if (e && e.name === "AbortError") return ""; }
+    }
+    try { await navigator.clipboard.writeText(url); return "Link copied"; } catch (e) {
+      const ta = document.createElement("textarea");
+      ta.value = url; document.body.append(ta); ta.select();
+      let ok = false;
+      try { ok = document.execCommand("copy"); } catch (err) { /* no clipboard */ }
+      ta.remove();
+      return ok ? "Link copied" : "Copy this page's address";
+    }
+  }
+  function flash(btn, text) {
+    if (!text) return;
+    const label = btn.querySelector("span") || btn;
+    if (!btn.dataset.label) btn.dataset.label = label.textContent;
+    label.textContent = text;
+    clearTimeout(btn._t);
+    btn._t = setTimeout(() => { label.textContent = btn.dataset.label; }, 1800);
+  }
+  $("copy").addEventListener("click", async () => flash($("copy"), await share(shareUrl(), document.title)));
+
+  // ----- detail view
+  const dlg = $("detail"), dBody = $("d-body");
+  const details = new Map();  // appId -> detail file contents, or false when it can't be read
+  let pushed = false;
+  const money = (v, cur) => { try { return new Intl.NumberFormat("en", { style: "currency", currency: cur || "USD" }).format(v); } catch (e) { return `${v} ${cur || ""}`; } };
+  const paras = (text) => esc(text).replace(/\r\n?/g, "\n").split(/\n{2,}/).map((x) => `<p>${x.replace(/\n/g, "<br>")}</p>`).join("");
+  function renderDetail(g, d) {
+    const storeId = (g.alt && g.alt[region]) || g.appId;
+    const shots = d && d.screenshots && d.screenshots.length ? d.screenshots : g.shots;
+    const missing = REGIONS.filter((r, i) => !((g.rbits >> i) & 1));
+    const facts = [];
+    const pegi = g.pegi != null ? `PEGI ${g.pegi}` + (d && d.pegiNotes ? ` · ${esc(d.pegiNotes)}` : "") : "";
+    const esrb = d && d.esrb ? `ESRB ${esc(d.esrb)}` + (d.esrbNotes ? ` · ${esc(d.esrbNotes)}` : "") : "";
+    facts.push(["Age rating", [pegi, esrb].filter(Boolean).join("<br>") || (d === undefined ? "…" : d === false ? "Unknown" : "Not rated")]);
+    if (d) {
+      const price = d.price > 0 ? money(d.price, d.currency) : d.iap ? "Free, with in-app purchases" + (d.iapPrices ? ` (${esc(d.iapPrices)})` : "") : "Free";
+      facts.push(["Without Play Pass", price + (d.price > 0 || d.iap ? "<br><span class=\"muted\">Included in Play Pass</span>" : "")]);
+    }
+    if (g.rating) facts.push(["Rating", `★ ${g.rating.toFixed(1)} from ${fmt.format(g.ratings)} ratings`]);
+    if (g.installs) facts.push(["Downloads", fmt.format(g.installs)]);
+    if (g.released) facts.push(["Released", esc(dateText(g.released))]);
+    if (d && d.updated) facts.push(["Updated", esc(dateText(d.updated))]);
+    facts.push(["In Play Pass", g.firstSeen && since && g.firstSeen > since ? `Since ${esc(dateText(g.firstSeen))}`
+      : since ? `Since before ${esc(dateText(since))}` : "Yes"]);
+    if (REGIONS.length > 1) {
+      facts.push(["Countries", `Offered in ${REGIONS.length - missing.length} of ${REGIONS.length}` +
+        (missing.length ? `<br><span class="muted">Not in ${esc(missing.map(regionName).join(", "))}</span>` : "")]);
+    }
+    if (g.listedAs) facts.push(["YTECHB lists it as", esc(g.listedAs)]);
+    const video = d && d.video && (/(?:embed\/|v=)([\w-]{6,})/.exec(d.video) || [])[1];
+    let desc;
+    if (d === undefined) desc = `<p class="muted">Loading the description…</p>`;
+    else if (d === false) desc = `<p class="muted">The description couldn't be loaded` +
+      (location.protocol === "file:" ? " from a file on disk; it shows on the published page" : "") + `. Google Play has it.</p>`;
+    else {
+      const long = (d.description || "").length > 700;
+      desc = (d.summary ? `<p class="d-summary">${esc(d.summary)}</p>` : "") +
+        (d.description ? `<div class="d-desc-text${long ? " clamped" : ""}" id="d-desc">${paras(d.description)}</div>` +
+          (long ? `<button type="button" class="linkish" id="d-more" aria-expanded="false">Show full description</button>` : "") : "");
+    }
+    dBody.innerHTML =
+      (d && d.header ? `<img class="d-banner" src="${esc(img(d.header, "w1052"))}" alt="">` : "") +
+      `<div class="d-head">${iconHtml(g, 64).replace(/ data-open="\d+"/, "")}<div class="txt">` +
+      `<h2 class="d-title" id="d-title">${esc(g.title)}</h2>` +
+      `<p class="d-sub">${g.dev ? `<button type="button" class="linkish" data-ddev>${esc(g.dev)}</button> · ` : ""}${esc(g.category || g.genre)}` +
+      `${g.isNew ? ' · <span class="pill-new">New</span>' : ""}</p></div></div>` +
+      (shots.length ? `<div class="d-gallery" tabindex="0" aria-label="Screenshots">` +
+        shots.map((x, k) => `<img src="${esc(img(x, "h440"))}" alt="Screenshot ${k + 1} of ${shots.length}" loading="lazy" decoding="async">`).join("") + `</div>` : "") +
+      `<dl class="d-facts">${facts.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join("")}</dl>` +
+      (g.tagIds.length ? `<div class="tags d-tags">${g.tagIds.map((t) => `<button type="button" data-dtag="${t}">${esc(D.tags[t])}</button>`).join("")}</div>` : "") +
+      `<div class="d-section">${desc}</div>` +
+      `<nav class="links d-links" aria-label="Links for ${esc(g.title)}">` +
+      (storeId ? `<a class="store" href="${esc(storeHref(storeId))}" target="_blank" rel="noopener">${ICONS.store}<span>Google Play</span></a>` : "") +
+      (video ? `<a href="https://www.youtube.com/watch?v=${esc(video)}" target="_blank" rel="noopener">${ICONS.video}<span>Trailer</span></a>` : "") +
+      `<a href="https://www.youtube.com/results?search_query=${enc(g.title + (isApp(g) ? "" : " gameplay"))}" target="_blank" rel="noopener">${ICONS.video}<span>${isApp(g) ? "Videos" : "Gameplay"}</span></a>` +
+      `<a href="https://www.google.com/search?tbm=isch&amp;q=${enc(g.title + (isApp(g) ? " app" : " game"))}" target="_blank" rel="noopener">${ICONS.images}<span>Images</span></a>` +
+      `<button type="button" data-dshare>${ICONS.share}<span>Share</span></button>` +
+      `</nav>`;
+  }
+  function openDetail(g, push) {
+    current = g;
+    renderDetail(g, details.get(g.appId));
+    if (!dlg.open) dlg.showModal();
+    dBody.scrollTop = 0;
+    if (push) { syncUrl(true); pushed = true; } else syncUrl(false);
+    if (g.appId && !details.has(g.appId)) {
+      fetch(`details/${enc(g.appId)}.json`)
+        .then((r) => r.ok ? r.json() : Promise.reject(new Error(String(r.status))))
+        .then((d) => { details.set(g.appId, d); if (current === g) renderDetail(g, d); })
+        .catch(() => { details.set(g.appId, false); if (current === g) renderDetail(g, false); });
+    }
+  }
+  function closeDetail(fromHistory) {
+    if (!current) return;
+    const g = current;
+    current = null;
+    if (dlg.open) dlg.close();
+    if (!fromHistory) {
+      if (pushed && history.state && history.state.game) history.back();
+      else syncUrl(false);
+    }
+    pushed = false;
+    const opener = g.el.querySelector(".open");
+    if (opener && !g.el.hidden) opener.focus({ preventScroll: true });
+  }
+  dlg.addEventListener("close", () => { if (current) closeDetail(false); });  // Esc
+  dlg.addEventListener("click", (e) => { if (e.target === dlg) closeDetail(false); });  // the backdrop
+  $("d-close").addEventListener("click", () => closeDetail(false));
+  dBody.addEventListener("click", async (e) => {
+    const g = current;
+    if (!g) return;
+    if (e.target.closest("#d-more")) {
+      const b = $("d-more"), open = b.getAttribute("aria-expanded") === "true";
+      $("d-desc").classList.toggle("clamped", open);
+      b.setAttribute("aria-expanded", String(!open));
+      b.textContent = open ? "Show full description" : "Show less";
+    } else if (e.target.closest("[data-ddev]")) {
+      closeDetail(false); setDev(g.dev);
+    } else if (e.target.closest("[data-dtag]")) {
+      const t = Number(e.target.closest("[data-dtag]").dataset.dtag);
+      closeDetail(false); setTag(t); toTop();
+    } else if (e.target.closest("[data-dshare]")) {
+      flash(e.target.closest("[data-dshare]"), await share(shareUrl(), g.title));
+    }
+  });
+
+  // ----- filters
   let timer = 0;
   q.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(apply, 90); });
   q.addEventListener("keydown", (e) => { if (e.key === "Escape") { q.value = ""; apply(); } });
   document.addEventListener("keydown", (e) => {
-    if (e.key === "/" && document.activeElement !== q && !e.ctrlKey && !e.metaKey && !e.altKey) { e.preventDefault(); q.focus(); }
+    if (e.key === "/" && document.activeElement !== q && !dlg.open && !e.ctrlKey && !e.metaKey && !e.altKey) { e.preventDefault(); q.focus(); }
   });
+  function toTop() {
+    const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const top = list.getBoundingClientRect().top + scrollY - document.querySelector(".bar").offsetHeight - 12;
+    if (scrollY > top) window.scrollTo({ top, behavior: reduce ? "auto" : "smooth" });
+  }
+  function setGenre(gi) {
+    genre = gi;
+    showControls();
+    renderCounts();
+    apply();
+  }
   $("genres").addEventListener("click", (e) => {
     const b = e.target.closest(".genre");
-    if (!b) return;
-    genre = Number(b.dataset.g);
-    document.querySelectorAll(".genre").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
-    apply();
+    if (b) setGenre(Number(b.dataset.g));
   });
   $("only-pass").setAttribute("aria-pressed", String(onlyPass));
   $("only-pass").addEventListener("click", () => {
@@ -845,13 +1223,25 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   });
   function setTag(t) {
     tag = t;
-    $("tag").value = String(t);
-    $("tag-box").classList.toggle("active", t >= 0);
-    list.querySelectorAll(".tags [data-tag]").forEach((b) => b.setAttribute("aria-pressed", String(Number(b.dataset.tag) === t)));
+    showControls();
     apply();
   }
   $("tag").addEventListener("change", () => setTag(Number($("tag").value)));
+  $("age").addEventListener("change", () => { age = Number($("age").value); showControls(); apply(); });
+  function setDev(name) {
+    dev = name || "";
+    apply();
+    if (dev) toTop();
+  }
+  $("active").addEventListener("click", (e) => {
+    if (e.target.closest("[data-clear-dev]")) setDev("");
+    else if (e.target.closest("[data-goto-apps]")) setGenre(APPS);
+  });
   list.addEventListener("click", (e) => {
+    const opener = e.target.closest("[data-open]");
+    if (opener) { openDetail(games[Number(opener.dataset.open)], true); return; }
+    const byDev = e.target.closest("[data-dev]");
+    if (byDev) { setDev(games[Number(byDev.dataset.dev)].dev); return; }
     const more = e.target.closest("[data-more]");
     if (more) {
       // "+3": swap in the rest of the card's tags and move focus to the first of them
@@ -868,16 +1258,14 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     if (!b) return;
     const t = Number(b.dataset.tag);
     setTag(tag === t ? -1 : t);
-    const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const top = list.getBoundingClientRect().top + scrollY - document.querySelector(".bar").offsetHeight - 12;
-    if (scrollY > top) window.scrollTo({ top, behavior: reduce ? "auto" : "smooth" });
+    toTop();
   });
   $("clear").addEventListener("click", () => {
-    q.value = ""; genre = -1; onlyPass = false;
-    setTag(-1);
+    q.value = ""; genre = -1; tag = -1; age = 0; dev = ""; onlyPass = false;
     $("only-pass").setAttribute("aria-pressed", "false");
     store.set("pass", "");
-    document.querySelectorAll(".genre").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.g === "-1")));
+    showControls();
+    renderCounts();
     apply();
   });
 
@@ -909,7 +1297,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     const card = im.closest(".card"), g = games.find((x) => x.el === card);
     if (!g) return;
     if (im.classList.contains("icon")) {
-      im.outerHTML = `<span class="icon tile" style="${coverVars(g)}" aria-hidden="true">${esc(initials(g.title))}</span>`;
+      im.outerHTML = `<span class="icon tile" style="${coverVars(g)}" aria-hidden="true" data-open="${g.i}">${esc(initials(g.title))}</span>`;
     } else {
       const box = im.closest(".shots");
       const cover = document.createElement("div");
@@ -927,16 +1315,21 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     theme = t;
     if (t === "system") delete document.documentElement.dataset.theme;
     else document.documentElement.dataset.theme = t;
-    const label = { system: "System", light: "Light", dark: "Dark" }[t];
-    $("theme-label").textContent = label;
-    $("theme").setAttribute("aria-label", `Theme: ${t === "system" ? "match system" : label.toLowerCase()}. Change theme`);
+    const label = { system: "match system", light: "light", dark: "dark" }[t];
+    $("theme").setAttribute("aria-label", `Theme: ${label}. Change theme`);
+    $("theme").title = `Theme: ${label}`;
     store.set("theme", t);
   }
   $("theme").addEventListener("click", () => setTheme(THEMES[(THEMES.indexOf(theme) + 1) % THEMES.length]));
   setTheme(theme);
 
+  // ----- start: a shared link's #hash wins over remembered settings
+  const linked = location.hash.length > 1 ? readUrl() : null;
+  showControls();
   renderRegion();
   layout();
+  const first = linked && games.find((x) => x.appId === linked);
+  if (first) openDetail(first, false);
 })();
 </script>
 </body>

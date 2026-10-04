@@ -44,6 +44,7 @@ def short(url):
 
 
 GOOGLE_SOURCE = "Google Play"
+APPS = "Apps"  # Play Pass apps that aren't games (discover_games.py)
 
 
 def title_key(title):
@@ -143,7 +144,7 @@ def main(argv=None):
     nowhere = [g["title"] for g, e in shown if e.get("appId") and not any(offered(e, cc) for cc in regions)]
     shown = [(g, e) for g, e in shown if g["title"] not in nowhere]
 
-    genres = sorted({g["genre"] for g, _ in shown})
+    genres = sorted({g["genre"] for g, _ in shown}, key=lambda x: (x == APPS, x))  # Apps last
     genre_index = {name: i for i, name in enumerate(genres)}
     tag_counts = Counter(t for _, e in shown if e.get("appId") for t in (e.get("tags") or []))
     tags = [t for t, _ in sorted(tag_counts.items(), key=lambda kv: (-kv[1], kv[0]))]
@@ -153,16 +154,21 @@ def main(argv=None):
     for g, e in shown:
         app_id = e.get("appId")
         shots = [short(s) for s in (e.get("screenshots") or [])[:PAGE_SHOTS]] if app_id else []
-        matched = e.get("matched") if app_id and e.get("matched") != g["title"] else None
+        # cards show the store's own title; YTECHB's name (often misspelled or outdated) stays searchable
+        name = e.get("matched") if app_id and e.get("matched") else g["title"]
+        listed_as = g["title"] if title_key(g["title"]) != title_key(name) else None
         in_pass = {True: 1, False: 0}.get(e.get("playPass")) if app_id else None
         rated = app_id and e.get("rating") and e.get("ratings")
-        rows.append([g["title"], genre_index[g["genre"]], app_id, short(e.get("icon")) if app_id else None,
-                     shots, e.get("developer") if app_id else None, matched, in_pass,
+        rows.append([name, genre_index[g["genre"]], app_id, short(e.get("icon")) if app_id else None,
+                     shots, e.get("developer") if app_id else None, listed_as, in_pass,
                      e["rating"] if rated else None, e["ratings"] if rated else None,
                      e.get("installs") if app_id else None,
                      [tag_index[t] for t in (e.get("tags") or [])] if app_id else [],
                      sum(1 << i for i, cc in enumerate(regions) if not app_id or offered(e, cc)),
-                     alt_ids(e, regions) if app_id else None])
+                     alt_ids(e, regions) if app_id else None,
+                     e.get("pegi") if app_id else None, e.get("firstSeen") if app_id else None,
+                     e.get("released") if app_id else None,
+                     e.get("playGenre") if app_id and g["genre"] == APPS else None])
         if e.get("checked"):
             checked.append(e["checked"])
         if app_id and e.get("passChecked"):
@@ -179,7 +185,8 @@ def main(argv=None):
                  "storeChecked": max(checked) if checked else None,
                  "passChecked": max(pass_checked) if pass_checked else None,
                  "confirmedOnly": not args.all,
-                 "fromGoogle": sum(1 for g, _ in shown if g.get("source") == GOOGLE_SOURCE),
+                 "fromGoogle": sum(1 for g, _ in shown if g.get("source") == GOOGLE_SOURCE and g["genre"] != APPS),
+                 "trackingSince": min((e["firstSeen"] for _, e in shown if e.get("firstSeen")), default=None),
                  "leftOutOfPass": len(out_of_pass), "leftOutUnmatched": len(unmatched)},
     }
     # "<" is escaped so nothing inside the JSON can close the <script> element.

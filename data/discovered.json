@@ -112,11 +112,27 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "droom.sleepIfUCan",
+  "title": "Alarmy - Alarm Clock & Sleep",
+  "genre": "Apps",
+  "playGenre": "Productivity",
+  "developer": "Sleep Tracker & Alarm Clock by Delightroom",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.intellijoy.letters.tracing",
   "title": "Alive Alphabet: Letter Tracing",
   "genre": "Educational",
   "playGenre": "Educational",
   "developer": "Intellijoy Educational Games for Kids",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "all.in.one.calculator",
+  "title": "All-In-One Calculator",
+  "genre": "Apps",
+  "playGenre": "Productivity",
+  "developer": "allinonecalculator.com",
   "found": "2026-10-04"
  },
  {
@@ -133,6 +149,14 @@
   "genre": "Puzzle",
   "playGenre": "Puzzle",
   "developer": "TapNation",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "org.sesameworkshop.AnotherMATEOTB.play",
+  "title": "Another Monster at the End...",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "Sesame Workshop",
   "found": "2026-10-04"
  },
  {
@@ -168,6 +192,14 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.backdrops.wallpapers",
+  "title": "Backdrops - Wallpapers",
+  "genre": "Apps",
+  "playGenre": "Personalization",
+  "developer": "Backdrops Dev LLC",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.PlausibleConcept.BadNorthFull",
   "title": "Bad North: Jotunn Edition",
   "genre": "Strategy",
@@ -181,6 +213,14 @@
   "genre": "Puzzle",
   "playGenre": "Puzzle",
   "developer": "Fun Fun Studio",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.storytoys.barbiecoloring.google",
+  "title": "Barbie Color Creations",
+  "genre": "Apps",
+  "playGenre": "Entertainment",
+  "developer": "StoryToys",
   "found": "2026-10-04"
  },
  {
@@ -200,11 +240,27 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.bhima.filterfocusname",
+  "title": "BHM Name Art Photo Editor",
+  "genre": "Apps",
+  "playGenre": "Photography",
+  "developer": "Bhima Apps",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.miniit.bingo",
   "title": "Bingo: Classic Board Game",
   "genre": "Casual",
   "playGenre": "Casual",
   "developer": "Brightika, Inc.",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.splendapps.bmicalc",
+  "title": "BMI Calculator",
+  "genre": "Apps",
+  "playGenre": "Health & Fitness",
+  "developer": "Splend Apps",
   "found": "2026-10-04"
  },
  {
@@ -264,6 +320,14 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.splendapps.bubble",
+  "title": "Bubble Level",
+  "genre": "Apps",
+  "playGenre": "Tools",
+  "developer": "Splend Apps",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.kidga.circle.box",
   "title": "Bubble Tangram - puzzle game",
   "genre": "Puzzle",
@@ -272,11 +336,27 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.colpit.diamondcoming.isavemoney",
+  "title": "Budget planner—Expense tracker",
+  "genre": "Apps",
+  "playGenre": "Finance",
+  "developer": "Battery Stats Saver",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.buffstudio.bka",
   "title": "Buff Knight Advanced: Idle RPG",
   "genre": "Casual",
   "playGenre": "Casual",
   "developer": "Buff Studio Co.,Ltd.",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.LearnyLand.Bugs2",
+  "title": "Bugs 2: What Are They Like?",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "Learny Land",
   "found": "2026-10-04"
  },
  {
@@ -317,6 +397,14 @@
   "genre": "Casual",
   "playGenre": "Casual",
   "developer": "FM by Bubadu",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.fooducate.nutritionapp",
+  "title": "Calorie Counter App: Fooducate",
+  "genre": "Apps",
+  "playGenre": "Health & Fitness",
+  "developer": "Maple Media",
   "found": "2026-10-04"
  },
  {
@@ -392,6 +480,22 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.teazel.coloring",
+  "title": "Coloring",
+  "genre": "Apps",
+  "playGenre": "Art & Design",
+  "developer": "Teazel Ltd",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "apps.r.compass",
+  "title": "Compass: Accurate Compass",
+  "genre": "Apps",
+  "playGenre": "Maps & Navigation",
+  "developer": "Prometheus Interactive LLC",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.astragon.cs4.full",
   "title": "Construction Simulator 4",
   "genre": "Simulation",
@@ -400,11 +504,35 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "me.gira.widget.countdown",
+  "title": "Countdown Widget・Countdown app",
+  "genre": "Apps",
+  "playGenre": "Productivity",
+  "developer": "Prometheus Interactive LLC",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.photoappworld.cut.paste.photo",
+  "title": "Cut and Paste Photos",
+  "genre": "Apps",
+  "playGenre": "Photography",
+  "developer": "ZipoApps",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.cottongame.MonsterFamily",
   "title": "Dad's Monster House",
   "genre": "Puzzle",
   "playGenre": "Puzzle",
   "developer": "CottonGame",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.talzz.datadex",
+  "title": "dataDex - Pokédex for Pokémon",
+  "genre": "Apps",
+  "playGenre": "Tools",
+  "developer": "talZz",
   "found": "2026-10-04"
  },
  {
@@ -448,11 +576,35 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.bhima.businesscardmaker",
+  "title": "Digital Business Card Maker",
+  "genre": "Apps",
+  "playGenre": "Business",
+  "developer": "Bhima Apps",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.coloring.dinosaur",
+  "title": "Dino Coloring Game",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "Coloring Games",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.snapbreak.discounty",
   "title": "Discounty: Supermarket Manager",
   "genre": "Adventure",
   "playGenre": "Adventure",
   "developer": "Snapbreak",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.mobiray.djlaunchpad",
+  "title": "DJ Loop Pads - Music Maker",
+  "genre": "Apps",
+  "playGenre": "Music & Audio",
+  "developer": "mobiray",
   "found": "2026-10-04"
  },
  {
@@ -512,6 +664,14 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.raed.drawing",
+  "title": "Drawing Pad Lite  - Artbook",
+  "genre": "Apps",
+  "playGenre": "Art & Design",
+  "developer": "Cards",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.funcell.duneanddusted",
   "title": "Dune and Dusted",
   "genre": "Casual",
@@ -528,11 +688,59 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.digipom.easymetronome",
+  "title": "Easy Metronome",
+  "genre": "Apps",
+  "playGenre": "Music & Audio",
+  "developer": "Digipom",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.coffeebeanventures.easyvoicerecorder",
+  "title": "Easy Voice Recorder",
+  "genre": "Apps",
+  "playGenre": "Productivity",
+  "developer": "Digipom",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.digipom.easyvoicerecorder.pro",
+  "title": "Easy Voice Recorder Pro",
+  "genre": "Apps",
+  "playGenre": "Productivity",
+  "developer": "Digipom",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.gamefirst.savetheearth",
   "title": "Eco inc. Save the Earth",
   "genre": "Strategy",
   "playGenre": "Strategy",
   "developer": "GameFirst",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.pixelkraft.edgelighting",
+  "title": "Edge Lighting - Borderlight",
+  "genre": "Apps",
+  "playGenre": "Personalization",
+  "developer": "ZipoApps",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.sesameworkshop.elmoloves123s",
+  "title": "Elmo Loves 123s",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "Sesame Workshop",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.sesameworkshop.elabcs.play",
+  "title": "Elmo Loves ABCs",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "Sesame Workshop",
   "found": "2026-10-04"
  },
  {
@@ -568,6 +776,14 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.splendapps.arsen",
+  "title": "File Manager",
+  "genre": "Apps",
+  "playGenre": "Tools",
+  "developer": "Splend Apps",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "net.kairosoft.android.wakusei",
   "title": "Final Frontier Story",
   "genre": "Simulation",
@@ -584,11 +800,35 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.jazibkhan.equalizer",
+  "title": "Flat Equalizer - Bass Booster",
+  "genre": "Apps",
+  "playGenre": "Music & Audio",
+  "developer": "Beat Blend Labs",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.noodlecake.flickshotrogues",
   "title": "Flick Shot Rogues",
   "genre": "Strategy",
   "playGenre": "Strategy",
   "developer": "Noodlecake",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.vblast.flipaclip",
+  "title": "FlipaClip: Draw 2D Animation",
+  "genre": "Apps",
+  "playGenre": "Art & Design",
+  "developer": "Visual Blasters LLC",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.mwm.flow",
+  "title": "Flow : Music Therapy",
+  "genre": "Apps",
+  "playGenre": "Health & Fitness",
+  "developer": "MWM - AI Music and Creative Apps",
   "found": "2026-10-04"
  },
  {
@@ -605,6 +845,14 @@
   "genre": "Board",
   "playGenre": "Board",
   "developer": "Stray Fawn Studio",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.bk.videotogif",
+  "title": "GIF Maker, Video to GIF Editor",
+  "genre": "Apps",
+  "playGenre": "Photography",
+  "developer": "Galaxy studio apps",
   "found": "2026-10-04"
  },
  {
@@ -656,6 +904,14 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "helectronsoft.com.grubl.live.wallpapers3d",
+  "title": "GRUBL™ 4D Live Wallpapers + AI",
+  "genre": "Apps",
+  "playGenre": "Personalization",
+  "developer": "TarrySoft",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.herocraft.game.guards2",
   "title": "Guards II: TBS",
   "genre": "Role-Playing",
@@ -669,6 +925,14 @@
   "genre": "Puzzle",
   "playGenre": "Puzzle",
   "developer": "Folly Studio Pty Ltd",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.oristats.habitbull",
+  "title": "Habit Tracker",
+  "genre": "Apps",
+  "playGenre": "Productivity",
+  "developer": "App Holdings",
   "found": "2026-10-04"
  },
  {
@@ -728,11 +992,35 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "cz.hipercalc.pro",
+  "title": "HiPER Calc Pro",
+  "genre": "Apps",
+  "playGenre": "Tools",
+  "developer": "HiPER Labs",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "build.home.idle.construction",
   "title": "Home Builder 3D !",
   "genre": "Simulation",
   "playGenre": "Simulation",
   "developer": "BoomHits",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.learnyland.HumanBody",
+  "title": "How does The Human Body Work?",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "Learny Land",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.learnyland.HowItWorks",
+  "title": "How It Works?",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "Learny Land",
   "found": "2026-10-04"
  },
  {
@@ -749,6 +1037,22 @@
   "genre": "Puzzle",
   "playGenre": "Puzzle",
   "developer": "Tomorrow Corporation",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "net.cleverbit.HumanWorld",
+  "title": "Human World for Kids",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "CLEVERBIT",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.storytoys.hungry.caterpillar.play.school.abc.kids.books.free.android.googleplay",
+  "title": "Hungry Caterpillar Play School",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "StoryToys",
   "found": "2026-10-04"
  },
  {
@@ -781,6 +1085,14 @@
   "genre": "Strategy",
   "playGenre": "Strategy",
   "developer": "Erabit Studios",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.brakefield.painter",
+  "title": "Infinite Painter",
+  "genre": "Apps",
+  "playGenre": "Art & Design",
+  "developer": "Infinite Studio LLC",
   "found": "2026-10-04"
  },
  {
@@ -861,6 +1173,14 @@
   "genre": "Casual",
   "playGenre": "Casual",
   "developer": "V2R",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "net.wllppr.kawaii_aesthetic_wallpaper",
+  "title": "Kawaii Aesthetic Wallpaper",
+  "genre": "Apps",
+  "playGenre": "Personalization",
+  "developer": "Galaxy studio apps",
   "found": "2026-10-04"
  },
  {
@@ -952,11 +1272,51 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.teazel.learn.cryptic.crosswords",
+  "title": "Learn Cryptic Crosswords",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "Teazel Ltd",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.iz.kids.brain.games.test.genius.iq.young.brains.mind.teaser.game.puzzle.tricky.quiz",
   "title": "Learning Games for Kids",
   "genre": "Educational",
   "playGenre": "Educational",
   "developer": "IDZ Digital Private Limited",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.storytoys.lego.duplo.disney.mickey.and.friends.googleplay",
+  "title": "LEGO® DUPLO® Disney",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "StoryToys",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.storytoys.lego.duplo.marvel.spiderman.avengers.kids.preschool.free.googleplay",
+  "title": "LEGO® DUPLO® Marvel",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "StoryToys",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.neupanedinesh.fonts.stylishletters",
+  "title": "Letter Fonts - Stylish Text",
+  "genre": "Apps",
+  "playGenre": "Personalization",
+  "developer": "TarrySoft",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.foxandsheep.firestation",
+  "title": "Little Fire Station",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "Fox & Sheep",
   "found": "2026-10-04"
  },
  {
@@ -1008,6 +1368,14 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.zimad.mpixel",
+  "title": "Magic Cross Stitch: Pixel Art",
+  "genre": "Apps",
+  "playGenre": "Art & Design",
+  "developer": "ZiMAD",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.rainbowgames.solitaire2018",
   "title": "Magic Story of Solitaire Cards",
   "genre": "Card",
@@ -1024,6 +1392,14 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.planetfactory.makeitAndroid",
+  "title": "Make It - Create & play games",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "Learny Land",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.color.mandala",
   "title": "Mandala Coloring Pages",
   "genre": "Educational",
@@ -1037,6 +1413,22 @@
   "genre": "Educational",
   "playGenre": "Educational",
   "developer": "StoryToys",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.LearnyLand.MayTheForces",
+  "title": "May the Forces Be With You",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "Learny Land",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "net.metapps.meditationsounds",
+  "title": "Meditation Music - Relax, Yoga",
+  "genre": "Apps",
+  "playGenre": "Health & Fitness",
+  "developer": "Maple Media",
   "found": "2026-10-04"
  },
  {
@@ -1072,11 +1464,43 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.messenger.sms.messages",
+  "title": "Messages - SMS Texting App",
+  "genre": "Apps",
+  "playGenre": "Communication",
+  "developer": "Battery Stats Saver",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.kooapps.mylittletown",
   "title": "MicroTown.io - My Little Town",
   "genre": "Casual",
   "playGenre": "Casual",
   "developer": "Kooapps Games | Fun Arcade and Casual Action Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.migababy.music",
+  "title": "Miga Baby: Music For Toddlers",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "XiHe Digital (GuangZhou) Technology Co., Ltd.",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.miga.mytvshows",
+  "title": "Miga Town: My TV Shows",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "XiHe Digital (GuangZhou) Technology Co., Ltd.",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.edokicademy.montessoriacademy",
+  "title": "Montessori Preschool, kids 3-7",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "BAYARD SA",
   "found": "2026-10-04"
  },
  {
@@ -1128,11 +1552,43 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.appgeneration.itunerfree",
+  "title": "myTuner FM Radio App",
+  "genre": "Apps",
+  "playGenre": "Music & Audio",
+  "developer": "Appgeneration",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.gamesforgirls.nailart.nailsalongame",
   "title": "Nail Salon Game Kids Nail art",
   "genre": "Role-Playing",
   "playGenre": "Role Playing",
   "developer": "Ijjus World",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "net.cleverbit.Nature",
+  "title": "Nature for Kids",
+  "genre": "Apps",
+  "playGenre": "Parenting",
+  "developer": "CLEVERBIT",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.foxandsheep.nightynight",
+  "title": "Nighty Night - Bedtime Story",
+  "genre": "Apps",
+  "playGenre": "Books & Reference",
+  "developer": "Fox & Sheep",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.foxandsheep.nightynight3",
+  "title": "Nighty Night Forest",
+  "genre": "Apps",
+  "playGenre": "Books & Reference",
+  "developer": "Fox & Sheep",
   "found": "2026-10-04"
  },
  {
@@ -1144,11 +1600,35 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.splendapps.adler",
+  "title": "Notepad - Notes and Tasks",
+  "genre": "Apps",
+  "playGenre": "Productivity",
+  "developer": "Splend Apps",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.epicpandagames.number.merge",
   "title": "Number Merge",
   "genre": "Puzzle",
   "playGenre": "Puzzle",
   "developer": "EPIC PANDA GAMES",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.document.viewer.doc.reader",
+  "title": "Office Reader - WORD/PDF/EXCEL",
+  "genre": "Apps",
+  "playGenre": "Productivity",
+  "developer": "ZipoApps",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "fm.player",
+  "title": "Offline Podcast App: Player FM",
+  "genre": "Apps",
+  "playGenre": "Music & Audio",
+  "developer": "Maple Media",
   "found": "2026-10-04"
  },
  {
@@ -1200,6 +1680,14 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.mythicowl.parentinghero",
+  "title": "Parenting Hero",
+  "genre": "Apps",
+  "playGenre": "Parenting",
+  "developer": "MythicOwl",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.funcell.pawndon",
   "title": "Pawn to Don Mafia Crime Story",
   "genre": "Role-Playing",
@@ -1216,6 +1704,14 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "pl.netigen.bestlevel",
+  "title": "Perfect Level (Bubble & Laser)",
+  "genre": "Apps",
+  "playGenre": "Tools",
+  "developer": "Cards",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "se.filimundus.pi2",
   "title": "Pettson's Inventions 2",
   "genre": "Puzzle",
@@ -1224,11 +1720,75 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.onlineradiofm.phonkmusic",
+  "title": "Phonk Music - Song Remix Radio",
+  "genre": "Apps",
+  "playGenre": "Music & Audio",
+  "developer": "Firehawk",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.lyrebirdstudio.collage",
+  "title": "Photo Collage Maker & Editor",
+  "genre": "Apps",
+  "playGenre": "Photography",
+  "developer": "Firehawk",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "vault.gallery.lock",
+  "title": "Photo Lock App - Hide Pictures",
+  "genre": "Apps",
+  "playGenre": "Personalization",
+  "developer": "Battery Stats Saver",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.kvadgroup.photostudio_pro",
+  "title": "Photo Studio PRO: photo editor",
+  "genre": "Apps",
+  "playGenre": "Photography",
+  "developer": "KVADGroup App Studio",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.netigen.piano",
+  "title": "Piano: Learn & Play Songs",
+  "genre": "Apps",
+  "playGenre": "Music & Audio",
+  "developer": "Firehawk",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.bigblueclip.picstitch",
+  "title": "Pic Stitch: Collage Maker",
+  "genre": "Apps",
+  "playGenre": "Photography",
+  "developer": "Maple Media",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "helectronsoft.com.live.wallpaper.pixel4d",
+  "title": "Pixel 4D™ Live Wallpapers",
+  "genre": "Apps",
+  "playGenre": "Personalization",
+  "developer": "TarrySoft",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.BatoviGamesStudio.PixelCupSoccer19",
   "title": "Pixel Cup Soccer - Ultimate",
   "genre": "Sports",
   "playGenre": "Sports",
   "developer": "BATOVI Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.imaginstudio.imagetools.pixellab",
+  "title": "PixelLab - Text on pictures",
+  "genre": "Apps",
+  "playGenre": "Photography",
+  "developer": "App Holdings",
   "found": "2026-10-04"
  },
  {
@@ -1256,11 +1816,35 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "sanity.podcast.freak",
+  "title": "Podcast Go",
+  "genre": "Apps",
+  "playGenre": "Music & Audio",
+  "developer": "Sanity Audio Apps",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.cloudberrypine.PolyPine",
   "title": "PolyPine",
   "genre": "Simulation",
   "playGenre": "Simulation",
   "developer": "IndieArk",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.bhima.postermaker",
+  "title": "Poster Maker - Design Banner",
+  "genre": "Apps",
+  "playGenre": "Art & Design",
+  "developer": "Bhima Apps",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.kvadgroup.posters",
+  "title": "Posters: Flyers Template maker",
+  "genre": "Apps",
+  "playGenre": "Art & Design",
+  "developer": "KVADGroup App Studio",
   "found": "2026-10-04"
  },
  {
@@ -1288,6 +1872,14 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.rhmsoft.pulsar.pro",
+  "title": "Pulsar Music Player Pro",
+  "genre": "Apps",
+  "playGenre": "Music & Audio",
+  "developer": "Rhythm Software",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.noodlecake.pumped3",
   "title": "Pumped BMX 3",
   "genre": "Sports",
@@ -1309,6 +1901,22 @@
   "genre": "Puzzle",
   "playGenre": "Puzzle",
   "developer": "Kidga",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.rhmsoft.edit.pro",
+  "title": "QuickEdit Text Editor Pro",
+  "genre": "Apps",
+  "playGenre": "Productivity",
+  "developer": "Rhythm Software",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "net.metapps.watersounds",
+  "title": "Rain Sounds - Sleep & Relax",
+  "genre": "Apps",
+  "playGenre": "Music & Audio",
+  "developer": "Maple Media",
   "found": "2026-10-04"
  },
  {
@@ -1400,6 +2008,14 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.sesameworkshop.ssam.play",
+  "title": "Sesame Street Art Maker",
+  "genre": "Apps",
+  "playGenre": "Art & Design",
+  "developer": "Sesame Workshop",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.ilugon.shapes.colors.toddler.games",
   "title": "Shapes and Colors for Toddlers",
   "genre": "Educational",
@@ -1416,11 +2032,59 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.simplemobiletools.clock",
+  "title": "Simple Clock - Alarm & Timer",
+  "genre": "Apps",
+  "playGenre": "Tools",
+  "developer": "Simple Mobile Tool",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.simplemobiletools.flashlight",
+  "title": "Simple Flashlight",
+  "genre": "Apps",
+  "playGenre": "Tools",
+  "developer": "Simple Mobile Tool",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.simplemobiletools.smsmessenger",
+  "title": "Simple SMS Messenger",
+  "genre": "Apps",
+  "playGenre": "Communication",
+  "developer": "Simple Mobile Tool",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.simplemobiletools.voicerecorder",
+  "title": "Simple Voice Recorder",
+  "genre": "Apps",
+  "playGenre": "Music & Audio",
+  "developer": "Simple Mobile Tool",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "net.kairosoft.android.skate",
   "title": "Skating Rink Story",
   "genre": "Simulation",
   "playGenre": "Simulation",
   "developer": "Kairosoft",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "net.metapps.sleepsounds",
+  "title": "Sleep Sounds",
+  "genre": "Apps",
+  "playGenre": "Health & Fitness",
+  "developer": "Maple Media",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "net.relaxio.sleepo",
+  "title": "Sleepa: Relaxing sounds, Sleep",
+  "genre": "Apps",
+  "playGenre": "Health & Fitness",
+  "developer": "Maple Media",
   "found": "2026-10-04"
  },
  {
@@ -1445,6 +2109,14 @@
   "genre": "Simulation",
   "playGenre": "Simulation",
   "developer": "JLabs Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "air.com.eu.inove.sss2",
+  "title": "Solar System Scope",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "INOVE, s.r.o.",
   "found": "2026-10-04"
  },
  {
@@ -1488,6 +2160,14 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.splendapps.decibel",
+  "title": "Sound Decibel Meter",
+  "genre": "Apps",
+  "playGenre": "Music & Audio",
+  "developer": "Splend Apps",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.aurecas.spacetowerdefense",
   "title": "Space Defense: Idle Tower TD",
   "genre": "Strategy",
@@ -1509,6 +2189,22 @@
   "genre": "Card",
   "playGenre": "Card",
   "developer": "Quarzo Apps",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.speaktranslate.tts.speechtotext.voicetyping.translator",
+  "title": "Speak and Translate Languages",
+  "genre": "Apps",
+  "playGenre": "Communication",
+  "developer": "Battery Stats Saver",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "ioapp.speaker.dustwater",
+  "title": "Speaker Cleaner・Volume Booster",
+  "genre": "Apps",
+  "playGenre": "Tools",
+  "developer": "Firehawk",
   "found": "2026-10-04"
  },
  {
@@ -1544,6 +2240,30 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.vitotechnology.StarWalk2Free",
+  "title": "Star Walk 2 Plus: Sky Map View",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "Vito Technology",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.vitotechnology.StarWalk2",
+  "title": "Star Walk 2 Pro：Night Sky View",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "Vito Technology",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.vitotechnology.StarWalkKids",
+  "title": "Star Walk Kids - Explore Space",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "Vito Technology",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.TwinCrab.Motorpolia",
   "title": "State Connect: Traffic Control",
   "genre": "Casual",
@@ -1568,6 +2288,14 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.cateater.stopmotionstudiopro",
+  "title": "Stop Motion Studio Pro",
+  "genre": "Apps",
+  "playGenre": "Photography",
+  "developer": "Cateater",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.boomhits.truckjump",
   "title": "Stunt Truck Jumping",
   "genre": "Casual",
@@ -1584,11 +2312,27 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.opalastudios.pads",
+  "title": "SUPER PADS DJ: Music & Beats",
+  "genre": "Apps",
+  "playGenre": "Music & Audio",
+  "developer": "SuperStar Labs",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.bubadu.supermarket",
   "title": "Supermarket Game",
   "genre": "Casual",
   "playGenre": "Casual",
   "developer": "FM by Bubadu",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "net.doo.snap",
+  "title": "SwiftScan: Scan PDF Documents",
+  "genre": "Apps",
+  "playGenre": "Productivity",
+  "developer": "Maple Media",
   "found": "2026-10-04"
  },
  {
@@ -1616,11 +2360,35 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.learnyland.animals",
+  "title": "The Animals: Animal Kids Games",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "Learny Land",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.learnyland.bugsOne",
+  "title": "The Bugs I: Insects?",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "Learny Land",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.yym.theletter",
   "title": "The Letter - Horror Novel Game",
   "genre": "Role-Playing",
   "playGenre": "Role Playing",
   "developer": "Yangyang Mobile",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "org.sesameworkshop.monsterone.play",
+  "title": "The Monster at the End...",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "Sesame Workshop",
   "found": "2026-10-04"
  },
  {
@@ -1645,6 +2413,22 @@
   "genre": "Puzzle",
   "playGenre": "Puzzle",
   "developer": "Fireproof Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.brunoschalch.timeuntil",
+  "title": "Time Until: Countdowns, Widget",
+  "genre": "Apps",
+  "playGenre": "Lifestyle",
+  "developer": "Handcrafted Apps and Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "de.swejuppotto.timewarpscan",
+  "title": "TIME WARP SCAN: Face Scanner",
+  "genre": "Apps",
+  "playGenre": "Photography",
+  "developer": "ZipoApps",
   "found": "2026-10-04"
  },
  {
@@ -1736,6 +2520,14 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.splendapps.splendo",
+  "title": "To Do List",
+  "genre": "Apps",
+  "playGenre": "Productivity",
+  "developer": "Splend Apps",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.midwin.kids.drawing.book.toddlers.coloring.games.preschool.painting",
   "title": "Toddler Coloring Book",
   "genre": "Educational",
@@ -1821,6 +2613,118 @@
   "genre": "Role-Playing",
   "playGenre": "Role Playing",
   "developer": "10tons Ltd",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.excellent.tools.voice.changer",
+  "title": "Video Voice Editor + Effects",
+  "genre": "Apps",
+  "playGenre": "Music & Audio",
+  "developer": "Firehawk",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.baviux.voicechanger",
+  "title": "Voice changer with effects",
+  "genre": "Apps",
+  "playGenre": "Entertainment",
+  "developer": "Baviux",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.splendapps.vox",
+  "title": "Voice Recorder",
+  "genre": "Apps",
+  "playGenre": "Music & Audio",
+  "developer": "Splend Apps",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.splendapps.voicerec",
+  "title": "Voice Recorder Pro",
+  "genre": "Apps",
+  "playGenre": "Music & Audio",
+  "developer": "Splend Apps",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.baviux.voicetooner",
+  "title": "VoiceTooner - Voice changer",
+  "genre": "Apps",
+  "playGenre": "Entertainment",
+  "developer": "Baviux",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.abrar.volumeboost",
+  "title": "Volume Booster for Android",
+  "genre": "Apps",
+  "playGenre": "Music & Audio",
+  "developer": "ZipoApps",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.rare.wallpapers",
+  "title": "Wallpapers HD - Backgrounds 4K",
+  "genre": "Apps",
+  "playGenre": "Personalization",
+  "developer": "TarrySoft",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.exovoid.weather.app",
+  "title": "Weather XL PRO",
+  "genre": "Apps",
+  "playGenre": "Weather",
+  "developer": "Exovoid Sàrl",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.exovoid.weatherxs",
+  "title": "Weather XS PRO",
+  "genre": "Apps",
+  "playGenre": "Weather",
+  "developer": "Exovoid Sàrl",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.learnyland.dinos",
+  "title": "What Were Dinosaurs Like?",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "Learny Land",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.learnyland.space",
+  "title": "What's in Space?",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "Learny Land",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.learnyland.ocean",
+  "title": "What’s in The Oceans?",
+  "genre": "Apps",
+  "playGenre": "Education",
+  "developer": "Learny Land",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.tmsoft.whitenoise.full",
+  "title": "White Noise",
+  "genre": "Apps",
+  "playGenre": "Health & Fitness",
+  "developer": "TMSOFT",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.blueskysoft.colorwidgets",
+  "title": "Widgets OS 18 - Color Widgets",
+  "genre": "Apps",
+  "playGenre": "Personalization",
+  "developer": "ZipoApps",
   "found": "2026-10-04"
  },
  {
