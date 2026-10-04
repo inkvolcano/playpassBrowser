@@ -139,9 +139,12 @@ developer, then its package name, from that country. If a search finds the app,
 it's offered. If none does, the same searches run from the US, the UK or
 Japan; when they find the app there, it's marked as not offered. When no search finds it anywhere, it's unknown and stays listed.
 Some games are sold under a separate listing per region (Level-5's Layton games
-have European editions): when a country's search turns up an app from the same
-developer with the same title or the same package name apart from a region
-marker (`com.Level5.LT1RNA` / `com.Level5.LT1REU`), and that app has the Play
-Pass badge, the game counts as offered and its Play link points to that
-edition. Re-check games marked as not offered with
+have European editions, Kairosoft's games Japanese ones): when a country's
+search turns up an app from the same developer with the same title or the same
+package name apart from a region or language marker (`com.Level5.LT1RNA` /
+`com.Level5.LT1REU`, `net.kairosoft.android.gamedev3en` /
+`net.kairosoft.android.gamedev3`), and that app has the Play Pass badge, the
+game counts as offered and its Play link points to that edition. The searches
+include the package name without its marker, which finds editions whose title
+is translated. Re-check games marked as not offered with
 `python3 fill_screenshots.py --region nl --recheck doubtful`.

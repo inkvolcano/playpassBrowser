@@ -580,11 +580,13 @@ def refresh_entry(game, e):
                 installs=install_total(d), tags=store_tags(d.get("categories")))
 
 
-REGION_SUFFIX_RE = re.compile(r"(?:[._-]?(?:na|eu|us|uk|jp|ww|global|asia|row|intl))+$")
+REGION_SUFFIX_RE = re.compile(r"(?:[._-]?(?:na|eu|us|uk|jp|ww|global|asia|row|intl|en|eng|ja))+$")
 
 
 def package_core(app_id):
-    """Package name without a trailing region marker: com.Level5.LT1RNA and com.Level5.LT1REU -> com.level5.lt1r."""
+    """Package name without a trailing region or language marker: com.Level5.LT1RNA and
+    com.Level5.LT1REU -> com.level5.lt1r; net.kairosoft.android.gamedev3en (English) and
+    net.kairosoft.android.gamedev3 (Japanese) -> net.kairosoft.android.gamedev3."""
     return REGION_SUFFIX_RE.sub("", app_id.lower())
 
 
@@ -620,7 +622,9 @@ def region_available(e, country):
     while the same searches from a reference country (US, UK or Japan) find
     the app. None: no search finds it anywhere, so there's no telling."""
     app_id, name = e["appId"], e.get("matched") or ""
-    queries = list(dict.fromkeys(q for q in (name, f"{name} {e.get('developer') or ''}".strip(), app_id) if q))
+    # the package name without its region marker finds editions with a translated title
+    queries = list(dict.fromkeys(q for q in (name, f"{name} {e.get('developer') or ''}".strip(), app_id,
+                                             package_core(app_id)) if q))
     failed, twins = False, []
     for q in queries:
         hits = region_search(q, country)
