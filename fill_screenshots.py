@@ -712,7 +712,8 @@ def region_todo(e, cc, recheck, today):
 
 def run_regions(args, games, order, cache, today):
     """--region: check every matched game in each country. Countries run in
-    parallel threads (--jobs at a time), each with its own throttle."""
+    parallel threads (--jobs at a time), each with its own throttle; with more
+    jobs than countries, each country's games are split between threads."""
     queues = {cc: [g["title"] for g in games if (cache.get(g["title"]) or {}).get("appId")
                    and (g["title"] in args.only if args.only else region_todo(cache[g["title"]], cc, args.recheck, today))]
               for cc in args.region}
@@ -720,14 +721,17 @@ def run_regions(args, games, order, cache, today):
     print(f"{total} checks: " + ", ".join(f"{cc} {len(q)}" for cc, q in queues.items()), flush=True)
     label = {True: "offered", False: "NOT OFFERED", None: "unknown"}
     lock, stop, done = threading.Lock(), threading.Event(), [0]
+    parts = max(1, args.jobs // len(args.region))
+    tasks = [(cc, queues[cc][k::parts]) for cc in args.region for k in range(parts)]
+    counted = dict.fromkeys(args.region, 0)
 
     def message():
         return f"Check Play Store availability ({', '.join(args.region)}): {done[0]}/{total} checks"
 
-    def run(cc):
+    def run(cc, titles):
         _tls.throttle = Throttle(args.delay)
         seen = {}  # appId -> result, for apps YTECHB lists twice
-        for i, t in enumerate(queues[cc], 1):
+        for t in titles:
             if stop.is_set():
                 return
             e = cache[t]
@@ -738,7 +742,8 @@ def run_regions(args, games, order, cache, today):
             with lock:
                 cache[t] = dict(cache[t], regions=dict(cache[t].get("regions") or {}, **{cc: r}))
                 done[0] += 1
-                print(f"[{cc} {i}/{len(queues[cc])}] {t} -> {label[available]}" + (f" as {twin}" if twin else ""), flush=True)
+                counted[cc] += 1
+                print(f"[{cc} {counted[cc]}/{len(queues[cc])}] {t} -> {label[available]}" + (f" as {twin}" if twin else ""), flush=True)
                 if done[0] % 20 == 0:
                     save_cache(cache, order)
                 if args.commit_every and done[0] % args.commit_every == 0:
@@ -747,7 +752,7 @@ def run_regions(args, games, order, cache, today):
 
     pool = ThreadPoolExecutor(max_workers=max(1, args.jobs))
     try:
-        for f in as_completed([pool.submit(run, cc) for cc in args.region]):
+        for f in as_completed([pool.submit(run, cc, titles) for cc, titles in tasks]):
             f.result()
     except BaseException as e:
         stop.set()  # let the other countries finish the game they're on, then save
@@ -783,7 +788,8 @@ def main():
                     help="check which matched apps these countries' Play Stores offer (two-letter codes, "
                          "e.g. nl de); resumes where a check stopped today")
     ap.add_argument("--jobs", type=int, default=1, metavar="N",
-                    help="with --region: check N countries at the same time (default 1)")
+                    help="with --region: N threads, one country each (a country gets several when N is "
+                         "larger than the number of countries); default 1")
     ap.add_argument("--limit", type=int, help="stop after this many lookups")
     ap.add_argument("--delay", type=float, default=0.6, help="seconds between requests (default 0.6)")
     ap.add_argument("--commit-every", type=int, default=0, metavar="N",

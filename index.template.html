@@ -744,10 +744,11 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       : `“Play Pass” marks games whose Play Store page showed the Play Pass badge on ${dateText(m.passChecked)}. ` +
         `${fmt.format(pool.filter((g) => g.pass === 0).length)} matched games didn't, so they have probably left Play Pass; they're marked “Not in Play Pass”.`;
     const missing = games.length - pool.length;
-    $("foot-region").textContent = REGIONS.length < 2 ? "" : region === 0
-      ? `The list comes from the US Play Store. Pick another country in the header to hide games its Play Store doesn't offer.`
-      : `In ${theName(r)}, a game is listed when a Play Store search from there finds it (checked ${dateText(r.checked)}); ` +
-        `${fmt.format(missing)} ${missing === 1 ? "game in the catalogue isn't" : "games in the catalogue aren't"} offered there. Ratings are from the US store.`;
+    $("foot-region").textContent = REGIONS.length < 2 ? "" :
+      (r.checked ? `In ${theName(r)}, a game is listed when a Play Store search from there finds it (checked ${dateText(r.checked)}); ` +
+        (missing ? `${fmt.format(missing)} ${missing === 1 ? "game in the catalogue isn't" : "games in the catalogue aren't"} offered there. `
+          : "every game in the catalogue is offered there. ") : "") +
+      (region === 0 ? "The list itself comes from the US Play Store; pick your country in the header." : "Ratings are from the US store.");
   }
 
   // ----- state

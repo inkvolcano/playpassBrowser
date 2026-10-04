@@ -56,7 +56,7 @@ python3 fetch_games.py                # 1. refresh the game list from YTECHB
 python3 fill_screenshots.py           # 2. look up games not in the cache yet
 python3 fill_screenshots.py --refresh # 3. re-check every game's Play Pass status, rating,
                                       #    downloads, tags and screenshots, then rebuild index.html
-python3 fill_screenshots.py --region au be br ca de es fr gb it jp nl --jobs 4
+python3 fill_screenshots.py --region au be br ca de es fr gb it jp nl us --jobs 6
                                       # 4. re-check which games each country's store offers
 ```
 
@@ -66,12 +66,11 @@ again to continue. A full run over ~1,800 games takes about 45 minutes because
 requests are throttled (`--delay`, 0.6 s by default) to avoid rate limiting.
 `--refresh` keeps every match and re-reads each app's store page (about 35
 minutes); it resumes too, skipping games already refreshed that day. So does
-`--region` (about 25 minutes per country; `--jobs 4` checks four countries at
-once). To add a country, run it with that country's two-letter code
+`--region` (about 20 minutes per country per thread; `--jobs 6` runs six
+threads, splitting a country between threads when there are more threads than
+countries). To add a country, run it with that country's two-letter code
 (`--region se`, or several: `--region se pl`); the next build adds it to the
-page's country menu. The US store, where the list comes from, only needs
-checking for games that weren't matched through a US search (manual overrides
-and Japanese titles).
+page's country menu.
 
 Useful options:
 
