@@ -3,7 +3,9 @@
 
 The page is one self-contained file; the game data is embedded as JSON. Image
 URLs are stored without the googleusercontent host and get their size suffix
-(=s96 icons, =w526-h296 screenshots) in the page. Standard library only.
+(=s96 icons, =w526-h296 screenshots) in the page. Each game carries only its first
+screenshot and how many there are; the page reads the rest from details/<appId>.json
+when someone taps through them. Standard library only.
 
 By default the page lists only games whose Play Store page showed the Play Pass
 badge at the last check; --all also keeps games that have left Play Pass and
@@ -181,7 +183,7 @@ def main(argv=None):
         in_pass = {True: 1, False: 0}.get(e.get("playPass")) if app_id else None
         rated = app_id and e.get("rating") and e.get("ratings")
         rows.append([name, genre_index[g["genre"]], app_id, short(e.get("icon")) if app_id else None,
-                     shots, e.get("developer") if app_id else None, listed_as, in_pass,
+                     [shots[0], len(shots)] if shots else None, e.get("developer") if app_id else None, listed_as, in_pass,
                      e["rating"] if rated else None, e["ratings"] if rated else None,
                      e.get("installs") if app_id else None,
                      [tag_index[t] for t in app_tags(e)] if app_id else [],

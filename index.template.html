@@ -438,6 +438,11 @@ button.shots { cursor: pointer; }
 .pass-tag svg { width: 12px; height: 12px; flex: none; }
 .pass-tag.yes { background: var(--brass); color: #2a1a00; }
 .pass-tag.no { background: rgb(0 0 0 / 0.62); color: #fff; }
+.card { content-visibility: auto; contain-intrinsic-size: auto 430px; }  /* off-screen cards skip layout and paint */
+.list-end { height: 1px; }
+.active .added { font-size: 12.5px; color: var(--muted); }
+.genre.favs.pulse { animation: pulse 1.2s ease-out; }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 var(--brass); } 100% { box-shadow: 0 0 0 10px transparent; } }
 .dots { position: absolute; left: 0; right: 0; bottom: 7px; display: flex; justify-content: center; gap: 5px; pointer-events: none; }
 .dots i { width: 6px; height: 6px; border-radius: 50%; background: rgb(255 255 255 / 0.4); box-shadow: 0 0 2px rgb(0 0 0 / 0.5); }
 .dots i.on { background: #fff; }
@@ -561,6 +566,17 @@ dialog.detail::backdrop { background: rgb(8 10 20 / 0.6); }
   cursor: pointer;
 }
 .d-banner { display: block; width: 100%; aspect-ratio: 1024 / 500; max-height: 230px; object-fit: cover; background: var(--screen); }
+/* trailer: the feature graphic (or YouTube's still) with a play button; YouTube itself loads only when played */
+.trailer { position: relative; display: block; width: 100%; padding: 0; border: 0; overflow: hidden; background: var(--screen); cursor: pointer; }
+.trailer img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.trailer .play { position: absolute; left: 50%; top: 50%; display: grid; place-items: center; width: 68px; height: 48px; margin: -24px 0 0 -34px; border-radius: 14px; background: rgb(230 33 23 / 0.92); color: #fff; box-shadow: 0 2px 14px rgb(0 0 0 / 0.4); transition: background 0.15s, transform 0.15s; }
+.trailer .play svg { width: 28px; height: 28px; }
+.trailer:hover .play, .trailer:focus-visible .play { background: #c4170d; transform: scale(1.06); }
+.trailer iframe { display: block; width: 100%; height: 100%; border: 0; }
+.trailer.playing { cursor: auto; aspect-ratio: 16 / 9; }
+.d-trailer { aspect-ratio: 1024 / 500; max-height: 230px; }
+.d-trailer.playing { max-height: 70vh; }
+.dc-trailer { width: calc(100% - 32px); margin: 12px 16px 0; border-radius: 12px; aspect-ratio: 16 / 9; }
 .d-head { display: flex; gap: 14px; align-items: center; padding: 16px 60px 8px 18px; }
 .d-head .icon { width: 64px; height: 64px; border-radius: 16px; }
 .d-title { margin: 0; font: 750 21px/1.2 var(--f-body); overflow-wrap: anywhere; }
@@ -754,7 +770,8 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   .fab svg { width: 19px; height: 19px; }
   /* detail view: the whole height, smaller pictures */
   dialog.detail { height: 100vh; height: 100dvh; max-height: 100vh; max-height: 100dvh; margin: 0 auto; border-radius: 0; border-block: 0; }
-  .d-banner { max-height: 120px; }
+  .d-banner, .d-trailer { max-height: 120px; }
+  .d-trailer.playing { max-height: 85vh; }
   .d-gallery img { height: 150px; }
   /* Discover: skip and keep beside the card instead of under it */
   .dc-top { padding-top: max(6px, env(safe-area-inset-top, 0px)); padding-bottom: 6px; }
@@ -906,13 +923,13 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   // language: the developer's translation, or Google's automatic one (D.tagNames, details/<lang>/).
   const enScope = (o, n) => (o.fav ? (o.apps ? (n === 1 ? "favourite app" : "favourite apps") : (o.genre ? `${o.genre} ` : "") + (n === 1 ? "favourite" : "favourites"))
     : o.apps ? (n === 1 ? "app" : "apps") : (o.genre ? `${o.genre} ` : "") + (n === 1 ? "game" : "games"))
-    + (o.tag ? ` tagged “${o.tag}”` : "") + (o.age ? ` rated PEGI ${o.age} or lower` : "") + (o.dev ? ` by ${o.dev}` : "") + (o.pass ? " in Play Pass" : "");
+    + (o.shared ? " from a shared list" : "") + (o.tag ? ` tagged “${o.tag}”` : "") + (o.age ? ` rated PEGI ${o.age} or lower` : "") + (o.dev ? ` by ${o.dev}` : "") + (o.pass ? " in Play Pass" : "");
   // The other languages name the country on its own ("Nederland: 3 niet aangeboden"), which sidesteps
   // articles and prepositions that differ per country.
   function genericStatus(o) {
     const head = o.filtered ? (o.genre && !o.apps ? L.genreHead(o.genre) : "") + L.countG(o.n, o.nf, o.kind) : L.allOf(o.nf, o.apps);
-    const quals = [o.tag && L.withTag(o.tag), o.age && L.upToAge(o.age), o.dev && L.by(o.dev), o.pass && L.inPassQ,
-      o.query && L.matching(o.query)].filter(Boolean);
+    const quals = [o.shared && L.fromShared, o.tag && L.withTag(o.tag), o.age && L.upToAge(o.age), o.dev && L.by(o.dev),
+      o.pass && L.inPassQ, o.query && L.matching(o.query)].filter(Boolean);
     return L.joinQ(head, quals) + (L.sortNote[o.sort] || "") + (o.elsewhere ? " · " + L.notOffered(o.elsewhereF, o.elsewhere, o.country) : "");
   }
   function genericEmpty(o) {
@@ -998,6 +1015,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       dcEnd: (o) => o.total ? `You've swiped all ${o.totalF} games for these filters` + (o.favs ? `, and kept ${o.favsF} ${o.favs === 1 ? "favourite" : "favourites"}` : "") + "."
         : "No games match these filters.",
       seeFavs: "See favourites", stampLike: "Favourite", stampSkip: "Skip", dcShotAlt: (k, t) => `Screenshot ${k} of ${t}`,
+      playTrailer: (t) => `Play the trailer: ${t}`, shareList: "Share list", shareTitle: "My Play Pass favourites",
+      sharedChip: "Shared list", closeShared: "Stop showing the shared list", addShared: "Add to my favourites", addedShared: "Added",
+      fromShared: "from a shared list", basedOn: (nf, n) => ` · tuned to your ${nf} ${n === 1 ? "favourite" : "favourites"}`,
       themeSystem: "match system", themeLight: "light", themeDark: "dark", themeLabel: (l) => `Theme: ${l}. Change theme`, themeTitle: (l) => `Theme: ${l}`
     },
     nl: {
@@ -1075,6 +1095,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       dcEnd: (o) => o.total ? `Je hebt alle ${o.totalF} games voor deze filters geswipet` + (o.favs ? ` en ${o.favsF} ${o.favs === 1 ? "favoriet" : "favorieten"} bewaard` : "") + "."
         : "Geen games voor deze filters.",
       seeFavs: "Favorieten bekijken", stampLike: "Favoriet", stampSkip: "Overslaan", dcShotAlt: (k, t) => `Screenshot ${k} van ${t}`,
+      playTrailer: (t) => `Trailer afspelen: ${t}`, shareList: "Lijst delen", shareTitle: "Mijn Play Pass-favorieten",
+      sharedChip: "Gedeelde lijst", closeShared: "Gedeelde lijst sluiten", addShared: "Toevoegen aan mijn favorieten", addedShared: "Toegevoegd",
+      fromShared: "uit een gedeelde lijst", basedOn: (nf, n) => ` · afgestemd op je ${nf} ${n === 1 ? "favoriet" : "favorieten"}`,
       themeSystem: "systeem volgen", themeLight: "licht", themeDark: "donker", themeLabel: (l) => `Thema: ${l}. Thema wijzigen`, themeTitle: (l) => `Thema: ${l}`
     },
     de: {
@@ -1152,6 +1175,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       dcEnd: (o) => o.total ? `Du hast alle ${o.totalF} Spiele für diese Filter geswipt` + (o.favs ? ` und ${o.favsF} ${o.favs === 1 ? "Favorit" : "Favoriten"} behalten` : "") + "."
         : "Keine Spiele für diese Filter.",
       seeFavs: "Favoriten ansehen", stampLike: "Favorit", stampSkip: "Weiter", dcShotAlt: (k, t) => `Screenshot ${k} von ${t}`,
+      playTrailer: (t) => `Trailer abspielen: ${t}`, shareList: "Liste teilen", shareTitle: "Meine Play Pass-Favoriten",
+      sharedChip: "Geteilte Liste", closeShared: "Geteilte Liste schließen", addShared: "Zu meinen Favoriten hinzufügen", addedShared: "Hinzugefügt",
+      fromShared: "aus einer geteilten Liste", basedOn: (nf, n) => n === 1 ? " · passend zu deinem Favoriten" : ` · passend zu deinen ${nf} Favoriten`,
       themeSystem: "wie System", themeLight: "hell", themeDark: "dunkel", themeLabel: (l) => `Design: ${l}. Design ändern`, themeTitle: (l) => `Design: ${l}`
     },
     fr: {
@@ -1229,6 +1255,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       dcEnd: (o) => o.total ? `Vous avez vu les ${o.totalF} jeux de ces filtres` + (o.favs ? ` et gardé ${o.favsF} ${o.favs <= 1 ? "favori" : "favoris"}` : "") + "."
         : "Aucun jeu pour ces filtres.",
       seeFavs: "Voir les favoris", stampLike: "Favori", stampSkip: "Passer", dcShotAlt: (k, t) => `Capture ${k} de ${t}`,
+      playTrailer: (t) => `Lire la bande-annonce : ${t}`, shareList: "Partager la liste", shareTitle: "Mes favoris Play Pass",
+      sharedChip: "Liste partagée", closeShared: "Fermer la liste partagée", addShared: "Ajouter à mes favoris", addedShared: "Ajouté",
+      fromShared: "d’une liste partagée", basedOn: (nf, n) => n <= 1 ? " · selon votre favori" : ` · selon vos ${nf} favoris`,
       themeSystem: "comme le système", themeLight: "clair", themeDark: "sombre", themeLabel: (l) => `Thème : ${l}. Changer de thème`, themeTitle: (l) => `Thème : ${l}`
     },
     es: {
@@ -1306,6 +1335,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       dcEnd: (o) => o.total ? `Has visto los ${o.totalF} juegos de estos filtros` + (o.favs ? ` y guardado ${o.favsF} ${o.favs === 1 ? "favorito" : "favoritos"}` : "") + "."
         : "No hay juegos para estos filtros.",
       seeFavs: "Ver favoritos", stampLike: "Favorito", stampSkip: "Saltar", dcShotAlt: (k, t) => `Captura ${k} de ${t}`,
+      playTrailer: (t) => `Ver el tráiler: ${t}`, shareList: "Compartir lista", shareTitle: "Mis favoritos de Play Pass",
+      sharedChip: "Lista compartida", closeShared: "Cerrar la lista compartida", addShared: "Añadir a mis favoritos", addedShared: "Añadido",
+      fromShared: "de una lista compartida", basedOn: (nf, n) => n === 1 ? " · según tu favorito" : ` · según tus ${nf} favoritos`,
       themeSystem: "según el sistema", themeLight: "claro", themeDark: "oscuro", themeLabel: (l) => `Tema: ${l}. Cambiar tema`, themeTitle: (l) => `Tema: ${l}`
     },
     it: {
@@ -1383,6 +1415,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       dcEnd: (o) => o.total ? `Hai visto tutti i ${o.totalF} giochi di questi filtri` + (o.favs ? ` e salvato ${o.favsF} ${o.favs === 1 ? "preferito" : "preferiti"}` : "") + "."
         : "Nessun gioco per questi filtri.",
       seeFavs: "Vedi i preferiti", stampLike: "Preferito", stampSkip: "Salta", dcShotAlt: (k, t) => `Screenshot ${k} di ${t}`,
+      playTrailer: (t) => `Guarda il trailer: ${t}`, shareList: "Condividi l’elenco", shareTitle: "I miei preferiti di Play Pass",
+      sharedChip: "Elenco condiviso", closeShared: "Chiudi l’elenco condiviso", addShared: "Aggiungi ai miei preferiti", addedShared: "Aggiunti",
+      fromShared: "da un elenco condiviso", basedOn: (nf, n) => n === 1 ? " · in base al tuo preferito" : ` · in base ai tuoi ${nf} preferiti`,
       themeSystem: "come il sistema", themeLight: "chiaro", themeDark: "scuro", themeLabel: (l) => `Tema: ${l}. Cambia tema`, themeTitle: (l) => `Tema: ${l}`
     },
     pt: {
@@ -1460,6 +1495,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       dcEnd: (o) => o.total ? `Você viu todos os ${o.totalF} jogos destes filtros` + (o.favs ? ` e guardou ${o.favsF} ${o.favs === 1 ? "favorito" : "favoritos"}` : "") + "."
         : "Nenhum jogo para estes filtros.",
       seeFavs: "Ver favoritos", stampLike: "Favorito", stampSkip: "Pular", dcShotAlt: (k, t) => `Captura ${k} de ${t}`,
+      playTrailer: (t) => `Ver o trailer: ${t}`, shareList: "Compartilhar lista", shareTitle: "Meus favoritos do Play Pass",
+      sharedChip: "Lista compartilhada", closeShared: "Fechar a lista compartilhada", addShared: "Adicionar aos meus favoritos", addedShared: "Adicionados",
+      fromShared: "de uma lista compartilhada", basedOn: (nf, n) => n === 1 ? " · com base no seu favorito" : ` · com base nos seus ${nf} favoritos`,
       themeSystem: "igual ao sistema", themeLight: "claro", themeDark: "escuro", themeLabel: (l) => `Tema: ${l}. Mudar tema`, themeTitle: (l) => `Tema: ${l}`
     },
     ja: {
@@ -1538,6 +1576,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       dcEnd: (o) => o.total ? `このフィルタの ${o.totalF} 本をすべてスワイプしました` + (o.favs ? `（お気に入り ${o.favsF} 件）` : "") + "。"
         : "このフィルタに一致するゲームはありません。",
       seeFavs: "お気に入りを見る", stampLike: "お気に入り", stampSkip: "スキップ", dcShotAlt: (k, t) => `${t} のスクリーンショット ${k}`,
+      playTrailer: (t) => `トレーラーを再生：${t}`, shareList: "リストを共有", shareTitle: "Play Pass のお気に入り",
+      sharedChip: "共有されたリスト", closeShared: "共有リストを閉じる", addShared: "お気に入りに追加", addedShared: "追加しました",
+      fromShared: "共有リスト", basedOn: (nf) => ` · お気に入り ${nf} 件をもとに選択`,
       themeSystem: "システムに合わせる", themeLight: "ライト", themeDark: "ダーク", themeLabel: (l) => `テーマ：${l}。テーマを変更`, themeTitle: (l) => `テーマ：${l}`
     }
   };
@@ -1597,18 +1638,19 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   })();
   const TX_BIT = (D.textLangs || []).indexOf(LANG);  // a game's bit for "the store has a translated description"
 
-  // games: [title (store name), genreIndex, appId, icon, [screenshots], developer, YTECHB's name when it differs,
+  // games: [title (store name), genreIndex, appId, icon, [first screenshot, count], developer, YTECHB's name when it differs,
   //         inPlayPass 1/0/null, starRating, numberOfRatings, installs, [tag indexes into D.tags], [indexes of
   //         the regions whose store doesn't offer it] or null, {region index: store id} where a country sells its
   //         own edition, PEGI age, first day seen with the Play Pass badge, release date, store category (apps
   //         only), {language: the store's title in it} where it differs, bits of D.textLangs with a translation]
   const games = D.games.map((g, i) => {
-    const [storeTitle, gi, appId, icon, shots, dev, listedAs, pass, rating, ratings, installs, tagIds, notIn, alt,
+    const [storeTitle, gi, appId, icon, shotInfo, dev, listedAs, pass, rating, ratings, installs, tagIds, notIn, alt,
            pegi, firstSeen, released, category, titles, texts] = g;
     const genre = D.genres[gi];
     const title = (titles && titles[LANG]) || storeTitle;
     const ids = tagIds || [];
-    return { i, title, gi, genre, appId, icon, shots: shots || [], dev, listedAs, pass, rating, ratings,
+    return { i, title, gi, genre, appId, icon, dev, listedAs, pass, rating, ratings,
+             shot0: shotInfo ? shotInfo[0] : null, nShots: shotInfo ? shotInfo[1] : 0, shots: null,  // the rest: withShots()
              installs: installs || 0, tagIds: ids, reps: [...new Set(ids.map((t) => tagRep[t]))],
              notIn: notIn ? new Set(notIn) : null, alt: alt || null,
              pegi: pegi ?? null, firstSeen: firstSeen || null, released: released || null, category: category || null,
@@ -1684,7 +1726,8 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     images: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="10" r="1.6" fill="currentColor"/><path d="m5 17 4.5-4.5 3 3 2.5-2.5L19 17" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>',
     ticket: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3a2 2 0 0 0 0-4z" fill="currentColor"/></svg>',
     star: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.4 2.6 5.4 5.9.8-4.3 4.1 1.1 5.9L12 16.8l-5.3 2.8 1.1-5.9-4.3-4.1 5.9-.8z"/></svg>',
-    share: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
+    share: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>',
+    play: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>'
   };
   const passTag = (g) => confirmedOnly ? "" : g.pass === 1 ? `<span class="pass-tag yes">${ICONS.ticket}${esc(L.passYes)}</span>`
     : g.pass === 0 ? `<span class="pass-tag no">${esc(L.passNo)}</span>` : "";
@@ -1697,18 +1740,18 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   const storeHref = (id) => `https://play.google.com/store/apps/details?id=${enc(id)}`;
 
   function shotsHtml(g) {
-    const n = g.shots.length;
+    const n = g.nShots;
     if (!n) {
       return `<div class="shots cover" style="${coverVars(g)}"><b aria-hidden="true">${esc(initials(g.title))}</b>` +
              `<em>${esc(L.noMatchCover)}</em></div>`;
     }
-    const pic = `<img src="${esc(img(g.shots[0], SHOT))}" alt="" loading="lazy" decoding="async">${pills(g)}`;
+    const pic = `<img src="${esc(img(g.shot0, SHOT))}" alt="" loading="lazy" decoding="async">${pills(g)}`;
     if (n === 1) return `<div class="shots">${pic}</div>`;
     const dots = Array.from({ length: n }, (_, k) => `<i${k ? "" : ' class="on"'}></i>`).join("");
     return `<button type="button" class="shots" data-i="${g.i}" data-k="0" aria-label="${esc(L.shotLabel(g.title, 1, n))}">` +
            `${pic}<span class="n">1/${n}</span><span class="dots">${dots}</span></button>`;
   }
-  const chip = (t) => `<button type="button" data-tag="${t}" aria-pressed="false" aria-label="${esc(L.tagChip(tagName(t)))}">${esc(tagName(t))}</button>`;
+  const chip = (t) => `<button type="button" data-tag="${t}" aria-pressed="${t === tag}" aria-label="${esc(L.tagChip(tagName(t)))}">${esc(tagName(t))}</button>`;
   function tagsHtml(g) {
     if (!g.chips.length) return "";
     const more = g.chips.length - TAGS_SHOWN;
@@ -1734,7 +1777,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     : `<span class="icon tile" style="${coverVars(g)}" aria-hidden="true" data-open="${g.i}">${esc(initials(g.title))}</span>`;
   const favBtn = (g) => `<button type="button" class="fav-btn" data-fav="${g.i}" aria-pressed="${favs.has(g.fid)}" aria-label="${esc(L.favOf(g.title))}">${ICONS.star}</button>`;
   function cardHtml(g) {
-    const storeUrl = g.appId ? storeHref(g.appId) : `https://play.google.com/store/search?q=${enc(g.title)}&c=apps`;
+    const storeUrl = g.appId ? storeHref((g.alt && g.alt[region]) || g.appId) : `https://play.google.com/store/search?q=${enc(g.title)}&c=apps`;
     return `<article class="card" style="--h:${HUES[g.genre] ?? 250}">` +
       shotsHtml(g) +
       `<div class="meta">${iconHtml(g, 48)}<div class="txt"><h3 class="title"><button type="button" class="open" data-open="${g.i}">${esc(g.title)}</button></h3>` +
@@ -1750,10 +1793,21 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       `</nav></div></article>`;
   }
 
-  // Build every card once; sorting moves the same elements around.
+  // A card is built the first time it's shown and kept for later.
   const factory = document.createElement("div");
-  factory.innerHTML = games.map(cardHtml).join("");
-  Array.from(factory.children).forEach((el, i) => { games[i].el = el; });
+  function cardEl(g) {
+    if (!g.el) {
+      factory.innerHTML = cardHtml(g);
+      g.el = factory.firstElementChild;
+    } else syncCard(g);
+    return g.el;
+  }
+  // a kept card catches up with what changed while it was off the page
+  function syncCard(g) {
+    g.el.querySelectorAll("[data-fav]").forEach((b) => b.setAttribute("aria-pressed", String(favs.has(g.fid))));
+    g.el.querySelectorAll(".tags [data-tag]").forEach((b) => b.setAttribute("aria-pressed", String(Number(b.dataset.tag) === tag)));
+    if (g.alt) g.el.querySelector("a.store").href = storeHref(g.alt[region] || g.appId);
+  }
 
   // ----- header, footer, chips
   const m = D.meta;
@@ -1814,9 +1868,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   let genre = -1;
   let sort = SORTS.includes(store.get("sort")) ? store.get("sort") : "az";
   let tag = -1, age = 0, dev = "", favOnly = false;
+  let shared = null;  // the ids of a list someone shared (#list=...), while looking at it
   let discoverOn = false;
   let onlyPass = !confirmedOnly && store.get("pass") === "1";
-  let groups = [];
   let current = null;  // the game open in the detail view
 
   // Everything that counts follows the region and the section (games, or apps).
@@ -1844,12 +1898,12 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   function renderRegion() {
     // a country that sells its own edition of a game gets a Play link to that edition
     games.forEach((g) => {
-      if (g.alt) g.el.querySelector("a.store").href = storeHref(g.alt[region] || g.appId);
+      if (g.alt && g.el) g.el.querySelector("a.store").href = storeHref(g.alt[region] || g.appId);
     });
     renderCounts();
     const r = REGIONS[region];
     const gamesHere = games.filter((g) => inRegion(g) && !isApp(g));
-    const withShots = gamesHere.filter((g) => g.shots.length).length;
+    const withShots = gamesHere.filter((g) => g.nShots).length;
     $("stub-small").innerHTML = confirmedOnly
       ? L.stubPass(esc(shortDate(m.passChecked)))
       : L.stubAll(fmt.format(withShots), fmt.format(gamesHere.filter((g) => g.pass === 1).length));
@@ -1862,26 +1916,50 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       country: regionName(r), theCountry: theName(r), missing, missingF: fmt.format(missing), home: region === 0 });
   }
 
-  function layout() {
+  // The list shows the games that pass the filters in the chosen order, PAGE cards at a time; the
+  // next page is added when the end of the list comes within reach.
+  const PAGE = 36;
+  const byGenre = D.genres.flatMap((_, gi) => byTitle.filter((g) => g.gi === gi));
+  let items = [], next = 0, grid = null, groupCounts = [];
+  const listEnd = document.createElement("div");
+  listEnd.className = "list-end";
+  const io = "IntersectionObserver" in window
+    ? new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) renderMore(); }, { rootMargin: "0px 0px 1500px 0px" })
+    : null;
+  function renderList(shown) {
+    items = shown;
+    next = 0;
+    grid = null;
     list.textContent = "";
-    groups = [];
     if (sort !== "genre") {
-      const grid = document.createElement("div");
-      grid.className = "grid";
-      ORDERS[sort].forEach((g) => grid.append(g.el));
       list.innerHTML = `<h2 class="sr-only">${esc(L.heading[sort])}</h2>`;
+      grid = document.createElement("div");
+      grid.className = "grid";
       list.append(grid);
-    } else {
-      D.genres.forEach((name, gi) => {
+    }
+    list.append(listEnd);
+    renderMore();
+  }
+  function renderMore() {
+    const end = io ? Math.min(next + PAGE, items.length) : items.length;
+    for (; next < end; next++) {
+      const g = items[next];
+      if (sort === "genre" && (next === 0 || items[next - 1].gi !== g.gi)) {
+        const name = D.genres[g.gi], n = groupCounts[g.gi];
         const sec = document.createElement("section");
         sec.className = "group";
-        sec.innerHTML = `<div class="group-head"><h2 style="--h:${HUES[name] ?? 250}">${esc(genreName(name))}</h2><span></span></div><div class="grid"></div>`;
-        const grid = sec.lastElementChild;
-        byTitle.forEach((g) => { if (g.gi === gi) grid.append(g.el); });
-        groups.push({ gi, sec, count: sec.querySelector(".group-head span") });
-        list.append(sec);
-      });
+        sec.innerHTML = `<div class="group-head"><h2 style="--h:${HUES[name] ?? 250}">${esc(genreName(name))}</h2>` +
+          `<span>${esc(L.groupCount(n, fmt.format(n), g.gi === APPS))}</span></div><div class="grid"></div>`;
+        list.insertBefore(sec, listEnd);
+        grid = sec.lastElementChild;
+      }
+      grid.append(cardEl(g));
     }
+    if (!io) return;
+    io.unobserve(listEnd);
+    if (next < items.length) io.observe(listEnd);  // observing again reports whether the end is still in reach
+  }
+  function layout() {
     $("sort").value = sort;
     apply();
   }
@@ -1891,38 +1969,37 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     const terms = norm(q.value).split(/\s+/).filter(Boolean);
     const passes = (g) => (tag < 0 || g.reps.includes(tag)) && (!onlyPass || g.pass === 1)
       && (!age || (g.pegi != null && g.pegi <= age)) && (!dev || g.dev === dev) && terms.every((t) => g.key.includes(t))
-      && (!withFavs || !favOnly || favs.has(g.fid));
-    // "All" means all games; favourites include the apps you starred
-    const inSection = (g) => genre < 0 ? !isApp(g) || (withFavs && favOnly) : g.gi === genre;
+      && (!withFavs || ((!favOnly || favs.has(g.fid)) && (!shared || shared.has(g.fid))));
+    // "All" means all games; favourites (and shared lists) include apps
+    const inSection = (g) => genre < 0 ? !isApp(g) || (withFavs && (favOnly || !!shared)) : g.gi === genre;
     return { terms, passes, inSection };
   }
   function apply() {
     const { terms, passes, inSection: section } = filters(true);
-    const shownBy = new Array(D.genres.length).fill(0);
-    let shown = 0, elsewhere = 0, appHits = 0;  // elsewhere: matches the region's store doesn't offer
-    for (const g of games) {
-      const inSection = section(g);
-      const match = inSection && passes(g);
-      const ok = match && inRegion(g);
-      g.el.hidden = !ok;
-      if (ok) { shown++; shownBy[g.gi]++; } else if (match) elsewhere++;
+    const shownBy = new Array(D.genres.length).fill(0), shownList = [];
+    let elsewhere = 0, appHits = 0;  // elsewhere: matches the region's store doesn't offer
+    for (const g of sort === "genre" ? byGenre : ORDERS[sort]) {
+      const match = section(g) && passes(g);
+      if (match && inRegion(g)) { shownList.push(g); shownBy[g.gi]++; } else if (match) elsewhere++;
       else if (genre < 0 && isApp(g) && (terms.length || dev) && inRegion(g) && passes(g)) appHits++;
     }
-    for (const grp of groups) {
-      const n = shownBy[grp.gi];
-      grp.sec.hidden = n === 0;
-      grp.count.textContent = L.groupCount(n, fmt.format(n), grp.gi === APPS);
-    }
+    groupCounts = shownBy;
+    renderList(shownList);
+    const shown = shownList.length;
     // what's showing, for the status line and the empty message
     const appsView = genre >= 0 && genre === APPS;
     const o = { n: shown, nf: fmt.format(shown), apps: appsView, fav: favOnly,
       kind: favOnly ? (appsView ? "favApp" : "fav") : appsView ? "app" : "game",
       genre: genre < 0 || appsView ? "" : genreName(D.genres[genre]), tag: tag < 0 ? "" : tagName(tag), age, dev, pass: onlyPass,
       query: terms.length ? q.value.trim() : "", sort, elsewhere, elsewhereF: fmt.format(elsewhere),
-      country: regionName(REGIONS[region]), theCountry: theName(REGIONS[region]), noFavs: favOnly && !favs.size,
-      filtered: !!((genre >= 0 && !appsView) || tag >= 0 || age || dev || onlyPass || favOnly || terms.length) };
+      country: regionName(REGIONS[region]), theCountry: theName(REGIONS[region]), noFavs: favOnly && !favs.size, shared: !!shared,
+      filtered: !!((genre >= 0 && !appsView) || tag >= 0 || age || dev || onlyPass || favOnly || shared || terms.length) };
     $("status").textContent = L.status(o);
+    const unsaved = shared ? [...shared].filter((id) => !favs.has(id) && games.some((g) => g.fid === id)).length : 0;
     $("active").innerHTML =
+      (shared ? `<span class="filter-chip">${esc(L.sharedChip)}<button type="button" data-close-shared aria-label="${esc(L.closeShared)}">×</button></span>` +
+        (unsaved ? `<button type="button" class="linkish" data-add-shared>${esc(L.addShared)}</button>` : "") : "") +
+      (favOnly && favs.size ? `<button type="button" class="linkish" data-share-favs>${esc(L.shareList)}</button>` : "") +
       (dev ? `<span class="filter-chip">${esc(L.byDev(dev))}<button type="button" data-clear-dev aria-label="${esc(L.stopDev(dev))}">×</button></span>` : "") +
       (appHits ? `<button type="button" class="linkish" data-goto-apps>${esc(L.matchingApps(fmt.format(appHits), appHits))}</button>` : "");
     $("empty").hidden = shown > 0;
@@ -1942,6 +2019,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     if (sort !== "az") p.set("sort", sort);
     if (REGIONS.length > 1 && (withCountry || region !== homeRegion)) p.set("country", REGIONS[region].code.toLowerCase());
     if (favOnly) p.set("favs", "1");
+    if (shared) p.set("list", [...shared].join(","));
     if (discoverOn) p.set("discover", "1");
     if (current && current.appId) p.set("game", current.appId);
     return p.toString();
@@ -1971,6 +2049,8 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     const r = REGIONS.findIndex((x) => x.code === (p.get("country") || "").toUpperCase());
     region = r >= 0 ? r : homeRegion;
     favOnly = p.get("favs") === "1";
+    const ids = (p.get("list") || "").split(",").filter(Boolean);
+    shared = ids.length && !favOnly ? new Set(ids) : null;
     return { game: p.get("game"), discover: p.get("discover") === "1" };
   }
   function showControls() {
@@ -2030,7 +2110,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   const paras = (text) => esc(text).replace(/\r\n?/g, "\n").split(/\n{2,}/).map((x) => `<p>${x.replace(/\n/g, "<br>")}</p>`).join("");
   function renderDetail(g, d) {
     const storeId = (g.alt && g.alt[region]) || g.appId;
-    const shots = d && d.screenshots && d.screenshots.length ? d.screenshots : g.shots;
+    const shots = d && d.screenshots && d.screenshots.length ? d.screenshots : g.shot0 ? [g.shot0] : [];
     const missing = REGIONS.filter((r, i) => g.notIn && g.notIn.has(i)).map(regionName).sort(collator.compare);
     const facts = [];
     const pegi = g.pegi != null ? `PEGI ${g.pegi}` + (d && d.pegiNotes ? ` · ${esc(d.pegiNotes)}` : "") : "";
@@ -2051,10 +2131,10 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
         (missing.length ? `<br><span class="muted">${esc(L.notIn(missing.join(L.listSep)))}</span>` : "")]);
     }
     if (g.listedAs) facts.push([L.listedAs, esc(g.listedAs)]);
-    const video = d && d.video && (/(?:embed\/|v=)([\w-]{6,})/.exec(d.video) || [])[1];
+    const video = ytId(d);
     let desc;
     if (d === undefined) desc = `<p class="muted">${esc(L.loadingDesc)}</p>`;
-    else if (d === false) desc = `<p class="muted">${esc(L.descFailed(location.protocol === "file:"))}</p>`;
+    else if (d === false) desc = `<p class="muted">${esc(L.descFailed(fromDisk))}</p>`;
     else {
       const long = (d.description || "").length > 700;
       desc = (d.summary ? `<p class="d-summary">${esc(d.summary)}</p>` : "") +
@@ -2062,7 +2142,8 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
           (long ? `<button type="button" class="linkish" id="d-more" aria-expanded="false">${esc(L.fullDesc)}</button>` : "") : "");
     }
     dBody.innerHTML =
-      (d && d.header ? `<img class="d-banner" src="${esc(img(d.header, "w1052"))}" alt="">` : "") +
+      (video ? trailerBtn("d-trailer", video, d.header ? img(d.header, "w1052") : ytStill(video), g.title)
+        : d && d.header ? `<img class="d-banner" src="${esc(img(d.header, "w1052"))}" alt="">` : "") +
       `<div class="d-head">${iconHtml(g, 64).replace(/ data-open="\d+"/, "")}<div class="txt">` +
       `<h2 class="d-title" id="d-title">${esc(g.title)}</h2>` +
       `<p class="d-sub">${g.dev ? `<button type="button" class="linkish" data-ddev>${esc(g.dev)}</button> · ` : ""}${esc(genreLabel(g))}` +
@@ -2081,12 +2162,30 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       `<button type="button" data-dshare>${ICONS.share}<span>${esc(L.share)}</span></button>` +
       `</nav>`;
   }
+  // Trailers: a still with a play button; the YouTube player loads (and plays) only when it's pressed.
+  const ytId = (d) => d && d.video && (/(?:embed\/|v=|youtu\.be\/)([\w-]{6,})/.exec(d.video) || [])[1];
+  const ytStill = (id) => `https://i.ytimg.com/vi/${enc(id)}/hqdefault.jpg`;
+  const trailerBtn = (cls, id, still, title) => `<button type="button" class="trailer ${cls}" data-yt="${esc(id)}" aria-label="${esc(L.playTrailer(title))}">` +
+    `<img src="${esc(still)}" alt="" loading="lazy" decoding="async" draggable="false"><span class="play" aria-hidden="true">${ICONS.play}</span></button>`;
+  function playTrailer(btn) {
+    const box = document.createElement("div");
+    box.className = btn.className + " playing";
+    box.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${enc(btn.dataset.yt)}?autoplay=1&rel=0&playsinline=1&hl=${LANG}" ` +
+      `title="${esc(btn.getAttribute("aria-label"))}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen ` +
+      `referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
+    btn.replaceWith(box);
+    box.firstElementChild.focus();
+  }
+  const stopTrailers = (root) => root.querySelectorAll(".trailer.playing").forEach((box) => box.remove());
+
   // details/<appId>.json, once per app, with the store's translated summary and description from
   // details/<lang>/<appId>.json on top; done(d) gets the contents, or false when they can't be read
   const loading = new Map();
   const getJson = (path) => fetch(path).then((r) => r.ok ? r.json() : Promise.reject(new Error(String(r.status))));
+  const fromDisk = location.protocol === "file:";  // browsers don't let a page on disk read files next to it
   function loadDetails(g, done) {
     if (!g || !g.appId) return;
+    if (fromDisk && !details.has(g.appId)) details.set(g.appId, false);
     if (details.has(g.appId)) { if (done) done(details.get(g.appId)); return; }
     if (!loading.has(g.appId)) {
       loading.set(g.appId, Promise.all([getJson(`details/${enc(g.appId)}.json`),
@@ -2098,6 +2197,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     if (done) loading.get(g.appId).then(done);
   }
   function openDetail(g, push) {
+    stopTrailers(stage);
     current = g;
     renderDetail(g, details.get(g.appId));
     if (!dlg.open) dlg.showModal();
@@ -2115,8 +2215,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     if (how === "back" && pushed && history.state && history.state.game) history.back();
     else if (how !== "history") syncUrl(false, "game", pushed);
     pushed = false;
-    const opener = g.el.querySelector(".open");
-    if (opener && !g.el.hidden && !discoverOn) opener.focus({ preventScroll: true });
+    stopTrailers(dBody);
+    const opener = g.el && g.el.isConnected && g.el.querySelector(".open");
+    if (opener && !discoverOn) opener.focus({ preventScroll: true });
   }
   dlg.addEventListener("close", () => { if (current) closeDetail("back"); });  // Esc
   dlg.addEventListener("click", (e) => { if (e.target === dlg) closeDetail("back"); });  // the backdrop
@@ -2124,7 +2225,8 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   dBody.addEventListener("click", async (e) => {
     const g = current;
     if (!g) return;
-    if (e.target.closest("#d-more")) {
+    if (e.target.closest("[data-yt]")) playTrailer(e.target.closest("[data-yt]"));
+    else if (e.target.closest("#d-more")) {
       const b = $("d-more"), open = b.getAttribute("aria-expanded") === "true";
       $("d-desc").classList.toggle("clamped", open);
       b.setAttribute("aria-expanded", String(!open));
@@ -2164,7 +2266,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   $("genres").addEventListener("click", (e) => {
     const b = e.target.closest(".genre");
     if (!b) return;
-    if (b.id === "fav-chip") { favOnly = !favOnly; showControls(); apply(); toTop(); }
+    if (b.id === "fav-chip") { favOnly = !favOnly; shared = null; showControls(); apply(); toTop(); }
     else setGenre(Number(b.dataset.g));
   });
   $("only-pass").setAttribute("aria-pressed", String(onlyPass));
@@ -2193,9 +2295,23 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     apply();
     if (dev) toTop();
   }
-  $("active").addEventListener("click", (e) => {
-    if (e.target.closest("[data-clear-dev]")) setDev("");
-    else if (e.target.closest("[data-goto-apps]")) setGenre(APPS);
+  // A favourites list travels as a link: #list=<appId>,<appId>,...
+  const listUrl = () => location.href.split("#")[0] + "#list=" + [...favs].map(enc).join(",");
+  $("active").addEventListener("click", async (e) => {
+    const b = e.target.closest("button");
+    if (!b) return;
+    if (b.matches("[data-clear-dev]")) setDev("");
+    else if (b.matches("[data-goto-apps]")) setGenre(APPS);
+    else if (b.matches("[data-share-favs]")) flash(b, await share(listUrl(), L.shareTitle));
+    else if (b.matches("[data-close-shared]")) { shared = null; apply(); }
+    else if (b.matches("[data-add-shared]")) {
+      games.forEach((g) => { if (shared.has(g.fid) && !favs.has(g.fid)) setFav(g, true); });
+      apply();
+      const chip = $("fav-chip");  // the new count is on the chip; say so where the button was
+      chip.classList.add("pulse");
+      setTimeout(() => chip.classList.remove("pulse"), 1200);
+      $("active").insertAdjacentHTML("beforeend", `<span class="added" role="status">${esc(L.addedShared)}</span>`);
+    }
   });
   list.addEventListener("click", (e) => {
     const star = e.target.closest("[data-fav]");
@@ -2223,7 +2339,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     toTop();
   });
   $("clear").addEventListener("click", () => {
-    q.value = ""; genre = -1; tag = -1; age = 0; dev = ""; onlyPass = false; favOnly = false;
+    q.value = ""; genre = -1; tag = -1; age = 0; dev = ""; onlyPass = false; favOnly = false; shared = null;
     $("only-pass").setAttribute("aria-pressed", "false");
     store.set("pass", "");
     showControls();
@@ -2269,12 +2385,45 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   function buildDeck() {
     const { passes, inSection } = filters(false);
     deck = games.filter((g) => inRegion(g) && inSection(g) && passes(g) && !swipes.has(g.fid));
-    for (let i = deck.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [deck[i], deck[j]] = [deck[j], deck[i]]; }
     pos = 0;
     undos = [];
+    rankDeck();
+  }
+  // The order leans towards your taste: the tags, genres and developers of the games you kept count
+  // for a game, those of the games you skipped against it (rare tags count more than ones most games
+  // share, like "Single player"). It's still a shuffle, just a weighted one, redone after every swipe;
+  // before you've kept anything, better-rated games simply come up a little more often.
+  let tasteFrom = 0;
+  function rankDeck(from = pos) {  // reorders deck[from...]
+    const like = new Map(), skip = new Map();
+    const add = (m, k, w) => m.set(k, (m.get(k) || 0) + w);
+    let kept = 0;
+    for (const g of games) {
+      const s = swipes.get(g.fid), liked = favs.has(g.fid) || s === 1;
+      if (!liked && s !== 0) continue;
+      const m = liked ? like : skip;
+      kept += liked ? 1 : 0;
+      g.reps.forEach((t) => add(m, "t" + t, 1 / Math.log(2 + tagCounts[t])));
+      add(m, "g" + g.gi, 0.6);
+      if (g.dev) add(m, "d" + g.dev, 0.8);
+    }
+    tasteFrom = kept;
+    const pull = (k) => (like.get(k) || 0) - 0.5 * (skip.get(k) || 0);
+    const score = (g) => {
+      if (!kept) return 0;
+      const tags = g.reps.reduce((sum, t) => sum + pull("t" + t), 0) / Math.sqrt(g.reps.length || 1);
+      return (tags + pull("g" + g.gi) + (g.dev ? pull("d" + g.dev) : 0)) / Math.sqrt(1 + kept);
+    };
+    const rest = deck.slice(from).map((g) => {
+      const quality = g.rating ? Math.max(0.2, weighted(g) / 5) : 0.6;
+      const w = Math.exp(Math.min(4, 1.6 * score(g))) * quality * quality;
+      return { g, key: Math.pow(Math.random(), 1 / w) };  // weighted random order (Efraimidis-Spirakis)
+    }).sort((a, b) => b.key - a.key);
+    deck.splice(from, deck.length - from, ...rest.map((x) => x.g));
   }
   function dcBody(g, d) {
-    const shots = (d && d.screenshots && d.screenshots.length ? d.screenshots : g.shots).slice(0, 3);
+    const shots = (d && d.screenshots && d.screenshots.length ? d.screenshots : g.shot0 ? [g.shot0] : []).slice(0, 3);
+    const video = ytId(d);
     const long = d && (d.description || "").length > 320;
     const text = d === undefined ? `<p class="muted">${esc(L.loadingDesc)}</p>`
       : !d ? "" : (d.summary ? `<p class="d-summary">${esc(d.summary)}</p>` : "") +
@@ -2286,13 +2435,15 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       `<p class="d-sub">${g.dev ? esc(g.dev) + " · " : ""}${esc(genreLabel(g))}${g.pegi != null ? ` · PEGI ${g.pegi}` : ""}` +
       `${g.isNew ? ` · ${newPill}` : ""}</p>${rateHtml(g)}</div></div>` +
       `<div class="dc-text"${d && !d.translated && LANG !== "en" ? ' lang="en"' : ""}>${text}</div>` +
+      (video ? trailerBtn("dc-trailer", video, d.header ? img(d.header, "w720") : ytStill(video), g.title) : "") +
       shots.map((x, k) => `<img class="dc-shot" src="${esc(img(x, "w720"))}" alt="${esc(L.dcShotAlt(k + 1, g.title))}" ${k ? 'loading="lazy" ' : ""}decoding="async" draggable="false">`).join("") +
       `<p class="dc-links"><button type="button" class="linkish" data-dc-details>${esc(L.allDetails)}</button>` +
       (storeId ? ` · <a href="${esc(storeHref(storeId))}" target="_blank" rel="noopener">${esc(L.googlePlay)}</a>` : "") + `</p>`;
   }
   function dcCount() {
     const left = deck.length - pos;
-    $("dc-count").textContent = left > 0 ? L.toGo(fmt.format(left)) + (left === deck.length ? "" : L.swiped(fmt.format(pos))) : L.allDone;
+    $("dc-count").textContent = left > 0 ? L.toGo(fmt.format(left)) + (left === deck.length ? "" : L.swiped(fmt.format(pos))) +
+      (tasteFrom ? L.basedOn(fmt.format(tasteFrom), tasteFrom) : "") : L.allDone;
     $("dc-undo").disabled = !undos.length;
     $("dc-nope").disabled = $("dc-like").disabled = left <= 0;
     showFavCount();
@@ -2321,7 +2472,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       box.scrollTop = top;
     });
     // get the next two ready
-    deck.slice(pos + 1, pos + 3).forEach((n) => { loadDetails(n); if (n.shots[0]) new Image().src = img(n.shots[0], "w720"); });
+    deck.slice(pos + 1, pos + 3).forEach((n) => { loadDetails(n); if (n.shot0) new Image().src = img(n.shot0, "w720"); });
   }
   function decide(keep) {
     if (!dcCard || pos >= deck.length) return;
@@ -2331,6 +2482,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     saveSwipes();
     if (keep) setFav(g, true);
     pos++;
+    rankDeck();
     dcCard = null;
     if (reduceMotion()) { renderDc(); return; }
     card.style.transition = "transform 0.3s ease-in, opacity 0.3s ease-in";
@@ -2347,6 +2499,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     if (last.keep && !last.wasFav) setFav(last.g, false);
     pos = Math.max(0, pos - 1);
     deck[pos] = last.g;
+    rankDeck(pos + 1);  // the game you took back stays next
     renderDc();
   }
   // Dragging: sideways moves the card, up and down still scrolls it.
@@ -2384,7 +2537,8 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   stage.addEventListener("pointercancel", (e) => endDrag(e, true));
   stage.addEventListener("click", (e) => {
     const g = deck[pos];
-    if (e.target.closest("[data-dc-more]")) {
+    if (e.target.closest("[data-yt]")) playTrailer(e.target.closest("[data-yt]"));
+    else if (e.target.closest("[data-dc-more]")) {
       const b = e.target.closest("[data-dc-more]"), open = b.getAttribute("aria-expanded") === "true";
       b.previousElementSibling.classList.toggle("clamped", open);
       b.setAttribute("aria-expanded", String(!open));
@@ -2405,6 +2559,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     if (!discoverOn) return;
     discoverOn = false;
     $("dc-confirm").hidden = true;
+    stopTrailers(stage);
     if (current) closeDetail("history");
     if (dc.open) dc.close();
     if (how === "back" && dcPushed && history.state && history.state.discover) history.back();
@@ -2449,20 +2604,39 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   });
 
   // ----- screenshot cycling (one delegated listener for every card)
+  // A card carries its first screenshot; the rest come with the game's details file.
+  const shotKey = (u) => String(u).replace(IMG_HOST, "").split("=")[0];
+  function withShots(g, done) {
+    if (g.shots) { done(); return; }
+    loadDetails(g, (d) => {
+      const more = (d && d.screenshots || []).filter((u) => shotKey(u) !== shotKey(g.shot0));
+      g.shots = [g.shot0, ...more].slice(0, Math.max(1, g.nShots));
+      done();
+    });
+  }
   function nextShot(btn) {
-    const g = games[Number(btn.dataset.i)], n = g.shots.length;
-    const k = (Number(btn.dataset.k) + 1) % n;
-    btn.dataset.k = String(k);
-    btn.querySelector("img").src = img(g.shots[k], SHOT);
-    btn.querySelector(".n").textContent = `${k + 1}/${n}`;
-    btn.querySelectorAll(".dots i").forEach((d, j) => d.classList.toggle("on", j === k));
-    btn.setAttribute("aria-label", L.shotLabel(g.title, k + 1, n));
-    preload(btn, k);
+    const g = games[Number(btn.dataset.i)];
+    withShots(g, () => {
+      const n = g.shots.length;
+      if (n < 2) return;
+      if (btn.querySelectorAll(".dots i").length !== n) {  // the details file had a different number
+        btn.querySelector(".dots").innerHTML = Array.from({ length: n }, () => "<i></i>").join("");
+      }
+      const k = (Number(btn.dataset.k) + 1) % n;
+      btn.dataset.k = String(k);
+      btn.querySelector("img").src = img(g.shots[k], SHOT);
+      btn.querySelector(".n").textContent = `${k + 1}/${n}`;
+      btn.querySelectorAll(".dots i").forEach((d, j) => d.classList.toggle("on", j === k));
+      btn.setAttribute("aria-label", L.shotLabel(g.title, k + 1, n));
+      preload(btn, k);
+    });
   }
   function preload(btn, k) {
     const g = games[Number(btn.dataset.i)];
-    const nxt = g.shots[(k + 1) % g.shots.length];
-    if (nxt) new Image().src = img(nxt, SHOT);
+    withShots(g, () => {
+      const nxt = g.shots.length > 1 && g.shots[(k + 1) % g.shots.length];
+      if (nxt) new Image().src = img(nxt, SHOT);
+    });
   }
   list.addEventListener("click", (e) => { const b = e.target.closest("button.shots"); if (b) nextShot(b); });
   list.addEventListener("pointerover", (e) => {

@@ -103,8 +103,9 @@ menu has since grown to all 101 countries on Google's Play Pass list.
 ## Feature ideas
 
 Value is how much it helps someone browsing the page; effort is roughly a few hours
-(low) up to a day (medium). Built since (4 October 2026): 1, 2 (monthly), 3, 4, 5, 7, 8, 10, 11 and 12
-(eight languages).
+(low) up to a day (medium). Built since (4 October 2026): 1, 2 (monthly), 3, 4, 5, 6, 7, 8, 10, 11
+and 12 (eight languages), plus trailers in the page, shareable favourites lists, a Discover
+that learns from your swipes, and a browser check before each monthly update is published.
 Google Play no longer publishes download sizes, so the detail view has no size.
 
 | # | Feature | Value | Effort | Notes |
@@ -114,7 +115,7 @@ Google Play no longer publishes download sizes, so the detail view has no size.
 | 3 | "New in Play Pass" badge and sort (built) | High | Medium | Needs a first-seen date per game, starting now; the crawl already catches new games first |
 | 4 | Shareable links (built) | High | Low | Keeps search, genre, tag, sort and country in the URL |
 | 5 | Game detail view (built) | High | Medium | Tap a card for description, all screenshots, age rating, price outside Play Pass, size, last update; loaded per game so the page stays small |
-| 6 | Faster page | Medium | Medium | Shared icons instead of inline SVG, fewer screenshot dots, render cards as they scroll in; about 3x fewer elements |
+| 6 | Faster page (built: 1.1 MB instead of 2.9, ready in 1.1 s instead of 3.7 on a slow phone) | Medium | Medium | Shared icons instead of inline SVG, fewer screenshot dots, render cards as they scroll in; about 3x fewer elements |
 | 7 | Favourites and "played" marks (built, with Discover swiping) | Medium | Low | Saved in the browser, with a filter |
 | 8 | Age rating filter (built) | Medium | Low | For parents: PEGI 3/7/12/16/18 |
 | 9 | "Recently left Play Pass" list | Medium | Low | Comes free with the history from #3 |

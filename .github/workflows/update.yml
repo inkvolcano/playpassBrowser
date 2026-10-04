@@ -1,5 +1,6 @@
 # Monthly update: refresh the game list, Play Store data, countries and translations
-# (update.py), commit the result to main and let GitHub Pages publish it.
+# (update.py), check the new page in a browser (check_page.js), commit the result to main
+# and let GitHub Pages publish it.
 name: Monthly update
 
 on:
@@ -45,6 +46,17 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           python3 update.py --commit ${{ inputs.quick && '--quick' || '' }}
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      # Nothing is pushed unless the new page works: every language, cards, search, detail view, Discover.
+      - name: Check the page in a browser
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+          node check_page.js
 
       - name: Push to main
         if: github.event_name == 'schedule' || inputs.push

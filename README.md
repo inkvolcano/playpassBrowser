@@ -9,8 +9,10 @@ itself on the 1st of every month (see [Updating](#updating)).
 
 You can also open `index.html` straight from disk. It is one self-contained file (the game data is
 embedded); only the screenshots, icons and fonts load from the web
-(`play-lh.googleusercontent.com`, Google Fonts), and the detail view reads its
-text from `details/` on the published site. Each card has the game's icon,
+(`play-lh.googleusercontent.com`, Google Fonts). The detail view, Discover's
+descriptions and the cards' further screenshots come from `details/`, which a
+browser only lets the published site read, so from disk the cards show their
+first screenshot and the detail view has no description. Each card has the game's icon,
 title (the Play Store's own, not YTECHB's spelling), developer, genre, Play Store
 star rating and downloads, its Play Store tags, up to 12 screenshots that cycle
 when you tap them, and links to the Play Store page, a YouTube gameplay search
@@ -18,8 +20,9 @@ and a Google Images search. Games added to Play Pass or released in the last 30
 days carry a "New" label.
 
 Tap a title for the detail view: the store description, every screenshot, the
-trailer, the age rating (PEGI and ESRB), what the game costs without Play Pass,
-release and update dates, the countries that offer it, and a share button.
+trailer (it plays right there; YouTube only loads when you press play), the age
+rating (PEGI and ESRB), what the game costs without Play Pass, release and update
+dates, the countries that offer it, and a share button.
 
 You can search titles (YTECHB's names work too), developers and tags; filter by
 genre, by tag (Offline, Roguelike, Pixelated, ...; tap a tag on a card to filter
@@ -43,8 +46,16 @@ three screenshots under each other. Swipe right (or ♥, or the right arrow key)
 to add it to your favourites, left (✕, left arrow) to skip it; undo takes back
 the last swipe. Discover follows the current country and filters (open it from
 "Puzzle" with "PEGI 7" to swipe through those), skips the games already swiped,
-and Reset starts over, optionally clearing the favourites too. Favourites and
-swipes are kept in your browser (localStorage), so they're per device.
+and Reset starts over, optionally clearing the favourites too. Discover leans
+towards what you keep: games sharing tags, genres and developers with your
+favourites come up more often, and those like the games you skip less often. It's
+still a shuffle; before you've kept anything, better-rated games come up slightly
+more often. Cards with a trailer can play it in Discover too.
+
+Favourites and swipes are kept in your browser (localStorage), so they're per
+device. "Share list" in the Favourites view copies a link to your list (on a
+phone it opens the share sheet). Whoever opens it sees the list and can add it
+to their own favourites, which is also how you move a list to another device.
 
 **Phone held sideways.** On a short screen the filter bar shrinks to one row of
 search and menus plus one sideways-scrolling row of genre chips. It slides out
@@ -84,6 +95,7 @@ games that are in Play Pass only outside the US are missing.
 | `.github/workflows/update.yml` | Runs `update.py` on the 1st of every month and pushes the result to `main` |
 | `fill_screenshots.py` | Looks every game up on the Play Store, caching results in `data/shots_cache.json`, then rebuilds `index.html` |
 | `build_index.py` | Builds `index.html` from `index.template.html` and the data files |
+| `check_page.js` | Opens the built page in a headless browser in every language and checks it works (`npm install playwright` first) |
 | `index.template.html` | The page (HTML, CSS, JS) with a `__DATA__` placeholder |
 | `data/games.json` | YTECHB's game list: `title`, `genre`, `source` |
 | `data/discovered.json` | Play Pass games found on Google Play that YTECHB's list lacks: `appId`, `title`, `genre` |
@@ -104,7 +116,9 @@ the new data and page to `main`, and GitHub Pages publishes it. To run it
 sooner, open the repository's **Actions** tab, pick **Monthly update** and
 press **Run workflow**; tick "Test run" and untick "Push" for a quick check
 that changes nothing. A full run takes one to three hours, because requests
-are throttled. If Google Play stops answering, the run turns red. Whatever it
+are throttled. Before pushing, it opens the new page in a headless browser in
+every language (`check_page.js`: cards, search, country menu, detail view,
+Discover); if anything fails, nothing is pushed and the run turns red. If Google Play stops answering, the run turns red. Whatever it
 finished is still committed and pushed, and the next run picks up the rest.
 
 `update.py` runs these steps in order (`--skip` leaves steps out; run it
