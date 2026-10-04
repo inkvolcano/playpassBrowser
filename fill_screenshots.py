@@ -820,8 +820,8 @@ def translations_for(app_id):
     entry: the app's tags in English, its title in each language where that differs, and
     the store's name for each English tag per language. Tags are matched by position: every
     language lists the same genre and tags in the same order. texts: {lang: {summary,
-    description}} for each language the listing is translated into (the store serves the
-    developer's default listing, usually English, for the others)."""
+    description}} where the store has the listing in that language: the developer's
+    translation, or (for most apps) Google's automatic one."""
     us = app_details(app_id, "en", "us")
     if not us or not us.get("title"):
         return None, None

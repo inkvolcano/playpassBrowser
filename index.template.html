@@ -902,8 +902,8 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   "use strict";
   const D = JSON.parse(document.getElementById("data").textContent);
   // ----- interface language: English, or one of the translations below (<head> picks it: the one chosen
-  // before, else the browser's). Titles, descriptions and tag names come from the Play Store's own
-  // translations where the developer has one (D.tagNames, details/<lang>/).
+  // before, else the browser's). Titles, descriptions and tag names come from the Play Store in that
+  // language: the developer's translation, or Google's automatic one (D.tagNames, details/<lang>/).
   const enScope = (o, n) => (o.fav ? (o.apps ? (n === 1 ? "favourite app" : "favourite apps") : (o.genre ? `${o.genre} ` : "") + (n === 1 ? "favourite" : "favourites"))
     : o.apps ? (n === 1 ? "app" : "apps") : (o.genre ? `${o.genre} ` : "") + (n === 1 ? "game" : "games"))
     + (o.tag ? ` tagged “${o.tag}”` : "") + (o.age ? ` rated PEGI ${o.age} or lower` : "") + (o.dev ? ` by ${o.dev}` : "") + (o.pass ? " in Play Pass" : "");
@@ -1047,7 +1047,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       footRegion: (o) => (o.checked ? `${o.country}: een game staat erin als een zoekopdracht in de Play Store vanuit dat land hem vindt (gecontroleerd op ${o.checked}); ` +
         (o.missing ? `${o.missingF} ${o.missing === 1 ? "game uit de catalogus wordt" : "games uit de catalogus worden"} daar niet aangeboden. ` : "alle games uit de catalogus worden daar aangeboden. ") : "") +
         (o.home ? "De lijst zelf komt uit de Amerikaanse Play Store; kies bovenaan je land." : "Beoordelingen komen uit de Amerikaanse store."),
-      footLang: "Titels, beschrijvingen en tags in het Nederlands zijn de eigen vertalingen van de Play Store, als de ontwikkelaar die heeft; anders staat de Engelse tekst er.",
+      footLang: "Titels, beschrijvingen en tags in het Nederlands komen uit de Nederlandse Play Store: de vertaling van de ontwikkelaar, of anders de automatische vertaling van Google.",
       stubPass: (d) => `in Play Pass<br>gecontroleerd ${d}`, stubAll: (s, p) => `${s} met screenshots<br>${p} in Play Pass`,
       heading: { az: "Games van A tot Z", popular: "Populairste games", rating: "Best beoordeelde games", newest: "Nieuwste games" },
       groupCount: (n, nf, apps) => `${nf} ${apps ? (n === 1 ? "app" : "apps") : (n === 1 ? "game" : "games")}`,
@@ -1124,7 +1124,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       footRegion: (o) => (o.checked ? `${o.country}: Ein Spiel erscheint, wenn eine Play Store-Suche aus diesem Land es findet (geprüft am ${o.checked}); ` +
         (o.missing ? `${o.missingF} ${o.missing === 1 ? "Spiel aus dem Katalog wird" : "Spiele aus dem Katalog werden"} dort nicht angeboten. ` : "alle Spiele aus dem Katalog werden dort angeboten. ") : "") +
         (o.home ? "Die Liste selbst stammt aus dem US-Play Store; wähle oben dein Land." : "Bewertungen stammen aus dem US-Store."),
-      footLang: "Titel, Beschreibungen und Tags auf Deutsch sind die Übersetzungen des Play Store, sofern der Entwickler eine anbietet; sonst steht der englische Text da.",
+      footLang: "Titel, Beschreibungen und Tags auf Deutsch stammen aus dem deutschen Play Store: die Übersetzung des Entwicklers oder sonst die automatische Übersetzung von Google.",
       stubPass: (d) => `in Play Pass<br>geprüft am ${d}`, stubAll: (s, p) => `${s} mit Screenshots<br>${p} in Play Pass`,
       heading: { az: "Spiele von A bis Z", popular: "Beliebteste Spiele", rating: "Bestbewertete Spiele", newest: "Neueste Spiele" },
       groupCount: (n, nf, apps) => `${nf} ${apps ? (n === 1 ? "App" : "Apps") : (n === 1 ? "Spiel" : "Spiele")}`,
@@ -1201,7 +1201,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       footRegion: (o) => (o.checked ? `${o.country} : un jeu est listé quand une recherche sur le Play Store depuis ce pays le trouve (vérifié le ${o.checked}) ; ` +
         (o.missing ? `${o.missingF} ${o.missing <= 1 ? "jeu du catalogue n’y est pas proposé" : "jeux du catalogue n’y sont pas proposés"}. ` : "tous les jeux du catalogue y sont proposés. ") : "") +
         (o.home ? "La liste elle-même vient du Play Store américain ; choisissez votre pays en haut." : "Les notes viennent du Store américain."),
-      footLang: "Les titres, descriptions et tags en français sont les traductions du Play Store, quand le développeur en fournit une ; sinon le texte anglais s’affiche.",
+      footLang: "Les titres, descriptions et tags en français viennent du Play Store français : la traduction du développeur ou, à défaut, la traduction automatique de Google.",
       stubPass: (d) => `dans Play Pass<br>vérifié le ${d}`, stubAll: (s, p) => `${s} avec captures<br>${p} dans Play Pass`,
       heading: { az: "Jeux de A à Z", popular: "Jeux les plus populaires", rating: "Jeux les mieux notés", newest: "Jeux les plus récents" },
       groupCount: (n, nf, apps) => `${nf} ${apps ? (n <= 1 ? "application" : "applications") : (n <= 1 ? "jeu" : "jeux")}`,
@@ -1278,7 +1278,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       footRegion: (o) => (o.checked ? `${o.country}: un juego aparece si una búsqueda en Play Store desde ese país lo encuentra (revisado el ${o.checked}); ` +
         (o.missing ? `${o.missingF} ${o.missing === 1 ? "juego del catálogo no se ofrece" : "juegos del catálogo no se ofrecen"} allí. ` : "todos los juegos del catálogo se ofrecen allí. ") : "") +
         (o.home ? "La lista procede de la Play Store de EE. UU.; elige tu país arriba." : "Las valoraciones son de la tienda de EE. UU."),
-      footLang: "Los títulos, descripciones y etiquetas en español son las traducciones de Play Store, cuando el desarrollador ofrece una; si no, se muestra el texto en inglés.",
+      footLang: "Los títulos, descripciones y etiquetas en español vienen de la Play Store española: la traducción del desarrollador o, si no la hay, la traducción automática de Google.",
       stubPass: (d) => `en Play Pass<br>revisado el ${d}`, stubAll: (s, p) => `${s} con capturas<br>${p} en Play Pass`,
       heading: { az: "Juegos de la A a la Z", popular: "Juegos más populares", rating: "Juegos mejor valorados", newest: "Juegos más recientes" },
       groupCount: (n, nf, apps) => `${nf} ${apps ? (n === 1 ? "aplicación" : "aplicaciones") : (n === 1 ? "juego" : "juegos")}`,
@@ -1355,7 +1355,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       footRegion: (o) => (o.checked ? `${o.country}: un gioco compare se una ricerca sul Play Store da quel paese lo trova (controllato il ${o.checked}); ` +
         (o.missing ? `${o.missingF} ${o.missing === 1 ? "gioco del catalogo non è disponibile" : "giochi del catalogo non sono disponibili"} lì. ` : "tutti i giochi del catalogo sono disponibili lì. ") : "") +
         (o.home ? "L’elenco stesso viene dal Play Store statunitense; scegli il tuo paese in alto." : "Le valutazioni vengono dallo Store statunitense."),
-      footLang: "Titoli, descrizioni e tag in italiano sono le traduzioni del Play Store, quando lo sviluppatore ne fornisce una; altrimenti compare il testo inglese.",
+      footLang: "Titoli, descrizioni e tag in italiano vengono dal Play Store italiano: la traduzione dello sviluppatore o, in mancanza, quella automatica di Google.",
       stubPass: (d) => `in Play Pass<br>controllato il ${d}`, stubAll: (s, p) => `${s} con screenshot<br>${p} in Play Pass`,
       heading: { az: "Giochi dalla A alla Z", popular: "Giochi più popolari", rating: "Giochi più votati", newest: "Giochi più recenti" },
       groupCount: (n, nf, apps) => apps ? `${nf} app` : `${nf} ${n === 1 ? "gioco" : "giochi"}`,
@@ -1432,7 +1432,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       footRegion: (o) => (o.checked ? `${o.country}: um jogo aparece quando uma pesquisa na Play Store desse país o encontra (verificado em ${o.checked}); ` +
         (o.missing ? `${o.missingF} ${o.missing === 1 ? "jogo do catálogo não é oferecido" : "jogos do catálogo não são oferecidos"} lá. ` : "todos os jogos do catálogo são oferecidos lá. ") : "") +
         (o.home ? "A lista em si vem da Play Store dos EUA; escolha seu país no topo." : "As avaliações são da loja dos EUA."),
-      footLang: "Títulos, descrições e tags em português são as traduções da própria Play Store, quando o desenvolvedor oferece uma; se não, aparece o texto em inglês.",
+      footLang: "Títulos, descrições e tags em português vêm da Play Store brasileira: a tradução do desenvolvedor ou, se não houver, a tradução automática do Google.",
       stubPass: (d) => `no Play Pass<br>verificado em ${d}`, stubAll: (s, p) => `${s} com capturas<br>${p} no Play Pass`,
       heading: { az: "Jogos de A a Z", popular: "Jogos mais populares", rating: "Jogos mais bem avaliados", newest: "Jogos mais recentes" },
       groupCount: (n, nf, apps) => `${nf} ${apps ? (n === 1 ? "app" : "apps") : (n === 1 ? "jogo" : "jogos")}`,
@@ -1509,7 +1509,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       footRegion: (o) => (o.checked ? `${o.country}：その国からの Play ストア検索で見つかったゲームを掲載しています（${o.checked}に確認）。` +
         (o.missing ? `カタログのうち ${o.missingF} 本はその国では配信されていません。` : "カタログのすべてのゲームがその国で配信されています。") : "") +
         (o.home ? "リスト自体は米国の Play ストアのものです。上部で国を選んでください。" : "評価は米国のストアのものです。"),
-      footLang: "日本語のタイトル、説明、タグは、デベロッパーが用意している場合に Play ストア自身の翻訳を使っています。ない場合は英語のまま表示します。",
+      footLang: "日本語のタイトル、説明、タグは日本の Play ストアのものです（デベロッパーによる翻訳、またはそれがない場合は Google の自動翻訳）。",
       stubPass: (d) => `Play Pass 対象<br>${d}確認`, stubAll: (s, p) => `スクリーンショットあり ${s}<br>Play Pass ${p}`,
       heading: { az: "名前順のゲーム", popular: "人気のゲーム", rating: "評価の高いゲーム", newest: "新着ゲーム" },
       groupCount: (n, nf, apps) => apps ? `${nf} 個` : `${nf} 本`,

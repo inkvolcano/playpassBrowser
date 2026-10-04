@@ -56,8 +56,8 @@ the card instead of under it, and the detail view uses the full height.
 Portuguese and Japanese. It picks your browser's language on a first visit; the
 globe menu next to the theme button switches (the choice is remembered). Numbers,
 dates and country names follow the language. Game titles, descriptions and tag
-names are the Play Store's own translations where the developer has one;
-otherwise they stay in English.
+names come from the Play Store in that language: the developer's translation, or
+Google's automatic one.
 
 The page lists only games whose Play Store page showed the Play Pass badge when
 it was last checked (US store; the date is in the page footer). YTECHB's list
@@ -228,8 +228,9 @@ is translated. Re-check games marked as not offered with
 `fill_screenshots.py --langs` reads each app's store page in English and in
 each of the page's languages (Dutch from the Dutch store, Portuguese from the
 Brazilian one, and so on). Where the summary and description differ from the
-English ones, the developer has translated the listing, and they go to
-`details/<lang>/<appId>.json`. The detail view and Discover use them when you
+English ones, they go to `details/<lang>/<appId>.json`. That's nearly every app
+in every language: the store shows Google's automatic translation where the
+developer hasn't written one (about 30 MB for all seven languages). The detail view and Discover use them when you
 pick that language. Titles that differ go to `data/translations.json` and
 replace the English title on the cards (both stay searchable). Every language
 lists an app's genre and tags in the same order, so lining the lists up gives
