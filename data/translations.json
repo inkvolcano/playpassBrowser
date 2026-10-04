@@ -1,0 +1,156 @@
+{
+ "apps": {
+  "com.ustwo.monumentvalley2": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Logic",
+    "Casual",
+    "Single player",
+    "Abstract",
+    "Princess",
+    "Puzzles",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "nz.co.codepoint.minimetro": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Management",
+    "Casual",
+    "Single player",
+    "Abstract",
+    "Business & profession",
+    "Construction",
+    "Renovation",
+    "Offline"
+   ],
+   "titles": {
+    "fr": "Mini Métro",
+    "ja": "ミニメトロ"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  }
+ },
+ "tagNames": {
+  "de": {
+   "Abstract": "Abstrakt",
+   "Business & profession": "Geschäft und Beruf",
+   "Construction": "Bau",
+   "Logic": "Logik",
+   "Miscellaneous": "Sonstiges",
+   "Princess": "Prinzessin",
+   "Puzzle": "Geduldsspiele",
+   "Puzzles": "Rätsel",
+   "Renovation": "Renovierung",
+   "Single player": "Einzelspieler"
+  },
+  "es": {
+   "Abstract": "Abstracto",
+   "Business & profession": "Negocios y profesiones",
+   "Casual": "Casuales",
+   "Construction": "Construcción",
+   "Logic": "Lógica",
+   "Management": "Gestión",
+   "Miscellaneous": "Varios",
+   "Offline": "Sin conexión",
+   "Princess": "Princesa",
+   "Puzzle": "Puzles",
+   "Puzzles": "Rompecabezas",
+   "Renovation": "Reformas",
+   "Simulation": "Simulación",
+   "Single player": "Un jugador"
+  },
+  "fr": {
+   "Abstract": "Abstrait",
+   "Business & profession": "Entreprise et profession",
+   "Casual": "Grand public",
+   "Logic": "Logique",
+   "Management": "Gestion de patrimoine",
+   "Miscellaneous": "Divers",
+   "Offline": "Hors connexion",
+   "Princess": "Princesse",
+   "Puzzle": "Réflexion",
+   "Puzzles": "Casse-tête",
+   "Renovation": "Rénovation",
+   "Single player": "Solo"
+  },
+  "it": {
+   "Abstract": "Astratto",
+   "Business & profession": "Economia e professione",
+   "Construction": "Costruzione",
+   "Logic": "Logica",
+   "Management": "Gestione",
+   "Miscellaneous": "Vari",
+   "Princess": "Principessa",
+   "Puzzle": "Rompicapi",
+   "Puzzles": "Puzzle",
+   "Renovation": "Ristrutturazione",
+   "Simulation": "Simulazione",
+   "Single player": "Giocatore singolo"
+  },
+  "ja": {
+   "Abstract": "抽象",
+   "Business & profession": "ビジネス、職業",
+   "Casual": "カジュアル",
+   "Construction": "土木、建設",
+   "Logic": "ロジック",
+   "Management": "マネジメント",
+   "Miscellaneous": "その他",
+   "Offline": "オフライン",
+   "Princess": "プリンセス",
+   "Puzzle": "パズル",
+   "Puzzles": "パズル",
+   "Renovation": "リノベーション",
+   "Simulation": "シミュレーション",
+   "Single player": "シングル プレーヤー"
+  },
+  "nl": {
+   "Business & profession": "Zakelijk en beroep",
+   "Construction": "Bouw",
+   "Logic": "Logica",
+   "Miscellaneous": "Overig",
+   "Princess": "Prinses",
+   "Puzzle": "Puzzel",
+   "Puzzles": "Puzzels",
+   "Renovation": "Renovatie",
+   "Simulation": "Simulatie",
+   "Single player": "Singleplayer"
+  },
+  "pt": {
+   "Abstract": "Abstrato",
+   "Business & profession": "Negócios e profissão",
+   "Casual": "Casuais",
+   "Construction": "Construção",
+   "Logic": "Lógica",
+   "Management": "Gerenciamento",
+   "Miscellaneous": "Diversos",
+   "Offline": "Off-line",
+   "Princess": "Princesa",
+   "Puzzle": "Quebra-cabeças",
+   "Puzzles": "Quebra-cabeças",
+   "Renovation": "Renovação",
+   "Simulation": "Simulação",
+   "Single player": "Um jogador"
+  }
+ }
+}

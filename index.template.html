@@ -8,6 +8,23 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3a2 2 0 0 0 0-4z' fill='%23f0ae35'/%3E%3C/svg%3E">
 <meta name="theme-color" content="#edf0f6" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0e1120" media="(prefers-color-scheme: dark)">
+<script>
+// Interface language: the one picked before, else the first of the browser's languages the page speaks.
+(function () {
+  var langs = ["en", "nl", "de", "fr", "es", "it", "pt", "ja"], pick = null;
+  try { pick = localStorage.getItem("ppb:lang"); } catch (e) { /* storage unavailable */ }
+  if (langs.indexOf(pick) < 0) {
+    pick = "en";
+    var prefs = navigator.languages || [navigator.language || "en"];
+    for (var i = 0; i < prefs.length; i++) {
+      var l = String(prefs[i]).slice(0, 2).toLowerCase();
+      if (langs.indexOf(l) >= 0) { pick = l; break; }
+    }
+  }
+  document.documentElement.lang = pick;
+  if (pick !== "en") document.documentElement.className += " i18n-wait";  // until the text is swapped
+})();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://play-lh.googleusercontent.com">
@@ -83,7 +100,7 @@ a { color: inherit; }
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--brass-ink);
-  padding-right: 48px;
+  padding-right: 132px;
 }
 h1 {
   margin: 0;
@@ -258,6 +275,12 @@ h1 {
 .ghost { height: 42px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); display: inline-flex; align-items: center; gap: 7px; }
 .ghost svg { width: 17px; height: 17px; }
 .ghost[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--surface); }
+/* language menu: a globe and the language code, with the real <select> laid invisibly over it */
+.ghost.lang-btn { position: absolute; top: 14px; right: 62px; height: 40px; padding: 0 11px 0 9px; gap: 6px; border-radius: 12px; font: 600 12px/1 var(--f-mono); letter-spacing: 0.04em; }
+.lang-btn select { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; font-size: 16px; }
+.lang-btn:focus-within { outline: 3px solid var(--focus); outline-offset: 2px; }
+.lang-btn:hover { color: var(--ink); }
+.i18n-wait .pass, .i18n-wait .bar, .i18n-wait .fab { visibility: hidden; }
 .genres { display: flex; gap: 6px; flex-wrap: wrap; }
 .genre {
   --h: 250;
@@ -701,6 +724,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   body { padding-top: max(10px, env(safe-area-inset-top, 0px)); }
   .pass-main { padding: 14px 20px; }
   .theme-btn { top: 10px; right: 10px; width: 36px; height: 36px; }
+  .ghost.lang-btn { top: 10px; right: 54px; height: 36px; }
   h1 { font-size: 30px; }
   .lede { margin-top: 6px; font-size: 13px; line-height: 1.45; }
   .sources { margin-top: 6px; font-size: 10.5px; }
@@ -754,18 +778,22 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
 <div class="wrap">
   <header class="pass">
     <div class="pass-main">
-      <p class="eyebrow">Google Play Pass catalogue</p>
+      <p class="eyebrow" data-t="eyebrow">Google Play Pass catalogue</p>
       <h1>Play Pass Browser</h1>
-      <p class="lede" id="lede">Every game in Google Play Pass, with screenshots, icons and links from the Play Store. Tap a title for details, a screenshot to see the next one, ☆ to keep a favourite, or Discover to swipe through games one at a time.</p>
+      <p class="lede" id="lede" data-t="lede">Every game in Google Play Pass, with screenshots, icons and links from the Play Store. Tap a title for details, a screenshot to see the next one, ☆ to keep a favourite, or Discover to swipe through games one at a time.</p>
       <p class="sources" id="sources"></p>
+      <label class="ghost lang-btn" id="lang-box">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.4 5.3 3.4 8.5s-1 6.1-3.4 8.5c-2.4-2.4-3.4-5.3-3.4-8.5s1-6.1 3.4-8.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <span id="lang-code" aria-hidden="true">EN</span><select id="lang" aria-label="Language" data-t-label="language"></select>
+      </label>
       <button type="button" class="ghost theme-btn" id="theme" aria-label="Theme: match system">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg>
       </button>
     </div>
-    <div class="stub" aria-label="Catalogue size">
+    <div class="stub" aria-label="Catalogue size" data-t-label="catalogueSize">
       <span class="stub-num" id="stub-num">0</span>
-      <span class="stub-label">games</span>
-      <label class="stub-region" id="region-box" hidden><span class="sr-only">Play Store country</span><select id="region"></select></label>
+      <span class="stub-label" data-t="gamesWord">games</span>
+      <label class="stub-region" id="region-box" hidden><span class="sr-only" data-t="country">Play Store country</span><select id="region"></select></label>
       <span class="stub-small" id="stub-small"></span>
     </div>
   </header>
@@ -775,41 +803,41 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   <div class="bar-inner">
     <div class="row">
       <label class="search">
-        <span class="sr-only">Search games</span>
+        <span class="sr-only" data-t="searchLabel">Search games</span>
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         <input id="q" type="search" placeholder="Search games or developers" autocomplete="off" spellcheck="false">
       </label>
-      <label class="select" id="sort-box"><span>Sort</span>
+      <label class="select" id="sort-box"><span data-t="sort">Sort</span>
         <select id="sort">
-          <option value="az">A–Z</option>
-          <option value="popular">Most popular</option>
-          <option value="rating">Top rated</option>
-          <option value="newest">Newest</option>
-          <option value="genre">By genre</option>
+          <option value="az" data-t="sortAz">A–Z</option>
+          <option value="popular" data-t="sortPopular">Most popular</option>
+          <option value="rating" data-t="sortRating">Top rated</option>
+          <option value="newest" data-t="sortNewest">Newest</option>
+          <option value="genre" data-t="sortGenre">By genre</option>
         </select>
       </label>
-      <label class="select" id="tag-box"><span>Tag</span>
-        <select id="tag"><option value="-1">All tags</option></select>
+      <label class="select" id="tag-box"><span data-t="tag">Tag</span>
+        <select id="tag"><option value="-1" data-t="allTags">All tags</option></select>
       </label>
-      <label class="select" id="age-box" title="Only games with this PEGI age rating or lower"><span>Max age</span>
+      <label class="select" id="age-box" title="Only games with this PEGI age rating or lower" data-t-title="maxAgeTitle"><span data-t="maxAge">Max age</span>
         <select id="age">
-          <option value="0">All ages</option>
+          <option value="0" data-t="allAges">All ages</option>
           <option value="3">PEGI 3</option>
           <option value="7">PEGI 7</option>
           <option value="12">PEGI 12</option>
           <option value="16">PEGI 16</option>
         </select>
       </label>
-      <button type="button" class="ghost" id="only-pass" aria-pressed="false" title="Show only games that carry the Play Pass badge on the Play Store">
+      <button type="button" class="ghost" id="only-pass" aria-pressed="false" title="Show only games that carry the Play Pass badge on the Play Store" data-t-title="onlyPassTitle">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3a2 2 0 0 0 0-4z" fill="currentColor"/></svg>
-        <span><span class="wide-only">In </span>Play Pass</span>
+        <span><span class="wide-only" data-t="onlyPassIn">In </span>Play Pass</span>
       </button>
     </div>
-    <div class="genres" id="genres" role="group" aria-label="Filter by genre"></div>
+    <div class="genres" id="genres" role="group" aria-label="Filter by genre" data-t-label="genreFilter"></div>
     <div class="status-row">
       <p class="status" id="status" aria-live="polite"></p>
       <span class="active" id="active"></span>
-      <button type="button" class="linkish" id="copy">Copy link</button>
+      <button type="button" class="linkish" id="copy" data-t="copyLink">Copy link</button>
     </div>
   </div>
 </div>
@@ -817,8 +845,8 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
 <div class="wrap">
   <main id="list"></main>
   <div class="empty" id="empty" hidden>
-    <p id="empty-text">No games match your search.</p>
-    <button type="button" class="ghost" id="clear">Clear search and filters</button>
+    <p id="empty-text" data-t="noGames">No games match your search.</p>
+    <button type="button" class="ghost" id="clear" data-t="clearAll">Clear search and filters</button>
   </div>
   <noscript><p class="empty">This catalogue needs JavaScript to show the games.</p></noscript>
   <footer>
@@ -828,42 +856,43 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     <p id="foot-region"></p>
     <p id="foot-new"></p>
     <p id="foot-rating"></p>
+    <p id="foot-lang" hidden></p>
   </footer>
 </div>
 
-<button type="button" class="fab" id="discover-btn" aria-label="Discover: swipe through random games">
+<button type="button" class="fab" id="discover-btn" aria-label="Discover: swipe through random games" data-t-label="discoverTitle">
   <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="3" width="12" height="16" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 7.5V18a3 3 0 0 0 3 3h7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-  <span>Discover</span>
+  <span data-t="discover">Discover</span>
 </button>
 
-<dialog class="discover" id="discover" aria-label="Discover games">
+<dialog class="discover" id="discover" aria-label="Discover games" data-t-label="discoverDialog">
   <div class="dc-top">
-    <button type="button" class="dc-round" id="dc-close" aria-label="Close Discover">×</button>
+    <button type="button" class="dc-round" id="dc-close" aria-label="Close Discover" data-t-label="closeDiscover">×</button>
     <p class="dc-count" id="dc-count" aria-live="polite"></p>
-    <button type="button" class="dc-pill" id="dc-reset" title="Start over: show the games you swiped again">Reset</button>
-    <button type="button" class="dc-pill" id="dc-favs" title="Show your favourites"><span class="star" aria-hidden="true">★</span><span id="dc-favn">0</span><span class="sr-only"> favourites</span></button>
+    <button type="button" class="dc-pill" id="dc-reset" title="Start over: show the games you swiped again" data-t-title="resetTitle" data-t="reset">Reset</button>
+    <button type="button" class="dc-pill" id="dc-favs" title="Show your favourites" data-t-title="showFavs"><span class="star" aria-hidden="true">★</span><span id="dc-favn">0</span><span class="sr-only" data-t="favsSr"> favourites</span></button>
   </div>
   <div class="dc-stage" id="dc-stage"></div>
   <div class="dc-actions">
-    <button type="button" class="dc-act nope" id="dc-nope" aria-label="Skip (left arrow)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg></button>
-    <button type="button" class="dc-act undo" id="dc-undo" aria-label="Undo the last swipe"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7H4.5V2.5M4.8 7A8 8 0 1 1 4 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-    <button type="button" class="dc-act like" id="dc-like" aria-label="Add to favourites (right arrow)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3s-7.2-4.5-9.3-8.8C1.2 8.6 2.9 5.2 6.3 4.8c2-.2 3.6.9 4.5 2.4.5.7 1 .7 1.4 0 .9-1.5 2.5-2.6 4.5-2.4 3.4.4 5.1 3.8 3.6 6.7-2.1 4.3-8.3 8.8-8.3 8.8z" fill="currentColor"/></svg></button>
+    <button type="button" class="dc-act nope" id="dc-nope" aria-label="Skip (left arrow)" data-t-label="skip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg></button>
+    <button type="button" class="dc-act undo" id="dc-undo" aria-label="Undo the last swipe" data-t-label="undo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7H4.5V2.5M4.8 7A8 8 0 1 1 4 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <button type="button" class="dc-act like" id="dc-like" aria-label="Add to favourites (right arrow)" data-t-label="like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3s-7.2-4.5-9.3-8.8C1.2 8.6 2.9 5.2 6.3 4.8c2-.2 3.6.9 4.5 2.4.5.7 1 .7 1.4 0 .9-1.5 2.5-2.6 4.5-2.4 3.4.4 5.1 3.8 3.6 6.7-2.1 4.3-8.3 8.8-8.3 8.8z" fill="currentColor"/></svg></button>
   </div>
   <div class="dc-confirm" id="dc-confirm" hidden>
     <div class="dc-confirm-box" role="alertdialog" aria-labelledby="dc-confirm-title" aria-describedby="dc-confirm-text">
-      <h2 id="dc-confirm-title">Start over?</h2>
-      <p id="dc-confirm-text">Every game you swiped shows up again. Your favourites stay unless you clear them too.</p>
+      <h2 id="dc-confirm-title" data-t="confirmTitle">Start over?</h2>
+      <p id="dc-confirm-text" data-t="confirmText">Every game you swiped shows up again. Your favourites stay unless you clear them too.</p>
       <div class="row">
-        <button type="button" class="dc-btn" id="dc-cancel">Cancel</button>
-        <button type="button" class="dc-btn danger" id="dc-wipe">Clear favourites too</button>
-        <button type="button" class="dc-btn primary" id="dc-restart">Start over</button>
+        <button type="button" class="dc-btn" id="dc-cancel" data-t="cancel">Cancel</button>
+        <button type="button" class="dc-btn danger" id="dc-wipe" data-t="clearFavsToo">Clear favourites too</button>
+        <button type="button" class="dc-btn primary" id="dc-restart" data-t="startOver">Start over</button>
       </div>
     </div>
   </div>
 </dialog>
 
 <dialog class="detail" id="detail" aria-labelledby="d-title">
-  <button type="button" class="d-close" id="d-close" aria-label="Close details">×</button>
+  <button type="button" class="d-close" id="d-close" aria-label="Close details" data-t-label="closeDetails">×</button>
   <div class="d-scroll" id="d-body"></div>
 </dialog>
 
@@ -872,6 +901,649 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
 (() => {
   "use strict";
   const D = JSON.parse(document.getElementById("data").textContent);
+  // ----- interface language: English, or one of the translations below (<head> picks it: the one chosen
+  // before, else the browser's). Titles, descriptions and tag names come from the Play Store's own
+  // translations where the developer has one (D.tagNames, details/<lang>/).
+  const enScope = (o, n) => (o.fav ? (o.apps ? (n === 1 ? "favourite app" : "favourite apps") : (o.genre ? `${o.genre} ` : "") + (n === 1 ? "favourite" : "favourites"))
+    : o.apps ? (n === 1 ? "app" : "apps") : (o.genre ? `${o.genre} ` : "") + (n === 1 ? "game" : "games"))
+    + (o.tag ? ` tagged “${o.tag}”` : "") + (o.age ? ` rated PEGI ${o.age} or lower` : "") + (o.dev ? ` by ${o.dev}` : "") + (o.pass ? " in Play Pass" : "");
+  // The other languages name the country on its own ("Nederland: 3 niet aangeboden"), which sidesteps
+  // articles and prepositions that differ per country.
+  function genericStatus(o) {
+    const head = o.filtered ? (o.genre && !o.apps ? L.genreHead(o.genre) : "") + L.countG(o.n, o.nf, o.kind) : L.allOf(o.nf, o.apps);
+    const quals = [o.tag && L.withTag(o.tag), o.age && L.upToAge(o.age), o.dev && L.by(o.dev), o.pass && L.inPassQ,
+      o.query && L.matching(o.query)].filter(Boolean);
+    return L.joinQ(head, quals) + (L.sortNote[o.sort] || "") + (o.elsewhere ? " · " + L.notOffered(o.elsewhereF, o.elsewhere, o.country) : "");
+  }
+  function genericEmpty(o) {
+    return o.noFavs ? L.noFavsYet : L.noResults(o.query) + (o.elsewhere ? L.sentenceSep + L.elsewhereNote(o.elsewhereF, o.elsewhere, o.country) : "");
+  }
+  const T = {
+    en: {
+      name: "English", locale: "en-GB",
+      eyebrow: "Google Play Pass catalogue",
+      lede: "Every game in Google Play Pass, with screenshots, icons and links from the Play Store. Tap a title for details, a screenshot to see the next one, ☆ to keep a favourite, or Discover to swipe through games one at a time.",
+      catalogueSize: "Catalogue size", gamesWord: "games", country: "Play Store country", language: "Language",
+      searchLabel: "Search games", searchGames: (n) => `Search ${n} games or developers`, searchApps: (n) => `Search ${n} apps`,
+      sort: "Sort", sortAz: "A–Z", sortPopular: "Most popular", sortRating: "Top rated", sortNewest: "Newest", sortGenre: "By genre",
+      tag: "Tag", allTags: "All tags", tagsGroup: "Tags", genresGroup: "Play Store genres",
+      maxAge: "Max age", maxAgeTitle: "Only games with this PEGI age rating or lower", allAges: "All ages",
+      onlyPassTitle: "Show only games that carry the Play Pass badge on the Play Store", onlyPassIn: "In ",
+      genreFilter: "Filter by genre", copyLink: "Copy link", linkCopied: "Link copied", copyAddress: "Copy this page's address",
+      noGames: "No games match your search.", clearAll: "Clear search and filters",
+      discover: "Discover", discoverTitle: "Discover: swipe through random games", discoverDialog: "Discover games", closeDiscover: "Close Discover",
+      reset: "Reset", resetTitle: "Start over: show the games you swiped again", showFavs: "Show your favourites", favsSr: " favourites",
+      skip: "Skip (left arrow)", undo: "Undo the last swipe", like: "Add to favourites (right arrow)",
+      confirmTitle: "Start over?", confirmText: "Every game you swiped shows up again. Your favourites stay unless you clear them too.",
+      cancel: "Cancel", clearFavsToo: "Clear favourites too", startOver: "Start over", closeDetails: "Close details",
+      favourites: "Favourites", all: "All", genre: {},
+      passYes: "Play Pass", passNo: "Not in Play Pass", newPill: "New", noMatchCover: "No Play Store match",
+      shotLabel: (t, k, n) => `${t}: screenshot ${k} of ${n}, show next`,
+      tagChip: (t) => `Show games tagged ${t}`, moreTags: (n) => `Show ${n} more ${n === 1 ? "tag" : "tags"}`,
+      ratedSr: (r, n) => `Rated ${r} out of 5 from ${n} ratings`, ratings: (c) => `${c} ratings`, downloads: (c) => `${c} downloads`,
+      favOf: (t) => `Favourite: ${t}`, allBy: (d) => `Show everything by ${d}`, notMatched: "Not matched on the Play Store",
+      linksFor: (t) => `Links for ${t}`, openOn: (t) => `Open ${t} on Google Play`, searchOn: (t) => `Search for ${t} on Google Play`,
+      play: "Play", find: "Find", ytGame: (t) => `Search YouTube for ${t} gameplay`, ytApp: (t) => `Search YouTube for ${t}`,
+      gameplay: "Gameplay", videos: "Videos", imgSearch: (t) => `Search Google Images for ${t}`, images: "Images",
+      sources: (link, d, n, sd) => `List: ${link}, updated ${d}` + (n ? ` + ${n} found on Google Play` : "") + ` · Store data: ${sd}`,
+      footListLink: "YTECHB's Play Pass list",
+      footList: (o) => `Game list: ${o.link}, updated ${o.date}` +
+        (o.fromGoogle ? `, plus ${o.fromGoogle} games it doesn't have, found by following Google Play's own Play Pass badges from game to game` : "") +
+        `. Genres follow YTECHB's sections, with Trivia and Word merged` + (o.fromGoogle ? `; games found on Google Play use the store's genre.` : ".") +
+        (o.apps ? ` The ${o.apps} Play Pass apps that aren't games were found the same way and are under Apps.` : "") +
+        ` Titles are the Play Store's own; the names YTECHB uses still work in the search.`,
+      footRating: (m) => `Most popular sorts by Play Store downloads. Top rated uses a weighted average: games with few ratings are pulled toward the catalogue average of ${m}, so a 5.0 from a handful of ratings doesn't outrank a 4.8 from thousands.`,
+      footNew: (days, since) => `“New” marks games added to Play Pass in the last ${days} days` + (since ? ` (tracked since ${since})` : "") +
+        ` or released in the last ${days} days; Newest sorts by the same dates. Age ratings are PEGI ratings from the Dutch Play Store; picking an age hides games without one.`,
+      footStore: (d, nf, n) => `Screenshots, icons, ratings, downloads and tags come from the US Play Store, checked ${d}.` +
+        (n ? ` ${nf} games have no confident Play Store match; they show a generated cover and a Play Store search link instead.` : ""),
+      footPass: (o) => o.confirmed
+        ? `Only games whose Play Store page showed the Play Pass badge on ${o.date} are listed. Of YTECHB's list, ${o.left} games no longer had it and ${o.unmatched} couldn't be found on the Play Store, so they're left out.`
+        : `“Play Pass” marks games whose Play Store page showed the Play Pass badge on ${o.date}. ${o.notInPass} matched games didn't, so they have probably left Play Pass; they're marked “Not in Play Pass”.`,
+      footRegion: (o) => (o.checked ? `In ${o.theCountry}, a game is listed when a Play Store search from there finds it (checked ${o.checked}); ` +
+        (o.missing ? `${o.missingF} ${o.missing === 1 ? "game in the catalogue isn't" : "games in the catalogue aren't"} offered there. ` : "every game in the catalogue is offered there. ") : "") +
+        (o.home ? "The list itself comes from the US Play Store; pick your country in the header." : "Ratings are from the US store."),
+      footLang: "",
+      stubPass: (d) => `in Play Pass<br>checked ${d}`, stubAll: (s, p) => `${s} with screenshots<br>${p} in Play Pass`,
+      heading: { az: "Games A to Z", popular: "Most popular games", rating: "Top rated games", newest: "Newest games" },
+      groupCount: (n, nf, apps) => `${nf} ${apps ? (n === 1 ? "app" : "apps") : (n === 1 ? "game" : "games")}`,
+      status: (o) => (o.filtered ? `Showing ${o.nf} ${enScope(o, o.n)}` + (o.query ? ` matching “${o.query}”` : "") : `Showing all ${o.nf} ${o.apps ? "apps" : "games"}`) +
+        ({ popular: ", most popular first", rating: ", highest rated first", newest: ", newest first" }[o.sort] || "") +
+        (o.elsewhere ? ` · ${o.elsewhereF} not offered in ${o.theCountry}` : ""),
+      empty: (o) => o.noFavs ? "No favourites yet: tap ☆ on a game, or swipe right in Discover."
+        : (o.query ? `No ${enScope(o, 2)} match “${o.query}”` : `No ${enScope(o, 2)} to show`) +
+          (o.elsewhere ? ` in ${o.theCountry}: ${o.elsewhereF} would, but its Play Store doesn't offer ${o.elsewhere === 1 ? "it" : "them"}.` : "."),
+      // what the other languages build the status line from (genericStatus)
+      countG: (n, nf, kind) => `${nf} ${{ game: n === 1 ? "game" : "games", app: n === 1 ? "app" : "apps", fav: n === 1 ? "favourite" : "favourites", favApp: n === 1 ? "favourite app" : "favourite apps" }[kind]}`,
+      allOf: (nf, apps) => `All ${nf} ${apps ? "apps" : "games"}`,
+      withTag: (t) => `tagged “${t}”`, upToAge: (a) => `rated PEGI ${a} or lower`, by: (d) => `by ${d}`, inPassQ: "in Play Pass", matching: (q) => `matching “${q}”`,
+      joinQ: (head, quals) => quals.length ? `${head} ${quals.join(", ")}` : head, genreHead: (g) => `${g}: `, sentenceSep: " ",
+      sortNote: { popular: " · most popular first", rating: " · highest rated first", newest: " · newest first" },
+      notOffered: (nf, n, c) => `${c}: ${nf} not offered`,
+      noResults: (q) => q ? `Nothing matches “${q}” with these filters.` : "Nothing matches these filters.",
+      elsewhereNote: (nf, n, c) => `${c}: ${nf} would, but its Play Store doesn't offer ${n === 1 ? "it" : "them"}.`,
+      noFavsYet: "No favourites yet: tap ☆ on a game, or swipe right in Discover.",
+      byDev: (d) => `by ${d}`, stopDev: (d) => `Stop showing only ${d}`, matchingApps: (nf, n) => `${nf} matching ${n === 1 ? "app" : "apps"}`,
+      ageRating: "Age rating", unknown: "Unknown", notRated: "Not rated", withoutPass: "Without Play Pass", free: "Free",
+      freeIap: "Free, with in-app purchases", included: "Included in Play Pass",
+      rating: "Rating", ratingValue: (r, n) => `★ ${r} from ${n} ratings`, downloadsFact: "Downloads", released: "Released", updated: "Updated",
+      inPass: "In Play Pass", since: (d) => `Since ${d}`, sinceBefore: (d) => `Since before ${d}`, yes: "Yes",
+      countries: "Countries", offeredIn: (k, n) => `Offered in ${k} of ${n}`, notIn: (l) => `Not in ${l}`, listSep: ", ", listedAs: "YTECHB lists it as",
+      loadingDesc: "Loading the description…",
+      descFailed: (file) => "The description couldn't be loaded" + (file ? " from a file on disk; it shows on the published page" : "") + ". Google Play has it.",
+      fullDesc: "Show full description", showLess: "Show less", screenshots: "Screenshots", shotAlt: (k, n) => `Screenshot ${k} of ${n}`,
+      googlePlay: "Google Play", trailer: "Trailer", share: "Share",
+      readMore: "Read more", allDetails: "All details", toGo: (nf) => `${nf} to go`, swiped: (nf) => ` · ${nf} swiped`, allDone: "All done",
+      everyGame: "That's every game", nothing: "Nothing to show",
+      dcEnd: (o) => o.total ? `You've swiped all ${o.totalF} games for these filters` + (o.favs ? `, and kept ${o.favsF} ${o.favs === 1 ? "favourite" : "favourites"}` : "") + "."
+        : "No games match these filters.",
+      seeFavs: "See favourites", stampLike: "Favourite", stampSkip: "Skip", dcShotAlt: (k, t) => `Screenshot ${k} of ${t}`,
+      themeSystem: "match system", themeLight: "light", themeDark: "dark", themeLabel: (l) => `Theme: ${l}. Change theme`, themeTitle: (l) => `Theme: ${l}`
+    },
+    nl: {
+      name: "Nederlands", locale: "nl-NL",
+      eyebrow: "Google Play Pass-catalogus",
+      lede: "Elke game in Google Play Pass, met screenshots, iconen en links uit de Play Store. Tik op een titel voor details, op een screenshot voor de volgende, op ☆ om een favoriet te bewaren, of op Ontdekken om games één voor één te swipen.",
+      catalogueSize: "Omvang van de catalogus", gamesWord: "games", country: "Land van de Play Store", language: "Taal",
+      searchLabel: "Games zoeken", searchGames: (n) => `Zoek in ${n} games of ontwikkelaars`, searchApps: (n) => `Zoek in ${n} apps`,
+      sort: "Sorteren", sortAz: "A–Z", sortPopular: "Populairst", sortRating: "Best beoordeeld", sortNewest: "Nieuwste", sortGenre: "Per genre",
+      tag: "Tag", allTags: "Alle tags", tagsGroup: "Tags", genresGroup: "Genres in de Play Store",
+      maxAge: "Max. leeftijd", maxAgeTitle: "Alleen games met deze PEGI-leeftijdsclassificatie of lager", allAges: "Alle leeftijden",
+      onlyPassTitle: "Alleen games met het Play Pass-label in de Play Store", onlyPassIn: "In ",
+      genreFilter: "Filteren op genre", copyLink: "Link kopiëren", linkCopied: "Link gekopieerd", copyAddress: "Kopieer het adres van deze pagina",
+      noGames: "Geen games gevonden.", clearAll: "Zoekopdracht en filters wissen",
+      discover: "Ontdekken", discoverTitle: "Ontdekken: swipe door willekeurige games", discoverDialog: "Games ontdekken", closeDiscover: "Ontdekken sluiten",
+      reset: "Opnieuw", resetTitle: "Opnieuw beginnen: toon de games die je al hebt geswipet weer", showFavs: "Toon je favorieten", favsSr: " favorieten",
+      skip: "Overslaan (pijl naar links)", undo: "Laatste swipe ongedaan maken", like: "Toevoegen aan favorieten (pijl naar rechts)",
+      confirmTitle: "Opnieuw beginnen?", confirmText: "Elke game die je hebt geswipet komt weer langs. Je favorieten blijven, tenzij je die ook wist.",
+      cancel: "Annuleren", clearFavsToo: "Ook favorieten wissen", startOver: "Opnieuw beginnen", closeDetails: "Details sluiten",
+      favourites: "Favorieten", all: "Alle",
+      genre: { "Action": "Actie", "Adventure": "Avontuur", "Arcade": "Arcade", "Board": "Bordspellen", "Card": "Kaartspellen", "Casual": "Casual",
+        "Educational": "Educatief", "Music": "Muziek", "Puzzle": "Puzzel", "Racing": "Racen", "Role-Playing": "Rollenspellen", "Simulation": "Simulatie",
+        "Sports": "Sport", "Strategy": "Strategie", "Word & Trivia": "Woorden & trivia", "Apps": "Apps" },
+      passYes: "Play Pass", passNo: "Niet in Play Pass", newPill: "Nieuw", noMatchCover: "Niet gevonden in de Play Store",
+      shotLabel: (t, k, n) => `${t}: screenshot ${k} van ${n}, toon de volgende`,
+      tagChip: (t) => `Toon games met de tag ${t}`, moreTags: (n) => `Toon nog ${n} ${n === 1 ? "tag" : "tags"}`,
+      ratedSr: (r, n) => `Beoordeeld met ${r} van de 5 uit ${n} beoordelingen`, ratings: (c) => `${c} beoordelingen`, downloads: (c) => `${c} downloads`,
+      favOf: (t) => `Favoriet: ${t}`, allBy: (d) => `Toon alles van ${d}`, notMatched: "Niet gevonden in de Play Store",
+      linksFor: (t) => `Links voor ${t}`, openOn: (t) => `${t} openen in Google Play`, searchOn: (t) => `${t} zoeken in Google Play`,
+      play: "Play", find: "Zoeken", ytGame: (t) => `Gameplay van ${t} zoeken op YouTube`, ytApp: (t) => `${t} zoeken op YouTube`,
+      gameplay: "Gameplay", videos: "Video's", imgSearch: (t) => `Afbeeldingen van ${t} zoeken op Google`, images: "Afbeeldingen",
+      sources: (link, d, n, sd) => `Lijst: ${link}, bijgewerkt ${d}` + (n ? ` + ${n} gevonden op Google Play` : "") + ` · Storegegevens: ${sd}`,
+      footListLink: "de Play Pass-lijst van YTECHB",
+      footList: (o) => `Gamelijst: ${o.link}, bijgewerkt ${o.date}` +
+        (o.fromGoogle ? `, plus ${o.fromGoogle} games die daar niet op staan, gevonden door de Play Pass-labels van Google Play van game naar game te volgen` : "") +
+        `. De genres volgen de rubrieken van YTECHB, met Trivia en Woorden samengevoegd` + (o.fromGoogle ? `; games van Google Play hebben het genre uit de store.` : ".") +
+        (o.apps ? ` De ${o.apps} Play Pass-apps die geen game zijn, zijn op dezelfde manier gevonden en staan onder Apps.` : "") +
+        ` De titels komen uit de Play Store; de namen die YTECHB gebruikt werken ook in de zoekfunctie.`,
+      footRating: (m) => `Populairst sorteert op downloads in de Play Store. Best beoordeeld gebruikt een gewogen gemiddelde: games met weinig beoordelingen schuiven op naar het catalogusgemiddelde van ${m}, zodat een 5,0 uit een handvol beoordelingen niet boven een 4,8 uit duizenden komt.`,
+      footNew: (days, since) => `‘Nieuw’ staat bij games die de afgelopen ${days} dagen aan Play Pass zijn toegevoegd` + (since ? ` (bijgehouden sinds ${since})` : "") +
+        ` of de afgelopen ${days} dagen zijn uitgebracht; Nieuwste sorteert op dezelfde datums. De leeftijdsclassificaties zijn PEGI-classificaties uit de Nederlandse Play Store; kies je een leeftijd, dan verdwijnen games zonder classificatie.`,
+      footStore: (d, nf, n) => `Screenshots, iconen, beoordelingen, downloads en tags komen uit de Amerikaanse Play Store, gecontroleerd op ${d}.` +
+        (n ? ` ${nf} games hebben geen betrouwbare match in de Play Store; die tonen een gegenereerde cover en een zoeklink.` : ""),
+      footPass: (o) => o.confirmed
+        ? `Alleen games waarvan de Play Store-pagina op ${o.date} het Play Pass-label had, staan erin. Van de lijst van YTECHB hadden ${o.left} games dat label niet meer en waren er ${o.unmatched} niet te vinden in de Play Store; die zijn weggelaten.`
+        : `‘Play Pass’ staat bij games waarvan de Play Store-pagina op ${o.date} het Play Pass-label had. ${o.notInPass} gevonden games hadden het niet en zijn waarschijnlijk uit Play Pass verdwenen; die zijn gemarkeerd met ‘Niet in Play Pass’.`,
+      footRegion: (o) => (o.checked ? `${o.country}: een game staat erin als een zoekopdracht in de Play Store vanuit dat land hem vindt (gecontroleerd op ${o.checked}); ` +
+        (o.missing ? `${o.missingF} ${o.missing === 1 ? "game uit de catalogus wordt" : "games uit de catalogus worden"} daar niet aangeboden. ` : "alle games uit de catalogus worden daar aangeboden. ") : "") +
+        (o.home ? "De lijst zelf komt uit de Amerikaanse Play Store; kies bovenaan je land." : "Beoordelingen komen uit de Amerikaanse store."),
+      footLang: "Titels, beschrijvingen en tags in het Nederlands zijn de eigen vertalingen van de Play Store, als de ontwikkelaar die heeft; anders staat de Engelse tekst er.",
+      stubPass: (d) => `in Play Pass<br>gecontroleerd ${d}`, stubAll: (s, p) => `${s} met screenshots<br>${p} in Play Pass`,
+      heading: { az: "Games van A tot Z", popular: "Populairste games", rating: "Best beoordeelde games", newest: "Nieuwste games" },
+      groupCount: (n, nf, apps) => `${nf} ${apps ? (n === 1 ? "app" : "apps") : (n === 1 ? "game" : "games")}`,
+      status: genericStatus, empty: genericEmpty,
+      countG: (n, nf, kind) => `${nf} ${{ game: n === 1 ? "game" : "games", app: n === 1 ? "app" : "apps", fav: n === 1 ? "favoriet" : "favorieten", favApp: n === 1 ? "favoriete app" : "favoriete apps" }[kind]}`,
+      allOf: (nf, apps) => `Alle ${nf} ${apps ? "apps" : "games"}`,
+      withTag: (t) => `met tag ‘${t}’`, upToAge: (a) => `PEGI ${a} of lager`, by: (d) => `van ${d}`, inPassQ: "in Play Pass", matching: (q) => `met ‘${q}’`,
+      sortNote: { popular: " · populairste eerst", rating: " · best beoordeeld eerst", newest: " · nieuwste eerst" },
+      notOffered: (nf, n, c) => `${c}: ${nf} niet aangeboden`,
+      noResults: (q) => q ? `Niets gevonden voor ‘${q}’ met deze filters.` : "Niets gevonden met deze filters.",
+      elsewhereNote: (nf, n, c) => `${c}: ${nf} ${n === 1 ? "game zou passen" : "games zouden passen"}, maar de Play Store daar biedt ${n === 1 ? "hem" : "ze"} niet aan.`,
+      noFavsYet: "Nog geen favorieten: tik op ☆ bij een game, of swipe naar rechts in Ontdekken.",
+      byDev: (d) => `van ${d}`, stopDev: (d) => `Niet langer alleen ${d} tonen`, matchingApps: (nf, n) => `${nf} ${n === 1 ? "passende app" : "passende apps"}`,
+      ageRating: "Leeftijd", unknown: "Onbekend", notRated: "Geen classificatie", withoutPass: "Zonder Play Pass", free: "Gratis",
+      freeIap: "Gratis, met in-app-aankopen", included: "Inbegrepen bij Play Pass",
+      rating: "Beoordeling", ratingValue: (r, n) => `★ ${r} uit ${n} beoordelingen`, downloadsFact: "Downloads", released: "Uitgebracht", updated: "Bijgewerkt",
+      inPass: "In Play Pass", since: (d) => `Sinds ${d}`, sinceBefore: (d) => `Al van voor ${d}`, yes: "Ja",
+      countries: "Landen", offeredIn: (k, n) => `Aangeboden in ${k} van de ${n}`, notIn: (l) => `Niet in ${l}`, listedAs: "YTECHB noemt hem",
+      loadingDesc: "De beschrijving wordt geladen…",
+      descFailed: (file) => "De beschrijving kon niet worden geladen" + (file ? " vanuit een bestand op schijf; op de gepubliceerde pagina staat hij er wel" : "") + ". Google Play heeft hem.",
+      fullDesc: "Volledige beschrijving", showLess: "Minder tonen", screenshots: "Screenshots", shotAlt: (k, n) => `Screenshot ${k} van ${n}`,
+      googlePlay: "Google Play", trailer: "Trailer", share: "Delen",
+      readMore: "Meer lezen", allDetails: "Alle details", toGo: (nf) => `nog ${nf}`, swiped: (nf) => ` · ${nf} geswipet`, allDone: "Klaar",
+      everyGame: "Dat waren ze allemaal", nothing: "Niets te tonen",
+      dcEnd: (o) => o.total ? `Je hebt alle ${o.totalF} games voor deze filters geswipet` + (o.favs ? ` en ${o.favsF} ${o.favs === 1 ? "favoriet" : "favorieten"} bewaard` : "") + "."
+        : "Geen games voor deze filters.",
+      seeFavs: "Favorieten bekijken", stampLike: "Favoriet", stampSkip: "Overslaan", dcShotAlt: (k, t) => `Screenshot ${k} van ${t}`,
+      themeSystem: "systeem volgen", themeLight: "licht", themeDark: "donker", themeLabel: (l) => `Thema: ${l}. Thema wijzigen`, themeTitle: (l) => `Thema: ${l}`
+    },
+    de: {
+      name: "Deutsch", locale: "de-DE",
+      eyebrow: "Google Play Pass-Katalog",
+      lede: "Alle Spiele in Google Play Pass, mit Screenshots, Symbolen und Links aus dem Play Store. Tippe auf einen Titel für Details, auf einen Screenshot für den nächsten, auf ☆, um einen Favoriten zu merken, oder auf Entdecken, um Spiele einzeln durchzuswipen.",
+      catalogueSize: "Katalogumfang", gamesWord: "Spiele", country: "Play Store-Land", language: "Sprache",
+      searchLabel: "Spiele suchen", searchGames: (n) => `${n} Spiele oder Entwickler durchsuchen`, searchApps: (n) => `${n} Apps durchsuchen`,
+      sort: "Sortierung", sortAz: "A–Z", sortPopular: "Beliebteste", sortRating: "Bestbewertet", sortNewest: "Neueste", sortGenre: "Nach Genre",
+      tag: "Tag", allTags: "Alle Tags", tagsGroup: "Tags", genresGroup: "Play Store-Genres",
+      maxAge: "Max. Alter", maxAgeTitle: "Nur Spiele mit dieser PEGI-Altersfreigabe oder niedriger", allAges: "Alle Altersstufen",
+      onlyPassTitle: "Nur Spiele mit dem Play Pass-Abzeichen im Play Store zeigen", onlyPassIn: "Nur ",
+      genreFilter: "Nach Genre filtern", copyLink: "Link kopieren", linkCopied: "Link kopiert", copyAddress: "Adresse dieser Seite kopieren",
+      noGames: "Keine Spiele gefunden.", clearAll: "Suche und Filter zurücksetzen",
+      discover: "Entdecken", discoverTitle: "Entdecken: zufällige Spiele durchswipen", discoverDialog: "Spiele entdecken", closeDiscover: "Entdecken schließen",
+      reset: "Zurücksetzen", resetTitle: "Von vorn beginnen: die geswipten Spiele wieder zeigen", showFavs: "Deine Favoriten zeigen", favsSr: " Favoriten",
+      skip: "Überspringen (Pfeil nach links)", undo: "Letztes Swipen rückgängig machen", like: "Zu Favoriten hinzufügen (Pfeil nach rechts)",
+      confirmTitle: "Von vorn beginnen?", confirmText: "Alle geswipten Spiele erscheinen wieder. Deine Favoriten bleiben, außer du löschst sie auch.",
+      cancel: "Abbrechen", clearFavsToo: "Auch Favoriten löschen", startOver: "Von vorn beginnen", closeDetails: "Details schließen",
+      favourites: "Favoriten", all: "Alle",
+      genre: { "Action": "Action", "Adventure": "Abenteuer", "Arcade": "Arcade", "Board": "Brettspiele", "Card": "Kartenspiele", "Casual": "Casual",
+        "Educational": "Lernspiele", "Music": "Musik", "Puzzle": "Puzzle", "Racing": "Rennspiele", "Role-Playing": "Rollenspiele", "Simulation": "Simulation",
+        "Sports": "Sport", "Strategy": "Strategie", "Word & Trivia": "Wort & Quiz", "Apps": "Apps" },
+      passYes: "Play Pass", passNo: "Nicht in Play Pass", newPill: "Neu", noMatchCover: "Nicht im Play Store gefunden",
+      shotLabel: (t, k, n) => `${t}: Screenshot ${k} von ${n}, nächsten zeigen`,
+      tagChip: (t) => `Spiele mit dem Tag ${t} zeigen`, moreTags: (n) => `${n} weitere ${n === 1 ? "Tag" : "Tags"} zeigen`,
+      ratedSr: (r, n) => `Mit ${r} von 5 bewertet, aus ${n} Bewertungen`, ratings: (c) => `${c} Bewertungen`, downloads: (c) => `${c} Downloads`,
+      favOf: (t) => `Favorit: ${t}`, allBy: (d) => `Alles von ${d} zeigen`, notMatched: "Nicht im Play Store gefunden",
+      linksFor: (t) => `Links zu ${t}`, openOn: (t) => `${t} bei Google Play öffnen`, searchOn: (t) => `${t} bei Google Play suchen`,
+      play: "Play", find: "Suchen", ytGame: (t) => `Gameplay von ${t} auf YouTube suchen`, ytApp: (t) => `${t} auf YouTube suchen`,
+      gameplay: "Gameplay", videos: "Videos", imgSearch: (t) => `Bilder von ${t} bei Google suchen`, images: "Bilder",
+      sources: (link, d, n, sd) => `Liste: ${link}, aktualisiert am ${d}` + (n ? ` + ${n} bei Google Play gefunden` : "") + ` · Store-Daten: ${sd}`,
+      footListLink: "YTECHBs Play Pass-Liste",
+      footList: (o) => `Spieleliste: ${o.link}, aktualisiert am ${o.date}` +
+        (o.fromGoogle ? `, dazu ${o.fromGoogle} Spiele, die dort fehlen – gefunden über die Play Pass-Abzeichen von Google Play, von Spiel zu Spiel` : "") +
+        `. Die Genres folgen den Rubriken von YTECHB, Quiz und Wort sind zusammengefasst` + (o.fromGoogle ? `; bei Spielen von Google Play gilt das Genre des Stores.` : ".") +
+        (o.apps ? ` Die ${o.apps} Play Pass-Apps, die keine Spiele sind, wurden genauso gefunden und stehen unter Apps.` : "") +
+        ` Die Titel stammen aus dem Play Store; YTECHBs Namen funktionieren in der Suche weiterhin.`,
+      footRating: (m) => `„Beliebteste“ sortiert nach Downloads im Play Store. „Bestbewertet“ nutzt einen gewichteten Durchschnitt: Spiele mit wenigen Bewertungen werden zum Katalogdurchschnitt von ${m} gezogen, damit eine 5,0 aus einer Handvoll Bewertungen nicht vor einer 4,8 aus Tausenden landet.`,
+      footNew: (days, since) => `„Neu“ kennzeichnet Spiele, die in den letzten ${days} Tagen zu Play Pass hinzugekommen sind` + (since ? ` (erfasst seit ${since})` : "") +
+        ` oder in den letzten ${days} Tagen erschienen sind; „Neueste“ sortiert nach denselben Daten. Die Altersfreigaben sind PEGI-Einstufungen aus dem niederländischen Play Store; wer ein Alter wählt, blendet Spiele ohne Einstufung aus.`,
+      footStore: (d, nf, n) => `Screenshots, Symbole, Bewertungen, Downloads und Tags stammen aus dem US-Play Store, geprüft am ${d}.` +
+        (n ? ` ${nf} Spiele haben keinen sicheren Treffer im Play Store; sie zeigen ein generiertes Cover und einen Suchlink.` : ""),
+      footPass: (o) => o.confirmed
+        ? `Aufgeführt sind nur Spiele, deren Play Store-Seite am ${o.date} das Play Pass-Abzeichen zeigte. Von YTECHBs Liste hatten ${o.left} Spiele es nicht mehr und ${o.unmatched} waren im Play Store nicht zu finden; sie fehlen hier.`
+        : `„Play Pass“ kennzeichnet Spiele, deren Play Store-Seite am ${o.date} das Play Pass-Abzeichen zeigte. ${o.notInPass} gefundene Spiele hatten es nicht und haben Play Pass wohl verlassen; sie sind mit „Nicht in Play Pass“ markiert.`,
+      footRegion: (o) => (o.checked ? `${o.country}: Ein Spiel erscheint, wenn eine Play Store-Suche aus diesem Land es findet (geprüft am ${o.checked}); ` +
+        (o.missing ? `${o.missingF} ${o.missing === 1 ? "Spiel aus dem Katalog wird" : "Spiele aus dem Katalog werden"} dort nicht angeboten. ` : "alle Spiele aus dem Katalog werden dort angeboten. ") : "") +
+        (o.home ? "Die Liste selbst stammt aus dem US-Play Store; wähle oben dein Land." : "Bewertungen stammen aus dem US-Store."),
+      footLang: "Titel, Beschreibungen und Tags auf Deutsch sind die Übersetzungen des Play Store, sofern der Entwickler eine anbietet; sonst steht der englische Text da.",
+      stubPass: (d) => `in Play Pass<br>geprüft am ${d}`, stubAll: (s, p) => `${s} mit Screenshots<br>${p} in Play Pass`,
+      heading: { az: "Spiele von A bis Z", popular: "Beliebteste Spiele", rating: "Bestbewertete Spiele", newest: "Neueste Spiele" },
+      groupCount: (n, nf, apps) => `${nf} ${apps ? (n === 1 ? "App" : "Apps") : (n === 1 ? "Spiel" : "Spiele")}`,
+      status: genericStatus, empty: genericEmpty,
+      countG: (n, nf, kind) => `${nf} ${{ game: n === 1 ? "Spiel" : "Spiele", app: n === 1 ? "App" : "Apps", fav: n === 1 ? "Favorit" : "Favoriten", favApp: n === 1 ? "Lieblings-App" : "Lieblings-Apps" }[kind]}`,
+      allOf: (nf, apps) => `Alle ${nf} ${apps ? "Apps" : "Spiele"}`,
+      withTag: (t) => `mit Tag „${t}“`, upToAge: (a) => `bis PEGI ${a}`, by: (d) => `von ${d}`, inPassQ: "in Play Pass", matching: (q) => `zu „${q}“`,
+      sortNote: { popular: " · beliebteste zuerst", rating: " · bestbewertete zuerst", newest: " · neueste zuerst" },
+      notOffered: (nf, n, c) => `${c}: ${nf} nicht angeboten`,
+      noResults: (q) => q ? `Nichts gefunden zu „${q}“ mit diesen Filtern.` : "Nichts gefunden mit diesen Filtern.",
+      elsewhereNote: (nf, n, c) => `${c}: ${nf} ${n === 1 ? "Spiel würde passen" : "Spiele würden passen"}, aber der Play Store dort bietet ${n === 1 ? "es" : "sie"} nicht an.`,
+      noFavsYet: "Noch keine Favoriten: Tippe bei einem Spiel auf ☆ oder wische in Entdecken nach rechts.",
+      byDev: (d) => `von ${d}`, stopDev: (d) => `Nicht mehr nur ${d} zeigen`, matchingApps: (nf, n) => `${nf} ${n === 1 ? "passende App" : "passende Apps"}`,
+      ageRating: "Altersfreigabe", unknown: "Unbekannt", notRated: "Keine Einstufung", withoutPass: "Ohne Play Pass", free: "Kostenlos",
+      freeIap: "Kostenlos, mit In-App-Käufen", included: "In Play Pass enthalten",
+      rating: "Bewertung", ratingValue: (r, n) => `★ ${r} aus ${n} Bewertungen`, downloadsFact: "Downloads", released: "Erschienen", updated: "Aktualisiert",
+      inPass: "In Play Pass", since: (d) => `Seit ${d}`, sinceBefore: (d) => `Schon vor dem ${d}`, yes: "Ja",
+      countries: "Länder", offeredIn: (k, n) => `In ${k} von ${n} angeboten`, notIn: (l) => `Nicht in: ${l}`, listedAs: "Bei YTECHB als",
+      loadingDesc: "Beschreibung wird geladen…",
+      descFailed: (file) => "Die Beschreibung konnte nicht geladen werden" + (file ? " – aus einer lokalen Datei geht das nicht, auf der veröffentlichten Seite schon" : "") + ". Google Play hat sie.",
+      fullDesc: "Ganze Beschreibung zeigen", showLess: "Weniger zeigen", screenshots: "Screenshots", shotAlt: (k, n) => `Screenshot ${k} von ${n}`,
+      googlePlay: "Google Play", trailer: "Trailer", share: "Teilen",
+      readMore: "Weiterlesen", allDetails: "Alle Details", toGo: (nf) => `noch ${nf}`, swiped: (nf) => ` · ${nf} geswipt`, allDone: "Fertig",
+      everyGame: "Das waren alle Spiele", nothing: "Nichts zu zeigen",
+      dcEnd: (o) => o.total ? `Du hast alle ${o.totalF} Spiele für diese Filter geswipt` + (o.favs ? ` und ${o.favsF} ${o.favs === 1 ? "Favorit" : "Favoriten"} behalten` : "") + "."
+        : "Keine Spiele für diese Filter.",
+      seeFavs: "Favoriten ansehen", stampLike: "Favorit", stampSkip: "Weiter", dcShotAlt: (k, t) => `Screenshot ${k} von ${t}`,
+      themeSystem: "wie System", themeLight: "hell", themeDark: "dunkel", themeLabel: (l) => `Design: ${l}. Design ändern`, themeTitle: (l) => `Design: ${l}`
+    },
+    fr: {
+      name: "Français", locale: "fr-FR",
+      eyebrow: "Catalogue Google Play Pass",
+      lede: "Tous les jeux de Google Play Pass, avec captures d’écran, icônes et liens du Play Store. Touchez un titre pour les détails, une capture pour voir la suivante, ☆ pour garder un favori, ou Découvrir pour parcourir les jeux un par un.",
+      catalogueSize: "Taille du catalogue", gamesWord: "jeux", country: "Pays du Play Store", language: "Langue",
+      searchLabel: "Rechercher des jeux", searchGames: (n) => `Rechercher parmi ${n} jeux ou développeurs`, searchApps: (n) => `Rechercher parmi ${n} applications`,
+      sort: "Tri", sortAz: "A–Z", sortPopular: "Les plus populaires", sortRating: "Les mieux notés", sortNewest: "Les plus récents", sortGenre: "Par genre",
+      tag: "Tag", allTags: "Tous les tags", tagsGroup: "Tags", genresGroup: "Genres du Play Store",
+      maxAge: "Âge max.", maxAgeTitle: "Seulement les jeux avec cette classification PEGI ou moins", allAges: "Tous âges",
+      onlyPassTitle: "Afficher seulement les jeux portant le badge Play Pass sur le Play Store", onlyPassIn: "Dans ",
+      genreFilter: "Filtrer par genre", copyLink: "Copier le lien", linkCopied: "Lien copié", copyAddress: "Copiez l’adresse de cette page",
+      noGames: "Aucun jeu trouvé.", clearAll: "Effacer la recherche et les filtres",
+      discover: "Découvrir", discoverTitle: "Découvrir : parcourez des jeux au hasard", discoverDialog: "Découvrir des jeux", closeDiscover: "Fermer Découvrir",
+      reset: "Recommencer", resetTitle: "Recommencer : revoir les jeux déjà vus", showFavs: "Voir vos favoris", favsSr: " favoris",
+      skip: "Passer (flèche gauche)", undo: "Annuler le dernier choix", like: "Ajouter aux favoris (flèche droite)",
+      confirmTitle: "Recommencer ?", confirmText: "Tous les jeux déjà vus réapparaissent. Vos favoris restent, sauf si vous les effacez aussi.",
+      cancel: "Annuler", clearFavsToo: "Effacer aussi les favoris", startOver: "Recommencer", closeDetails: "Fermer les détails",
+      favourites: "Favoris", all: "Tous",
+      genre: { "Action": "Action", "Adventure": "Aventure", "Arcade": "Arcade", "Board": "Plateau", "Card": "Cartes", "Casual": "Casual",
+        "Educational": "Éducatif", "Music": "Musique", "Puzzle": "Réflexion", "Racing": "Course", "Role-Playing": "Jeux de rôle", "Simulation": "Simulation",
+        "Sports": "Sport", "Strategy": "Stratégie", "Word & Trivia": "Mots & quiz", "Apps": "Applications" },
+      passYes: "Play Pass", passNo: "Hors Play Pass", newPill: "Nouveau", noMatchCover: "Introuvable sur le Play Store",
+      shotLabel: (t, k, n) => `${t} : capture ${k} sur ${n}, voir la suivante`,
+      tagChip: (t) => `Voir les jeux avec le tag ${t}`, moreTags: (n) => `Voir ${n} ${n <= 1 ? "autre tag" : "autres tags"}`,
+      ratedSr: (r, n) => `Noté ${r} sur 5 d’après ${n} avis`, ratings: (c) => `${c} avis`, downloads: (c) => `${c} téléchargements`,
+      favOf: (t) => `Favori : ${t}`, allBy: (d) => `Voir tout de ${d}`, notMatched: "Introuvable sur le Play Store",
+      linksFor: (t) => `Liens pour ${t}`, openOn: (t) => `Ouvrir ${t} sur Google Play`, searchOn: (t) => `Rechercher ${t} sur Google Play`,
+      play: "Play", find: "Chercher", ytGame: (t) => `Chercher du gameplay de ${t} sur YouTube`, ytApp: (t) => `Chercher ${t} sur YouTube`,
+      gameplay: "Gameplay", videos: "Vidéos", imgSearch: (t) => `Chercher des images de ${t} sur Google`, images: "Images",
+      sources: (link, d, n, sd) => `Liste : ${link}, mise à jour le ${d}` + (n ? ` + ${n} trouvés sur Google Play` : "") + ` · Données du Store : ${sd}`,
+      footListLink: "la liste Play Pass de YTECHB",
+      footList: (o) => `Liste des jeux : ${o.link}, mise à jour le ${o.date}` +
+        (o.fromGoogle ? `, plus ${o.fromGoogle} jeux qu’elle n’a pas, trouvés en suivant de jeu en jeu les badges Play Pass de Google Play` : "") +
+        `. Les genres suivent les rubriques de YTECHB, Quiz et Mots étant réunis` + (o.fromGoogle ? ` ; les jeux trouvés sur Google Play prennent le genre du Store.` : ".") +
+        (o.apps ? ` Les ${o.apps} applications Play Pass qui ne sont pas des jeux ont été trouvées de la même façon et sont rangées sous Applications.` : "") +
+        ` Les titres sont ceux du Play Store ; les noms de YTECHB fonctionnent toujours dans la recherche.`,
+      footRating: (m) => `« Les plus populaires » trie par téléchargements sur le Play Store. « Les mieux notés » utilise une moyenne pondérée : les jeux ayant peu d’avis sont ramenés vers la moyenne du catalogue (${m}), pour qu’un 5,0 obtenu avec quelques avis ne passe pas devant un 4,8 obtenu avec des milliers.`,
+      footNew: (days, since) => `« Nouveau » signale les jeux ajoutés à Play Pass ces ${days} derniers jours` + (since ? ` (suivi depuis le ${since})` : "") +
+        ` ou sortis ces ${days} derniers jours ; « Les plus récents » trie selon les mêmes dates. Les classifications d’âge sont celles de PEGI, issues du Play Store néerlandais ; choisir un âge masque les jeux sans classification.`,
+      footStore: (d, nf, n) => `Captures, icônes, notes, téléchargements et tags viennent du Play Store américain, vérifiés le ${d}.` +
+        (n ? ` ${nf} jeux n’ont pas de correspondance sûre sur le Play Store ; ils affichent une couverture générée et un lien de recherche.` : ""),
+      footPass: (o) => o.confirmed
+        ? `Seuls les jeux dont la page Play Store affichait le badge Play Pass le ${o.date} sont listés. Dans la liste de YTECHB, ${o.left} jeux ne l’avaient plus et ${o.unmatched} sont introuvables sur le Play Store ; ils sont donc absents.`
+        : `« Play Pass » signale les jeux dont la page Play Store affichait le badge Play Pass le ${o.date}. ${o.notInPass} jeux trouvés ne l’avaient pas et ont sans doute quitté Play Pass ; ils sont marqués « Hors Play Pass ».`,
+      footRegion: (o) => (o.checked ? `${o.country} : un jeu est listé quand une recherche sur le Play Store depuis ce pays le trouve (vérifié le ${o.checked}) ; ` +
+        (o.missing ? `${o.missingF} ${o.missing <= 1 ? "jeu du catalogue n’y est pas proposé" : "jeux du catalogue n’y sont pas proposés"}. ` : "tous les jeux du catalogue y sont proposés. ") : "") +
+        (o.home ? "La liste elle-même vient du Play Store américain ; choisissez votre pays en haut." : "Les notes viennent du Store américain."),
+      footLang: "Les titres, descriptions et tags en français sont les traductions du Play Store, quand le développeur en fournit une ; sinon le texte anglais s’affiche.",
+      stubPass: (d) => `dans Play Pass<br>vérifié le ${d}`, stubAll: (s, p) => `${s} avec captures<br>${p} dans Play Pass`,
+      heading: { az: "Jeux de A à Z", popular: "Jeux les plus populaires", rating: "Jeux les mieux notés", newest: "Jeux les plus récents" },
+      groupCount: (n, nf, apps) => `${nf} ${apps ? (n <= 1 ? "application" : "applications") : (n <= 1 ? "jeu" : "jeux")}`,
+      status: genericStatus, empty: genericEmpty,
+      countG: (n, nf, kind) => `${nf} ${{ game: n <= 1 ? "jeu" : "jeux", app: n <= 1 ? "application" : "applications", fav: n <= 1 ? "favori" : "favoris", favApp: n <= 1 ? "application favorite" : "applications favorites" }[kind]}`,
+      allOf: (nf, apps) => `Les ${nf} ${apps ? "applications" : "jeux"}`,
+      genreHead: (g) => `${g} : `, withTag: (t) => `avec le tag « ${t} »`, upToAge: (a) => `PEGI ${a} maximum`, by: (d) => `de ${d}`, inPassQ: "dans Play Pass", matching: (q) => `pour « ${q} »`,
+      sortNote: { popular: " · les plus populaires d’abord", rating: " · les mieux notés d’abord", newest: " · les plus récents d’abord" },
+      notOffered: (nf, n, c) => `${c} : ${nf} non ${n <= 1 ? "proposé" : "proposés"}`,
+      noResults: (q) => q ? `Aucun résultat pour « ${q} » avec ces filtres.` : "Aucun résultat avec ces filtres.",
+      elsewhereNote: (nf, n, c) => `${c} : ${nf} ${n <= 1 ? "jeu correspondrait" : "jeux correspondraient"}, mais le Play Store de ce pays ne ${n <= 1 ? "le" : "les"} propose pas.`,
+      noFavsYet: "Pas encore de favoris : touchez ☆ sur un jeu, ou balayez vers la droite dans Découvrir.",
+      byDev: (d) => `de ${d}`, stopDev: (d) => `Ne plus afficher seulement ${d}`, matchingApps: (nf, n) => `${nf} ${n <= 1 ? "application correspondante" : "applications correspondantes"}`,
+      ageRating: "Âge", unknown: "Inconnu", notRated: "Non classé", withoutPass: "Sans Play Pass", free: "Gratuit",
+      freeIap: "Gratuit, avec achats intégrés", included: "Inclus dans Play Pass",
+      rating: "Note", ratingValue: (r, n) => `★ ${r} d’après ${n} avis`, downloadsFact: "Téléchargements", released: "Sortie", updated: "Mise à jour",
+      inPass: "Dans Play Pass", since: (d) => `Depuis le ${d}`, sinceBefore: (d) => `Depuis avant le ${d}`, yes: "Oui",
+      countries: "Pays", offeredIn: (k, n) => `Proposé dans ${k} pays sur ${n}`, notIn: (l) => `Absent : ${l}`, listedAs: "Nom chez YTECHB",
+      loadingDesc: "Chargement de la description…",
+      descFailed: (file) => "La description n’a pas pu être chargée" + (file ? " depuis un fichier local ; elle s’affiche sur la page publiée" : "") + ". Google Play l’a.",
+      fullDesc: "Voir toute la description", showLess: "Voir moins", screenshots: "Captures d’écran", shotAlt: (k, n) => `Capture ${k} sur ${n}`,
+      googlePlay: "Google Play", trailer: "Bande-annonce", share: "Partager",
+      readMore: "Lire la suite", allDetails: "Tous les détails", toGo: (nf) => `encore ${nf}`, swiped: (nf) => ` · ${nf} vus`, allDone: "Terminé",
+      everyGame: "C’était le dernier jeu", nothing: "Rien à afficher",
+      dcEnd: (o) => o.total ? `Vous avez vu les ${o.totalF} jeux de ces filtres` + (o.favs ? ` et gardé ${o.favsF} ${o.favs <= 1 ? "favori" : "favoris"}` : "") + "."
+        : "Aucun jeu pour ces filtres.",
+      seeFavs: "Voir les favoris", stampLike: "Favori", stampSkip: "Passer", dcShotAlt: (k, t) => `Capture ${k} de ${t}`,
+      themeSystem: "comme le système", themeLight: "clair", themeDark: "sombre", themeLabel: (l) => `Thème : ${l}. Changer de thème`, themeTitle: (l) => `Thème : ${l}`
+    },
+    es: {
+      name: "Español", locale: "es-ES",
+      eyebrow: "Catálogo de Google Play Pass",
+      lede: "Todos los juegos de Google Play Pass, con capturas, iconos y enlaces de Play Store. Toca un título para ver los detalles, una captura para ver la siguiente, ☆ para guardar un favorito o Descubrir para ver los juegos de uno en uno deslizando.",
+      catalogueSize: "Tamaño del catálogo", gamesWord: "juegos", country: "País de Play Store", language: "Idioma",
+      searchLabel: "Buscar juegos", searchGames: (n) => `Buscar entre ${n} juegos o desarrolladores`, searchApps: (n) => `Buscar entre ${n} aplicaciones`,
+      sort: "Orden", sortAz: "A–Z", sortPopular: "Más populares", sortRating: "Mejor valorados", sortNewest: "Más recientes", sortGenre: "Por género",
+      tag: "Etiqueta", allTags: "Todas las etiquetas", tagsGroup: "Etiquetas", genresGroup: "Géneros de Play Store",
+      maxAge: "Edad máx.", maxAgeTitle: "Solo juegos con esta clasificación PEGI o inferior", allAges: "Todas las edades",
+      onlyPassTitle: "Mostrar solo juegos con la insignia de Play Pass en Play Store", onlyPassIn: "En ",
+      genreFilter: "Filtrar por género", copyLink: "Copiar enlace", linkCopied: "Enlace copiado", copyAddress: "Copia la dirección de esta página",
+      noGames: "No hay juegos que coincidan.", clearAll: "Borrar búsqueda y filtros",
+      discover: "Descubrir", discoverTitle: "Descubrir: desliza entre juegos al azar", discoverDialog: "Descubrir juegos", closeDiscover: "Cerrar Descubrir",
+      reset: "Reiniciar", resetTitle: "Empezar de nuevo: volver a mostrar los juegos ya vistos", showFavs: "Ver tus favoritos", favsSr: " favoritos",
+      skip: "Saltar (flecha izquierda)", undo: "Deshacer el último deslizamiento", like: "Añadir a favoritos (flecha derecha)",
+      confirmTitle: "¿Empezar de nuevo?", confirmText: "Todos los juegos que ya viste vuelven a aparecer. Tus favoritos se mantienen, salvo que también los borres.",
+      cancel: "Cancelar", clearFavsToo: "Borrar también favoritos", startOver: "Empezar de nuevo", closeDetails: "Cerrar detalles",
+      favourites: "Favoritos", all: "Todos",
+      genre: { "Action": "Acción", "Adventure": "Aventura", "Arcade": "Arcade", "Board": "Mesa", "Card": "Cartas", "Casual": "Casual",
+        "Educational": "Educativos", "Music": "Música", "Puzzle": "Puzles", "Racing": "Carreras", "Role-Playing": "Rol", "Simulation": "Simulación",
+        "Sports": "Deportes", "Strategy": "Estrategia", "Word & Trivia": "Palabras y trivia", "Apps": "Aplicaciones" },
+      passYes: "Play Pass", passNo: "Fuera de Play Pass", newPill: "Nuevo", noMatchCover: "No encontrado en Play Store",
+      shotLabel: (t, k, n) => `${t}: captura ${k} de ${n}, ver la siguiente`,
+      tagChip: (t) => `Ver juegos con la etiqueta ${t}`, moreTags: (n) => `Ver ${n} ${n === 1 ? "etiqueta más" : "etiquetas más"}`,
+      ratedSr: (r, n) => `Valoración de ${r} sobre 5 con ${n} valoraciones`, ratings: (c) => `${c} valoraciones`, downloads: (c) => `${c} descargas`,
+      favOf: (t) => `Favorito: ${t}`, allBy: (d) => `Ver todo de ${d}`, notMatched: "No encontrado en Play Store",
+      linksFor: (t) => `Enlaces de ${t}`, openOn: (t) => `Abrir ${t} en Google Play`, searchOn: (t) => `Buscar ${t} en Google Play`,
+      play: "Play", find: "Buscar", ytGame: (t) => `Buscar gameplay de ${t} en YouTube`, ytApp: (t) => `Buscar ${t} en YouTube`,
+      gameplay: "Gameplay", videos: "Vídeos", imgSearch: (t) => `Buscar imágenes de ${t} en Google`, images: "Imágenes",
+      sources: (link, d, n, sd) => `Lista: ${link}, actualizada el ${d}` + (n ? ` + ${n} encontrados en Google Play` : "") + ` · Datos de la tienda: ${sd}`,
+      footListLink: "la lista de Play Pass de YTECHB",
+      footList: (o) => `Lista de juegos: ${o.link}, actualizada el ${o.date}` +
+        (o.fromGoogle ? `, más ${o.fromGoogle} juegos que no incluye, encontrados siguiendo de juego en juego las insignias de Play Pass de Google Play` : "") +
+        `. Los géneros siguen las secciones de YTECHB, con Trivia y Palabras juntos` + (o.fromGoogle ? `; los juegos encontrados en Google Play usan el género de la tienda.` : ".") +
+        (o.apps ? ` Las ${o.apps} aplicaciones de Play Pass que no son juegos se encontraron igual y están en Aplicaciones.` : "") +
+        ` Los títulos son los de Play Store; los nombres que usa YTECHB también funcionan en la búsqueda.`,
+      footRating: (m) => `«Más populares» ordena por descargas en Play Store. «Mejor valorados» usa una media ponderada: los juegos con pocas valoraciones se acercan a la media del catálogo, ${m}, para que un 5,0 con un puñado de valoraciones no supere a un 4,8 con miles.`,
+      footNew: (days, since) => `«Nuevo» marca los juegos añadidos a Play Pass en los últimos ${days} días` + (since ? ` (registrado desde el ${since})` : "") +
+        ` o lanzados en los últimos ${days} días; «Más recientes» ordena por las mismas fechas. Las clasificaciones por edad son las de PEGI de la Play Store neerlandesa; al elegir una edad se ocultan los juegos sin clasificación.`,
+      footStore: (d, nf, n) => `Capturas, iconos, valoraciones, descargas y etiquetas proceden de la Play Store de EE. UU., revisada el ${d}.` +
+        (n ? ` ${nf} juegos no tienen una coincidencia fiable en Play Store; muestran una portada generada y un enlace de búsqueda.` : ""),
+      footPass: (o) => o.confirmed
+        ? `Solo se incluyen los juegos cuya página de Play Store mostraba la insignia de Play Pass el ${o.date}. De la lista de YTECHB, ${o.left} juegos ya no la tenían y ${o.unmatched} no se encontraron en Play Store, así que no aparecen.`
+        : `«Play Pass» marca los juegos cuya página de Play Store mostraba la insignia de Play Pass el ${o.date}. ${o.notInPass} juegos encontrados no la tenían y probablemente han salido de Play Pass; aparecen como «Fuera de Play Pass».`,
+      footRegion: (o) => (o.checked ? `${o.country}: un juego aparece si una búsqueda en Play Store desde ese país lo encuentra (revisado el ${o.checked}); ` +
+        (o.missing ? `${o.missingF} ${o.missing === 1 ? "juego del catálogo no se ofrece" : "juegos del catálogo no se ofrecen"} allí. ` : "todos los juegos del catálogo se ofrecen allí. ") : "") +
+        (o.home ? "La lista procede de la Play Store de EE. UU.; elige tu país arriba." : "Las valoraciones son de la tienda de EE. UU."),
+      footLang: "Los títulos, descripciones y etiquetas en español son las traducciones de Play Store, cuando el desarrollador ofrece una; si no, se muestra el texto en inglés.",
+      stubPass: (d) => `en Play Pass<br>revisado el ${d}`, stubAll: (s, p) => `${s} con capturas<br>${p} en Play Pass`,
+      heading: { az: "Juegos de la A a la Z", popular: "Juegos más populares", rating: "Juegos mejor valorados", newest: "Juegos más recientes" },
+      groupCount: (n, nf, apps) => `${nf} ${apps ? (n === 1 ? "aplicación" : "aplicaciones") : (n === 1 ? "juego" : "juegos")}`,
+      status: genericStatus, empty: genericEmpty,
+      countG: (n, nf, kind) => `${nf} ${{ game: n === 1 ? "juego" : "juegos", app: n === 1 ? "aplicación" : "aplicaciones", fav: n === 1 ? "favorito" : "favoritos", favApp: n === 1 ? "aplicación favorita" : "aplicaciones favoritas" }[kind]}`,
+      allOf: (nf, apps) => apps ? `Las ${nf} aplicaciones` : `Los ${nf} juegos`,
+      withTag: (t) => `con la etiqueta «${t}»`, upToAge: (a) => `PEGI ${a} o menos`, by: (d) => `de ${d}`, inPassQ: "en Play Pass", matching: (q) => `para «${q}»`,
+      sortNote: { popular: " · más populares primero", rating: " · mejor valorados primero", newest: " · más recientes primero" },
+      notOffered: (nf, n, c) => `${c}: ${nf} no ${n === 1 ? "disponible" : "disponibles"}`,
+      noResults: (q) => q ? `No hay resultados para «${q}» con estos filtros.` : "No hay resultados con estos filtros.",
+      elsewhereNote: (nf, n, c) => `${c}: ${nf} ${n === 1 ? "juego encajaría" : "juegos encajarían"}, pero la Play Store de ese país no ${n === 1 ? "lo" : "los"} ofrece.`,
+      noFavsYet: "Aún no hay favoritos: toca ☆ en un juego o desliza a la derecha en Descubrir.",
+      byDev: (d) => `de ${d}`, stopDev: (d) => `Dejar de mostrar solo ${d}`, matchingApps: (nf, n) => `${nf} ${n === 1 ? "aplicación coincide" : "aplicaciones coinciden"}`,
+      ageRating: "Edad", unknown: "Desconocida", notRated: "Sin clasificar", withoutPass: "Sin Play Pass", free: "Gratis",
+      freeIap: "Gratis, con compras en la aplicación", included: "Incluido en Play Pass",
+      rating: "Valoración", ratingValue: (r, n) => `★ ${r} con ${n} valoraciones`, downloadsFact: "Descargas", released: "Lanzamiento", updated: "Actualizado",
+      inPass: "En Play Pass", since: (d) => `Desde el ${d}`, sinceBefore: (d) => `Desde antes del ${d}`, yes: "Sí",
+      countries: "Países", offeredIn: (k, n) => `Disponible en ${k} de ${n}`, notIn: (l) => `No disponible en: ${l}`, listedAs: "En YTECHB aparece como",
+      loadingDesc: "Cargando la descripción…",
+      descFailed: (file) => "No se pudo cargar la descripción" + (file ? " desde un archivo local; en la página publicada sí aparece" : "") + ". Google Play la tiene.",
+      fullDesc: "Ver la descripción completa", showLess: "Ver menos", screenshots: "Capturas de pantalla", shotAlt: (k, n) => `Captura ${k} de ${n}`,
+      googlePlay: "Google Play", trailer: "Tráiler", share: "Compartir",
+      readMore: "Leer más", allDetails: "Todos los detalles", toGo: (nf) => `quedan ${nf}`, swiped: (nf) => ` · ${nf} vistos`, allDone: "Listo",
+      everyGame: "Eso es todo", nothing: "Nada que mostrar",
+      dcEnd: (o) => o.total ? `Has visto los ${o.totalF} juegos de estos filtros` + (o.favs ? ` y guardado ${o.favsF} ${o.favs === 1 ? "favorito" : "favoritos"}` : "") + "."
+        : "No hay juegos para estos filtros.",
+      seeFavs: "Ver favoritos", stampLike: "Favorito", stampSkip: "Saltar", dcShotAlt: (k, t) => `Captura ${k} de ${t}`,
+      themeSystem: "según el sistema", themeLight: "claro", themeDark: "oscuro", themeLabel: (l) => `Tema: ${l}. Cambiar tema`, themeTitle: (l) => `Tema: ${l}`
+    },
+    it: {
+      name: "Italiano", locale: "it-IT",
+      eyebrow: "Catalogo di Google Play Pass",
+      lede: "Tutti i giochi di Google Play Pass, con screenshot, icone e link dal Play Store. Tocca un titolo per i dettagli, uno screenshot per vedere il successivo, ☆ per salvare un preferito, oppure Scopri per scorrere i giochi uno alla volta.",
+      catalogueSize: "Dimensione del catalogo", gamesWord: "giochi", country: "Paese del Play Store", language: "Lingua",
+      searchLabel: "Cerca giochi", searchGames: (n) => `Cerca tra ${n} giochi o sviluppatori`, searchApps: (n) => `Cerca tra ${n} app`,
+      sort: "Ordina", sortAz: "A–Z", sortPopular: "Più popolari", sortRating: "Più votati", sortNewest: "Più recenti", sortGenre: "Per genere",
+      tag: "Tag", allTags: "Tutti i tag", tagsGroup: "Tag", genresGroup: "Generi del Play Store",
+      maxAge: "Età max", maxAgeTitle: "Solo giochi con questa classificazione PEGI o inferiore", allAges: "Tutte le età",
+      onlyPassTitle: "Mostra solo i giochi con il badge Play Pass sul Play Store", onlyPassIn: "In ",
+      genreFilter: "Filtra per genere", copyLink: "Copia link", linkCopied: "Link copiato", copyAddress: "Copia l’indirizzo di questa pagina",
+      noGames: "Nessun gioco trovato.", clearAll: "Cancella ricerca e filtri",
+      discover: "Scopri", discoverTitle: "Scopri: scorri giochi a caso", discoverDialog: "Scopri giochi", closeDiscover: "Chiudi Scopri",
+      reset: "Ricomincia", resetTitle: "Ricomincia: mostra di nuovo i giochi già visti", showFavs: "Mostra i tuoi preferiti", favsSr: " preferiti",
+      skip: "Salta (freccia sinistra)", undo: "Annulla l’ultima scelta", like: "Aggiungi ai preferiti (freccia destra)",
+      confirmTitle: "Ricominciare?", confirmText: "Tutti i giochi già visti tornano a comparire. I preferiti restano, a meno che non cancelli anche quelli.",
+      cancel: "Annulla", clearFavsToo: "Cancella anche i preferiti", startOver: "Ricomincia", closeDetails: "Chiudi dettagli",
+      favourites: "Preferiti", all: "Tutti",
+      genre: { "Action": "Azione", "Adventure": "Avventura", "Arcade": "Arcade", "Board": "Da tavolo", "Card": "Carte", "Casual": "Casual",
+        "Educational": "Educativi", "Music": "Musica", "Puzzle": "Rompicapo", "Racing": "Corse", "Role-Playing": "Giochi di ruolo", "Simulation": "Simulazione",
+        "Sports": "Sport", "Strategy": "Strategia", "Word & Trivia": "Parole e quiz", "Apps": "App" },
+      passYes: "Play Pass", passNo: "Non in Play Pass", newPill: "Nuovo", noMatchCover: "Non trovato sul Play Store",
+      shotLabel: (t, k, n) => `${t}: screenshot ${k} di ${n}, mostra il successivo`,
+      tagChip: (t) => `Mostra i giochi con il tag ${t}`, moreTags: (n) => `Mostra altri ${n} tag`,
+      ratedSr: (r, n) => `Valutato ${r} su 5 da ${n} recensioni`, ratings: (c) => `${c} recensioni`, downloads: (c) => `${c} download`,
+      favOf: (t) => `Preferito: ${t}`, allBy: (d) => `Mostra tutto di ${d}`, notMatched: "Non trovato sul Play Store",
+      linksFor: (t) => `Link per ${t}`, openOn: (t) => `Apri ${t} su Google Play`, searchOn: (t) => `Cerca ${t} su Google Play`,
+      play: "Play", find: "Cerca", ytGame: (t) => `Cerca gameplay di ${t} su YouTube`, ytApp: (t) => `Cerca ${t} su YouTube`,
+      gameplay: "Gameplay", videos: "Video", imgSearch: (t) => `Cerca immagini di ${t} su Google`, images: "Immagini",
+      sources: (link, d, n, sd) => `Elenco: ${link}, aggiornato il ${d}` + (n ? ` + ${n} trovati su Google Play` : "") + ` · Dati dello Store: ${sd}`,
+      footListLink: "l’elenco Play Pass di YTECHB",
+      footList: (o) => `Elenco dei giochi: ${o.link}, aggiornato il ${o.date}` +
+        (o.fromGoogle ? `, più ${o.fromGoogle} giochi che non contiene, trovati seguendo di gioco in gioco i badge Play Pass di Google Play` : "") +
+        `. I generi seguono le sezioni di YTECHB, con Quiz e Parole uniti` + (o.fromGoogle ? `; i giochi trovati su Google Play usano il genere dello Store.` : ".") +
+        (o.apps ? ` Le ${o.apps} app di Play Pass che non sono giochi sono state trovate allo stesso modo e si trovano in App.` : "") +
+        ` I titoli sono quelli del Play Store; i nomi usati da YTECHB funzionano comunque nella ricerca.`,
+      footRating: (m) => `«Più popolari» ordina per download sul Play Store. «Più votati» usa una media ponderata: i giochi con poche recensioni vengono avvicinati alla media del catalogo, ${m}, così un 5,0 da poche recensioni non supera un 4,8 da migliaia.`,
+      footNew: (days, since) => `«Nuovo» indica i giochi aggiunti a Play Pass negli ultimi ${days} giorni` + (since ? ` (registrato dal ${since})` : "") +
+        ` o usciti negli ultimi ${days} giorni; «Più recenti» ordina in base alle stesse date. Le classificazioni per età sono quelle PEGI del Play Store olandese; scegliendo un’età si nascondono i giochi senza classificazione.`,
+      footStore: (d, nf, n) => `Screenshot, icone, valutazioni, download e tag provengono dal Play Store statunitense, controllato il ${d}.` +
+        (n ? ` ${nf} giochi non hanno una corrispondenza sicura sul Play Store; mostrano una copertina generata e un link di ricerca.` : ""),
+      footPass: (o) => o.confirmed
+        ? `Sono elencati solo i giochi la cui pagina del Play Store mostrava il badge Play Pass il ${o.date}. Dell’elenco di YTECHB, ${o.left} giochi non lo avevano più e ${o.unmatched} non si trovano sul Play Store, quindi sono esclusi.`
+        : `«Play Pass» indica i giochi la cui pagina del Play Store mostrava il badge Play Pass il ${o.date}. ${o.notInPass} giochi trovati non lo avevano e probabilmente hanno lasciato Play Pass; sono segnati «Non in Play Pass».`,
+      footRegion: (o) => (o.checked ? `${o.country}: un gioco compare se una ricerca sul Play Store da quel paese lo trova (controllato il ${o.checked}); ` +
+        (o.missing ? `${o.missingF} ${o.missing === 1 ? "gioco del catalogo non è disponibile" : "giochi del catalogo non sono disponibili"} lì. ` : "tutti i giochi del catalogo sono disponibili lì. ") : "") +
+        (o.home ? "L’elenco stesso viene dal Play Store statunitense; scegli il tuo paese in alto." : "Le valutazioni vengono dallo Store statunitense."),
+      footLang: "Titoli, descrizioni e tag in italiano sono le traduzioni del Play Store, quando lo sviluppatore ne fornisce una; altrimenti compare il testo inglese.",
+      stubPass: (d) => `in Play Pass<br>controllato il ${d}`, stubAll: (s, p) => `${s} con screenshot<br>${p} in Play Pass`,
+      heading: { az: "Giochi dalla A alla Z", popular: "Giochi più popolari", rating: "Giochi più votati", newest: "Giochi più recenti" },
+      groupCount: (n, nf, apps) => apps ? `${nf} app` : `${nf} ${n === 1 ? "gioco" : "giochi"}`,
+      status: genericStatus, empty: genericEmpty,
+      countG: (n, nf, kind) => `${nf} ${{ game: n === 1 ? "gioco" : "giochi", app: "app", fav: n === 1 ? "preferito" : "preferiti", favApp: n === 1 ? "app preferita" : "app preferite" }[kind]}`,
+      allOf: (nf, apps) => apps ? `Tutte le ${nf} app` : `Tutti i ${nf} giochi`,
+      withTag: (t) => `con tag «${t}»`, upToAge: (a) => `PEGI ${a} o inferiore`, by: (d) => `di ${d}`, inPassQ: "in Play Pass", matching: (q) => `per «${q}»`,
+      sortNote: { popular: " · più popolari prima", rating: " · più votati prima", newest: " · più recenti prima" },
+      notOffered: (nf, n, c) => `${c}: ${nf} non ${n === 1 ? "disponibile" : "disponibili"}`,
+      noResults: (q) => q ? `Nessun risultato per «${q}» con questi filtri.` : "Nessun risultato con questi filtri.",
+      elsewhereNote: (nf, n, c) => `${c}: ${nf} ${n === 1 ? "gioco corrisponderebbe" : "giochi corrisponderebbero"}, ma il Play Store di quel paese non ${n === 1 ? "lo" : "li"} offre.`,
+      noFavsYet: "Ancora nessun preferito: tocca ☆ su un gioco o scorri a destra in Scopri.",
+      byDev: (d) => `di ${d}`, stopDev: (d) => `Smetti di mostrare solo ${d}`, matchingApps: (nf, n) => `${nf} app ${n === 1 ? "corrispondente" : "corrispondenti"}`,
+      ageRating: "Età", unknown: "Sconosciuta", notRated: "Non classificato", withoutPass: "Senza Play Pass", free: "Gratis",
+      freeIap: "Gratis, con acquisti in-app", included: "Incluso in Play Pass",
+      rating: "Valutazione", ratingValue: (r, n) => `★ ${r} da ${n} recensioni`, downloadsFact: "Download", released: "Uscita", updated: "Aggiornato",
+      inPass: "In Play Pass", since: (d) => `Dal ${d}`, sinceBefore: (d) => `Da prima del ${d}`, yes: "Sì",
+      countries: "Paesi", offeredIn: (k, n) => `Disponibile in ${k} su ${n}`, notIn: (l) => `Non disponibile in: ${l}`, listedAs: "Su YTECHB come",
+      loadingDesc: "Caricamento della descrizione…",
+      descFailed: (file) => "Impossibile caricare la descrizione" + (file ? " da un file locale; sulla pagina pubblicata compare" : "") + ". Google Play ce l’ha.",
+      fullDesc: "Mostra tutta la descrizione", showLess: "Mostra meno", screenshots: "Screenshot", shotAlt: (k, n) => `Screenshot ${k} di ${n}`,
+      googlePlay: "Google Play", trailer: "Trailer", share: "Condividi",
+      readMore: "Leggi tutto", allDetails: "Tutti i dettagli", toGo: (nf) => `ancora ${nf}`, swiped: (nf) => ` · ${nf} visti`, allDone: "Fatto",
+      everyGame: "Hai visto tutto", nothing: "Niente da mostrare",
+      dcEnd: (o) => o.total ? `Hai visto tutti i ${o.totalF} giochi di questi filtri` + (o.favs ? ` e salvato ${o.favsF} ${o.favs === 1 ? "preferito" : "preferiti"}` : "") + "."
+        : "Nessun gioco per questi filtri.",
+      seeFavs: "Vedi i preferiti", stampLike: "Preferito", stampSkip: "Salta", dcShotAlt: (k, t) => `Screenshot ${k} di ${t}`,
+      themeSystem: "come il sistema", themeLight: "chiaro", themeDark: "scuro", themeLabel: (l) => `Tema: ${l}. Cambia tema`, themeTitle: (l) => `Tema: ${l}`
+    },
+    pt: {
+      name: "Português", locale: "pt-BR",
+      eyebrow: "Catálogo do Google Play Pass",
+      lede: "Todos os jogos do Google Play Pass, com capturas de tela, ícones e links da Play Store. Toque em um título para ver detalhes, em uma captura para ver a próxima, em ☆ para guardar um favorito ou em Descobrir para ver os jogos um a um, deslizando.",
+      catalogueSize: "Tamanho do catálogo", gamesWord: "jogos", country: "País da Play Store", language: "Idioma",
+      searchLabel: "Pesquisar jogos", searchGames: (n) => `Pesquisar em ${n} jogos ou desenvolvedores`, searchApps: (n) => `Pesquisar em ${n} apps`,
+      sort: "Ordem", sortAz: "A–Z", sortPopular: "Mais populares", sortRating: "Mais bem avaliados", sortNewest: "Mais recentes", sortGenre: "Por gênero",
+      tag: "Tag", allTags: "Todas as tags", tagsGroup: "Tags", genresGroup: "Gêneros da Play Store",
+      maxAge: "Idade máx.", maxAgeTitle: "Só jogos com esta classificação PEGI ou menor", allAges: "Todas as idades",
+      onlyPassTitle: "Mostrar só jogos com o selo do Play Pass na Play Store", onlyPassIn: "No ",
+      genreFilter: "Filtrar por gênero", copyLink: "Copiar link", linkCopied: "Link copiado", copyAddress: "Copie o endereço desta página",
+      noGames: "Nenhum jogo encontrado.", clearAll: "Limpar pesquisa e filtros",
+      discover: "Descobrir", discoverTitle: "Descobrir: deslize por jogos aleatórios", discoverDialog: "Descobrir jogos", closeDiscover: "Fechar Descobrir",
+      reset: "Recomeçar", resetTitle: "Recomeçar: mostrar de novo os jogos já vistos", showFavs: "Ver seus favoritos", favsSr: " favoritos",
+      skip: "Pular (seta para a esquerda)", undo: "Desfazer a última escolha", like: "Adicionar aos favoritos (seta para a direita)",
+      confirmTitle: "Recomeçar?", confirmText: "Todos os jogos que você já viu aparecem de novo. Seus favoritos ficam, a menos que você também os apague.",
+      cancel: "Cancelar", clearFavsToo: "Apagar favoritos também", startOver: "Recomeçar", closeDetails: "Fechar detalhes",
+      favourites: "Favoritos", all: "Todos",
+      genre: { "Action": "Ação", "Adventure": "Aventura", "Arcade": "Arcade", "Board": "Tabuleiro", "Card": "Cartas", "Casual": "Casual",
+        "Educational": "Educativos", "Music": "Música", "Puzzle": "Quebra-cabeças", "Racing": "Corrida", "Role-Playing": "RPG", "Simulation": "Simulação",
+        "Sports": "Esportes", "Strategy": "Estratégia", "Word & Trivia": "Palavras e perguntas", "Apps": "Apps" },
+      passYes: "Play Pass", passNo: "Fora do Play Pass", newPill: "Novo", noMatchCover: "Não encontrado na Play Store",
+      shotLabel: (t, k, n) => `${t}: captura ${k} de ${n}, ver a próxima`,
+      tagChip: (t) => `Ver jogos com a tag ${t}`, moreTags: (n) => `Ver mais ${n} ${n === 1 ? "tag" : "tags"}`,
+      ratedSr: (r, n) => `Nota ${r} de 5 em ${n} avaliações`, ratings: (c) => `${c} avaliações`, downloads: (c) => `${c} downloads`,
+      favOf: (t) => `Favorito: ${t}`, allBy: (d) => `Ver tudo de ${d}`, notMatched: "Não encontrado na Play Store",
+      linksFor: (t) => `Links de ${t}`, openOn: (t) => `Abrir ${t} no Google Play`, searchOn: (t) => `Pesquisar ${t} no Google Play`,
+      play: "Play", find: "Buscar", ytGame: (t) => `Buscar gameplay de ${t} no YouTube`, ytApp: (t) => `Buscar ${t} no YouTube`,
+      gameplay: "Gameplay", videos: "Vídeos", imgSearch: (t) => `Buscar imagens de ${t} no Google`, images: "Imagens",
+      sources: (link, d, n, sd) => `Lista: ${link}, atualizada em ${d}` + (n ? ` + ${n} encontrados no Google Play` : "") + ` · Dados da loja: ${sd}`,
+      footListLink: "a lista do Play Pass da YTECHB",
+      footList: (o) => `Lista de jogos: ${o.link}, atualizada em ${o.date}` +
+        (o.fromGoogle ? `, mais ${o.fromGoogle} jogos que ela não tem, encontrados seguindo de jogo em jogo os selos do Play Pass do Google Play` : "") +
+        `. Os gêneros seguem as seções da YTECHB, com Perguntas e Palavras juntos` + (o.fromGoogle ? `; os jogos encontrados no Google Play usam o gênero da loja.` : ".") +
+        (o.apps ? ` Os ${o.apps} apps do Play Pass que não são jogos foram encontrados do mesmo jeito e estão em Apps.` : "") +
+        ` Os títulos são os da Play Store; os nomes usados pela YTECHB também funcionam na pesquisa.`,
+      footRating: (m) => `“Mais populares” ordena por downloads na Play Store. “Mais bem avaliados” usa uma média ponderada: jogos com poucas avaliações são puxados para a média do catálogo, ${m}, para que um 5,0 de poucas avaliações não passe na frente de um 4,8 de milhares.`,
+      footNew: (days, since) => `“Novo” marca jogos adicionados ao Play Pass nos últimos ${days} dias` + (since ? ` (registrado desde ${since})` : "") +
+        ` ou lançados nos últimos ${days} dias; “Mais recentes” ordena pelas mesmas datas. As classificações etárias são as da PEGI na Play Store holandesa; escolher uma idade oculta os jogos sem classificação.`,
+      footStore: (d, nf, n) => `Capturas, ícones, avaliações, downloads e tags vêm da Play Store dos EUA, verificada em ${d}.` +
+        (n ? ` ${nf} jogos não têm uma correspondência segura na Play Store; mostram uma capa gerada e um link de pesquisa.` : ""),
+      footPass: (o) => o.confirmed
+        ? `Só aparecem jogos cuja página na Play Store mostrava o selo do Play Pass em ${o.date}. Da lista da YTECHB, ${o.left} jogos não tinham mais o selo e ${o.unmatched} não foram encontrados na Play Store, por isso ficaram de fora.`
+        : `“Play Pass” marca jogos cuja página na Play Store mostrava o selo do Play Pass em ${o.date}. ${o.notInPass} jogos encontrados não o tinham e provavelmente saíram do Play Pass; estão marcados como “Fora do Play Pass”.`,
+      footRegion: (o) => (o.checked ? `${o.country}: um jogo aparece quando uma pesquisa na Play Store desse país o encontra (verificado em ${o.checked}); ` +
+        (o.missing ? `${o.missingF} ${o.missing === 1 ? "jogo do catálogo não é oferecido" : "jogos do catálogo não são oferecidos"} lá. ` : "todos os jogos do catálogo são oferecidos lá. ") : "") +
+        (o.home ? "A lista em si vem da Play Store dos EUA; escolha seu país no topo." : "As avaliações são da loja dos EUA."),
+      footLang: "Títulos, descrições e tags em português são as traduções da própria Play Store, quando o desenvolvedor oferece uma; se não, aparece o texto em inglês.",
+      stubPass: (d) => `no Play Pass<br>verificado em ${d}`, stubAll: (s, p) => `${s} com capturas<br>${p} no Play Pass`,
+      heading: { az: "Jogos de A a Z", popular: "Jogos mais populares", rating: "Jogos mais bem avaliados", newest: "Jogos mais recentes" },
+      groupCount: (n, nf, apps) => `${nf} ${apps ? (n === 1 ? "app" : "apps") : (n === 1 ? "jogo" : "jogos")}`,
+      status: genericStatus, empty: genericEmpty,
+      countG: (n, nf, kind) => `${nf} ${{ game: n === 1 ? "jogo" : "jogos", app: n === 1 ? "app" : "apps", fav: n === 1 ? "favorito" : "favoritos", favApp: n === 1 ? "app favorito" : "apps favoritos" }[kind]}`,
+      allOf: (nf, apps) => `Todos os ${nf} ${apps ? "apps" : "jogos"}`,
+      withTag: (t) => `com a tag “${t}”`, upToAge: (a) => `PEGI ${a} ou menos`, by: (d) => `de ${d}`, inPassQ: "no Play Pass", matching: (q) => `para “${q}”`,
+      sortNote: { popular: " · mais populares primeiro", rating: " · mais bem avaliados primeiro", newest: " · mais recentes primeiro" },
+      notOffered: (nf, n, c) => `${c}: ${nf} não ${n === 1 ? "disponível" : "disponíveis"}`,
+      noResults: (q) => q ? `Nenhum resultado para “${q}” com estes filtros.` : "Nenhum resultado com estes filtros.",
+      elsewhereNote: (nf, n, c) => `${c}: ${nf} ${n === 1 ? "jogo combinaria" : "jogos combinariam"}, mas a Play Store desse país não ${n === 1 ? "o" : "os"} oferece.`,
+      noFavsYet: "Ainda não há favoritos: toque em ☆ em um jogo ou deslize para a direita em Descobrir.",
+      byDev: (d) => `de ${d}`, stopDev: (d) => `Parar de mostrar só ${d}`, matchingApps: (nf, n) => `${nf} ${n === 1 ? "app corresponde" : "apps correspondem"}`,
+      ageRating: "Idade", unknown: "Desconhecida", notRated: "Sem classificação", withoutPass: "Sem Play Pass", free: "Grátis",
+      freeIap: "Grátis, com compras no app", included: "Incluído no Play Pass",
+      rating: "Avaliação", ratingValue: (r, n) => `★ ${r} em ${n} avaliações`, downloadsFact: "Downloads", released: "Lançamento", updated: "Atualizado",
+      inPass: "No Play Pass", since: (d) => `Desde ${d}`, sinceBefore: (d) => `Desde antes de ${d}`, yes: "Sim",
+      countries: "Países", offeredIn: (k, n) => `Disponível em ${k} de ${n}`, notIn: (l) => `Indisponível em: ${l}`, listedAs: "Na YTECHB como",
+      loadingDesc: "Carregando a descrição…",
+      descFailed: (file) => "Não foi possível carregar a descrição" + (file ? " a partir de um arquivo local; na página publicada ela aparece" : "") + ". O Google Play tem a descrição.",
+      fullDesc: "Ver a descrição completa", showLess: "Ver menos", screenshots: "Capturas de tela", shotAlt: (k, n) => `Captura ${k} de ${n}`,
+      googlePlay: "Google Play", trailer: "Trailer", share: "Compartilhar",
+      readMore: "Ler mais", allDetails: "Todos os detalhes", toGo: (nf) => `faltam ${nf}`, swiped: (nf) => ` · ${nf} vistos`, allDone: "Pronto",
+      everyGame: "Isso é tudo", nothing: "Nada para mostrar",
+      dcEnd: (o) => o.total ? `Você viu todos os ${o.totalF} jogos destes filtros` + (o.favs ? ` e guardou ${o.favsF} ${o.favs === 1 ? "favorito" : "favoritos"}` : "") + "."
+        : "Nenhum jogo para estes filtros.",
+      seeFavs: "Ver favoritos", stampLike: "Favorito", stampSkip: "Pular", dcShotAlt: (k, t) => `Captura ${k} de ${t}`,
+      themeSystem: "igual ao sistema", themeLight: "claro", themeDark: "escuro", themeLabel: (l) => `Tema: ${l}. Mudar tema`, themeTitle: (l) => `Tema: ${l}`
+    },
+    ja: {
+      name: "日本語", locale: "ja-JP",
+      eyebrow: "Google Play Pass カタログ",
+      lede: "Google Play Pass のすべてのゲームを、Play ストアのスクリーンショット・アイコン・リンク付きで紹介します。タイトルをタップで詳細、スクリーンショットをタップで次の画像、☆ でお気に入りに追加、「ディスカバー」でゲームを 1 本ずつスワイプできます。",
+      catalogueSize: "カタログの件数", gamesWord: "ゲーム", country: "Play ストアの国", language: "言語",
+      searchLabel: "ゲームを検索", searchGames: (n) => `${n} 本のゲームやデベロッパーを検索`, searchApps: (n) => `${n} 個のアプリを検索`,
+      sort: "並べ替え", sortAz: "名前順", sortPopular: "人気順", sortRating: "評価順", sortNewest: "新着順", sortGenre: "ジャンル別",
+      tag: "タグ", allTags: "すべてのタグ", tagsGroup: "タグ", genresGroup: "Play ストアのジャンル",
+      maxAge: "年齢", maxAgeTitle: "この PEGI 年齢区分以下のゲームだけを表示", allAges: "すべての年齢",
+      onlyPassTitle: "Play ストアで Play Pass バッジが付いているゲームだけを表示", onlyPassIn: "",
+      genreFilter: "ジャンルで絞り込む", copyLink: "リンクをコピー", linkCopied: "コピーしました", copyAddress: "このページのアドレスをコピーしてください",
+      noGames: "該当するゲームはありません。", clearAll: "検索とフィルタをクリア",
+      discover: "ディスカバー", discoverTitle: "ディスカバー：ランダムなゲームをスワイプ", discoverDialog: "ゲームを見つける", closeDiscover: "ディスカバーを閉じる",
+      reset: "リセット", resetTitle: "最初から：スワイプしたゲームをもう一度表示", showFavs: "お気に入りを表示", favsSr: " 件のお気に入り",
+      skip: "スキップ（左矢印キー）", undo: "直前のスワイプを取り消す", like: "お気に入りに追加（右矢印キー）",
+      confirmTitle: "最初からやり直しますか？", confirmText: "スワイプしたゲームがすべてもう一度表示されます。お気に入りは、一緒に消さない限りそのまま残ります。",
+      cancel: "キャンセル", clearFavsToo: "お気に入りも消す", startOver: "最初から", closeDetails: "詳細を閉じる",
+      favourites: "お気に入り", all: "すべて",
+      genre: { "Action": "アクション", "Adventure": "アドベンチャー", "Arcade": "アーケード", "Board": "ボード", "Card": "カード", "Casual": "カジュアル",
+        "Educational": "教育", "Music": "音楽", "Puzzle": "パズル", "Racing": "レース", "Role-Playing": "ロールプレイング", "Simulation": "シミュレーション",
+        "Sports": "スポーツ", "Strategy": "ストラテジー", "Word & Trivia": "言葉・クイズ", "Apps": "アプリ" },
+      passYes: "Play Pass", passNo: "Play Pass 対象外", newPill: "NEW", noMatchCover: "Play ストアで見つかりません",
+      shotLabel: (t, k, n) => `${t}：スクリーンショット ${k}/${n}、次を表示`,
+      tagChip: (t) => `タグ「${t}」のゲームを表示`, moreTags: (n) => `ほかのタグを ${n} 個表示`,
+      ratedSr: (r, n) => `評価 ${r}（5 点満点、${n} 件）`, ratings: (c) => `${c} 件の評価`, downloads: (c) => `${c} ダウンロード`,
+      favOf: (t) => `お気に入り：${t}`, allBy: (d) => `${d} のすべてを表示`, notMatched: "Play ストアで見つかりません",
+      linksFor: (t) => `${t} のリンク`, openOn: (t) => `Google Play で ${t} を開く`, searchOn: (t) => `Google Play で ${t} を検索`,
+      play: "Play", find: "検索", ytGame: (t) => `YouTube で ${t} のプレイ動画を検索`, ytApp: (t) => `YouTube で ${t} を検索`,
+      gameplay: "プレイ動画", videos: "動画", imgSearch: (t) => `Google 画像で ${t} を検索`, images: "画像",
+      sources: (link, d, n, sd) => `リスト：${link}（${d}更新）` + (n ? ` ＋ Google Play で見つけた ${n} 本` : "") + ` · ストア情報：${sd}`,
+      footListLink: "YTECHB の Play Pass リスト",
+      footList: (o) => `ゲームリスト：${o.link}（${o.date}更新）` +
+        (o.fromGoogle ? `。加えて、そこにない ${o.fromGoogle} 本を、Google Play の Play Pass バッジをゲームからゲームへたどって見つけました` : "") +
+        `。ジャンルは YTECHB の区分に従い、クイズと言葉はまとめています` + (o.fromGoogle ? `。Google Play で見つけたゲームはストアのジャンルを使います。` : "。") +
+        (o.apps ? `ゲーム以外の Play Pass アプリ ${o.apps} 個も同じ方法で見つけ、「アプリ」にまとめています。` : "") +
+        `タイトルは Play ストアのものです。YTECHB の表記でも検索できます。`,
+      footRating: (m) => `「人気順」は Play ストアのダウンロード数で並べます。「評価順」は加重平均を使います。評価の少ないゲームはカタログ平均の ${m} に近づけるので、わずかな評価での 5.0 が数千件の評価での 4.8 より上に来ることはありません。`,
+      footNew: (days, since) => `「NEW」は、過去 ${days} 日以内に Play Pass に追加されたゲーム` + (since ? `（${since}から記録）` : "") +
+        `、または過去 ${days} 日以内にリリースされたゲームに付きます。「新着順」も同じ日付で並べます。年齢区分はオランダの Play ストアの PEGI 区分です。年齢を選ぶと、区分のないゲームは表示されません。`,
+      footStore: (d, nf, n) => `スクリーンショット、アイコン、評価、ダウンロード数、タグは米国の Play ストアのもので、${d}に確認しました。` +
+        (n ? `${nf} 本のゲームは Play ストアで確実な一致が見つからず、生成したカバーと検索リンクを表示しています。` : ""),
+      footPass: (o) => o.confirmed
+        ? `${o.date}の時点で Play ストアのページに Play Pass バッジがあったゲームだけを掲載しています。YTECHB のリストのうち ${o.left} 本はバッジがなくなり、${o.unmatched} 本は Play ストアで見つからなかったため、除外しています。`
+        : `「Play Pass」は、${o.date}の時点で Play ストアのページに Play Pass バッジがあったゲームに付きます。見つかったゲームのうち ${o.notInPass} 本はバッジがなく、Play Pass から外れたとみられるため「Play Pass 対象外」と表示しています。`,
+      footRegion: (o) => (o.checked ? `${o.country}：その国からの Play ストア検索で見つかったゲームを掲載しています（${o.checked}に確認）。` +
+        (o.missing ? `カタログのうち ${o.missingF} 本はその国では配信されていません。` : "カタログのすべてのゲームがその国で配信されています。") : "") +
+        (o.home ? "リスト自体は米国の Play ストアのものです。上部で国を選んでください。" : "評価は米国のストアのものです。"),
+      footLang: "日本語のタイトル、説明、タグは、デベロッパーが用意している場合に Play ストア自身の翻訳を使っています。ない場合は英語のまま表示します。",
+      stubPass: (d) => `Play Pass 対象<br>${d}確認`, stubAll: (s, p) => `スクリーンショットあり ${s}<br>Play Pass ${p}`,
+      heading: { az: "名前順のゲーム", popular: "人気のゲーム", rating: "評価の高いゲーム", newest: "新着ゲーム" },
+      groupCount: (n, nf, apps) => apps ? `${nf} 個` : `${nf} 本`,
+      status: genericStatus, empty: genericEmpty,
+      countG: (n, nf, kind) => ({ game: `${nf} 本のゲーム`, app: `${nf} 個のアプリ`, fav: `${nf} 件のお気に入り`, favApp: `${nf} 個のお気に入りアプリ` }[kind]),
+      allOf: (nf, apps) => apps ? `全 ${nf} 個のアプリ` : `全 ${nf} 本のゲーム`,
+      withTag: (t) => `タグ「${t}」`, upToAge: (a) => `PEGI ${a} 以下`, by: (d) => d, inPassQ: "Play Pass", matching: (q) => `「${q}」`,
+      joinQ: (head, quals) => quals.length ? `${head}（${quals.join("・")}）` : head, genreHead: (g) => `${g}：`, sentenceSep: "",
+      sortNote: { popular: " · 人気順", rating: " · 評価順", newest: " · 新着順" },
+      notOffered: (nf, n, c) => `${c}：${nf} 本は配信なし`,
+      noResults: (q) => q ? `「${q}」に一致するものは、このフィルタでは見つかりません。` : "このフィルタに一致するものはありません。",
+      elsewhereNote: (nf, n, c) => `${c}：${nf} 本が該当しますが、その国の Play ストアでは配信されていません。`,
+      noFavsYet: "お気に入りはまだありません。ゲームの ☆ をタップするか、ディスカバーで右にスワイプしてください。",
+      byDev: (d) => d, stopDev: (d) => `${d} の絞り込みを解除`, matchingApps: (nf) => `一致するアプリ ${nf} 個`,
+      ageRating: "年齢区分", unknown: "不明", notRated: "区分なし", withoutPass: "Play Pass なしの場合", free: "無料",
+      freeIap: "無料（アプリ内購入あり）", included: "Play Pass に含まれます",
+      rating: "評価", ratingValue: (r, n) => `★ ${r}（${n} 件）`, downloadsFact: "ダウンロード数", released: "リリース日", updated: "更新日",
+      inPass: "Play Pass", since: (d) => `${d}から`, sinceBefore: (d) => `${d}より前から`, yes: "はい",
+      countries: "国", offeredIn: (k, n) => `${n} か国中 ${k} か国で配信`, notIn: (l) => `配信なし：${l}`, listSep: "、", listedAs: "YTECHB での表記",
+      loadingDesc: "説明を読み込んでいます…",
+      descFailed: (file) => "説明を読み込めませんでした" + (file ? "（ローカルファイルからは読み込めません。公開ページでは表示されます）" : "") + "。Google Play で確認できます。",
+      fullDesc: "説明をすべて表示", showLess: "閉じる", screenshots: "スクリーンショット", shotAlt: (k, n) => `スクリーンショット ${k}/${n}`,
+      googlePlay: "Google Play", trailer: "トレーラー", share: "共有",
+      readMore: "続きを読む", allDetails: "詳細をすべて見る", toGo: (nf) => `残り ${nf}`, swiped: (nf) => ` · ${nf} 件スワイプ済み`, allDone: "完了",
+      everyGame: "すべて見終わりました", nothing: "表示するものがありません",
+      dcEnd: (o) => o.total ? `このフィルタの ${o.totalF} 本をすべてスワイプしました` + (o.favs ? `（お気に入り ${o.favsF} 件）` : "") + "。"
+        : "このフィルタに一致するゲームはありません。",
+      seeFavs: "お気に入りを見る", stampLike: "お気に入り", stampSkip: "スキップ", dcShotAlt: (k, t) => `${t} のスクリーンショット ${k}`,
+      themeSystem: "システムに合わせる", themeLight: "ライト", themeDark: "ダーク", themeLabel: (l) => `テーマ：${l}。テーマを変更`, themeTitle: (l) => `テーマ：${l}`
+    }
+  };
+  const LANG = T[document.documentElement.lang] ? document.documentElement.lang : "en";
+  const L = Object.assign({}, T.en, T[LANG]);
+  const LOCALE = L.locale;
   const IMG_HOST = "https://play-lh.googleusercontent.com/";
   const ICON = "s96";
   const SHOT = "w526-h296";
@@ -881,9 +1553,10 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     "Simulation": 220, "Sports": 125, "Strategy": 45, "Word & Trivia": 350
   };
   const $ = (id) => document.getElementById(id);
-  const fmt = new Intl.NumberFormat("en");
-  const compact = new Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: 1 });
-  const collator = new Intl.Collator("en", { numeric: true, sensitivity: "base" });
+  const fmt = new Intl.NumberFormat(LOCALE);
+  const compact = new Intl.NumberFormat(LOCALE, { notation: "compact", maximumFractionDigits: 1 });
+  const dec1 = new Intl.NumberFormat(LOCALE, { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  const collator = new Intl.Collator(LOCALE, { numeric: true, sensitivity: "base" });
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const norm = (s) => String(s || "").normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase();
   const img = (path, size) => (/^https?:/.test(path) ? path : IMG_HOST + path).split("=")[0] + "=" + size;
@@ -898,26 +1571,53 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   const saveFavs = () => store.set("favs", JSON.stringify([...favs]));
   const saveSwipes = () => store.set("swipes", JSON.stringify(Object.fromEntries(swipes)));
 
+  // Static text in the interface language, and the language menu (a new language reloads the page).
+  document.querySelectorAll("[data-t]").forEach((el) => { el.textContent = L[el.dataset.t]; });
+  document.querySelectorAll("[data-t-label]").forEach((el) => el.setAttribute("aria-label", L[el.dataset.tLabel]));
+  document.querySelectorAll("[data-t-title]").forEach((el) => { el.title = L[el.dataset.tTitle]; });
+  $("lang").innerHTML = Object.keys(T).map((k) => `<option value="${k}" lang="${k}"${k === LANG ? " selected" : ""}>${esc(T[k].name)}</option>`).join("");
+  $("lang-code").textContent = LANG.toUpperCase();
+  $("lang").addEventListener("change", () => { store.set("lang", $("lang").value); location.reload(); });
+  document.documentElement.classList.remove("i18n-wait");
+
   // Regions: the US store (where the list comes from) plus any country checked for
-  // availability. Each game carries a bit per region: set when that store offers it.
+  // availability. Each game lists the regions whose store doesn't offer it.
   const REGIONS = D.regions && D.regions.length ? D.regions : [{ code: "US", tz: [] }];
-  const ALL_REGIONS = (1 << REGIONS.length) - 1;
+
+  // Tags, genres and app categories in the interface language (tags: the store's own names).
+  const TAG_NAMES = (D.tagNames || {})[LANG] || [];
+  const tagName = (t) => TAG_NAMES[t] || D.tags[t];
+  const tagIndex = new Map(D.tags.map((name, t) => [name, t]));
+  const genreName = (name) => L.genre[name] || name;
+  const catName = (c) => (tagIndex.has(c) ? tagName(tagIndex.get(c)) : c);
+  // tags that share a name in this language ("Puzzle" and "Puzzles" are both パズル) count as one
+  const tagRep = (() => {
+    const first = new Map();
+    return D.tags.map((_, t) => { const k = norm(tagName(t)); if (!first.has(k)) first.set(k, t); return first.get(k); });
+  })();
+  const TX_BIT = (D.textLangs || []).indexOf(LANG);  // a game's bit for "the store has a translated description"
 
   // games: [title (store name), genreIndex, appId, icon, [screenshots], developer, YTECHB's name when it differs,
-  //         inPlayPass 1/0/null, starRating, numberOfRatings, installs, [tag indexes into D.tags], region bits,
-  //         per-region store id when a country sells its own edition (or null), PEGI age, first day seen with
-  //         the Play Pass badge, release date, store category (apps only)]
+  //         inPlayPass 1/0/null, starRating, numberOfRatings, installs, [tag indexes into D.tags], [indexes of
+  //         the regions whose store doesn't offer it] or null, {region index: store id} where a country sells its
+  //         own edition, PEGI age, first day seen with the Play Pass badge, release date, store category (apps
+  //         only), {language: the store's title in it} where it differs, bits of D.textLangs with a translation]
   const games = D.games.map((g, i) => {
-    const [title, gi, appId, icon, shots, dev, listedAs, pass, rating, ratings, installs, tagIds, rbits, alt,
-           pegi, firstSeen, released, category] = g;
+    const [storeTitle, gi, appId, icon, shots, dev, listedAs, pass, rating, ratings, installs, tagIds, notIn, alt,
+           pegi, firstSeen, released, category, titles, texts] = g;
     const genre = D.genres[gi];
-    const tags = (tagIds || []).map((t) => D.tags[t]);
+    const title = (titles && titles[LANG]) || storeTitle;
+    const ids = tagIds || [];
     return { i, title, gi, genre, appId, icon, shots: shots || [], dev, listedAs, pass, rating, ratings,
-             installs: installs || 0, tagIds: tagIds || [], rbits: rbits ?? ALL_REGIONS, alt: alt || null,
+             installs: installs || 0, tagIds: ids, reps: [...new Set(ids.map((t) => tagRep[t]))],
+             notIn: notIn ? new Set(notIn) : null, alt: alt || null,
              pegi: pegi ?? null, firstSeen: firstSeen || null, released: released || null, category: category || null,
-             fid: appId || "t:" + title,  // favourite / swipe key
-             key: norm([title, dev, listedAs, category, ...tags].filter(Boolean).join(" ")), el: null };
+             tx: TX_BIT >= 0 && ((texts || 0) >> TX_BIT) & 1,
+             fid: appId || "t:" + storeTitle,  // favourite / swipe key
+             key: norm([title, storeTitle, dev, listedAs, category, category && catName(category),
+               ...ids.map((t) => D.tags[t]), ...ids.map(tagName)].filter(Boolean).join(" ")), el: null };
   });
+  const genreLabel = (g) => (g.category ? catName(g.category) : genreName(g.genre));
   const confirmedOnly = !!D.meta.confirmedOnly;
   const APPS = D.genres.indexOf("Apps");  // Play Pass apps that aren't games get their own section
   const isApp = (g) => g.gi === APPS;
@@ -934,7 +1634,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   const STORE_GENRES = new Set(["Action", "Adventure", "Arcade", "Board", "Card", "Casino", "Casual", "Educational",
     "Music", "Puzzle", "Racing", "Role Playing", "Simulation", "Sports", "Strategy", "Trivia", "Word"]);
   const tagCounts = D.tags.map(() => 0);
-  games.forEach((g) => g.tagIds.forEach((t) => { tagCounts[t]++; }));
+  games.forEach((g) => g.reps.forEach((t) => { tagCounts[t]++; }));
   const letters = (s) => norm(s).replace(/[^a-z]/g, "");
   const TAGS_SHOWN = 4;
   // Card chips skip the tag that repeats the card's genre and put tags most games
@@ -942,7 +1642,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   games.forEach((g) => {
     const own = new Set((g.category || g.genre).split("&").map(letters));
     const common = (t) => tagCounts[t] > games.length / 3;
-    g.chips = g.tagIds.filter((t) => !own.has(letters(D.tags[t])))
+    g.chips = g.reps.filter((t) => !own.has(letters(D.tags[t])))
       .sort((a, b) => common(a) - common(b));
   });
   const byTitle = games.slice().sort((a, b) => collator.compare(a.title, b.title));
@@ -960,7 +1660,6 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   const byNewest = games.slice().sort((a, b) => (b.firstSeen || "").localeCompare(a.firstSeen || "")
     || (b.released || "").localeCompare(a.released || "") || collator.compare(a.title, b.title));
   const ORDERS = { az: byTitle, popular: byPopular, rating: byRating, newest: byNewest };
-  const SORT_NOTE = { popular: ", most popular first", rating: ", highest rated first", newest: ", newest first" };
   const SORTS = ["az", "popular", "rating", "newest", "genre"];
 
   function hash(s) {
@@ -987,10 +1686,11 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     star: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.4 2.6 5.4 5.9.8-4.3 4.1 1.1 5.9L12 16.8l-5.3 2.8 1.1-5.9-4.3-4.1 5.9-.8z"/></svg>',
     share: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
   };
-  const passTag = (g) => confirmedOnly ? "" : g.pass === 1 ? `<span class="pass-tag yes">${ICONS.ticket}Play Pass</span>`
-    : g.pass === 0 ? '<span class="pass-tag no">Not in Play Pass</span>' : "";
+  const passTag = (g) => confirmedOnly ? "" : g.pass === 1 ? `<span class="pass-tag yes">${ICONS.ticket}${esc(L.passYes)}</span>`
+    : g.pass === 0 ? `<span class="pass-tag no">${esc(L.passNo)}</span>` : "";
+  const newPill = `<span class="pill-new">${esc(L.newPill)}</span>`;
   const pills = (g) => {
-    const p = (g.isNew ? '<span class="pill-new">New</span>' : "") + passTag(g);
+    const p = (g.isNew ? newPill : "") + passTag(g);
     return p ? `<span class="pills">${p}</span>` : "";
   };
   const enc = (s) => encodeURIComponent(s);
@@ -1000,53 +1700,53 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     const n = g.shots.length;
     if (!n) {
       return `<div class="shots cover" style="${coverVars(g)}"><b aria-hidden="true">${esc(initials(g.title))}</b>` +
-             `<em>No Play Store match</em></div>`;
+             `<em>${esc(L.noMatchCover)}</em></div>`;
     }
     const pic = `<img src="${esc(img(g.shots[0], SHOT))}" alt="" loading="lazy" decoding="async">${pills(g)}`;
     if (n === 1) return `<div class="shots">${pic}</div>`;
     const dots = Array.from({ length: n }, (_, k) => `<i${k ? "" : ' class="on"'}></i>`).join("");
-    return `<button type="button" class="shots" data-i="${g.i}" data-k="0" aria-label="${esc(g.title)}: screenshot 1 of ${n}, show next">` +
+    return `<button type="button" class="shots" data-i="${g.i}" data-k="0" aria-label="${esc(L.shotLabel(g.title, 1, n))}">` +
            `${pic}<span class="n">1/${n}</span><span class="dots">${dots}</span></button>`;
   }
-  const chip = (t) => `<button type="button" data-tag="${t}" aria-pressed="false" aria-label="Show games tagged ${esc(D.tags[t])}">${esc(D.tags[t])}</button>`;
+  const chip = (t) => `<button type="button" data-tag="${t}" aria-pressed="false" aria-label="${esc(L.tagChip(tagName(t)))}">${esc(tagName(t))}</button>`;
   function tagsHtml(g) {
     if (!g.chips.length) return "";
     const more = g.chips.length - TAGS_SHOWN;
     return `<div class="tags">${g.chips.slice(0, TAGS_SHOWN).map(chip).join("")}` +
-      (more > 0 ? `<button type="button" class="more" data-more="${g.i}" aria-label="Show ${more} more ${more === 1 ? "tag" : "tags"}">+${more}</button>` : "") +
+      (more > 0 ? `<button type="button" class="more" data-more="${g.i}" aria-label="${esc(L.moreTags(more))}">+${more}</button>` : "") +
       `</div>`;
   }
   function rateHtml(g) {
     const items = [];
     if (g.rating) {
-      items.push(`<span class="ri"><span class="star" aria-hidden="true">★</span><span class="sr-only">Rated </span>${g.rating.toFixed(1)}` +
-        `<span class="sr-only"> out of 5 from ${fmt.format(g.ratings)} ratings</span></span>`,
-        `<span class="ri cnt" aria-hidden="true">${compact.format(g.ratings)} ratings</span>`);
+      items.push(`<span class="ri"><span class="star" aria-hidden="true">★</span><span aria-hidden="true">${dec1.format(g.rating)}</span>` +
+        `<span class="sr-only">${esc(L.ratedSr(dec1.format(g.rating), fmt.format(g.ratings)))}</span></span>`,
+        `<span class="ri cnt" aria-hidden="true">${esc(L.ratings(compact.format(g.ratings)))}</span>`);
     }
     if (g.installs) {
-      items.push(`<span class="ri cnt"><span aria-hidden="true">${compact.format(g.installs)}</span>` +
-        `<span class="sr-only">${fmt.format(g.installs)}</span> downloads</span>`);
+      items.push(`<span class="ri cnt"><span aria-hidden="true">${esc(L.downloads(compact.format(g.installs)))}</span>` +
+        `<span class="sr-only">${esc(L.downloads(fmt.format(g.installs)))}</span></span>`);
     }
     return items.length ? `<p class="rate"><span class="rate-in">${items.join("")}</span></p>` : "";
   }
   const iconHtml = (g, size) => g.icon
     ? `<img class="icon" src="${esc(img(g.icon, ICON))}" alt="" width="${size}" height="${size}" loading="lazy" decoding="async" data-open="${g.i}">`
     : `<span class="icon tile" style="${coverVars(g)}" aria-hidden="true" data-open="${g.i}">${esc(initials(g.title))}</span>`;
-  const favBtn = (g) => `<button type="button" class="fav-btn" data-fav="${g.i}" aria-pressed="${favs.has(g.fid)}" aria-label="Favourite: ${esc(g.title)}">${ICONS.star}</button>`;
+  const favBtn = (g) => `<button type="button" class="fav-btn" data-fav="${g.i}" aria-pressed="${favs.has(g.fid)}" aria-label="${esc(L.favOf(g.title))}">${ICONS.star}</button>`;
   function cardHtml(g) {
     const storeUrl = g.appId ? storeHref(g.appId) : `https://play.google.com/store/search?q=${enc(g.title)}&c=apps`;
     return `<article class="card" style="--h:${HUES[g.genre] ?? 250}">` +
       shotsHtml(g) +
       `<div class="meta">${iconHtml(g, 48)}<div class="txt"><h3 class="title"><button type="button" class="open" data-open="${g.i}">${esc(g.title)}</button></h3>` +
-      (g.dev ? `<p class="dev"><button type="button" data-dev="${g.i}" aria-label="Show everything by ${esc(g.dev)}">${esc(g.dev)}</button></p>`
-             : `<p class="dev">Not matched on the Play Store</p>`) +
+      (g.dev ? `<p class="dev"><button type="button" data-dev="${g.i}" aria-label="${esc(L.allBy(g.dev))}">${esc(g.dev)}</button></p>`
+             : `<p class="dev">${esc(L.notMatched)}</p>`) +
       rateHtml(g) +
       `</div>${favBtn(g)}</div>` +
       tagsHtml(g) +
-      `<div class="foot"><span class="tag" style="--h:${HUES[g.genre] ?? 250}">${esc(g.category || g.genre)}</span><nav class="links" aria-label="Links for ${esc(g.title)}">` +
-      `<a class="store" href="${esc(storeUrl)}" target="_blank" rel="noopener" aria-label="${g.appId ? "Open" : "Search for"} ${esc(g.title)} on Google Play">${ICONS.store}<span>${g.appId ? "Play" : "Find"}</span></a>` +
-      `<a href="https://www.youtube.com/results?search_query=${enc(g.title + (isApp(g) ? "" : " gameplay"))}" target="_blank" rel="noopener" aria-label="Search YouTube for ${esc(g.title)}${isApp(g) ? "" : " gameplay"}">${ICONS.video}<span>${isApp(g) ? "Videos" : "Gameplay"}</span></a>` +
-      `<a href="https://www.google.com/search?tbm=isch&amp;q=${enc(g.title + (isApp(g) ? " app" : " game"))}" target="_blank" rel="noopener" aria-label="Search Google Images for ${esc(g.title)}">${ICONS.images}<span>Images</span></a>` +
+      `<div class="foot"><span class="tag" style="--h:${HUES[g.genre] ?? 250}">${esc(genreLabel(g))}</span><nav class="links" aria-label="${esc(L.linksFor(g.title))}">` +
+      `<a class="store" href="${esc(storeUrl)}" target="_blank" rel="noopener" aria-label="${esc(g.appId ? L.openOn(g.title) : L.searchOn(g.title))}">${ICONS.store}<span>${esc(g.appId ? L.play : L.find)}</span></a>` +
+      `<a href="https://www.youtube.com/results?search_query=${enc(g.title + (isApp(g) ? "" : " gameplay"))}" target="_blank" rel="noopener" aria-label="${esc(isApp(g) ? L.ytApp(g.title) : L.ytGame(g.title))}">${ICONS.video}<span>${esc(isApp(g) ? L.videos : L.gameplay)}</span></a>` +
+      `<a href="https://www.google.com/search?tbm=isch&amp;q=${enc(g.title + (isApp(g) ? " app" : " game"))}" target="_blank" rel="noopener" aria-label="${esc(L.imgSearch(g.title))}">${ICONS.images}<span>${esc(L.images)}</span></a>` +
       `</nav></div></article>`;
   }
 
@@ -1057,13 +1757,12 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
 
   // ----- header, footer, chips
   const m = D.meta;
-  const dateText = (iso) => iso ? new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }) : "";
-  const shortDate = (iso) => iso ? new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }) : "";
-  const regionNames = (() => { try { return new Intl.DisplayNames(["en"], { type: "region" }); } catch (e) { return null; } })();
+  const dateText = (iso) => iso ? new Date(iso + "T12:00:00Z").toLocaleDateString(LOCALE, { day: "numeric", month: "long", year: "numeric" }) : "";
+  const shortDate = (iso) => iso ? new Date(iso + "T12:00:00Z").toLocaleDateString(LOCALE, { day: "numeric", month: "short", year: "numeric" }) : "";
+  const regionNames = (() => { try { return new Intl.DisplayNames([LOCALE], { type: "region" }); } catch (e) { return null; } })();
   const regionName = (r) => (regionNames && regionNames.of(r.code)) || r.code;
-  const THE = new Set(["NL", "US", "GB", "PH", "AE", "BS", "GM", "DO"]);  // "in the Netherlands"
+  const THE = new Set(["NL", "US", "GB", "PH", "AE", "BS", "GM", "DO"]);  // English: "in the Netherlands"
   const theName = (r) => (THE.has(r.code) ? "the " : "") + regionName(r);
-  const inRegionName = (r) => `in ${theName(r)}`;
   // First visit: the country of the visitor's time zone, then of their browser language, else the US.
   function guessRegion() {
     const saved = REGIONS.findIndex((r) => r.code === store.get("region"));
@@ -1081,37 +1780,34 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   }
   const homeRegion = guessRegion();  // the visitor's own country (links only mention another one)
   let region = homeRegion;
-  const inRegion = (g) => (g.rbits >> region) & 1;
+  const inRegion = (g) => !g.notIn || !g.notIn.has(region);
   $("region").innerHTML = REGIONS.map((r, i) => ({ r, i })).sort((a, b) => collator.compare(regionName(a.r), regionName(b.r)))
     .map(({ r, i }) => `<option value="${i}">${esc(regionName(r))}</option>`).join("");
   $("region-box").hidden = REGIONS.length < 2;
   const fromGoogle = m.fromGoogle || 0;
   const appCount = games.filter(isApp).length;
-  $("sources").innerHTML = `List: <a href="${esc(m.listUrl)}" target="_blank" rel="noopener">YTECHB</a>, updated ${esc(dateText(m.listUpdated))}` +
-    (fromGoogle ? ` + ${fmt.format(fromGoogle)} found on Google Play` : "") + ` · Store data: ${esc(dateText(m.passChecked || m.storeChecked))}`;
-  $("foot-list").innerHTML = `Game list: <a href="${esc(m.listUrl)}" target="_blank" rel="noopener">YTECHB's Play Pass list</a>, updated ${esc(dateText(m.listUpdated))}` +
-    (fromGoogle ? `, plus ${fmt.format(fromGoogle)} games it doesn't have, found by following Google Play's own Play Pass badges from game to game` : "") +
-    `. Genres follow YTECHB's sections, with Trivia and Word merged` + (fromGoogle ? `; games found on Google Play use the store's genre.` : ".") +
-    (appCount ? ` The ${fmt.format(appCount)} Play Pass apps that aren't games were found the same way and are under Apps.` : "") +
-    ` Titles are the Play Store's own; the names YTECHB uses still work in the search.`;
-  $("foot-rating").textContent = `Most popular sorts by Play Store downloads. Top rated uses a weighted average: games with few ` +
-    `ratings are pulled toward the catalogue average of ${meanRating.toFixed(1)}, so a 5.0 from a handful of ratings doesn't ` +
-    `outrank a 4.8 from thousands.`;
-  $("foot-new").textContent = `“New” marks games added to Play Pass in the last ${NEW_DAYS} days` +
-    (since ? ` (tracked since ${dateText(since)})` : "") + ` or released in the last ${NEW_DAYS} days; Newest sorts by the same dates. ` +
-    `Age ratings are PEGI ratings from the Dutch Play Store; picking an age hides games without one.`;
+  const listLink = (text) => `<a href="${esc(m.listUrl)}" target="_blank" rel="noopener">${esc(text)}</a>`;
+  $("sources").innerHTML = L.sources(listLink("YTECHB"), esc(dateText(m.listUpdated)), fromGoogle ? fmt.format(fromGoogle) : 0,
+    esc(dateText(m.passChecked || m.storeChecked)));
+  $("foot-list").innerHTML = L.footList({ link: listLink(L.footListLink), date: esc(dateText(m.listUpdated)),
+    fromGoogle: fromGoogle ? fmt.format(fromGoogle) : 0, apps: appCount ? fmt.format(appCount) : 0 });
+  $("foot-rating").textContent = L.footRating(dec1.format(meanRating));
+  $("foot-new").textContent = L.footNew(NEW_DAYS, since ? dateText(since) : "");
+  $("foot-lang").textContent = L.footLang;
+  $("foot-lang").hidden = !L.footLang;
 
-  const tagOptions = (pick) => D.tags.map((name, t) => ({ name, t })).filter((x) => tagCounts[x.t] && pick(x.name))
+  const tagOptions = (pick) => D.tags.map((name, t) => ({ name: tagName(t), t }))
+    .filter((x) => tagRep[x.t] === x.t && tagCounts[x.t] && pick(D.tags[x.t]))
     .sort((a, b) => collator.compare(a.name, b.name))
     .map((x) => `<option value="${x.t}">${esc(x.name)}</option>`).join("");
   $("tag").insertAdjacentHTML("beforeend",
-    `<optgroup label="Tags">${tagOptions((n) => !STORE_GENRES.has(n))}</optgroup>` +
-    `<optgroup label="Play Store genres">${tagOptions((n) => STORE_GENRES.has(n))}</optgroup>`);
+    `<optgroup label="${esc(L.tagsGroup)}">${tagOptions((n) => !STORE_GENRES.has(n))}</optgroup>` +
+    `<optgroup label="${esc(L.genresGroup)}">${tagOptions((n) => STORE_GENRES.has(n))}</optgroup>`);
   $("only-pass").hidden = confirmedOnly;
   $("genres").innerHTML =
-    `<button type="button" class="genre favs" id="fav-chip" aria-pressed="false">Favourites <small></small></button>` +
-    `<button type="button" class="genre all" data-g="-1" aria-pressed="true">All <small></small></button>` +
-    D.genres.map((name, gi) => `<button type="button" class="genre" data-g="${gi}" style="--h:${HUES[name] ?? 250}" aria-pressed="false">${esc(name)} <small></small></button>`).join("");
+    `<button type="button" class="genre favs" id="fav-chip" aria-pressed="false">${esc(L.favourites)} <small></small></button>` +
+    `<button type="button" class="genre all" data-g="-1" aria-pressed="true">${esc(L.all)} <small></small></button>` +
+    D.genres.map((name, gi) => `<button type="button" class="genre" data-g="${gi}" style="--h:${HUES[name] ?? 250}" aria-pressed="false">${esc(genreName(name))} <small></small></button>`).join("");
 
   // ----- state
   const list = $("list"), q = $("q");
@@ -1130,10 +1826,10 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     const gamesHere = offered.filter((g) => !isApp(g));
     pool = genre === APPS ? offered.filter(isApp) : gamesHere;
     $("stub-num").textContent = fmt.format(gamesHere.length);
-    $("q").placeholder = genre === APPS ? `Search ${fmt.format(pool.length)} apps` : `Search ${fmt.format(gamesHere.length)} games or developers`;
+    $("q").placeholder = genre === APPS ? L.searchApps(fmt.format(pool.length)) : L.searchGames(fmt.format(gamesHere.length));
     const byGenre = D.genres.map(() => 0), byTag = D.tags.map(() => 0);
     offered.forEach((g) => { byGenre[g.gi]++; });
-    pool.forEach((g) => g.tagIds.forEach((t) => { byTag[t]++; }));
+    pool.forEach((g) => g.reps.forEach((t) => { byTag[t]++; }));
     document.querySelectorAll(".genre[data-g] small").forEach((el) => {
       const gi = Number(el.parentElement.dataset.g);
       el.textContent = fmt.format(gi < 0 ? gamesHere.length : byGenre[gi]);
@@ -1141,7 +1837,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     showFavCount();
     $("tag").querySelectorAll("optgroup option").forEach((o) => {
       const t = Number(o.value);
-      o.textContent = `${D.tags[t]} (${fmt.format(byTag[t])})`;
+      o.textContent = `${tagName(t)} (${fmt.format(byTag[t])})`;
       o.disabled = !byTag[t] && t !== tag;
     });
   }
@@ -1155,21 +1851,15 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     const gamesHere = games.filter((g) => inRegion(g) && !isApp(g));
     const withShots = gamesHere.filter((g) => g.shots.length).length;
     $("stub-small").innerHTML = confirmedOnly
-      ? `in Play Pass<br>checked ${esc(shortDate(m.passChecked))}`
-      : `${fmt.format(withShots)} with screenshots<br>${fmt.format(gamesHere.filter((g) => g.pass === 1).length)} in Play Pass`;
-    $("foot-store").textContent = `Screenshots, icons, ratings, downloads and tags come from the US Play Store, checked ${dateText(m.passChecked)}.` +
-      (gamesHere.length > withShots ? ` ${fmt.format(gamesHere.length - withShots)} games have no confident Play Store match; they show a generated cover and a Play Store search link instead.` : "");
-    $("foot-pass").textContent = confirmedOnly
-      ? `Only games whose Play Store page showed the Play Pass badge on ${dateText(m.passChecked)} are listed. ` +
-        `Of YTECHB's list, ${fmt.format(m.leftOutOfPass)} games no longer had it and ${fmt.format(m.leftOutUnmatched)} couldn't be found on the Play Store, so they're left out.`
-      : `“Play Pass” marks games whose Play Store page showed the Play Pass badge on ${dateText(m.passChecked)}. ` +
-        `${fmt.format(gamesHere.filter((g) => g.pass === 0).length)} matched games didn't, so they have probably left Play Pass; they're marked “Not in Play Pass”.`;
+      ? L.stubPass(esc(shortDate(m.passChecked)))
+      : L.stubAll(fmt.format(withShots), fmt.format(gamesHere.filter((g) => g.pass === 1).length));
+    const unmatched = gamesHere.length - withShots;
+    $("foot-store").textContent = L.footStore(dateText(m.passChecked), fmt.format(unmatched), unmatched);
+    $("foot-pass").textContent = L.footPass({ confirmed: confirmedOnly, date: dateText(m.passChecked), left: fmt.format(m.leftOutOfPass),
+      unmatched: fmt.format(m.leftOutUnmatched), notInPass: fmt.format(gamesHere.filter((g) => g.pass === 0).length) });
     const missing = games.filter((g) => !isApp(g)).length - gamesHere.length;
-    $("foot-region").textContent = REGIONS.length < 2 ? "" :
-      (r.checked ? `In ${theName(r)}, a game is listed when a Play Store search from there finds it (checked ${dateText(r.checked)}); ` +
-        (missing ? `${fmt.format(missing)} ${missing === 1 ? "game in the catalogue isn't" : "games in the catalogue aren't"} offered there. `
-          : "every game in the catalogue is offered there. ") : "") +
-      (region === 0 ? "The list itself comes from the US Play Store; pick your country in the header." : "Ratings are from the US store.");
+    $("foot-region").textContent = REGIONS.length < 2 ? "" : L.footRegion({ checked: r.checked ? dateText(r.checked) : "",
+      country: regionName(r), theCountry: theName(r), missing, missingF: fmt.format(missing), home: region === 0 });
   }
 
   function layout() {
@@ -1179,13 +1869,13 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       const grid = document.createElement("div");
       grid.className = "grid";
       ORDERS[sort].forEach((g) => grid.append(g.el));
-      list.innerHTML = `<h2 class="sr-only">${{ az: "Games A to Z", popular: "Most popular games", rating: "Top rated games", newest: "Newest games" }[sort]}</h2>`;
+      list.innerHTML = `<h2 class="sr-only">${esc(L.heading[sort])}</h2>`;
       list.append(grid);
     } else {
       D.genres.forEach((name, gi) => {
         const sec = document.createElement("section");
         sec.className = "group";
-        sec.innerHTML = `<div class="group-head"><h2 style="--h:${HUES[name] ?? 250}">${esc(name)}</h2><span></span></div><div class="grid"></div>`;
+        sec.innerHTML = `<div class="group-head"><h2 style="--h:${HUES[name] ?? 250}">${esc(genreName(name))}</h2><span></span></div><div class="grid"></div>`;
         const grid = sec.lastElementChild;
         byTitle.forEach((g) => { if (g.gi === gi) grid.append(g.el); });
         groups.push({ gi, sec, count: sec.querySelector(".group-head span") });
@@ -1199,7 +1889,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   // The current search and filters as a test; Discover reuses it without the favourites filter.
   function filters(withFavs) {
     const terms = norm(q.value).split(/\s+/).filter(Boolean);
-    const passes = (g) => (tag < 0 || g.tagIds.includes(tag)) && (!onlyPass || g.pass === 1)
+    const passes = (g) => (tag < 0 || g.reps.includes(tag)) && (!onlyPass || g.pass === 1)
       && (!age || (g.pegi != null && g.pegi <= age)) && (!dev || g.dev === dev) && terms.every((t) => g.key.includes(t))
       && (!withFavs || !favOnly || favs.has(g.fid));
     // "All" means all games; favourites include the apps you starred
@@ -1221,29 +1911,22 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     for (const grp of groups) {
       const n = shownBy[grp.gi];
       grp.sec.hidden = n === 0;
-      grp.count.textContent = `${n} ${grp.gi === APPS ? (n === 1 ? "app" : "apps") : (n === 1 ? "game" : "games")}`;
+      grp.count.textContent = L.groupCount(n, fmt.format(n), grp.gi === APPS);
     }
+    // what's showing, for the status line and the empty message
     const appsView = genre >= 0 && genre === APPS;
-    const kind = (n) => favOnly
-      ? (appsView ? (n === 1 ? "favourite app" : "favourite apps") : (genre < 0 ? "" : `${D.genres[genre]} `) + (n === 1 ? "favourite" : "favourites"))
-      : appsView ? (n === 1 ? "app" : "apps") : (genre < 0 ? "" : `${D.genres[genre]} `) + (n === 1 ? "game" : "games");
-    const tagged = tag < 0 ? "" : ` tagged “${D.tags[tag]}”`;
-    const rated = age ? ` rated PEGI ${age} or lower` : "";
-    const by = dev ? ` by ${dev}` : "";
-    const scope = (n) => kind(n) + tagged + rated + by + (onlyPass ? " in Play Pass" : "");
-    const filtered = (genre >= 0 && !appsView) || tag >= 0 || age || dev || onlyPass || favOnly || terms.length;
-    const notHere = elsewhere ? ` · ${fmt.format(elsewhere)} not offered ${inRegionName(REGIONS[region])}` : "";
-    $("status").textContent = (filtered
-      ? `Showing ${fmt.format(shown)} ${scope(shown)}` + (terms.length ? ` matching “${q.value.trim()}”` : "")
-      : `Showing all ${fmt.format(shown)} ${appsView ? "apps" : "games"}`) + (SORT_NOTE[sort] || "") + notHere;
+    const o = { n: shown, nf: fmt.format(shown), apps: appsView, fav: favOnly,
+      kind: favOnly ? (appsView ? "favApp" : "fav") : appsView ? "app" : "game",
+      genre: genre < 0 || appsView ? "" : genreName(D.genres[genre]), tag: tag < 0 ? "" : tagName(tag), age, dev, pass: onlyPass,
+      query: terms.length ? q.value.trim() : "", sort, elsewhere, elsewhereF: fmt.format(elsewhere),
+      country: regionName(REGIONS[region]), theCountry: theName(REGIONS[region]), noFavs: favOnly && !favs.size,
+      filtered: !!((genre >= 0 && !appsView) || tag >= 0 || age || dev || onlyPass || favOnly || terms.length) };
+    $("status").textContent = L.status(o);
     $("active").innerHTML =
-      (dev ? `<span class="filter-chip">by ${esc(dev)}<button type="button" data-clear-dev aria-label="Stop showing only ${esc(dev)}">×</button></span>` : "") +
-      (appHits ? `<button type="button" class="linkish" data-goto-apps>${fmt.format(appHits)} matching ${appHits === 1 ? "app" : "apps"}</button>` : "");
+      (dev ? `<span class="filter-chip">${esc(L.byDev(dev))}<button type="button" data-clear-dev aria-label="${esc(L.stopDev(dev))}">×</button></span>` : "") +
+      (appHits ? `<button type="button" class="linkish" data-goto-apps>${esc(L.matchingApps(fmt.format(appHits), appHits))}</button>` : "");
     $("empty").hidden = shown > 0;
-    const none = scope(2);
-    $("empty-text").textContent = favOnly && !favs.size ? "No favourites yet: tap ☆ on a game, or swipe right in Discover."
-      : (terms.length ? `No ${none} match “${q.value.trim()}”` : `No ${none} to show`) +
-      (elsewhere ? ` ${inRegionName(REGIONS[region])}: ${fmt.format(elsewhere)} would, but its Play Store doesn't offer ${elsewhere === 1 ? "it" : "them"}.` : ".");
+    $("empty-text").textContent = L.empty(o);
     syncUrl(false);
   }
 
@@ -1281,6 +1964,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     q.value = p.get("q") || "";
     genre = D.genres.indexOf(p.get("genre") || "");
     tag = D.tags.indexOf(p.get("tag") || "");
+    if (tag >= 0) tag = tagRep[tag];
     age = [3, 7, 12, 16].includes(Number(p.get("age"))) ? Number(p.get("age")) : 0;
     dev = p.get("dev") || "";
     if (SORTS.includes(p.get("sort"))) sort = p.get("sort");
@@ -1319,13 +2003,13 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     if (navigator.share && matchMedia("(pointer: coarse)").matches) {
       try { await navigator.share({ url, title }); return ""; } catch (e) { if (e && e.name === "AbortError") return ""; }
     }
-    try { await navigator.clipboard.writeText(url); return "Link copied"; } catch (e) {
+    try { await navigator.clipboard.writeText(url); return L.linkCopied; } catch (e) {
       const ta = document.createElement("textarea");
       ta.value = url; document.body.append(ta); ta.select();
       let ok = false;
       try { ok = document.execCommand("copy"); } catch (err) { /* no clipboard */ }
       ta.remove();
-      return ok ? "Link copied" : "Copy this page's address";
+      return ok ? L.linkCopied : L.copyAddress;
     }
   }
   function flash(btn, text) {
@@ -1342,69 +2026,72 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   const dlg = $("detail"), dBody = $("d-body");
   const details = new Map();  // appId -> detail file contents, or false when it can't be read
   let pushed = false;
-  const money = (v, cur) => { try { return new Intl.NumberFormat("en", { style: "currency", currency: cur || "USD" }).format(v); } catch (e) { return `${v} ${cur || ""}`; } };
+  const money = (v, cur) => { try { return new Intl.NumberFormat(LOCALE, { style: "currency", currency: cur || "USD" }).format(v); } catch (e) { return `${v} ${cur || ""}`; } };
   const paras = (text) => esc(text).replace(/\r\n?/g, "\n").split(/\n{2,}/).map((x) => `<p>${x.replace(/\n/g, "<br>")}</p>`).join("");
   function renderDetail(g, d) {
     const storeId = (g.alt && g.alt[region]) || g.appId;
     const shots = d && d.screenshots && d.screenshots.length ? d.screenshots : g.shots;
-    const missing = REGIONS.filter((r, i) => !((g.rbits >> i) & 1));
+    const missing = REGIONS.filter((r, i) => g.notIn && g.notIn.has(i)).map(regionName).sort(collator.compare);
     const facts = [];
     const pegi = g.pegi != null ? `PEGI ${g.pegi}` + (d && d.pegiNotes ? ` · ${esc(d.pegiNotes)}` : "") : "";
     const esrb = d && d.esrb ? `ESRB ${esc(d.esrb)}` + (d.esrbNotes ? ` · ${esc(d.esrbNotes)}` : "") : "";
-    facts.push(["Age rating", [pegi, esrb].filter(Boolean).join("<br>") || (d === undefined ? "…" : d === false ? "Unknown" : "Not rated")]);
+    facts.push([L.ageRating, [pegi, esrb].filter(Boolean).join("<br>") || (d === undefined ? "…" : esc(d === false ? L.unknown : L.notRated))]);
     if (d) {
-      const price = d.price > 0 ? money(d.price, d.currency) : d.iap ? "Free, with in-app purchases" + (d.iapPrices ? ` (${esc(d.iapPrices)})` : "") : "Free";
-      facts.push(["Without Play Pass", price + (d.price > 0 || d.iap ? "<br><span class=\"muted\">Included in Play Pass</span>" : "")]);
+      const price = d.price > 0 ? money(d.price, d.currency) : d.iap ? esc(L.freeIap) + (d.iapPrices ? ` (${esc(d.iapPrices)})` : "") : esc(L.free);
+      facts.push([L.withoutPass, price + (d.price > 0 || d.iap ? `<br><span class="muted">${esc(L.included)}</span>` : "")]);
     }
-    if (g.rating) facts.push(["Rating", `★ ${g.rating.toFixed(1)} from ${fmt.format(g.ratings)} ratings`]);
-    if (g.installs) facts.push(["Downloads", fmt.format(g.installs)]);
-    if (g.released) facts.push(["Released", esc(dateText(g.released))]);
-    if (d && d.updated) facts.push(["Updated", esc(dateText(d.updated))]);
-    facts.push(["In Play Pass", g.firstSeen && since && g.firstSeen > since ? `Since ${esc(dateText(g.firstSeen))}`
-      : since ? `Since before ${esc(dateText(since))}` : "Yes"]);
+    if (g.rating) facts.push([L.rating, esc(L.ratingValue(dec1.format(g.rating), fmt.format(g.ratings)))]);
+    if (g.installs) facts.push([L.downloadsFact, fmt.format(g.installs)]);
+    if (g.released) facts.push([L.released, esc(dateText(g.released))]);
+    if (d && d.updated) facts.push([L.updated, esc(dateText(d.updated))]);
+    facts.push([L.inPass, esc(g.firstSeen && since && g.firstSeen > since ? L.since(dateText(g.firstSeen))
+      : since ? L.sinceBefore(dateText(since)) : L.yes)]);
     if (REGIONS.length > 1) {
-      facts.push(["Countries", `Offered in ${REGIONS.length - missing.length} of ${REGIONS.length}` +
-        (missing.length ? `<br><span class="muted">Not in ${esc(missing.map(regionName).join(", "))}</span>` : "")]);
+      facts.push([L.countries, esc(L.offeredIn(fmt.format(REGIONS.length - missing.length), fmt.format(REGIONS.length))) +
+        (missing.length ? `<br><span class="muted">${esc(L.notIn(missing.join(L.listSep)))}</span>` : "")]);
     }
-    if (g.listedAs) facts.push(["YTECHB lists it as", esc(g.listedAs)]);
+    if (g.listedAs) facts.push([L.listedAs, esc(g.listedAs)]);
     const video = d && d.video && (/(?:embed\/|v=)([\w-]{6,})/.exec(d.video) || [])[1];
     let desc;
-    if (d === undefined) desc = `<p class="muted">Loading the description…</p>`;
-    else if (d === false) desc = `<p class="muted">The description couldn't be loaded` +
-      (location.protocol === "file:" ? " from a file on disk; it shows on the published page" : "") + `. Google Play has it.</p>`;
+    if (d === undefined) desc = `<p class="muted">${esc(L.loadingDesc)}</p>`;
+    else if (d === false) desc = `<p class="muted">${esc(L.descFailed(location.protocol === "file:"))}</p>`;
     else {
       const long = (d.description || "").length > 700;
       desc = (d.summary ? `<p class="d-summary">${esc(d.summary)}</p>` : "") +
         (d.description ? `<div class="d-desc-text${long ? " clamped" : ""}" id="d-desc">${paras(d.description)}</div>` +
-          (long ? `<button type="button" class="linkish" id="d-more" aria-expanded="false">Show full description</button>` : "") : "");
+          (long ? `<button type="button" class="linkish" id="d-more" aria-expanded="false">${esc(L.fullDesc)}</button>` : "") : "");
     }
     dBody.innerHTML =
       (d && d.header ? `<img class="d-banner" src="${esc(img(d.header, "w1052"))}" alt="">` : "") +
       `<div class="d-head">${iconHtml(g, 64).replace(/ data-open="\d+"/, "")}<div class="txt">` +
       `<h2 class="d-title" id="d-title">${esc(g.title)}</h2>` +
-      `<p class="d-sub">${g.dev ? `<button type="button" class="linkish" data-ddev>${esc(g.dev)}</button> · ` : ""}${esc(g.category || g.genre)}` +
-      `${g.isNew ? ' · <span class="pill-new">New</span>' : ""}</p></div>${favBtn(g)}</div>` +
-      (shots.length ? `<div class="d-gallery" tabindex="0" aria-label="Screenshots">` +
-        shots.map((x, k) => `<img src="${esc(img(x, "h440"))}" alt="Screenshot ${k + 1} of ${shots.length}" loading="lazy" decoding="async">`).join("") + `</div>` : "") +
-      `<dl class="d-facts">${facts.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join("")}</dl>` +
-      (g.tagIds.length ? `<div class="tags d-tags">${g.tagIds.map((t) => `<button type="button" data-dtag="${t}">${esc(D.tags[t])}</button>`).join("")}</div>` : "") +
-      `<div class="d-section">${desc}</div>` +
-      `<nav class="links d-links" aria-label="Links for ${esc(g.title)}">` +
-      (storeId ? `<a class="store" href="${esc(storeHref(storeId))}" target="_blank" rel="noopener">${ICONS.store}<span>Google Play</span></a>` : "") +
-      (video ? `<a href="https://www.youtube.com/watch?v=${esc(video)}" target="_blank" rel="noopener">${ICONS.video}<span>Trailer</span></a>` : "") +
-      `<a href="https://www.youtube.com/results?search_query=${enc(g.title + (isApp(g) ? "" : " gameplay"))}" target="_blank" rel="noopener">${ICONS.video}<span>${isApp(g) ? "Videos" : "Gameplay"}</span></a>` +
-      `<a href="https://www.google.com/search?tbm=isch&amp;q=${enc(g.title + (isApp(g) ? " app" : " game"))}" target="_blank" rel="noopener">${ICONS.images}<span>Images</span></a>` +
-      `<button type="button" data-dshare>${ICONS.share}<span>Share</span></button>` +
+      `<p class="d-sub">${g.dev ? `<button type="button" class="linkish" data-ddev>${esc(g.dev)}</button> · ` : ""}${esc(genreLabel(g))}` +
+      `${g.isNew ? ` · ${newPill}` : ""}</p></div>${favBtn(g)}</div>` +
+      (shots.length ? `<div class="d-gallery" tabindex="0" aria-label="${esc(L.screenshots)}">` +
+        shots.map((x, k) => `<img src="${esc(img(x, "h440"))}" alt="${esc(L.shotAlt(k + 1, shots.length))}" loading="lazy" decoding="async">`).join("") + `</div>` : "") +
+      `<dl class="d-facts">${facts.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${v}</dd></div>`).join("")}</dl>` +
+      (g.reps.length ? `<div class="tags d-tags">${g.reps.map((t) => `<button type="button" data-dtag="${t}">${esc(tagName(t))}</button>`).join("")}</div>` : "") +
+      // an untranslated description stays English: say so for screen readers and hyphenation
+      `<div class="d-section"${d && !d.translated && LANG !== "en" ? ' lang="en"' : ""}>${desc}</div>` +
+      `<nav class="links d-links" aria-label="${esc(L.linksFor(g.title))}">` +
+      (storeId ? `<a class="store" href="${esc(storeHref(storeId))}" target="_blank" rel="noopener">${ICONS.store}<span>${esc(L.googlePlay)}</span></a>` : "") +
+      (video ? `<a href="https://www.youtube.com/watch?v=${esc(video)}" target="_blank" rel="noopener">${ICONS.video}<span>${esc(L.trailer)}</span></a>` : "") +
+      `<a href="https://www.youtube.com/results?search_query=${enc(g.title + (isApp(g) ? "" : " gameplay"))}" target="_blank" rel="noopener">${ICONS.video}<span>${esc(isApp(g) ? L.videos : L.gameplay)}</span></a>` +
+      `<a href="https://www.google.com/search?tbm=isch&amp;q=${enc(g.title + (isApp(g) ? " app" : " game"))}" target="_blank" rel="noopener">${ICONS.images}<span>${esc(L.images)}</span></a>` +
+      `<button type="button" data-dshare>${ICONS.share}<span>${esc(L.share)}</span></button>` +
       `</nav>`;
   }
-  // details/<appId>.json, once per app; done(d) gets the contents, or false when it can't be read
+  // details/<appId>.json, once per app, with the store's translated summary and description from
+  // details/<lang>/<appId>.json on top; done(d) gets the contents, or false when they can't be read
   const loading = new Map();
+  const getJson = (path) => fetch(path).then((r) => r.ok ? r.json() : Promise.reject(new Error(String(r.status))));
   function loadDetails(g, done) {
     if (!g || !g.appId) return;
     if (details.has(g.appId)) { if (done) done(details.get(g.appId)); return; }
     if (!loading.has(g.appId)) {
-      loading.set(g.appId, fetch(`details/${enc(g.appId)}.json`)
-        .then((r) => r.ok ? r.json() : Promise.reject(new Error(String(r.status))))
+      loading.set(g.appId, Promise.all([getJson(`details/${enc(g.appId)}.json`),
+        g.tx ? getJson(`details/${LANG}/${enc(g.appId)}.json`).catch(() => null) : null])
+        .then(([d, t]) => (t ? Object.assign({}, d, t, { translated: true }) : d))
         .catch(() => false)
         .then((d) => { details.set(g.appId, d); loading.delete(g.appId); return d; }));
     }
@@ -1441,7 +2128,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       const b = $("d-more"), open = b.getAttribute("aria-expanded") === "true";
       $("d-desc").classList.toggle("clamped", open);
       b.setAttribute("aria-expanded", String(!open));
-      b.textContent = open ? "Show full description" : "Show less";
+      b.textContent = open ? L.fullDesc : L.showLess;
     } else if (e.target.closest("[data-ddev]")) {
       if (discoverOn) closeDiscover("replace");
       closeDetail("replace"); setDev(g.dev);
@@ -1589,23 +2276,23 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   function dcBody(g, d) {
     const shots = (d && d.screenshots && d.screenshots.length ? d.screenshots : g.shots).slice(0, 3);
     const long = d && (d.description || "").length > 320;
-    const text = d === undefined ? `<p class="muted">Loading the description…</p>`
+    const text = d === undefined ? `<p class="muted">${esc(L.loadingDesc)}</p>`
       : !d ? "" : (d.summary ? `<p class="d-summary">${esc(d.summary)}</p>` : "") +
         (d.description ? `<div class="dc-desc${long ? " clamped" : ""}">${paras(d.description)}</div>` +
-          (long ? `<button type="button" class="linkish" data-dc-more aria-expanded="false">Read more</button>` : "") : "");
+          (long ? `<button type="button" class="linkish" data-dc-more aria-expanded="false">${esc(L.readMore)}</button>` : "") : "");
     const storeId = (g.alt && g.alt[region]) || g.appId;
     return `<div class="dc-head">${iconHtml(g, 60).replace(/ data-open="\d+"/, "")}<div class="txt">` +
       `<h2 class="dc-title">${esc(g.title)}</h2>` +
-      `<p class="d-sub">${g.dev ? esc(g.dev) + " · " : ""}${esc(g.category || g.genre)}${g.pegi != null ? ` · PEGI ${g.pegi}` : ""}` +
-      `${g.isNew ? ' · <span class="pill-new">New</span>' : ""}</p>${rateHtml(g)}</div></div>` +
-      `<div class="dc-text">${text}</div>` +
-      shots.map((x, k) => `<img class="dc-shot" src="${esc(img(x, "w720"))}" alt="Screenshot ${k + 1} of ${esc(g.title)}" ${k ? 'loading="lazy" ' : ""}decoding="async" draggable="false">`).join("") +
-      `<p class="dc-links"><button type="button" class="linkish" data-dc-details>All details</button>` +
-      (storeId ? ` · <a href="${esc(storeHref(storeId))}" target="_blank" rel="noopener">Google Play</a>` : "") + `</p>`;
+      `<p class="d-sub">${g.dev ? esc(g.dev) + " · " : ""}${esc(genreLabel(g))}${g.pegi != null ? ` · PEGI ${g.pegi}` : ""}` +
+      `${g.isNew ? ` · ${newPill}` : ""}</p>${rateHtml(g)}</div></div>` +
+      `<div class="dc-text"${d && !d.translated && LANG !== "en" ? ' lang="en"' : ""}>${text}</div>` +
+      shots.map((x, k) => `<img class="dc-shot" src="${esc(img(x, "w720"))}" alt="${esc(L.dcShotAlt(k + 1, g.title))}" ${k ? 'loading="lazy" ' : ""}decoding="async" draggable="false">`).join("") +
+      `<p class="dc-links"><button type="button" class="linkish" data-dc-details>${esc(L.allDetails)}</button>` +
+      (storeId ? ` · <a href="${esc(storeHref(storeId))}" target="_blank" rel="noopener">${esc(L.googlePlay)}</a>` : "") + `</p>`;
   }
   function dcCount() {
     const left = deck.length - pos;
-    $("dc-count").textContent = left > 0 ? `${fmt.format(left)} to go` + (left === deck.length ? "" : ` · ${fmt.format(pos)} swiped`) : "All done";
+    $("dc-count").textContent = left > 0 ? L.toGo(fmt.format(left)) + (left === deck.length ? "" : L.swiped(fmt.format(pos))) : L.allDone;
     $("dc-undo").disabled = !undos.length;
     $("dc-nope").disabled = $("dc-like").disabled = left <= 0;
     showFavCount();
@@ -1615,16 +2302,15 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     if (pos >= deck.length) {
       dcCard = null;
       const total = games.filter((g) => filters(false).inSection(g) && inRegion(g)).length;
-      stage.innerHTML = `<div class="dc-end"><h2>${total ? "That's every game" : "Nothing to show"}</h2>` +
-        `<p>${total ? `You've swiped all ${fmt.format(total)} games for these filters` : "No games match these filters"}` +
-        `${favs.size ? `, and kept ${fmt.format(favs.size)} ${favs.size === 1 ? "favourite" : "favourites"}` : ""}.</p>` +
-        `<div class="row"><button type="button" class="dc-btn" data-dc-showfavs>See favourites</button>` +
-        `<button type="button" class="dc-btn primary" data-dc-reset>Start over</button></div></div>`;
+      stage.innerHTML = `<div class="dc-end"><h2>${esc(total ? L.everyGame : L.nothing)}</h2>` +
+        `<p>${esc(L.dcEnd({ total, totalF: fmt.format(total), favs: favs.size, favsF: fmt.format(favs.size) }))}</p>` +
+        `<div class="row"><button type="button" class="dc-btn" data-dc-showfavs>${esc(L.seeFavs)}</button>` +
+        `<button type="button" class="dc-btn primary" data-dc-reset>${esc(L.startOver)}</button></div></div>`;
       return;
     }
     const g = deck[pos];
     stage.innerHTML = `<article class="dc-card${reduceMotion() ? "" : " enter"}" aria-label="${esc(g.title)}">` +
-      `<span class="dc-stamp like" aria-hidden="true">Favourite</span><span class="dc-stamp nope" aria-hidden="true">Skip</span>` +
+      `<span class="dc-stamp like" aria-hidden="true">${esc(L.stampLike)}</span><span class="dc-stamp nope" aria-hidden="true">${esc(L.stampSkip)}</span>` +
       `<div class="dc-scroll">${dcBody(g, details.get(g.appId))}</div></article>`;
     dcCard = stage.firstElementChild;
     requestAnimationFrame(() => requestAnimationFrame(() => dcCard && dcCard.classList.remove("enter")));
@@ -1702,7 +2388,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       const b = e.target.closest("[data-dc-more]"), open = b.getAttribute("aria-expanded") === "true";
       b.previousElementSibling.classList.toggle("clamped", open);
       b.setAttribute("aria-expanded", String(!open));
-      b.textContent = open ? "Read more" : "Show less";
+      b.textContent = open ? L.readMore : L.showLess;
     } else if (e.target.closest("[data-dc-details]") && g) openDetail(g, true);
     else if (e.target.closest("[data-dc-showfavs]")) showFavourites();
     else if (e.target.closest("[data-dc-reset]")) askReset();
@@ -1770,7 +2456,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     btn.querySelector("img").src = img(g.shots[k], SHOT);
     btn.querySelector(".n").textContent = `${k + 1}/${n}`;
     btn.querySelectorAll(".dots i").forEach((d, j) => d.classList.toggle("on", j === k));
-    btn.setAttribute("aria-label", `${g.title}: screenshot ${k + 1} of ${n}, show next`);
+    btn.setAttribute("aria-label", L.shotLabel(g.title, k + 1, n));
     preload(btn, k);
   }
   function preload(btn, k) {
@@ -1808,9 +2494,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     theme = t;
     if (t === "system") delete document.documentElement.dataset.theme;
     else document.documentElement.dataset.theme = t;
-    const label = { system: "match system", light: "light", dark: "dark" }[t];
-    $("theme").setAttribute("aria-label", `Theme: ${label}. Change theme`);
-    $("theme").title = `Theme: ${label}`;
+    const label = { system: L.themeSystem, light: L.themeLight, dark: L.themeDark }[t];
+    $("theme").setAttribute("aria-label", L.themeLabel(label));
+    $("theme").title = L.themeTitle(label);
     store.set("theme", t);
   }
   $("theme").addEventListener("click", () => setTheme(THEMES[(THEMES.indexOf(theme) + 1) % THEMES.length]));

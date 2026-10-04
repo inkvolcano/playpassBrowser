@@ -14,7 +14,12 @@ discover_games.py found on Google Play itself (data/discovered.json).
 
 Regions: the catalogue comes from the US store. Countries checked with
 `fill_screenshots.py --region CC` get an entry in the page's region menu, which
-hides games that country's store doesn't offer.
+hides games that country's store doesn't offer. A country joins the menu once
+90% of the listed games have been checked there.
+
+Languages: `fill_screenshots.py --langs` saves the store's own translations
+(data/translations.json, details/<lang>/); the page uses them for titles, tag
+names and descriptions when someone picks that language.
 """
 import argparse
 import json
@@ -28,6 +33,7 @@ OUT = ROOT / "index.html"
 IMG_HOST = "https://play-lh.googleusercontent.com/"
 PAGE_SHOTS = 12  # screenshots per card
 HOME_REGION = "us"  # the store the catalogue itself comes from
+REGION_COVERAGE = 0.9  # share of listed games a country must have been checked for to join the menu
 ZONE_TAB = Path("/usr/share/zoneinfo/zone.tab")
 
 
@@ -82,11 +88,17 @@ def offered(e, cc):
     return ((e.get("regions") or {}).get(cc) or {}).get("available") is not False
 
 
+def not_offered(e, regions):
+    """Indexes of the regions whose store doesn't offer the app, or None when all do."""
+    out = [i for i, cc in enumerate(regions) if not offered(e, cc)]
+    return out or None
+
+
 def alt_ids(e, regions):
-    """Per region, the regional edition a country's store sells instead of the US app
+    """{region index: the regional edition that country's store sells instead of the US app}
     (Layton's European listings, say), or None when there's none anywhere."""
-    ids = [((e.get("regions") or {}).get(cc) or {}).get("appId") for cc in regions]
-    return ids if any(ids) else None
+    ids = {str(i): a for i, cc in enumerate(regions) if (a := ((e.get("regions") or {}).get(cc) or {}).get("appId"))}
+    return ids or None
 
 
 def time_zones():
@@ -109,6 +121,11 @@ def main(argv=None):
     cache = load("shots_cache.json", {})
     games = load_games(cache)
     source = load("sources.json", {})
+    translations = load("translations.json", {})
+    tr_apps, tag_names = translations.get("apps", {}), translations.get("tagNames", {})
+
+    def app_tags(e):  # English tags (the cache has Japanese ones for apps read from the Japanese store)
+        return (tr_apps.get(e.get("appId")) or {}).get("tags") or e.get("tags") or []
 
     # YTECHB sometimes lists one game under two names ("Flat machine" and
     # "Flat Machine: Post-Apocalyptic"): show each Play Store app once, under
@@ -137,8 +154,11 @@ def main(argv=None):
         else:
             shown.append((g, e))
 
-    # Region menu: the home store plus every country that has been checked.
-    regions = [HOME_REGION] + sorted({cc for _, e in shown for cc in (e.get("regions") or {}) if cc != HOME_REGION})
+    # Region menu: the home store plus every country that has been checked for most games.
+    matched = [e for _, e in shown if e.get("appId")]
+    coverage = Counter(cc for e in matched for cc in (e.get("regions") or {}))
+    pending = sorted(cc for cc, n in coverage.items() if cc != HOME_REGION and n < REGION_COVERAGE * len(matched))
+    regions = [HOME_REGION] + sorted(cc for cc in coverage if cc != HOME_REGION and cc not in pending)
     region_checked = {cc: [r["checked"] for _, e in shown if (r := (e.get("regions") or {}).get(cc)) and r.get("checked")]
                       for cc in regions}
     nowhere = [g["title"] for g, e in shown if e.get("appId") and not any(offered(e, cc) for cc in regions)]
@@ -146,10 +166,11 @@ def main(argv=None):
 
     genres = sorted({g["genre"] for g, _ in shown}, key=lambda x: (x == APPS, x))  # Apps last
     genre_index = {name: i for i, name in enumerate(genres)}
-    tag_counts = Counter(t for _, e in shown if e.get("appId") for t in (e.get("tags") or []))
+    tag_counts = Counter(t for _, e in shown if e.get("appId") for t in app_tags(e))
     tags = [t for t, _ in sorted(tag_counts.items(), key=lambda kv: (-kv[1], kv[0]))]
     tag_index = {t: i for i, t in enumerate(tags)}
 
+    text_langs = sorted({lang for x in tr_apps.values() for lang in x.get("texts", [])} | set(tag_names))
     rows, checked, pass_checked = [], [], []
     for g, e in shown:
         app_id = e.get("appId")
@@ -163,12 +184,15 @@ def main(argv=None):
                      shots, e.get("developer") if app_id else None, listed_as, in_pass,
                      e["rating"] if rated else None, e["ratings"] if rated else None,
                      e.get("installs") if app_id else None,
-                     [tag_index[t] for t in (e.get("tags") or [])] if app_id else [],
-                     sum(1 << i for i, cc in enumerate(regions) if not app_id or offered(e, cc)),
+                     [tag_index[t] for t in app_tags(e)] if app_id else [],
+                     not_offered(e, regions) if app_id else None,
                      alt_ids(e, regions) if app_id else None,
                      e.get("pegi") if app_id else None, e.get("firstSeen") if app_id else None,
                      e.get("released") if app_id else None,
-                     e.get("playGenre") if app_id and g["genre"] == APPS else None])
+                     e.get("playGenre") if app_id and g["genre"] == APPS else None,
+                     (tr_apps.get(app_id) or {}).get("titles") or None if app_id else None,
+                     sum(1 << i for i, lang in enumerate(text_langs) if lang in (tr_apps.get(app_id) or {}).get("texts", []))
+                     if app_id else 0])
         if e.get("checked"):
             checked.append(e["checked"])
         if app_id and e.get("passChecked"):
@@ -181,6 +205,10 @@ def main(argv=None):
         "regions": [{"code": cc.upper(), "checked": max(region_checked[cc]) if region_checked[cc] else None,
                      "tz": zones.get(cc, []) if cc != HOME_REGION else []} for cc in regions],
         "games": rows,
+        # per language: the store's name for each tag (None: same as English), and which languages
+        # have translated descriptions (bit i of a game's last column: textLangs[i])
+        "tagNames": {lang: [names.get(t) for t in tags] for lang, names in tag_names.items()},
+        "textLangs": text_langs,
         "meta": {"listUrl": source.get("url"), "listUpdated": source.get("updated"),
                  "storeChecked": max(checked) if checked else None,
                  "passChecked": max(pass_checked) if pass_checked else None,
@@ -204,13 +232,20 @@ def main(argv=None):
               f"(use --all to keep them)")
     matched_rows = sum(1 for r in rows if r[2])
     for i, cc in enumerate(regions):
-        off = sum(1 for r in rows if not r[12] >> i & 1)
+        off = sum(1 for r in rows if i in (r[12] or []))
         checked = sum(1 for g, e in shown if e.get("appId") and cc in (e.get("regions") or {}))
         note = "" if cc == HOME_REGION and not checked else f", checked {checked}/{matched_rows}"
         # the home store is only checked for games not matched through its own search
         partial = cc != HOME_REGION and checked and checked < matched_rows
         print(f"region {cc}: {len(rows) - off} offered, {off} not{note}"
               + (" - INCOMPLETE: unchecked games count as offered" if partial else ""))
+    if pending:
+        print(f"not in the menu yet, checked for under {REGION_COVERAGE:.0%} of the games: "
+              + ", ".join(f"{cc} {coverage[cc]}/{len(matched)}" for cc in pending))
+    if text_langs:
+        print("translations: " + ", ".join(f"{lang} {sum(1 for r in rows if r[19] >> i & 1)} descriptions, "
+                                            f"{sum(1 for r in rows if r[18] and lang in r[18])} titles"
+                                            for i, lang in enumerate(text_langs)))
     if nowhere:
         print(f"left out, offered in none of the regions: {len(nowhere)}: " + "; ".join(nowhere))
     if merged:

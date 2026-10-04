@@ -760,8 +760,9 @@ def run_details(args, games, order, cache, today):
     by_app = {}
     for g in games:
         e = cache.get(g["title"]) or {}
-        if e.get("appId") and (args.recheck == "all" or e.get("detailsChecked") != today
-                               or not (DETAILS_DIR / f"{e['appId']}.json").exists()):
+        due = stale(e.get("detailsChecked"), today, args.max_age) if args.recheck == "stale" else \
+            args.recheck == "all" or e.get("detailsChecked") != today
+        if e.get("appId") and (due or not (DETAILS_DIR / f"{e['appId']}.json").exists()):
             by_app.setdefault(e["appId"], []).append(g["title"])
     apps = sorted(by_app)
     print(f"{len(apps)} apps to fetch details for", flush=True)
@@ -794,9 +795,132 @@ def run_details(args, games, order, cache, today):
         git_commit(f"Fetch detail-view data: {done[0]} apps", args.push)
 
 
+# ---------------------------------------------------------------- translations
+
+# page language -> the Play Store's hl and gl for it
+LANGS = {"nl": ("nl", "nl"), "de": ("de", "de"), "fr": ("fr", "fr"), "es": ("es", "es"), "it": ("it", "it"),
+         "pt": ("pt-BR", "br"), "ja": ("ja", "jp")}
+TRANSLATIONS_JSON = ROOT / "data" / "translations.json"
+
+
+def clean_text(s):
+    return re.sub(r"\n{3,}", "\n\n", re.sub(r"\r\n?", "\n", s or "").strip())
+
+
+def category_names(d):
+    return [(c.get("name") if isinstance(c, dict) else c) or "" for c in d.get("categories") or []]
+
+
+def translations_for(app_id):
+    """The store's own translations of an app's listing: (entry, texts), or (None, None).
+
+    entry: the app's tags in English, its title in each language where that differs, and
+    the store's name for each English tag per language. Tags are matched by position: every
+    language lists the same genre and tags in the same order. texts: {lang: {summary,
+    description}} for each language the listing is translated into (the store serves the
+    developer's default listing, usually English, for the others)."""
+    us = app_details(app_id, "en", "us")
+    if not us or not us.get("title"):
+        return None, None
+    en_names = category_names(us)
+    en = {"title": us["title"], "summary": clean_text(us.get("summary")), "description": clean_text(us.get("description"))}
+    entry = {"checked": date.today().isoformat(), "tags": store_tags(us.get("categories")), "titles": {}, "tagNames": {}}
+    texts = {}
+    for lang, (hl, gl) in LANGS.items():
+        d = app_details(app_id, hl, gl)
+        if not d or not d.get("title"):
+            continue
+        if d["title"].strip() != en["title"].strip():
+            entry["titles"][lang] = d["title"].strip()
+        t = {k: v for k in ("summary", "description") if (v := clean_text(d.get(k))) and v != en[k]}
+        if t.get("description"):
+            texts[lang] = t
+        names = category_names(d)
+        if len(names) == len(en_names):
+            entry["tagNames"][lang] = {e: n for e, n in zip(en_names, names) if e and n and e != n}
+    return entry, texts
+
+
+def run_langs(args, games, cache, today):
+    """--langs: the store's translations of every listed app (see translations_for), --jobs
+    threads. Texts go to details/<lang>/<appId>.json, the rest to data/translations.json. The
+    cache isn't touched, so this can run next to a --region run."""
+    index = load_json(TRANSLATIONS_JSON, {})
+    index.setdefault("apps", {})
+    index.setdefault("tagNames", {})
+    listed = sorted({cache[g["title"]]["appId"] for g in games if (cache.get(g["title"]) or {}).get("appId")
+                     and cache[g["title"]].get("playPass") is True})
+    keep = set(listed)
+    only = {cache[t]["appId"] for t in args.only or [] if (cache.get(t) or {}).get("appId")}
+    checked = lambda a: (index["apps"].get(a) or {}).get("checked")
+    apps = [a for a in listed if (a in only if args.only else args.recheck == "all"
+            or (stale(checked(a), today, args.max_age) if args.recheck == "stale" else checked(a) != today))]
+    print(f"{len(apps)} apps to fetch translations for ({', '.join(LANGS)})", flush=True)
+    lock, done, votes = threading.Lock(), [0], {}
+
+    def save():
+        index["apps"] = {a: index["apps"][a] for a in sorted(index["apps"]) if a in keep}
+        for (lang, e), counts in votes.items():
+            index["tagNames"].setdefault(lang, {})[e] = max(counts, key=counts.get)
+        index["tagNames"] = {lang: dict(sorted(names.items())) for lang, names in sorted(index["tagNames"].items())}
+        tmp = TRANSLATIONS_JSON.with_suffix(".tmp")
+        tmp.write_text(json.dumps(index, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        tmp.replace(TRANSLATIONS_JSON)
+
+    def run(chunk):
+        _tls.throttle = Throttle(args.delay)
+        for a in chunk:
+            entry, texts = translations_for(a)
+            for key in [(a, "en", "us")] + [(a, hl, gl) for hl, gl in LANGS.values()]:
+                _app_memo.pop(key, None)  # nothing reads them again; keep memory flat
+            with lock:
+                done[0] += 1
+                if entry is None:
+                    print(f"[{done[0]}/{len(apps)}] {a} -> no store page", flush=True)
+                    continue
+                for lang in LANGS:
+                    path = DETAILS_DIR / lang / f"{a}.json"
+                    if lang in texts:
+                        path.parent.mkdir(parents=True, exist_ok=True)
+                        path.write_text(json.dumps(texts[lang], ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+                    elif path.exists():
+                        path.unlink()
+                for lang, names in entry.pop("tagNames").items():
+                    for e, n in names.items():
+                        counts = votes.setdefault((lang, e), {})
+                        counts[n] = counts.get(n, 0) + 1
+                index["apps"][a] = dict(entry, texts=sorted(texts))
+                print(f"[{done[0]}/{len(apps)}] {a} -> texts: {', '.join(sorted(texts)) or 'none'}"
+                      + (f"; titles: {', '.join(sorted(entry['titles']))}" if entry["titles"] else ""), flush=True)
+                if done[0] % 50 == 0:
+                    save()
+
+    jobs = max(1, args.jobs)
+    pool = ThreadPoolExecutor(max_workers=jobs)
+    try:
+        for f in as_completed([pool.submit(run, apps[k::jobs]) for k in range(jobs)]):
+            f.result()
+    except Blocked as e:
+        print(f"STOPPED - looks blocked or rate-limited: {e}", flush=True)
+        pool.shutdown(wait=True)
+        with lock:
+            save()
+        sys.exit(2)
+    pool.shutdown()
+    save()
+    have = {lang: sum(1 for x in index["apps"].values() if lang in x.get("texts", [])) for lang in LANGS}
+    print("translated listings: " + ", ".join(f"{lang} {n}/{len(index['apps'])}" for lang, n in have.items())
+          + f"; tag names: " + ", ".join(f"{lang} {len(v)}" for lang, v in index["tagNames"].items()), flush=True)
+
+
 # ---------------------------------------------------------------- regions
 
-def region_todo(e, cc, recheck, today):
+def stale(checked, today, max_age):
+    """Never checked, or checked more than max_age days before today."""
+    return not checked or (date.fromisoformat(today) - date.fromisoformat(checked)).days > max_age
+
+
+def region_todo(e, cc, recheck, today, max_age=0):
     r = (e.get("regions") or {}).get(cc) or {}
     if recheck == "all":
         return True
@@ -804,6 +928,10 @@ def region_todo(e, cc, recheck, today):
         return r.get("available") is not True
     if recheck == "nulls":  # unknown or never checked
         return r.get("available") is None
+    if recheck == "missing":  # never checked in this country
+        return not r
+    if recheck == "stale":  # never checked, or longer ago than --max-age days
+        return stale(r.get("checked"), today, max_age)
     return r.get("checked") != today
 
 
@@ -812,8 +940,14 @@ def run_regions(args, games, order, cache, today):
     parallel threads (--jobs at a time), each with its own throttle; with more
     jobs than countries, each country's games are split between threads."""
     queues = {cc: [g["title"] for g in games if (cache.get(g["title"]) or {}).get("appId")
-                   and (g["title"] in args.only if args.only else region_todo(cache[g["title"]], cc, args.recheck, today))]
+                   and (g["title"] in args.only if args.only  # apps that left Play Pass aren't listed
+                        else cache[g["title"]].get("playPass") is True
+                        and region_todo(cache[g["title"]], cc, args.recheck, today, args.max_age))]
               for cc in args.region}
+    if args.budget is not None:  # the longest-unchecked first, up to --budget checks
+        when = lambda cc, t: ((cache[t].get("regions") or {}).get(cc) or {}).get("checked") or ""
+        picked = set(sorted(((when(cc, t), cc, t) for cc, q in queues.items() for t in q))[:args.budget])
+        queues = {cc: [t for t in q if (when(cc, t), cc, t) in picked] for cc, q in queues.items()}
     total = sum(map(len, queues.values()))
     print(f"{total} checks: " + ", ".join(f"{cc} {len(q)}" for cc, q in queues.items()), flush=True)
     label = {True: "offered", False: "NOT OFFERED", None: "unknown"}
@@ -874,8 +1008,14 @@ def run_regions(args, games, order, cache, today):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--recheck", choices=["doubtful", "nulls", "all"],
-                    help="redo nulls, unbadged matches and loose title matches (doubtful), only nulls, or everything")
+    ap.add_argument("--recheck", choices=["doubtful", "nulls", "all", "missing", "stale"],
+                    help="redo nulls, unbadged matches and loose title matches (doubtful), only nulls, or everything; "
+                         "with --region: countries never checked (missing), or never checked or checked more than "
+                         "--max-age days ago (stale, also for --details)")
+    ap.add_argument("--max-age", type=int, default=30, metavar="DAYS",
+                    help="with --recheck stale: how old a check may be (default 30 days)")
+    ap.add_argument("--budget", type=int, metavar="N",
+                    help="with --region: at most N checks, the longest-unchecked first")
     ap.add_argument("--only", nargs="+", metavar="TITLE", help="(re)do just these titles")
     ap.add_argument("--refresh", action="store_true",
                     help="re-read every matched app's store page (all screenshots, rating, installs, tags, "
@@ -887,6 +1027,9 @@ def main():
     ap.add_argument("--details", action="store_true",
                     help="fetch detail-view data (description, trailer, age ratings, price, dates) for every "
                          "matched app into details/ and the cache; resumes where a run stopped today")
+    ap.add_argument("--langs", action="store_true",
+                    help="fetch the store's translations (titles, descriptions, tag names) of every listed app "
+                         "into details/<lang>/ and data/translations.json; doesn't touch the cache")
     ap.add_argument("--jobs", type=int, default=1, metavar="N",
                     help="with --region: N threads, one country each (a country gets several when N is "
                          "larger than the number of countries); default 1")
@@ -922,6 +1065,11 @@ def main():
         return {"all": True, "nulls": e.get("appId") is None, "doubtful": doubtful}.get(args.recheck, False)
 
     today = date.today().isoformat()
+    if args.langs:
+        run_langs(args, games, cache, today)
+        if not args.no_build:
+            rebuild()
+        return
     if args.details:
         run_details(args, games, order, cache, today)
         if not args.no_build:
