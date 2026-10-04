@@ -39,10 +39,12 @@ are in Play Pass only outside the US are missing.
 | File | What it is |
 | --- | --- |
 | `fetch_games.py` | Scrapes [YTECHB's Play Pass games list](https://www.ytechb.com/google-play-pass-games-list/) into `data/games.json` |
+| `discover_games.py` | Finds Play Pass games on Google Play itself (the games YTECHB's list lacks) and saves them to `data/discovered.json` |
 | `fill_screenshots.py` | Looks every game up on the Play Store, caching results in `data/shots_cache.json`, then rebuilds `index.html` |
 | `build_index.py` | Builds `index.html` from `index.template.html` and the data files |
 | `index.template.html` | The page (HTML, CSS, JS) with a `__DATA__` placeholder |
-| `data/games.json` | The game list: `title`, `genre`, `source` |
+| `data/games.json` | YTECHB's game list: `title`, `genre`, `source` |
+| `data/discovered.json` | Play Pass games found on Google Play that YTECHB's list lacks: `appId`, `title`, `genre` |
 | `data/shots_cache.json` | Play Store data per game: `appId`, `icon`, `screenshots`, `url`, `playPass`, `rating`, `ratings`, `installs`, `tags`, `regions` (availability per country), plus match details |
 | `data/overrides.json` | Hand-made fixes: title → appId, or title → `null` |
 | `data/sources.json` | Where the list came from and when it was last updated |
@@ -53,6 +55,7 @@ are in Play Pass only outside the US are missing.
 pip install google-play-scraper
 
 python3 fetch_games.py                # 1. refresh the game list from YTECHB
+python3 discover_games.py --jobs 5    #    ... and find the games it lacks on Google Play (~10 min)
 python3 fill_screenshots.py           # 2. look up games not in the cache yet
 python3 fill_screenshots.py --refresh # 3. re-check every game's Play Pass status, rating,
                                       #    downloads, tags and screenshots, then rebuild index.html
@@ -84,6 +87,21 @@ python3 build_index.py --all                      # ... also listing games that 
 ```
 
 Run `python3 fill_screenshots.py --help` for the rest.
+
+## Where the list comes from
+
+Google doesn't publish the Play Pass catalogue on the web: the full list is
+only in the Play Store app's Play Pass tab, which needs a signed-in Android
+device. So the list starts from [YTECHB's](https://www.ytechb.com/google-play-pass-games-list/)
+and is completed from Google Play itself. Every app card on the Play Store
+website (a game's page, its "similar games", a developer's page, search
+results) carries the Play Pass badge when the app is in Play Pass.
+`discover_games.py` starts from every badged game already known, reads those
+pages, and follows every badged app it sees until no new ones turn up (about
+3,000 pages). The badged games YTECHB's list lacks go to
+`data/discovered.json`; badged apps that aren't games (compasses, photo
+editors...) are left out. Either way, a game is only listed when its own
+Play Store page shows the badge.
 
 ## How games are matched
 

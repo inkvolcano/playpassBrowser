@@ -1,0 +1,1802 @@
+[
+ {
+  "appId": "com.Flanne.MinutesTillDawn.roguelike.shooting.gp",
+  "title": "20 Minutes Till Dawn:Premium",
+  "genre": "Strategy",
+  "playGenre": "Strategy",
+  "developer": "Erabit Studios",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "net.wenee.beat2048",
+  "title": "2048 BEAT: Make music",
+  "genre": "Music",
+  "playGenre": "Music",
+  "developer": "WENEE",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.tomorrowcorporation.sevenbillionhumans",
+  "title": "7 Billion Humans",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Tomorrow Corporation",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "kemco.execreate.alvastiapremium",
+  "title": "[Premium] Alvastia Chronicles",
+  "genre": "Role-Playing",
+  "playGenre": "Role Playing",
+  "developer": "KEMCO",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "kemco.execreate.historiapremium",
+  "title": "[Premium] RPG Antiquia Lost",
+  "genre": "Role-Playing",
+  "playGenre": "Role Playing",
+  "developer": "KEMCO",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "kemco.execreate.asdivinedios",
+  "title": "[Premium] RPG Asdivine Dios",
+  "genre": "Role-Playing",
+  "playGenre": "Role Playing",
+  "developer": "KEMCO",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "kemco.execreate.sugorokupremium",
+  "title": "[Premium] RPG Dragon Spira",
+  "genre": "Role-Playing",
+  "playGenre": "Role Playing",
+  "developer": "KEMCO",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "kemco.execreate.villainpremium",
+  "title": "[Premium] RPG Isekai Villain",
+  "genre": "Role-Playing",
+  "playGenre": "Role Playing",
+  "developer": "KEMCO",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "kemco.execreate.ancientpremium",
+  "title": "[Premium] RPG Onigo Hunter",
+  "genre": "Role-Playing",
+  "playGenre": "Role Playing",
+  "developer": "KEMCO",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.agoodsnowman",
+  "title": "A Good Snowman",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Draknek",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.monsterexpedition",
+  "title": "A Monster's Expedition",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Draknek",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "air.com.d20studios.summonersfate",
+  "title": "Abalon: Roguelike Tactics CCG",
+  "genre": "Strategy",
+  "playGenre": "Strategy",
+  "developer": "D20Studios, LLC",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.idz.learnenglish",
+  "title": "ABC Phonics Games Kids Tracing",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "IDZ Digital Private Limited",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.intellijoy.letters.tracing",
+  "title": "Alive Alphabet: Letter Tracing",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Intellijoy Educational Games for Kids",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.crevasse.almostoutofmanagame",
+  "title": "Almost Out of Mana",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Tepes Ovidiu",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.sixpawns.angry.blocks",
+  "title": "Angry Blocks: Cube Blast",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "TapNation",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "air.com.darkdome.another.shadow",
+  "title": "Another Shadow",
+  "genre": "Adventure",
+  "playGenre": "Adventure",
+  "developer": "Dark Dome",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.KrakerStudio.IHeelGood",
+  "title": "ASMR Tippy Toe - ASMR Games",
+  "genre": "Role-Playing",
+  "playGenre": "Role Playing",
+  "developer": "TapNation",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.iz.kids.coloring.book.pages",
+  "title": "Baby Coloring Games for Kids",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "IDZ Digital Private Limited",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.sinyee.babybus.dentistII",
+  "title": "Baby Panda: Dental Care",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "BabyBus",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.PlausibleConcept.BadNorthFull",
+  "title": "Bad North: Jotunn Edition",
+  "genre": "Strategy",
+  "playGenre": "Strategy",
+  "developer": "Raw Fury",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.balls.connect.puzzle",
+  "title": "Ball Connect: Color Dot Puzzle",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Fun Fun Studio",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.baseball.club.pvp.tournament",
+  "title": "Baseball Club: PvP Multiplayer",
+  "genre": "Sports",
+  "playGenre": "Sports",
+  "developer": "BoomBit Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.playdigious.besiege",
+  "title": "Besiege",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "Playdigious",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.miniit.bingo",
+  "title": "Bingo: Classic Board Game",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "Brightika, Inc.",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.SquareTriangle.BowlingNL",
+  "title": "Bowling Clash: 3D Crew Game",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "PLAYWELL LIMITED",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.unicostudio.braintest4",
+  "title": "Brain Test 4: Tricky Friends",
+  "genre": "Word & Trivia",
+  "playGenre": "Trivia",
+  "developer": "Unico Studio",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "pl.aidemmedia.RealisticBridge",
+  "title": "Bridge Construction Simulator",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "BoomBit Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.headupgames.bridgeconstructormedieval",
+  "title": "Bridge Constructor Medieval",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "Headup",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.headupgames.bridgeconstructorplayground",
+  "title": "Bridge Constructor Playground",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "Headup",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.headupgames.bridgeconstructorstunts",
+  "title": "Bridge Constructor Stunts",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "Headup",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "air.com.alikestudio.bringyouhome",
+  "title": "Bring You Home",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Alike Studio",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.kidga.circle.box",
+  "title": "Bubble Tangram - puzzle game",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Kidga",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.buffstudio.bka",
+  "title": "Buff Knight Advanced: Idle RPG",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "Buff Studio Co.,Ltd.",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.bubadu.buildergame",
+  "title": "Builder Game",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "FM by Bubadu",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.runawayplay.bunnygame",
+  "title": "Bunny Haven - Cute Cafe",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "Runaway Play",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.iz.busyboard.baby.sensory.kids.toddler.games",
+  "title": "BusyBoard Games for Kids 2-5",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Timpy Games For Kids, Toddlers & Baby",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "si.pilcom.apps.cakemakerkids",
+  "title": "Cake Maker - Cooking Game",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "FM by Bubadu",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.miniit.spotit",
+  "title": "Can You Spot It: Differences",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Brightika, Inc.",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.babygames.toddler.cargames.carwash.elepant.free.kids.boys.cars.race",
+  "title": "Car games for kids & Toddlers",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "ElePant: Kids Learning Games for Toddlers & Baby",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.playdigious.chantsofsennaar",
+  "title": "Chants of Sennaar",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Playdigious",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.BlazingPlanetStudio.ChoiceofLifeMiddleAges2",
+  "title": "Choice of Life: Middle Ages 2",
+  "genre": "Card",
+  "playGenre": "Card",
+  "developer": "Blazing Planet Studio",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.BlazingPlanetStudio.ChoiceofLifeSamosbor",
+  "title": "Choice of Life: Samosbor",
+  "genre": "Card",
+  "playGenre": "Card",
+  "developer": "Blazing Planet Studio",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.BlazingPlanetStudio.ChoiceofLifeWildIslands1",
+  "title": "Choice of Life: Wild Islands",
+  "genre": "Card",
+  "playGenre": "Card",
+  "developer": "Blazing Planet Studio",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.infokombinat.coloringvectorclassic",
+  "title": "Classic Adult Coloring Book",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Abovegames",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.PanikArcade.CloverPit",
+  "title": "CloverPit",
+  "genre": "Strategy",
+  "playGenre": "Strategy",
+  "developer": "Future Friends Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.astragon.cs4.full",
+  "title": "Construction Simulator 4",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "astragon Entertainment GmbH",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.cottongame.MonsterFamily",
+  "title": "Dad's Monster House",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "CottonGame",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.budgestudios.googleplay.DCSuperHeroGirls",
+  "title": "DC Super Hero Girls Blitz",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "Budge Studios",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.AbyteEntertainment.DealersLifeLegend",
+  "title": "Dealer's Life Legend",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "Abyte Entertainment Ltd",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.SleepingMuseum.DeathAntique",
+  "title": "Death Antique: Horror & Cards",
+  "genre": "Adventure",
+  "playGenre": "Adventure",
+  "developer": "SleepingMuseum",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.kids.dentist.doctor.games.toddlers.pet.hospital.baby",
+  "title": "Dentist Doctor Games for Kids",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "ElePant: Kids Learning Games for Toddlers & Baby",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.ttt.diceattack",
+  "title": "Dice Attack : Roguelike Battle",
+  "genre": "Strategy",
+  "playGenre": "Strategy",
+  "developer": "Fun Games Teknoloji",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.snapbreak.discounty",
+  "title": "Discounty: Supermarket Manager",
+  "genre": "Adventure",
+  "playGenre": "Adventure",
+  "developer": "Snapbreak",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.bubadu.doctorpets",
+  "title": "Doctor Pets",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "FM by Bubadu",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.donut.maker.cooking.games.toddler.cake.pizza.girl",
+  "title": "Donut Maker Kids cooking games",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "ElePant: Kids Learning Games for Toddlers & Baby",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "hb.doom_and_destiny",
+  "title": "Doom & Destiny",
+  "genre": "Role-Playing",
+  "playGenre": "Role Playing",
+  "developer": "Heartbit Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "hb.doom_and_destiny_advanced",
+  "title": "Doom & Destiny Advanced",
+  "genre": "Role-Playing",
+  "playGenre": "Role Playing",
+  "developer": "Heartbit Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "net.kairosoft.android.dorayaki",
+  "title": "Doraemon Dorayaki Shop Story",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "Kairosoft",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.matchingham.drawpuzzle.something",
+  "title": "Draw Puzzle: Tricky Brain Test",
+  "genre": "Word & Trivia",
+  "playGenre": "Word",
+  "developer": "Teos Oyun",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.coloringgames.coloring.book.drawing.doodle.art.glow.toddler.games.learning.kids.babygames.elepant",
+  "title": "Drawing for Kids Coloring Game",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "ElePant: Kids Learning Games for Toddlers & Baby",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.funcell.duneanddusted",
+  "title": "Dune and Dusted",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "Funcell Games Pvt Ltd",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "flexus.dye.hard",
+  "title": "Dye Hard - Color War",
+  "genre": "Action",
+  "playGenre": "Action",
+  "developer": "CASUAL AZUR GAMES",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.gamefirst.savetheearth",
+  "title": "Eco inc. Save the Earth",
+  "genre": "Strategy",
+  "playGenre": "Strategy",
+  "developer": "GameFirst",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.emoji.fun.puzzle",
+  "title": "Emoji Story: Tricky Puzzles",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Teos Oyun",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.learnyland.womenTwo",
+  "title": "Extraordinary Women",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Learny Land",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.hitrolls.factory",
+  "title": "Factory: Idle & Tycoon Game",
+  "genre": "Strategy",
+  "playGenre": "Strategy",
+  "developer": "Brightika, Inc.",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "super4.coloring.games.draw.princess.art.girls.paint.fantasy",
+  "title": "Fantasy Princess Color",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Super Four Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.DifLabs.Differences",
+  "title": "Find Differences Search & Spot",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Yolo Game Studios",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.noodlecake.flickshotrogues",
+  "title": "Flick Shot Rogues",
+  "genre": "Strategy",
+  "playGenre": "Strategy",
+  "developer": "Noodlecake",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.bubadu.racingkids",
+  "title": "Funny Racing Cars",
+  "genre": "Racing",
+  "playGenre": "Racing",
+  "developer": "FM by Bubadu",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.strayfawnstudio.gambonanza",
+  "title": "Gambonanza",
+  "genre": "Board",
+  "playGenre": "Board",
+  "developer": "Stray Fawn Studio",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.jdsoftwarellc.ginrummy",
+  "title": "Gin Rummy JD",
+  "genre": "Card",
+  "playGenre": "Card",
+  "developer": "JD Software LLC",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "net.wenee.gb",
+  "title": "Glow Breaker",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "WENEE",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.coffeestain.goatsimulator3",
+  "title": "Goat Simulator 3",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "Coffee Stain Publishing",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.funselektor.GoldenLap",
+  "title": "Golden Lap",
+  "genre": "Racing",
+  "playGenre": "Racing",
+  "developer": "Noodlecake",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.crevasse.grabbycrab",
+  "title": "Grabby Crab",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Tepes Ovidiu",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.tn.grillventure",
+  "title": "Grill Empire : Sizzle & Roam",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "TapNation",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.herocraft.game.guards2",
+  "title": "Guards II: TBS",
+  "genre": "Role-Playing",
+  "playGenre": "Role Playing",
+  "developer": "HeroCraft Ltd.",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.StudioFolly.GUBBINS",
+  "title": "GUBBINS",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Folly Studio Pty Ltd",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "air.com.darkdome.haunted.laia",
+  "title": "Haunted Laia",
+  "genre": "Adventure",
+  "playGenre": "Adventure",
+  "developer": "Dark Dome",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.mobilityware.Hearts",
+  "title": "Hearts: Card Game",
+  "genre": "Card",
+  "playGenre": "Card",
+  "developer": "MobilityWare",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.hiroba.helix",
+  "title": "Helix Stack Jump: Smash Ball",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "Kooapps Games | Fun Arcade and Casual Action Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.psv.hello_kitty.doctor_hospital",
+  "title": "Hello Kitty: Kids Hospital",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Hippo Kids Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.hg.heromaking",
+  "title": "Hero Making Tycoon: Idle Games",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "TapNation",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "air.com.darkdome.hidden.memories",
+  "title": "Hidden Memories",
+  "genre": "Adventure",
+  "playGenre": "Adventure",
+  "developer": "Dark Dome",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.aagbrothers.find.hidden.objects.games.item.puzzle",
+  "title": "Hidden Objects - Items Find",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "A A G BROTHERS SOFTWARE DESIGN",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "build.home.idle.construction",
+  "title": "Home Builder 3D !",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "BoomHits",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.bscotch.hmd",
+  "title": "How Many Dudes?",
+  "genre": "Strategy",
+  "playGenre": "Strategy",
+  "developer": "Butterscotch Shenanigans",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "jp.co.gagex.betelgeuse",
+  "title": "Hungry Hearts Ramen",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "GAGEX Co.,Ltd.",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.flamingo.nfllife3d",
+  "title": "Hyper Touchdown 3D",
+  "genre": "Sports",
+  "playGenre": "Sports",
+  "developer": "BoomHits",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.WonderHive.HyperHome",
+  "title": "Idle City Builder Sand Empire",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "Funcell Games Pvt Ltd",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.yokagame.ProjectS",
+  "title": "Indies' Lies",
+  "genre": "Strategy",
+  "playGenre": "Strategy",
+  "developer": "Erabit Studios",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "se.filimundus.inventioneers",
+  "title": "Inventioneers",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Filimundus AB",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.goolny.Split2048",
+  "title": "Jelly Run 2048",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "CASUAL AZUR GAMES",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.mografi.jennyleclue",
+  "title": "Jenny LeClue - Detectivu",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Mografi",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.v2r.jewelchaser",
+  "title": "Jewel chaser",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "V2R",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.v2r.JewelColoseum",
+  "title": "Jewel Colosseum",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "V2R",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.v2r.JewelLostLegacy",
+  "title": "Jewel Lost Legacy",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "V2R",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.v2r.jewelposeidon",
+  "title": "Jewel Poseidon : Jewel Match 3",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "V2R",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.v2r.jewelrelics",
+  "title": "Jewel relics",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "V2R",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.v2r.jewelvampire",
+  "title": "Jewel Vampire Castle",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "V2R",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.v2r.waterworld.google",
+  "title": "Jewel Water World",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "V2R",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.gokids.farm",
+  "title": "Kids Animal Farm Toddler Games",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "GoKids! publishing",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.kids.Alphabet.number.piano.Game.Free",
+  "title": "Kids Educational Games Toddler",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "GunjanApps Studios",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.super4.preschool.early.learn.games.kids.puzzle.jigsaw",
+  "title": "Kids Jigsaw Puzzles",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Super Four Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.iz.preschool.kids.toddler.abc.learning.kindergarten.baby.montessori.games",
+  "title": "Kids Montessori Shapes & Color",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Timpy Games For Kids, Toddlers & Baby",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.kids.preschool.learning.games",
+  "title": "Kids Preschool Learning Games",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "GunjanApps Studios",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.gamesforkids.puzzlekids.girlsgames",
+  "title": "Kids Puzzles Game Girls & Boys",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Ijjus World",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.ironhidegames.android.kingdomrush6.genesis",
+  "title": "Kingdom Rush 6: Genesis TD",
+  "genre": "Strategy",
+  "playGenre": "Strategy",
+  "developer": "Ironhide Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.meeplecorp.kingdomino",
+  "title": "Kingdomino Deluxe",
+  "genre": "Board",
+  "playGenre": "Board",
+  "developer": "Meeple Corp",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.squareenixmontreal.lcgo",
+  "title": "Lara Croft GO",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Deca Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.JESoftware.LastHopeTD",
+  "title": "Last Hope TD - Tower Defense",
+  "genre": "Strategy",
+  "playGenre": "Strategy",
+  "developer": "JE Software AB",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.iz.kids.brain.games.test.genius.iq.young.brains.mind.teaser.game.puzzle.tricky.quiz",
+  "title": "Learning Games for Kids",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "IDZ Digital Private Limited",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.littleinferno.google",
+  "title": "Little Inferno",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "Tomorrow Corporation",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.sinyee.babybus.astronaut",
+  "title": "Little Panda's Space Journey",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "BabyBus",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.IcedropGames.LOK",
+  "title": "LOK Digital",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Draknek",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.medu.luckyforge.idle.tdgame",
+  "title": "Lucky Forge: Idle TD Game",
+  "genre": "Strategy",
+  "playGenre": "Strategy",
+  "developer": "TapNation",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.rainbowgames.solitaire2018",
+  "title": "Magic Story of Solitaire Cards",
+  "genre": "Card",
+  "playGenre": "Card",
+  "developer": "Rainbow Games Kz",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.epicpandagames.mahjong",
+  "title": "Mahjong",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "EPIC PANDA GAMES",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.color.mandala",
+  "title": "Mandala Coloring Pages",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Coloring Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.storytoys.marvelhq.googleplay",
+  "title": "Marvel HQ: Kids Super Hero Fun",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "StoryToys",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.rpgsnack.bakemono",
+  "title": "Meg's Monster",
+  "genre": "Role-Playing",
+  "playGenre": "Role Playing",
+  "developer": "Odencat",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.grapetree.meowtower",
+  "title": "Meow Tower: Nonogram (Offline)",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Studio Boxcat",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.applife.mergefarm",
+  "title": "Merge Dale·Family Farm Village",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "LevelApp Limited",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "merge.magic.merge",
+  "title": "Mergic: Merge & Magic",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "CASUAL AZUR GAMES",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.kooapps.mylittletown",
+  "title": "MicroTown.io - My Little Town",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "Kooapps Games | Fun Arcade and Casual Action Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.ustwogames.mv3",
+  "title": "Monument Valley 3",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "ustwo games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.bubadu.mybabycare",
+  "title": "My Baby Care",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "FM by Bubadu",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.iz.my.doctor.hospital.kids.world.life.town.pretend.play.games",
+  "title": "My Hospital Town Doctor Games",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Tizi Town Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.beansprites.pretendworldFREE",
+  "title": "My Pretend World - Life Story",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Beansprites LLC",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.iz.pretend.my.play.lifestyle.city.town.life.games",
+  "title": "My Tizi City - Town Life Games",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Tizi Town Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "mytown.daycare",
+  "title": "My Town : Daycare",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "My Town Games Ltd",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.gamesforgirls.nailart.nailsalongame",
+  "title": "Nail Salon Game Kids Nail art",
+  "genre": "Role-Playing",
+  "playGenre": "Role Playing",
+  "developer": "Ijjus World",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.tommysoereide.NoMoreButtons",
+  "title": "No More Buttons",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Tommy Søreide Kjær",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.epicpandagames.number.merge",
+  "title": "Number Merge",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "EPIC PANDA GAMES",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.beansprites.oliviashometowndesignFREE",
+  "title": "Olivia's World - Home Town",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Beansprites LLC",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.hemispheregames.osmos",
+  "title": "Osmos",
+  "genre": "Arcade",
+  "playGenre": "Arcade",
+  "developer": "Hemisphere Games Inc",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.studiopango.pangocolor",
+  "title": "Pango Colors - Mix & Play",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Studio Pango - Kids Fun preschool learning games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.studiopango.kaboom",
+  "title": "Pango KABOOM! Stack Cubes",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Studio Pango - Kids Fun preschool learning games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.elevenpuzzles.parallelexperiment",
+  "title": "Parallel Experiment",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Eleven Puzzles",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.funcell.pawndon",
+  "title": "Pawn to Don Mafia Crime Story",
+  "genre": "Role-Playing",
+  "playGenre": "Role Playing",
+  "developer": "Funcell Games Pvt Ltd",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "se.itatake.pebbleuniverse1",
+  "title": "Pebble Universe",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Itatake",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "se.filimundus.pi2",
+  "title": "Pettson's Inventions 2",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Filimundus AB",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.BatoviGamesStudio.PixelCupSoccer19",
+  "title": "Pixel Cup Soccer - Ultimate",
+  "genre": "Sports",
+  "playGenre": "Sports",
+  "developer": "BATOVI Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "si.pilcom.apps.pizzamakerkids",
+  "title": "Pizza Maker - Cooking Game",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "FM by Bubadu",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.playdigious.pol",
+  "title": "Planet of Lana",
+  "genre": "Adventure",
+  "playGenre": "Adventure",
+  "developer": "Playdigious",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.ASGames.develop.PocketSurvivorExpansion",
+  "title": "Pocket Survivor: Expansion",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "Go Dreams",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.cloudberrypine.PolyPine",
+  "title": "PolyPine",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "IndieArk",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.idz.kindergarten.math.kids.games",
+  "title": "Preschool Math Games for Kids",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "IDZ Digital Private Limited",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.pid.preserve",
+  "title": "Preserve",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Dear Villagers",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.iz.first.grade.educational.learning.kids.games",
+  "title": "Primary School Learning Games",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "IDZ Digital Private Limited",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.noodlecake.pumped3",
+  "title": "Pumped BMX 3",
+  "genre": "Sports",
+  "playGenre": "Sports",
+  "developer": "Noodlecake",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "thevoxelagents.puzzleretreat",
+  "title": "Puzzle Retreat: Zen Logic Game",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "The Voxel Agents",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.kidga.quadris",
+  "title": "Quadris® - timeless puzzle",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Kidga",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.psv.rainbow_high.girls.beauty_salon",
+  "title": "Rainbow High: Beauty Salon",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Hippo Kids Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.bhima.piano",
+  "title": "Real Piano Keyboard",
+  "genre": "Music",
+  "playGenre": "Music",
+  "developer": "Bhima Apps",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.Studio17.Repit",
+  "title": "Repit",
+  "genre": "Adventure",
+  "playGenre": "Adventure",
+  "developer": "17Studio LLC",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.matryoshka.cityrescueteam",
+  "title": "Rescue Dash - time management",
+  "genre": "Arcade",
+  "playGenre": "Arcade",
+  "developer": "Matryoshka",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "kemco.execreate.alphadiagenesis",
+  "title": "RPG Alphadia Genesis",
+  "genre": "Role-Playing",
+  "playGenre": "Role Playing",
+  "developer": "KEMCO",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "kemco.execreate.ambitionrecord",
+  "title": "RPG Ambition Record",
+  "genre": "Role-Playing",
+  "playGenre": "Role Playing",
+  "developer": "KEMCO",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "kemco.hitpoint.folklore",
+  "title": "RPG Bonds of the Skies",
+  "genre": "Role-Playing",
+  "playGenre": "Role Playing",
+  "developer": "KEMCO",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "kemco.hitpoint.chronus",
+  "title": "RPG Chronus Arc",
+  "genre": "Role-Playing",
+  "playGenre": "Role Playing",
+  "developer": "KEMCO",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "kemco.execreate.dimensioncross",
+  "title": "RPG Dimension Cross",
+  "genre": "Role-Playing",
+  "playGenre": "Role Playing",
+  "developer": "KEMCO",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "kemco.execreate.revenantsaga",
+  "title": "RPG Revenant Saga",
+  "genre": "Role-Playing",
+  "playGenre": "Role Playing",
+  "developer": "KEMCO",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.mobilityware.Rummy",
+  "title": "Rummy - Classic Card Game",
+  "genre": "Card",
+  "playGenre": "Card",
+  "developer": "MobilityWare",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.ilugon.shapes.colors.toddler.games",
+  "title": "Shapes and Colors for Toddlers",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "ilugon",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.RoshanGames.ShuffleBoard",
+  "title": "Shuffleboard Challenge",
+  "genre": "Sports",
+  "playGenre": "Sports",
+  "developer": "Fun Games Teknoloji",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "net.kairosoft.android.skate",
+  "title": "Skating Rink Story",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "Kairosoft",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "sk.inlogic.footballministars",
+  "title": "Soccer Mini Stars - Football",
+  "genre": "Sports",
+  "playGenre": "Sports",
+  "developer": "INLOGIC SPORTS - football tennis golf soccer",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.onecwireless.solitaire1.full",
+  "title": "Solitaire (Full)",
+  "genre": "Card",
+  "playGenre": "Card",
+  "developer": "Mahjong Brain Puzzles",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.karmangames.solitaire",
+  "title": "Solitaire - Classic Card Game",
+  "genre": "Card",
+  "playGenre": "Card",
+  "developer": "KARMAN Games (CY) LTD",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.kooapps.solitaireandroid",
+  "title": "Solitaire Classic Era Games",
+  "genre": "Card",
+  "playGenre": "Card",
+  "developer": "Kooapps Games | Fun Arcade and Casual Action Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.forsbit.klondike",
+  "title": "Solitaire Klondike classic.",
+  "genre": "Card",
+  "playGenre": "Card",
+  "developer": "Maple Media",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.aurecas.spacetowerdefense",
+  "title": "Space Defense: Idle Tower TD",
+  "genre": "Strategy",
+  "playGenre": "Strategy",
+  "developer": "Aurecas Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.karmangames.spades",
+  "title": "Spades",
+  "genre": "Card",
+  "playGenre": "Card",
+  "developer": "KARMAN Games (CY) LTD",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.quarzo.solitarios",
+  "title": "Spanish Solitaire: Card Games",
+  "genre": "Card",
+  "playGenre": "Card",
+  "developer": "Quarzo Apps",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.forsbit.spider",
+  "title": "Spider Solitaire Classic",
+  "genre": "Card",
+  "playGenre": "Card",
+  "developer": "Maple Media",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "express.spooky",
+  "title": "Spooky Express",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Draknek",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "spot.hidden.difference",
+  "title": "Spot the Difference: Find out!",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "CASUAL AZUR GAMES",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.TwinCrab.Motorpolia",
+  "title": "State Connect: Traffic Control",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "CASUAL AZUR GAMES",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "io.state.fight",
+  "title": "State.io — Conquer the World",
+  "genre": "Strategy",
+  "playGenre": "Strategy",
+  "developer": "CASUAL AZUR GAMES",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.maxgames.stickwarlegacy",
+  "title": "Stick War: Legacy",
+  "genre": "Strategy",
+  "playGenre": "Strategy",
+  "developer": "Max Games Studios",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.boomhits.truckjump",
+  "title": "Stunt Truck Jumping",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "BoomBit Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.aladdinx.suikagame",
+  "title": "Suika Game",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "Aladdin X Inc.",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.bubadu.supermarket",
+  "title": "Supermarket Game",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "FM by Bubadu",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.bubadu.tailorkids",
+  "title": "Tailor Kids",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "FM by Bubadu",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.tap.gallery",
+  "title": "Tap Gallery: Tap Game",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "CASUAL AZUR GAMES",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.fgs.testdriver",
+  "title": "Test Driver: Offroad Games",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "Brightika, Inc.",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.yym.theletter",
+  "title": "The Letter - Horror Novel Game",
+  "genre": "Role-Playing",
+  "playGenre": "Role Playing",
+  "developer": "Yangyang Mobile",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.FireproofStudios.TheRoom",
+  "title": "The Room",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Fireproof Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.FireproofStudios.TheRoom3",
+  "title": "The Room Three",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Fireproof Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.FireproofStudios.TheRoom2",
+  "title": "The Room Two",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Fireproof Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.iz.educational.kids.computer.baby.games",
+  "title": "Timpy Baby Kids Computer Games",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Timpy Games For Kids, Toddlers & Baby",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.iz.balloon.pop.baby.world.kids.toddler.games",
+  "title": "Timpy Balloon Popping Games",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Timpy Games For Kids, Toddlers & Baby",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.kiarygames.tinyroom",
+  "title": "Tiny Room Stories Town Mystery",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Kiary Games ltd",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.iz.cat.kitty.kitten.wonder.world.my.pretend.play.town.games.life",
+  "title": "Tizi Cute Kitty: Pet Cat Games",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Tizi Town Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.iz.tizi.royal.princess.dollhouse.life.games.home.design.world.my.wonder.town",
+  "title": "Tizi Princess Home Design Game",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "IDZ Digital Private Limited",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.my.tizi.town.camping.family.world.city.games",
+  "title": "Tizi Town - My Camping Family",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "Tizi Town Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.iz.animals.pet.world.zoo.town.wildlife.virtual.cat.dog.games",
+  "title": "Tizi Town - My Pet World",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Tizi Town Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.my.tizi.town.rainbow.house.friends.home.design.family.games",
+  "title": "Tizi Town - Rainbow House",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Tizi Town Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.iz.my.daycare.baby.sitter.kids.family.town.twins.games",
+  "title": "Tizi Town Daycare Baby Games",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Tizi Town Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.iz.world.pretend.play.life.my.princess.games.town.city.house.wonder.doll",
+  "title": "Tizi Town: My Home World Games",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "Tizi Town Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.my.tizi.town.preschool.pretend.play.kids.games",
+  "title": "Tizi Town: My Preschool Games",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Tizi Town Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.midwin.kids.drawing.book.toddlers.coloring.games.preschool.painting",
+  "title": "Toddler Coloring Book",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Midwin Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.ilugon.farm.learning.toddler.games",
+  "title": "Toddler games for 2 year olds",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "ilugon",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.free.preschool.learning.toddlers.baby.kids.games",
+  "title": "Toddler Games for 2+ year Baby",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "ElePant: Kids Learning Games for Toddlers & Baby",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.iz.baby.games.kids.toddler.learning.girls.boys.puzzle.preschool.game.children",
+  "title": "Toddler Games for 2+ Year Olds",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "IDZ Digital Private Limited",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.baby.games.free.toddler.kids.learning.puzzles.girls.boys.preschool.game.children",
+  "title": "Toddler Games for 2-5 Year old",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "GunjanApps Studios",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.OskarStalberg.Townscaper",
+  "title": "Townscaper",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "Raw Fury",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.train.delivery.simulator",
+  "title": "Train Delivery Simulator",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "BoomBit Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.TravelMergeFamily",
+  "title": "Travel Merge Family!",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "ArruGa Corp.",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.ltgames.android.oil",
+  "title": "Turmoil",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "LTGAMES GLOBAL",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.color.unblock.jam",
+  "title": "Unblock Jam – Slide the Blocks",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "TapNation",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.the10tons.undeadhorde2",
+  "title": "Undead Horde 2: Necropolis",
+  "genre": "Role-Playing",
+  "playGenre": "Role Playing",
+  "developer": "10tons Ltd",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.morionstudio.witchy",
+  "title": "Witchy Sisters – Relax Puzzle",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Morion Studio",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.learnyland.women",
+  "title": "Women Who Changed the World",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Learny Land",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.goodjobgames.thebigday",
+  "title": "Wonder Blast",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Fugo Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.puzzle.connect.words",
+  "title": "Word Bridges Logic Connections",
+  "genre": "Word & Trivia",
+  "playGenre": "Word",
+  "developer": "HYPERCELL",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.rottzgames.wordsearch",
+  "title": "Word Search",
+  "genre": "Word & Trivia",
+  "playGenre": "Word",
+  "developer": "Rottz Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.fugo.wowsearch",
+  "title": "Words of Wonders: Search",
+  "genre": "Word & Trivia",
+  "playGenre": "Word",
+  "developer": "Fugo Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.joybits.worlds",
+  "title": "WORLDS Evolution: Farm Game",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "JoyBits Ltd.",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.worms2armageddon.app",
+  "title": "Worms 2: Armageddon",
+  "genre": "Strategy",
+  "playGenre": "Strategy",
+  "developer": "Team17 Digital Limited",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.patronesyescondites.yourhouse",
+  "title": "Your House: Dark Mystery",
+  "genre": "Adventure",
+  "playGenre": "Adventure",
+  "developer": "Patrones & Escondites",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.kooapps.zendokuandroid",
+  "title": "Zendoku - Puzzle Block Game",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Kooapps Games | Fun Arcade and Casual Action Games",
+  "found": "2026-10-04"
+ }
+]

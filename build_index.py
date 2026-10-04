@@ -9,12 +9,16 @@ By default the page lists only games whose Play Store page showed the Play Pass
 badge at the last check; --all also keeps games that have left Play Pass and
 games without a Play Store match (shown with a generated cover).
 
+Games: YTECHB's list (data/games.json) plus the Play Pass games that
+discover_games.py found on Google Play itself (data/discovered.json).
+
 Regions: the catalogue comes from the US store. Countries checked with
 `fill_screenshots.py --region CC` get an entry in the page's region menu, which
 hides games that country's store doesn't offer.
 """
 import argparse
 import json
+import re
 from collections import Counter
 from pathlib import Path
 
@@ -37,6 +41,39 @@ def short(url):
         return None
     url = url.split("=")[0]
     return url[len(IMG_HOST):] if url.startswith(IMG_HOST) else url
+
+
+GOOGLE_SOURCE = "Google Play"
+
+
+def title_key(title):
+    return re.sub(r"[\W_]+", "", title.casefold())
+
+
+def load_games(cache=None):
+    """YTECHB's list plus the games discover_games.py found on Google Play.
+
+    A discovered game whose store title is a YTECHB title that has no other
+    match lends that entry its appId; the rest join the list under their store
+    title, with the genre mapped from the store's."""
+    cache = load("shots_cache.json", {}) if cache is None else cache
+    games = [dict(g) for g in load("games.json", [])]
+    by_key, titles = {}, {g["title"] for g in games}
+    listed = {(cache.get(g["title"]) or {}).get("appId") for g in games}
+    for g in games:
+        by_key.setdefault(title_key(g["title"]), []).append(g)
+    for d in load("discovered.json", []):
+        same = [g for g in by_key.get(title_key(d["title"]), [])
+                if not g.get("appId") and (cache.get(g["title"]) or {}).get("appId") in (None, d["appId"])]
+        if same:
+            same[0]["appId"] = d["appId"]
+        elif d["appId"] not in listed:
+            # another app already uses the name ("Spades", "Word Search"): add the developer
+            title = d["title"] if d["title"] not in titles else f"{d['title']} ({d.get('developer') or d['appId']})"
+            if title not in titles:
+                games.append({"title": title, "genre": d["genre"], "source": GOOGLE_SOURCE, "appId": d["appId"]})
+                titles.add(title)
+    return games
 
 
 def offered(e, cc):
@@ -68,8 +105,8 @@ def main(argv=None):
                     help="also list games that have left Play Pass or have no Play Store match")
     args = ap.parse_args(argv)
 
-    games = load("games.json", [])
     cache = load("shots_cache.json", {})
+    games = load_games(cache)
     source = load("sources.json", {})
 
     # YTECHB sometimes lists one game under two names ("Flat machine" and
@@ -142,6 +179,7 @@ def main(argv=None):
                  "storeChecked": max(checked) if checked else None,
                  "passChecked": max(pass_checked) if pass_checked else None,
                  "confirmedOnly": not args.all,
+                 "fromGoogle": sum(1 for g, _ in shown if g.get("source") == GOOGLE_SOURCE),
                  "leftOutOfPass": len(out_of_pass), "leftOutUnmatched": len(unmatched)},
     }
     # "<" is escaped so nothing inside the JSON can close the <script> element.

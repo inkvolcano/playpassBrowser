@@ -539,7 +539,8 @@ def lookup(game):
     return null_entry(reason, best, tried)
 
 
-def from_override(game, app_id):
+def from_override(game, app_id, confidence="manual"):
+    """Entry for a known appId: an override, or a game found on Google Play (confidence "google")."""
     if app_id is None:
         return null_entry("set to null in data/overrides.json", None, [])
     lang, country = ("ja", "jp") if CJK_RE.search(game["title"]) else ("en", "us")
@@ -548,7 +549,7 @@ def from_override(game, app_id):
         return null_entry(f"override {app_id} not found on the Play Store", None, [])
     c = dict(d, appId=app_id, rating=d.get("score"))
     c["score"], c["sim"], c["flags"] = assess(game["title"], c, game.get("genre"))
-    return entry_from(c, game["title"], "manual", None, c["flags"])
+    return entry_from(c, game["title"], confidence, None, c["flags"])
 
 
 def refresh_entry(game, e):
@@ -799,9 +800,10 @@ def main():
     args = ap.parse_args()
     THROTTLE.delay = args.delay
 
-    games = load_json(GAMES_JSON, [])
-    order = [g["title"] for g in games]
+    from build_index import load_games  # YTECHB's list + games found on Google Play
     cache = load_json(CACHE_JSON, {})
+    games = load_games(cache)
+    order = [g["title"] for g in games]
     overrides = load_json(OVERRIDES_JSON, {})
 
     def todo(g):
@@ -814,6 +816,8 @@ def main():
             if overrides[t] is None:
                 return e.get("reason") != "set to null in data/overrides.json"
             return e.get("confidence") != "manual" or e.get("appId") != overrides[t]
+        if g.get("appId"):  # found on Google Play by discover_games.py
+            return e.get("appId") != g["appId"] or args.recheck == "all"
         doubtful = (e.get("appId") is None or e.get("confidence") == "strong"
                     or (e.get("confidence") == "verified" and (e.get("similarity") or 0) < 0.9))
         return {"all": True, "nulls": e.get("appId") is None, "doubtful": doubtful}.get(args.recheck, False)
@@ -852,7 +856,8 @@ def main():
                 info = (f"{status}, shots={len(e['screenshots'])}, rating={e.get('rating')} ({e.get('ratings')}), "
                         f"installs={e.get('installs')}, tags={len(e.get('tags') or [])}")
             else:
-                e = from_override(g, overrides[t]) if t in overrides else lookup(g)
+                e = from_override(g, overrides[t]) if t in overrides else \
+                    from_override(g, g["appId"], "google") if g.get("appId") else lookup(g)
                 if e["appId"]:
                     info = f"{e['matched']!r} [{e['appId']}] {e['confidence']} sim={e['similarity']}" \
                            f"{' PP' if e['playPass'] else ''} shots={len(e['screenshots'])}"

@@ -693,8 +693,12 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     .map(({ r, i }) => `<option value="${i}">${esc(regionName(r))}</option>`).join("");
   $("region").value = String(region);
   $("region-box").hidden = REGIONS.length < 2;
-  $("sources").innerHTML = `List: <a href="${esc(m.listUrl)}" target="_blank" rel="noopener">YTECHB</a>, updated ${esc(dateText(m.listUpdated))} · Store data: ${esc(dateText(m.passChecked || m.storeChecked))}`;
-  $("foot-list").innerHTML = `Game list from <a href="${esc(m.listUrl)}" target="_blank" rel="noopener">YTECHB's Play Pass list</a>, updated ${esc(dateText(m.listUpdated))}. Genres follow its sections, with Trivia and Word merged.`;
+  const fromGoogle = m.fromGoogle || 0;
+  $("sources").innerHTML = `List: <a href="${esc(m.listUrl)}" target="_blank" rel="noopener">YTECHB</a>, updated ${esc(dateText(m.listUpdated))}` +
+    (fromGoogle ? ` + ${fmt.format(fromGoogle)} found on Google Play` : "") + ` · Store data: ${esc(dateText(m.passChecked || m.storeChecked))}`;
+  $("foot-list").innerHTML = `Game list: <a href="${esc(m.listUrl)}" target="_blank" rel="noopener">YTECHB's Play Pass list</a>, updated ${esc(dateText(m.listUpdated))}` +
+    (fromGoogle ? `, plus ${fmt.format(fromGoogle)} games it doesn't have, found by following Google Play's own Play Pass badges from game to game` : "") +
+    `. Genres follow YTECHB's sections, with Trivia and Word merged` + (fromGoogle ? `; games found on Google Play use the store's genre.` : ".");
   $("foot-rating").textContent = `Most popular sorts by Play Store downloads. Top rated uses a weighted average: games with few ` +
     `ratings are pulled toward the catalogue average of ${meanRating.toFixed(1)}, so a 5.0 from a handful of ratings doesn't ` +
     `outrank a 4.8 from thousands.`;
