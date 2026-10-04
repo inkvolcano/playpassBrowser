@@ -15,7 +15,9 @@ Steps, in order:
   build      build_index.py
 A step that fails leaves the data as it was and the next steps carry on; once Google Play
 looks blocked, the remaining network steps are skipped. The exit code is 1 if any step
-failed, so a scheduled run that went wrong shows up as failed.
+failed, so a scheduled run that went wrong shows up as failed. With --commit, a page that
+lists far fewer games than the last commit's (a Play Store change that hides the Play Pass
+badge would make every game look gone) isn't committed: the data goes back to how it was.
 
     python3 update.py                    # all steps
     python3 update.py --commit           # and git-commit the result
@@ -24,6 +26,7 @@ failed, so a scheduled run that went wrong shows up as failed.
 """
 import argparse
 import json
+import re
 import subprocess
 import sys
 import time
@@ -34,6 +37,8 @@ ROOT = Path(__file__).resolve().parent
 CACHE_JSON = ROOT / "data" / "shots_cache.json"
 STEPS = ["list", "discover", "lookup", "refresh", "regions", "details", "langs", "build"]
 BLOCKED = "looks blocked"  # what the scripts print when Google Play stops answering
+MIN_KEPT = 0.8  # a new page must list at least this share of the games the last commit's did
+DATA_PATHS = ["data", "details", "index.html"]
 
 
 def countries():
@@ -54,6 +59,19 @@ def run(name, cmd):
     result = "blocked" if blocked else "ok" if code == 0 else "failed"
     print(f"=== {name}: {result} ({(time.monotonic() - start) / 60:.1f} min)", flush=True)
     return result
+
+
+def listed(html):
+    """How many games and apps a built index.html lists."""
+    m = re.search(r'<script id="data" type="application/json">(.*?)</script>', html or "", re.S)
+    try:
+        return len(json.loads(m.group(1))["games"]) if m else 0
+    except ValueError:
+        return 0
+
+
+def git(*args, **kw):
+    return subprocess.run(["git", "-C", str(ROOT), *args], **kw)
 
 
 def summary():
@@ -109,12 +127,20 @@ def main():
 
     print("\n" + ", ".join(f"{k} {v}" for k, v in results.items()), flush=True)
     if args.commit:
-        paths = ["data", "details", "index.html"]
-        subprocess.run(["git", "-C", str(ROOT), "add", "-A", *paths], check=True)
-        if subprocess.run(["git", "-C", str(ROOT), "diff", "--cached", "--quiet"]).returncode:
+        before = listed(git("show", "HEAD:index.html", capture_output=True, text=True).stdout)
+        after = listed((ROOT / "index.html").read_text(encoding="utf-8"))
+        if before and after < MIN_KEPT * before:
+            print(f"NOT COMMITTED: the page would list {after:,} games and apps, down from {before:,}. That looks "
+                  "like a Play Store change the scripts don't understand, not games leaving; the data is back "
+                  "to the last commit.", flush=True)
+            git("checkout", "--", *DATA_PATHS, check=True)
+            git("clean", "-fdq", "--", *DATA_PATHS, check=True)
+            sys.exit(1)
+        git("add", "-A", *DATA_PATHS, check=True)
+        if git("diff", "--cached", "--quiet").returncode:
             failed = [k for k, v in results.items() if v != "ok"]
             msg = f"Update {date.today().isoformat()}: {summary()}" + (f"\n\nNot finished: {', '.join(failed)}" if failed else "")
-            subprocess.run(["git", "-C", str(ROOT), "commit", "-q", "-m", msg], check=True)
+            git("commit", "-q", "-m", msg, check=True)
             print(f"committed: {msg.splitlines()[0]}", flush=True)
         else:
             print("nothing changed", flush=True)
