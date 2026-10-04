@@ -2,8 +2,9 @@
 // A browser check of the built page, run by the monthly workflow before it pushes (and by hand:
 // `node check_page.js` after `npm install playwright`). It serves this folder on a local port, opens
 // index.html in headless Chromium in every interface language and checks that the cards, search,
-// country menu, detail view and Discover work without errors. Requests to other sites are blocked,
-// so the screenshots don't load and the check doesn't depend on them. Exit code 1 if anything fails.
+// country menu, detail view and Discover work without errors, and (in English) that the page can be
+// installed as an app and reloads offline. Requests to other sites are blocked, so the screenshots
+// don't load and the check doesn't depend on them. Exit code 1 if anything fails.
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
@@ -36,7 +37,8 @@ function serve() {
   };
 
   for (const lang of LANGS) {
-    const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+    // the service worker only in English: it keeps what it fetched, which the other runs shouldn't share
+    const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 }, serviceWorkers: lang === "en" ? "allow" : "block" });
     await ctx.route((url) => url.hostname !== "127.0.0.1", (route) => route.abort());
     await ctx.addInitScript((l) => { try { localStorage.setItem("ppb:lang", l); } catch (e) { /* no storage */ } }, lang);
     const page = await ctx.newPage();
@@ -93,6 +95,28 @@ function serve() {
           return ids.filter((id, i) => !res[i]);
         });
         check(lang, "detail files", !missing.length, missing.join(", "));
+
+        // installable app: a manifest without errors, nothing but the test browser's private mode in
+        // the way of installing, and a service worker that brings the page back without a connection
+        const cdp = await ctx.newCDPSession(page);
+        const manifest = await cdp.send("Page.getAppManifest");
+        check(lang, "manifest", manifest.url && !manifest.errors.length && JSON.parse(manifest.data || "{}").name,
+          JSON.stringify(manifest.errors));
+        const { installabilityErrors } = await cdp.send("Page.getInstallabilityErrors");
+        const blocking = installabilityErrors.map((e) => e.errorId).filter((id) => id !== "in-incognito");
+        check(lang, "installable", !blocking.length, blocking.join(", "));
+        const sw = await page.evaluate(() => Promise.race([navigator.serviceWorker.ready.then((r) => !!r.active),
+          new Promise((resolve) => setTimeout(() => resolve(false), 10000))]));
+        if (check(lang, "service worker", sw)) {
+          await page.reload();
+          await page.waitForFunction(() => navigator.serviceWorker.controller, null, { timeout: 10000 }).catch(() => {});
+          await ctx.setOffline(true);
+          await page.reload();
+          const offline = await page.waitForFunction(() => document.getElementById("status").textContent, null, { timeout: 10000 })
+            .then(() => true, () => false);
+          check(lang, "works offline", offline);
+          await ctx.setOffline(false);
+        }
       }
     } catch (e) {
       check(lang, "page check", false, e.message.split("\n")[0]);

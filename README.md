@@ -63,6 +63,15 @@ of the way while you scroll down through the games and comes back as soon as you
 scroll up; the Discover button does the same. In Discover, ✕ and ♥ sit beside
 the card instead of under it, and the detail view uses the full height.
 
+**Install as an app.** In Chrome, Edge and on Android an install button appears
+next to the language menu (or use the browser's "Install app" menu item); on an
+iPhone or iPad, use Safari's Share button and then Add to Home Screen. The app
+opens in its own window with a Play Pass ticket icon; pressing and holding the
+icon offers Discover and Favourites. A service worker (`sw.js`) keeps the page
+and what you've looked at (details, screenshots, trailer stills), so it opens
+quickly and works offline. When you're online it always loads the latest page,
+so the monthly update shows straight away.
+
 **Languages.** The page speaks English, Dutch, German, French, Spanish, Italian,
 Portuguese and Japanese. It picks your browser's language on a first visit; the
 globe menu next to the theme button switches (the choice is remembered). Numbers,
@@ -97,6 +106,8 @@ games that are in Play Pass only outside the US are missing.
 | `build_index.py` | Builds `index.html` from `index.template.html` and the data files |
 | `check_page.js` | Opens the built page in a headless browser in every language and checks it works (`npm install playwright` first) |
 | `index.template.html` | The page (HTML, CSS, JS) with a `__DATA__` placeholder |
+| `manifest.webmanifest`, `icons/` | What makes the page installable as an app: name, colours, icons, shortcuts |
+| `sw.js` | The service worker: the page, details files, fonts and images you've seen, for offline use |
 | `data/games.json` | YTECHB's game list: `title`, `genre`, `source` |
 | `data/discovered.json` | Play Pass games found on Google Play that YTECHB's list lacks: `appId`, `title`, `genre` |
 | `data/discovery_report.json` | How the two lists cover each other (written by each crawl) |

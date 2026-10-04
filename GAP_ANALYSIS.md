@@ -103,8 +103,8 @@ menu has since grown to all 101 countries on Google's Play Pass list.
 ## Feature ideas
 
 Value is how much it helps someone browsing the page; effort is roughly a few hours
-(low) up to a day (medium). Built since (4 October 2026): 1, 2 (monthly), 3, 4, 5, 6, 7, 8, 10, 11
-and 12 (eight languages), plus trailers in the page, shareable favourites lists, a Discover
+(low) up to a day (medium). Built since (4 October 2026): 1, 2 (monthly), 3, 4, 5, 6, 7, 8, 10, 11,
+12 (eight languages) and 14 (installable, offline), plus trailers in the page, shareable favourites lists, a Discover
 that learns from your swipes, and a browser check before each monthly update is published.
 Google Play no longer publishes download sizes, so the detail view has no size.
 
@@ -123,7 +123,7 @@ Google Play no longer publishes download sizes, so the detail view has no size.
 | 11 | Play Pass apps section (built) | Medium | Low | The 109 non-game apps (kids' learning, photo, music, tools) |
 | 12 | Dutch interface (built, with German, French, Spanish, Italian, Portuguese and Japanese) | Medium | Medium | Language switch, picked from the browser |
 | 13 | Value counter | Low | Low | "These games cost €X outside Play Pass" |
-| 14 | Install as an app | Low | Low | Home-screen icon, works offline |
+| 14 | Install as an app (built, works offline) | Low | Low | Home-screen icon, works offline |
 
 ## Tooling gaps
 
