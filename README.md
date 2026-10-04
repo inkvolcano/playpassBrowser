@@ -45,6 +45,12 @@ the last swipe. Discover follows the current country and filters (open it from
 and Reset starts over, optionally clearing the favourites too. Favourites and
 swipes are kept in your browser (localStorage), so they're per device.
 
+**Phone held sideways.** On a short screen the filter bar shrinks to one row of
+search and menus plus one sideways-scrolling row of genre chips. It slides out
+of the way while you scroll down through the games and comes back as soon as you
+scroll up; the Discover button does the same. In Discover, ✕ and ♥ sit beside
+the card instead of under it, and the detail view uses the full height.
+
 The page lists only games whose Play Store page showed the Play Pass badge when
 it was last checked (US store; the date is in the page footer). YTECHB's list
 still carries games that have since left the service, plus a few that couldn't
