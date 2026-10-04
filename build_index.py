@@ -22,6 +22,11 @@ hides games that country's store doesn't offer. A country joins the menu once
 Languages: `fill_screenshots.py --langs` saves the store's own translations
 (data/translations.json, details/<lang>/); the page uses them for titles, tag
 names and descriptions when someone picks that language.
+
+Features (the last column's bits): also on Google Play Games for PC and Teacher
+Approved come from the store page (fill_screenshots.py --badges or --details);
+controller support from the English store description (see controller()) and
+data/controller.json.
 """
 import argparse
 import json
@@ -53,6 +58,40 @@ def short(url):
 
 GOOGLE_SOURCE = "Google Play"
 APPS = "Apps"  # Play Pass apps that aren't games (discover_games.py)
+
+
+# Controller support. KEMCO's descriptions carry a "[Game Controller] - Supported" line (or Optimized,
+# Partially supported, Not supported...); other developers say it in their own words: "Full gamepad support",
+# "Compatible with controllers", "MFi controller support", "touch, tilt or gamepad"...
+KEMCO_PAD = re.compile(r"\[Game Controller\]\s*-?\s*([A-Za-z][A-Za-z ]*)")
+PAD = r"(?:game ?pads?|game ?controllers?|controllers?|joypads?|mfi)"
+PAD_SAYS = re.compile(
+    rf"\b{PAD}\b[^.\n!]{{0,60}}\b(?:support|supported|compatib\w*|friendly|ready|optimi[sz]ed|enabled|required)\b"
+    rf"|\b(?:support|supports|supported|supporting|compatib\w*|works? with|play(?:able)? with|use|using|connect)\b[^.\n!]{{0,50}}\b{PAD}"
+    rf"|\b(?:bluetooth|external|physical|hardware|usb|xbox|playstation|ps[345]|dualshock|dualsense|moga|8bitdo|razer|"
+    rf"backbone|nvidia|shield|hid)\b[^.\n!]{{0,25}}\b{PAD}"
+    rf"|\b(?:touch|tilt)[^.\n!]{{0,60}}\b(?:game ?pads?|game ?controllers?)\b"
+    rf"|\b(?:game ?pads?|controllers?) (?:input|play|mode)\b", re.I)
+PAD_NOT = re.compile(r"phones? as (?:a )?controller|virtual (?:controller|gamepad)|on-?screen (?:controller|gamepad)"
+                     r"|air traffic controller", re.I)  # in the matched words
+PAD_LATER = re.compile(r"\s*(?:is |are |will be )?(?:in the works|coming soon|planned|not (?:yet )?(?:available|supported))",
+                       re.I)  # right after them
+
+
+def controller(app_id, known):
+    """4: supports game controllers, 8: partly, 0: not that we know of."""
+    if not app_id or app_id in known.get("no", {}):
+        return 0
+    p = ROOT / "details" / f"{app_id}.json"
+    text = json.loads(p.read_text(encoding="utf-8")).get("description") or "" if p.exists() else ""
+    m = KEMCO_PAD.search(text)
+    if m:
+        level = m.group(1).strip().lower()
+        return 8 if level.startswith("partial") else 4 if level in ("supported", "optimized", "optimised") else 0
+    if app_id in known.get("yes", {}):
+        return 8 if known["yes"][app_id].get("partly") else 4
+    return 4 if any(not PAD_NOT.search(m.group()) and not PAD_LATER.match(text, m.end())
+                    for m in PAD_SAYS.finditer(text)) else 0
 
 
 def title_key(title):
@@ -173,6 +212,7 @@ def main(argv=None):
     tag_index = {t: i for i, t in enumerate(tags)}
 
     text_langs = sorted({lang for x in tr_apps.values() for lang in x.get("texts", [])} | set(tag_names))
+    known_pads = load("controller.json", {})
     rows, checked, pass_checked = [], [], []
     for g, e in shown:
         app_id = e.get("appId")
@@ -194,6 +234,8 @@ def main(argv=None):
                      e.get("playGenre") if app_id and g["genre"] == APPS else None,
                      (tr_apps.get(app_id) or {}).get("titles") or None if app_id else None,
                      sum(1 << i for i, lang in enumerate(text_langs) if lang in (tr_apps.get(app_id) or {}).get("texts", []))
+                     if app_id else 0,
+                     (1 if e.get("onPC") else 0) | (2 if e.get("teacherApproved") else 0) | controller(app_id, known_pads)
                      if app_id else 0])
         if e.get("checked"):
             checked.append(e["checked"])
@@ -211,6 +253,8 @@ def main(argv=None):
         # have translated descriptions (bit i of a game's last column: textLangs[i])
         "tagNames": {lang: [names.get(t) for t in tags] for lang, names in tag_names.items()},
         "textLangs": text_langs,
+        # where a game's controller support was found, when it isn't its store description
+        "padSources": {a: x["source"] for a, x in known_pads.get("yes", {}).items() if x.get("source")},
         "meta": {"listUrl": source.get("url"), "listUpdated": source.get("updated"),
                  "storeChecked": max(checked) if checked else None,
                  "passChecked": max(pass_checked) if pass_checked else None,
@@ -248,6 +292,8 @@ def main(argv=None):
         print("translations: " + ", ".join(f"{lang} {sum(1 for r in rows if r[19] >> i & 1)} descriptions, "
                                             f"{sum(1 for r in rows if r[18] and lang in r[18])} titles"
                                             for i, lang in enumerate(text_langs)))
+    print(f"features: {sum(1 for r in rows if r[20] & 1)} also on PC, {sum(1 for r in rows if r[20] & 2)} Teacher Approved, "
+          f"{sum(1 for r in rows if r[20] & 4)} with controller support, {sum(1 for r in rows if r[20] & 8)} partly")
     if nowhere:
         print(f"left out, offered in none of the regions: {len(nowhere)}: " + "; ".join(nowhere))
     if merged:

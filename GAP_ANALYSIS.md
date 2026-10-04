@@ -104,7 +104,7 @@ menu has since grown to all 101 countries on Google's Play Pass list.
 
 Value is how much it helps someone browsing the page; effort is roughly a few hours
 (low) up to a day (medium). Built since (4 October 2026): 1, 2 (monthly), 3, 4, 5, 6, 7, 8, 10, 11,
-12 (eight languages), 14 (installable, offline) and 15 to 17, plus trailers in the page, shareable favourites lists, a Discover
+12 (eight languages), 14 (installable, offline) and 15 to 21, plus trailers in the page, shareable favourites lists, a Discover
 that learns from your swipes, and a browser check before each monthly update is published.
 Google Play no longer publishes download sizes, so the detail view has no size.
 
@@ -127,6 +127,10 @@ Google Play no longer publishes download sizes, so the detail view has no size.
 | 15 | More like this (built) | Medium | Low | In the detail view: games with the most similar tags, and the developer's other games |
 | 16 | New since your last visit (built) | Medium | Low | A chip with what the monthly updates added since you last came, until you mark it as seen |
 | 17 | Forgiving search (built) | Medium | Low | Spaces and punctuation don't matter; a word that matches nothing is matched as a typo |
+| 18 | Children's games: hide them, or show only them (built) | Medium | Low | 16% of the catalogue is made for young children; "For kids" adds Google's Teacher Approved games |
+| 19 | Also on PC (built) | Medium | Low | Google Play Games for PC; read from the store page's "Available on" line |
+| 20 | Hidden gems (built) | Medium | Low | Well rated, little known; at most three per developer |
+| 21 | Controller support (built, partial) | High | Medium | From store descriptions and published lists; Google's own Gamepad label isn't on the web |
 
 ## Tooling gaps
 

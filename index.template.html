@@ -313,6 +313,9 @@ h1 {
 .genre.favs::before { content: "★"; width: auto; height: auto; border-radius: 0; background: none; color: var(--brass); font-size: 13px; line-height: 1; }
 .genre.favs[aria-pressed="true"]::before { color: var(--brass); }
 .genre.since::before { background: oklch(72% 0.17 150); }
+.genre.feat::before { display: none; }
+.genre.feat svg { width: 15px; height: 15px; flex: none; color: var(--muted); }
+.genre.feat[aria-pressed="true"] svg { color: inherit; }
 .genre small { font: 400 10.5px/1 var(--f-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
 .genre[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--surface); }
 .genre[aria-pressed="true"] small { color: inherit; opacity: 0.75; }
@@ -439,6 +442,14 @@ button.shots { cursor: pointer; }
   font: 750 10px/1.1 var(--f-body);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+.pill-ta {
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: oklch(90% 0.06 250);
+  color: #0b2546;
+  font: 650 10px/1.1 var(--f-body);
+  letter-spacing: 0.02em;
 }
 .pass-tag {
   display: inline-flex; align-items: center; gap: 4px;
@@ -906,6 +917,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     <p id="foot-region"></p>
     <p id="foot-new"></p>
     <p id="foot-rating"></p>
+    <p id="foot-features"></p>
     <p id="foot-lang" hidden></p>
     <p id="foot-app" hidden></p>
   </footer>
@@ -957,14 +969,17 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   // language: the developer's translation, or Google's automatic one (D.tagNames, details/<lang>/).
   const enScope = (o, n) => (o.fav ? (o.apps ? (n === 1 ? "favourite app" : "favourite apps") : (o.genre ? `${o.genre} ` : "") + (n === 1 ? "favourite" : "favourites"))
     : o.apps ? (n === 1 ? "app" : "apps") : (o.genre ? `${o.genre} ` : "") + (n === 1 ? "game" : "games"))
-    + (o.since ? " added since your last visit" : "") + (o.shared ? " from a shared list" : "") + (o.tag ? ` tagged “${o.tag}”` : "") + (o.age ? ` rated PEGI ${o.age} or lower` : "") + (o.dev ? ` by ${o.dev}` : "") + (o.pass ? " in Play Pass" : "");
+    + (o.since ? " added since your last visit" : "") + (o.kids === "only" ? " for children" : "") + (o.pad ? " with controller support" : "")
+    + (o.pc ? " that also play on PC" : "") + (o.shared ? " from a shared list" : "") + (o.tag ? ` tagged “${o.tag}”` : "") + (o.age ? ` rated PEGI ${o.age} or lower` : "") + (o.dev ? ` by ${o.dev}` : "") + (o.pass ? " in Play Pass" : "")
+    + (o.kids === "hide" ? " without children's games" : "");
   // The other languages name the country on its own ("Nederland: 3 niet aangeboden"), which sidesteps
   // articles and prepositions that differ per country.
   function genericStatus(o) {
-    const head = o.filtered ? (o.since ? L.sinceHead : "") + (o.genre && !o.apps ? L.genreHead(o.genre) : "") + L.countG(o.n, o.nf, o.kind)
-      : L.allOf(o.nf, o.apps);
-    const quals = [o.shared && L.fromShared, o.tag && L.withTag(o.tag), o.age && L.upToAge(o.age), o.dev && L.by(o.dev),
-      o.pass && L.inPassQ, o.query && L.matching(o.query)].filter(Boolean);
+    const head = o.filtered ? (o.gems ? L.gemsHead : "") + (o.since ? L.sinceHead : "") + (o.genre && !o.apps ? L.genreHead(o.genre) : "")
+      + L.countG(o.n, o.nf, o.kind) : L.allOf(o.nf, o.apps);
+    const quals = [o.kids === "only" && L.forKidsQ, o.pad && L.padQ, o.pc && L.pcQ, o.shared && L.fromShared, o.tag && L.withTag(o.tag),
+      o.age && L.upToAge(o.age), o.dev && L.by(o.dev), o.pass && L.inPassQ, o.kids === "hide" && L.noKidsQ,
+      o.query && L.matching(o.query)].filter(Boolean);
     return L.joinQ(head, quals) + (o.fuzzy ? L.fuzzyNote : "") + (L.sortNote[o.sort] || "") + (o.elsewhere ? " · " + L.notOffered(o.elsewhereF, o.elsewhere, o.country) : "");
   }
   function genericEmpty(o) {
@@ -1019,7 +1034,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       stubPass: (d) => `in Play Pass<br>checked ${d}`, stubAll: (s, p) => `${s} with screenshots<br>${p} in Play Pass`,
       heading: { az: "Games A to Z", popular: "Most popular games", rating: "Top rated games", newest: "Newest games" },
       groupCount: (n, nf, apps) => `${nf} ${apps ? (n === 1 ? "app" : "apps") : (n === 1 ? "game" : "games")}`,
-      status: (o) => (o.filtered ? `Showing ${o.nf} ${enScope(o, o.n)}` + (o.query ? ` matching “${o.query}”` : "") : `Showing all ${o.nf} ${o.apps ? "apps" : "games"}`) +
+      status: (o) => (o.gems ? L.gemsHead : "") + (o.filtered ? `Showing ${o.nf} ${enScope(o, o.n)}` + (o.query ? ` matching “${o.query}”` : "") : `Showing all ${o.nf} ${o.apps ? "apps" : "games"}`) +
         (o.fuzzy ? L.fuzzyNote : "") +
         ({ popular: ", most popular first", rating: ", highest rated first", newest: ", newest first" }[o.sort] || "") +
         (o.elsewhere ? ` · ${o.elsewhereF} not offered in ${o.theCountry}` : ""),
@@ -1059,6 +1074,14 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       moreLikeThis: "More like this", moreFrom: (d) => `More from ${d}`,
       newForYou: "New for you", newForYouTitle: "Games added to Play Pass since your last visit", sinceHead: "New since your last visit · ", markSeen: "Mark as seen",
       fuzzyNote: " · including close spellings",
+      gems: "Hidden gems", gemsTitle: "Rated 4.5 or higher by at least 300 players, but downloaded fewer than 100,000 times", pad: "Controller",
+      padTitle: "Games that work with a game controller", pc: "On PC", pcTitle: "Also on Google Play Games for PC", forKids: "For kids",
+      forKidsTitle: "Games for children, and games Google Play marks Teacher Approved", noKids: "No kids' games",
+      noKidsTitle: "Hide games made for young children (remembered in this browser)", gemsHead: "Hidden gems · ", padQ: "with controller support",
+      pcQ: "also on PC", forKidsQ: "for children", noKidsQ: "without children's games", padFact: "Controller", padYes: "Supported",
+      padPartly: "Partly supported", padSaysDesc: "according to the store description", padSaysSite: (s) => `according to ${s}`, pcFact: "Also on",
+      pcValue: "PC (Google Play Games)", teacherApproved: "Teacher Approved",
+      footFeatures: "Controller support comes from the games' store descriptions, plus a few games that published lists of controller games name; “On PC” and Teacher Approved come from their Play Store pages. Hidden gems are rated 4.5 or higher by at least 300 players but downloaded fewer than 100,000 times. “No kids' games” hides games made for young children: the Educational section (bar brain training and colouring for grown-ups) and games whose name says they're for kids, babies or toddlers.",
       themeSystem: "match system", themeLight: "light", themeDark: "dark", themeLabel: (l) => `Theme: ${l}. Change theme`, themeTitle: (l) => `Theme: ${l}`
     },
     nl: {
@@ -1144,6 +1167,14 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       moreLikeThis: "Meer zoals dit", moreFrom: (d) => `Meer van ${d}`,
       newForYou: "Nieuw voor jou", newForYouTitle: "Games die sinds je laatste bezoek aan Play Pass zijn toegevoegd", sinceHead: "Nieuw sinds je laatste bezoek · ", markSeen: "Markeer als gezien",
       fuzzyNote: " · inclusief vergelijkbare spellingen",
+      gems: "Verborgen parels", gemsTitle: "Beoordeeld met 4,5 of hoger door minstens 300 spelers, maar minder dan 100.000 keer gedownload",
+      pad: "Controller", padTitle: "Games die met een gamecontroller werken", pc: "Op pc", pcTitle: "Ook in Google Play Games voor pc",
+      forKids: "Voor kinderen", forKidsTitle: "Games voor kinderen, en games die Google Play ‘Goedgekeurd door leraren’ noemt",
+      noKids: "Geen kindergames", noKidsTitle: "Verberg games voor jonge kinderen (deze browser onthoudt het)", gemsHead: "Verborgen parels · ",
+      padQ: "met controllerondersteuning", pcQ: "ook op pc", forKidsQ: "voor kinderen", noKidsQ: "zonder kindergames", padFact: "Controller",
+      padYes: "Ondersteund", padPartly: "Deels ondersteund", padSaysDesc: "volgens de beschrijving in de store", padSaysSite: (s) => `volgens ${s}`,
+      pcFact: "Ook op", pcValue: "pc (Google Play Games)", teacherApproved: "Goedgekeurd door leraren",
+      footFeatures: "Controllerondersteuning komt uit de beschrijvingen van de games in de store, plus een paar games die gepubliceerde lijsten van controllergames noemen; ‘Op pc’ en ‘Goedgekeurd door leraren’ komen van hun Play Store-pagina. Verborgen parels hebben een 4,5 of hoger van minstens 300 spelers, maar minder dan 100.000 downloads. ‘Geen kindergames’ verbergt games voor jonge kinderen: de rubriek Educatief (behalve hersentraining en kleurplaten voor volwassenen) en games waarvan de naam zegt dat ze voor kinderen, baby's of peuters zijn.",
       themeSystem: "systeem volgen", themeLight: "licht", themeDark: "donker", themeLabel: (l) => `Thema: ${l}. Thema wijzigen`, themeTitle: (l) => `Thema: ${l}`
     },
     de: {
@@ -1229,6 +1260,15 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       moreLikeThis: "Ähnliche Titel", moreFrom: (d) => `Mehr von ${d}`,
       newForYou: "Neu für dich", newForYouTitle: "Spiele, die seit deinem letzten Besuch zu Play Pass hinzugekommen sind", sinceHead: "Neu seit deinem letzten Besuch · ", markSeen: "Als gesehen markieren",
       fuzzyNote: " · inklusive ähnlicher Schreibweisen",
+      gems: "Geheimtipps", gemsTitle: "Von mindestens 300 Spielern mit 4,5 oder besser bewertet, aber weniger als 100.000-mal heruntergeladen",
+      pad: "Controller", padTitle: "Spiele, die mit einem Gamecontroller funktionieren", pc: "Auf dem PC",
+      pcTitle: "Auch bei Google Play Games für PC", forKids: "Für Kinder",
+      forKidsTitle: "Spiele für Kinder und Spiele, die Google Play als „Von Lehrkräften empfohlen“ kennzeichnet", noKids: "Ohne Kinderspiele",
+      noKidsTitle: "Spiele für kleine Kinder ausblenden (dieser Browser merkt es sich)", gemsHead: "Geheimtipps · ",
+      padQ: "mit Controller-Unterstützung", pcQ: "auch auf dem PC", forKidsQ: "für Kinder", noKidsQ: "ohne Kinderspiele", padFact: "Controller",
+      padYes: "Unterstützt", padPartly: "Teilweise unterstützt", padSaysDesc: "laut der Beschreibung im Store", padSaysSite: (s) => `laut ${s}`,
+      pcFact: "Auch auf", pcValue: "PC (Google Play Games)", teacherApproved: "Von Lehrkräften empfohlen",
+      footFeatures: "Die Controller-Unterstützung stammt aus den Store-Beschreibungen der Spiele, dazu einige Spiele, die veröffentlichte Listen von Controller-Spielen nennen; „Auf dem PC“ und „Von Lehrkräften empfohlen“ stammen von ihren Play-Store-Seiten. Geheimtipps sind von mindestens 300 Spielern mit 4,5 oder besser bewertet, aber weniger als 100.000-mal heruntergeladen. „Ohne Kinderspiele“ blendet Spiele für kleine Kinder aus: die Rubrik Lernspiele (außer Gehirntraining und Malbüchern für Erwachsene) und Spiele, deren Name sagt, dass sie für Kinder, Babys oder Kleinkinder sind.",
       themeSystem: "wie System", themeLight: "hell", themeDark: "dunkel", themeLabel: (l) => `Design: ${l}. Design ändern`, themeTitle: (l) => `Design: ${l}`
     },
     fr: {
@@ -1314,6 +1354,14 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       moreLikeThis: "Dans le même genre", moreFrom: (d) => `Autres titres de ${d}`,
       newForYou: "Nouveau pour vous", newForYouTitle: "Jeux ajoutés à Play Pass depuis votre dernière visite", sinceHead: "Nouveautés depuis votre dernière visite · ", markSeen: "Marquer comme vus",
       fuzzyNote: " · orthographes proches incluses",
+      gems: "Pépites", gemsTitle: "Notés 4,5 ou plus par au moins 300 joueurs, mais téléchargés moins de 100 000 fois", pad: "Manette",
+      padTitle: "Jeux compatibles avec une manette", pc: "Sur PC", pcTitle: "Aussi sur Google Play Jeux pour PC", forKids: "Pour enfants",
+      forKidsTitle: "Jeux pour enfants, et jeux que Google Play marque « Approuvé par les enseignants »", noKids: "Sans jeux pour enfants",
+      noKidsTitle: "Masquer les jeux pour jeunes enfants (mémorisé dans ce navigateur)", gemsHead: "Pépites · ", padQ: "à la manette",
+      pcQ: "aussi sur PC", forKidsQ: "pour enfants", noKidsQ: "sans jeux pour enfants", padFact: "Manette", padYes: "Compatible",
+      padPartly: "Partiellement compatible", padSaysDesc: "d’après la description du store", padSaysSite: (s) => `d’après ${s}`, pcFact: "Aussi sur",
+      pcValue: "PC (Google Play Jeux)", teacherApproved: "Approuvé par les enseignants",
+      footFeatures: "La compatibilité manette vient des descriptions des jeux sur le store, plus quelques jeux cités dans des listes publiées de jeux compatibles manette ; « Sur PC » et « Approuvé par les enseignants » viennent de leur page Play Store. Les pépites sont notées 4,5 ou plus par au moins 300 joueurs, mais téléchargées moins de 100 000 fois. « Sans jeux pour enfants » masque les jeux pour jeunes enfants : la rubrique Éducatif (sauf l’entraînement cérébral et le coloriage pour adultes) et les jeux dont le nom indique qu’ils sont pour les enfants, les bébés ou les tout-petits.",
       themeSystem: "comme le système", themeLight: "clair", themeDark: "sombre", themeLabel: (l) => `Thème : ${l}. Changer de thème`, themeTitle: (l) => `Thème : ${l}`
     },
     es: {
@@ -1399,6 +1447,14 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       moreLikeThis: "Títulos similares", moreFrom: (d) => `Más de ${d}`,
       newForYou: "Nuevo para ti", newForYouTitle: "Juegos añadidos a Play Pass desde tu última visita", sinceHead: "Novedades desde tu última visita · ", markSeen: "Marcar como vistos",
       fuzzyNote: " · incluye grafías parecidas",
+      gems: "Joyas ocultas", gemsTitle: "Valorados con 4,5 o más por al menos 300 jugadores, pero descargados menos de 100.000 veces", pad: "Mando",
+      padTitle: "Juegos compatibles con mando", pc: "En PC", pcTitle: "También en Google Play Juegos para PC", forKids: "Para niños",
+      forKidsTitle: "Juegos para niños y juegos que Google Play marca como «Aprobado por profesores»", noKids: "Sin juegos infantiles",
+      noKidsTitle: "Ocultar los juegos para niños pequeños (este navegador lo recuerda)", gemsHead: "Joyas ocultas · ", padQ: "compatibles con mando",
+      pcQ: "también en PC", forKidsQ: "para niños", noKidsQ: "sin juegos infantiles", padFact: "Mando", padYes: "Compatible",
+      padPartly: "Compatible en parte", padSaysDesc: "según la descripción de la tienda", padSaysSite: (s) => `según ${s}`, pcFact: "También en",
+      pcValue: "PC (Google Play Juegos)", teacherApproved: "Aprobado por profesores",
+      footFeatures: "La compatibilidad con mando sale de las descripciones de los juegos en la tienda, más algunos juegos que citan listas publicadas de juegos con mando; «En PC» y «Aprobado por profesores» salen de su página de Play Store. Las joyas ocultas tienen 4,5 o más de al menos 300 jugadores, pero menos de 100.000 descargas. «Sin juegos infantiles» oculta los juegos para niños pequeños: la sección Educativos (salvo el entrenamiento mental y los libros para colorear para adultos) y los juegos cuyo nombre dice que son para niños, bebés o preescolares.",
       themeSystem: "según el sistema", themeLight: "claro", themeDark: "oscuro", themeLabel: (l) => `Tema: ${l}. Cambiar tema`, themeTitle: (l) => `Tema: ${l}`
     },
     it: {
@@ -1484,6 +1540,14 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       moreLikeThis: "Titoli simili", moreFrom: (d) => `Altro da ${d}`,
       newForYou: "Novità per te", newForYouTitle: "Giochi aggiunti a Play Pass dalla tua ultima visita", sinceHead: "Novità dalla tua ultima visita · ", markSeen: "Segna come visti",
       fuzzyNote: " · incluse grafie simili",
+      gems: "Gemme nascoste", gemsTitle: "Valutati 4,5 o più da almeno 300 giocatori, ma scaricati meno di 100.000 volte", pad: "Controller",
+      padTitle: "Giochi compatibili con un controller", pc: "Su PC", pcTitle: "Anche su Google Play Giochi per PC", forKids: "Per bambini",
+      forKidsTitle: "Giochi per bambini e giochi che Google Play segna come «Approvata dagli insegnanti»", noKids: "Senza giochi per bambini",
+      noKidsTitle: "Nascondi i giochi per bambini piccoli (questo browser lo ricorda)", gemsHead: "Gemme nascoste · ",
+      padQ: "compatibili con controller", pcQ: "anche su PC", forKidsQ: "per bambini", noKidsQ: "senza giochi per bambini", padFact: "Controller",
+      padYes: "Supportato", padPartly: "Supportato in parte", padSaysDesc: "secondo la descrizione nello store", padSaysSite: (s) => `secondo ${s}`,
+      pcFact: "Anche su", pcValue: "PC (Google Play Giochi)", teacherApproved: "Approvata dagli insegnanti",
+      footFeatures: "Il supporto controller viene dalle descrizioni dei giochi nello store, più alcuni giochi citati in elenchi pubblicati di giochi per controller; «Su PC» e «Approvata dagli insegnanti» vengono dalla loro pagina del Play Store. Le gemme nascoste hanno 4,5 o più da almeno 300 giocatori, ma meno di 100.000 download. «Senza giochi per bambini» nasconde i giochi per bambini piccoli: la sezione Educativi (tranne allenamento mentale e libri da colorare per adulti) e i giochi il cui nome dice che sono per bambini, neonati o bimbi piccoli.",
       themeSystem: "come il sistema", themeLight: "chiaro", themeDark: "scuro", themeLabel: (l) => `Tema: ${l}. Cambia tema`, themeTitle: (l) => `Tema: ${l}`
     },
     pt: {
@@ -1569,6 +1633,14 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       moreLikeThis: "Títulos parecidos", moreFrom: (d) => `Mais de ${d}`,
       newForYou: "Novo para você", newForYouTitle: "Jogos adicionados ao Play Pass desde sua última visita", sinceHead: "Novidades desde sua última visita · ", markSeen: "Marcar como vistos",
       fuzzyNote: " · inclui grafias parecidas",
+      gems: "Joias escondidas", gemsTitle: "Avaliados com 4,5 ou mais por pelo menos 300 jogadores, mas baixados menos de 100.000 vezes",
+      pad: "Controle", padTitle: "Jogos compatíveis com controle", pc: "No PC", pcTitle: "Também no Google Play Games para PC",
+      forKids: "Para crianças", forKidsTitle: "Jogos para crianças e jogos que o Google Play marca como “Aprovado por professores”",
+      noKids: "Sem jogos infantis", noKidsTitle: "Ocultar jogos para crianças pequenas (este navegador lembra)", gemsHead: "Joias escondidas · ",
+      padQ: "compatíveis com controle", pcQ: "também no PC", forKidsQ: "para crianças", noKidsQ: "sem jogos infantis", padFact: "Controle",
+      padYes: "Compatível", padPartly: "Compatível em parte", padSaysDesc: "segundo a descrição da loja", padSaysSite: (s) => `segundo ${s}`,
+      pcFact: "Também no", pcValue: "PC (Google Play Games)", teacherApproved: "Aprovado por professores",
+      footFeatures: "A compatibilidade com controle vem das descrições dos jogos na loja, mais alguns jogos citados em listas publicadas de jogos com controle; “No PC” e “Aprovado por professores” vêm da página deles na Play Store. As joias escondidas têm 4,5 ou mais de pelo menos 300 jogadores, mas menos de 100.000 downloads. “Sem jogos infantis” oculta jogos para crianças pequenas: a seção Educativos (exceto treino mental e livros de colorir para adultos) e os jogos cujo nome diz que são para crianças, bebês ou crianças pequenas.",
       themeSystem: "igual ao sistema", themeLight: "claro", themeDark: "escuro", themeLabel: (l) => `Tema: ${l}. Mudar tema`, themeTitle: (l) => `Tema: ${l}`
     },
     ja: {
@@ -1655,6 +1727,12 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       moreLikeThis: "似ているタイトル", moreFrom: (d) => `${d} のほかのタイトル`,
       newForYou: "あなたへの新着", newForYouTitle: "前回の訪問以降に Play Pass に追加されたゲーム", sinceHead: "前回の訪問以降の新着 · ", markSeen: "既読にする",
       fuzzyNote: " · 似た表記も含む",
+      gems: "隠れた名作", gemsTitle: "300 人以上が評価して 4.5 以上なのに、ダウンロード数が 10 万未満", pad: "コントローラー", padTitle: "ゲームコントローラーで遊べるゲーム", pc: "PC版あり",
+      pcTitle: "PC 版 Google Play Games でも遊べる", forKids: "子ども向け", forKidsTitle: "子ども向けのゲームと、Google Play で「教師承認済み」のゲーム", noKids: "子ども向けを隠す",
+      noKidsTitle: "小さな子ども向けのゲームを表示しない（このブラウザに保存）", gemsHead: "隠れた名作 · ", padQ: "コントローラー対応", pcQ: "PC でも遊べる", forKidsQ: "子ども向け", noKidsQ: "子ども向けを除く",
+      padFact: "コントローラー", padYes: "対応", padPartly: "一部対応", padSaysDesc: "ストアの説明による", padSaysSite: (s) => `${s} による`, pcFact: "ほかのデバイス",
+      pcValue: "PC（Google Play Games）", teacherApproved: "教師承認済み",
+      footFeatures: "コントローラー対応は、ストアの説明と、公開されているコントローラー対応ゲームのリストによります。「PC版あり」と「教師承認済み」は Play ストアのページによります。隠れた名作は、300 人以上が評価して 4.5 以上なのに、ダウンロード数が 10 万未満のゲームです。「子ども向けを隠す」は、小さな子ども向けのゲーム（大人向けの脳トレや塗り絵を除く教育ジャンルと、名前に子ども・赤ちゃん・幼児向けとあるゲーム）を表示しません。",
       themeSystem: "システムに合わせる", themeLight: "ライト", themeDark: "ダーク", themeLabel: (l) => `テーマ：${l}。テーマを変更`, themeTitle: (l) => `テーマ：${l}`
     }
   };
@@ -1720,9 +1798,13 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   //         the regions whose store doesn't offer it] or null, {region index: store id} where a country sells its
   //         own edition, PEGI age, first day seen with the Play Pass badge, release date, store category (apps
   //         only), {language: the store's title in it} where it differs, bits of D.textLangs with a translation]
+  // Made for young children: the Educational section (bar brain training and colouring for grown-ups) and
+  // games whose name says they're for kids, babies or toddlers.
+  const KID_NAME = /\b(kids?|bab(y|ies)|toddlers?|preschool)\b/i, GROWN_UP = /\b(brain|iq|maths?|memory|mandala|reasoning)\b/i;
   const games = D.games.map((g, i) => {
     const [storeTitle, gi, appId, icon, shotInfo, dev, listedAs, pass, rating, ratings, installs, tagIds, notIn, alt,
-           pegi, firstSeen, released, category, titles, texts] = g;
+           pegi, firstSeen, released, category, titles, texts, feats] = g;
+    const names = storeTitle + " " + (listedAs || "");
     const genre = D.genres[gi];
     const title = (titles && titles[LANG]) || storeTitle;
     const ids = tagIds || [];
@@ -1736,9 +1818,15 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
              key: norm([title, storeTitle, dev, listedAs, category, category && catName(category),
                ...ids.map((t) => D.tags[t]), ...ids.map(tagName)].filter(Boolean).join(" ")),
              names: [...new Set([title, storeTitle, listedAs].filter(Boolean).map((s) => squash(norm(s))))],
-             kids: genre === "Educational" || /\b(kids?|bab(y|ies)|toddlers?|preschool)\b/i.test(storeTitle + " " + (listedAs || "")), el: null };
+             kids: KID_NAME.test(names) || (genre === "Educational" && !GROWN_UP.test(names)),
+             pc: !!(feats & 1), ta: !!(feats & 2), pad: feats & 8 ? 1 : feats & 4 ? 2 : 0,  // pad: 2 supported, 1 partly
+             el: null };
   });
-  games.forEach((g) => { g.keyc = squash(g.key); });
+  games.forEach((g) => {
+    g.keyc = squash(g.key);
+    g.forKids = g.kids || g.ta;  // "For kids" also shows the all-ages games teachers approved
+    g.gem = !!(g.rating >= 4.5 && g.ratings >= 300 && g.installs > 0 && g.installs < 1e5 && !g.kids);  // well rated, little known
+  });
   const genreLabel = (g) => (g.category ? catName(g.category) : genreName(g.genre));
   const confirmedOnly = !!D.meta.confirmedOnly;
   const APPS = D.genres.indexOf("Apps");  // Play Pass apps that aren't games get their own section
@@ -1784,6 +1872,12 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   const FULL_WEIGHT = 1000;  // ratings needed before a game's own average counts half
   const weighted = (g) => g.rating ? (g.ratings * g.rating + FULL_WEIGHT * meanRating) / (g.ratings + FULL_WEIGHT) : -1;
   const byRating = games.slice().sort((a, b) => weighted(b) - weighted(a) || collator.compare(a.title, b.title));
+  // Hidden gems: at most three per developer (their best rated), so one prolific studio doesn't fill the list
+  const gemsBy = new Map();
+  byRating.filter((g) => g.gem).forEach((g) => {
+    g.gem = (gemsBy.get(g.dev) || 0) < 3;
+    gemsBy.set(g.dev, (gemsBy.get(g.dev) || 0) + 1);
+  });
   // Most popular: Play Store downloads, then number of ratings.
   const byPopular = games.slice().sort((a, b) => b.installs - a.installs || (b.ratings || 0) - (a.ratings || 0)
     || collator.compare(a.title, b.title));
@@ -1816,13 +1910,19 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     ticket: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3a2 2 0 0 0 0-4z" fill="currentColor"/></svg>',
     star: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.4 2.6 5.4 5.9.8-4.3 4.1 1.1 5.9L12 16.8l-5.3 2.8 1.1-5.9-4.3-4.1 5.9-.8z"/></svg>',
     share: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>',
-    play: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>'
+    play: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>',
+    gem: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 4h11L21 9l-9 11L3 9zM3 9h18M9.5 4 8 9l4 11 4-11-1.5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>',
+    pad: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 7h9a5 5 0 0 1 4.9 6l-.6 3a2.5 2.5 0 0 1-4.3 1.2L14.6 15H9.4l-1.9 2.2A2.5 2.5 0 0 1 3.2 16l-.6-3A5 5 0 0 1 7.5 7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 9.5v3M6.5 11h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="15.5" cy="10.2" r="1.1" fill="currentColor"/><circle cx="17.3" cy="12.4" r="1.1" fill="currentColor"/></svg>',
+    pc: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 20h6M12 16.5V20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',
+    kids: '<svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="9" rx="5.5" ry="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 15.5l-1.2 1.8h2.4zM12 17.3c0 1.7-1.8 2-1.8 3.7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg>',
+    nokids: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m6 6 12 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>'
   };
   const passTag = (g) => confirmedOnly ? "" : g.pass === 1 ? `<span class="pass-tag yes">${ICONS.ticket}${esc(L.passYes)}</span>`
     : g.pass === 0 ? `<span class="pass-tag no">${esc(L.passNo)}</span>` : "";
   const newPill = `<span class="pill-new">${esc(L.newPill)}</span>`;
+  const taPill = `<span class="pill-ta">${esc(L.teacherApproved)}</span>`;
   const pills = (g) => {
-    const p = (g.isNew ? newPill : "") + passTag(g);
+    const p = (g.isNew ? newPill : "") + (g.ta ? taPill : "") + passTag(g);
     return p ? `<span class="pills">${p}</span>` : "";
   };
   const enc = (s) => encodeURIComponent(s);
@@ -1936,6 +2036,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     fromGoogle: fromGoogle ? fmt.format(fromGoogle) : 0, apps: appCount ? fmt.format(appCount) : 0 });
   $("foot-rating").textContent = L.footRating(dec1.format(meanRating));
   $("foot-new").textContent = L.footNew(NEW_DAYS, since ? dateText(since) : "");
+  $("foot-features").textContent = L.footFeatures;
   $("foot-lang").textContent = L.footLang;
   $("foot-lang").hidden = !L.footLang;
 
@@ -1947,9 +2048,15 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     `<optgroup label="${esc(L.tagsGroup)}">${tagOptions((n) => !STORE_GENRES.has(n))}</optgroup>` +
     `<optgroup label="${esc(L.genresGroup)}">${tagOptions((n) => STORE_GENRES.has(n))}</optgroup>`);
   $("only-pass").hidden = confirmedOnly;
+  // feature chips: hidden until there's something to show (renderCounts)
+  const featChip = (id, icon, label, title, count = true) => `<button type="button" class="genre feat" id="${id}" aria-pressed="false" ` +
+    `title="${esc(title)}" hidden>${icon}${esc(label)}${count ? " <small></small>" : ""}</button>`;
   $("genres").innerHTML =
     `<button type="button" class="genre favs" id="fav-chip" aria-pressed="false">${esc(L.favourites)} <small></small></button>` +
     `<button type="button" class="genre since" id="since-chip" aria-pressed="false" title="${esc(L.newForYouTitle)}" hidden>${esc(L.newForYou)} <small></small></button>` +
+    featChip("gems-chip", ICONS.gem, L.gems, L.gemsTitle) + featChip("pad-chip", ICONS.pad, L.pad, L.padTitle) +
+    featChip("pc-chip", ICONS.pc, L.pc, L.pcTitle) + featChip("kids-chip", ICONS.kids, L.forKids, L.forKidsTitle) +
+    featChip("nokids-chip", ICONS.nokids, L.noKids, L.noKidsTitle, false) +
     `<button type="button" class="genre all" data-g="-1" aria-pressed="true">${esc(L.all)} <small></small></button>` +
     D.genres.map((name, gi) => `<button type="button" class="genre" data-g="${gi}" style="--h:${HUES[name] ?? 250}" aria-pressed="false">${esc(genreName(name))} <small></small></button>`).join("");
 
@@ -1958,6 +2065,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   let genre = -1;
   let sort = SORTS.includes(store.get("sort")) ? store.get("sort") : "az";
   let tag = -1, age = 0, dev = "", favOnly = false, sinceOnly = false;
+  let gemsOnly = false, padOnly = false, pcOnly = false, kidsOnly = false;
+  let hideKids = store.get("nokids") === "1";  // a preference: kept in this browser, not in links
+  const kidHidden = (g) => hideKids && !kidsOnly && g.kids;
   let shared = null;  // the ids of a list someone shared (#list=...), while looking at it
   let discoverOn = false;
   let onlyPass = !confirmedOnly && store.get("pass") === "1";
@@ -1968,20 +2078,28 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   function renderCounts() {
     const offered = games.filter(inRegion);
     const gamesHere = offered.filter((g) => !isApp(g));
-    pool = genre === APPS ? offered.filter(isApp) : gamesHere;
+    const visible = offered.filter((g) => !kidHidden(g));  // children's games out when they're hidden
+    pool = visible.filter((g) => isApp(g) === (genre === APPS));
     $("stub-num").textContent = fmt.format(gamesHere.length);
     $("q").placeholder = genre === APPS ? L.searchApps(fmt.format(pool.length)) : L.searchGames(fmt.format(gamesHere.length));
     const byGenre = D.genres.map(() => 0), byTag = D.tags.map(() => 0);
-    offered.forEach((g) => { byGenre[g.gi]++; });
+    visible.forEach((g) => { byGenre[g.gi]++; });
     pool.forEach((g) => g.reps.forEach((t) => { byTag[t]++; }));
     document.querySelectorAll(".genre[data-g] small").forEach((el) => {
       const gi = Number(el.parentElement.dataset.g);
-      el.textContent = fmt.format(gi < 0 ? gamesHere.length : byGenre[gi]);
+      el.textContent = fmt.format(gi < 0 ? visible.length - visible.filter(isApp).length : byGenre[gi]);
     });
     showFavCount();
-    const fresh = pool.filter(isNewForYou).length;
-    $("since-chip").hidden = !fresh && !sinceOnly;
-    $("since-chip").querySelector("small").textContent = fmt.format(fresh);
+    const chipCount = (id, n, on) => {
+      $(id).hidden = !n && !on;
+      $(id).querySelector("small").textContent = fmt.format(n);
+    };
+    chipCount("since-chip", pool.filter(isNewForYou).length, sinceOnly);
+    chipCount("gems-chip", pool.filter((g) => g.gem).length, gemsOnly);
+    chipCount("pad-chip", pool.filter((g) => g.pad).length, padOnly);
+    chipCount("pc-chip", pool.filter((g) => g.pc).length, pcOnly);
+    chipCount("kids-chip", offered.filter((g) => g.forKids && (genre < 0 || isApp(g) === (genre === APPS))).length, kidsOnly);
+    $("nokids-chip").hidden = !offered.some((g) => g.kids);
     $("tag").querySelectorAll("optgroup option").forEach((o) => {
       const t = Number(o.value);
       o.textContent = `${tagName(t)} (${fmt.format(byTag[t])})`;
@@ -2063,10 +2181,11 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     const tests = terms.map(termTest);
     const passes = (g) => (tag < 0 || g.reps.includes(tag)) && (!onlyPass || g.pass === 1)
       && (!age || (g.pegi != null && g.pegi <= age)) && (!dev || g.dev === dev) && (!sinceOnly || isNewForYou(g))
+      && (!gemsOnly || g.gem) && (!padOnly || g.pad) && (!pcOnly || g.pc) && (kidsOnly ? g.forKids : !kidHidden(g))
       && tests.every((test) => test(g))
       && (!withFavs || ((!favOnly || favs.has(g.fid)) && (!shared || shared.has(g.fid))));
-    // "All" means all games; favourites (and shared lists) include apps
-    const inSection = (g) => genre < 0 ? !isApp(g) || (withFavs && (favOnly || !!shared)) : g.gi === genre;
+    // "All" means all games; favourites (and shared lists) and "For kids" include apps
+    const inSection = (g) => genre < 0 ? !isApp(g) || kidsOnly || (withFavs && (favOnly || !!shared)) : g.gi === genre;
     return { terms, passes, inSection, fuzzy: tests.some((test) => test.fuzzy) };
   }
   // A search term matches the title, developer, tags... with spaces and punctuation left out, so
@@ -2155,7 +2274,10 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       genre: genre < 0 || appsView ? "" : genreName(D.genres[genre]), tag: tag < 0 ? "" : tagName(tag), age, dev, pass: onlyPass,
       query: terms.length ? q.value.trim() : "", sort, elsewhere, elsewhereF: fmt.format(elsewhere),
       country: regionName(REGIONS[region]), theCountry: theName(REGIONS[region]), noFavs: favOnly && !favs.size, shared: !!shared,
-      since: sinceOnly, fuzzy: fuzzy && shown + elsewhere > 0, filtered: !!((genre >= 0 && !appsView) || tag >= 0 || age || dev || onlyPass || favOnly || sinceOnly || shared || terms.length) };
+      since: sinceOnly, fuzzy: fuzzy && shown + elsewhere > 0, gems: gemsOnly, pad: padOnly, pc: pcOnly,
+      kids: kidsOnly ? "only" : hideKids ? "hide" : "",
+      filtered: !!((genre >= 0 && !appsView) || tag >= 0 || age || dev || onlyPass || favOnly || sinceOnly || shared || terms.length
+        || gemsOnly || padOnly || pcOnly || kidsOnly || hideKids) };
     $("status").textContent = L.status(o);
     const unsaved = shared ? [...shared].filter((id) => !favs.has(id) && games.some((g) => g.fid === id)).length : 0;
     $("active").innerHTML =
@@ -2182,6 +2304,10 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     if (sort !== "az") p.set("sort", sort);
     if (REGIONS.length > 1 && (withCountry || region !== homeRegion)) p.set("country", REGIONS[region].code.toLowerCase());
     if (favOnly) p.set("favs", "1");
+    if (gemsOnly) p.set("gems", "1");
+    if (padOnly) p.set("controller", "1");
+    if (pcOnly) p.set("pc", "1");
+    if (kidsOnly) p.set("kids", "1");
     if (shared) p.set("list", [...shared].join(","));
     if (discoverOn) p.set("discover", "1");
     if (current && current.appId) p.set("game", current.appId);
@@ -2212,6 +2338,10 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     const r = REGIONS.findIndex((x) => x.code === (p.get("country") || "").toUpperCase());
     region = r >= 0 ? r : homeRegion;
     favOnly = p.get("favs") === "1";
+    gemsOnly = p.get("gems") === "1";
+    padOnly = p.get("controller") === "1";
+    pcOnly = p.get("pc") === "1";
+    kidsOnly = p.get("kids") === "1";
     const ids = (p.get("list") || "").split(",").filter(Boolean);
     shared = ids.length && !favOnly ? new Set(ids) : null;
     return { game: p.get("game"), discover: p.get("discover") === "1" };
@@ -2220,6 +2350,8 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     document.querySelectorAll(".genre[data-g]").forEach((x) => x.setAttribute("aria-pressed", String(Number(x.dataset.g) === genre)));
     $("fav-chip").setAttribute("aria-pressed", String(favOnly));
     $("since-chip").setAttribute("aria-pressed", String(sinceOnly));
+    for (const [id, on] of [["gems-chip", gemsOnly], ["pad-chip", padOnly], ["pc-chip", pcOnly], ["kids-chip", kidsOnly],
+      ["nokids-chip", hideKids && !kidsOnly]]) $(id).setAttribute("aria-pressed", String(on));
     $("tag").value = String(tag);
     $("tag-box").classList.toggle("active", tag >= 0);
     $("age").value = String(age);
@@ -2294,6 +2426,14 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       facts.push([L.countries, esc(L.offeredIn(fmt.format(REGIONS.length - missing.length), fmt.format(REGIONS.length))) +
         (missing.length ? `<br><span class="muted">${esc(L.notIn(missing.join(L.listSep)))}</span>` : "")]);
     }
+    if (g.pad) {
+      const src = D.padSources && D.padSources[g.appId];
+      const site = src ? `<a href="${esc(src)}" target="_blank" rel="noopener">${esc(new URL(src).hostname.replace(/^www\./, ""))}</a>` : "";
+      facts.push([L.padFact, esc(g.pad === 1 ? L.padPartly : L.padYes) +
+        `<br><span class="muted">${src ? L.padSaysSite(site) : esc(L.padSaysDesc)}</span>`]);
+    }
+    if (g.pc) facts.push([L.pcFact, `<a href="https://play.google.com/pc-store/games/details?id=${enc(g.appId)}" target="_blank" ` +
+      `rel="noopener">${esc(L.pcValue)}</a>`]);
     if (g.listedAs) facts.push([L.listedAs, esc(g.listedAs)]);
     const video = ytId(d);
     let desc;
@@ -2311,7 +2451,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       `<div class="d-head">${iconHtml(g, 64).replace(/ data-open="\d+"/, "")}<div class="txt">` +
       `<h2 class="d-title" id="d-title">${esc(g.title)}</h2>` +
       `<p class="d-sub">${g.dev ? `<button type="button" class="linkish" data-ddev>${esc(g.dev)}</button> · ` : ""}${esc(genreLabel(g))}` +
-      `${g.isNew ? ` · ${newPill}` : ""}</p></div>${favBtn(g)}</div>` +
+      `${g.isNew ? ` · ${newPill}` : ""}${g.ta ? ` · ${taPill}` : ""}</p></div>${favBtn(g)}</div>` +
       (shots.length ? `<div class="d-gallery" tabindex="0" aria-label="${esc(L.screenshots)}">` +
         shots.map((x, k) => `<img src="${esc(img(x, "h440"))}" alt="${esc(L.shotAlt(k + 1, shots.length))}" loading="lazy" decoding="async">`).join("") + `</div>` : "") +
       `<dl class="d-facts">${facts.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${v}</dd></div>`).join("")}</dl>` +
@@ -2338,12 +2478,13 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   const MORE = 12;
   const similarTo = new Map();  // "game index:region" -> the list
   function similar(g) {
-    const key = g.i + ":" + region;
+    const key = g.i + ":" + region + ":" + (hideKids && !kidsOnly);
     if (similarTo.has(key)) return similarTo.get(key);
     let found = [];
     if (g.reps.length) {
       const mine = new Set(g.reps);
-      found = games.filter((x) => x !== g && x.reps.length && (!g.dev || x.dev !== g.dev) && isApp(x) === isApp(g) && inRegion(x))
+      found = games.filter((x) => x !== g && x.reps.length && (!g.dev || x.dev !== g.dev) && isApp(x) === isApp(g) && inRegion(x)
+        && !kidHidden(x))
         .map((x) => {
           let dot = 0;
           for (const t of x.reps) if (mine.has(t)) dot += tagWeight(t) ** 2;
@@ -2472,6 +2613,18 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     if (!b) return;
     if (b.id === "fav-chip") { favOnly = !favOnly; shared = null; showControls(); apply(); toTop(); }
     else if (b.id === "since-chip") { sinceOnly = !sinceOnly; showControls(); renderCounts(); apply(); toTop(); }
+    else if (b.classList.contains("feat")) {
+      if (b.id === "gems-chip") gemsOnly = !gemsOnly;
+      else if (b.id === "pad-chip") padOnly = !padOnly;
+      else if (b.id === "pc-chip") pcOnly = !pcOnly;
+      else if (b.id === "kids-chip") kidsOnly = !kidsOnly;
+      else {  // "No kids' games": switches off "For kids" first
+        hideKids = kidsOnly || !hideKids;
+        kidsOnly = false;
+        store.set("nokids", hideKids ? "1" : "");
+      }
+      showControls(); renderCounts(); apply(); toTop();
+    }
     else setGenre(Number(b.dataset.g));
   });
   $("only-pass").setAttribute("aria-pressed", String(onlyPass));
@@ -2553,6 +2706,8 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   });
   $("clear").addEventListener("click", () => {
     q.value = ""; genre = -1; tag = -1; age = 0; dev = ""; onlyPass = false; favOnly = false; sinceOnly = false; shared = null;
+    gemsOnly = false; padOnly = false; pcOnly = false; kidsOnly = false; hideKids = false;
+    store.set("nokids", "");
     $("only-pass").setAttribute("aria-pressed", "false");
     store.set("pass", "");
     showControls();

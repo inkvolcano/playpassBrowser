@@ -124,6 +124,21 @@ function serve() {
         await page.keyboard.press("Escape");
         await page.waitForTimeout(300);
 
+        // the feature chips (Hidden gems, Controller, On PC, For kids, No kids' games) each narrow the list
+        const chips = [];
+        for (const id of ["gems-chip", "pad-chip", "pc-chip", "kids-chip", "nokids-chip"]) {
+          if (await page.isHidden("#" + id)) continue;
+          const before = await page.textContent("#status");
+          await page.click("#" + id);
+          await page.waitForTimeout(300);
+          const after = await page.evaluate(() => [document.getElementById("status").textContent, document.querySelectorAll(".card").length]);
+          check(lang, `chip ${id}`, after[0] !== before && after[1] > 0, after.join(" / "));
+          chips.push((await page.textContent("#" + id)).trim());
+          await page.click("#" + id);
+          await page.waitForTimeout(300);
+        }
+        console.log(`feature chips: ${chips.join(" · ") || "none"}`);
+
         // installable app: a manifest without errors, nothing but the test browser's private mode in
         // the way of installing, and a service worker that brings the page back without a connection
         const cdp = await ctx.newCDPSession(page);

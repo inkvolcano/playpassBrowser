@@ -51,6 +51,29 @@ last saw. When you come back after a monthly update, a "New for you" chip lists
 the games it added; it stays until you press "Mark as seen" or the next update
 comes. On a first visit nothing is new for you.
 
+**Hidden gems, controllers, PC and kids.** More chips sit next to Favourites:
+
+- **Hidden gems**: rated 4.5 or higher by at least 300 players but downloaded
+  fewer than 100,000 times (at most three per developer, their best rated).
+- **Controller**: games that work with a game controller. Google Play only shows
+  its "Gamepad" label in the Android app, so this comes from the store
+  descriptions (KEMCO's RPGs have a "[Game Controller] - Supported" line; other
+  developers write "Full gamepad support", "Compatible with controllers"...) plus
+  a few games named in published lists of controller games
+  (`data/controller.json`, with where each was found; the detail view says where
+  it comes from). It isn't complete: games that support controllers without
+  saying so are missing.
+- **On PC**: also on Google Play Games for PC; the Play Store page lists
+  "Available on: Android, Windows". Whether Play Pass covers the PC version is up
+  to each developer.
+- **For kids**: games made for young children plus every game Google Play marks
+  Teacher Approved (which includes all-ages games like Hidden Folks or Pocket
+  City). Cards and the detail view show the Teacher Approved badge.
+- **No kids' games** hides games made for young children: the Educational
+  section (bar brain training and colouring for grown-ups) and games whose name
+  says they're for kids, babies or toddlers. This one is remembered in your
+  browser rather than put in links.
+
 **Favourites and Discover.** Tap ☆ on a card (or in the detail view) to keep a
 game; the "★ Favourites" chip shows the list. The Discover button opens a
 fullscreen view with one random game at a time: its name, description and
@@ -141,7 +164,8 @@ press **Run workflow**; tick "Test run" and untick "Push" for a quick check
 that changes nothing. A full run takes one to three hours, because requests
 are throttled. Before pushing, it opens the new page in a headless browser in
 every language (`check_page.js`: cards, search (also with a typo), country menu,
-detail view with "More like this", Discover, "New for you"); if anything fails, nothing is pushed and the run turns red. If Google Play stops answering, the run turns red. Whatever it
+detail view with "More like this", Discover, "New for you", the feature chips);
+if anything fails, nothing is pushed and the run turns red. If Google Play stops answering, the run turns red. Whatever it
 finished is still committed and pushed, and the next run picks up the rest.
 
 `update.py` runs these steps in order (`--skip` leaves steps out; run it
@@ -153,7 +177,7 @@ locally after `pip install google-play-scraper==1.2.7`):
 | discover | `discover_games.py`: Play Pass games and apps on Google Play that the list lacks (~15 min) |
 | lookup | `fill_screenshots.py`: matches the games new to the list |
 | refresh | `fill_screenshots.py --refresh`: every app's Play Pass badge, screenshots, rating, downloads and tags (~35 min). The badge dates "New" and "left Play Pass", so the history grows with each run |
-| details | `fill_screenshots.py --details --recheck stale --max-age 25`: descriptions, age ratings, prices, dates |
+| details | `fill_screenshots.py --details --recheck stale --max-age 25`: descriptions, age ratings, prices, dates, the PC and Teacher Approved badges |
 | langs | `fill_screenshots.py --langs --recheck stale --max-age 90`: the store's translations |
 | regions | `fill_screenshots.py --region <every country> --recheck stale --max-age 180 --budget 25000 --jobs 8 --delay 1.0`: new games in every country, then the oldest checks |
 | build | `build_index.py`: rebuilds `index.html` |

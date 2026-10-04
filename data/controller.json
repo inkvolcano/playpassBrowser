@@ -1,0 +1,21 @@
+{
+  "about": "Controller support beyond what the store descriptions say. build_index.py marks a game as supporting game controllers when its English store description says so (KEMCO's '[Game Controller] - Supported' line, or a developer's 'Full gamepad support', 'Compatible with controllers', 'MFi controller support'...). 'yes' adds games that published lists of controller games name although their description doesn't say it (each with where it was found; 'partly': only some of the game works with a controller). 'no' overrides descriptions that mention controllers without supporting them.",
+  "yes": {
+    "com.BlackSaltGames.DREDGE": {"title": "DREDGE", "source": "https://www.droidgamers.com/features/best-android-games-controller-support/"},
+    "com.rawfury.longhathouse.Dandara": {"title": "Dandara Trials of Fear Edition", "source": "https://www.pocketgamer.com/android/best-games-controller-support"},
+    "com.playdead.limbo.full": {"title": "LIMBO", "source": "https://www.pocketgamer.com/android/best-games-controller-support"},
+    "com.bscotch.levelhead": {"title": "Levelhead", "source": "https://en.androidguias.com/android-games-with-controller/"},
+    "com.playdigious.littlenightmare": {"title": "Little Nightmares", "source": "https://www.droidgamers.com/features/best-android-games-controller-support/"},
+    "com.Afterburn.Railbound": {"title": "Railbound", "source": "https://www.androidpolice.com/best-android-games-controller-support/"},
+    "com.OskarStalberg.Townscaper": {"title": "Townscaper", "source": "https://www.androidpolice.com/best-android-games-controller-support/"},
+    "com.noodlecake.altosadventure": {"title": "Alto's Adventure", "source": "https://www.droid-life.com/?p=189934"},
+    "com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp": {"title": "20 Minutes Till Dawn", "partly": true,
+      "source": "https://toucharcade.com/2022/09/20/20-minutes-till-dawn-mobile-controller-support-offline-vampire-survivors-update/"}
+  },
+  "no": {
+    "com.fireart.SpiritRootsP": "the description says controller support is still in the works",
+    "com.plotkids.playtogether": "players use their phones as controllers",
+    "com.marmalade.mousetrap": "'pass the controller' means passing the phone",
+    "com.infinitygames.squareit": "the 'Game Controller icon' opens Google Play Games"
+  }
+}
