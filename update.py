@@ -8,11 +8,13 @@ Steps, in order:
   lookup     fill_screenshots.py: match the games that are new to the list
   refresh    every app's Play Pass badge (which dates "New" and "left"), screenshots,
              rating, downloads and tags
-  regions    new games in every country already checked, plus the longest-unchecked
-             older checks (up to --region-budget)
   details    detail-view data (description, price, age rating) older than a month
   langs      the store's translations (titles, descriptions, tags) older than three months
+  regions    new games in every country already checked, plus the longest-unchecked
+             older checks (up to --region-budget); last, as it makes the most requests
   build      build_index.py
+Requests are throttled per thread and the thread counts kept low: Google Play answers
+"429 Too Many Requests" to one address making more than about a dozen a second.
 A step that fails leaves the data as it was and the next steps carry on; once Google Play
 looks blocked, the remaining network steps are skipped. The exit code is 1 if any step
 failed, so a scheduled run that went wrong shows up as failed. With --commit, a page that
@@ -35,7 +37,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 CACHE_JSON = ROOT / "data" / "shots_cache.json"
-STEPS = ["list", "discover", "lookup", "refresh", "regions", "details", "langs", "build"]
+STEPS = ["list", "discover", "lookup", "refresh", "details", "langs", "regions", "build"]
 BLOCKED = "looks blocked"  # what the scripts print when Google Play stops answering
 MIN_KEPT = 0.8  # a new page must list at least this share of the games the last commit's did
 DATA_PATHS = ["data", "details", "index.html"]
@@ -90,7 +92,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--skip", nargs="+", choices=STEPS, default=[], metavar="STEP", help=f"steps to leave out: {', '.join(STEPS)}")
     ap.add_argument("--quick", action="store_true", help="only a little of each step, to test the pipeline")
-    ap.add_argument("--jobs", type=int, default=6, help="threads for the steps that take them (default 6)")
+    ap.add_argument("--jobs", type=int, default=5, help="threads for the details and langs steps (default 5)")
     ap.add_argument("--region-budget", type=int, default=25000, help="country checks per run (default 25000)")
     ap.add_argument("--commit", action="store_true", help="git-commit the updated data and page")
     args = ap.parse_args()
@@ -121,7 +123,7 @@ def main():
         cmd = steps[name]
         if name == "regions":
             cmd = [py, fs, "--region", *countries(), "--recheck", "stale", "--max-age", "180",
-                   "--budget", "40" if q else str(args.region_budget), "--jobs", "16", "--no-build"]
+                   "--budget", "40" if q else str(args.region_budget), "--jobs", "8", "--delay", "1.0", "--no-build"]
         results[name] = run(name, cmd)
         blocked = blocked or results[name] == "blocked"
 

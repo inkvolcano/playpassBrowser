@@ -116,10 +116,14 @@ locally after `pip install google-play-scraper==1.2.7`):
 | discover | `discover_games.py`: Play Pass games and apps on Google Play that the list lacks (~15 min) |
 | lookup | `fill_screenshots.py`: matches the games new to the list |
 | refresh | `fill_screenshots.py --refresh`: every app's Play Pass badge, screenshots, rating, downloads and tags (~35 min). The badge dates "New" and "left Play Pass", so the history grows with each run |
-| regions | `fill_screenshots.py --region <every country> --recheck stale --max-age 180 --budget 25000 --jobs 16`: new games in every country, then the oldest checks |
 | details | `fill_screenshots.py --details --recheck stale --max-age 25`: descriptions, age ratings, prices, dates |
 | langs | `fill_screenshots.py --langs --recheck stale --max-age 90`: the store's translations |
+| regions | `fill_screenshots.py --region <every country> --recheck stale --max-age 180 --budget 25000 --jobs 8 --delay 1.0`: new games in every country, then the oldest checks |
 | build | `build_index.py`: rebuilds `index.html` |
+
+The thread counts and delays are kept low on purpose: Google Play answers "429
+Too Many Requests" when one address makes more than about a dozen requests a
+second, and the scripts stop when that persists.
 
 `fill_screenshots.py` resumes from `data/shots_cache.json`, so it only looks up
 games it hasn't seen; stop it at any time (Ctrl-C saves progress) and run it
