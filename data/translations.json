@@ -1,5 +1,4553 @@
 {
  "apps": {
+  "air.Anodyne.mobile": {
+   "checked": "2026-10-04",
+   "tags": [],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.au.com.metro.DumbWaysToDie2": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Cartoon",
+    "Funny",
+    "Offline"
+   ],
+   "titles": {
+    "es": "Dumb Ways to Die 2: Los juegos",
+    "pt": "Dumb Ways to Die 2: Os jogos",
+    "ja": "ダム・ウェイズ・トゥ・ダイ 2:  ザ・ゲームズ"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.A3donkeys.loveBits": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Science fiction",
+    "Space"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.absolutist.fitz2puzzlefree": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Match 3",
+    "Casual",
+    "Multiplayer",
+    "Competitive multiplayer",
+    "Single player",
+    "Abstract",
+    "Offline"
+   ],
+   "titles": {
+    "ja": "Fitz 2: マジックマッチ3パズル"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.absolutist.match3puzzle.bubblezbubbledefence": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Bubble shooter",
+    "Casual",
+    "Multiplayer",
+    "Competitive multiplayer",
+    "Single player",
+    "Abstract",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.absolutist.mosaicgems": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Jigsaw",
+    "Casual",
+    "Multiplayer",
+    "Competitive multiplayer",
+    "Single player",
+    "Abstract",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.absolutist.numbers": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Logic",
+    "Casual",
+    "Single player",
+    "Abstract",
+    "Offline"
+   ],
+   "titles": {
+    "nl": "Numbers: Logische puzzel",
+    "de": "Numbers Logic Puzzle Spiel"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.aceviral.motox3m": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Racing",
+    "Stunt driving",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Vehicles",
+    "Motorcycle",
+    "Intense",
+    "Offline"
+   ],
+   "titles": {
+    "pt": "Moto X3M - jogo de moto"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.alikestudio.bringyouhome": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Casual",
+    "Stylized",
+    "Mystery"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.amanitadesign.botanicula": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Casual"
+   ],
+   "titles": {
+    "ja": "Botanicula (ボタニキュラ)"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.amanitadesign.chuchel.gp": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Brain teaser",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Cartoon",
+    "Puzzles",
+    "Monster",
+    "Offline"
+   ],
+   "titles": {
+    "ja": "CHUCHEL（チュチェル）"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.bartbonte.red": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Logic",
+    "Casual",
+    "Single player",
+    "Abstract",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.bartbonte.thebox": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Logic",
+    "Casual",
+    "Single player",
+    "Realistic",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.d20studios.summonersfate": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Strategy",
+    "Tactics",
+    "Single player",
+    "Stylized",
+    "Immersive",
+    "Offline"
+   ],
+   "titles": {
+    "de": "Abalon: Roguelike Taktik-SKS",
+    "fr": "Abalon: CCG Roguelike Tactique",
+    "es": "Abalon: CCG Táctico Roguelike",
+    "it": "Abalon: GDR a carte roguelike",
+    "pt": "Abalon: Táticas Roguelike CCG",
+    "ja": "Abalon: ローグライク戦術カードゲーム"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.darkdome.another.shadow": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Single player",
+    "Stylized",
+    "Horror",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.darkdome.beyond.the.room": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Single player",
+    "Stylized",
+    "Horror",
+    "Mystery",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.darkdome.escape.from.shadows": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Casual",
+    "Mystery"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.darkdome.girlinthewindow": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Single player",
+    "Stylized",
+    "Mystery",
+    "Horror",
+    "Offline"
+   ],
+   "titles": {
+    "de": "Das Mädchen im Fenster",
+    "fr": "La Fille à la Fenêtre",
+    "it": "La Ragazza alla Finestra",
+    "pt": "A Menina na Janela"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.darkdome.haunted.laia": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Single player",
+    "Stylized",
+    "Mystery",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.darkdome.hidden.memories": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Single player",
+    "Stylized",
+    "Mystery",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.darkdome.nowhere.house": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Single player",
+    "Stylized",
+    "Mystery",
+    "Horror",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.darkdome.the.ghost.mistery": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Single player",
+    "Stylized",
+    "Mystery",
+    "Horror",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.darkdome.unwanted.experiment": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Escape",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Monster",
+    "Offline"
+   ],
+   "titles": {
+    "de": "Ungewolltes Experiment",
+    "fr": "Expérience indésirable",
+    "it": "Esperimento indesiderato",
+    "pt": "Experiência Indesejada"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.eu.inove.sss2": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Education"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.gamebrain.hocus": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Logic",
+    "Casual",
+    "Single player",
+    "Abstract",
+    "Science fiction",
+    "Space",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.jogatina.domino.android": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Board",
+    "Abstract strategy",
+    "Dominos",
+    "Casual",
+    "Multiplayer",
+    "Competitive multiplayer",
+    "Single player",
+    "Realistic",
+    "Offline"
+   ],
+   "titles": {
+    "de": "Domino Jogatina: Brettspiel",
+    "fr": "Dominos Jogatina : En Ligne",
+    "es": "Domino Jogatina: Juego Online",
+    "it": "Domino Jogatina: Gioco Online",
+    "pt": "Dominó Jogatina: Domino Online"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.midjiwan.polytopia": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Strategy",
+    "4X",
+    "Casual",
+    "Multiplayer",
+    "Competitive multiplayer",
+    "Single player",
+    "Stylized",
+    "Low poly",
+    "Historical",
+    "Medieval",
+    "Immersive",
+    "Offline"
+   ],
+   "titles": {
+    "ja": "ポリトピアの戦い (Battle of Polytopia)"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.noodlecake.luminocity": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Stylized"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.ohnoo.tormentum": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Stylized-realistic",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.sarahnorthway.rebuild2": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Strategy",
+    "Single player",
+    "Stylized",
+    "Zombie",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.sarahnorthway.rebuild3": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Strategy",
+    "4X",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Science fiction",
+    "Apocalyptic",
+    "Immersive"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.shirogames.evoland12": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Role Playing",
+    "Turn-based RPG",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Pixelated",
+    "Immersive",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.com.tutotoons.app.powergirlssupercity.free": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Lifestyle",
+    "Makeup",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.net.machinarium.Machinarium.GP": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Puzzles",
+    "Robot",
+    "Offline"
+   ],
+   "titles": {
+    "ja": "Machinarium （マシナリウム）"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "air.net.promediastudio.trendyfashionstyles": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Lifestyle",
+    "Dress-up",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Fashion",
+    "Offline"
+   ],
+   "titles": {
+    "es": "Vestimenta a la Moda"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "all.in.one.calculator": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Productivity"
+   ],
+   "titles": {
+    "nl": "Alles-in-één rekenmachine",
+    "de": "Alles-in-einem Taschenrechner",
+    "fr": "Calculatrice tout-en-un",
+    "es": "Calculadora todo-en-uno",
+    "it": "Calcolatrice tutto-in-uno",
+    "pt": "Calculadora tudo-em-um",
+    "ja": "オールインワン電卓"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "amanita_design.samorost3.GP": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Puzzles",
+    "Mystery"
+   ],
+   "titles": {
+    "ja": "Samorost 3 (サモロスト3)"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "app.wordpix.android": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Word",
+    "Crossword",
+    "Multiplayer",
+    "Competitive multiplayer",
+    "Competitive"
+   ],
+   "titles": {
+    "de": "WordPix－Kreuzworträtsel-Spiel",
+    "fr": "WordPix – Jeu de mots croisés",
+    "es": "WordPix－Juego de Crucigramas",
+    "it": "WordPix－Gioco di cruciverba",
+    "pt": "WordPix－Palavras Cruzadas"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "apps.r.compass": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Maps & Navigation"
+   ],
+   "titles": {
+    "nl": "Kompas",
+    "de": "Kompass",
+    "fr": "Boussole",
+    "es": "Brújula: Brújula precisa",
+    "it": "Bussola",
+    "pt": "Bússola: Bússola Precisa",
+    "ja": "コンパス"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "art.master.puzzle": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Jigsaw",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {
+    "nl": "Art Master: Jigsaw Art Puzzle",
+    "de": "Art Master: Puzzle Spiele",
+    "fr": "Art Master : Jeu de puzzle",
+    "es": "Art Master: Puzles por Doquier",
+    "it": "Art Master: Il rompicapo",
+    "pt": "Art Master: Quebra-cabeça",
+    "ja": "芸術のマスター: アート パズル"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "babyphone.freebabygames.com.babyphone": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Educational",
+    "Mathematics",
+    "Single player",
+    "Stylized",
+    "Cartoon",
+    "Cute",
+    "Offline"
+   ],
+   "titles": {
+    "de": "Babyspiele für Kinder Deutsch",
+    "fr": "Jeux de bébé - 2+ tout-petits",
+    "es": "Juegos bebé - Teléfono de bebé",
+    "it": "Gioco del telefono per bambini",
+    "pt": "Jogos de telefone para bebês",
+    "ja": "幼児向けベビーフォンゲーム"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "best.cryptic.crossword": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Word",
+    "Crossword",
+    "Casual",
+    "Single player",
+    "Abstract",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "best.quick.crossword": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Word",
+    "Crossword",
+    "Casual",
+    "Single player",
+    "Abstract",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "biz.mtoy.blockpuzzle.revolution": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Casual",
+    "Single player",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "br.com.mothergaia.skyfish2": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Role Playing",
+    "Action Role-Playing",
+    "Single player",
+    "Stylized",
+    "Immersive",
+    "Offline"
+   ],
+   "titles": {
+    "nl": "De Legende van Skyfish 2",
+    "de": "Die Legende von Skyfish 2",
+    "fr": "La Légende de Skyfish 2",
+    "es": "La Leyenda de Skyfish 2",
+    "it": "La Leggenda di Skyfish 2",
+    "pt": "A Lenda de Skyfish 2",
+    "ja": "Skyfishの伝説2"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "br.com.rodrigokolb.realguitar": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Music",
+    "Music sim",
+    "Guitar",
+    "Casual",
+    "Single player",
+    "Realistic",
+    "Offline"
+   ],
+   "titles": {
+    "nl": "Real Guitar: gitaar spelen",
+    "de": "Real Guitar: gitarre spielen",
+    "fr": "Real Guitar guitare électrique",
+    "es": "Real Guitar: tocar la guitarra",
+    "it": "Real Guitar: suonare chitarra",
+    "pt": "Real Guitar: guitarra e violão",
+    "ja": "Real Guitar: ギターを弾く"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "br.com.theglitchfactory.noplaceforbravery": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Role Playing",
+    "Action Role-Playing",
+    "Casual",
+    "Stylized",
+    "Pixelated"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "br.com.webcoregames.timogame": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {
+    "ja": "Timo - Adventure Puzzle Game -"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "brownmonster.app.game.rushrally2": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Racing",
+    "Car race",
+    "Multiplayer",
+    "Competitive multiplayer",
+    "Single player",
+    "Stylized",
+    "Vehicles",
+    "Car",
+    "Competitive",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "brownmonster.app.game.rushrally3": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Racing",
+    "Car race",
+    "Multiplayer",
+    "Competitive multiplayer",
+    "Single player",
+    "Realistic",
+    "Vehicles",
+    "Race car",
+    "Competitive",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "brownmonster.app.game.rushrallyremastered": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Racing",
+    "Car race",
+    "Casual",
+    "Multiplayer",
+    "Competitive multiplayer",
+    "Stylized",
+    "Competitive"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "build.home.idle.construction": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Casual"
+   ],
+   "titles": {
+    "nl": "Home Builder 3D",
+    "de": "Home Builder 3D",
+    "fr": "Home Builder 3D",
+    "es": "Home Builder 3D",
+    "it": "Home Builder 3D",
+    "pt": "Home Builder 3D",
+    "ja": "Home Builder 3D"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "cc.peacedeath.peacedeath": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Casual",
+    "Stylized",
+    "Pixelated"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "ch.feinheit.games.firststrike": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Strategy",
+    "4X",
+    "Casual",
+    "Stylized"
+   ],
+   "titles": {
+    "fr": "First Strike: Classique",
+    "pt": "First Strike: Clássico"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "ch.misterwhale.far": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Single player",
+    "Stylized",
+    "Science fiction",
+    "Apocalyptic",
+    "Dark",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "co.imba.kawaii.tpk": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Match 3",
+    "Match 3 adventure",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Anime",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "co.imba.kawaiimansion": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Lifestyle",
+    "Design",
+    "Single player",
+    "Stylized",
+    "House & garden",
+    "Light-hearted",
+    "Offline"
+   ],
+   "titles": {
+    "ja": "カワイイ検索ゲーム (Kawaii Mansion)"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "co.yakand.agentaapuzzleindisguise": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Mystery"
+   ],
+   "titles": {
+    "de": "Agent A: Rätsel in Verkleidung",
+    "fr": "Agent A - Casse-tête d’espions",
+    "es": "Agent A - un puzle disfrazado",
+    "it": "Agent A - enigma in incognito",
+    "pt": "Agent A: O enigma disfarçado",
+    "ja": "Agent A - 偽装のパズル"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "co.yakand.downinbermuda": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Low poly",
+    "Mystery",
+    "Offline"
+   ],
+   "titles": {
+    "ja": "Down in Bermuda (ダウン・イン・バミューダ)"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.ASGames.develop.PocketSurvivorExpansion": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Role Playing",
+    "Single player",
+    "Stylized",
+    "Science fiction",
+    "Apocalyptic",
+    "Immersive",
+    "Offline"
+   ],
+   "titles": {
+    "es": "Pocket Survivor: Expansión"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.ASmallGame.themagicfinger": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Low poly",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.AbyteEntertainment.DealersLife2": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Management",
+    "Tycoon",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Shop & supermarket",
+    "Light-hearted"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.AbyteEntertainment.DealersLifeFull": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Management",
+    "Tycoon",
+    "Casual",
+    "Stylized",
+    "Light-hearted"
+   ],
+   "titles": {
+    "de": "Dealer’s Life Pfandhaus-Tycoon",
+    "fr": "Dealer’s Life",
+    "es": "Dealer’s Life Casa de Empeño",
+    "it": "Dealer's Life Banco dei Pegni",
+    "pt": "Dealer’s Life"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.AbyteEntertainment.DealersLifeLegend": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Management",
+    "Tycoon",
+    "Single player",
+    "Stylized"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Afterburn.GolfPeaks": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Logic",
+    "Casual",
+    "Abstract"
+   ],
+   "titles": {
+    "ja": "ゴルフ・ピークス / Golf Peaks"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Afterburn.Railbound": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Logic",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {
+    "ja": "レールバウンド"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Agonalea.BeatArena": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Music",
+    "Performance",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Low poly",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.AlexeySuslin.QuestofWizard": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action",
+    "Platformer"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.AlexeySuslin.RunicCurse": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action",
+    "Platformer",
+    "Hack & slash",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Amayadori": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Anime",
+    "Offline"
+   ],
+   "titles": {
+    "ja": "雨音と癒しの放置ゲーム - あまやどり -"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Angrydevs.VitaFighters": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action",
+    "Fighting",
+    "Single player",
+    "Stylized",
+    "Low poly",
+    "Offline"
+   ],
+   "titles": {
+    "ja": "ビタファイターズ"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.AocaGameLab.Arida": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action",
+    "Action-adventure",
+    "Survival",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Appholdings.Plumber3": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Logic",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {
+    "nl": "Loodgieter 3",
+    "de": "Klempner 3",
+    "fr": "Plombier 3",
+    "es": "Fontanero 3",
+    "it": "Idraulico 3",
+    "pt": "Encanador 3",
+    "ja": "プランバー3"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.AwesomeGamesStudio.FuryUnleashed": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action",
+    "Platformer",
+    "Run & gun",
+    "Casual",
+    "Stylized"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.BatoviGamesStudio.PixelCupSoccer19": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Sports",
+    "Soccer",
+    "Multiplayer",
+    "Competitive multiplayer",
+    "Stylized",
+    "Pixelated",
+    "Competitive",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.BlackSaltGames.DREDGE": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action",
+    "Action-adventure",
+    "Survival",
+    "Stylized",
+    "Immersive"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.BlazingPlanetStudio.ChoiceofLifeMiddleAges2": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Card"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.BlazingPlanetStudio.ChoiceofLifeSamosbor": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Card"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.BlazingPlanetStudio.ChoiceofLifeWildIslands1": {
+   "checked": "2026-10-04",
+   "tags": [],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.BlazingPlanetStudio.Lanternium": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.BlazingPlanetStudio.TheChoiceofLifeMiddleAges": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Card"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Boomware.CafePanic": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Time management",
+    "Arcade",
+    "Single player",
+    "Stylized",
+    "Cooking",
+    "Food",
+    "Offline"
+   ],
+   "titles": {
+    "de": "Cafe Panic: Kochspiele",
+    "fr": "Cafe Panic: Jeux de cuisine",
+    "es": "Cafe Panic: Juego de Cocina",
+    "it": "Cafe Panic: Gioca e cucina",
+    "pt": "Cafe Panic: Jogo de cozinha",
+    "ja": "カフェ・パニック: 料理ゲーム・レストラン ゲーム"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.BrightGlade.Bouncefield": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Brick break",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Chorrus.UnbrokenSoul": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action",
+    "Platformer",
+    "Hack & slash",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Pixelated",
+    "Intense",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.CrazyMonkeyStudios.Hidden": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Hidden object",
+    "Casual",
+    "Stylized",
+    "Light-hearted"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.DMAP.Ting_WD": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Pixelated",
+    "Mystery",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Devolver.ExittheGungeon": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action",
+    "Stylized",
+    "Pixelated",
+    "Intense"
+   ],
+   "titles": {
+    "nl": "Exit the Gungeon",
+    "de": "Exit the Gungeon",
+    "fr": "Exit the Gungeon",
+    "es": "Exit the Gungeon",
+    "it": "Exit the Gungeon",
+    "pt": "Exit the Gungeon",
+    "ja": "Exit the Gungeon"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.DifLabs.Differences": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Find the difference",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Light-hearted",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.EducaGames.MathLandFull": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Educational",
+    "Mathematics",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {
+    "de": "MathLand Vollversion: Addition",
+    "fr": "MathLand: jeu de calcul mental",
+    "es": "MathLand: Cálculo mental",
+    "it": "MathLand: Giochi di aritmetica",
+    "pt": "Math Land: Jogos de aritmética"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Edujoy.supermarket": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Cartoon",
+    "Offline"
+   ],
+   "titles": {
+    "nl": "Baby Supermarkt",
+    "de": "Supermarkt für Säuglinge",
+    "fr": "Supermarché pour bébés",
+    "es": "Supermercado para bebés",
+    "it": "Supermercato per bambini",
+    "pt": "Supermercado para bebês"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.FATSTAR.MergeKitchen": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Casual"
+   ],
+   "titles": {
+    "nl": "マジキッチン - MERGE KITCHEN -",
+    "de": "マジキッチン - MERGE KITCHEN -",
+    "fr": "マジキッチン - MERGE KITCHEN -",
+    "es": "マジキッチン - MERGE KITCHEN -",
+    "it": "マジキッチン - MERGE KITCHEN -",
+    "pt": "マジキッチン - MERGE KITCHEN -",
+    "ja": "マジキッチン - MERGE KITCHEN -"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.FDGEntertainment.BeyondYnth": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Logic",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.FDGEntertainment.redball4.gp": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action",
+    "Platformer",
+    "Arcade",
+    "Single player",
+    "Stylized",
+    "Cartoon",
+    "Jump",
+    "Cute",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.FeeUtsuro": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Word"
+   ],
+   "titles": {
+    "ja": "完全版 うつろにっき"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.FireTotemGames.AWebbingJourney": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.FireproofStudios.TheRoom": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Stylized-realistic",
+    "Puzzles",
+    "Mystery",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.FireproofStudios.TheRoom2": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Escape",
+    "Single player",
+    "Stylized",
+    "Puzzles",
+    "Mystery",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.FireproofStudios.TheRoom3": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Single player",
+    "Stylized",
+    "Stylized-realistic",
+    "Puzzles",
+    "Mystery",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.FireproofStudios.TheRoom4": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Puzzles",
+    "Mystery",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Fivestones.Alter": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Logic",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {
+    "pt": "ALTER: Entre Dois Mundos",
+    "ja": "ALTER：2つの世界の間"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Role Playing",
+    "Roguelike",
+    "Single player",
+    "Stylized",
+    "Monster",
+    "Vampire"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Flanne.MinutesTillDawn.roguelike.shooting.gp": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Role Playing",
+    "Roguelike",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Pixelated",
+    "Monster",
+    "Intense",
+    "Offline"
+   ],
+   "titles": {
+    "de": "20 Minutes Till Dawn",
+    "fr": "20 Minutes Till Dawn",
+    "es": "20 Minutes Till Dawn",
+    "pt": "20 Minutes Till Dawn",
+    "ja": "20 Minutes Till Dawn"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.FlorianVanStrien.TheFinalEarth2": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Management",
+    "City-building",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Pixelated",
+    "Offline"
+   ],
+   "titles": {
+    "de": "The Final Earth 2: Aufbauspiel",
+    "fr": "The Final Earth 2",
+    "es": "The Final Earth 2",
+    "pt": "The Final Earth 2"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.FurtleGame.ClutchHero": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Vehicle",
+    "Car sim",
+    "Casual",
+    "Single player",
+    "Stylized"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Games751.LifeGallery": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Single player",
+    "Stylized",
+    "Horror",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.GamesForKids.BabyPreschoolLearning.ToddlerGames": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Educational",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Cartoon",
+    "Offline"
+   ],
+   "titles": {
+    "de": "Kleinkind Lernen Kinder spiel",
+    "fr": "Jeu pour les tout-petits",
+    "es": "Juegos para niños pequeños",
+    "it": "Giochi per bambini piccoli",
+    "pt": "Jogos para crianças pequenas"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.GamesForKids.Mathgames.MultiplicationTables": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Educational",
+    "Mathematics",
+    "Casual",
+    "Multiplayer",
+    "Competitive multiplayer",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {
+    "nl": "Wiskundige spellen",
+    "de": "Mathe-Spiele",
+    "fr": "Jeux de maths - 2020",
+    "es": "Juegos matemáticos",
+    "it": "Giochi di matematica",
+    "pt": "Jogos de matemática",
+    "ja": "数学ゲーム - たし算、ひき算、かけ算、わり"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Gbrossoft.OutliverTribulation": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.GeorgeBatchelor.BirdAlone": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Interactive story",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Fantasy",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Gimzat.ColorsSorting": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Casual",
+    "Single player",
+    "Abstract",
+    "Offline"
+   ],
+   "titles": {
+    "de": "Ball Sort: Kunterbunt!",
+    "fr": "Ball Sort : Multicolore",
+    "es": "Ball Sort: Ordena colores",
+    "it": "Ball Sort: ordina le sfere",
+    "pt": "Ball Sort: Cores Organizadas",
+    "ja": "ボールソート：色分けパズル"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Goblinz.TrueFear": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Single player",
+    "Stylized",
+    "Stylized-realistic",
+    "Mystery",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Gseeds.Pechka": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Interactive story",
+    "Casual",
+    "Single player",
+    "Stylized"
+   ],
+   "titles": {
+    "de": "Pechka | visual novel",
+    "fr": "Pechka histoires interactives",
+    "es": "Pechka | juegos de historia",
+    "pt": "Pechka: Jogo de história",
+    "ja": "ペチカ | ストーリーゲーム ノベルゲーム"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Gseeds.ThePhantomOfTheOpera": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Interactive story",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Anime",
+    "Mystery"
+   ],
+   "titles": {
+    "de": "Das Phantom der Oper | Mystery",
+    "fr": "Le Fantôme de l'Opéra | noir",
+    "es": "El Fantasma de la Ópera",
+    "pt": "O Fantasma da Ópera | Aventura",
+    "ja": "オペラ座の怪人 | アドベンチャーゲーム"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.HeatMachine.WordAndWord": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Word",
+    "Search",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {
+    "es": "Gold for Words・Sopa de Letras"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.HiKingMind.FollowTheMeaning": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.HighbrowInteractive.EuroTrainSim2": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Vehicle",
+    "Train",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {
+    "de": "Euro 2: Zugspiel",
+    "fr": "Euro 2: Jeux de Train",
+    "es": "Euro 2: Juego de Tren",
+    "it": "Euro 2: Gioco del Treno",
+    "pt": "Euro 2: Jogo de Trem",
+    "ja": "ユーロ トレイン シミュレーター 2"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.HighbrowInteractive.IndianTrainSim": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Vehicle",
+    "Train",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Vehicles",
+    "Offline"
+   ],
+   "titles": {
+    "de": "Indischer Zugsimulator: Spiel",
+    "fr": "Simulateur de train indien",
+    "pt": "Simulador de trem indiano",
+    "ja": "インドの鉄道シミュレーター: ゲーム"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.HolyCow.MysticPillars": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Mystery",
+    "Offline"
+   ],
+   "titles": {
+    "ja": "ミスティック・ピラーズ×カンタラ"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.HuaYiGame.DeliveryFromThePain.GooglePlay": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action",
+    "Action-adventure",
+    "Survival",
+    "Casual",
+    "Stylized",
+    "Zombie",
+    "Immersive"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.IcedropGames.LOK": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Ilugon.counting.learning.numbers.tracing": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Educational",
+    "Mathematics",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {
+    "nl": "Leer getallen voor kinderen",
+    "de": "Zählen lernen für kinder ab 2",
+    "fr": "Jeux éducatifs les nombres 123",
+    "es": "Juegos de números para niños",
+    "it": "Giochi Impara Numeri Bambini",
+    "pt": "Aprender números para crianças",
+    "ja": "3歳から5歳児向け数字を学ぶ教育ゲーム"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.ImaginativeGames.GunUp2048": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action",
+    "Platformer",
+    "Casual",
+    "Single player",
+    "Stylized"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Itaotuo.PocketCat.googleplay": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Stylized"
+   ],
+   "titles": {
+    "ja": "警察ミモ"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.IvanKovalov.G30Android": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Logic",
+    "Casual",
+    "Abstract"
+   ],
+   "titles": {
+    "de": "G30 - Gedächtnislabyrinth",
+    "fr": "G30 - Labyrinthe de mémoire",
+    "es": "G30 - Laberinto de memoria",
+    "pt": "G30 - Labirinto da memória",
+    "ja": "G30 - 記憶の迷路"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.IvanKovalov.quadline.android": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Logic",
+    "Casual",
+    "Single player",
+    "Abstract",
+    "Light-hearted",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.JESoftware.LastHopeSniper3": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action",
+    "Shooter",
+    "Bulletstorm",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Weapons",
+    "Gun",
+    "Zombie",
+    "Offline"
+   ],
+   "titles": {
+    "de": "Zombie Sniper War 3: Feuer FPS"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.JESoftware.LastHopeTD": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Strategy",
+    "Tower defense",
+    "Single player",
+    "Stylized",
+    "Zombie",
+    "Battling",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.JourneyBoundGames.PathofGaints": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Logic",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.JuliaFisher.BrainyKid34": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Educational",
+    "Language",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {
+    "nl": "Slimme kinderspellen voor 3-4",
+    "de": "Lernspiele für Kinder von 3-4",
+    "fr": "jeux éducatifs pour enfants 3",
+    "es": "Juegos para niños de 3-4 años",
+    "it": "Giochi per bambini di 3-4 anni",
+    "pt": "Games for girls. Puzzle games"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.KickBack.LostEchoAdventure": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Single player",
+    "Stylized",
+    "Mystery",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.KidsFreeGame.Piano.Rhymes.Rhymes": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Educational",
+    "Language",
+    "Abc",
+    "Single player",
+    "Stylized",
+    "Cartoon",
+    "Offline"
+   ],
+   "titles": {
+    "de": "Baby-Klavierspiele für Kinder",
+    "fr": "Jeux de piano bébé pour enfant",
+    "es": "juegos de piano para niños",
+    "pt": "Jogos de piano para crianças",
+    "ja": "ベビーピアノゲーム＆キッズミュージック"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.KidsFreeGames.Mosaic.Puzzles": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Casual",
+    "Single player",
+    "Abstract",
+    "Offline"
+   ],
+   "titles": {
+    "nl": "Mozaïek puzzels kunstspel",
+    "de": "Mosaik-Puzzle-Spiel für Kinder",
+    "fr": "Mosaic Puzzles Art Jeu Enfants",
+    "es": "Mosaico Rompecabezas Arte",
+    "it": "Gioco Puzzle Mosaico, Bambini",
+    "pt": "Jogo de quebra-cabeças mosaico",
+    "ja": "モザイクゲーム - ブロック、ビーズと六角パズル。"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.KidsFreeGames.Puzzles.NurseyRhymes": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Educational",
+    "Language",
+    "Abc",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Cartoon",
+    "Offline"
+   ],
+   "titles": {
+    "de": "Kinderlieder Lieder & Spiele.",
+    "fr": "Comptine Chansons et jeux.",
+    "ja": "童謡歌＆ゲーム。"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.KidsFreeGames.coloring.pixel.art.tangram.puzzles.toddlers": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Educational"
+   ],
+   "titles": {
+    "de": "Pixel Art Malspiele für Kinder",
+    "ja": "キッズピクセルアートぬりえゲーム"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.KonfaGames.Despotism3k": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Strategy",
+    "Tactics",
+    "Casual",
+    "Stylized",
+    "Pixelated"
+   ],
+   "titles": {
+    "de": "Despotism 3k (Despotismus 3k)",
+    "es": "Despotism 3k (Despotismo 3k)",
+    "ja": "Despotism 3k (専制 3k)"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.KrakerStudio.IHeelGood": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {
+    "de": "ASMR Tippy Toe - befriedigende",
+    "fr": "ASMR Tippy Toe - satisfaisants",
+    "es": "ASMR Tippy Toe - satisfactoria",
+    "it": "ASMR Tippy Toe - soddisfacenti",
+    "pt": "ASMR Tippy Toe - satisfatórios",
+    "ja": "ASMR Tippy Toe - 満足のいくゲーム"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.LearnyLand.Bugs2": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Education"
+   ],
+   "titles": {
+    "nl": "Beestjes 2: Hoe zien ze eruit?",
+    "de": "Die Käfer 2: Wie sind sie?",
+    "fr": "Petites Bêtes 2 : Découvre!",
+    "es": "Los Bichos 2: ¿Cómo son?",
+    "it": "The Bugs 2: Come sono?",
+    "pt": "Os Bichos 2: Como eles são?"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.LearnyLand.MayTheForces": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Education"
+   ],
+   "titles": {
+    "nl": "Mogen de krachten met je zijn",
+    "de": "Mögen die Kräfte mit dir sein",
+    "fr": "Que les forces soient avec toi",
+    "es": "Que las fuerzas te acompañen",
+    "it": "Che le forze siano con te",
+    "pt": "Que as forças estejam com você",
+    "ja": "フォースが共にあらんことを"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Level5.LT1RNA": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Single player",
+    "Stylized",
+    "Mystery"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Level5.LT2RNA": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Anime",
+    "Mystery"
+   ],
+   "titles": {
+    "fr": "Layton : boîte de Pandore HD",
+    "es": "Layton y la caja de Pandora HD"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Level5.LaytonMJNA": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {
+    "es": "Misterioso viaje de Layton"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.LithGames.FirstDay": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Interactive story",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.LittleBerryGames.ForestStory": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Casual",
+    "Stylized"
+   ],
+   "titles": {
+    "es": "Bosque pequeña baya",
+    "ja": "リトルベリーの森物語 1"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.LozangeLab.ShuttleShuffle": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Logic",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.MadMimic.DandyAce": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Role Playing",
+    "Roguelike",
+    "Single player",
+    "Stylized",
+    "Immersive",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Majorariatto.Majotori_v2": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Trivia",
+    "Multiple-choice",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Majorariatto.Pureya": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Arcade"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Makhmutov.Timeflow": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Management",
+    "Tycoon",
+    "Casual",
+    "Stylized",
+    "Light-hearted"
+   ],
+   "titles": {
+    "de": "Timeflow: Zeit ist Geld sim",
+    "fr": "Timeflow: Temps et argent",
+    "es": "Timeflow: Tiempo y dinero",
+    "it": "Timeflow: Tempo e denaro",
+    "ja": "Timeflow：時は金なりのシム"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.MobileSportsTime.MiniGolfEldoradoGolfCourse": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Sports",
+    "Golf",
+    "Mini golf",
+    "Casual",
+    "Multiplayer",
+    "Competitive multiplayer",
+    "Single player",
+    "Stylized",
+    "Cute",
+    "Offline"
+   ],
+   "titles": {
+    "nl": "Mini Golf 3D Multiplayer Spel",
+    "es": "Mini Golf Rival Multijugador",
+    "ja": "ミニゴルフ 3D マルチプレイヤー ライバル"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.MobimiGames.CarSimulator2018": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Vehicle",
+    "Car sim",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Vehicles",
+    "Car",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.MobimiGames.FuriousCarDriving": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Vehicle",
+    "Car sim",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Vehicles",
+    "Car",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.MonsterCouch.Calico": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Board",
+    "Abstract strategy",
+    "Single player",
+    "Stylized",
+    "Animals",
+    "Cat",
+    "Competitive",
+    "Offline"
+   ],
+   "titles": {
+    "ja": "キャリコ ～陽だまりネコとパッチワーク～"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.MorionStudio.ConquistadorioFull": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Single player",
+    "Stylized",
+    "Mystery",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.MrSamBarlow.HerStoryGame": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Casual",
+    "Single player",
+    "Realistic",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Nanali.SallysLaw": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action",
+    "Platformer",
+    "Arcade",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {
+    "de": "Sally‘s Law",
+    "ja": "サリーの法則"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.NcznDesign.OneBallPuzzleGames.BrainTeasers": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Logic",
+    "Casual",
+    "Single player",
+    "Abstract",
+    "Light-hearted",
+    "Offline"
+   ],
+   "titles": {
+    "nl": "Bestemming – Focustraining",
+    "de": "Entraînement concentré",
+    "fr": "Destination – Formation ciblée",
+    "es": "Entrenamiento de enfoque",
+    "it": "Allenamento focalizzato",
+    "pt": "Destino - Treinamento de Foco",
+    "ja": "デスティネ - フォーカストレーニング"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.NikuGames.Palace_on_the_hill_demo": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.OrubeGameStudio.DwarfJourney": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action",
+    "Platformer",
+    "Hack & slash",
+    "Casual",
+    "Stylized",
+    "Pixelated",
+    "Fantasy",
+    "Medieval fantasy"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.OskarStalberg.Townscaper": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Management",
+    "City-building",
+    "Casual",
+    "Stylized",
+    "Business & profession",
+    "Business empire",
+    "City"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.PIXELCELLS.AntColony2": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Strategy",
+    "4X",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Pixelated",
+    "Immersive",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.PanikArcade.CloverPit": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Casino",
+    "Casino-adventure",
+    "Single player",
+    "Stylized"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.PlausibleConcept.BadNorthFull": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Strategy",
+    "Wargame",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Viking",
+    "Battling",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Playstack.AKxolotl": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action"
+   ],
+   "titles": {
+    "de": "Ak-Xolotl",
+    "es": "Ak-xolotl"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Polyculture.Prune": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Casual",
+    "Abstract",
+    "Light-hearted"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.RHPOSITIVE.squbedarkness": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action",
+    "Platformer",
+    "Casual",
+    "Multiplayer",
+    "Competitive multiplayer",
+    "Single player",
+    "Abstract",
+    "Dark"
+   ],
+   "titles": {
+    "ja": "スクーブダークネス(Sqube Darkness)"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.RedLineGames.Game49": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Food",
+    "Ice cream",
+    "Fantasy"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.RobotGentleman.game60SecondsReatomized": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action",
+    "Action-adventure",
+    "Survival",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Science fiction",
+    "Apocalyptic",
+    "House & garden",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.RobotGentleman.sixtyParsecs.mobile": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Cartoon",
+    "Science fiction",
+    "Space",
+    "Mystery",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Rogueside.HTT2": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Hidden object",
+    "Casual",
+    "Stylized"
+   ],
+   "titles": {
+    "nl": "Hidden Through Time 2",
+    "de": "Hidden Through Time 2",
+    "fr": "Hidden Through Time 2",
+    "es": "Hidden Through Time 2",
+    "it": "Hidden Through Time 2",
+    "pt": "Hidden Through Time 2",
+    "ja": "Hidden Through Time 2"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Rogueside.HTT3": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Hidden object",
+    "Stylized",
+    "Light-hearted",
+    "Modern"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.RoshanGames.HorseShoe3D": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Casual"
+   ],
+   "titles": {
+    "ja": "馬の蹄鉄3D - トスゲーム"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.RoshanGames.ShuffleBoard": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Sports"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.RustyLake.ThePastWithin": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Stylized",
+    "Mystery",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Seabaa.Dual": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action",
+    "Casual",
+    "Multiplayer",
+    "Competitive multiplayer",
+    "Abstract",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.SeashellStudio.RunningFable": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Racing"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.SecretModeLimited.ALittletotheLeft": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Single player",
+    "Stylized",
+    "Light-hearted",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.SerenityForge.LISATheJoyfulDefinitiveEdition": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.SerenityForge.LISAThePainfulDefinitiveEdition": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Science fiction",
+    "Apocalyptic"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.ShanghaiWindy.PanzerWarDEM": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Action",
+    "Shooter",
+    "Vehicle combat",
+    "Multiplayer",
+    "Competitive multiplayer",
+    "Single player",
+    "Realistic",
+    "Intense",
+    "Modern",
+    "Military",
+    "Offline"
+   ],
+   "titles": {
+    "ja": "パンツァー戦争：決定版"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.ShinyShoe.MonsterTrain": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Role Playing",
+    "Turn-based RPG",
+    "Single player",
+    "Stylized",
+    "Monster",
+    "Immersive"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.ShortCircuitStudio.TeenyTinyTown": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.SleepingMuseum.DeathAntique": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure"
+   ],
+   "titles": {
+    "pt": "DeathAntique: Horror & Cards",
+    "ja": "デスアンティーク：魂ひろいと死神の絵札"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.SquareTriangle.BowlingNL": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Sports",
+    "Bowling",
+    "Casual",
+    "Multiplayer",
+    "Competitive multiplayer",
+    "Stylized"
+   ],
+   "titles": {
+    "de": "Bowling Clash: Sportspiel",
+    "fr": "Bowling Clash: jeu de sport",
+    "es": "Bowling Clash: Sports Game",
+    "it": "Bowling Clash: Sports Game",
+    "pt": "Bowling Clash: jogo esportivo",
+    "ja": "Bowling Clash: Sports Game"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.StefMorojna.SpaceflightSimulator": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Casual",
+    "Single player",
+    "Realistic",
+    "Vehicles",
+    "Rocket",
+    "Launch",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Stones100.TheEyesOfAra": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Puzzle-adventure",
+    "Casual",
+    "Single player",
+    "Realistic",
+    "Offline"
+   ],
+   "titles": {
+    "es": "Los Ojos de Ara",
+    "it": "Gli Occhi di Ara",
+    "pt": "Os Olhos de Ara"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Studio17.Repit": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Studio17.drawriderplus": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Racing",
+    "Stunt driving",
+    "Casual",
+    "Single player",
+    "Abstract",
+    "Vehicles",
+    "Bicycle",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Studio17.slender": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Single player",
+    "Stylized",
+    "Pixelated",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.StudioFolly.GUBBINS": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Word",
+    "Search",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Light-hearted",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.StudioKingmo.SumoRoll": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Casual"
+   ],
+   "titles": {
+    "ja": "相撲巻 - SumoRoll 横綱への道"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.StudioTwoBeans.HorseQuest": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Life",
+    "Casual",
+    "Multiplayer",
+    "Competitive multiplayer",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {
+    "nl": "Paard",
+    "de": "Pferd",
+    "fr": "Cheval",
+    "es": "Caballo",
+    "it": "Cavallo",
+    "pt": "Cavalo",
+    "ja": "うま"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.StudioWaterzooi.PleaseTouchTheArtwork": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Logic",
+    "Casual",
+    "Single player",
+    "Abstract"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.SuperAwesome.HP": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Physics",
+    "Single player",
+    "Stylized",
+    "Handicraft",
+    "Animals",
+    "Offline"
+   ],
+   "titles": {
+    "de": "Hamsterhausen",
+    "fr": "Hamsterville",
+    "es": "Villa Hámster",
+    "it": "Cricetolandia",
+    "pt": "Vila Hamster",
+    "ja": "ハムスタータウン"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.THIRTEENDAYS.CatherineTheVampire": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.THIRTEENDAYS.SOMEDAY": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Adventure",
+    "Casual",
+    "Single player",
+    "Stylized",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.TheHohngCompany.Cubistry": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Pair matching",
+    "Casual",
+    "Single player",
+    "Abstract",
+    "Light-hearted",
+    "Offline"
+   ],
+   "titles": {},
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.TravelMergeFamily": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Puzzle",
+    "Merge"
+   ],
+   "titles": {
+    "nl": "Travel Merge Family: Huis spel",
+    "de": "Travel Merge Family: Kombinier",
+    "fr": "Travel Merge Family: Fusion",
+    "es": "Travel Merge Family: Fusión",
+    "it": "Travel Merge Family: Unisci",
+    "pt": "Travel Merge Family",
+    "ja": "トラベルマージファミリー！"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.TwinCrab.Motorpolia": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Simulation",
+    "Idle",
+    "Casual",
+    "Single player",
+    "Abstract",
+    "Vehicles",
+    "Car"
+   ],
+   "titles": {
+    "de": "State Connect: Straßenverkehr",
+    "fr": "State Connect : trafic routier",
+    "es": "State Connect: Tráfico Rodado",
+    "it": "State Connect: Re del traffico",
+    "pt": "State Connect: Jogo de Tráfego",
+    "ja": "ステイトコネクト：交通整理"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.TwoPi.TU_Premium": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Casual"
+   ],
+   "titles": {
+    "de": "Tangled Up",
+    "fr": "Tangled Up",
+    "es": "Tangled Up",
+    "ja": "絡まってる!"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
+  "com.Valorware.NinthDawnRemake": {
+   "checked": "2026-10-04",
+   "tags": [
+    "Role Playing"
+   ],
+   "titles": {
+    "de": "9th Dawn Remake",
+    "fr": "9th Dawn Remake",
+    "es": "9th Dawn Remake",
+    "pt": "9th Dawn Remake",
+    "ja": "9th Dawn Remake  ナインス・ドーン・リメイク"
+   },
+   "texts": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "pt"
+   ]
+  },
   "com.ustwo.monumentvalley2": {
    "checked": "2026-10-04",
    "tags": [
@@ -53,104 +4601,904 @@
  },
  "tagNames": {
   "de": {
+   "Abc": "ABC",
    "Abstract": "Abstrakt",
+   "Abstract strategy": "Abstrakte Strategie",
+   "Action Role-Playing": "Action-Rollenspiele",
+   "Action-adventure": "Action-Adventure",
+   "Adventure": "Abenteuer",
+   "Animals": "Tiere",
+   "Apocalyptic": "Apokalyptisch",
+   "Battling": "Kampf",
+   "Bicycle": "Fahrrad",
+   "Board": "Brettspiele",
+   "Brain teaser": "Denkspiel",
+   "Brick break": "Ziegelbrecher",
+   "Bubble shooter": "Bubble Shooter",
    "Business & profession": "Geschäft und Beruf",
+   "Business empire": "Firmenimperium",
+   "Car": "Auto",
+   "Car race": "Autorennen",
+   "Car sim": "Autosimulator",
+   "Card": "Karten",
+   "Cartoon": "Zeichentrick",
+   "Casino-adventure": "Casino-Abenteuer",
+   "Cat": "Katze",
+   "City": "Stadt",
+   "City-building": "Städtebau",
+   "Competitive": "Kompetitiv",
+   "Competitive multiplayer": "Wettkampforientierter Mehrspielermodus",
    "Construction": "Bau",
+   "Cooking": "Kochen",
+   "Crossword": "Kreuzworträtsel",
+   "Cute": "Niedlich",
+   "Dress-up": "Verkleiden",
+   "Education": "Lernen",
+   "Educational": "Lernen",
+   "Fashion": "Mode",
+   "Fighting": "Kampf",
+   "Find the difference": "Unterschiede finden",
+   "Food": "Essen",
+   "Funny": "Lustig",
+   "Guitar": "Gitarre",
+   "Gun": "Gewehr",
+   "Hack & slash": "Hack and Slay",
+   "Handicraft": "Handwerk",
+   "Hidden object": "Wimmelbild",
+   "House & garden": "Haus und Garten",
+   "Ice cream": "Eis",
+   "Immersive": "Eindringlich",
+   "Intense": "Spannend",
+   "Interactive story": "Interaktive Geschichten",
+   "Jigsaw": "Puzzle",
+   "Jump": "Springen",
+   "Language": "Sprache",
+   "Launch": "Abschießen",
+   "Life": "Leben",
    "Logic": "Logik",
+   "Low poly": "Low Poly",
+   "Makeup": "Schminken",
+   "Maps & Navigation": "Karten & Navigation",
+   "Match 3": "3 gewinnt",
+   "Match 3 adventure": "3-gewinnt-Abenteuer",
+   "Mathematics": "Mathematik",
+   "Medieval": "Mittelalter",
+   "Medieval fantasy": "Mittelalter-Fantasy",
+   "Military": "Militär",
+   "Mini golf": "Minigolf",
    "Miscellaneous": "Sonstiges",
+   "Motorcycle": "Motorrad",
+   "Multiplayer": "Mehrspieler",
+   "Multiple-choice": "Multiple Choice",
+   "Music": "Musik",
+   "Music sim": "Musiksimulation",
+   "Mystery": "Mystisch",
+   "Pair matching": "Paare zuordnen",
+   "Performance": "Leistungsspiele",
+   "Physics": "Physik",
+   "Pixelated": "Pixel",
+   "Platformer": "Jump 'n' Run",
    "Princess": "Prinzessin",
+   "Productivity": "Effizienz",
    "Puzzle": "Geduldsspiele",
+   "Puzzle-adventure": "Rätselabenteuer",
    "Puzzles": "Rätsel",
+   "Race car": "Rennwagen",
+   "Realistic": "Realistisch",
    "Renovation": "Renovierung",
-   "Single player": "Einzelspieler"
+   "Robot": "Roboter",
+   "Rocket": "Rakete",
+   "Role Playing": "Rollenspiele",
+   "Run & gun": "Run ’n’ Gun",
+   "Science fiction": "Science-Fiction",
+   "Search": "Suche",
+   "Shop & supermarket": "Geschäft und Supermarkt",
+   "Single player": "Einzelspieler",
+   "Soccer": "Fußball",
+   "Space": "Weltraum",
+   "Sports": "Sport",
+   "Strategy": "Strategie",
+   "Stunt driving": "Stunt-Rennen",
+   "Stylized": "Stilisiert",
+   "Stylized-realistic": "Stilisiert, realistisch",
+   "Tactics": "Taktik",
+   "Time management": "Zeitmanagement",
+   "Tower defense": "Tower Defense",
+   "Train": "Zug",
+   "Trivia": "Quiz",
+   "Turn-based RPG": "Rundenbasiertes Rollenspiel",
+   "Tycoon": "Magnat",
+   "Vampire": "Vampir",
+   "Vehicle": "Fahrzeug",
+   "Vehicle combat": "Fahrzeugkampf",
+   "Vehicles": "Fahrzeuge",
+   "Viking": "Wikinger",
+   "Wargame": "Kriegsspiel",
+   "Weapons": "Waffen",
+   "Word": "Worträtsel"
   },
   "es": {
+   "Abc": "ABC",
    "Abstract": "Abstracto",
+   "Abstract strategy": "Abstracto de estrategia",
+   "Action": "Acción",
+   "Action Role-Playing": "Juegos de rol de acción",
+   "Action-adventure": "Acción y aventuras",
+   "Adventure": "Aventura",
+   "Animals": "Animales",
+   "Apocalyptic": "Apocalíptico",
+   "Battling": "Batalla",
+   "Bicycle": "Bicicleta",
+   "Board": "Juegos de mesa",
+   "Bowling": "Bolos",
+   "Brain teaser": "Estimulación mental",
+   "Brick break": "Rompebloques",
+   "Bubble shooter": "Disparar burbujas",
+   "Bulletstorm": "Disparos",
    "Business & profession": "Negocios y profesiones",
+   "Business empire": "Imperio empresarial",
+   "Car": "Coche",
+   "Car race": "Carrera automovilística",
+   "Car sim": "Simulador de coches",
+   "Card": "Cartas",
+   "Cartoon": "Dibujos",
+   "Casino-adventure": "Casino y aventura",
    "Casual": "Casuales",
+   "Cat": "Gato",
+   "City": "Ciudad",
+   "City-building": "Construcción de ciudades",
+   "Competitive": "Competitivo",
+   "Competitive multiplayer": "Multijugador competitivos",
    "Construction": "Construcción",
+   "Cooking": "Cocina",
+   "Crossword": "Crucigramas",
+   "Cute": "Adorable",
+   "Design": "Diseño",
+   "Dominos": "Dominó",
+   "Dress-up": "Disfraces",
+   "Education": "Educación",
+   "Educational": "Educativos",
+   "Fantasy": "Fantasía",
+   "Fashion": "Moda",
+   "Fighting": "Lucha",
+   "Find the difference": "Encuentra las diferencias",
+   "Food": "Comida",
+   "Funny": "Divertido",
+   "Guitar": "Guitarra",
+   "Gun": "Pistola",
+   "Hack & slash": "Hack and slash",
+   "Handicraft": "Manualidades",
+   "Hidden object": "Objetos ocultos",
+   "Horror": "Terror",
+   "House & garden": "Casa y jardín",
+   "Ice cream": "Helado",
+   "Idle": "Incremental",
+   "Immersive": "Inmersivo",
+   "Intense": "Intenso",
+   "Interactive story": "Historia interactiva",
+   "Jigsaw": "Rompecabezas",
+   "Jump": "Saltar",
+   "Language": "Lenguaje",
+   "Launch": "Lanzar",
+   "Life": "Vida",
+   "Lifestyle": "Estilo de vida",
    "Logic": "Lógica",
+   "Makeup": "Maquillaje",
    "Management": "Gestión",
+   "Maps & Navigation": "Mapas y navegación",
+   "Match 3": "Unir 3",
+   "Match 3 adventure": "Conecta 3 y aventura",
+   "Mathematics": "Matemáticas",
+   "Medieval fantasy": "Fantasía medieval",
+   "Merge": "Combinación",
+   "Military": "Fuerzas armadas",
+   "Mini golf": "Minigolf",
    "Miscellaneous": "Varios",
+   "Modern": "Moderno",
+   "Monster": "Monstruo",
+   "Motorcycle": "Motos",
+   "Multiplayer": "Multijugador",
+   "Multiple-choice": "Preguntas con varias opciones",
+   "Music": "Música",
+   "Music sim": "Simulación musical",
+   "Mystery": "Misterio",
    "Offline": "Sin conexión",
+   "Pair matching": "Emparejar",
+   "Performance": "Representación",
+   "Physics": "Física",
+   "Pixelated": "Pixelados",
+   "Platformer": "Juegos de plataformas",
    "Princess": "Princesa",
+   "Productivity": "Productividad",
    "Puzzle": "Puzles",
+   "Puzzle-adventure": "Aventura de puzles",
    "Puzzles": "Rompecabezas",
+   "Race car": "Coche de carreras",
+   "Racing": "Carreras",
+   "Realistic": "Realistas",
    "Renovation": "Reformas",
+   "Rocket": "Cohete",
+   "Roguelike": "Mazmorras",
+   "Role Playing": "Juegos de rol",
+   "Run & gun": "Plataformas y disparos",
+   "Science fiction": "Ciencia ficción",
+   "Search": "Búsqueda",
+   "Shooter": "Disparos",
+   "Shop & supermarket": "Tienda y supermercado",
    "Simulation": "Simulación",
-   "Single player": "Un jugador"
+   "Single player": "Un jugador",
+   "Soccer": "Fútbol",
+   "Space": "Espacio",
+   "Sports": "Deportes",
+   "Strategy": "Estrategia",
+   "Stunt driving": "Acrobacias con vehículos",
+   "Stylized": "Estilizados",
+   "Stylized-realistic": "Estilizados y realistas",
+   "Survival": "Supervivencia",
+   "Tactics": "Tácticas",
+   "Time management": "Gestión del tiempo",
+   "Tower defense": "Defensa de torres",
+   "Train": "Tren",
+   "Trivia": "Preguntas",
+   "Turn-based RPG": "RPG por turnos",
+   "Tycoon": "Magnates",
+   "Vampire": "Vampiro",
+   "Vehicle": "Vehículo",
+   "Vehicle combat": "Combate con vehículos",
+   "Vehicles": "Vehículos",
+   "Viking": "Vikingo",
+   "Wargame": "Juegos de guerra",
+   "Weapons": "Armas",
+   "Word": "Palabras",
+   "Zombie": "Zombi"
   },
   "fr": {
+   "Abc": "ABC",
    "Abstract": "Abstrait",
+   "Abstract strategy": "Jeux de stratégie abstraits",
+   "Action Role-Playing": "Action-RPG",
+   "Action-adventure": "Action-aventure",
+   "Adventure": "Aventure",
+   "Animals": "Animaux",
+   "Apocalyptic": "Apocalypse",
+   "Battling": "Combat",
+   "Bicycle": "Vélo",
+   "Board": "Jeux de société",
+   "Brain teaser": "Casse-tête",
+   "Brick break": "Casse-briques",
+   "Bubble shooter": "Bubble Shooter",
    "Business & profession": "Entreprise et profession",
+   "Business empire": "Empire commercial",
+   "Car": "Voiture",
+   "Car race": "Course de voitures",
+   "Car sim": "Simulateur de voiture",
+   "Card": "Cartes",
+   "Cartoon": "Dessin animé",
+   "Casino-adventure": "Casino-aventure",
    "Casual": "Grand public",
+   "Cat": "Chat",
+   "City": "Ville",
+   "City-building": "Construction de ville",
+   "Competitive": "Compétition",
+   "Competitive multiplayer": "Multijoueur en compétition",
+   "Cooking": "Cuisine",
+   "Crossword": "Mots croisés",
+   "Cute": "Mignon",
+   "Dress-up": "Costumes",
+   "Education": "Enseignement",
+   "Educational": "Éducatifs",
+   "Escape": "Évasion",
+   "Fashion": "Mode",
+   "Fighting": "Jeu de combat",
+   "Find the difference": "Jeu des différences",
+   "Food": "Nourriture",
+   "Funny": "Drôle",
+   "Guitar": "Guitare",
+   "Gun": "Arme à feu",
+   "Hack & slash": "Hack and slash",
+   "Handicraft": "Création",
+   "Hidden object": "Objets cachés",
+   "Horror": "Horreur",
+   "House & garden": "Maison et jardin",
+   "Ice cream": "Glace",
+   "Idle": "Incrémental",
+   "Immersive": "Immersif",
+   "Interactive story": "Jeux d'histoires interactives",
+   "Jigsaw": "Puzzle",
+   "Jump": "Sauter",
+   "Language": "Langue",
+   "Launch": "Lancer",
+   "Life": "Style de vie",
+   "Lifestyle": "Style de vie",
    "Logic": "Logique",
+   "Makeup": "Maquillage",
    "Management": "Gestion de patrimoine",
+   "Maps & Navigation": "Cartes et navigation",
+   "Match 3": "Jeu d'alignement",
+   "Match 3 adventure": "Match 3 et aventure",
+   "Mathematics": "Mathématiques",
+   "Medieval": "Moyen Âge",
+   "Medieval fantasy": "Fantasy médiévale",
+   "Merge": "Fusion",
+   "Military": "Armée",
+   "Mini golf": "Minigolf",
    "Miscellaneous": "Divers",
+   "Modern": "Époque moderne",
+   "Monster": "Monstre",
+   "Motorcycle": "Moto",
+   "Multiplayer": "Multijoueur",
+   "Multiple-choice": "Question à choix multiples",
+   "Music": "Musique",
+   "Music sim": "Simulation musicale",
+   "Mystery": "Mystère",
    "Offline": "Hors connexion",
+   "Pair matching": "Jeux d'association de paires",
+   "Performance": "Performances",
+   "Physics": "Physique",
+   "Pixelated": "Pixelisé",
+   "Platformer": "Jeu de plates-formes",
    "Princess": "Princesse",
+   "Productivity": "Productivité",
    "Puzzle": "Réflexion",
+   "Puzzle-adventure": "Aventure et réflexion",
    "Puzzles": "Casse-tête",
+   "Race car": "Voiture de course",
+   "Racing": "Course",
+   "Realistic": "Réaliste",
    "Renovation": "Rénovation",
-   "Single player": "Solo"
+   "Rocket": "Fusée",
+   "Roguelike": "Rogue-like",
+   "Role Playing": "Jeux de rôles",
+   "Run & gun": "Course et tir",
+   "Science fiction": "Science-fiction",
+   "Search": "Recherche",
+   "Shooter": "Jeu de tir",
+   "Shop & supermarket": "Magasin et supermarché",
+   "Single player": "Solo",
+   "Soccer": "Football",
+   "Space": "Espace",
+   "Sports": "Sport",
+   "Strategy": "Stratégie",
+   "Stunt driving": "Cascades auto",
+   "Stylized": "Stylisé",
+   "Stylized-realistic": "Réaliste et stylisé",
+   "Survival": "Survie",
+   "Tactics": "Jeux tactiques",
+   "Time management": "Gestion du temps",
+   "Trivia": "Culture générale",
+   "Turn-based RPG": "Jeu de rôle en tour par tour",
+   "Tycoon": "Gestion",
+   "Vehicle": "Véhicule",
+   "Vehicle combat": "Combat en véhicule",
+   "Vehicles": "Véhicules",
+   "Wargame": "Jeu de guerre",
+   "Weapons": "Armes",
+   "Word": "Lettres"
   },
   "it": {
+   "Abc": "ABC",
    "Abstract": "Astratto",
+   "Abstract strategy": "Giochi di strategia astratti",
+   "Action": "Azione",
+   "Action Role-Playing": "Di ruolo d'azione",
+   "Action-adventure": "Azione e avventura",
+   "Adventure": "Avventura",
+   "Animals": "Animali",
+   "Apocalyptic": "Apocalittico",
+   "Battling": "Battaglia",
+   "Bicycle": "Bicicletta",
+   "Board": "Giochi da tavolo",
+   "Brain teaser": "Giochi per la mente",
+   "Brick break": "Breccia",
    "Business & profession": "Economia e professione",
+   "Business empire": "Impero commerciale",
+   "Car": "Auto",
+   "Car race": "Gare automobilistiche",
+   "Car sim": "Simulatori di auto",
+   "Card": "Carte",
+   "Cartoon": "Cartoni animati",
+   "Casino": "Casinò",
+   "Casino-adventure": "Casinò e avventura",
+   "Cat": "Gatto",
+   "City": "Città",
+   "City-building": "Giochi gestionali",
+   "Competitive": "Competitivi",
+   "Competitive multiplayer": "Multiplayer competitivo",
    "Construction": "Costruzione",
+   "Cooking": "Cucina",
+   "Crossword": "Cruciverba",
+   "Cute": "Teneri",
+   "Dominos": "Domino",
+   "Dress-up": "Travestimenti",
+   "Education": "Istruzione",
+   "Educational": "Formazione",
+   "Escape": "Fuga",
+   "Fashion": "Moda",
+   "Fighting": "Picchiaduro",
+   "Find the difference": "Trova la differenza",
+   "Food": "Cibo",
+   "Funny": "Divertenti",
+   "Guitar": "Chitarra",
+   "Gun": "Pistola",
+   "Hack & slash": "Hack and slash",
+   "Handicraft": "Con elementi realizzati a mano",
+   "Hidden object": "Oggetti nascosti",
+   "House & garden": "Casa e giardino",
+   "Ice cream": "Gelato",
+   "Idle": "Incrementale",
+   "Immersive": "Immersivi",
+   "Intense": "Intensi",
+   "Interactive story": "Storie interattive",
+   "Jigsaw": "Puzzle",
+   "Jump": "Saltare",
+   "Language": "Lingua",
+   "Launch": "Lanciare",
+   "Life": "Vita",
+   "Lifestyle": "Mode e tendenze",
    "Logic": "Logica",
+   "Makeup": "Trucco",
    "Management": "Gestione",
+   "Maps & Navigation": "Mappe e navigatori",
+   "Match 3": "Abbinamento a tre",
+   "Match 3 adventure": "Avventura di abbinamento a tre",
+   "Mathematics": "Matematica",
+   "Medieval": "Medievale",
+   "Medieval fantasy": "Fantasy medievale",
+   "Merge": "Abbinamento",
+   "Military": "Militare",
+   "Mini golf": "Minigolf",
    "Miscellaneous": "Vari",
+   "Modern": "Moderno",
+   "Monster": "Mostro",
+   "Motorcycle": "Moto",
+   "Multiple-choice": "Scelta multipla",
+   "Music": "Musica",
+   "Music sim": "Simulazione musicale",
+   "Mystery": "Misteri",
+   "Pair matching": "Abbinamento a coppie",
+   "Performance": "Esibizioni",
+   "Physics": "Fisica",
+   "Pixelated": "In pixel art",
+   "Platformer": "Giochi a piattaforme",
    "Princess": "Principessa",
+   "Productivity": "Produttività",
    "Puzzle": "Rompicapi",
+   "Puzzle-adventure": "Avventure con rompicapi",
    "Puzzles": "Puzzle",
+   "Race car": "Auto da corsa",
+   "Racing": "Corse",
+   "Realistic": "Realistico",
    "Renovation": "Ristrutturazione",
+   "Rocket": "Razzo",
+   "Role Playing": "Giochi di ruolo",
+   "Run & gun": "Corri e spara",
+   "Science fiction": "Fantascienza",
+   "Search": "Ricerca",
+   "Shooter": "Sparatutto",
+   "Shop & supermarket": "Acquista e supermercato",
    "Simulation": "Simulazione",
-   "Single player": "Giocatore singolo"
+   "Single player": "Giocatore singolo",
+   "Soccer": "Calcio",
+   "Space": "Spazio",
+   "Sports": "Sport",
+   "Strategy": "Strategia",
+   "Stunt driving": "Guida acrobatica",
+   "Stylized": "Stilizzato",
+   "Stylized-realistic": "Realistico stilizzato",
+   "Survival": "Sopravvivenza",
+   "Tactics": "Tattica",
+   "Time management": "Gestione del tempo",
+   "Train": "Treni",
+   "Trivia": "Cultura generale",
+   "Turn-based RPG": "RPG a turni",
+   "Tycoon": "Gestionale",
+   "Vampire": "Vampiro",
+   "Vehicle": "Veicolo",
+   "Vehicle combat": "Combattimento con veicoli",
+   "Vehicles": "Veicoli",
+   "Viking": "Vichingo",
+   "Wargame": "Giochi di guerra",
+   "Weapons": "Armi",
+   "Word": "Parole"
   },
   "ja": {
+   "Abc": "ABC",
    "Abstract": "抽象",
+   "Abstract strategy": "アブストラクト ストラテジー",
+   "Action": "アクション",
+   "Action Role-Playing": "アクション ロールプレイング",
+   "Action-adventure": "アクション アドベンチャー",
+   "Adventure": "アドベンチャー",
+   "Animals": "動物",
+   "Anime": "アニメ",
+   "Apocalyptic": "世紀末",
+   "Arcade": "アーケード",
+   "Battling": "バトル",
+   "Bicycle": "自転車",
+   "Board": "ボード",
+   "Bowling": "ボーリング",
+   "Brain teaser": "頭の体操",
+   "Brick break": "ブロック崩し",
+   "Bubble shooter": "バブル シューティング",
+   "Bulletstorm": "バレットストーム",
    "Business & profession": "ビジネス、職業",
+   "Business empire": "ビジネス帝国",
+   "Car": "車",
+   "Car race": "カーレース",
+   "Car sim": "カー シミュレーション",
+   "Card": "カード",
+   "Cartoon": "漫画",
+   "Casino": "カジノ",
+   "Casino-adventure": "カジノ アドベンチャー",
    "Casual": "カジュアル",
+   "Cat": "猫",
+   "City": "街",
+   "City-building": "都市開発",
+   "Competitive": "対戦型",
+   "Competitive multiplayer": "対戦型マルチプレーヤー",
    "Construction": "土木、建設",
+   "Cooking": "料理",
+   "Crossword": "クロスワード",
+   "Cute": "かわいい",
+   "Design": "デザイン",
+   "Dominos": "ドミノ",
+   "Dress-up": "着せ替え",
+   "Education": "教育",
+   "Educational": "教育",
+   "Escape": "脱出",
+   "Fantasy": "ファンタジー",
+   "Fashion": "ファッション",
+   "Fighting": "格闘",
+   "Find the difference": "間違い探し",
+   "Food": "食べ物",
+   "Funny": "楽しい",
+   "Golf": "ゴルフ",
+   "Guitar": "ギター",
+   "Gun": "銃",
+   "Hack & slash": "ハック＆スラッシュ",
+   "Handicraft": "ハンドクラフト",
+   "Hidden object": "アイテム探し",
+   "Horror": "ホラー",
+   "House & garden": "ホーム、ガーデン",
+   "Ice cream": "アイスクリーム",
+   "Idle": "放置",
+   "Immersive": "臨場感",
+   "Intense": "刺激的",
+   "Interactive story": "インタラクティブ ストーリー",
+   "Jigsaw": "ジグソー",
+   "Jump": "ジャンプ",
+   "Language": "言語",
+   "Launch": "発射",
+   "Life": "ライフ",
+   "Lifestyle": "ライフスタイル",
    "Logic": "ロジック",
+   "Low poly": "ローポリ",
+   "Makeup": "メイク",
    "Management": "マネジメント",
+   "Maps & Navigation": "地図＆ナビ",
+   "Match 3": "マッチ 3",
+   "Match 3 adventure": "マッチ 3 アドベンチャー",
+   "Mathematics": "数学",
+   "Medieval": "中世",
+   "Medieval fantasy": "中世ファンタジー",
+   "Merge": "マージ",
+   "Military": "軍",
+   "Mini golf": "ミニゴルフ",
    "Miscellaneous": "その他",
+   "Modern": "近代",
+   "Monster": "モンスター",
+   "Motorcycle": "バイク",
+   "Multiplayer": "マルチプレーヤー型ゲーム",
+   "Multiple-choice": "多肢選択式",
+   "Music": "音楽",
+   "Music sim": "音楽シミュレーション",
+   "Mystery": "ミステリー",
    "Offline": "オフライン",
+   "Pair matching": "ペア マッチング",
+   "Performance": "パフォーマンス",
+   "Physics": "物理学",
+   "Pixelated": "ピクセル化",
+   "Platformer": "プラットフォーマー",
    "Princess": "プリンセス",
+   "Productivity": "仕事効率化",
    "Puzzle": "パズル",
+   "Puzzle-adventure": "パズル アドベンチャー",
    "Puzzles": "パズル",
+   "Race car": "レーシングカー",
+   "Racing": "レース",
+   "Realistic": "リアリスティック",
    "Renovation": "リノベーション",
+   "Robot": "ロボット",
+   "Rocket": "ロケット",
+   "Roguelike": "ローグライク",
+   "Role Playing": "ロールプレイング",
+   "Run & gun": "ラン＆ガン",
+   "Science fiction": "SF",
+   "Search": "サーチ",
+   "Shooter": "シューティング",
+   "Shop & supermarket": "買い物、スーパーマーケット",
    "Simulation": "シミュレーション",
-   "Single player": "シングル プレーヤー"
+   "Single player": "シングル プレーヤー",
+   "Soccer": "サッカー",
+   "Space": "宇宙",
+   "Sports": "スポーツ",
+   "Strategy": "ストラテジー",
+   "Stunt driving": "カーアクション",
+   "Stylized": "スタイライズド",
+   "Stylized-realistic": "スタイライズド リアリスティック",
+   "Survival": "サバイバル",
+   "Tactics": "戦術",
+   "Time management": "時間管理",
+   "Tower defense": "タワー ディフェンス",
+   "Train": "鉄道",
+   "Trivia": "トリビア",
+   "Turn-based RPG": "ターン制 RPG",
+   "Tycoon": "タイクーン",
+   "Vampire": "吸血鬼",
+   "Vehicle": "乗り物",
+   "Vehicle combat": "車両戦闘",
+   "Vehicles": "乗り物",
+   "Viking": "バイキング",
+   "Wargame": "ウォーゲーム",
+   "Weapons": "兵器",
+   "Word": "言葉",
+   "Zombie": "ゾンビ"
   },
   "nl": {
+   "Abstract strategy": "Abstracte strategie",
+   "Action": "Actie",
+   "Action Role-Playing": "Actie-RPG",
+   "Action-adventure": "Actie-avontuur",
+   "Adventure": "Avontuur",
+   "Animals": "Dieren",
+   "Apocalyptic": "Apocalyptisch",
+   "Battling": "Vechten",
+   "Bicycle": "Fiets",
+   "Board": "Bordspellen",
+   "Bowling": "Bowlen",
+   "Brain teaser": "Breinbreker",
+   "Bubble shooter": "Bubbelshooter",
    "Business & profession": "Zakelijk en beroep",
+   "Business empire": "Zakenimperium",
+   "Car": "Auto",
+   "Car race": "Autorace",
+   "Car sim": "Autosimulatie",
+   "Card": "Kaarten",
+   "Cartoon": "Tekenfilm",
+   "Casino-adventure": "Casino-avontuur",
+   "Casual": "Casual games",
+   "Cat": "Kat",
+   "City": "Stad",
+   "City-building": "Bouwen",
+   "Competitive": "Competitief",
+   "Competitive multiplayer": "Competitieve multiplayer",
    "Construction": "Bouw",
+   "Cooking": "Koken",
+   "Crossword": "Kruiswoordpuzzels",
+   "Cute": "Schattig",
+   "Design": "Ontwerp",
+   "Dominos": "Domino",
+   "Dress-up": "Verkleden",
+   "Education": "Onderwijs",
+   "Educational": "Educatief",
+   "Escape": "Ontsnapping",
+   "Fashion": "Mode",
+   "Fighting": "Vechten",
+   "Find the difference": "Zoek het verschil",
+   "Food": "Voedsel",
+   "Funny": "Grappig",
+   "Guitar": "Gitaar",
+   "Gun": "Revolver",
+   "Hack & slash": "Hack and slash-games",
+   "Handicraft": "Handwerk",
+   "Hidden object": "Verborgen voorwerp",
+   "House & garden": "Huis en tuin",
+   "Ice cream": "IJs",
+   "Immersive": "Immersief",
+   "Intense": "Intens",
+   "Interactive story": "Interactief verhaal",
+   "Jigsaw": "Legpuzzel",
+   "Jump": "Springen",
+   "Language": "Taal",
+   "Launch": "Lanceren",
+   "Life": "Leven",
    "Logic": "Logica",
+   "Low poly": "Low Poly",
+   "Makeup": "Make-up",
+   "Maps & Navigation": "Navigatie",
+   "Match 3": "Match-3-games",
+   "Match 3 adventure": "Match-3-avonturen",
+   "Mathematics": "Wiskunde",
+   "Medieval": "Middeleeuws",
+   "Medieval fantasy": "Middeleeuwse fantasy",
+   "Merge": "Samenvoegen",
+   "Military": "Militair",
+   "Mini golf": "Minigolf",
    "Miscellaneous": "Overig",
+   "Motorcycle": "Motor",
+   "Multiple-choice": "Meerkeuzevraag",
+   "Music": "Muziek",
+   "Music sim": "Muzieksimulatie",
+   "Mystery": "Mysterieus",
+   "Pair matching": "Paren vormen",
+   "Performance": "Prestatiegames",
+   "Physics": "Natuurkunde",
+   "Pixelated": "Gepixeleerd",
+   "Platformer": "Platform",
    "Princess": "Prinses",
+   "Productivity": "Productiviteit",
    "Puzzle": "Puzzel",
+   "Puzzle-adventure": "Puzzelavontuur",
    "Puzzles": "Puzzels",
+   "Race car": "Raceauto",
+   "Racing": "Racen",
+   "Realistic": "Realistisch",
    "Renovation": "Renovatie",
+   "Rocket": "Raket",
+   "Roguelike": "Rogue-like",
+   "Role Playing": "Roleplaying",
+   "Run & gun": "Rennen en schieten",
+   "Science fiction": "Sciencefiction",
+   "Search": "Zoeken",
+   "Shop & supermarket": "Winkel en supermarkt",
    "Simulation": "Simulatie",
-   "Single player": "Singleplayer"
+   "Single player": "Singleplayer",
+   "Soccer": "Voetbal",
+   "Space": "Ruimte",
+   "Sports": "Sport",
+   "Strategy": "Strategie",
+   "Stunt driving": "Stuntracen",
+   "Stylized": "Gestileerd",
+   "Stylized-realistic": "Gestileerd realistisch",
+   "Survival": "Overleven",
+   "Tactics": "Tactieken",
+   "Time management": "Tijdsbeheersing",
+   "Tower defense": "Torenverdediging",
+   "Train": "Trein",
+   "Turn-based RPG": "Turn-based-RPG",
+   "Vampire": "Vampier",
+   "Vehicle": "Voertuig",
+   "Vehicle combat": "Vechten met voertuigen",
+   "Vehicles": "Voertuigen",
+   "Wargame": "Oorlogsgame",
+   "Weapons": "Wapens",
+   "Word": "Woorden"
   },
   "pt": {
+   "Abc": "ABC",
    "Abstract": "Abstrato",
+   "Abstract strategy": "Estratégia abstrata",
+   "Action": "Ação",
+   "Action Role-Playing": "RPG de ação",
+   "Action-adventure": "Ação e aventura",
+   "Adventure": "Aventura",
+   "Animals": "Animais",
+   "Apocalyptic": "Apocalipse",
+   "Battling": "Combate",
+   "Bicycle": "Bicicleta",
+   "Board": "Tabuleiro",
+   "Bowling": "Boliche",
+   "Brain teaser": "Enigma",
+   "Brick break": "Quebrar tijolos",
+   "Bubble shooter": "Atirador de bolhas",
+   "Bulletstorm": "Combate de tiros",
    "Business & profession": "Negócios e profissão",
+   "Business empire": "Império empresarial",
+   "Car": "Carros",
+   "Car race": "Corrida de carros",
+   "Car sim": "Simulador de carros",
+   "Card": "Cartas",
+   "Cartoon": "Desenho animado",
+   "Casino": "Cassino",
+   "Casino-adventure": "Cassino e aventura",
    "Casual": "Casuais",
+   "Cat": "Gatos",
+   "City": "Cidade",
+   "City-building": "Construção de cidades",
+   "Competitive": "Competitivo",
+   "Competitive multiplayer": "Multiplayer competitivo",
    "Construction": "Construção",
+   "Cooking": "Culinária",
+   "Crossword": "Palavras cruzadas",
+   "Cute": "Fofo",
+   "Dominos": "Dominó",
+   "Dress-up": "Jogos de vestir",
+   "Education": "Educação",
+   "Educational": "Educativo",
+   "Escape": "Fuga",
+   "Fantasy": "Fantasia",
+   "Fashion": "Moda",
+   "Fighting": "Luta",
+   "Find the difference": "Encontre a diferença",
+   "Food": "Comida",
+   "Funny": "Engraçado",
+   "Golf": "Golfe",
+   "Guitar": "Violão",
+   "Gun": "Arma de fogo",
+   "Hack & slash": "Hack-and-slash",
+   "Handicraft": "Artesanato",
+   "Hidden object": "Caçar objetos",
+   "Horror": "Terror",
+   "House & garden": "Casa e jardim",
+   "Ice cream": "Sorvete",
+   "Idle": "Ocioso",
+   "Immersive": "Imersivo",
+   "Intense": "Intenso",
+   "Interactive story": "História interativa",
+   "Jigsaw": "Quebra-cabeça",
+   "Jump": "Salto",
+   "Language": "Linguagem",
+   "Launch": "Lançamento",
+   "Life": "Vida",
+   "Lifestyle": "Estilo de vida",
    "Logic": "Lógica",
+   "Low poly": "Lowpoly",
+   "Makeup": "Maquiagem",
    "Management": "Gerenciamento",
+   "Maps & Navigation": "Mapas e navegação",
+   "Match 3": "Combinar 3",
+   "Match 3 adventure": "Combinação e aventura",
+   "Mathematics": "Matemática",
+   "Medieval fantasy": "Fantasia medieval",
+   "Merge": "Combinar peças",
+   "Military": "Militar",
+   "Mini golf": "Minigolfe",
    "Miscellaneous": "Diversos",
+   "Modern": "Modernidade",
+   "Monster": "Monstro",
+   "Motorcycle": "Motocicletas",
+   "Multiple-choice": "Múltipla escolha",
+   "Music": "Música",
+   "Music sim": "Simulador de música",
+   "Mystery": "Mistério",
    "Offline": "Off-line",
+   "Pair matching": "Combinação de pares",
+   "Performance": "Desempenho",
+   "Physics": "Física",
+   "Pixelated": "Pixel art",
+   "Platformer": "Jogos de plataforma",
    "Princess": "Princesa",
+   "Productivity": "Produtividade",
    "Puzzle": "Quebra-cabeças",
+   "Puzzle-adventure": "Quebra-cabeças de aventura",
    "Puzzles": "Quebra-cabeças",
+   "Race car": "Carro de corrida",
+   "Racing": "Corrida",
+   "Realistic": "Realista",
    "Renovation": "Renovação",
+   "Robot": "Robô",
+   "Rocket": "Foguete",
+   "Role Playing": "RPG",
+   "Run & gun": "Corrida e armas",
+   "Science fiction": "Ficção científica",
+   "Search": "Caça-palavras",
+   "Shooter": "Tiro",
+   "Shop & supermarket": "Loja e supermercado",
    "Simulation": "Simulação",
-   "Single player": "Um jogador"
+   "Single player": "Um jogador",
+   "Soccer": "Futebol",
+   "Space": "Espaço",
+   "Sports": "Esportes",
+   "Strategy": "Estratégia",
+   "Stunt driving": "Manobras",
+   "Stylized": "Estilizado",
+   "Stylized-realistic": "Estilizado e realista",
+   "Survival": "Sobrevivência",
+   "Tactics": "Tática",
+   "Time management": "Gestão de tempo",
+   "Tower defense": "Defesa de torre",
+   "Train": "Treinamento",
+   "Trivia": "Curiosidades",
+   "Turn-based RPG": "RPG por turnos",
+   "Tycoon": "Empreendedorismo",
+   "Vampire": "Vampiro",
+   "Vehicle": "Veículos",
+   "Vehicle combat": "Combate de veículos",
+   "Vehicles": "Veículos",
+   "Wargame": "Jogo de guerra",
+   "Weapons": "Armas",
+   "Word": "Palavras",
+   "Zombie": "Zumbi"
   }
  }
 }

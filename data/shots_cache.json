@@ -324990,6 +324990,10 @@
    "pt": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -325143,6 +325147,10 @@
    "pt": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "pegi": 3,
@@ -325289,6 +325297,14 @@
     "checked": "2026-10-04"
    },
    "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -325456,6 +325472,14 @@
    "sk": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "pegi": 3,
@@ -325618,6 +325642,14 @@
    "sk": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "pegi": 3,
@@ -325769,6 +325801,14 @@
     "checked": "2026-10-04"
    },
    "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -325935,6 +325975,14 @@
    "sk": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -326087,6 +326135,18 @@
    "ie": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -326237,6 +326297,18 @@
     "checked": "2026-10-04"
    },
    "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -326401,6 +326473,18 @@
    "ie": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -326555,6 +326639,22 @@
    "hr": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -326700,6 +326800,22 @@
     "checked": "2026-10-04"
    },
    "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -326853,6 +326969,22 @@
    "hr": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -327002,6 +327134,22 @@
     "checked": "2026-10-04"
    },
    "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -327161,6 +327309,22 @@
    "hr": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "pegi": 3,
@@ -327293,6 +327457,26 @@
     "checked": "2026-10-04"
    },
    "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -327444,6 +327628,26 @@
     "checked": "2026-10-04"
    },
    "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -327598,6 +327802,26 @@
    "bg": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "pegi": 3,
@@ -327748,6 +327972,26 @@
     "checked": "2026-10-04"
    },
    "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -327902,6 +328146,26 @@
    "bg": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "pegi": 3,
@@ -328052,6 +328316,26 @@
    "bg": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "pegi": 3,
@@ -328200,6 +328484,30 @@
    "cz": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "pegi": null,
@@ -328346,6 +328654,30 @@
     "checked": "2026-10-04"
    },
    "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -328500,6 +328832,30 @@
    "cz": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -328633,6 +328989,34 @@
     "checked": "2026-10-04"
    },
    "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -328772,6 +329156,34 @@
     "checked": "2026-10-04"
    },
    "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -328919,6 +329331,34 @@
    "pl": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -329045,6 +329485,38 @@
    "at": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -329162,6 +329634,38 @@
     "checked": "2026-10-04"
    },
    "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -329305,6 +329809,38 @@
    "fi": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -329444,6 +329980,38 @@
    "fi": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "pegi": 3,
@@ -329569,6 +330137,46 @@
     "checked": "2026-10-04"
    },
    "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -329705,6 +330313,46 @@
    "hu": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -329830,6 +330478,46 @@
     "checked": "2026-10-04"
    },
    "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -329962,6 +330650,50 @@
    "no": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -330076,6 +330808,50 @@
    "no": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "pegi": 3,
@@ -330187,6 +330963,58 @@
     "checked": "2026-10-04"
    },
    "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -330304,6 +331132,62 @@
     "checked": "2026-10-04"
    },
    "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -330424,6 +331308,62 @@
    "dk": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -330536,6 +331476,62 @@
    "dk": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "pegi": 3,
@@ -330642,6 +331638,62 @@
     "checked": "2026-10-04"
    },
    "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -330755,6 +331807,62 @@
     "checked": "2026-10-04"
    },
    "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -330875,6 +331983,62 @@
     "checked": "2026-10-04"
    },
    "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -330998,6 +332162,62 @@
    "dk": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -331106,6 +332326,66 @@
     "checked": "2026-10-04"
    },
    "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -331219,6 +332499,66 @@
    "ro": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gr": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -331330,6 +332670,62 @@
    "ro": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -331439,6 +332835,62 @@
     "checked": "2026-10-04"
    },
    "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -331557,6 +333009,62 @@
    "ro": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pt": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -331658,6 +333166,62 @@
     "checked": "2026-10-04"
    },
    "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -331766,6 +333330,62 @@
    "nl": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -331865,6 +333485,62 @@
     "checked": "2026-10-04"
    },
    "gb": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -331969,6 +333645,62 @@
    "nl": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -332068,6 +333800,62 @@
     "checked": "2026-10-04"
    },
    "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -332179,6 +333967,62 @@
    "gb": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ie": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "pegi": 3,
@@ -332285,6 +334129,58 @@
     "checked": "2026-10-04"
    },
    "gb": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -332395,6 +334291,58 @@
    "gb": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "sk": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "pegi": 3,
@@ -332499,6 +334447,54 @@
     "checked": "2026-10-04"
    },
    "gb": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hr": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -332611,6 +334607,50 @@
    "nl": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -332710,6 +334750,50 @@
     "checked": "2026-10-04"
    },
    "gb": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -332815,6 +334899,50 @@
    "gb": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": false,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": false,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "pegi": 3,
@@ -332918,6 +335046,50 @@
     "checked": "2026-10-04"
    },
    "us": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -333026,6 +335198,50 @@
     "checked": "2026-10-04"
    },
    "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -333137,6 +335353,50 @@
    "us": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -333233,6 +335493,50 @@
     "checked": "2026-10-04"
    },
    "gb": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "bg": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -333339,6 +335643,46 @@
     "checked": "2026-10-04"
    },
    "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -333448,6 +335792,46 @@
    "nl": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -333552,6 +335936,46 @@
     "checked": "2026-10-04"
    },
    "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -333662,6 +336086,46 @@
    "us": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "cz": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "si": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "pl": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -333745,6 +336209,34 @@
     "checked": "2026-10-04"
    },
    "fr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fi": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -333835,6 +336327,30 @@
     "checked": "2026-10-04"
    },
    "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -333950,6 +336466,30 @@
    "nl": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -334061,6 +336601,30 @@
    "nl": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -334170,6 +336734,30 @@
    "fr": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "at": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "pegi": 3,
@@ -334276,6 +336864,26 @@
    "fr": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "hu": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "pegi": 3,
@@ -334375,6 +336983,22 @@
    "nl": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -334463,6 +337087,22 @@
     "checked": "2026-10-04"
    },
    "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -334577,6 +337217,22 @@
    "nl": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "no": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -334682,6 +337338,18 @@
     "checked": "2026-10-04"
    },
    "fr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -334790,6 +337458,18 @@
    "fr": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "se": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "pegi": 3,
@@ -334887,6 +337567,14 @@
     "checked": "2026-10-04"
    },
    "fr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -334995,6 +337683,14 @@
     "checked": "2026-10-04"
    },
    "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -335109,6 +337805,14 @@
    "nl": {
     "available": true,
     "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
+    "available": true,
+    "checked": "2026-10-04"
    }
   },
   "firstSeen": "2026-10-04",
@@ -335214,6 +337918,14 @@
     "checked": "2026-10-04"
    },
    "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -335323,6 +338035,14 @@
     "checked": "2026-10-04"
    },
    "fr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ro": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "dk": {
     "available": true,
     "checked": "2026-10-04"
    }
