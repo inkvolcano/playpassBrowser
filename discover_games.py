@@ -11,7 +11,10 @@ page, a search for each developer's name, and the games home page. Every
 badged app it sees is queued in turn, until no new ones turn up.
 
 Badged games that YTECHB's list doesn't have go to data/discovered.json
-(appId, store title, genre); earlier finds stay. fill_screenshots.py then
+(appId, store title, genre); earlier finds stay. data/discovery_report.json
+says how well the two lists cover each other: which known games turned up on
+some other Google Play page (so the crawl alone would find them) and which
+only YTECHB's list knows. fill_screenshots.py then
 adds them to the cache like any other game, and build_index.py lists them
 next to YTECHB's list.
 
@@ -35,8 +38,10 @@ from google_play_scraper.utils.request import get
 
 ROOT = Path(__file__).resolve().parent
 DISCOVERED_JSON = ROOT / "data" / "discovered.json"
+REPORT_JSON = ROOT / "data" / "discovery_report.json"
 STORE = "https://play.google.com/store"
 DETAILS_RE = re.compile(r"details\?id=([A-Za-z0-9._]+)")
+DEVELOPER_RE = re.compile(r"/store/apps/(dev\?id=\d+|developer\?id=[^\"&\\]+)")
 
 # Play Store genre -> the page's genre. Anything else (Tools, Photography...) is
 # a Play Pass app rather than a game and is left out.
@@ -99,7 +104,9 @@ def main():
     args = ap.parse_args()
 
     cache = json.loads(fs.CACHE_JSON.read_text(encoding="utf-8"))
-    listed = {(cache.get(g["title"]) or {}).get("appId") for g in json.loads(fs.GAMES_JSON.read_text(encoding="utf-8"))}
+    # apps YTECHB's list itself leads to (not the ones a discovery lent to an unmatched title)
+    listed = {e.get("appId") for g in json.loads(fs.GAMES_JSON.read_text(encoding="utf-8"))
+              if (e := cache.get(g["title"]) or {}).get("confidence") != "google"}
     old = {d["appId"]: d for d in json.loads(DISCOVERED_JSON.read_text(encoding="utf-8"))} if DISCOVERED_JSON.exists() else {}
     known = {e["appId"] for e in cache.values() if e.get("appId")} | set(old)
     seeds = {e["appId"] for e in cache.values() if e.get("appId") and e.get("playPass")} | set(old)
@@ -113,15 +120,24 @@ def main():
     queue += [f"{STORE}/apps/developer?id={quote(d)}&hl=en&gl=us" for d in sorted(developers)]
     queue += [f"{STORE}/search?q={quote(d)}&c=apps&hl=en&gl=us" for d in sorted(developers)]
     stats = {"pages": 0, "new": 0}
+    seen_on = {}  # badged app -> kinds of page it showed up on, other than its own
 
     def work(url):
         fs._tls.throttle = getattr(fs._tls, "throttle", None) or fs.Throttle(args.delay)
         html = fetch(url)
         found = cards(html) if html else {}
+        own = (re.search(r"details\?id=([^&]+)", url) or [None, None])[1]
+        kind = ("game page" if "/details?" in url else "developer page" if "/developer?" in url
+                else "search" if "/search?" in url else "games home")
         new = []
+        # a badged game's developer page lists the developer's other games
+        devs = [f"{STORE}/apps/{m}{'&' if '?' in m else '?'}hl=en&gl=us" for m in set(DEVELOPER_RE.findall(html or ""))] \
+            if own and found.get(own) else []
         with lock:
             stats["pages"] += 1
             for a, b in found.items():
+                if b and a != own:
+                    seen_on.setdefault(a, set()).add(kind)
                 if b and a not in badged:
                     badged.add(a)
                     new.append(a)
@@ -130,7 +146,7 @@ def main():
                 print(f"  {stats['pages']} pages, {len(badged)} badged apps ({len(badged - known)} new)", flush=True)
         for a in new:
             print(f"  + {a}" + ("" if a in known else "  (new)"), flush=True)
-        return [f"{STORE}/apps/details?id={quote(a)}&hl=en&gl=us" for a in new]
+        return [f"{STORE}/apps/details?id={quote(a)}&hl=en&gl=us" for a in new] + devs
 
     print(f"{len(seeds)} badged games to start from, {len(developers)} developers", flush=True)
     try:
@@ -146,6 +162,24 @@ def main():
 
     new = sorted(badged - known)
     print(f"{stats['pages']} pages read: {len(badged)} badged apps, {len(new)} not seen before", flush=True)
+
+    # How well do the two lists cover each other?
+    listed_badged = sorted(a for a in listed if a and a in seeds)
+    alone = [a for a in listed_badged if a not in seen_on]
+    title = {e["appId"]: e.get("matched") for e in cache.values() if e.get("appId")}
+    kinds = {}
+    for a in badged:
+        for k in seen_on.get(a, ()):
+            kinds[k] = kinds.get(k, 0) + 1
+    REPORT_JSON.write_text(json.dumps({
+        "date": date.today().isoformat(), "pages": stats["pages"], "badgedApps": len(badged),
+        "seenOn": dict(sorted(kinds.items())),
+        "ytechbBadged": len(listed_badged),
+        "ytechbAlsoOnGooglePages": len(listed_badged) - len(alone),
+        "ytechbOnly": sorted((title.get(a) or a) for a in alone),
+    }, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    print(f"YTECHB's badged games that also show up on other Google Play pages: "
+          f"{len(listed_badged) - len(alone)}/{len(listed_badged)}; only on YTECHB's list: {len(alone)}", flush=True)
 
     # Store data for the new ones: title and genre; non-games are left out.
     # Earlier finds stay (the next --refresh drops any that lost the badge).

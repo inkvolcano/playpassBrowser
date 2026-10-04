@@ -104,6 +104,14 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.flatgames.airport.deputy.safe.terminal",
+  "title": "Airport Security Simulator 3D",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "JLabs Games",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.intellijoy.letters.tracing",
   "title": "Alive Alphabet: Letter Tracing",
   "genre": "Educational",
@@ -288,6 +296,14 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.bus.ultimate.simulator",
+  "title": "Bus Upgrade Simulator",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "Skyloft Yazılım Bilişim ve Anonim Şirketi",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.iz.busyboard.baby.sensory.kids.toddler.games",
   "title": "BusyBoard Games for Kids 2-5",
   "genre": "Educational",
@@ -317,6 +333,14 @@
   "genre": "Educational",
   "playGenre": "Educational",
   "developer": "ElePant: Kids Learning Games for Toddlers & Baby",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.pixelmobgames.carnage.crash.racing",
+  "title": "Carnage: Battle Arena",
+  "genre": "Racing",
+  "playGenre": "Racing",
+  "developer": "BoomBit Games",
   "found": "2026-10-04"
  },
  {
@@ -544,6 +568,14 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "net.kairosoft.android.wakusei",
+  "title": "Final Frontier Story",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "Kairosoft",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.DifLabs.Differences",
   "title": "Find Differences Search & Spot",
   "genre": "Puzzle",
@@ -712,6 +744,14 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.tomorrowcorporation.humanresourcemachine",
+  "title": "Human Resource Machine",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Tomorrow Corporation",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "jp.co.gagex.betelgeuse",
   "title": "Hungry Hearts Ramen",
   "genre": "Simulation",
@@ -856,6 +896,14 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.iz.pizza.party.maker.restaurant.kids.cooking.games.pizzeria",
+  "title": "Kids Pizza Maker Cooking Games",
+  "genre": "Educational",
+  "playGenre": "Educational",
+  "developer": "Timpy Games For Kids, Toddlers & Baby",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.kids.preschool.learning.games",
   "title": "Kids Preschool Learning Games",
   "genre": "Educational",
@@ -940,6 +988,22 @@
   "title": "Lucky Forge: Idle TD Game",
   "genre": "Strategy",
   "playGenre": "Strategy",
+  "developer": "TapNation",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.thomasbowker.lynerelease",
+  "title": "LYNE",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Thomas Bowker",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "mafia.empire.tycoon",
+  "title": "Mafia Empire",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
   "developer": "TapNation",
   "found": "2026-10-04"
  },
@@ -1101,6 +1165,14 @@
   "genre": "Arcade",
   "playGenre": "Arcade",
   "developer": "Hemisphere Games Inc",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.miniit.matchgame",
+  "title": "Pair Tiles: 3D puzzle match",
+  "genre": "Casual",
+  "playGenre": "Casual",
+  "developer": "Brightika, Inc.",
   "found": "2026-10-04"
  },
  {
@@ -1352,11 +1424,27 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.hunterhamster.snailbobrelax",
+  "title": "Snail Bob: Fix and Relax",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "HeroCraft Ltd.",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "sk.inlogic.footballministars",
   "title": "Soccer Mini Stars - Football",
   "genre": "Sports",
   "playGenre": "Sports",
   "developer": "INLOGIC SPORTS - football tennis golf soccer",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.flatgames.football.referee.simulator",
+  "title": "Soccer Referee Simulator 3D",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "JLabs Games",
   "found": "2026-10-04"
  },
  {
@@ -1392,6 +1480,14 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.fugo.sortout",
+  "title": "Sort Out",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "Fugo Games",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.aurecas.spacetowerdefense",
   "title": "Space Defense: Idle Tower TD",
   "genre": "Strategy",
@@ -1413,6 +1509,14 @@
   "genre": "Card",
   "playGenre": "Card",
   "developer": "Quarzo Apps",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.karmangames.spider",
+  "title": "Spider Solitaire",
+  "genre": "Card",
+  "playGenre": "Card",
+  "developer": "KARMAN Games (CY) LTD",
   "found": "2026-10-04"
  },
  {
@@ -1720,6 +1824,14 @@
   "found": "2026-10-04"
  },
  {
+  "appId": "com.dimchi.crush",
+  "title": "Will it Crush? Grinding games",
+  "genre": "Simulation",
+  "playGenre": "Simulation",
+  "developer": "Brightika, Inc.",
+  "found": "2026-10-04"
+ },
+ {
   "appId": "com.morionstudio.witchy",
   "title": "Witchy Sisters – Relax Puzzle",
   "genre": "Puzzle",
@@ -1765,6 +1877,14 @@
   "genre": "Word & Trivia",
   "playGenre": "Word",
   "developer": "Fugo Games",
+  "found": "2026-10-04"
+ },
+ {
+  "appId": "com.twodboy.wog2",
+  "title": "World of Goo 2",
+  "genre": "Puzzle",
+  "playGenre": "Puzzle",
+  "developer": "2D BOY",
   "found": "2026-10-04"
  },
  {

@@ -45,6 +45,8 @@ are in Play Pass only outside the US are missing.
 | `index.template.html` | The page (HTML, CSS, JS) with a `__DATA__` placeholder |
 | `data/games.json` | YTECHB's game list: `title`, `genre`, `source` |
 | `data/discovered.json` | Play Pass games found on Google Play that YTECHB's list lacks: `appId`, `title`, `genre` |
+| `data/discovery_report.json` | How the two lists cover each other (written by each crawl) |
+| `GAP_ANALYSIS.md` | What each list misses, data gaps on the page, and feature ideas |
 | `data/shots_cache.json` | Play Store data per game: `appId`, `icon`, `screenshots`, `url`, `playPass`, `rating`, `ratings`, `installs`, `tags`, `regions` (availability per country), plus match details |
 | `data/overrides.json` | Hand-made fixes: title → appId, or title → `null` |
 | `data/sources.json` | Where the list came from and when it was last updated |

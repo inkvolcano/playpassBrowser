@@ -133240,21 +133240,99 @@
   }
  },
  "Spider Solitaire": {
-  "appId": null,
-  "confidence": "null",
-  "reason": "generic title and no Play Pass badge on the closest match",
-  "queries": [
-   "Spider Solitaire",
-   "Spider Solitaire Play Pass"
+  "appId": "com.karmangames.spider",
+  "matched": "Spider Solitaire",
+  "developer": "KARMAN Games (CY) LTD",
+  "playGenre": "Card",
+  "icon": "https://play-lh.googleusercontent.com/PHQG6n1M7e1yBCzAUpyUNice0Ug7Jkjhjy7Zh_MVdO7Kvnf52aJNdZEgc5czy1MjlWEVNtolXHHzN-n91v_oYA",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/clDddi-9LP06kA52r-PYM0b9qlZLGLq-Mukk4RF6IGgKbI_2PmEQD9yj1W_yatsv_3rS1Qxf8zvKAUzWhbO4Pw",
+   "https://play-lh.googleusercontent.com/smyk-XWgjC-Kgt968efLCYa1KY851HYGdCDb2KLfiFHMU7ZziDTom6jNElf4YmHmfR6T9N16GtmLNSxhKMCd",
+   "https://play-lh.googleusercontent.com/XJeu51cnd_cc_gFg1pbnGwuHCpMLxhWb1Sxh6pcW4dZWQ_eQypu4pYCCpilVadmv5BxaMsk2vJB4z2G2I4mXYQ",
+   "https://play-lh.googleusercontent.com/DMBJ-LtYmceqfJCSsx_8GTORadqG9QFGc-JeYLWIY9MVLvcgftwNf1Sii6uAL2Mo1Mhvhz32-QJh6rJ2izn9",
+   "https://play-lh.googleusercontent.com/zwlHfDhsWSUTZZiS5ylxXZR9dLK38UAklagj3F5W4WGrYBkP1cq401c4zWHApAGTPN4GcPkXQTFVPCrupF9tdPc",
+   "https://play-lh.googleusercontent.com/DxXbS1Bn9FHFgOAwDDyQPOMWv7nAQc4DtiXLh88JprDcCczpCbQCJ_KjNo-SylCKIKEMy3oLIbpMW3mXEOwb",
+   "https://play-lh.googleusercontent.com/clDddi-9LP06kA52r-PYM0b9qlZLGLq-Mukk4RF6IGgKbI_2PmEQD9yj1W_yatsv_3rS1Qxf8zvKAUzWhbO4Pw",
+   "https://play-lh.googleusercontent.com/smyk-XWgjC-Kgt968efLCYa1KY851HYGdCDb2KLfiFHMU7ZziDTom6jNElf4YmHmfR6T9N16GtmLNSxhKMCd",
+   "https://play-lh.googleusercontent.com/XJeu51cnd_cc_gFg1pbnGwuHCpMLxhWb1Sxh6pcW4dZWQ_eQypu4pYCCpilVadmv5BxaMsk2vJB4z2G2I4mXYQ",
+   "https://play-lh.googleusercontent.com/DMBJ-LtYmceqfJCSsx_8GTORadqG9QFGc-JeYLWIY9MVLvcgftwNf1Sii6uAL2Mo1Mhvhz32-QJh6rJ2izn9",
+   "https://play-lh.googleusercontent.com/zwlHfDhsWSUTZZiS5ylxXZR9dLK38UAklagj3F5W4WGrYBkP1cq401c4zWHApAGTPN4GcPkXQTFVPCrupF9tdPc",
+   "https://play-lh.googleusercontent.com/DxXbS1Bn9FHFgOAwDDyQPOMWv7nAQc4DtiXLh88JprDcCczpCbQCJ_KjNo-SylCKIKEMy3oLIbpMW3mXEOwb",
+   "https://play-lh.googleusercontent.com/clDddi-9LP06kA52r-PYM0b9qlZLGLq-Mukk4RF6IGgKbI_2PmEQD9yj1W_yatsv_3rS1Qxf8zvKAUzWhbO4Pw",
+   "https://play-lh.googleusercontent.com/smyk-XWgjC-Kgt968efLCYa1KY851HYGdCDb2KLfiFHMU7ZziDTom6jNElf4YmHmfR6T9N16GtmLNSxhKMCd",
+   "https://play-lh.googleusercontent.com/XJeu51cnd_cc_gFg1pbnGwuHCpMLxhWb1Sxh6pcW4dZWQ_eQypu4pYCCpilVadmv5BxaMsk2vJB4z2G2I4mXYQ",
+   "https://play-lh.googleusercontent.com/DMBJ-LtYmceqfJCSsx_8GTORadqG9QFGc-JeYLWIY9MVLvcgftwNf1Sii6uAL2Mo1Mhvhz32-QJh6rJ2izn9",
+   "https://play-lh.googleusercontent.com/zwlHfDhsWSUTZZiS5ylxXZR9dLK38UAklagj3F5W4WGrYBkP1cq401c4zWHApAGTPN4GcPkXQTFVPCrupF9tdPc",
+   "https://play-lh.googleusercontent.com/DxXbS1Bn9FHFgOAwDDyQPOMWv7nAQc4DtiXLh88JprDcCczpCbQCJ_KjNo-SylCKIKEMy3oLIbpMW3mXEOwb"
   ],
-  "checked": "2026-10-03",
-  "candidate": {
-   "appId": "spider.classic.solitaire.card.pgmaker",
-   "title": "Spider Solitaire",
-   "developer": "Classic Puzzle Games Maker",
-   "playPass": false,
-   "sim": 1.0,
-   "flags": []
+  "url": "https://play.google.com/store/apps/details?id=com.karmangames.spider",
+  "playPass": true,
+  "rating": 4.61,
+  "ratings": 30456,
+  "installs": 3285039,
+  "tags": [
+   "Card",
+   "Solitaire",
+   "Casual",
+   "Single player",
+   "Realistic",
+   "Offline"
+  ],
+  "similarity": 1.0,
+  "confidence": "google",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-04",
+  "passChecked": "2026-10-04",
+  "regions": {
+   "be": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "es": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "de": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ca": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "br": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "au": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gb": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "it": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "jp": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "us": {
+    "available": true,
+    "checked": "2026-10-04"
+   }
   }
  },
  "Spider Solitaire Card Games": {
@@ -171046,6 +171124,103 @@
    }
   }
  },
+ "Airport Security Simulator 3D": {
+  "appId": "com.flatgames.airport.deputy.safe.terminal",
+  "matched": "Airport Security Simulator 3D",
+  "developer": "JLabs Games",
+  "playGenre": "Simulation",
+  "icon": "https://play-lh.googleusercontent.com/KRU5xgSDrIqZjKGyJjNpWMHrgOgotHi1QocAWPvx1gash5QWAx7T78FcXJOvFqv43KvLYI02j45aW8SRvgjFNA",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/cXYN3Embkk18crjFye_AcrmhggGp1uFT8dFm9sJ-63tmuMXuZj9svGtqMZljXKWAJmo1iobRY7h0ZvhUQ9cg5w",
+   "https://play-lh.googleusercontent.com/nykdhCZRp_Z1CqeKYPCvSf6S_pNBoYk-p7lc2jVBAz3ExpmOuJK2L4-0Fv59SXhgmDzukbWMlmXZsLx5h8biMTg",
+   "https://play-lh.googleusercontent.com/HEaWAA4CH4-PHuW-vEt5EJ8JVhclql_Igbfuc0gLrgb_Y4mHrZ9UexD6G-EpXIJBbkAao8fap1wW-4IwurTV",
+   "https://play-lh.googleusercontent.com/Nt13OdCmgVf39FhT_qcVelD_NDxh65GSwYyf__cx4ISlCapSsOC4MG56PNp_k6hdvkh-5lbbuvOeApelU4_esQ",
+   "https://play-lh.googleusercontent.com/KCUtu1rphe745sTEim-AfmWkNRGTKxSPPiDd9nn85jmzTIE_6_fe8ZnW3Fu3EmaTNxSLN1z9ii625gnh5msh",
+   "https://play-lh.googleusercontent.com/JWXS5lxbutc1vw6HHyjUL69dc23crBTgWuVYYbu89wUm8P3jr_CY8WINL8V4NKZqemKDlzqQz3llJBmb0V7rO-I",
+   "https://play-lh.googleusercontent.com/JKhosKvX6UR-fk-yBMiB8CTtBc0FSMTe87kbMUSbnIAGnY_jSjuVWhhIGEgdxT7335LedB_ZSZMii-pvCgbLtA",
+   "https://play-lh.googleusercontent.com/d21g5kDaYiNGqAniUvYKeRWw6uPcANZrNwN_FEn0wsPFogSW_EQ4xxrD-zFmTvQnvw2OdluovaFn6E7DFR3aoA",
+   "https://play-lh.googleusercontent.com/YKe7bkmjKRqhxIm4n6qihhPEZAJVOzkiVQZPvWDC2T7iZlQx-sf6DAn27ll9cPWdLiXYGpQa8u4jk7DWjWBz",
+   "https://play-lh.googleusercontent.com/kxtTewF9c6Pkt4RVdiQ4TdJlzmDKmLolKxOYbHk0XK5lk5FENAHA9Ha-0-SRTNHZKzh5sxTKy3ggfoRhU62G1Fs",
+   "https://play-lh.googleusercontent.com/qsiyDQp2Y0FfDdDxgLX7_3j1nvnkycQkRKGIIEeJF_5YSxz0D_sOElohMORiAb07-SBqxx0ivWUiaOJZDUyF",
+   "https://play-lh.googleusercontent.com/KAQmb9PMo4E3sjvQ6CMKfWip3BsvMfw8um7JLW_yv4Jh1XXYsQ2N4L55eVIcPFZUw-00KzT6fx3RxIOukzebyA",
+   "https://play-lh.googleusercontent.com/3dRV7mygKUKwRSy2oeAijDhwMzmx25eOb5K77fKzLTcEmTyfOQN2H8LlncRCkX2nwA0k-p_p0EQsONPoCKFUjk4",
+   "https://play-lh.googleusercontent.com/0OsZBup1p1mHVdlgTrHfz2I3kIDE1x2HIX1sfAPeGTWv7ufurPUVkEMJ7JDa9gj_4v0QB8YO8SCvwfPk5Sfchw",
+   "https://play-lh.googleusercontent.com/bMiw8zK4O8zTssOvuVHPUKj6aeykMEOguUOq8L74-3bW2cMK_KuuFWCmxeJ_a0ip1P8Y6_CCfb3zP9GD6ozYCCw",
+   "https://play-lh.googleusercontent.com/VVM_O5dT0bJzXWpzmafncRZn9VFGA1FgSUnbU_vJyR0HvViAZSH4-Oe3Q1f5aELqVCr274urmXFm7kgYZBAg_Gg",
+   "https://play-lh.googleusercontent.com/YKe7bkmjKRqhxIm4n6qihhPEZAJVOzkiVQZPvWDC2T7iZlQx-sf6DAn27ll9cPWdLiXYGpQa8u4jk7DWjWBz",
+   "https://play-lh.googleusercontent.com/kxtTewF9c6Pkt4RVdiQ4TdJlzmDKmLolKxOYbHk0XK5lk5FENAHA9Ha-0-SRTNHZKzh5sxTKy3ggfoRhU62G1Fs",
+   "https://play-lh.googleusercontent.com/qsiyDQp2Y0FfDdDxgLX7_3j1nvnkycQkRKGIIEeJF_5YSxz0D_sOElohMORiAb07-SBqxx0ivWUiaOJZDUyF",
+   "https://play-lh.googleusercontent.com/KAQmb9PMo4E3sjvQ6CMKfWip3BsvMfw8um7JLW_yv4Jh1XXYsQ2N4L55eVIcPFZUw-00KzT6fx3RxIOukzebyA",
+   "https://play-lh.googleusercontent.com/3dRV7mygKUKwRSy2oeAijDhwMzmx25eOb5K77fKzLTcEmTyfOQN2H8LlncRCkX2nwA0k-p_p0EQsONPoCKFUjk4",
+   "https://play-lh.googleusercontent.com/0OsZBup1p1mHVdlgTrHfz2I3kIDE1x2HIX1sfAPeGTWv7ufurPUVkEMJ7JDa9gj_4v0QB8YO8SCvwfPk5Sfchw",
+   "https://play-lh.googleusercontent.com/bMiw8zK4O8zTssOvuVHPUKj6aeykMEOguUOq8L74-3bW2cMK_KuuFWCmxeJ_a0ip1P8Y6_CCfb3zP9GD6ozYCCw",
+   "https://play-lh.googleusercontent.com/VVM_O5dT0bJzXWpzmafncRZn9VFGA1FgSUnbU_vJyR0HvViAZSH4-Oe3Q1f5aELqVCr274urmXFm7kgYZBAg_Gg"
+  ],
+  "url": "https://play.google.com/store/apps/details?id=com.flatgames.airport.deputy.safe.terminal",
+  "playPass": true,
+  "rating": 4.26,
+  "ratings": 40810,
+  "installs": 11852096,
+  "tags": [
+   "Simulation"
+  ],
+  "similarity": 1.0,
+  "confidence": "google",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-04",
+  "passChecked": "2026-10-04",
+  "regions": {
+   "be": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "de": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "au": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "es": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "br": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ca": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gb": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "it": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "jp": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "us": {
+    "available": true,
+    "checked": "2026-10-04"
+   }
+  }
+ },
  "Alive Alphabet: Letter Tracing": {
   "appId": "com.intellijoy.letters.tracing",
   "matched": "Alive Alphabet: Letter Tracing",
@@ -173184,6 +173359,97 @@
    }
   }
  },
+ "Bus Upgrade Simulator": {
+  "appId": "com.bus.ultimate.simulator",
+  "matched": "Bus Upgrade Simulator",
+  "developer": "Skyloft Yazılım Bilişim ve Anonim Şirketi",
+  "playGenre": "Simulation",
+  "icon": "https://play-lh.googleusercontent.com/Sx8thOLOAr9bwy0YX-mbXzGPaeHJaG7MO42fbxHHWzqzrE9iM5JzSM304m1Y_ry2vo61DqOLs07iHzJAX7F53Q",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/3MRlwTRTl1PvO0br0z3rncV65giL3f0HVawVwvSBNgGL7mAoUZXegH44_Tet_I0zLvoapHtyWlOe7ELe_fBqmA",
+   "https://play-lh.googleusercontent.com/vcpgRZnkglrO10N99HWkwIxKvjYQtQ6HFhWm-3VKxhJaXtal7WJn7bov54ND7EnGnIvGEJUR65xZBKeGnoAhefY",
+   "https://play-lh.googleusercontent.com/NU0iOXqqaydklcJlnP9vCSaGDX3UfLGKyrJnvBl58jacTK8TUDFRJ81PYbGYEwKo5KkE6RXE9WYaIL2P8_p2",
+   "https://play-lh.googleusercontent.com/Wt2zpIWyKdJZAOMFV6KY7L6asCXBLfGf9ngmIMiferJJnOADNJ0CJG86FcwpyjAJhLOquDL2W95nxYFZ6cgwkA",
+   "https://play-lh.googleusercontent.com/Iu71aehV0Y8DuaN17vJnmu0V22kMSCw6Yb5lonwdWTgRzMl4ih2AAFa75rlOjGIPAw0Q7QKtV5t6mDDk7Kn6ug",
+   "https://play-lh.googleusercontent.com/Frc2-jpMUxkjomVKcD3xOzjnPjHRF3mc-gHtW63vYtNnOIkdXkV-Iu5XKgJnDlh78WbYqNfQECWIeAV40oer",
+   "https://play-lh.googleusercontent.com/3MRlwTRTl1PvO0br0z3rncV65giL3f0HVawVwvSBNgGL7mAoUZXegH44_Tet_I0zLvoapHtyWlOe7ELe_fBqmA",
+   "https://play-lh.googleusercontent.com/vcpgRZnkglrO10N99HWkwIxKvjYQtQ6HFhWm-3VKxhJaXtal7WJn7bov54ND7EnGnIvGEJUR65xZBKeGnoAhefY",
+   "https://play-lh.googleusercontent.com/NU0iOXqqaydklcJlnP9vCSaGDX3UfLGKyrJnvBl58jacTK8TUDFRJ81PYbGYEwKo5KkE6RXE9WYaIL2P8_p2",
+   "https://play-lh.googleusercontent.com/Wt2zpIWyKdJZAOMFV6KY7L6asCXBLfGf9ngmIMiferJJnOADNJ0CJG86FcwpyjAJhLOquDL2W95nxYFZ6cgwkA",
+   "https://play-lh.googleusercontent.com/Iu71aehV0Y8DuaN17vJnmu0V22kMSCw6Yb5lonwdWTgRzMl4ih2AAFa75rlOjGIPAw0Q7QKtV5t6mDDk7Kn6ug",
+   "https://play-lh.googleusercontent.com/Frc2-jpMUxkjomVKcD3xOzjnPjHRF3mc-gHtW63vYtNnOIkdXkV-Iu5XKgJnDlh78WbYqNfQECWIeAV40oer",
+   "https://play-lh.googleusercontent.com/3MRlwTRTl1PvO0br0z3rncV65giL3f0HVawVwvSBNgGL7mAoUZXegH44_Tet_I0zLvoapHtyWlOe7ELe_fBqmA",
+   "https://play-lh.googleusercontent.com/vcpgRZnkglrO10N99HWkwIxKvjYQtQ6HFhWm-3VKxhJaXtal7WJn7bov54ND7EnGnIvGEJUR65xZBKeGnoAhefY",
+   "https://play-lh.googleusercontent.com/NU0iOXqqaydklcJlnP9vCSaGDX3UfLGKyrJnvBl58jacTK8TUDFRJ81PYbGYEwKo5KkE6RXE9WYaIL2P8_p2",
+   "https://play-lh.googleusercontent.com/Wt2zpIWyKdJZAOMFV6KY7L6asCXBLfGf9ngmIMiferJJnOADNJ0CJG86FcwpyjAJhLOquDL2W95nxYFZ6cgwkA",
+   "https://play-lh.googleusercontent.com/Iu71aehV0Y8DuaN17vJnmu0V22kMSCw6Yb5lonwdWTgRzMl4ih2AAFa75rlOjGIPAw0Q7QKtV5t6mDDk7Kn6ug",
+   "https://play-lh.googleusercontent.com/Frc2-jpMUxkjomVKcD3xOzjnPjHRF3mc-gHtW63vYtNnOIkdXkV-Iu5XKgJnDlh78WbYqNfQECWIeAV40oer"
+  ],
+  "url": "https://play.google.com/store/apps/details?id=com.bus.ultimate.simulator",
+  "playPass": true,
+  "rating": 4.56,
+  "ratings": 57571,
+  "installs": 9881701,
+  "tags": [
+   "Simulation"
+  ],
+  "similarity": 1.0,
+  "confidence": "google",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-04",
+  "passChecked": "2026-10-04",
+  "regions": {
+   "be": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "de": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "br": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ca": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "au": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "es": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gb": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "it": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "jp": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "us": {
+    "available": true,
+    "checked": "2026-10-04"
+   }
+  }
+ },
  "BusyBoard Games for Kids 2-5": {
   "appId": "com.iz.busyboard.baby.sensory.kids.toddler.games",
   "matched": "BusyBoard Games for Kids 2-5",
@@ -173472,6 +173738,111 @@
     "checked": "2026-10-04"
    },
    "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   }
+  }
+ },
+ "Carnage: Battle Arena": {
+  "appId": "com.pixelmobgames.carnage.crash.racing",
+  "matched": "Carnage: Battle Arena",
+  "developer": "BoomBit Games",
+  "playGenre": "Racing",
+  "icon": "https://play-lh.googleusercontent.com/7ZaPARdVWBfCe4vOiD6ZxTsxB-Vxcvfsbja4JyYpEMWpcoMqt6YNJ2QEDMpJxCbOKdNt0QWO-q_BsQtu1GIB-B0",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/KJLjZ-BkUdY94os2UeHM0adrf98_BpjzdW2OcSa5zoAnJEaEgFx5DMX8GzcunKjVYiwxE01HO7stwlOpSX0C",
+   "https://play-lh.googleusercontent.com/-Bk-cwACUrkn3a8QdTdYOIdxO_uSI0GWzbHP3jZtizSoM6QkL4O2ZE9_joLhNjvXT7lT7fTgC8bhGhfwXyrmiA",
+   "https://play-lh.googleusercontent.com/5jcdqYThaM722DcI9RMUj4xO6S2LZkJcSevOcIqPa9fr6LyyVkM0TbsxSDPXv_HydI2FJDHnF7knIhKQutpmFw",
+   "https://play-lh.googleusercontent.com/hO8BKxif6nUFPqSEeO0eLwlksHqswzn439senN1_WKN_GEuqP2enajR2eWzfs-MAruKhmBckjQ_NmzAc3HH3",
+   "https://play-lh.googleusercontent.com/d_o9RISroX9BXKSVjFgnaSoV6N8sWrdEAwDJSU2vKd2Vk5y23x6OQMRQhLzjWl96bvwmGfGJYupSIeAjAna0Pcg",
+   "https://play-lh.googleusercontent.com/oBWUxFlKCPI7sWMSG2nkye0gAuiIabaxD-9x9idXQ1h4_h1Y4k6ow4M76OEMs8KZLjiu4So--US8jrr0r-d-MA",
+   "https://play-lh.googleusercontent.com/vAY2ywhh1wtwHh3MNFp_M-aqXwpesTXDyxx-9aarAYB_aUCVZSFbsRuDN2DURgZf69NnOD4SKO8gesttqJ1iCZo",
+   "https://play-lh.googleusercontent.com/8Mwdi1XDulrD07BefbW8eHFezt57WhHZeaLhbyyC_qxDUWykEYvkLOjp9vvoqnkJIqCXiuJnA9FwFPrh-mq30A",
+   "https://play-lh.googleusercontent.com/KJLjZ-BkUdY94os2UeHM0adrf98_BpjzdW2OcSa5zoAnJEaEgFx5DMX8GzcunKjVYiwxE01HO7stwlOpSX0C",
+   "https://play-lh.googleusercontent.com/-Bk-cwACUrkn3a8QdTdYOIdxO_uSI0GWzbHP3jZtizSoM6QkL4O2ZE9_joLhNjvXT7lT7fTgC8bhGhfwXyrmiA",
+   "https://play-lh.googleusercontent.com/5jcdqYThaM722DcI9RMUj4xO6S2LZkJcSevOcIqPa9fr6LyyVkM0TbsxSDPXv_HydI2FJDHnF7knIhKQutpmFw",
+   "https://play-lh.googleusercontent.com/hO8BKxif6nUFPqSEeO0eLwlksHqswzn439senN1_WKN_GEuqP2enajR2eWzfs-MAruKhmBckjQ_NmzAc3HH3",
+   "https://play-lh.googleusercontent.com/d_o9RISroX9BXKSVjFgnaSoV6N8sWrdEAwDJSU2vKd2Vk5y23x6OQMRQhLzjWl96bvwmGfGJYupSIeAjAna0Pcg",
+   "https://play-lh.googleusercontent.com/oBWUxFlKCPI7sWMSG2nkye0gAuiIabaxD-9x9idXQ1h4_h1Y4k6ow4M76OEMs8KZLjiu4So--US8jrr0r-d-MA",
+   "https://play-lh.googleusercontent.com/vAY2ywhh1wtwHh3MNFp_M-aqXwpesTXDyxx-9aarAYB_aUCVZSFbsRuDN2DURgZf69NnOD4SKO8gesttqJ1iCZo",
+   "https://play-lh.googleusercontent.com/8Mwdi1XDulrD07BefbW8eHFezt57WhHZeaLhbyyC_qxDUWykEYvkLOjp9vvoqnkJIqCXiuJnA9FwFPrh-mq30A",
+   "https://play-lh.googleusercontent.com/KJLjZ-BkUdY94os2UeHM0adrf98_BpjzdW2OcSa5zoAnJEaEgFx5DMX8GzcunKjVYiwxE01HO7stwlOpSX0C",
+   "https://play-lh.googleusercontent.com/-Bk-cwACUrkn3a8QdTdYOIdxO_uSI0GWzbHP3jZtizSoM6QkL4O2ZE9_joLhNjvXT7lT7fTgC8bhGhfwXyrmiA",
+   "https://play-lh.googleusercontent.com/5jcdqYThaM722DcI9RMUj4xO6S2LZkJcSevOcIqPa9fr6LyyVkM0TbsxSDPXv_HydI2FJDHnF7knIhKQutpmFw",
+   "https://play-lh.googleusercontent.com/hO8BKxif6nUFPqSEeO0eLwlksHqswzn439senN1_WKN_GEuqP2enajR2eWzfs-MAruKhmBckjQ_NmzAc3HH3",
+   "https://play-lh.googleusercontent.com/d_o9RISroX9BXKSVjFgnaSoV6N8sWrdEAwDJSU2vKd2Vk5y23x6OQMRQhLzjWl96bvwmGfGJYupSIeAjAna0Pcg",
+   "https://play-lh.googleusercontent.com/oBWUxFlKCPI7sWMSG2nkye0gAuiIabaxD-9x9idXQ1h4_h1Y4k6ow4M76OEMs8KZLjiu4So--US8jrr0r-d-MA",
+   "https://play-lh.googleusercontent.com/vAY2ywhh1wtwHh3MNFp_M-aqXwpesTXDyxx-9aarAYB_aUCVZSFbsRuDN2DURgZf69NnOD4SKO8gesttqJ1iCZo",
+   "https://play-lh.googleusercontent.com/8Mwdi1XDulrD07BefbW8eHFezt57WhHZeaLhbyyC_qxDUWykEYvkLOjp9vvoqnkJIqCXiuJnA9FwFPrh-mq30A"
+  ],
+  "url": "https://play.google.com/store/apps/details?id=com.pixelmobgames.carnage.crash.racing",
+  "playPass": true,
+  "rating": 4.06,
+  "ratings": 2600,
+  "installs": 3718196,
+  "tags": [
+   "Racing",
+   "Stunt driving",
+   "Drift",
+   "Casual",
+   "Multiplayer",
+   "Competitive multiplayer",
+   "Single player",
+   "Stylized",
+   "Pixelated"
+  ],
+  "similarity": 1.0,
+  "confidence": "google",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-04",
+  "passChecked": "2026-10-04",
+  "regions": {
+   "br": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "be": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ca": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "es": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "de": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "au": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gb": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "it": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "jp": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "us": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -176058,6 +176429,111 @@
    }
   }
  },
+ "Final Frontier Story": {
+  "appId": "net.kairosoft.android.wakusei",
+  "matched": "Final Frontier Story",
+  "developer": "Kairosoft",
+  "playGenre": "Simulation",
+  "icon": "https://play-lh.googleusercontent.com/yKIqouR6SLbZNjZywxGj6pZboyxDXAPPeGUQb_ilPuhHZzhpx0ngCHF4Z-0N1IXIHyAp0rn0Il4RCVj-wUbCAw",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/lLUYO1GnKyS7PmRDXYiQb8yNQP94pkyR77OewFE-_40JIHIruQLs9LmOnCwycwzRDq5pt3RHrYCUVc6LA2q8FQ",
+   "https://play-lh.googleusercontent.com/MiRQ2S6nrkXsEs8yHVNtCTuew9aofkuDZHMGr-4lqtN9BiCYFMFVnDq2e55B2JDLYBkZeuWghjR51VnsZRrjew",
+   "https://play-lh.googleusercontent.com/G4JJE2RXd4Nd9SZu0fOkFhAUJpwvrFMS_ExH7w6R_qr_mMpw7lhJhk5IsqpOPwYDg8FWUtQjJptuhdpVPn09",
+   "https://play-lh.googleusercontent.com/-vmy0aHUEDycpzvOSvj9ImHC3aJU9k85vqIdA_u3eyaN8_yVIfMlOPUl0J9q9nexc2QXcymv5C0j6AJpfsHc",
+   "https://play-lh.googleusercontent.com/bWuOZiAqpXODnUCbSkhbMCF6T86fJw365COjitYw82DTOxFslOJsuiFYboNYLn-_r9pLuU-yT0d52JvT3fOI1w",
+   "https://play-lh.googleusercontent.com/nxHCGTxs6S5UvgT6RZRyD7n05qL0joerd9fkSg2yY5nWuCal7Zs7SSVS6t58dxui7AnKg4nKoVlpftDJeLepmg",
+   "https://play-lh.googleusercontent.com/9Sa_rdUZA9wTAtSwWHVe8OA2Samnhwa9vjnBW99UOlc-skcNEn7owJEfrLUDcrDZb_q3GMlyZRhiGtIgMkYM",
+   "https://play-lh.googleusercontent.com/24fh6TZxfsWC1WuFF5LnCxlCE_kDN3l3crcwqK7RNK1y7M3yVhsYgqd33wEqLwDFcLz9RDrDC5tCnrGbQIX5bA",
+   "https://play-lh.googleusercontent.com/GRai-i7Ap_lWmsy-nbn6F3s5XUItyjtRxd1WJz3vRaMOhAUyxtWEagk5HUu4PV54ORuftYd9f7cOu9FcI_-aYg",
+   "https://play-lh.googleusercontent.com/dNEy_CqUyDv8NMwNLKYHVj_pPdL0DSDoxr2oxcMWBc6geiJBAsnriCszbJpbQ8PuqucKmi4rNPVunvmI8-j1Dw",
+   "https://play-lh.googleusercontent.com/feaam72IM316UgWP0vTfzW3VKljdOqIEJbax-jLxrIOvP-9ZX2NCqyfLokrpuGUgBdeeEyDRpnVhhanZvrTA",
+   "https://play-lh.googleusercontent.com/d6w44LB26z5F45b7wgtothnZD59-fKsMRYrWwwHu6fJVai_vpj2ODCFjwTzLYllNc5uBhN5lgiZsaeWjJU1hqw",
+   "https://play-lh.googleusercontent.com/WDdbO8YC800KuuYMp4ptegqqi6y_y3MwfEpeeg_y30GCnIuMXAcicPPJh3yAfd9mBVCcCjXepkyq2vi_k2hK4uA",
+   "https://play-lh.googleusercontent.com/nxHCGTxs6S5UvgT6RZRyD7n05qL0joerd9fkSg2yY5nWuCal7Zs7SSVS6t58dxui7AnKg4nKoVlpftDJeLepmg",
+   "https://play-lh.googleusercontent.com/9Sa_rdUZA9wTAtSwWHVe8OA2Samnhwa9vjnBW99UOlc-skcNEn7owJEfrLUDcrDZb_q3GMlyZRhiGtIgMkYM",
+   "https://play-lh.googleusercontent.com/24fh6TZxfsWC1WuFF5LnCxlCE_kDN3l3crcwqK7RNK1y7M3yVhsYgqd33wEqLwDFcLz9RDrDC5tCnrGbQIX5bA",
+   "https://play-lh.googleusercontent.com/GRai-i7Ap_lWmsy-nbn6F3s5XUItyjtRxd1WJz3vRaMOhAUyxtWEagk5HUu4PV54ORuftYd9f7cOu9FcI_-aYg",
+   "https://play-lh.googleusercontent.com/dNEy_CqUyDv8NMwNLKYHVj_pPdL0DSDoxr2oxcMWBc6geiJBAsnriCszbJpbQ8PuqucKmi4rNPVunvmI8-j1Dw",
+   "https://play-lh.googleusercontent.com/feaam72IM316UgWP0vTfzW3VKljdOqIEJbax-jLxrIOvP-9ZX2NCqyfLokrpuGUgBdeeEyDRpnVhhanZvrTA",
+   "https://play-lh.googleusercontent.com/d6w44LB26z5F45b7wgtothnZD59-fKsMRYrWwwHu6fJVai_vpj2ODCFjwTzLYllNc5uBhN5lgiZsaeWjJU1hqw",
+   "https://play-lh.googleusercontent.com/WDdbO8YC800KuuYMp4ptegqqi6y_y3MwfEpeeg_y30GCnIuMXAcicPPJh3yAfd9mBVCcCjXepkyq2vi_k2hK4uA",
+   "https://play-lh.googleusercontent.com/nxHCGTxs6S5UvgT6RZRyD7n05qL0joerd9fkSg2yY5nWuCal7Zs7SSVS6t58dxui7AnKg4nKoVlpftDJeLepmg",
+   "https://play-lh.googleusercontent.com/9Sa_rdUZA9wTAtSwWHVe8OA2Samnhwa9vjnBW99UOlc-skcNEn7owJEfrLUDcrDZb_q3GMlyZRhiGtIgMkYM",
+   "https://play-lh.googleusercontent.com/24fh6TZxfsWC1WuFF5LnCxlCE_kDN3l3crcwqK7RNK1y7M3yVhsYgqd33wEqLwDFcLz9RDrDC5tCnrGbQIX5bA"
+  ],
+  "url": "https://play.google.com/store/apps/details?id=net.kairosoft.android.wakusei",
+  "playPass": true,
+  "rating": 4.63,
+  "ratings": 916,
+  "installs": 33333,
+  "tags": [
+   "Simulation",
+   "Management",
+   "City-building",
+   "Single player",
+   "Stylized",
+   "Pixelated",
+   "Science fiction",
+   "Space",
+   "Offline"
+  ],
+  "similarity": 1.0,
+  "confidence": "google",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-04",
+  "passChecked": "2026-10-04",
+  "regions": {
+   "br": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ca": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "be": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "de": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "au": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "es": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gb": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "it": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "jp": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "us": {
+    "available": true,
+    "checked": "2026-10-04"
+   }
+  }
+ },
  "Find Differences Search & Spot": {
   "appId": "com.DifLabs.Differences",
   "matched": "Find Differences Search & Spot",
@@ -178129,6 +178605,98 @@
    }
   }
  },
+ "Human Resource Machine": {
+  "appId": "com.tomorrowcorporation.humanresourcemachine",
+  "matched": "Human Resource Machine",
+  "developer": "Tomorrow Corporation",
+  "playGenre": "Puzzle",
+  "icon": "https://play-lh.googleusercontent.com/UhurgCH18CRM9JXXt-Kxf70iWmbYAvPEUm4Qze4pauHOpMo1zjwbEFPShSQU2XqoYbTxJ75kmAsnWGWKw2p4zw",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/lS6vJUtxTqepaXLt4QMS30BQS2ilPWmn2Qa4-6o1RnD_UHMFxTOjEzREnG27zCZ2tV-r2U1oICvCoui30UF75ns",
+   "https://play-lh.googleusercontent.com/IMsAOuu42eXchQ-d22rhzpwscpR944A0b_RLRlzI-YrOX0paaDOfgklfjuNQW4hHRUGXETJouBqLg9an2Hzr",
+   "https://play-lh.googleusercontent.com/1jk7XgImDFS7P-T7gUOaZ4vbVzko5_bhSrc7x3MBcsUYb9qp5Ny7bo8zgl3QnAsglSoqCU1fH5DfjP5O-BCOnQ",
+   "https://play-lh.googleusercontent.com/-hxXblP_PODGaKKLFbo-S2RRt1JhbXWT5b2Hn_eZJqcgXomTYLTNWCqlyGtoOUKgNoXK5-JFhMvtUxAsidvQ",
+   "https://play-lh.googleusercontent.com/khVMxPJ4jI1pu-ZqfnJQ5vEPxWd4_YyMZwJrBrflRZ8drrF0tN6E-sJ9HgkDcMCSc8gXO_f7VpOr2Cg_uJ1vXA",
+   "https://play-lh.googleusercontent.com/lS6vJUtxTqepaXLt4QMS30BQS2ilPWmn2Qa4-6o1RnD_UHMFxTOjEzREnG27zCZ2tV-r2U1oICvCoui30UF75ns",
+   "https://play-lh.googleusercontent.com/IMsAOuu42eXchQ-d22rhzpwscpR944A0b_RLRlzI-YrOX0paaDOfgklfjuNQW4hHRUGXETJouBqLg9an2Hzr",
+   "https://play-lh.googleusercontent.com/1jk7XgImDFS7P-T7gUOaZ4vbVzko5_bhSrc7x3MBcsUYb9qp5Ny7bo8zgl3QnAsglSoqCU1fH5DfjP5O-BCOnQ",
+   "https://play-lh.googleusercontent.com/-hxXblP_PODGaKKLFbo-S2RRt1JhbXWT5b2Hn_eZJqcgXomTYLTNWCqlyGtoOUKgNoXK5-JFhMvtUxAsidvQ",
+   "https://play-lh.googleusercontent.com/khVMxPJ4jI1pu-ZqfnJQ5vEPxWd4_YyMZwJrBrflRZ8drrF0tN6E-sJ9HgkDcMCSc8gXO_f7VpOr2Cg_uJ1vXA",
+   "https://play-lh.googleusercontent.com/lS6vJUtxTqepaXLt4QMS30BQS2ilPWmn2Qa4-6o1RnD_UHMFxTOjEzREnG27zCZ2tV-r2U1oICvCoui30UF75ns",
+   "https://play-lh.googleusercontent.com/IMsAOuu42eXchQ-d22rhzpwscpR944A0b_RLRlzI-YrOX0paaDOfgklfjuNQW4hHRUGXETJouBqLg9an2Hzr",
+   "https://play-lh.googleusercontent.com/1jk7XgImDFS7P-T7gUOaZ4vbVzko5_bhSrc7x3MBcsUYb9qp5Ny7bo8zgl3QnAsglSoqCU1fH5DfjP5O-BCOnQ",
+   "https://play-lh.googleusercontent.com/-hxXblP_PODGaKKLFbo-S2RRt1JhbXWT5b2Hn_eZJqcgXomTYLTNWCqlyGtoOUKgNoXK5-JFhMvtUxAsidvQ",
+   "https://play-lh.googleusercontent.com/khVMxPJ4jI1pu-ZqfnJQ5vEPxWd4_YyMZwJrBrflRZ8drrF0tN6E-sJ9HgkDcMCSc8gXO_f7VpOr2Cg_uJ1vXA"
+  ],
+  "url": "https://play.google.com/store/apps/details?id=com.tomorrowcorporation.humanresourcemachine",
+  "playPass": true,
+  "rating": 3.98,
+  "ratings": 3038,
+  "installs": 180630,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ],
+  "similarity": 1.0,
+  "confidence": "google",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-04",
+  "passChecked": "2026-10-04",
+  "regions": {
+   "br": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ca": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "de": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "au": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "be": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "es": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gb": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "it": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "jp": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "us": {
+    "available": true,
+    "checked": "2026-10-04"
+   }
+  }
+ },
  "Hungry Hearts Ramen": {
   "appId": "jp.co.gagex.betelgeuse",
   "matched": "Hungry Hearts Ramen",
@@ -179811,6 +180379,108 @@
    }
   }
  },
+ "Kids Pizza Maker Cooking Games (Timpy Games For Kids, Toddlers & Baby)": {
+  "appId": "com.iz.pizza.party.maker.restaurant.kids.cooking.games.pizzeria",
+  "matched": "Kids Pizza Maker Cooking Games",
+  "developer": "Timpy Games For Kids, Toddlers & Baby",
+  "playGenre": "Educational",
+  "icon": "https://play-lh.googleusercontent.com/-hgPZ941wIx7O2RjmjXbUit7iooIJNy1kmAnEGOIIVtAgdvMK9vZMu9Zu4sSdUCwyXaHjPFpb0u76i2sICPMkAk",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/QiiNfYXF5Yd10CcoeL50o5Hi7RufQzwQJpuIUqo33G1diDiejirxMSHPZZ_hzTZ7TKpqKbblTULTWwueWOmVzw",
+   "https://play-lh.googleusercontent.com/OrVnuZpB1vZcfLkTxItrAcfkV7T848MRU74fz4Yta1YkehORJhDDGkRhIqrT9yX64IDsKaaYQOJ33Nlcjr-20Q",
+   "https://play-lh.googleusercontent.com/3oUHND8kWDLYjB78FRW66MfZPFluolLfiXoVLyzVMr7Wy4VZelg0Ojbh8fWlEJWjYx_iNxguQOKOmSPB0ZUzt9Q",
+   "https://play-lh.googleusercontent.com/bXF0I5PL7H66xvG2Qcu9amrYgJXnUjS3iLI4SPM6iKZKIEFr5xlBH_6aKS7nmKniIjO64WVDi_pdAy4SP3Rm-Q",
+   "https://play-lh.googleusercontent.com/NBa8ku-2ecVHppc9aaNMp4vJT0h22LcrFjOxQSVrrHZinEQkj_s0bJKKr_hR4Pu5iCfpE3MzONv5r-wrz_De6A",
+   "https://play-lh.googleusercontent.com/MTb95zdzOs434F_15XM1oe0t-MVeNxLBsLYpxbBSA4zyqgq64Ew9p25HUhJVZaMdnwroFqc9rv4_m23bSO2G",
+   "https://play-lh.googleusercontent.com/Y7hXqz3TAc0oCdfpou9gLp8MnbWwaiLytkLi6wcva1KBBOW5ZtJgz9lURzw8N7l8goU3WN2DK5SQfp_luR3gMg",
+   "https://play-lh.googleusercontent.com/hrnVjVI1Y7PxXA6lpCgCd2TXBc0Ywbs4H9TtzTiFvqxExZvKa9FM93ddlHzQ1OHjPx0BgGLZSQrssiNx2x3M0g",
+   "https://play-lh.googleusercontent.com/QiiNfYXF5Yd10CcoeL50o5Hi7RufQzwQJpuIUqo33G1diDiejirxMSHPZZ_hzTZ7TKpqKbblTULTWwueWOmVzw",
+   "https://play-lh.googleusercontent.com/OrVnuZpB1vZcfLkTxItrAcfkV7T848MRU74fz4Yta1YkehORJhDDGkRhIqrT9yX64IDsKaaYQOJ33Nlcjr-20Q",
+   "https://play-lh.googleusercontent.com/3oUHND8kWDLYjB78FRW66MfZPFluolLfiXoVLyzVMr7Wy4VZelg0Ojbh8fWlEJWjYx_iNxguQOKOmSPB0ZUzt9Q",
+   "https://play-lh.googleusercontent.com/bXF0I5PL7H66xvG2Qcu9amrYgJXnUjS3iLI4SPM6iKZKIEFr5xlBH_6aKS7nmKniIjO64WVDi_pdAy4SP3Rm-Q",
+   "https://play-lh.googleusercontent.com/NBa8ku-2ecVHppc9aaNMp4vJT0h22LcrFjOxQSVrrHZinEQkj_s0bJKKr_hR4Pu5iCfpE3MzONv5r-wrz_De6A",
+   "https://play-lh.googleusercontent.com/MTb95zdzOs434F_15XM1oe0t-MVeNxLBsLYpxbBSA4zyqgq64Ew9p25HUhJVZaMdnwroFqc9rv4_m23bSO2G",
+   "https://play-lh.googleusercontent.com/Y7hXqz3TAc0oCdfpou9gLp8MnbWwaiLytkLi6wcva1KBBOW5ZtJgz9lURzw8N7l8goU3WN2DK5SQfp_luR3gMg",
+   "https://play-lh.googleusercontent.com/hrnVjVI1Y7PxXA6lpCgCd2TXBc0Ywbs4H9TtzTiFvqxExZvKa9FM93ddlHzQ1OHjPx0BgGLZSQrssiNx2x3M0g",
+   "https://play-lh.googleusercontent.com/QiiNfYXF5Yd10CcoeL50o5Hi7RufQzwQJpuIUqo33G1diDiejirxMSHPZZ_hzTZ7TKpqKbblTULTWwueWOmVzw",
+   "https://play-lh.googleusercontent.com/OrVnuZpB1vZcfLkTxItrAcfkV7T848MRU74fz4Yta1YkehORJhDDGkRhIqrT9yX64IDsKaaYQOJ33Nlcjr-20Q",
+   "https://play-lh.googleusercontent.com/3oUHND8kWDLYjB78FRW66MfZPFluolLfiXoVLyzVMr7Wy4VZelg0Ojbh8fWlEJWjYx_iNxguQOKOmSPB0ZUzt9Q",
+   "https://play-lh.googleusercontent.com/bXF0I5PL7H66xvG2Qcu9amrYgJXnUjS3iLI4SPM6iKZKIEFr5xlBH_6aKS7nmKniIjO64WVDi_pdAy4SP3Rm-Q",
+   "https://play-lh.googleusercontent.com/NBa8ku-2ecVHppc9aaNMp4vJT0h22LcrFjOxQSVrrHZinEQkj_s0bJKKr_hR4Pu5iCfpE3MzONv5r-wrz_De6A",
+   "https://play-lh.googleusercontent.com/MTb95zdzOs434F_15XM1oe0t-MVeNxLBsLYpxbBSA4zyqgq64Ew9p25HUhJVZaMdnwroFqc9rv4_m23bSO2G",
+   "https://play-lh.googleusercontent.com/Y7hXqz3TAc0oCdfpou9gLp8MnbWwaiLytkLi6wcva1KBBOW5ZtJgz9lURzw8N7l8goU3WN2DK5SQfp_luR3gMg",
+   "https://play-lh.googleusercontent.com/hrnVjVI1Y7PxXA6lpCgCd2TXBc0Ywbs4H9TtzTiFvqxExZvKa9FM93ddlHzQ1OHjPx0BgGLZSQrssiNx2x3M0g"
+  ],
+  "url": "https://play.google.com/store/apps/details?id=com.iz.pizza.party.maker.restaurant.kids.cooking.games.pizzeria",
+  "playPass": true,
+  "rating": 4.42,
+  "ratings": 1897,
+  "installs": 1880178,
+  "tags": [
+   "Simulation",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Cartoon",
+   "Offline"
+  ],
+  "similarity": 0.93,
+  "confidence": "google",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-04",
+  "passChecked": "2026-10-04",
+  "regions": {
+   "br": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ca": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "au": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "de": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "es": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "be": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gb": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "it": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "jp": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "us": {
+    "available": true,
+    "checked": "2026-10-04"
+   }
+  }
+ },
  "Kids Preschool Learning Games": {
   "appId": "com.kids.preschool.learning.games",
   "matched": "Kids Preschool Learning Games",
@@ -180887,6 +181557,192 @@
     "checked": "2026-10-04"
    },
    "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   }
+  }
+ },
+ "LYNE": {
+  "appId": "com.thomasbowker.lynerelease",
+  "matched": "LYNE",
+  "developer": "Thomas Bowker",
+  "playGenre": "Puzzle",
+  "icon": "https://play-lh.googleusercontent.com/h12m729C0SJZ46srIJyLuT-tp3Mj0NDGz68wo2wFDYfBiRcnYQip3GzxGiAmf7lXSx-5kMWi-Il7DSwPT42q7A",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/8V2md326EdWUkpOylE6QzkGeHgheJb4FVvSrkuk1hJKYcG7KWeBTzCUGayr9WHSRUTOiL4mis_kPxmj2dZFuqw",
+   "https://play-lh.googleusercontent.com/JZoQ6jHHF2n6FuBtFXD7AnWKhkBwWMwid1pjqHIVIorOpZTyF4Z56VOs9ByOt1Kse5RaWOUS116n9blUYtrKkw",
+   "https://play-lh.googleusercontent.com/GKtzafeS-NWcxLhbAGpKirBYWNhFTxWmPCC6R9vGA5G6onYl2mRkd9Z62Gf6dU9e7q0H27pW4UBtufEzwWWutg",
+   "https://play-lh.googleusercontent.com/Ed5116qJ6W9WgqTJybQ671IN8lDhWP5yKJoFkVwrCjCn5pHRSHr0Iz7JNckchMEPx6g6KZTuw-IVkKLXe4XD",
+   "https://play-lh.googleusercontent.com/tZii6M9G3GdfLaktl-LVEc4tt9sG43VfZSSGfE_9zS1ak7qHx9XdBHISXZnwOilHibKypURtTYxHQlB9RtrRxEM",
+   "https://play-lh.googleusercontent.com/IGpvDcN4m6dvXwLG5uD775oDu8yWpceZvMq4GCfDsTN3VJ2wswaNXqJg8Nxi-_tIp5WKFN6X0MFKLTod7hiR",
+   "https://play-lh.googleusercontent.com/GVOySXdj1RIrGOEkzvEVOBthtuCVsNuC_dFXeX9sg6VzbGGCbDy5FaoL6qUSU7KEM0WqNW-EJxv46Lo8gtXNP7w",
+   "https://play-lh.googleusercontent.com/9hrCt9gob2fspe3HRNbXJBkZi2eFDULWzlZGcIMhS4L_9ryv89f1fWa1BhSljbbO5Msu6gp39gz2J8wWPz-7Rg",
+   "https://play-lh.googleusercontent.com/mb7myJY4emg-rRw3cRmK_8n8UGWepMJ01D2sBFSNui41jcSX_QmNyHvmk3Jnvd7cHv6S4t8vFVVhv4T0T6lwmA",
+   "https://play-lh.googleusercontent.com/g6zxVyhdjOCmLiYkSubkuRyxn-dzYGEPVrWWi8Ikddiy6cbRWcUtdEcWEl8ewvgDrK9jI2jispk2RrnPZ9sILg",
+   "https://play-lh.googleusercontent.com/yo9S_RrhMmZuvzB0boJmJNv_rbUVN8FTBBAjf-Jbm_GAcdyBVq4ajSkYdNPha20pgagKgSvp3Gn_IRgedjuurw",
+   "https://play-lh.googleusercontent.com/7EA3CXaX6l5slLBpUCp-GEmpbl1Act0pWXcSdUwYEA9-J0FzDsccBxn40uUMBG7R2W2MbX-ufExDRLuKNnM5FA",
+   "https://play-lh.googleusercontent.com/GVOySXdj1RIrGOEkzvEVOBthtuCVsNuC_dFXeX9sg6VzbGGCbDy5FaoL6qUSU7KEM0WqNW-EJxv46Lo8gtXNP7w",
+   "https://play-lh.googleusercontent.com/9hrCt9gob2fspe3HRNbXJBkZi2eFDULWzlZGcIMhS4L_9ryv89f1fWa1BhSljbbO5Msu6gp39gz2J8wWPz-7Rg",
+   "https://play-lh.googleusercontent.com/mb7myJY4emg-rRw3cRmK_8n8UGWepMJ01D2sBFSNui41jcSX_QmNyHvmk3Jnvd7cHv6S4t8vFVVhv4T0T6lwmA",
+   "https://play-lh.googleusercontent.com/g6zxVyhdjOCmLiYkSubkuRyxn-dzYGEPVrWWi8Ikddiy6cbRWcUtdEcWEl8ewvgDrK9jI2jispk2RrnPZ9sILg",
+   "https://play-lh.googleusercontent.com/yo9S_RrhMmZuvzB0boJmJNv_rbUVN8FTBBAjf-Jbm_GAcdyBVq4ajSkYdNPha20pgagKgSvp3Gn_IRgedjuurw",
+   "https://play-lh.googleusercontent.com/7EA3CXaX6l5slLBpUCp-GEmpbl1Act0pWXcSdUwYEA9-J0FzDsccBxn40uUMBG7R2W2MbX-ufExDRLuKNnM5FA"
+  ],
+  "url": "https://play.google.com/store/apps/details?id=com.thomasbowker.lynerelease",
+  "playPass": true,
+  "rating": 4.38,
+  "ratings": 3263,
+  "installs": 46964,
+  "tags": [
+   "Puzzle",
+   "Logic",
+   "Casual",
+   "Abstract"
+  ],
+  "similarity": 1.0,
+  "confidence": "google",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-04",
+  "passChecked": "2026-10-04",
+  "regions": {
+   "br": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ca": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "au": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "de": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "be": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "es": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gb": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "jp": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "it": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "us": {
+    "available": true,
+    "checked": "2026-10-04"
+   }
+  }
+ },
+ "Mafia Empire": {
+  "appId": "mafia.empire.tycoon",
+  "matched": "Mafia Empire",
+  "developer": "TapNation",
+  "playGenre": "Simulation",
+  "icon": "https://play-lh.googleusercontent.com/IIKxJYrM-QS0S1BDhg2qAKhmHTrijKgsXW0PH4LZSBB1JA0K7l0b30iYWm3Inu5JSzBlOPvO9hbZd8lhu6gr",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/LO3QaMoitxN4LZApwvnXNH12Y_bN6ne1EgYMeurKoXEEzLnG-vFMlwp5ItVM7A5wK_j_eY3s3v16deBNvaWGqw",
+   "https://play-lh.googleusercontent.com/tWChXGnuNK0_JMLE2rSqsO1yR6FburZIoHDXzXntW9EYUptpjb1nMTSd08alFH2QOn-r07rOYaxHF_4W9icu1Aw",
+   "https://play-lh.googleusercontent.com/8rKd6L7Nd2TyeT0HIwCMueXKOi_f_N1Mv50rG_osFB7MYaDWXuqGTFQwaKadUzGxz1EQnq9TgX_lZFN1Bm01lxc",
+   "https://play-lh.googleusercontent.com/v9i4e-blIOnXttM0bZX126jSKA6cTs4jWpZUwhOSSIZgGAThSo7vmw0kfts14YHpcf-lj07Ays03UvIwnUMyH5U",
+   "https://play-lh.googleusercontent.com/2D-A-P3C8_rnEycOSC3yNZEuuPw8NzkuXhYNrQbz519lfDAKRkNYhmnH3lj0AkrsGu93KE9X9H583jwNz59sYw",
+   "https://play-lh.googleusercontent.com/16Bo_P8aIqdGUkDtA25QGd4sbGlJLeq-fdkHdtj2sjORutEa4QofD0O6eMjLOfYF02IK-Xxw6xOvA7UVqqmt2Q",
+   "https://play-lh.googleusercontent.com/uDVod7kXXaGRj-8x5UEjQdO1JIKSKuNLt40FXiDNqJMcUSJj_D8xnWMDsGd7IqgT04q4IfhY1ZiaDlRSSGEBHg",
+   "https://play-lh.googleusercontent.com/73YdXOgnv5p7VPt_7T7OB52TCfzxviiyYgpei7cI___2-pxu61Lp5tD_7DsUgNTt4iQLSb3wtzmO0ERkqB1aFA",
+   "https://play-lh.googleusercontent.com/R2n7JGi1xbWZshGrvwYpDCZGTVCtZEzBmkOKElAjICNahwrwW0GTD5QbHx6M-MsUo4FIb7jdimo4Oj7C4uv3gQ",
+   "https://play-lh.googleusercontent.com/occXGVpI0h9kFXEjC7hlMHSLubik-f95JobBJFxLlIYUupLrI0ETzOtNZgXgX4PJTLYGDTPbYcKu62pKGeod",
+   "https://play-lh.googleusercontent.com/JCI4LtoBognp_xuuWfSF6vjn-prq5qjRPi1ZeTONHW3yHbrbnptkEpJPvXzt_nGLDzz1ZxxZPuHqS7X8FQVtpA",
+   "https://play-lh.googleusercontent.com/L6SmFWPF-8-_BuWkSAaztjZW4iZR6E-lAff_LD2nfQTK9X6bY5Gmzvuk8R22u4Yc5YC34zd_pKAyvFrn6KWOeww",
+   "https://play-lh.googleusercontent.com/bc-Gud-T2dULvRn3aM8YpgCXvpepx70Fcx2s_1u6ZuiR2fPOo1BG79jwFmbc0_ch-qSL0hKuBZvhjT2wfa__",
+   "https://play-lh.googleusercontent.com/Oe0A_bkmEMM0bBnjaaKKVtThmvVF279TRD5yEzeMVneIBQXg93t6QoMsa8CXOdzy63L9G1khUCy1gOQDKcZmug",
+   "https://play-lh.googleusercontent.com/J1mS2LTzdMoFtp_MYgEjUzb0KAHhyU_-uZmI4jUIj2E6hSlLrArSvoHxmgyK6hWEIDg3IOdaj-AehUwDkcEcsg",
+   "https://play-lh.googleusercontent.com/73YdXOgnv5p7VPt_7T7OB52TCfzxviiyYgpei7cI___2-pxu61Lp5tD_7DsUgNTt4iQLSb3wtzmO0ERkqB1aFA"
+  ],
+  "url": "https://play.google.com/store/apps/details?id=mafia.empire.tycoon",
+  "playPass": true,
+  "rating": 3.34,
+  "ratings": 3170,
+  "installs": 361822,
+  "tags": [
+   "Single player",
+   "Stylized",
+   "Immersive",
+   "Offline"
+  ],
+  "similarity": 1.0,
+  "confidence": "google",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-04",
+  "passChecked": "2026-10-04",
+  "regions": {
+   "ca": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "br": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "be": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "au": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "de": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "es": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gb": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "it": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "jp": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "us": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -182811,6 +183667,97 @@
     "checked": "2026-10-04"
    },
    "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   }
+  }
+ },
+ "Pair Tiles: 3D puzzle match": {
+  "appId": "com.miniit.matchgame",
+  "matched": "Pair Tiles: 3D puzzle match",
+  "developer": "Brightika, Inc.",
+  "playGenre": "Casual",
+  "icon": "https://play-lh.googleusercontent.com/n7cXggM_o38nojQXbKOt0KtrcV1TXgvDtighq8UI1ngkC7l1hqkQ2QhfSKc4U_0UMfGUO98fy3Ek_lNK3zXB9g",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/Eanbu1_g1Yw37NQoc5f2RlRdSnUyuDjpsANHicLTC7aLwwoTrOSzdDSwAwXoRiABeHG3Lvtx8uhig12oaefWiQ",
+   "https://play-lh.googleusercontent.com/ppXZS_UjjOXyqip6VbduOP9dgHt66b9UG6o6YMruX_RULLd4qPzXtvNG77b7SEa5Kenhgq3Z9GaylaR3IV-Ys_c",
+   "https://play-lh.googleusercontent.com/V3H1Hgd7iv04K0nj1MEND8NNphhTwBxkruva4Oy_HWgKp5GZCgmnft4AVEw00dXP8gX0zfTJvQv-Fwn38txI1Q",
+   "https://play-lh.googleusercontent.com/G2EAdubIn6ekXD_m0KA-SxJMWjM5q0JVUdR9RO4-vjhJ1_nAJuT6QACWfQpuTUNaVNcQ7gEn1c2v0iAb5IuWlQ",
+   "https://play-lh.googleusercontent.com/szU1tkBmjFSoWK_HCfX5eChs3yuCTJzPZ88eDFpoq2fLrwujsnlFCdG3lYEJTbtpD-zkXjt9aGmXFGXwRF0V",
+   "https://play-lh.googleusercontent.com/tsX_OlQJM5HhF-QI9TevaqrTaw0Gkk6timUCcq339XakZzGGxi-EU-wUtcDrJ5B9mZ11T5hFgyHNiul4UWQS0cw",
+   "https://play-lh.googleusercontent.com/Eanbu1_g1Yw37NQoc5f2RlRdSnUyuDjpsANHicLTC7aLwwoTrOSzdDSwAwXoRiABeHG3Lvtx8uhig12oaefWiQ",
+   "https://play-lh.googleusercontent.com/ppXZS_UjjOXyqip6VbduOP9dgHt66b9UG6o6YMruX_RULLd4qPzXtvNG77b7SEa5Kenhgq3Z9GaylaR3IV-Ys_c",
+   "https://play-lh.googleusercontent.com/V3H1Hgd7iv04K0nj1MEND8NNphhTwBxkruva4Oy_HWgKp5GZCgmnft4AVEw00dXP8gX0zfTJvQv-Fwn38txI1Q",
+   "https://play-lh.googleusercontent.com/G2EAdubIn6ekXD_m0KA-SxJMWjM5q0JVUdR9RO4-vjhJ1_nAJuT6QACWfQpuTUNaVNcQ7gEn1c2v0iAb5IuWlQ",
+   "https://play-lh.googleusercontent.com/szU1tkBmjFSoWK_HCfX5eChs3yuCTJzPZ88eDFpoq2fLrwujsnlFCdG3lYEJTbtpD-zkXjt9aGmXFGXwRF0V",
+   "https://play-lh.googleusercontent.com/tsX_OlQJM5HhF-QI9TevaqrTaw0Gkk6timUCcq339XakZzGGxi-EU-wUtcDrJ5B9mZ11T5hFgyHNiul4UWQS0cw",
+   "https://play-lh.googleusercontent.com/Eanbu1_g1Yw37NQoc5f2RlRdSnUyuDjpsANHicLTC7aLwwoTrOSzdDSwAwXoRiABeHG3Lvtx8uhig12oaefWiQ",
+   "https://play-lh.googleusercontent.com/ppXZS_UjjOXyqip6VbduOP9dgHt66b9UG6o6YMruX_RULLd4qPzXtvNG77b7SEa5Kenhgq3Z9GaylaR3IV-Ys_c",
+   "https://play-lh.googleusercontent.com/V3H1Hgd7iv04K0nj1MEND8NNphhTwBxkruva4Oy_HWgKp5GZCgmnft4AVEw00dXP8gX0zfTJvQv-Fwn38txI1Q",
+   "https://play-lh.googleusercontent.com/G2EAdubIn6ekXD_m0KA-SxJMWjM5q0JVUdR9RO4-vjhJ1_nAJuT6QACWfQpuTUNaVNcQ7gEn1c2v0iAb5IuWlQ",
+   "https://play-lh.googleusercontent.com/szU1tkBmjFSoWK_HCfX5eChs3yuCTJzPZ88eDFpoq2fLrwujsnlFCdG3lYEJTbtpD-zkXjt9aGmXFGXwRF0V",
+   "https://play-lh.googleusercontent.com/tsX_OlQJM5HhF-QI9TevaqrTaw0Gkk6timUCcq339XakZzGGxi-EU-wUtcDrJ5B9mZ11T5hFgyHNiul4UWQS0cw"
+  ],
+  "url": "https://play.google.com/store/apps/details?id=com.miniit.matchgame",
+  "playPass": true,
+  "rating": 4.5,
+  "ratings": 33413,
+  "installs": 1574583,
+  "tags": [
+   "Casual"
+  ],
+  "similarity": 1.0,
+  "confidence": "google",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-04",
+  "passChecked": "2026-10-04",
+  "regions": {
+   "ca": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "br": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "be": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "de": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "au": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "es": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gb": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "jp": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "it": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "us": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -185729,6 +186676,103 @@
    }
   }
  },
+ "Snail Bob: Fix and Relax": {
+  "appId": "com.hunterhamster.snailbobrelax",
+  "matched": "Snail Bob: Fix and Relax",
+  "developer": "HeroCraft Ltd.",
+  "playGenre": "Puzzle",
+  "icon": "https://play-lh.googleusercontent.com/A_MGIsVn49EPu9L7D8k42wxPVz1TeIHFErG4wuHjTzOhDjYU5Ajd3yhrM182ULf5tw1sk6SCU9VB0zsVid6LY1s",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/O_P8IoohdG1F1l-RRI3S1284v_JhIliW6pK79DBO4lTtgdu2d0qQXkmDZ1yXuYDW7tJLOgOlW7xxsAyG8LwoNA",
+   "https://play-lh.googleusercontent.com/EPsqNXqakOGuQ3G0-4hDhgMZaQRPWUrwR0MIqUK-dhF3Q_QGAR2Pe4iUZPhSlQQqTt2-RsTWYlLKtljKs0Lu",
+   "https://play-lh.googleusercontent.com/TLmdtwqLdbykDOhQd1_z8odiBPMeDvIiYNpbbwBPuzjIrlpdE77fs3uj-00Mv-K622usTZum4Z5bAi1JCx54Rg",
+   "https://play-lh.googleusercontent.com/p0ftVSnvW0_MaUxLypKpaD2o2Sb3jPxE3PwRSBMINb0TDrURUWe1r4dHefpQqifJDJ-uUA5ewEso3FfgIV_FbiU",
+   "https://play-lh.googleusercontent.com/QOFIv4Z897eZrOaYDISCzyHCCVCDymLjXq8p_hCzcHAMmCtNeQhaawzWLvs2IYNfAn5Vu_MuNT46UFb9yV3GIA",
+   "https://play-lh.googleusercontent.com/VEo5aZxfbX9OtbBkKXJnzFRp7w19aRlfCytje81vpKX-5nfqwzI57o-1CWOP9GYpumAoXlBNF1ZEEgeXV5TyXQ",
+   "https://play-lh.googleusercontent.com/qEtq2Gy7oseV2JdN81s3pNTPsRzD2P5fWj_7ElIK64Fut0jbUunTdb6pTuS_RkWP7B_OvyGGHtp27Psa0pUReQ",
+   "https://play-lh.googleusercontent.com/kPnvKrmcEAgZOZqzYbtub44XOkN_HrgACCGj5WPEimI5IqF7ChA8uBpx3OCxOnrFHj-KJEnlurAZeJ029zkylg",
+   "https://play-lh.googleusercontent.com/O_P8IoohdG1F1l-RRI3S1284v_JhIliW6pK79DBO4lTtgdu2d0qQXkmDZ1yXuYDW7tJLOgOlW7xxsAyG8LwoNA",
+   "https://play-lh.googleusercontent.com/EPsqNXqakOGuQ3G0-4hDhgMZaQRPWUrwR0MIqUK-dhF3Q_QGAR2Pe4iUZPhSlQQqTt2-RsTWYlLKtljKs0Lu",
+   "https://play-lh.googleusercontent.com/TLmdtwqLdbykDOhQd1_z8odiBPMeDvIiYNpbbwBPuzjIrlpdE77fs3uj-00Mv-K622usTZum4Z5bAi1JCx54Rg",
+   "https://play-lh.googleusercontent.com/p0ftVSnvW0_MaUxLypKpaD2o2Sb3jPxE3PwRSBMINb0TDrURUWe1r4dHefpQqifJDJ-uUA5ewEso3FfgIV_FbiU",
+   "https://play-lh.googleusercontent.com/QOFIv4Z897eZrOaYDISCzyHCCVCDymLjXq8p_hCzcHAMmCtNeQhaawzWLvs2IYNfAn5Vu_MuNT46UFb9yV3GIA",
+   "https://play-lh.googleusercontent.com/VEo5aZxfbX9OtbBkKXJnzFRp7w19aRlfCytje81vpKX-5nfqwzI57o-1CWOP9GYpumAoXlBNF1ZEEgeXV5TyXQ",
+   "https://play-lh.googleusercontent.com/qEtq2Gy7oseV2JdN81s3pNTPsRzD2P5fWj_7ElIK64Fut0jbUunTdb6pTuS_RkWP7B_OvyGGHtp27Psa0pUReQ",
+   "https://play-lh.googleusercontent.com/kPnvKrmcEAgZOZqzYbtub44XOkN_HrgACCGj5WPEimI5IqF7ChA8uBpx3OCxOnrFHj-KJEnlurAZeJ029zkylg",
+   "https://play-lh.googleusercontent.com/O_P8IoohdG1F1l-RRI3S1284v_JhIliW6pK79DBO4lTtgdu2d0qQXkmDZ1yXuYDW7tJLOgOlW7xxsAyG8LwoNA",
+   "https://play-lh.googleusercontent.com/EPsqNXqakOGuQ3G0-4hDhgMZaQRPWUrwR0MIqUK-dhF3Q_QGAR2Pe4iUZPhSlQQqTt2-RsTWYlLKtljKs0Lu",
+   "https://play-lh.googleusercontent.com/TLmdtwqLdbykDOhQd1_z8odiBPMeDvIiYNpbbwBPuzjIrlpdE77fs3uj-00Mv-K622usTZum4Z5bAi1JCx54Rg",
+   "https://play-lh.googleusercontent.com/p0ftVSnvW0_MaUxLypKpaD2o2Sb3jPxE3PwRSBMINb0TDrURUWe1r4dHefpQqifJDJ-uUA5ewEso3FfgIV_FbiU",
+   "https://play-lh.googleusercontent.com/QOFIv4Z897eZrOaYDISCzyHCCVCDymLjXq8p_hCzcHAMmCtNeQhaawzWLvs2IYNfAn5Vu_MuNT46UFb9yV3GIA",
+   "https://play-lh.googleusercontent.com/VEo5aZxfbX9OtbBkKXJnzFRp7w19aRlfCytje81vpKX-5nfqwzI57o-1CWOP9GYpumAoXlBNF1ZEEgeXV5TyXQ",
+   "https://play-lh.googleusercontent.com/qEtq2Gy7oseV2JdN81s3pNTPsRzD2P5fWj_7ElIK64Fut0jbUunTdb6pTuS_RkWP7B_OvyGGHtp27Psa0pUReQ",
+   "https://play-lh.googleusercontent.com/kPnvKrmcEAgZOZqzYbtub44XOkN_HrgACCGj5WPEimI5IqF7ChA8uBpx3OCxOnrFHj-KJEnlurAZeJ029zkylg"
+  ],
+  "url": "https://play.google.com/store/apps/details?id=com.hunterhamster.snailbobrelax",
+  "playPass": true,
+  "rating": 4.58,
+  "ratings": 939,
+  "installs": 121542,
+  "tags": [
+   "Puzzle"
+  ],
+  "similarity": 1.0,
+  "confidence": "google",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-04",
+  "passChecked": "2026-10-04",
+  "regions": {
+   "ca": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "br": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "de": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "be": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "au": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "es": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gb": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "jp": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "it": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "us": {
+    "available": true,
+    "checked": "2026-10-04"
+   }
+  }
+ },
  "Soccer Mini Stars - Football": {
   "appId": "sk.inlogic.footballministars",
   "matched": "Soccer Mini Stars - Football",
@@ -185823,6 +186867,106 @@
     "checked": "2026-10-04"
    },
    "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   }
+  }
+ },
+ "Soccer Referee Simulator 3D": {
+  "appId": "com.flatgames.football.referee.simulator",
+  "matched": "Soccer Referee Simulator 3D",
+  "developer": "JLabs Games",
+  "playGenre": "Simulation",
+  "icon": "https://play-lh.googleusercontent.com/BPQKNCZoLT18qtcnDv6L-wLwYhWcLHJjLxRWeFHcgYAlzz_mLUHHYHch6x6BvgXOnSVB7apXt5-yh39zbOGzgA",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/r3DDoIpPs21SkiCu6VyXNAwpxbbhnivD80Ig0JyQAUc6WL-G72t8RljzQxVh7_f6CErLKRouhQsVVPuSNrNJjQ",
+   "https://play-lh.googleusercontent.com/2vPJExfEUy3DbtvRDzFZKgbfT21enrQG0C6k8Got27BJbQDx80ZQfVtsWtud-CGOU60jS1sicEvT6kM7hnZ5yw",
+   "https://play-lh.googleusercontent.com/-RwAZD8Uzdcd4nh6i_-Ys6Wajpr2j57RfVuGxTNy4sBIj8cfXEM-Wfa1HJNVciIXigm8J8gikOgHd8-yopl6LxQ",
+   "https://play-lh.googleusercontent.com/mB6C3W-Aqz_BT7DSjKiVqlfdKqxuSHqwauGTqkSd9B4Y1QCZ2i2yASSOCqqxviabmFj9d2ZfzmS2fm1PTWyb",
+   "https://play-lh.googleusercontent.com/XdNkNn9Mi_9X-nZ_4FGHobDk7bbFN-iaP5WwFqJ2Bz7OmIRVHgBbiEsUczFIW1fz_siopv2WAYWfmGmqZKOUOxw",
+   "https://play-lh.googleusercontent.com/zACXlghpj80V8J5VhbKbC5lvU-G27X5dVecMrNvSVKdWpls27x8AQSB1wPhmEXJSXXCNLt60gvQa_wxRNVqOQw",
+   "https://play-lh.googleusercontent.com/74hs_Mvuiwj_HsJ5MKrgwpxPk8iQae6Nu2vSYD9tCfMIcDvoj-_lni8ELRFosTMMRhqZUNMofEDtC7HNwh4z",
+   "https://play-lh.googleusercontent.com/oQ06j1P6E5g6-OanQR81bCtvqN120MdUrR02UbBP9AZLuQNtQixqSxeDzapsUQKPwwZvIuB7Gs0oTDYkjwSE",
+   "https://play-lh.googleusercontent.com/FcjWORE6a3QyVKpDODYM2kJgJmZCy2z59gPhf3Cs8_hW3Q87ippSdevIUv2zBP9Z3ND4PiVz1M6LrwOns3s2bg",
+   "https://play-lh.googleusercontent.com/hvN0pf51mPumBVmj577auddPjE2vObj1539ePeOkGg0jCs5Vqn3l1F_fgs6HaMhwSkvF8LpsqbDmJ-rTChQSUQ",
+   "https://play-lh.googleusercontent.com/MV6dpYrYSRpZwKTIRBsCX9OJBsoADNvL3JiTxm6_nEgzZn6MJqwklL32G6Y2HuRE7jza7tg0-NCXprWdasEk4pQ",
+   "https://play-lh.googleusercontent.com/5iElhqn7zXWxK1NaYI-gamQras3VdNg-hOJZvbFKWQkNHiPGfHj8OSsaC7y8MySN33KCNzTce46dCzl8sxRZYLw",
+   "https://play-lh.googleusercontent.com/NP1PSmI6zyEG1iP4phrODFw1RyhNzIzDQZrssUPJSy_JbOPSPv5Wg5H_WuDGHXKfU1ZifmQjfU9pyzSx5a8ZTQ",
+   "https://play-lh.googleusercontent.com/BwyFHs36bJZM3mu1eC-6LRBeSdIzn69CeQOedD9dxc5MmnBwJxYBd1UYNGWnnn1H5x6RqM3mA1AdKpxX6ZpG",
+   "https://play-lh.googleusercontent.com/T_pimbQ0V2RAsvmJu1wrQayew4i3dDv0jV233P0MXqfLhRIvsexup2WQxtNYvV7CxnBfZzw4sbtIuvuesnXPvmg",
+   "https://play-lh.googleusercontent.com/S2U2awnV5oy6jHq67vG46CD0JcQPGNvxcvBhPLBzoMIZbFWPyay5D9qlTeZAz1P6zIzzFS9qlZwGBMMVdReE",
+   "https://play-lh.googleusercontent.com/FcjWORE6a3QyVKpDODYM2kJgJmZCy2z59gPhf3Cs8_hW3Q87ippSdevIUv2zBP9Z3ND4PiVz1M6LrwOns3s2bg",
+   "https://play-lh.googleusercontent.com/hvN0pf51mPumBVmj577auddPjE2vObj1539ePeOkGg0jCs5Vqn3l1F_fgs6HaMhwSkvF8LpsqbDmJ-rTChQSUQ",
+   "https://play-lh.googleusercontent.com/MV6dpYrYSRpZwKTIRBsCX9OJBsoADNvL3JiTxm6_nEgzZn6MJqwklL32G6Y2HuRE7jza7tg0-NCXprWdasEk4pQ",
+   "https://play-lh.googleusercontent.com/5iElhqn7zXWxK1NaYI-gamQras3VdNg-hOJZvbFKWQkNHiPGfHj8OSsaC7y8MySN33KCNzTce46dCzl8sxRZYLw",
+   "https://play-lh.googleusercontent.com/NP1PSmI6zyEG1iP4phrODFw1RyhNzIzDQZrssUPJSy_JbOPSPv5Wg5H_WuDGHXKfU1ZifmQjfU9pyzSx5a8ZTQ",
+   "https://play-lh.googleusercontent.com/BwyFHs36bJZM3mu1eC-6LRBeSdIzn69CeQOedD9dxc5MmnBwJxYBd1UYNGWnnn1H5x6RqM3mA1AdKpxX6ZpG",
+   "https://play-lh.googleusercontent.com/T_pimbQ0V2RAsvmJu1wrQayew4i3dDv0jV233P0MXqfLhRIvsexup2WQxtNYvV7CxnBfZzw4sbtIuvuesnXPvmg",
+   "https://play-lh.googleusercontent.com/S2U2awnV5oy6jHq67vG46CD0JcQPGNvxcvBhPLBzoMIZbFWPyay5D9qlTeZAz1P6zIzzFS9qlZwGBMMVdReE"
+  ],
+  "url": "https://play.google.com/store/apps/details?id=com.flatgames.football.referee.simulator",
+  "playPass": true,
+  "rating": 4.3,
+  "ratings": 115412,
+  "installs": 30734092,
+  "tags": [
+   "Simulation",
+   "Single player",
+   "Stylized",
+   "Competitive"
+  ],
+  "similarity": 1.0,
+  "confidence": "google",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-04",
+  "passChecked": "2026-10-04",
+  "regions": {
+   "ca": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "br": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "de": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "au": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "be": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "es": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gb": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "jp": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "it": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "us": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -186116,6 +187260,105 @@
     "checked": "2026-10-04"
    },
    "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   }
+  }
+ },
+ "Sort Out": {
+  "appId": "com.fugo.sortout",
+  "matched": "Sort Out",
+  "developer": "Fugo Games",
+  "playGenre": "Puzzle",
+  "icon": "https://play-lh.googleusercontent.com/wNb7SbX4GJhB9pH9lF3A7EHoYKfCaOoRb6ySIy8oyy-CTkxwydRMZtRb-0If8Og_RyObPffZ1oCaEFmZ1PsS",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/1xzj3X9vRsd1M7zltQGZv7qTIcIgWjjD3SUSFYrKpOKb7RD1XegwCuhe_p3urGUshZSYSPVMbfNbD-rHRq6wPA",
+   "https://play-lh.googleusercontent.com/XqzA0o0gC-stOsNCTv_yyucHXFyfDsS3JUSdPr4ffspVJ8Z_B84Ev5iQrV0j3MZTbyvoP7fcngRqfcX8ojVa5g",
+   "https://play-lh.googleusercontent.com/nzB9CQrUpo3D8LI9mddjOeK8ebN8yJW2yEv-2-TBIAOaup44XlARgTrVqvb8lZePYWuUbGcLo_gO0cspvuhosg",
+   "https://play-lh.googleusercontent.com/VXUD7ZlSPfgnkfONVnYVvKpFpz9NVd6iBnGg-xMoZE-lPLppu7z0Ocs0JmNV1R3dcsfabcTu44W9x1O8uj0ZNQ",
+   "https://play-lh.googleusercontent.com/1TJ055pOJWjOq3CRPAD52FKH-rvSongrg8YOLdFMBI3Sx4W0kS-jpJjk4DvnGFpKGNY2RNGDgrZ-f1fIMHbS",
+   "https://play-lh.googleusercontent.com/qzF-uVfKpPUpy-Y5EP-AnSS9O_fAEnwSQuycUMJbIrlA6HLbenLXB4ilsJQRpVIx_dZ35kOO0Yq6CFn2fK3J",
+   "https://play-lh.googleusercontent.com/G5zis-km8nXoXCoUk5lKKb9Kys-LavVv58vFCDeRxi7KahtdA-np-BS_pa85zshKytIxUYBCv_ce9zVfCT7f",
+   "https://play-lh.googleusercontent.com/y4IXjQy9Y2V-7gtbrVRMkjRlIMD6VvQsbYr4Z155xnIZyFfIiQECNYzMfvPEgu61XqmC7T1-PJrLoZX70LRvDJY",
+   "https://play-lh.googleusercontent.com/E6pcOitFvi8gEP-UXRrFVYE_JJYtUp4fWqmMUxrcGT6WieQl6SWD641Y5G2Ge5TaTZRTsUOKWuiIx43Lhazi",
+   "https://play-lh.googleusercontent.com/T4Kq1g5pb_gnhNdqKu6gxfKzTJUNqNgHUvBuIusGiOUAms0NbFIpbOHyWk1LQdKrJ7Vu1o9xCdoEULbnqfW3dtc",
+   "https://play-lh.googleusercontent.com/Frv3c3Ht-9PNg3rYZ0Pyahsg8mMlRgxIO2nBKQSIwvakjGnknPD7fbNxZT_zvOhnD43vZE7T6JDuj2mFDCSWoIs",
+   "https://play-lh.googleusercontent.com/xLTAJZm8-JlYS4PcgyxK-0qtxX8DT9magfuToUmxoE1vjxrEZ7DWqoXO9WLVu8PkEkWlstyi7p9d2oPni6lI",
+   "https://play-lh.googleusercontent.com/X_6yt2jUauTjHV_OuJNJQBh6oWkUXWAyO-W40bHj7WyadSXGbjHl7SgQ4DCbvBg-4CaLCN5Ieijhxx3spfgz",
+   "https://play-lh.googleusercontent.com/Ty4tO9Xskwe0FLb1jNN4k713OFBFLgtwEMAfasrRWAtzmHoEIgLM41ZdhVJHA3QuydS244DGLoROrDWOy3BE8U8",
+   "https://play-lh.googleusercontent.com/y4IXjQy9Y2V-7gtbrVRMkjRlIMD6VvQsbYr4Z155xnIZyFfIiQECNYzMfvPEgu61XqmC7T1-PJrLoZX70LRvDJY",
+   "https://play-lh.googleusercontent.com/E6pcOitFvi8gEP-UXRrFVYE_JJYtUp4fWqmMUxrcGT6WieQl6SWD641Y5G2Ge5TaTZRTsUOKWuiIx43Lhazi",
+   "https://play-lh.googleusercontent.com/T4Kq1g5pb_gnhNdqKu6gxfKzTJUNqNgHUvBuIusGiOUAms0NbFIpbOHyWk1LQdKrJ7Vu1o9xCdoEULbnqfW3dtc",
+   "https://play-lh.googleusercontent.com/Frv3c3Ht-9PNg3rYZ0Pyahsg8mMlRgxIO2nBKQSIwvakjGnknPD7fbNxZT_zvOhnD43vZE7T6JDuj2mFDCSWoIs",
+   "https://play-lh.googleusercontent.com/xLTAJZm8-JlYS4PcgyxK-0qtxX8DT9magfuToUmxoE1vjxrEZ7DWqoXO9WLVu8PkEkWlstyi7p9d2oPni6lI",
+   "https://play-lh.googleusercontent.com/X_6yt2jUauTjHV_OuJNJQBh6oWkUXWAyO-W40bHj7WyadSXGbjHl7SgQ4DCbvBg-4CaLCN5Ieijhxx3spfgz",
+   "https://play-lh.googleusercontent.com/Ty4tO9Xskwe0FLb1jNN4k713OFBFLgtwEMAfasrRWAtzmHoEIgLM41ZdhVJHA3QuydS244DGLoROrDWOy3BE8U8"
+  ],
+  "url": "https://play.google.com/store/apps/details?id=com.fugo.sortout",
+  "playPass": true,
+  "rating": 4.47,
+  "ratings": 3482,
+  "installs": 240968,
+  "tags": [
+   "Puzzle",
+   "Sort",
+   "Casual",
+   "Single player",
+   "Stylized",
+   "Offline"
+  ],
+  "similarity": 1.0,
+  "confidence": "google",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-04",
+  "passChecked": "2026-10-04",
+  "regions": {
+   "ca": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "br": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "de": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "be": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "au": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "es": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gb": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "jp": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "it": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "us": {
     "available": true,
     "checked": "2026-10-04"
    }
@@ -189870,6 +191113,92 @@
    }
   }
  },
+ "Will it Crush? Grinding games": {
+  "appId": "com.dimchi.crush",
+  "matched": "Will it Crush? Grinding games",
+  "developer": "Brightika, Inc.",
+  "playGenre": "Simulation",
+  "icon": "https://play-lh.googleusercontent.com/TnyhWcGKRf2rvQq0MONxoR53zK6zk1ie8FbHN9e28vatFM5BTsb8qVLTG4KPI_ahlR4OmFNUKmY7pL6aQz0rDA",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/WPlZYF-H8cinSGXFR6bchIGprZxN3V7CRfTpssY-Gi63jxOIRWbVKR2-1MoxH5GbNY1Kx6lCGyLU88d3v4_klQ",
+   "https://play-lh.googleusercontent.com/XiiqKm9MvnsJyq75fVGTAWiWIF175wH2vQwNyd76k-64BZFMQUgVXfwVouuj1dNjy70vi7ZMlCBctjm-9GfrxDc",
+   "https://play-lh.googleusercontent.com/ZfDNQSNdRKJOqV2Mud4kgsb6Fk6t_-MWsNOI5y7J73l_GpDXi87PcSR1N0TJkA9R2zf44Y8Ftwb9kHl5VmxXftQ",
+   "https://play-lh.googleusercontent.com/ft_Qn5JeylanQEXLEFvfL9AKmzyOmcgUSSRUjf-LJK1j4yi7StVguXTpHRtBicINZskhJXaFGeImSbHHvNqz",
+   "https://play-lh.googleusercontent.com/e77TZ2NObJ-ItzrhjwRfA8SQaNpZdk0w36N2RGGa0T7betzrkUMTp-MEuCrKOs5N0HB_HkyENMpNH9P9xwMChQ",
+   "https://play-lh.googleusercontent.com/RKV0Srm6L4WSqbJ8TkPoprmbkbY1o6iaTv9x3MdPJ3SkylM1dpUzrfu0KElIWdYKWXoiiYpgZsCfxEPfzK367JI"
+  ],
+  "url": "https://play.google.com/store/apps/details?id=com.dimchi.crush",
+  "playPass": true,
+  "rating": 3.74,
+  "ratings": 94531,
+  "installs": 23212636,
+  "tags": [
+   "Simulation",
+   "Idle",
+   "Casual",
+   "Single player",
+   "Abstract",
+   "Destruct",
+   "Fantasy",
+   "Offline"
+  ],
+  "similarity": 1.0,
+  "confidence": "google",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-04",
+  "passChecked": "2026-10-04",
+  "regions": {
+   "br": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ca": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "de": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "be": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "au": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "es": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gb": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "jp": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "it": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "us": {
+    "available": true,
+    "checked": "2026-10-04"
+   }
+  }
+ },
  "Witchy Sisters – Relax Puzzle": {
   "appId": "com.morionstudio.witchy",
   "matched": "Witchy Sisters – Relax Puzzle",
@@ -190458,6 +191787,103 @@
     "checked": "2026-10-04"
    },
    "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   }
+  }
+ },
+ "World of Goo 2": {
+  "appId": "com.twodboy.wog2",
+  "matched": "World of Goo 2",
+  "developer": "2D BOY",
+  "playGenre": "Puzzle",
+  "icon": "https://play-lh.googleusercontent.com/FHyBTU3BCuxZ8eTzy7ebrrPBJv1FGeVkYR44oNyO_cVEGZkPxC_Tm8dshRP6ZfN4W7Y-Npbi979isGBITiFfCGY",
+  "screenshots": [
+   "https://play-lh.googleusercontent.com/XhuOGAgisdoIEpAQJszLTbY-A6IwvwVbIg9RMMimOsloSeiiDvlXUCzkBWGImQJwiWCbiwN657x5zbznKxbnmw",
+   "https://play-lh.googleusercontent.com/MmEkrSlqcucD-2kGPN66dsUfeHAu0be4_kkuFRep9H9C6F-lNLgXOJI-XWdmOUlJhODe2Ir5TmZyHhfOuMJxuA",
+   "https://play-lh.googleusercontent.com/wc7r_chgpcWmRYFd_zLfnTGOM7Ujx4WYL7F3-_BnBlC18SMz-guRH6ihBQudmdUQtRdK0TRRjS_2g0DrJgmt_w",
+   "https://play-lh.googleusercontent.com/XTvDRnb8mDFQ8EIc_jELGaARtazRJNYHPhDiBKo42pSYVm_b1jioC5-7FY5E3D89YGRsqkkdbCuZ379xLPIEMm8",
+   "https://play-lh.googleusercontent.com/hQ0B0vc6BWz1V77NQzOPYsjzMu59OiQvEC9yPIBvfdw48mrQMcVM69CaWRKk84jynZKjQKnSCR6migj3qndp",
+   "https://play-lh.googleusercontent.com/B0XYE4M_Djeyc2hVaMQkZWc04e4OVrlbG1ZsWXTb1KwX9N0bBmEhMGzU3d4KSSa3wpiAAZqDLDuQuRMRjdFkqQ",
+   "https://play-lh.googleusercontent.com/XhuOGAgisdoIEpAQJszLTbY-A6IwvwVbIg9RMMimOsloSeiiDvlXUCzkBWGImQJwiWCbiwN657x5zbznKxbnmw",
+   "https://play-lh.googleusercontent.com/MmEkrSlqcucD-2kGPN66dsUfeHAu0be4_kkuFRep9H9C6F-lNLgXOJI-XWdmOUlJhODe2Ir5TmZyHhfOuMJxuA",
+   "https://play-lh.googleusercontent.com/wc7r_chgpcWmRYFd_zLfnTGOM7Ujx4WYL7F3-_BnBlC18SMz-guRH6ihBQudmdUQtRdK0TRRjS_2g0DrJgmt_w",
+   "https://play-lh.googleusercontent.com/XTvDRnb8mDFQ8EIc_jELGaARtazRJNYHPhDiBKo42pSYVm_b1jioC5-7FY5E3D89YGRsqkkdbCuZ379xLPIEMm8",
+   "https://play-lh.googleusercontent.com/hQ0B0vc6BWz1V77NQzOPYsjzMu59OiQvEC9yPIBvfdw48mrQMcVM69CaWRKk84jynZKjQKnSCR6migj3qndp",
+   "https://play-lh.googleusercontent.com/B0XYE4M_Djeyc2hVaMQkZWc04e4OVrlbG1ZsWXTb1KwX9N0bBmEhMGzU3d4KSSa3wpiAAZqDLDuQuRMRjdFkqQ",
+   "https://play-lh.googleusercontent.com/XhuOGAgisdoIEpAQJszLTbY-A6IwvwVbIg9RMMimOsloSeiiDvlXUCzkBWGImQJwiWCbiwN657x5zbznKxbnmw",
+   "https://play-lh.googleusercontent.com/MmEkrSlqcucD-2kGPN66dsUfeHAu0be4_kkuFRep9H9C6F-lNLgXOJI-XWdmOUlJhODe2Ir5TmZyHhfOuMJxuA",
+   "https://play-lh.googleusercontent.com/wc7r_chgpcWmRYFd_zLfnTGOM7Ujx4WYL7F3-_BnBlC18SMz-guRH6ihBQudmdUQtRdK0TRRjS_2g0DrJgmt_w",
+   "https://play-lh.googleusercontent.com/XTvDRnb8mDFQ8EIc_jELGaARtazRJNYHPhDiBKo42pSYVm_b1jioC5-7FY5E3D89YGRsqkkdbCuZ379xLPIEMm8",
+   "https://play-lh.googleusercontent.com/hQ0B0vc6BWz1V77NQzOPYsjzMu59OiQvEC9yPIBvfdw48mrQMcVM69CaWRKk84jynZKjQKnSCR6migj3qndp",
+   "https://play-lh.googleusercontent.com/B0XYE4M_Djeyc2hVaMQkZWc04e4OVrlbG1ZsWXTb1KwX9N0bBmEhMGzU3d4KSSa3wpiAAZqDLDuQuRMRjdFkqQ",
+   "https://play-lh.googleusercontent.com/XhuOGAgisdoIEpAQJszLTbY-A6IwvwVbIg9RMMimOsloSeiiDvlXUCzkBWGImQJwiWCbiwN657x5zbznKxbnmw",
+   "https://play-lh.googleusercontent.com/MmEkrSlqcucD-2kGPN66dsUfeHAu0be4_kkuFRep9H9C6F-lNLgXOJI-XWdmOUlJhODe2Ir5TmZyHhfOuMJxuA",
+   "https://play-lh.googleusercontent.com/wc7r_chgpcWmRYFd_zLfnTGOM7Ujx4WYL7F3-_BnBlC18SMz-guRH6ihBQudmdUQtRdK0TRRjS_2g0DrJgmt_w",
+   "https://play-lh.googleusercontent.com/XTvDRnb8mDFQ8EIc_jELGaARtazRJNYHPhDiBKo42pSYVm_b1jioC5-7FY5E3D89YGRsqkkdbCuZ379xLPIEMm8",
+   "https://play-lh.googleusercontent.com/hQ0B0vc6BWz1V77NQzOPYsjzMu59OiQvEC9yPIBvfdw48mrQMcVM69CaWRKk84jynZKjQKnSCR6migj3qndp",
+   "https://play-lh.googleusercontent.com/B0XYE4M_Djeyc2hVaMQkZWc04e4OVrlbG1ZsWXTb1KwX9N0bBmEhMGzU3d4KSSa3wpiAAZqDLDuQuRMRjdFkqQ"
+  ],
+  "url": "https://play.google.com/store/apps/details?id=com.twodboy.wog2",
+  "playPass": true,
+  "rating": 4.35,
+  "ratings": 129,
+  "installs": 12732,
+  "tags": [
+   "Puzzle"
+  ],
+  "similarity": 1.0,
+  "confidence": "google",
+  "flags": [],
+  "query": null,
+  "checked": "2026-10-04",
+  "passChecked": "2026-10-04",
+  "regions": {
+   "br": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "ca": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "de": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "be": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "au": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "es": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "gb": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "fr": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "jp": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "it": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "nl": {
+    "available": true,
+    "checked": "2026-10-04"
+   },
+   "us": {
     "available": true,
     "checked": "2026-10-04"
    }
