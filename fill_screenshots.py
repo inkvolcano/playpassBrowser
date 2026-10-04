@@ -765,6 +765,9 @@ def run_details(args, games, order, cache, today):
         if e.get("appId") and (due or not (DETAILS_DIR / f"{e['appId']}.json").exists()):
             by_app.setdefault(e["appId"], []).append(g["title"])
     apps = sorted(by_app)
+    if args.budget is not None:  # the longest-unchecked first
+        when = {a: min((cache[t].get("detailsChecked") or "") for t in by_app[a]) for a in apps}
+        apps = sorted(sorted(apps, key=lambda a: when[a])[:args.budget])
     print(f"{len(apps)} apps to fetch details for", flush=True)
     DETAILS_DIR.mkdir(exist_ok=True)
     lock, done = threading.Lock(), [0]
@@ -855,6 +858,8 @@ def run_langs(args, games, cache, today):
     checked = lambda a: (index["apps"].get(a) or {}).get("checked")
     apps = [a for a in listed if (a in only if args.only else args.recheck == "all"
             or (stale(checked(a), today, args.max_age) if args.recheck == "stale" else checked(a) != today))]
+    if args.budget is not None:  # the longest-unchecked first
+        apps = sorted(sorted(apps, key=lambda a: checked(a) or "")[:args.budget])
     print(f"{len(apps)} apps to fetch translations for ({', '.join(LANGS)})", flush=True)
     lock, done, votes = threading.Lock(), [0], {}
 
@@ -1015,7 +1020,7 @@ def main():
     ap.add_argument("--max-age", type=int, default=30, metavar="DAYS",
                     help="with --recheck stale: how old a check may be (default 30 days)")
     ap.add_argument("--budget", type=int, metavar="N",
-                    help="with --region: at most N checks, the longest-unchecked first")
+                    help="with --region, --details or --langs: at most N checks, the longest-unchecked first")
     ap.add_argument("--only", nargs="+", metavar="TITLE", help="(re)do just these titles")
     ap.add_argument("--refresh", action="store_true",
                     help="re-read every matched app's store page (all screenshots, rating, installs, tags, "

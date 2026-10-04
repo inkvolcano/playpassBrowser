@@ -1,0 +1,66 @@
+# Monthly update: refresh the game list, Play Store data, countries and translations
+# (update.py), commit the result to main and let GitHub Pages publish it.
+name: Monthly update
+
+on:
+  schedule:
+    - cron: "17 3 1 * *"  # 03:17 UTC on the 1st of every month
+  workflow_dispatch:
+    inputs:
+      quick:
+        description: "Test run: only a little of each step"
+        type: boolean
+        default: false
+      push:
+        description: "Push the result to main (the live page)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write  # push the update
+  pages: write     # ask GitHub Pages to rebuild
+
+concurrency:
+  group: monthly-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install google-play-scraper
+        run: pip install google-play-scraper==1.2.7
+
+      - name: Update the data and rebuild the page
+        id: update
+        continue-on-error: true  # push what got done; the last step fails the run
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python3 update.py --commit ${{ inputs.quick && '--quick' || '' }}
+
+      - name: Push to main
+        if: github.event_name == 'schedule' || inputs.push
+        run: |
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
+
+      - name: Ask GitHub Pages to rebuild
+        if: github.event_name == 'schedule' || inputs.push
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds"
+
+      - name: Report a failed step
+        if: steps.update.outcome == 'failure'
+        run: |
+          echo "::error::update.py reported a failed or blocked step (see its log above); the rest was committed and pushed."
+          exit 1

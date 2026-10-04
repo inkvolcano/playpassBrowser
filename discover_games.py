@@ -103,6 +103,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--jobs", type=int, default=4, help="threads (default 4)")
     ap.add_argument("--delay", type=float, default=0.7, help="seconds between requests per thread (default 0.7)")
+    ap.add_argument("--max-pages", type=int, metavar="N", help="stop after N pages (a quick test run)")
     args = ap.parse_args()
 
     cache = json.loads(fs.CACHE_JSON.read_text(encoding="utf-8"))
@@ -155,6 +156,8 @@ def main():
         with ThreadPoolExecutor(max_workers=args.jobs) as pool:
             while queue:
                 batch = [u for u in dict.fromkeys(queue) if u not in fetched]
+                if args.max_pages is not None:
+                    batch = batch[:max(0, args.max_pages - len(fetched))]
                 queue = []
                 fetched.update(batch)
                 for more in pool.map(work, batch):

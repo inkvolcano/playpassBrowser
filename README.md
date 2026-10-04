@@ -4,7 +4,8 @@ A single-page catalogue of every Google Play Pass game (and the Play Pass apps
 that aren't games): `index.html`.
 
 **Live: https://inkvolcano.github.io/playpassBrowser/** (GitHub Pages, published
-from `main`; every push to `main` updates it within a minute or two).
+from `main`; every push to `main` updates it within a minute or two). It updates
+itself on the 1st of every month (see [Updating](#updating)).
 
 You can also open `index.html` straight from disk. It is one self-contained file (the game data is
 embedded); only the screenshots, icons and fonts load from the web
@@ -51,6 +52,13 @@ of the way while you scroll down through the games and comes back as soon as you
 scroll up; the Discover button does the same. In Discover, ✕ and ♥ sit beside
 the card instead of under it, and the detail view uses the full height.
 
+**Languages.** The page speaks English, Dutch, German, French, Spanish, Italian,
+Portuguese and Japanese. It picks your browser's language on a first visit; the
+globe menu next to the theme button switches (the choice is remembered). Numbers,
+dates and country names follow the language. Game titles, descriptions and tag
+names are the Play Store's own translations where the developer has one;
+otherwise they stay in English.
+
 The page lists only games whose Play Store page showed the Play Pass badge when
 it was last checked (US store; the date is in the page footer). YTECHB's list
 still carries games that have since left the service, plus a few that couldn't
@@ -60,11 +68,11 @@ left are marked "Not in Play Pass", unmatched ones get a generated gradient
 cover and a Play Store search link.
 
 Not every game is offered everywhere. The country menu in the header hides
-games that country's Play Store doesn't offer: Australia, Belgium, Brazil,
-Canada, France, Germany, Italy, Japan, the Netherlands, Spain, the United
-Kingdom and the United States so far. On a first visit the page picks the
-country from your time zone or browser language. The list itself comes from the US store, so games that
-are in Play Pass only outside the US are missing.
+games that country's Play Store doesn't offer. It has every country in
+[Google's list of Play Pass countries](https://play.google/pass-availability/)
+(101 in October 2026). On a first visit the page picks the country from your
+time zone or browser language. The list itself comes from the US store, so
+games that are in Play Pass only outside the US are missing.
 
 ## Files
 
@@ -72,6 +80,8 @@ are in Play Pass only outside the US are missing.
 | --- | --- |
 | `fetch_games.py` | Scrapes [YTECHB's Play Pass games list](https://www.ytechb.com/google-play-pass-games-list/) into `data/games.json` |
 | `discover_games.py` | Finds Play Pass games on Google Play itself (the games YTECHB's list lacks) and saves them to `data/discovered.json` |
+| `update.py` | Runs every step below in order (the monthly update) |
+| `.github/workflows/update.yml` | Runs `update.py` on the 1st of every month and pushes the result to `main` |
 | `fill_screenshots.py` | Looks every game up on the Play Store, caching results in `data/shots_cache.json`, then rebuilds `index.html` |
 | `build_index.py` | Builds `index.html` from `index.template.html` and the data files |
 | `index.template.html` | The page (HTML, CSS, JS) with a `__DATA__` placeholder |
@@ -79,6 +89,8 @@ are in Play Pass only outside the US are missing.
 | `data/discovered.json` | Play Pass games found on Google Play that YTECHB's list lacks: `appId`, `title`, `genre` |
 | `data/discovery_report.json` | How the two lists cover each other (written by each crawl) |
 | `details/<appId>.json` | Detail-view data per app: description, trailer, age ratings, price, dates, all screenshots |
+| `details/<lang>/<appId>.json` | The store's translated summary and description, for the apps that have one in that language |
+| `data/translations.json` | Per app: English tags, titles that differ per language, which languages have a translated description; and the store's name for each tag per language |
 | `GAP_ANALYSIS.md` | What each list misses, data gaps on the page, and feature ideas |
 | `data/shots_cache.json` | Play Store data per game: `appId`, `icon`, `screenshots`, `url`, `playPass`, `rating`, `ratings`, `installs`, `tags`, `regions` (availability per country), `firstSeen` / `leftOn` (Play Pass badge history), `pegi`, `esrb`, `price`, `released`, `updated`, plus match details |
 | `data/overrides.json` | Hand-made fixes: title → appId, or title → `null` |
@@ -86,33 +98,37 @@ are in Play Pass only outside the US are missing.
 
 ## Updating
 
-```sh
-pip install google-play-scraper
+The page updates itself. On the 1st of every month (03:17 UTC) the GitHub
+Actions workflow in `.github/workflows/update.yml` runs `update.py`, commits
+the new data and page to `main`, and GitHub Pages publishes it. To run it
+sooner, open the repository's **Actions** tab, pick **Monthly update** and
+press **Run workflow**; tick "Test run" and untick "Push" for a quick check
+that changes nothing. A full run takes one to three hours, because requests
+are throttled. If Google Play stops answering, the run turns red. Whatever it
+finished is still committed and pushed, and the next run picks up the rest.
 
-python3 fetch_games.py                # 1. refresh the game list from YTECHB
-python3 discover_games.py --jobs 5    #    ... and find the games it lacks on Google Play (~10 min)
-python3 fill_screenshots.py           # 2. look up games not in the cache yet
-python3 fill_screenshots.py --refresh # 3. re-check every game's Play Pass status, rating,
-                                      #    downloads, tags and screenshots, then rebuild index.html
-python3 fill_screenshots.py --region au be br ca de es fr gb it jp nl us --jobs 6
-                                      # 4. re-check which games each country's store offers
-python3 fill_screenshots.py --details --jobs 6   # 5. descriptions, age ratings, prices, dates (~10 min)
-```
+`update.py` runs these steps in order (`--skip` leaves steps out; run it
+locally after `pip install google-play-scraper==1.2.7`):
 
-Run these every week or so: the "New" label and the Newest sort depend on
-spotting games the day they join Play Pass, so the history grows with each run.
+| Step | What it does |
+| --- | --- |
+| list | `fetch_games.py`: YTECHB's list |
+| discover | `discover_games.py`: Play Pass games and apps on Google Play that the list lacks (~15 min) |
+| lookup | `fill_screenshots.py`: matches the games new to the list |
+| refresh | `fill_screenshots.py --refresh`: every app's Play Pass badge, screenshots, rating, downloads and tags (~35 min). The badge dates "New" and "left Play Pass", so the history grows with each run |
+| regions | `fill_screenshots.py --region <every country> --recheck stale --max-age 180 --budget 25000 --jobs 16`: new games in every country, then the oldest checks |
+| details | `fill_screenshots.py --details --recheck stale --max-age 25`: descriptions, age ratings, prices, dates |
+| langs | `fill_screenshots.py --langs --recheck stale --max-age 90`: the store's translations |
+| build | `build_index.py`: rebuilds `index.html` |
 
 `fill_screenshots.py` resumes from `data/shots_cache.json`, so it only looks up
 games it hasn't seen; stop it at any time (Ctrl-C saves progress) and run it
-again to continue. A full run over ~1,800 games takes about 45 minutes because
-requests are throttled (`--delay`, 0.6 s by default) to avoid rate limiting.
-`--refresh` keeps every match and re-reads each app's store page (about 35
-minutes); it resumes too, skipping games already refreshed that day. So does
-`--region` (about 20 minutes per country per thread; `--jobs 6` runs six
-threads, splitting a country between threads when there are more threads than
-countries). To add a country, run it with that country's two-letter code
-(`--region se`, or several: `--region se pl`); the next build adds it to the
-page's country menu.
+again to continue. Requests are throttled (`--delay`, 0.6 s by default) to
+avoid rate limiting. `--refresh` keeps every match and re-reads each app's
+store page; it resumes too, skipping games already refreshed that day. To add
+a country, run `--region` with its two-letter code (`--region se`, or several:
+`--region se pl`); the next build adds it to the page's country menu once 90%
+of the games have been checked there, and the monthly update keeps it current.
 
 Useful options:
 
@@ -120,6 +136,8 @@ Useful options:
 python3 fill_screenshots.py --recheck doubtful   # redo nulls, unbadged matches and loose title matches
 python3 fill_screenshots.py --recheck all        # redo everything
 python3 fill_screenshots.py --only "Mini Metro" "Stardew valley"   # redo specific titles
+python3 fill_screenshots.py --region nl --recheck missing --jobs 4  # only games never checked in that country
+python3 fill_screenshots.py --langs --jobs 6                         # the store's translations for every app
 python3 fill_screenshots.py --commit-every 200 --push               # commit (and push) the cache as it goes
 python3 build_index.py                            # rebuild index.html without any lookups
 python3 build_index.py --all                      # ... also listing games that left Play Pass or have no match
@@ -204,3 +222,17 @@ game counts as offered and its Play link points to that edition. The searches
 include the package name without its marker, which finds editions whose title
 is translated. Re-check games marked as not offered with
 `python3 fill_screenshots.py --region nl --recheck doubtful`.
+
+## How translations work
+
+`fill_screenshots.py --langs` reads each app's store page in English and in
+each of the page's languages (Dutch from the Dutch store, Portuguese from the
+Brazilian one, and so on). Where the summary and description differ from the
+English ones, the developer has translated the listing, and they go to
+`details/<lang>/<appId>.json`. The detail view and Discover use them when you
+pick that language. Titles that differ go to `data/translations.json` and
+replace the English title on the cards (both stay searchable). Every language
+lists an app's genre and tags in the same order, so lining the lists up gives
+the store's own name for each tag (`Single player` is `Singleplayer` in Dutch,
+`シングル プレーヤー` in Japanese). The interface text itself is in
+`index.template.html`.

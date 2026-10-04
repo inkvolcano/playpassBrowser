@@ -97,18 +97,20 @@ All of these are left off the page. `python3 build_index.py --all` shows them.
 Games not offered, out of 1,857: Australia 1, Brazil 14, Canada 0, France 13,
 Germany 7, Italy 7, Japan 25, the Netherlands 42, Belgium 43, Spain 7, the UK 7,
 the US 0. 29 games are sold under a separate local edition somewhere (mostly
-Kairosoft in Japan, Layton in Europe), and the Play links follow it.
+Kairosoft in Japan, Layton in Europe), and the Play links follow it. The country
+menu has since grown to all 101 countries on Google's Play Pass list.
 
 ## Feature ideas
 
 Value is how much it helps someone browsing the page; effort is roughly a few hours
-(low) up to a day (medium). Built since: 1, 3, 4, 5, 7, 8, 10 and 11 (4 October 2026).
+(low) up to a day (medium). Built since (4 October 2026): 1, 2 (monthly), 3, 4, 5, 7, 8, 10, 11 and 12
+(eight languages).
 Google Play no longer publishes download sizes, so the detail view has no size.
 
 | # | Feature | Value | Effort | Notes |
 | --- | --- | --- | --- | --- |
 | 1 | Show official store titles (built) | High | Low | Fixes the ~170 misspelled or renamed titles; YTECHB's name stays searchable |
-| 2 | Automatic weekly update | High | Medium | GitHub Actions runs YTECHB + crawl + refresh + countries + build, then commits; the page stays current without anyone running scripts |
+| 2 | Automatic update (built, monthly) | High | Medium | GitHub Actions runs YTECHB + crawl + refresh + countries + build, then commits; the page stays current without anyone running scripts |
 | 3 | "New in Play Pass" badge and sort (built) | High | Medium | Needs a first-seen date per game, starting now; the crawl already catches new games first |
 | 4 | Shareable links (built) | High | Low | Keeps search, genre, tag, sort and country in the URL |
 | 5 | Game detail view (built) | High | Medium | Tap a card for description, all screenshots, age rating, price outside Play Pass, size, last update; loaded per game so the page stays small |
@@ -118,14 +120,14 @@ Google Play no longer publishes download sizes, so the detail view has no size.
 | 9 | "Recently left Play Pass" list | Medium | Low | Comes free with the history from #3 |
 | 10 | Developer filter (built) | Medium | Low | Tap a developer name to see their games |
 | 11 | Play Pass apps section (built) | Medium | Low | The 109 non-game apps (kids' learning, photo, music, tools) |
-| 12 | Dutch interface | Medium | Medium | Language switch, picked from the browser |
+| 12 | Dutch interface (built, with German, French, Spanish, Italian, Portuguese and Japanese) | Medium | Medium | Language switch, picked from the browser |
 | 13 | Value counter | Low | Low | "These games cost €X outside Play Pass" |
 | 14 | Install as an app | Low | Low | Home-screen icon, works offline |
 
 ## Tooling gaps
 
-- **No single update command.** Updating means running five scripts in order; an
-  `update.py` (also needed for #2) would chain them.
+- **Single update command.** This is fixed: `update.py` chains the scripts, and a GitHub
+  workflow runs it on the 1st of every month.
 - **No tests.** A few unit tests for the matcher and a headless smoke test of the page
   would catch regressions.
 - **Crawl convergence.** This is fixed: the crawler now follows developer links on
