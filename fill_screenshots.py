@@ -27,6 +27,7 @@ How a match is chosen
     python3 fill_screenshots.py --refresh            # re-read every matched app: all
                                                      # screenshots + today's Play Pass status
     python3 fill_screenshots.py --region nl          # which matched apps the Dutch Play Store offers
+    python3 fill_screenshots.py --badges             # which apps are also on PC, which are Teacher Approved
 """
 import argparse
 import json
@@ -45,11 +46,11 @@ from pathlib import Path
 from urllib.error import URLError
 from urllib.parse import parse_qs, quote, urlparse
 
-from google_play_scraper import app as gp_app
 from google_play_scraper.constants.element import ElementSpec, ElementSpecs
 from google_play_scraper.constants.regex import Regex
 from google_play_scraper.constants.request import Formats
 from google_play_scraper.exceptions import ExtraHTTPError, NotFoundError
+from google_play_scraper.features.app import parse_dom
 from google_play_scraper.utils.request import get
 
 # google-play-scraper switches off TLS certificate checks for the whole process
@@ -197,11 +198,33 @@ def search_hits(query, lang, country):
     return [dict(h, rank=rank, query=query, rating=h.get("score")) for rank, h in enumerate(hits) if h.get("appId")]
 
 
+PC_RE = re.compile(r">Available on</div>(.{0,1500}?)</div></div>", re.S)
+TEACHER_RE = re.compile(r">\s*Teacher Approved\s*<")
+
+
+def store_page(app_id, lang="en", country="us"):
+    """google-play-scraper's app(), plus two things it doesn't read from the page (an English one only):
+    whether the app is also on PC (the page lists "Available on: Android, Windows", linking to Google Play
+    Games on PC) and whether it has Google's Teacher Approved badge (apps for children)."""
+    url = Formats.Detail.build(app_id=app_id, lang=lang, country=country)
+    try:
+        dom = get(url)
+    except NotFoundError:
+        url = Formats.Detail.fallback_build(app_id=app_id, lang=lang)
+        dom = get(url)
+    result = parse_dom(dom=dom, app_id=app_id, url=url)
+    if lang == "en":
+        m = PC_RE.search(dom)
+        result["onPC"] = bool(m and re.search(r"Windows|pc(?:-|&#45;)store", m.group(1)))
+        result["teacherApproved"] = bool(TEACHER_RE.search(dom))
+    return result
+
+
 def app_details(app_id, lang, country):
     key = (app_id, lang, country)
     if key not in _app_memo:
         try:
-            _app_memo[key] = _call(gp_app, app_id, lang=lang, country=country)
+            _app_memo[key] = _call(store_page, app_id, lang=lang, country=country)
         except NotFoundError:
             _app_memo[key] = None
         except Blocked:
@@ -739,6 +762,8 @@ def details_for(app_id):
         "iap": bool(us.get("offersIAP")),
         "released": iso_date(us.get("released")),
         "updated": date.fromtimestamp(updated).isoformat() if isinstance(updated, (int, float)) and updated > 0 else None,
+        "onPC": us.get("onPC"),
+        "teacherApproved": us.get("teacherApproved"),
         "detailsChecked": date.today().isoformat(),
     }
     big = {
@@ -797,6 +822,58 @@ def run_details(args, games, order, cache, today):
     save_cache(cache, order)
     if args.commit_every:
         git_commit(f"Fetch detail-view data: {done[0]} apps", args.push)
+
+
+def run_badges(args, games, order, cache, today):
+    """--badges: read just the PC and Teacher Approved badges from every matched app's US store page
+    (the monthly --details refresh keeps them current; this fills them in without the rest)."""
+    by_app = {}
+    for g in games:
+        e = cache.get(g["title"]) or {}
+        if e.get("appId") and e.get("playPass") is not False and (args.recheck == "all" or "onPC" not in e):
+            by_app.setdefault(e["appId"], []).append(g["title"])
+    apps = sorted(by_app)
+    if args.budget is not None:
+        apps = apps[:args.budget]
+    print(f"{len(apps)} apps to check for the PC and Teacher Approved badges", flush=True)
+    lock, done, saved = threading.Lock(), [0], [time.monotonic()]
+    counts = {"pc": 0, "teacher": 0}
+
+    def run(chunk):
+        _tls.throttle = Throttle(args.delay)
+        for a in chunk:
+            try:
+                page = _call(store_page, a, lang="en", country="us")
+            except NotFoundError:
+                page = None
+            with lock:
+                done[0] += 1
+                info = "no store page"
+                if page:
+                    counts["pc"] += bool(page["onPC"])
+                    counts["teacher"] += bool(page["teacherApproved"])
+                    for t in by_app[a]:
+                        cache[t] = dict(cache[t], onPC=page["onPC"], teacherApproved=page["teacherApproved"])
+                    info = ", ".join(x for x, on in (("on PC", page["onPC"]), ("Teacher Approved", page["teacherApproved"]))
+                                     if on) or "neither"
+                print(f"[{done[0]}/{len(apps)}] {a} -> {info}", flush=True)
+                if time.monotonic() - saved[0] > SAVE_EVERY:
+                    save_cache(cache, order)
+                    saved[0] = time.monotonic()
+
+    jobs = max(1, args.jobs)
+    try:
+        with ThreadPoolExecutor(max_workers=jobs) as pool:
+            for f in as_completed([pool.submit(run, apps[k::jobs]) for k in range(jobs)]):
+                f.result()
+    except Blocked as e:
+        print(f"STOPPED - looks blocked or rate-limited: {e}", flush=True)
+        save_cache(cache, order)
+        sys.exit(2)
+    save_cache(cache, order)
+    print(f"{done[0]} checked: {counts['pc']} also on PC, {counts['teacher']} Teacher Approved", flush=True)
+    if args.commit_every:
+        git_commit(f"Store badges: {counts['pc']} apps also on PC, {counts['teacher']} Teacher Approved", args.push)
 
 
 # ---------------------------------------------------------------- translations
@@ -1034,6 +1111,9 @@ def main():
     ap.add_argument("--details", action="store_true",
                     help="fetch detail-view data (description, trailer, age ratings, price, dates) for every "
                          "matched app into details/ and the cache; resumes where a run stopped today")
+    ap.add_argument("--badges", action="store_true",
+                    help="read which matched apps are also on PC and which are Teacher Approved from their US store "
+                         "pages (only apps not checked yet, or all with --recheck all)")
     ap.add_argument("--langs", action="store_true",
                     help="fetch the store's translations (titles, descriptions, tag names) of every listed app "
                          "into details/<lang>/ and data/translations.json; doesn't touch the cache")
@@ -1074,6 +1154,11 @@ def main():
     today = date.today().isoformat()
     if args.langs:
         run_langs(args, games, cache, today)
+        if not args.no_build:
+            rebuild()
+        return
+    if args.badges:
+        run_badges(args, games, order, cache, today)
         if not args.no_build:
             rebuild()
         return
