@@ -159,6 +159,7 @@ class Throttle:
 
 
 THROTTLE = Throttle(0.6)
+SAVE_EVERY = 60  # seconds between cache saves (writing ~15 MB of JSON blocks every thread)
 _tls = threading.local()  # parallel region checks give each thread its own throttle
 _app_memo = {}
 
@@ -956,7 +957,7 @@ def run_regions(args, games, order, cache, today):
     total = sum(map(len, queues.values()))
     print(f"{total} checks: " + ", ".join(f"{cc} {len(q)}" for cc, q in queues.items()), flush=True)
     label = {True: "offered", False: "NOT OFFERED", None: "unknown"}
-    lock, stop, done = threading.Lock(), threading.Event(), [0]
+    lock, stop, done, saved = threading.Lock(), threading.Event(), [0], [time.monotonic()]
     parts = max(1, args.jobs // len(args.region))
     tasks = [(cc, queues[cc][k::parts]) for cc in args.region for k in range(parts)]
     counted = dict.fromkeys(args.region, 0)
@@ -980,8 +981,9 @@ def run_regions(args, games, order, cache, today):
                 done[0] += 1
                 counted[cc] += 1
                 print(f"[{cc} {counted[cc]}/{len(queues[cc])}] {t} -> {label[available]}" + (f" as {twin}" if twin else ""), flush=True)
-                if done[0] % 20 == 0:
+                if time.monotonic() - saved[0] > SAVE_EVERY:
                     save_cache(cache, order)
+                    saved[0] = time.monotonic()
                 if args.commit_every and done[0] % args.commit_every == 0:
                     save_cache(cache, order)
                     git_commit(message(), args.push)
@@ -1107,7 +1109,7 @@ def main():
     for x in cache.values():
         if x.get("appId") and x.get("firstSeen"):
             first_seen[x["appId"]] = min(first_seen.get(x["appId"], x["firstSeen"]), x["firstSeen"])
-    done = 0
+    done, saved = 0, time.monotonic()
     try:
         for i, g in enumerate(queue, 1):
             t = g["title"]
@@ -1132,8 +1134,9 @@ def main():
             cache[t] = e
             done += 1
             print(f"[{i}/{len(queue)}] {t} -> {info}", flush=True)
-            if i % 10 == 0:
+            if time.monotonic() - saved > SAVE_EVERY:
                 save_cache(cache, order)
+                saved = time.monotonic()
             if args.commit_every and done % args.commit_every == 0:
                 save_cache(cache, order)
                 git_commit(checkpoint_message(), args.push)
