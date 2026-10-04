@@ -22,9 +22,16 @@ days carry a "New" label.
 Tap a title for the detail view: the store description, every screenshot, the
 trailer (it plays right there; YouTube only loads when you press play), the age
 rating (PEGI and ESRB), what the game costs without Play Pass, release and update
-dates, the countries that offer it, and a share button.
+dates, the countries that offer it, and a share button. Below that, "More like
+this" lists the games whose Play Store tags overlap most with this one's (rare
+tags count for more than ones most games share, and children's games go with
+children's games), and a second row has the developer's other games.
 
-You can search titles (YTECHB's names work too), developers and tags; filter by
+You can search titles (YTECHB's names work too), developers and tags. Search is
+forgiving: spaces and punctuation don't matter ("minimetro" finds Mini Metro), and
+a word that matches nothing is read as a typo and matched to the closest words
+("monumnet valey" finds the Monument Valleys); the status line says when it did
+that. You can filter by
 genre, by tag (Offline, Roguelike, Pixelated, ...; tap a tag on a card to filter
 by it), by age rating (PEGI 3, 7, 12 or 16 and under) and by developer (tap a
 developer's name); sort A–Z, by genre, by popularity, by rating or newest first;
@@ -38,6 +45,11 @@ and tool apps).
 
 The address bar keeps the search, filters, sort, country and open game, so a
 link opens the same view; "Copy link" copies it.
+
+**New for you.** The page remembers (in your browser) the date of the data you
+last saw. When you come back after a monthly update, a "New for you" chip lists
+the games it added; it stays until you press "Mark as seen" or the next update
+comes. On a first visit nothing is new for you.
 
 **Favourites and Discover.** Tap ☆ on a card (or in the detail view) to keep a
 game; the "★ Favourites" chip shows the list. The Discover button opens a
@@ -128,8 +140,8 @@ sooner, open the repository's **Actions** tab, pick **Monthly update** and
 press **Run workflow**; tick "Test run" and untick "Push" for a quick check
 that changes nothing. A full run takes one to three hours, because requests
 are throttled. Before pushing, it opens the new page in a headless browser in
-every language (`check_page.js`: cards, search, country menu, detail view,
-Discover); if anything fails, nothing is pushed and the run turns red. If Google Play stops answering, the run turns red. Whatever it
+every language (`check_page.js`: cards, search (also with a typo), country menu,
+detail view with "More like this", Discover, "New for you"); if anything fails, nothing is pushed and the run turns red. If Google Play stops answering, the run turns red. Whatever it
 finished is still committed and pushed, and the next run picks up the rest.
 
 `update.py` runs these steps in order (`--skip` leaves steps out; run it

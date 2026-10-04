@@ -96,6 +96,34 @@ function serve() {
         });
         check(lang, "detail files", !missing.length, missing.join(", "));
 
+        // forgiving search: a word only one title has, with two letters swapped, still finds that game
+        const typo = await page.evaluate(() => {
+          const D = JSON.parse(document.getElementById("data").textContent);
+          const words = new Map();
+          D.games.forEach((r) => new Set(r[0].toLowerCase().match(/[a-z]{8,}/g) || []).forEach((w) => words.set(w, words.has(w) ? null : r[0])));
+          const [word, title] = [...words].find(([w, t]) => t && !D.games.some((r) => r[0] !== t && JSON.stringify(r).toLowerCase().includes(w))) || [];
+          return word ? { title, text: word.slice(0, 3) + word[4] + word[3] + word.slice(5) } : null;
+        });
+        if (typo) {
+          await page.fill("#q", typo.text);
+          await page.waitForTimeout(400);
+          const titles = await page.evaluate(() => [...document.querySelectorAll(".card .title")].map((x) => x.textContent));
+          check(lang, "search with a typo", titles.includes(typo.title), `${typo.text}: ${titles.slice(0, 5).join(", ")}`);
+          console.log(`typo search: “${typo.text}” finds ${typo.title}`);
+          await page.fill("#q", "");
+          await page.waitForTimeout(300);
+        }
+
+        // More like this: the most-rated game with a few tags gets a row of similar games
+        const popular = await page.evaluate(() => {
+          const D = JSON.parse(document.getElementById("data").textContent);
+          return D.games.filter((r) => r[2] && (r[11] || []).length >= 4).sort((a, b) => (b[9] || 0) - (a[9] || 0))[0][2];
+        });
+        await page.evaluate((id) => { location.hash = "game=" + encodeURIComponent(id); }, popular);
+        check(lang, "more like this", await page.waitForSelector("#d-body .d-like .mini", { timeout: 5000 }).then(() => true, () => false), popular);
+        await page.keyboard.press("Escape");
+        await page.waitForTimeout(300);
+
         // installable app: a manifest without errors, nothing but the test browser's private mode in
         // the way of installing, and a service worker that brings the page back without a connection
         const cdp = await ctx.newCDPSession(page);
@@ -123,6 +151,26 @@ function serve() {
     }
     check(lang, "no errors", !errors.length, errors.slice(0, 3).join(" | "));
     console.log(`${lang}: ${failures.some((f) => f.startsWith(`[${lang}]`)) ? "FAILED" : "ok"}`);
+    await ctx.close();
+  }
+
+  // "New for you": someone whose last visit came before the data saw every game added since tracking began
+  {
+    const ctx = await browser.newContext({ serviceWorkers: "block" });
+    await ctx.route((url) => url.hostname !== "127.0.0.1", (route) => route.abort());
+    await ctx.addInitScript(() => {
+      for (const [k, v] of [["lang", "en"], ["region", "US"], ["seenData", "2000-01-01"], ["newSince", "2000-01-01"]]) localStorage.setItem("ppb:" + k, v);
+    });
+    const page = await ctx.newPage();
+    await page.goto(base);
+    await page.waitForFunction(() => document.getElementById("status").textContent, null, { timeout: 15000 });
+    const r = await page.evaluate(() => {
+      const D = JSON.parse(document.getElementById("data").textContent), apps = D.genres.indexOf("Apps");
+      const added = D.games.filter((g) => g[15] && g[15] > D.meta.trackingSince && g[1] !== apps).length;
+      return { added, shown: !document.getElementById("since-chip").hidden, chip: document.getElementById("since-chip").textContent.trim() };
+    });
+    check("en", "new for you", r.added ? r.shown && r.chip.endsWith(String(r.added).replace(/\B(?=(\d{3})+$)/g, ",")) : !r.shown, JSON.stringify(r));
+    console.log(`new for you: ${r.added ? r.chip : "nothing added since tracking began"}`);
     await ctx.close();
   }
 

@@ -214,7 +214,7 @@ h1 {
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
 }
-.bar-inner { max-width: 1320px; margin-inline: auto; display: grid; gap: 10px; }
+.bar-inner { max-width: 1320px; margin-inline: auto; display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }  /* long menu entries mustn't widen it */
 .bar { transition: transform 0.22s ease; }
 .bar.tucked { transform: translateY(calc(-100% - 2px)); }
 .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
@@ -312,6 +312,7 @@ h1 {
 .genre.all::before { background: var(--brass); }
 .genre.favs::before { content: "★"; width: auto; height: auto; border-radius: 0; background: none; color: var(--brass); font-size: 13px; line-height: 1; }
 .genre.favs[aria-pressed="true"]::before { color: var(--brass); }
+.genre.since::before { background: oklch(72% 0.17 150); }
 .genre small { font: 400 10.5px/1 var(--f-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
 .genre[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--surface); }
 .genre[aria-pressed="true"] small { color: inherit; opacity: 0.75; }
@@ -615,6 +616,21 @@ dialog.detail::backdrop { background: rgb(8 10 20 / 0.6); }
   font: 600 12px/1 var(--f-body);
   cursor: pointer;
 }
+.d-like { padding: 14px 0 6px; border-top: 1px solid var(--line); }
+.d-like h3 { margin: 0 18px 10px; font: 650 14px/1.3 var(--f-body); }
+.d-strip { display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x proximity; padding: 2px 18px 14px; }
+.mini {
+  flex: none; display: grid; align-content: start; justify-items: start; gap: 6px;
+  width: 118px; padding: 10px;
+  border: 1px solid var(--line); border-radius: 14px;
+  background: var(--surface); color: var(--ink);
+  font: inherit; text-align: left;
+  cursor: pointer; scroll-snap-align: start;
+}
+.mini:hover { border-color: var(--ink); }
+.mini .icon { width: 56px; height: 56px; border-radius: 13px; }
+.mini-title { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font: 600 13px/1.25 var(--f-body); overflow-wrap: anywhere; }
+.mini-sub { font-size: 11px; line-height: 1.3; color: var(--muted); }
 .muted { color: var(--muted); }
 @media (max-width: 560px) {
   dialog.detail { width: 100%; max-width: 100%; height: 100%; max-height: 100%; margin: 0; border: 0; border-radius: 0; }
@@ -941,14 +957,15 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   // language: the developer's translation, or Google's automatic one (D.tagNames, details/<lang>/).
   const enScope = (o, n) => (o.fav ? (o.apps ? (n === 1 ? "favourite app" : "favourite apps") : (o.genre ? `${o.genre} ` : "") + (n === 1 ? "favourite" : "favourites"))
     : o.apps ? (n === 1 ? "app" : "apps") : (o.genre ? `${o.genre} ` : "") + (n === 1 ? "game" : "games"))
-    + (o.shared ? " from a shared list" : "") + (o.tag ? ` tagged “${o.tag}”` : "") + (o.age ? ` rated PEGI ${o.age} or lower` : "") + (o.dev ? ` by ${o.dev}` : "") + (o.pass ? " in Play Pass" : "");
+    + (o.since ? " added since your last visit" : "") + (o.shared ? " from a shared list" : "") + (o.tag ? ` tagged “${o.tag}”` : "") + (o.age ? ` rated PEGI ${o.age} or lower` : "") + (o.dev ? ` by ${o.dev}` : "") + (o.pass ? " in Play Pass" : "");
   // The other languages name the country on its own ("Nederland: 3 niet aangeboden"), which sidesteps
   // articles and prepositions that differ per country.
   function genericStatus(o) {
-    const head = o.filtered ? (o.genre && !o.apps ? L.genreHead(o.genre) : "") + L.countG(o.n, o.nf, o.kind) : L.allOf(o.nf, o.apps);
+    const head = o.filtered ? (o.since ? L.sinceHead : "") + (o.genre && !o.apps ? L.genreHead(o.genre) : "") + L.countG(o.n, o.nf, o.kind)
+      : L.allOf(o.nf, o.apps);
     const quals = [o.shared && L.fromShared, o.tag && L.withTag(o.tag), o.age && L.upToAge(o.age), o.dev && L.by(o.dev),
       o.pass && L.inPassQ, o.query && L.matching(o.query)].filter(Boolean);
-    return L.joinQ(head, quals) + (L.sortNote[o.sort] || "") + (o.elsewhere ? " · " + L.notOffered(o.elsewhereF, o.elsewhere, o.country) : "");
+    return L.joinQ(head, quals) + (o.fuzzy ? L.fuzzyNote : "") + (L.sortNote[o.sort] || "") + (o.elsewhere ? " · " + L.notOffered(o.elsewhereF, o.elsewhere, o.country) : "");
   }
   function genericEmpty(o) {
     return o.noFavs ? L.noFavsYet : L.noResults(o.query) + (o.elsewhere ? L.sentenceSep + L.elsewhereNote(o.elsewhereF, o.elsewhere, o.country) : "");
@@ -1003,6 +1020,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       heading: { az: "Games A to Z", popular: "Most popular games", rating: "Top rated games", newest: "Newest games" },
       groupCount: (n, nf, apps) => `${nf} ${apps ? (n === 1 ? "app" : "apps") : (n === 1 ? "game" : "games")}`,
       status: (o) => (o.filtered ? `Showing ${o.nf} ${enScope(o, o.n)}` + (o.query ? ` matching “${o.query}”` : "") : `Showing all ${o.nf} ${o.apps ? "apps" : "games"}`) +
+        (o.fuzzy ? L.fuzzyNote : "") +
         ({ popular: ", most popular first", rating: ", highest rated first", newest: ", newest first" }[o.sort] || "") +
         (o.elsewhere ? ` · ${o.elsewhereF} not offered in ${o.theCountry}` : ""),
       empty: (o) => o.noFavs ? "No favourites yet: tap ☆ on a game, or swipe right in Discover."
@@ -1038,6 +1056,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       fromShared: "from a shared list", basedOn: (nf, n) => ` · tuned to your ${nf} ${n === 1 ? "favourite" : "favourites"}`,
       install: "Install app",
       footApp: "Install it as an app: with the install button at the top in Chrome, Edge and on Android, or on an iPhone or iPad with Safari's Share button and then Add to Home Screen. It then opens in its own window and works offline with the games you've looked at.",
+      moreLikeThis: "More like this", moreFrom: (d) => `More from ${d}`,
+      newForYou: "New for you", newForYouTitle: "Games added to Play Pass since your last visit", sinceHead: "New since your last visit · ", markSeen: "Mark as seen",
+      fuzzyNote: " · including close spellings",
       themeSystem: "match system", themeLight: "light", themeDark: "dark", themeLabel: (l) => `Theme: ${l}. Change theme`, themeTitle: (l) => `Theme: ${l}`
     },
     nl: {
@@ -1120,6 +1141,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       fromShared: "uit een gedeelde lijst", basedOn: (nf, n) => ` · afgestemd op je ${nf} ${n === 1 ? "favoriet" : "favorieten"}`,
       install: "App installeren",
       footApp: "Installeer het als app: met de installeerknop bovenaan in Chrome, Edge en op Android, of op een iPhone of iPad met de deelknop van Safari en dan ‘Zet op beginscherm’. Daarna opent het in een eigen venster en werkt het offline met de games die je hebt bekeken.",
+      moreLikeThis: "Meer zoals dit", moreFrom: (d) => `Meer van ${d}`,
+      newForYou: "Nieuw voor jou", newForYouTitle: "Games die sinds je laatste bezoek aan Play Pass zijn toegevoegd", sinceHead: "Nieuw sinds je laatste bezoek · ", markSeen: "Markeer als gezien",
+      fuzzyNote: " · inclusief vergelijkbare spellingen",
       themeSystem: "systeem volgen", themeLight: "licht", themeDark: "donker", themeLabel: (l) => `Thema: ${l}. Thema wijzigen`, themeTitle: (l) => `Thema: ${l}`
     },
     de: {
@@ -1202,6 +1226,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       fromShared: "aus einer geteilten Liste", basedOn: (nf, n) => n === 1 ? " · passend zu deinem Favoriten" : ` · passend zu deinen ${nf} Favoriten`,
       install: "App installieren",
       footApp: "Als App installieren: mit der Installieren-Schaltfläche oben in Chrome, Edge und auf Android oder auf dem iPhone oder iPad über die Teilen-Taste von Safari und dann „Zum Home-Bildschirm“. Danach öffnet es sich in einem eigenen Fenster und funktioniert offline mit den Spielen, die du angesehen hast.",
+      moreLikeThis: "Ähnliche Titel", moreFrom: (d) => `Mehr von ${d}`,
+      newForYou: "Neu für dich", newForYouTitle: "Spiele, die seit deinem letzten Besuch zu Play Pass hinzugekommen sind", sinceHead: "Neu seit deinem letzten Besuch · ", markSeen: "Als gesehen markieren",
+      fuzzyNote: " · inklusive ähnlicher Schreibweisen",
       themeSystem: "wie System", themeLight: "hell", themeDark: "dunkel", themeLabel: (l) => `Design: ${l}. Design ändern`, themeTitle: (l) => `Design: ${l}`
     },
     fr: {
@@ -1284,6 +1311,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       fromShared: "d’une liste partagée", basedOn: (nf, n) => n <= 1 ? " · selon votre favori" : ` · selon vos ${nf} favoris`,
       install: "Installer l’appli",
       footApp: "Installez-la comme une appli : avec le bouton d’installation en haut dans Chrome, Edge et sur Android, ou sur iPhone et iPad avec le bouton Partager de Safari puis « Sur l’écran d’accueil ». Elle s’ouvre alors dans sa propre fenêtre et fonctionne hors ligne avec les jeux que vous avez consultés.",
+      moreLikeThis: "Dans le même genre", moreFrom: (d) => `Autres titres de ${d}`,
+      newForYou: "Nouveau pour vous", newForYouTitle: "Jeux ajoutés à Play Pass depuis votre dernière visite", sinceHead: "Nouveautés depuis votre dernière visite · ", markSeen: "Marquer comme vus",
+      fuzzyNote: " · orthographes proches incluses",
       themeSystem: "comme le système", themeLight: "clair", themeDark: "sombre", themeLabel: (l) => `Thème : ${l}. Changer de thème`, themeTitle: (l) => `Thème : ${l}`
     },
     es: {
@@ -1366,6 +1396,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       fromShared: "de una lista compartida", basedOn: (nf, n) => n === 1 ? " · según tu favorito" : ` · según tus ${nf} favoritos`,
       install: "Instalar la app",
       footApp: "Instálala como app: con el botón de instalar de arriba en Chrome, Edge y Android, o en iPhone y iPad con el botón Compartir de Safari y luego «Añadir a pantalla de inicio». Así se abre en su propia ventana y funciona sin conexión con los juegos que hayas visto.",
+      moreLikeThis: "Títulos similares", moreFrom: (d) => `Más de ${d}`,
+      newForYou: "Nuevo para ti", newForYouTitle: "Juegos añadidos a Play Pass desde tu última visita", sinceHead: "Novedades desde tu última visita · ", markSeen: "Marcar como vistos",
+      fuzzyNote: " · incluye grafías parecidas",
       themeSystem: "según el sistema", themeLight: "claro", themeDark: "oscuro", themeLabel: (l) => `Tema: ${l}. Cambiar tema`, themeTitle: (l) => `Tema: ${l}`
     },
     it: {
@@ -1448,6 +1481,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       fromShared: "da un elenco condiviso", basedOn: (nf, n) => n === 1 ? " · in base al tuo preferito" : ` · in base ai tuoi ${nf} preferiti`,
       install: "Installa l’app",
       footApp: "Installala come app: con il pulsante Installa in alto in Chrome, Edge e su Android, oppure su iPhone e iPad con il pulsante Condividi di Safari e poi «Aggiungi alla schermata Home». Si apre poi in una finestra propria e funziona offline con i giochi che hai guardato.",
+      moreLikeThis: "Titoli simili", moreFrom: (d) => `Altro da ${d}`,
+      newForYou: "Novità per te", newForYouTitle: "Giochi aggiunti a Play Pass dalla tua ultima visita", sinceHead: "Novità dalla tua ultima visita · ", markSeen: "Segna come visti",
+      fuzzyNote: " · incluse grafie simili",
       themeSystem: "come il sistema", themeLight: "chiaro", themeDark: "scuro", themeLabel: (l) => `Tema: ${l}. Cambia tema`, themeTitle: (l) => `Tema: ${l}`
     },
     pt: {
@@ -1530,6 +1566,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       fromShared: "de uma lista compartilhada", basedOn: (nf, n) => n === 1 ? " · com base no seu favorito" : ` · com base nos seus ${nf} favoritos`,
       install: "Instalar o app",
       footApp: "Instale como app: com o botão de instalar no topo no Chrome, no Edge e no Android, ou no iPhone e iPad com o botão Compartilhar do Safari e depois “Adicionar à Tela de Início”. Depois ele abre em uma janela própria e funciona offline com os jogos que você já viu.",
+      moreLikeThis: "Títulos parecidos", moreFrom: (d) => `Mais de ${d}`,
+      newForYou: "Novo para você", newForYouTitle: "Jogos adicionados ao Play Pass desde sua última visita", sinceHead: "Novidades desde sua última visita · ", markSeen: "Marcar como vistos",
+      fuzzyNote: " · inclui grafias parecidas",
       themeSystem: "igual ao sistema", themeLight: "claro", themeDark: "escuro", themeLabel: (l) => `Tema: ${l}. Mudar tema`, themeTitle: (l) => `Tema: ${l}`
     },
     ja: {
@@ -1613,6 +1652,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       fromShared: "共有リスト", basedOn: (nf) => ` · お気に入り ${nf} 件をもとに選択`,
       install: "アプリをインストール",
       footApp: "アプリとしてインストール：Chrome、Edge、Android では上部のインストールボタンから、iPhone や iPad では Safari の共有ボタンから「ホーム画面に追加」を選びます。インストールすると専用のウインドウで開き、見たことのあるゲームはオフラインでも表示できます。",
+      moreLikeThis: "似ているタイトル", moreFrom: (d) => `${d} のほかのタイトル`,
+      newForYou: "あなたへの新着", newForYouTitle: "前回の訪問以降に Play Pass に追加されたゲーム", sinceHead: "前回の訪問以降の新着 · ", markSeen: "既読にする",
+      fuzzyNote: " · 似た表記も含む",
       themeSystem: "システムに合わせる", themeLight: "ライト", themeDark: "ダーク", themeLabel: (l) => `テーマ：${l}。テーマを変更`, themeTitle: (l) => `テーマ：${l}`
     }
   };
@@ -1634,6 +1676,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   const collator = new Intl.Collator(LOCALE, { numeric: true, sensitivity: "base" });
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const norm = (s) => String(s || "").normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const squash = (s) => s.replace(/[^\p{L}\p{N}\p{M}]+/gu, "");  // without spaces and punctuation
   const img = (path, size) => (/^https?:/.test(path) ? path : IMG_HOST + path).split("=")[0] + "=" + size;
   const store = {
     get(k) { try { return localStorage.getItem("ppb:" + k); } catch (e) { return null; } },
@@ -1691,8 +1734,11 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
              tx: TX_BIT >= 0 && ((texts || 0) >> TX_BIT) & 1,
              fid: appId || "t:" + storeTitle,  // favourite / swipe key
              key: norm([title, storeTitle, dev, listedAs, category, category && catName(category),
-               ...ids.map((t) => D.tags[t]), ...ids.map(tagName)].filter(Boolean).join(" ")), el: null };
+               ...ids.map((t) => D.tags[t]), ...ids.map(tagName)].filter(Boolean).join(" ")),
+             names: [...new Set([title, storeTitle, listedAs].filter(Boolean).map((s) => squash(norm(s))))],
+             kids: genre === "Educational" || /\b(kids?|bab(y|ies)|toddlers?|preschool)\b/i.test(storeTitle + " " + (listedAs || "")), el: null };
   });
+  games.forEach((g) => { g.keyc = squash(g.key); });
   const genreLabel = (g) => (g.category ? catName(g.category) : genreName(g.genre));
   const confirmedOnly = !!D.meta.confirmedOnly;
   const APPS = D.genres.indexOf("Apps");  // Play Pass apps that aren't games get their own section
@@ -1706,6 +1752,15 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     const out = daysSince(g.released);
     g.isNew = added <= NEW_DAYS || (out >= 0 && out <= NEW_DAYS);
   });
+  // "New for you": the games added in the updates since your last visit. The page remembers the date
+  // of the data you last saw; once an update brings newer data, what it added stays new for you until
+  // you mark it as seen (or the next update). On a first visit nothing is.
+  const dataDate = D.meta.passChecked || "";
+  const seenData = store.get("seenData");
+  let newSince = !seenData ? dataDate : seenData < dataDate ? seenData : store.get("newSince") || dataDate;
+  if (!seenData || seenData < dataDate) store.set("seenData", dataDate);
+  store.set("newSince", newSince);
+  const isNewForYou = (g) => !!(newSince && g.firstSeen && g.firstSeen > newSince && (!since || g.firstSeen > since));
   // Tags: the store's own genre names go in their own group of the Tag menu.
   const STORE_GENRES = new Set(["Action", "Adventure", "Arcade", "Board", "Card", "Casino", "Casual", "Educational",
     "Music", "Puzzle", "Racing", "Role Playing", "Simulation", "Sports", "Strategy", "Trivia", "Word"]);
@@ -1894,6 +1949,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   $("only-pass").hidden = confirmedOnly;
   $("genres").innerHTML =
     `<button type="button" class="genre favs" id="fav-chip" aria-pressed="false">${esc(L.favourites)} <small></small></button>` +
+    `<button type="button" class="genre since" id="since-chip" aria-pressed="false" title="${esc(L.newForYouTitle)}" hidden>${esc(L.newForYou)} <small></small></button>` +
     `<button type="button" class="genre all" data-g="-1" aria-pressed="true">${esc(L.all)} <small></small></button>` +
     D.genres.map((name, gi) => `<button type="button" class="genre" data-g="${gi}" style="--h:${HUES[name] ?? 250}" aria-pressed="false">${esc(genreName(name))} <small></small></button>`).join("");
 
@@ -1901,7 +1957,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   const list = $("list"), q = $("q");
   let genre = -1;
   let sort = SORTS.includes(store.get("sort")) ? store.get("sort") : "az";
-  let tag = -1, age = 0, dev = "", favOnly = false;
+  let tag = -1, age = 0, dev = "", favOnly = false, sinceOnly = false;
   let shared = null;  // the ids of a list someone shared (#list=...), while looking at it
   let discoverOn = false;
   let onlyPass = !confirmedOnly && store.get("pass") === "1";
@@ -1923,6 +1979,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       el.textContent = fmt.format(gi < 0 ? gamesHere.length : byGenre[gi]);
     });
     showFavCount();
+    const fresh = pool.filter(isNewForYou).length;
+    $("since-chip").hidden = !fresh && !sinceOnly;
+    $("since-chip").querySelector("small").textContent = fmt.format(fresh);
     $("tag").querySelectorAll("optgroup option").forEach((o) => {
       const t = Number(o.value);
       o.textContent = `${tagName(t)} (${fmt.format(byTag[t])})`;
@@ -2001,15 +2060,84 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   // The current search and filters as a test; Discover reuses it without the favourites filter.
   function filters(withFavs) {
     const terms = norm(q.value).split(/\s+/).filter(Boolean);
+    const tests = terms.map(termTest);
     const passes = (g) => (tag < 0 || g.reps.includes(tag)) && (!onlyPass || g.pass === 1)
-      && (!age || (g.pegi != null && g.pegi <= age)) && (!dev || g.dev === dev) && terms.every((t) => g.key.includes(t))
+      && (!age || (g.pegi != null && g.pegi <= age)) && (!dev || g.dev === dev) && (!sinceOnly || isNewForYou(g))
+      && tests.every((test) => test(g))
       && (!withFavs || ((!favOnly || favs.has(g.fid)) && (!shared || shared.has(g.fid))));
     // "All" means all games; favourites (and shared lists) include apps
     const inSection = (g) => genre < 0 ? !isApp(g) || (withFavs && (favOnly || !!shared)) : g.gi === genre;
-    return { terms, passes, inSection };
+    return { terms, passes, inSection, fuzzy: tests.some((test) => test.fuzzy) };
+  }
+  // A search term matches the title, developer, tags... with spaces and punctuation left out, so
+  // "minimetro" and "mini-metro" find Mini Metro. A term found nowhere in the catalogue is taken for a
+  // typo: it matches the closest words instead, and only the closest ones: one letter off, two from six
+  // letters on (swapping two neighbours counts as one), or the start of a longer word one letter off
+  // (two from eight letters on).
+  const termTests = new Map();
+  function termTest(t) {
+    if (termTests.has(t)) return termTests.get(t);
+    const c = squash(t);
+    let test = (g) => g.keyc.includes(c);
+    if (c && !games.some(test) && /^[a-z0-9]{4,}$/.test(c)) {
+      const n = c.length, max = n >= 6 ? 2 : 1;
+      let best = max + 1, hits = [];
+      for (const [w, list] of searchWords()) {
+        const whole = w.length <= n + max;  // else only its start can be close
+        if (w.length < n - max || (!whole && n < 5)) continue;
+        const row = typos(c, whole ? w : w.slice(0, n + 1), max);
+        if (!row) continue;
+        let d = whole ? row[w.length] : max + 1;
+        if (n >= 5) for (let k = n - 1; k <= n + 1 && k < w.length; k++) if (row[k] <= (n >= 8 ? 2 : 1)) d = Math.min(d, row[k]);
+        if (d < best) { best = d; hits = []; }
+        if (d === best && d <= max) hits.push(list);
+      }
+      const found = new Set(hits.flat());
+      test = (g) => found.has(g);
+      test.fuzzy = found.size > 0;
+    }
+    if (termTests.size > 200) termTests.clear();
+    termTests.set(t, test);
+    return test;
+  }
+  let wordIndex = null;  // each word in the games' titles, developers and tags -> the games that have it
+  function searchWords() {
+    if (!wordIndex) {
+      wordIndex = new Map();
+      games.forEach((g) => new Set([...(g.key.match(/[a-z0-9]{3,}/g) || []), ...g.names]).forEach((w) => {
+        if (wordIndex.has(w)) wordIndex.get(w).push(g); else wordIndex.set(w, [g]);
+      }));
+    }
+    return wordIndex;
+  }
+  (window.requestIdleCallback || ((f) => setTimeout(f, 3000)))(() => searchWords(), { timeout: 5000 });  // ready before the first typo
+  // The edits that turn a into each start of b (a letter added, dropped or changed, or two neighbours
+  // swapped): row[k] for b's first k letters. null as soon as every one of them needs more than max.
+  let rows = [0, 1, 2].map(() => new Int16Array(64));
+  function typos(a, b, max) {
+    const m = b.length + 1;
+    if (rows[0].length < m) rows = rows.map(() => new Int16Array(2 * m));
+    let [before, prev, row] = rows;
+    for (let j = 0; j < m; j++) prev[j] = j;
+    for (let i = 1; i <= a.length; i++) {
+      row[0] = i;
+      let low = i;
+      for (let j = 1; j < m; j++) {
+        let d = Math.min(prev[j] + 1, row[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+        if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) d = Math.min(d, before[j - 2] + 1);
+        row[j] = d;
+        if (d < low) low = d;
+      }
+      if (low > max) return null;
+      const spare = before;
+      before = prev;
+      prev = row;
+      row = spare;
+    }
+    return prev;
   }
   function apply() {
-    const { terms, passes, inSection: section } = filters(true);
+    const { terms, passes, inSection: section, fuzzy } = filters(true);
     const shownBy = new Array(D.genres.length).fill(0), shownList = [];
     let elsewhere = 0, appHits = 0;  // elsewhere: matches the region's store doesn't offer
     for (const g of sort === "genre" ? byGenre : ORDERS[sort]) {
@@ -2027,13 +2155,14 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       genre: genre < 0 || appsView ? "" : genreName(D.genres[genre]), tag: tag < 0 ? "" : tagName(tag), age, dev, pass: onlyPass,
       query: terms.length ? q.value.trim() : "", sort, elsewhere, elsewhereF: fmt.format(elsewhere),
       country: regionName(REGIONS[region]), theCountry: theName(REGIONS[region]), noFavs: favOnly && !favs.size, shared: !!shared,
-      filtered: !!((genre >= 0 && !appsView) || tag >= 0 || age || dev || onlyPass || favOnly || shared || terms.length) };
+      since: sinceOnly, fuzzy: fuzzy && shown + elsewhere > 0, filtered: !!((genre >= 0 && !appsView) || tag >= 0 || age || dev || onlyPass || favOnly || sinceOnly || shared || terms.length) };
     $("status").textContent = L.status(o);
     const unsaved = shared ? [...shared].filter((id) => !favs.has(id) && games.some((g) => g.fid === id)).length : 0;
     $("active").innerHTML =
       (shared ? `<span class="filter-chip">${esc(L.sharedChip)}<button type="button" data-close-shared aria-label="${esc(L.closeShared)}">×</button></span>` +
         (unsaved ? `<button type="button" class="linkish" data-add-shared>${esc(L.addShared)}</button>` : "") : "") +
       (favOnly && favs.size ? `<button type="button" class="linkish" data-share-favs>${esc(L.shareList)}</button>` : "") +
+      (sinceOnly && shown ? `<button type="button" class="linkish" data-mark-seen>${esc(L.markSeen)}</button>` : "") +
       (dev ? `<span class="filter-chip">${esc(L.byDev(dev))}<button type="button" data-clear-dev aria-label="${esc(L.stopDev(dev))}">×</button></span>` : "") +
       (appHits ? `<button type="button" class="linkish" data-goto-apps>${esc(L.matchingApps(fmt.format(appHits), appHits))}</button>` : "");
     $("empty").hidden = shown > 0;
@@ -2090,6 +2219,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   function showControls() {
     document.querySelectorAll(".genre[data-g]").forEach((x) => x.setAttribute("aria-pressed", String(Number(x.dataset.g) === genre)));
     $("fav-chip").setAttribute("aria-pressed", String(favOnly));
+    $("since-chip").setAttribute("aria-pressed", String(sinceOnly));
     $("tag").value = String(tag);
     $("tag-box").classList.toggle("active", tag >= 0);
     $("age").value = String(age);
@@ -2194,8 +2324,47 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       `<a href="https://www.youtube.com/results?search_query=${enc(g.title + (isApp(g) ? "" : " gameplay"))}" target="_blank" rel="noopener">${ICONS.video}<span>${esc(isApp(g) ? L.videos : L.gameplay)}</span></a>` +
       `<a href="https://www.google.com/search?tbm=isch&amp;q=${enc(g.title + (isApp(g) ? " app" : " game"))}" target="_blank" rel="noopener">${ICONS.images}<span>${esc(L.images)}</span></a>` +
       `<button type="button" data-dshare>${ICONS.share}<span>${esc(L.share)}</span></button>` +
-      `</nav>`;
+      `</nav>` +
+      strip(L.moreLikeThis, similar(g)) + (g.dev ? strip(L.moreFrom(g.dev), sameDev(g)) : "");
   }
+  // More like this: the games (or apps) on offer here whose tags overlap most with this one's: a cosine
+  // similarity of their tags, rarer tags counting for more than ones most games share (though no tag
+  // more than one of 15 games share: a stray rare tag shouldn't decide alone). Then a nudge towards the
+  // same age rating, genre and audience (children's games go with children's games), and towards
+  // well-rated, much-rated games. The developer's own games go in the row below instead.
+  const tagWeight = (t) => 1 / Math.log(2 + Math.max(15, tagCounts[t]));
+  const AGES = [3, 7, 12, 16, 18];
+  const tagNorm = (g) => g.tagNorm ?? (g.tagNorm = Math.sqrt(g.reps.reduce((sum, t) => sum + tagWeight(t) ** 2, 0)));
+  const MORE = 12;
+  const similarTo = new Map();  // "game index:region" -> the list
+  function similar(g) {
+    const key = g.i + ":" + region;
+    if (similarTo.has(key)) return similarTo.get(key);
+    let found = [];
+    if (g.reps.length) {
+      const mine = new Set(g.reps);
+      found = games.filter((x) => x !== g && x.reps.length && (!g.dev || x.dev !== g.dev) && isApp(x) === isApp(g) && inRegion(x))
+        .map((x) => {
+          let dot = 0;
+          for (const t of x.reps) if (mine.has(t)) dot += tagWeight(t) ** 2;
+          const cos = dot / (tagNorm(g) * tagNorm(x));
+          const ages = Math.abs(AGES.indexOf(g.pegi) - AGES.indexOf(x.pegi));
+          let score = cos * (AGES.includes(g.pegi) && AGES.includes(x.pegi) ? 1 - 0.15 * ages : 1)
+            + (x.rating ? (weighted(x) - meanRating) / 10 : 0) + (x.gi === g.gi ? 0.05 : 0);
+          if (x.kids !== g.kids) score /= 2;
+          return { x, cos, score: score + 0.03 * Math.log10(1 + (x.ratings || 0)) };
+        })
+        .filter((s) => s.cos >= 0.35).sort((a, b) => b.score - a.score).slice(0, MORE).map((s) => s.x);
+    }
+    similarTo.set(key, found);
+    return found;
+  }
+  const sameDev = (g) => byPopular.filter((x) => x !== g && x.dev === g.dev && inRegion(x)).slice(0, MORE);
+  const mini = (x) => `<button type="button" class="mini" data-dopen="${x.i}">${iconHtml(x, 56).replace(/ data-open="\d+"/, "")}` +
+    `<span class="mini-title">${esc(x.title)}</span>` +
+    `<span class="mini-sub">${x.rating ? `★ ${dec1.format(x.rating)} · ` : ""}${esc(genreLabel(x))}</span></button>`;
+  const strip = (title, list) => list.length
+    ? `<section class="d-like"><h3>${esc(title)}</h3><div class="d-strip">${list.map(mini).join("")}</div></section>` : "";
   // Trailers: a still with a play button; the YouTube player loads (and plays) only when it's pressed.
   const ytId = (d) => d && d.video && (/(?:embed\/|v=|youtu\.be\/)([\w-]{6,})/.exec(d.video) || [])[1];
   const ytStill = (id) => `https://i.ytimg.com/vi/${enc(id)}/hqdefault.jpg`;
@@ -2260,6 +2429,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     const g = current;
     if (!g) return;
     if (e.target.closest("[data-yt]")) playTrailer(e.target.closest("[data-yt]"));
+    else if (e.target.closest("[data-dopen]")) openDetail(games[Number(e.target.closest("[data-dopen]").dataset.dopen)], false);
     else if (e.target.closest("#d-more")) {
       const b = $("d-more"), open = b.getAttribute("aria-expanded") === "true";
       $("d-desc").classList.toggle("clamped", open);
@@ -2301,6 +2471,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     const b = e.target.closest(".genre");
     if (!b) return;
     if (b.id === "fav-chip") { favOnly = !favOnly; shared = null; showControls(); apply(); toTop(); }
+    else if (b.id === "since-chip") { sinceOnly = !sinceOnly; showControls(); renderCounts(); apply(); toTop(); }
     else setGenre(Number(b.dataset.g));
   });
   $("only-pass").setAttribute("aria-pressed", String(onlyPass));
@@ -2338,6 +2509,14 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     else if (b.matches("[data-goto-apps]")) setGenre(APPS);
     else if (b.matches("[data-share-favs]")) flash(b, await share(listUrl(), L.shareTitle));
     else if (b.matches("[data-close-shared]")) { shared = null; apply(); }
+    else if (b.matches("[data-mark-seen]")) {
+      newSince = dataDate;
+      store.set("newSince", newSince);
+      sinceOnly = false;
+      showControls();
+      renderCounts();
+      apply();
+    }
     else if (b.matches("[data-add-shared]")) {
       games.forEach((g) => { if (shared.has(g.fid) && !favs.has(g.fid)) setFav(g, true); });
       apply();
@@ -2373,7 +2552,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     toTop();
   });
   $("clear").addEventListener("click", () => {
-    q.value = ""; genre = -1; tag = -1; age = 0; dev = ""; onlyPass = false; favOnly = false; shared = null;
+    q.value = ""; genre = -1; tag = -1; age = 0; dev = ""; onlyPass = false; favOnly = false; sinceOnly = false; shared = null;
     $("only-pass").setAttribute("aria-pressed", "false");
     store.set("pass", "");
     showControls();

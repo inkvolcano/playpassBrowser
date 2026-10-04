@@ -104,7 +104,7 @@ menu has since grown to all 101 countries on Google's Play Pass list.
 
 Value is how much it helps someone browsing the page; effort is roughly a few hours
 (low) up to a day (medium). Built since (4 October 2026): 1, 2 (monthly), 3, 4, 5, 6, 7, 8, 10, 11,
-12 (eight languages) and 14 (installable, offline), plus trailers in the page, shareable favourites lists, a Discover
+12 (eight languages), 14 (installable, offline) and 15 to 17, plus trailers in the page, shareable favourites lists, a Discover
 that learns from your swipes, and a browser check before each monthly update is published.
 Google Play no longer publishes download sizes, so the detail view has no size.
 
@@ -124,13 +124,16 @@ Google Play no longer publishes download sizes, so the detail view has no size.
 | 12 | Dutch interface (built, with German, French, Spanish, Italian, Portuguese and Japanese) | Medium | Medium | Language switch, picked from the browser |
 | 13 | Value counter | Low | Low | "These games cost €X outside Play Pass" |
 | 14 | Install as an app (built, works offline) | Low | Low | Home-screen icon, works offline |
+| 15 | More like this (built) | Medium | Low | In the detail view: games with the most similar tags, and the developer's other games |
+| 16 | New since your last visit (built) | Medium | Low | A chip with what the monthly updates added since you last came, until you mark it as seen |
+| 17 | Forgiving search (built) | Medium | Low | Spaces and punctuation don't matter; a word that matches nothing is matched as a typo |
 
 ## Tooling gaps
 
 - **Single update command.** This is fixed: `update.py` chains the scripts, and a GitHub
   workflow runs it on the 1st of every month.
-- **No tests.** A few unit tests for the matcher and a headless smoke test of the page
-  would catch regressions.
+- **Tests.** Half fixed: `check_page.js` checks the page in a headless browser before
+  every monthly push. The matcher still has no unit tests.
 - **Crawl convergence.** This is fixed: the crawler now follows developer links on
   every game page, so a single run finds what used to take two.
 
