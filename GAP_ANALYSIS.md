@@ -102,7 +102,7 @@ Kairosoft in Japan, Layton in Europe), and the Play links follow it.
 ## Feature ideas
 
 Value is how much it helps someone browsing the page; effort is roughly a few hours
-(low) up to a day (medium). Built since: 1, 3, 4, 5, 8, 10 and 11 (4 October 2026).
+(low) up to a day (medium). Built since: 1, 3, 4, 5, 7, 8, 10 and 11 (4 October 2026).
 Google Play no longer publishes download sizes, so the detail view has no size.
 
 | # | Feature | Value | Effort | Notes |
@@ -113,7 +113,7 @@ Google Play no longer publishes download sizes, so the detail view has no size.
 | 4 | Shareable links (built) | High | Low | Keeps search, genre, tag, sort and country in the URL |
 | 5 | Game detail view (built) | High | Medium | Tap a card for description, all screenshots, age rating, price outside Play Pass, size, last update; loaded per game so the page stays small |
 | 6 | Faster page | Medium | Medium | Shared icons instead of inline SVG, fewer screenshot dots, render cards as they scroll in; about 3x fewer elements |
-| 7 | Favourites and "played" marks | Medium | Low | Saved in the browser, with a filter |
+| 7 | Favourites and "played" marks (built, with Discover swiping) | Medium | Low | Saved in the browser, with a filter |
 | 8 | Age rating filter (built) | Medium | Low | For parents: PEGI 3/7/12/16/18 |
 | 9 | "Recently left Play Pass" list | Medium | Low | Comes free with the history from #3 |
 | 10 | Developer filter (built) | Medium | Low | Tap a developer name to see their games |

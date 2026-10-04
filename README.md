@@ -35,6 +35,16 @@ and tool apps).
 The address bar keeps the search, filters, sort, country and open game, so a
 link opens the same view; "Copy link" copies it.
 
+**Favourites and Discover.** Tap ☆ on a card (or in the detail view) to keep a
+game; the "★ Favourites" chip shows the list. The Discover button opens a
+fullscreen view with one random game at a time: its name, description and
+three screenshots under each other. Swipe right (or ♥, or the right arrow key)
+to add it to your favourites, left (✕, left arrow) to skip it; undo takes back
+the last swipe. Discover follows the current country and filters (open it from
+"Puzzle" with "PEGI 7" to swipe through those), skips the games already swiped,
+and Reset starts over, optionally clearing the favourites too. Favourites and
+swipes are kept in your browser (localStorage), so they're per device.
+
 The page lists only games whose Play Store page showed the Play Pass badge when
 it was last checked (US store; the date is in the page footer). YTECHB's list
 still carries games that have since left the service, plus a few that couldn't

@@ -274,6 +274,8 @@ h1 {
 }
 .genre::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: oklch(68% 0.16 var(--h)); }
 .genre.all::before { background: var(--brass); }
+.genre.favs::before { content: "★"; width: auto; height: auto; border-radius: 0; background: none; color: var(--brass); font-size: 13px; line-height: 1; }
+.genre.favs[aria-pressed="true"]::before { color: var(--brass); }
 .genre small { font: 400 10.5px/1 var(--f-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
 .genre[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--surface); }
 .genre[aria-pressed="true"] small { color: inherit; opacity: 0.75; }
@@ -442,7 +444,26 @@ button.shots:hover img { filter: brightness(1.08); }
   background: linear-gradient(var(--a, 135deg), oklch(58% 0.15 var(--h1, 250)), oklch(30% 0.11 var(--h2, 290)));
   color: #fff; font: 800 17px/1 var(--f-display);
 }
-.txt { min-width: 0; }
+.txt { min-width: 0; flex: 1; }
+.fav-btn {
+  flex: none;
+  align-self: flex-start;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  margin: -6px -8px 0 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+}
+.fav-btn svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
+.fav-btn:hover { color: var(--ink); }
+.fav-btn[aria-pressed="true"] { color: var(--brass); }
+.fav-btn[aria-pressed="true"] svg { fill: currentColor; }
 .title { margin: 0; font: 650 15px/1.25 var(--f-body); overflow-wrap: anywhere; text-wrap: balance; }
 .title .open, .dev button { padding: 0; border: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; }
 .title .open:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
@@ -548,6 +569,127 @@ dialog.detail::backdrop { background: rgb(8 10 20 / 0.6); }
   .d-gallery img { height: 180px; }
   .d-links a span, .d-links button span { display: inline; }
 }
+/* ---------- Discover: one random game at a time, swipe to keep or skip ---------- */
+.fab {
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right, 0px));
+  bottom: max(16px, env(safe-area-inset-bottom, 0px));
+  z-index: 6;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 50px;
+  padding: 0 20px 0 16px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--brass);
+  color: #2a1a00;
+  font: 750 14.5px/1 var(--f-body);
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.28);
+  cursor: pointer;
+}
+.fab svg { width: 22px; height: 22px; }
+.fab:hover { filter: brightness(1.05); }
+dialog.discover {
+  width: 100vw; max-width: 100vw;
+  height: 100vh; height: 100dvh; max-height: 100vh; max-height: 100dvh;
+  margin: 0; padding: 0; border: 0;
+  background: var(--bg);
+  color: var(--ink);
+  overflow: hidden;
+}
+dialog.discover[open] { display: flex; flex-direction: column; }
+dialog.discover::backdrop { background: var(--bg); }
+.dc-top, .dc-actions { width: 100%; max-width: 580px; margin: 0 auto; }
+.dc-top { display: flex; align-items: center; gap: 8px; padding: max(10px, env(safe-area-inset-top, 0px)) 14px 10px; }
+.dc-count { flex: 1; margin: 0; text-align: center; font: 500 12px/1.3 var(--f-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.dc-round {
+  display: grid; place-items: center;
+  width: 40px; height: 40px; padding: 0;
+  border: 1px solid var(--line); border-radius: 50%;
+  background: var(--surface); color: var(--ink);
+  font: 400 22px/1 var(--f-body);
+  cursor: pointer;
+}
+.dc-pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  height: 38px; padding: 0 13px;
+  border: 1px solid var(--line); border-radius: 999px;
+  background: var(--surface); color: var(--ink);
+  font: 600 13px/1 var(--f-body);
+  cursor: pointer;
+}
+.dc-pill svg { width: 16px; height: 16px; }
+.dc-pill .star { color: var(--brass); }
+.dc-stage { position: relative; flex: 1; min-height: 0; width: 100%; max-width: 580px; margin: 0 auto; }
+.dc-card {
+  position: absolute; inset: 0 12px;
+  -webkit-user-select: none; user-select: none;
+  display: flex; flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: var(--shadow), 0 10px 30px rgb(0 0 0 / 0.12);
+  overflow: hidden;
+  touch-action: pan-y;
+  will-change: transform;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+.dc-card.enter { transform: scale(0.96); opacity: 0; }
+.dc-card.dragging { transition: none; cursor: grabbing; user-select: none; }
+.dc-scroll { flex: 1; overflow-y: auto; overscroll-behavior: contain; touch-action: pan-y; padding-bottom: 12px; }
+.dc-head { display: flex; gap: 12px; align-items: center; padding: 18px 16px 6px; }
+.dc-head .icon { width: 60px; height: 60px; border-radius: 15px; }
+.dc-title { margin: 0; font: 750 21px/1.2 var(--f-body); overflow-wrap: anywhere; }
+.dc-text { padding: 6px 16px 4px; }
+.dc-text > p { margin: 0 0 8px; }
+.dc-desc { font-size: 14.5px; line-height: 1.55; overflow-wrap: anywhere; }
+.dc-desc p { margin: 0 0 8px; }
+.dc-desc.clamped { max-height: 7.6em; overflow: hidden; -webkit-mask-image: linear-gradient(#000 55%, transparent); mask-image: linear-gradient(#000 55%, transparent); }
+.dc-shot { display: block; width: calc(100% - 32px); max-height: 72vh; margin: 12px 16px 0; object-fit: contain; border-radius: 12px; background: var(--screen); -webkit-user-drag: none; }
+.dc-links { margin: 14px 16px 0; font-size: 13px; color: var(--muted); }
+.dc-stamp {
+  position: absolute; top: 104px; z-index: 2;
+  padding: 6px 12px;
+  border: 3px solid currentColor; border-radius: 10px;
+  background: var(--surface);
+  font: 850 19px/1 var(--f-display); letter-spacing: 0.06em; text-transform: uppercase;
+  opacity: 0; pointer-events: none;
+}
+.dc-stamp.like { left: 16px; color: oklch(60% 0.17 150); transform: rotate(-10deg); }
+.dc-stamp.nope { right: 16px; color: oklch(58% 0.2 25); transform: rotate(10deg); }
+.dc-actions { display: flex; justify-content: center; align-items: center; gap: 26px; padding: 14px 0 max(16px, env(safe-area-inset-bottom, 0px)); }
+.dc-act {
+  display: grid; place-items: center;
+  width: 64px; height: 64px; padding: 0;
+  border: 1px solid var(--line); border-radius: 50%;
+  background: var(--surface); box-shadow: var(--shadow), 0 4px 14px rgb(0 0 0 / 0.1);
+  cursor: pointer;
+}
+.dc-act svg { width: 28px; height: 28px; }
+.dc-act.nope { color: oklch(58% 0.2 25); }
+.dc-act.like { color: oklch(60% 0.17 150); }
+.dc-act.undo { width: 46px; height: 46px; color: var(--muted); }
+.dc-act.undo svg { width: 20px; height: 20px; }
+.dc-act:disabled { opacity: 0.35; cursor: default; }
+.dc-end { display: grid; align-content: center; justify-items: center; gap: 12px; height: 100%; padding: 24px; text-align: center; }
+.dc-end h2 { margin: 0; font: 850 26px/1.1 var(--f-display); font-variation-settings: "wdth" 120; }
+.dc-end p { margin: 0; color: var(--muted); max-width: 32ch; }
+.dc-end .row { justify-content: center; }
+.dc-confirm { position: absolute; inset: 0; z-index: 5; display: grid; place-items: center; padding: 16px; background: rgb(8 10 20 / 0.55); }
+.dc-confirm-box { width: min(380px, 100%); padding: 20px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); box-shadow: var(--shadow); }
+.dc-confirm-box h2 { margin: 0 0 6px; font: 750 18px/1.2 var(--f-body); }
+.dc-confirm-box p { margin: 0 0 16px; color: var(--muted); font-size: 14px; }
+.dc-confirm-box .row { justify-content: flex-end; gap: 8px; }
+.dc-btn {
+  height: 38px; padding: 0 14px;
+  border: 1px solid var(--line); border-radius: 10px;
+  background: var(--surface-2); color: var(--ink);
+  font: 600 13.5px/1 var(--f-body);
+  cursor: pointer;
+}
+.dc-btn.primary { background: var(--ink); border-color: var(--ink); color: var(--surface); }
+.dc-btn.danger { color: oklch(55% 0.2 25); }
 footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
 footer p { margin: 0 0 6px; max-width: 75ch; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }
@@ -560,7 +702,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     <div class="pass-main">
       <p class="eyebrow">Google Play Pass catalogue</p>
       <h1>Play Pass Browser</h1>
-      <p class="lede" id="lede">Every game in Google Play Pass, with screenshots, icons and links from the Play Store. Tap a title for details, a screenshot to see the next one.</p>
+      <p class="lede" id="lede">Every game in Google Play Pass, with screenshots, icons and links from the Play Store. Tap a title for details, a screenshot to see the next one, ☆ to keep a favourite, or Discover to swipe through games one at a time.</p>
       <p class="sources" id="sources"></p>
       <button type="button" class="ghost theme-btn" id="theme" aria-label="Theme: match system">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg>
@@ -635,6 +777,37 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   </footer>
 </div>
 
+<button type="button" class="fab" id="discover-btn" aria-label="Discover: swipe through random games">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="3" width="12" height="16" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 7.5V18a3 3 0 0 0 3 3h7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <span>Discover</span>
+</button>
+
+<dialog class="discover" id="discover" aria-label="Discover games">
+  <div class="dc-top">
+    <button type="button" class="dc-round" id="dc-close" aria-label="Close Discover">×</button>
+    <p class="dc-count" id="dc-count" aria-live="polite"></p>
+    <button type="button" class="dc-pill" id="dc-reset" title="Start over: show the games you swiped again">Reset</button>
+    <button type="button" class="dc-pill" id="dc-favs" title="Show your favourites"><span class="star" aria-hidden="true">★</span><span id="dc-favn">0</span><span class="sr-only"> favourites</span></button>
+  </div>
+  <div class="dc-stage" id="dc-stage"></div>
+  <div class="dc-actions">
+    <button type="button" class="dc-act nope" id="dc-nope" aria-label="Skip (left arrow)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg></button>
+    <button type="button" class="dc-act undo" id="dc-undo" aria-label="Undo the last swipe"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7H4.5V2.5M4.8 7A8 8 0 1 1 4 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <button type="button" class="dc-act like" id="dc-like" aria-label="Add to favourites (right arrow)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3s-7.2-4.5-9.3-8.8C1.2 8.6 2.9 5.2 6.3 4.8c2-.2 3.6.9 4.5 2.4.5.7 1 .7 1.4 0 .9-1.5 2.5-2.6 4.5-2.4 3.4.4 5.1 3.8 3.6 6.7-2.1 4.3-8.3 8.8-8.3 8.8z" fill="currentColor"/></svg></button>
+  </div>
+  <div class="dc-confirm" id="dc-confirm" hidden>
+    <div class="dc-confirm-box" role="alertdialog" aria-labelledby="dc-confirm-title" aria-describedby="dc-confirm-text">
+      <h2 id="dc-confirm-title">Start over?</h2>
+      <p id="dc-confirm-text">Every game you swiped shows up again. Your favourites stay unless you clear them too.</p>
+      <div class="row">
+        <button type="button" class="dc-btn" id="dc-cancel">Cancel</button>
+        <button type="button" class="dc-btn danger" id="dc-wipe">Clear favourites too</button>
+        <button type="button" class="dc-btn primary" id="dc-restart">Start over</button>
+      </div>
+    </div>
+  </div>
+</dialog>
+
 <dialog class="detail" id="detail" aria-labelledby="d-title">
   <button type="button" class="d-close" id="d-close" aria-label="Close details">×</button>
   <div class="d-scroll" id="d-body"></div>
@@ -664,6 +837,12 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     get(k) { try { return localStorage.getItem("ppb:" + k); } catch (e) { return null; } },
     set(k, v) { try { localStorage.setItem("ppb:" + k, v); } catch (e) { /* storage unavailable */ } }
   };
+  // Favourites (stars, and right swipes in Discover) and Discover's swipes stay in this browser.
+  const loadJson = (k, fallback) => { try { return JSON.parse(store.get(k)) ?? fallback; } catch (e) { return fallback; } };
+  const favs = new Set(loadJson("favs", []));
+  const swipes = new Map(Object.entries(loadJson("swipes", {})));  // id -> 1 kept, 0 skipped
+  const saveFavs = () => store.set("favs", JSON.stringify([...favs]));
+  const saveSwipes = () => store.set("swipes", JSON.stringify(Object.fromEntries(swipes)));
 
   // Regions: the US store (where the list comes from) plus any country checked for
   // availability. Each game carries a bit per region: set when that store offers it.
@@ -682,6 +861,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     return { i, title, gi, genre, appId, icon, shots: shots || [], dev, listedAs, pass, rating, ratings,
              installs: installs || 0, tagIds: tagIds || [], rbits: rbits ?? ALL_REGIONS, alt: alt || null,
              pegi: pegi ?? null, firstSeen: firstSeen || null, released: released || null, category: category || null,
+             fid: appId || "t:" + title,  // favourite / swipe key
              key: norm([title, dev, listedAs, category, ...tags].filter(Boolean).join(" ")), el: null };
   });
   const confirmedOnly = !!D.meta.confirmedOnly;
@@ -750,6 +930,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     video: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m10.5 9.5 4.5 2.5-4.5 2.5z" fill="currentColor"/></svg>',
     images: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="10" r="1.6" fill="currentColor"/><path d="m5 17 4.5-4.5 3 3 2.5-2.5L19 17" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>',
     ticket: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3a2 2 0 0 0 0-4z" fill="currentColor"/></svg>',
+    star: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.4 2.6 5.4 5.9.8-4.3 4.1 1.1 5.9L12 16.8l-5.3 2.8 1.1-5.9-4.3-4.1 5.9-.8z"/></svg>',
     share: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
   };
   const passTag = (g) => confirmedOnly ? "" : g.pass === 1 ? `<span class="pass-tag yes">${ICONS.ticket}Play Pass</span>`
@@ -797,6 +978,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   const iconHtml = (g, size) => g.icon
     ? `<img class="icon" src="${esc(img(g.icon, ICON))}" alt="" width="${size}" height="${size}" loading="lazy" decoding="async" data-open="${g.i}">`
     : `<span class="icon tile" style="${coverVars(g)}" aria-hidden="true" data-open="${g.i}">${esc(initials(g.title))}</span>`;
+  const favBtn = (g) => `<button type="button" class="fav-btn" data-fav="${g.i}" aria-pressed="${favs.has(g.fid)}" aria-label="Favourite: ${esc(g.title)}">${ICONS.star}</button>`;
   function cardHtml(g) {
     const storeUrl = g.appId ? storeHref(g.appId) : `https://play.google.com/store/search?q=${enc(g.title)}&c=apps`;
     return `<article class="card" style="--h:${HUES[g.genre] ?? 250}">` +
@@ -805,7 +987,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       (g.dev ? `<p class="dev"><button type="button" data-dev="${g.i}" aria-label="Show everything by ${esc(g.dev)}">${esc(g.dev)}</button></p>`
              : `<p class="dev">Not matched on the Play Store</p>`) +
       rateHtml(g) +
-      `</div></div>` +
+      `</div>${favBtn(g)}</div>` +
       tagsHtml(g) +
       `<div class="foot"><span class="tag" style="--h:${HUES[g.genre] ?? 250}">${esc(g.category || g.genre)}</span><nav class="links" aria-label="Links for ${esc(g.title)}">` +
       `<a class="store" href="${esc(storeUrl)}" target="_blank" rel="noopener" aria-label="${g.appId ? "Open" : "Search for"} ${esc(g.title)} on Google Play">${ICONS.store}<span>${g.appId ? "Play" : "Find"}</span></a>` +
@@ -873,6 +1055,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     `<optgroup label="Play Store genres">${tagOptions((n) => STORE_GENRES.has(n))}</optgroup>`);
   $("only-pass").hidden = confirmedOnly;
   $("genres").innerHTML =
+    `<button type="button" class="genre favs" id="fav-chip" aria-pressed="false">Favourites <small></small></button>` +
     `<button type="button" class="genre all" data-g="-1" aria-pressed="true">All <small></small></button>` +
     D.genres.map((name, gi) => `<button type="button" class="genre" data-g="${gi}" style="--h:${HUES[name] ?? 250}" aria-pressed="false">${esc(name)} <small></small></button>`).join("");
 
@@ -880,7 +1063,8 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   const list = $("list"), q = $("q");
   let genre = -1;
   let sort = SORTS.includes(store.get("sort")) ? store.get("sort") : "az";
-  let tag = -1, age = 0, dev = "";
+  let tag = -1, age = 0, dev = "", favOnly = false;
+  let discoverOn = false;
   let onlyPass = !confirmedOnly && store.get("pass") === "1";
   let groups = [];
   let current = null;  // the game open in the detail view
@@ -896,10 +1080,11 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     const byGenre = D.genres.map(() => 0), byTag = D.tags.map(() => 0);
     offered.forEach((g) => { byGenre[g.gi]++; });
     pool.forEach((g) => g.tagIds.forEach((t) => { byTag[t]++; }));
-    document.querySelectorAll(".genre small").forEach((el) => {
+    document.querySelectorAll(".genre[data-g] small").forEach((el) => {
       const gi = Number(el.parentElement.dataset.g);
       el.textContent = fmt.format(gi < 0 ? gamesHere.length : byGenre[gi]);
     });
+    showFavCount();
     $("tag").querySelectorAll("optgroup option").forEach((o) => {
       const t = Number(o.value);
       o.textContent = `${D.tags[t]} (${fmt.format(byTag[t])})`;
@@ -957,14 +1142,22 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     apply();
   }
 
-  function apply() {
+  // The current search and filters as a test; Discover reuses it without the favourites filter.
+  function filters(withFavs) {
     const terms = norm(q.value).split(/\s+/).filter(Boolean);
+    const passes = (g) => (tag < 0 || g.tagIds.includes(tag)) && (!onlyPass || g.pass === 1)
+      && (!age || (g.pegi != null && g.pegi <= age)) && (!dev || g.dev === dev) && terms.every((t) => g.key.includes(t))
+      && (!withFavs || !favOnly || favs.has(g.fid));
+    // "All" means all games; favourites include the apps you starred
+    const inSection = (g) => genre < 0 ? !isApp(g) || (withFavs && favOnly) : g.gi === genre;
+    return { terms, passes, inSection };
+  }
+  function apply() {
+    const { terms, passes, inSection: section } = filters(true);
     const shownBy = new Array(D.genres.length).fill(0);
     let shown = 0, elsewhere = 0, appHits = 0;  // elsewhere: matches the region's store doesn't offer
-    const passes = (g) => (tag < 0 || g.tagIds.includes(tag)) && (!onlyPass || g.pass === 1)
-      && (!age || (g.pegi != null && g.pegi <= age)) && (!dev || g.dev === dev) && terms.every((t) => g.key.includes(t));
     for (const g of games) {
-      const inSection = genre < 0 ? !isApp(g) : g.gi === genre;  // "All" means all games
+      const inSection = section(g);
       const match = inSection && passes(g);
       const ok = match && inRegion(g);
       g.el.hidden = !ok;
@@ -977,12 +1170,14 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       grp.count.textContent = `${n} ${grp.gi === APPS ? (n === 1 ? "app" : "apps") : (n === 1 ? "game" : "games")}`;
     }
     const appsView = genre >= 0 && genre === APPS;
-    const kind = (n) => appsView ? (n === 1 ? "app" : "apps") : (genre < 0 ? "" : `${D.genres[genre]} `) + (n === 1 ? "game" : "games");
+    const kind = (n) => favOnly
+      ? (appsView ? (n === 1 ? "favourite app" : "favourite apps") : (genre < 0 ? "" : `${D.genres[genre]} `) + (n === 1 ? "favourite" : "favourites"))
+      : appsView ? (n === 1 ? "app" : "apps") : (genre < 0 ? "" : `${D.genres[genre]} `) + (n === 1 ? "game" : "games");
     const tagged = tag < 0 ? "" : ` tagged “${D.tags[tag]}”`;
     const rated = age ? ` rated PEGI ${age} or lower` : "";
     const by = dev ? ` by ${dev}` : "";
     const scope = (n) => kind(n) + tagged + rated + by + (onlyPass ? " in Play Pass" : "");
-    const filtered = (genre >= 0 && !appsView) || tag >= 0 || age || dev || onlyPass || terms.length;
+    const filtered = (genre >= 0 && !appsView) || tag >= 0 || age || dev || onlyPass || favOnly || terms.length;
     const notHere = elsewhere ? ` · ${fmt.format(elsewhere)} not offered ${inRegionName(REGIONS[region])}` : "";
     $("status").textContent = (filtered
       ? `Showing ${fmt.format(shown)} ${scope(shown)}` + (terms.length ? ` matching “${q.value.trim()}”` : "")
@@ -992,7 +1187,8 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       (appHits ? `<button type="button" class="linkish" data-goto-apps>${fmt.format(appHits)} matching ${appHits === 1 ? "app" : "apps"}</button>` : "");
     $("empty").hidden = shown > 0;
     const none = scope(2);
-    $("empty-text").textContent = (terms.length ? `No ${none} match “${q.value.trim()}”` : `No ${none} to show`) +
+    $("empty-text").textContent = favOnly && !favs.size ? "No favourites yet: tap ☆ on a game, or swipe right in Discover."
+      : (terms.length ? `No ${none} match “${q.value.trim()}”` : `No ${none} to show`) +
       (elsewhere ? ` ${inRegionName(REGIONS[region])}: ${fmt.format(elsewhere)} would, but its Play Store doesn't offer ${elsewhere === 1 ? "it" : "them"}.` : ".");
     syncUrl(false);
   }
@@ -1008,16 +1204,20 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     if (dev) p.set("dev", dev);
     if (sort !== "az") p.set("sort", sort);
     if (REGIONS.length > 1 && (withCountry || region !== homeRegion)) p.set("country", REGIONS[region].code.toLowerCase());
+    if (favOnly) p.set("favs", "1");
+    if (discoverOn) p.set("discover", "1");
     if (current && current.appId) p.set("game", current.appId);
     return p.toString();
   }
-  function syncUrl(push) {
+  // push: a new history entry for an opened dialog (Back closes it); otherwise replace the current
+  // entry, keeping its marker unless the dialog it marks is gone (drop)
+  function syncUrl(push, kind = "game", drop = false) {
     const s = urlParams(false);
-    if (s === location.hash.slice(1) && !push) return;
+    if (s === location.hash.slice(1) && !push && !drop) return;
     const url = location.pathname + location.search + (s ? "#" + s : "");
     try {
-      if (push) history.pushState({ game: true }, "", url);
-      else history.replaceState(history.state, "", url);
+      if (push) history.pushState({ [kind]: true }, "", url);
+      else history.replaceState(drop ? null : history.state, "", url);
     } catch (e) { /* history unavailable (sandboxed frame) */ }
   }
   const shareUrl = () => location.href.split("#")[0] + "#" + urlParams(true);
@@ -1032,10 +1232,12 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     if (SORTS.includes(p.get("sort"))) sort = p.get("sort");
     const r = REGIONS.findIndex((x) => x.code === (p.get("country") || "").toUpperCase());
     region = r >= 0 ? r : homeRegion;
-    return p.get("game");
+    favOnly = p.get("favs") === "1";
+    return { game: p.get("game"), discover: p.get("discover") === "1" };
   }
   function showControls() {
-    document.querySelectorAll(".genre").forEach((x) => x.setAttribute("aria-pressed", String(Number(x.dataset.g) === genre)));
+    document.querySelectorAll(".genre[data-g]").forEach((x) => x.setAttribute("aria-pressed", String(Number(x.dataset.g) === genre)));
+    $("fav-chip").setAttribute("aria-pressed", String(favOnly));
     $("tag").value = String(tag);
     $("tag-box").classList.toggle("active", tag >= 0);
     $("age").value = String(age);
@@ -1045,12 +1247,15 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   }
   function onUrl() {
     const before = sort;
-    const game = readUrl();
+    const { game, discover } = readUrl();
     const g = game ? games.find((x) => x.appId === game) : null;
-    if (!g && current) closeDetail(true);  // first, so apply() doesn't write the game back into the URL
+    // close first, so apply() doesn't write them back into the URL
+    if (!g && current) closeDetail("history");
+    if (!discover && discoverOn) closeDiscover("history");
     showControls();
     renderRegion();
     if (sort !== before) layout(); else apply();
+    if (discover && !discoverOn) openDiscover(false);
     if (g && current !== g) openDetail(g, false);
   }
   addEventListener("popstate", onUrl);
@@ -1124,7 +1329,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       `<div class="d-head">${iconHtml(g, 64).replace(/ data-open="\d+"/, "")}<div class="txt">` +
       `<h2 class="d-title" id="d-title">${esc(g.title)}</h2>` +
       `<p class="d-sub">${g.dev ? `<button type="button" class="linkish" data-ddev>${esc(g.dev)}</button> · ` : ""}${esc(g.category || g.genre)}` +
-      `${g.isNew ? ' · <span class="pill-new">New</span>' : ""}</p></div></div>` +
+      `${g.isNew ? ' · <span class="pill-new">New</span>' : ""}</p></div>${favBtn(g)}</div>` +
       (shots.length ? `<div class="d-gallery" tabindex="0" aria-label="Screenshots">` +
         shots.map((x, k) => `<img src="${esc(img(x, "h440"))}" alt="Screenshot ${k + 1} of ${shots.length}" loading="lazy" decoding="async">`).join("") + `</div>` : "") +
       `<dl class="d-facts">${facts.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join("")}</dl>` +
@@ -1138,35 +1343,43 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       `<button type="button" data-dshare>${ICONS.share}<span>Share</span></button>` +
       `</nav>`;
   }
+  // details/<appId>.json, once per app; done(d) gets the contents, or false when it can't be read
+  const loading = new Map();
+  function loadDetails(g, done) {
+    if (!g || !g.appId) return;
+    if (details.has(g.appId)) { if (done) done(details.get(g.appId)); return; }
+    if (!loading.has(g.appId)) {
+      loading.set(g.appId, fetch(`details/${enc(g.appId)}.json`)
+        .then((r) => r.ok ? r.json() : Promise.reject(new Error(String(r.status))))
+        .catch(() => false)
+        .then((d) => { details.set(g.appId, d); loading.delete(g.appId); return d; }));
+    }
+    if (done) loading.get(g.appId).then(done);
+  }
   function openDetail(g, push) {
     current = g;
     renderDetail(g, details.get(g.appId));
     if (!dlg.open) dlg.showModal();
     dBody.scrollTop = 0;
     if (push) { syncUrl(true); pushed = true; } else syncUrl(false);
-    if (g.appId && !details.has(g.appId)) {
-      fetch(`details/${enc(g.appId)}.json`)
-        .then((r) => r.ok ? r.json() : Promise.reject(new Error(String(r.status))))
-        .then((d) => { details.set(g.appId, d); if (current === g) renderDetail(g, d); })
-        .catch(() => { details.set(g.appId, false); if (current === g) renderDetail(g, false); });
-    }
+    loadDetails(g, (d) => { if (current === g) renderDetail(g, d); });
   }
-  function closeDetail(fromHistory) {
+  // how: "back" (closed from the dialog: Back undoes the open), "replace" (the URL changes for a new
+  // filter right after, so going Back would arrive late and undo it), "history" (Back closed it)
+  function closeDetail(how = "back") {
     if (!current) return;
     const g = current;
     current = null;
     if (dlg.open) dlg.close();
-    if (!fromHistory) {
-      if (pushed && history.state && history.state.game) history.back();
-      else syncUrl(false);
-    }
+    if (how === "back" && pushed && history.state && history.state.game) history.back();
+    else if (how !== "history") syncUrl(false, "game", pushed);
     pushed = false;
     const opener = g.el.querySelector(".open");
-    if (opener && !g.el.hidden) opener.focus({ preventScroll: true });
+    if (opener && !g.el.hidden && !discoverOn) opener.focus({ preventScroll: true });
   }
-  dlg.addEventListener("close", () => { if (current) closeDetail(false); });  // Esc
-  dlg.addEventListener("click", (e) => { if (e.target === dlg) closeDetail(false); });  // the backdrop
-  $("d-close").addEventListener("click", () => closeDetail(false));
+  dlg.addEventListener("close", () => { if (current) closeDetail("back"); });  // Esc
+  dlg.addEventListener("click", (e) => { if (e.target === dlg) closeDetail("back"); });  // the backdrop
+  $("d-close").addEventListener("click", () => closeDetail("back"));
   dBody.addEventListener("click", async (e) => {
     const g = current;
     if (!g) return;
@@ -1176,12 +1389,16 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       b.setAttribute("aria-expanded", String(!open));
       b.textContent = open ? "Show full description" : "Show less";
     } else if (e.target.closest("[data-ddev]")) {
-      closeDetail(false); setDev(g.dev);
+      if (discoverOn) closeDiscover("replace");
+      closeDetail("replace"); setDev(g.dev);
     } else if (e.target.closest("[data-dtag]")) {
       const t = Number(e.target.closest("[data-dtag]").dataset.dtag);
-      closeDetail(false); setTag(t); toTop();
+      if (discoverOn) closeDiscover("replace");
+      closeDetail("replace"); setTag(t); toTop();
     } else if (e.target.closest("[data-dshare]")) {
       flash(e.target.closest("[data-dshare]"), await share(shareUrl(), g.title));
+    } else if (e.target.closest("[data-fav]")) {
+      toggleFav(g);
     }
   });
 
@@ -1190,7 +1407,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   q.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(apply, 90); });
   q.addEventListener("keydown", (e) => { if (e.key === "Escape") { q.value = ""; apply(); } });
   document.addEventListener("keydown", (e) => {
-    if (e.key === "/" && document.activeElement !== q && !dlg.open && !e.ctrlKey && !e.metaKey && !e.altKey) { e.preventDefault(); q.focus(); }
+    if (e.key === "/" && document.activeElement !== q && !dlg.open && !discoverOn && !e.ctrlKey && !e.metaKey && !e.altKey) { e.preventDefault(); q.focus(); }
   });
   function toTop() {
     const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -1205,7 +1422,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   }
   $("genres").addEventListener("click", (e) => {
     const b = e.target.closest(".genre");
-    if (b) setGenre(Number(b.dataset.g));
+    if (!b) return;
+    if (b.id === "fav-chip") { favOnly = !favOnly; showControls(); apply(); toTop(); }
+    else setGenre(Number(b.dataset.g));
   });
   $("only-pass").setAttribute("aria-pressed", String(onlyPass));
   $("only-pass").addEventListener("click", () => {
@@ -1238,6 +1457,8 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     else if (e.target.closest("[data-goto-apps]")) setGenre(APPS);
   });
   list.addEventListener("click", (e) => {
+    const star = e.target.closest("[data-fav]");
+    if (star) { toggleFav(games[Number(star.dataset.fav)]); return; }
     const opener = e.target.closest("[data-open]");
     if (opener) { openDetail(games[Number(opener.dataset.open)], true); return; }
     const byDev = e.target.closest("[data-dev]");
@@ -1261,12 +1482,215 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     toTop();
   });
   $("clear").addEventListener("click", () => {
-    q.value = ""; genre = -1; tag = -1; age = 0; dev = ""; onlyPass = false;
+    q.value = ""; genre = -1; tag = -1; age = 0; dev = ""; onlyPass = false; favOnly = false;
     $("only-pass").setAttribute("aria-pressed", "false");
     store.set("pass", "");
     showControls();
     renderCounts();
     apply();
+  });
+
+  // ----- favourites
+  function showFavCount() {
+    $("fav-chip").querySelector("small").textContent = fmt.format(favs.size);
+    $("dc-favn").textContent = fmt.format(favs.size);
+  }
+  function setFav(g, on) {
+    if (on) favs.add(g.fid); else favs.delete(g.fid);
+    saveFavs();
+    document.querySelectorAll(`[data-fav="${g.i}"]`).forEach((b) => b.setAttribute("aria-pressed", String(on)));
+    showFavCount();
+  }
+  function toggleFav(g) {
+    setFav(g, !favs.has(g.fid));
+    if (favOnly) apply();
+  }
+
+  // ----- Discover: one random game at a time; swipe right to keep it as a favourite, left to skip
+  const dc = $("discover"), stage = $("dc-stage");
+  let deck = [], pos = 0, undos = [], dcPushed = false, dcCard = null;
+  const reduceMotion = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function buildDeck() {
+    const { passes, inSection } = filters(false);
+    deck = games.filter((g) => inRegion(g) && inSection(g) && passes(g) && !swipes.has(g.fid));
+    for (let i = deck.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [deck[i], deck[j]] = [deck[j], deck[i]]; }
+    pos = 0;
+    undos = [];
+  }
+  function dcBody(g, d) {
+    const shots = (d && d.screenshots && d.screenshots.length ? d.screenshots : g.shots).slice(0, 3);
+    const long = d && (d.description || "").length > 320;
+    const text = d === undefined ? `<p class="muted">Loading the description…</p>`
+      : !d ? "" : (d.summary ? `<p class="d-summary">${esc(d.summary)}</p>` : "") +
+        (d.description ? `<div class="dc-desc${long ? " clamped" : ""}">${paras(d.description)}</div>` +
+          (long ? `<button type="button" class="linkish" data-dc-more aria-expanded="false">Read more</button>` : "") : "");
+    const storeId = (g.alt && g.alt[region]) || g.appId;
+    return `<div class="dc-head">${iconHtml(g, 60).replace(/ data-open="\d+"/, "")}<div class="txt">` +
+      `<h2 class="dc-title">${esc(g.title)}</h2>` +
+      `<p class="d-sub">${g.dev ? esc(g.dev) + " · " : ""}${esc(g.category || g.genre)}${g.pegi != null ? ` · PEGI ${g.pegi}` : ""}` +
+      `${g.isNew ? ' · <span class="pill-new">New</span>' : ""}</p>${rateHtml(g)}</div></div>` +
+      `<div class="dc-text">${text}</div>` +
+      shots.map((x, k) => `<img class="dc-shot" src="${esc(img(x, "w720"))}" alt="Screenshot ${k + 1} of ${esc(g.title)}" ${k ? 'loading="lazy" ' : ""}decoding="async" draggable="false">`).join("") +
+      `<p class="dc-links"><button type="button" class="linkish" data-dc-details>All details</button>` +
+      (storeId ? ` · <a href="${esc(storeHref(storeId))}" target="_blank" rel="noopener">Google Play</a>` : "") + `</p>`;
+  }
+  function dcCount() {
+    const left = deck.length - pos;
+    $("dc-count").textContent = left > 0 ? `${fmt.format(left)} to go` + (left === deck.length ? "" : ` · ${fmt.format(pos)} swiped`) : "All done";
+    $("dc-undo").disabled = !undos.length;
+    $("dc-nope").disabled = $("dc-like").disabled = left <= 0;
+    showFavCount();
+  }
+  function renderDc() {
+    dcCount();
+    if (pos >= deck.length) {
+      dcCard = null;
+      const total = games.filter((g) => filters(false).inSection(g) && inRegion(g)).length;
+      stage.innerHTML = `<div class="dc-end"><h2>${total ? "That's every game" : "Nothing to show"}</h2>` +
+        `<p>${total ? `You've swiped all ${fmt.format(total)} games for these filters` : "No games match these filters"}` +
+        `${favs.size ? `, and kept ${fmt.format(favs.size)} ${favs.size === 1 ? "favourite" : "favourites"}` : ""}.</p>` +
+        `<div class="row"><button type="button" class="dc-btn" data-dc-showfavs>See favourites</button>` +
+        `<button type="button" class="dc-btn primary" data-dc-reset>Start over</button></div></div>`;
+      return;
+    }
+    const g = deck[pos];
+    stage.innerHTML = `<article class="dc-card${reduceMotion() ? "" : " enter"}" aria-label="${esc(g.title)}">` +
+      `<span class="dc-stamp like" aria-hidden="true">Favourite</span><span class="dc-stamp nope" aria-hidden="true">Skip</span>` +
+      `<div class="dc-scroll">${dcBody(g, details.get(g.appId))}</div></article>`;
+    dcCard = stage.firstElementChild;
+    requestAnimationFrame(() => requestAnimationFrame(() => dcCard && dcCard.classList.remove("enter")));
+    loadDetails(g, (d) => {
+      if (deck[pos] !== g || !dcCard) return;
+      const box = dcCard.querySelector(".dc-scroll"), top = box.scrollTop;
+      box.innerHTML = dcBody(g, d);
+      box.scrollTop = top;
+    });
+    // get the next two ready
+    deck.slice(pos + 1, pos + 3).forEach((n) => { loadDetails(n); if (n.shots[0]) new Image().src = img(n.shots[0], "w720"); });
+  }
+  function decide(keep) {
+    if (!dcCard || pos >= deck.length) return;
+    const g = deck[pos], card = dcCard;
+    undos.push({ g, keep, wasFav: favs.has(g.fid) });
+    swipes.set(g.fid, keep ? 1 : 0);
+    saveSwipes();
+    if (keep) setFav(g, true);
+    pos++;
+    dcCard = null;
+    if (reduceMotion()) { renderDc(); return; }
+    card.style.transition = "transform 0.3s ease-in, opacity 0.3s ease-in";
+    card.style.transform = `translateX(${keep ? 130 : -130}%) rotate(${keep ? 16 : -16}deg)`;
+    card.style.opacity = "0";
+    card.querySelector(keep ? ".dc-stamp.like" : ".dc-stamp.nope").style.opacity = "1";
+    setTimeout(renderDc, 260);
+  }
+  function undo() {
+    const last = undos.pop();
+    if (!last) return;
+    swipes.delete(last.g.fid);
+    saveSwipes();
+    if (last.keep && !last.wasFav) setFav(last.g, false);
+    pos = Math.max(0, pos - 1);
+    deck[pos] = last.g;
+    renderDc();
+  }
+  // Dragging: sideways moves the card, up and down still scrolls it.
+  let drag = null;
+  stage.addEventListener("pointerdown", (e) => {
+    if (!dcCard || !dcCard.contains(e.target) || e.target.closest("button, a") || (e.pointerType === "mouse" && e.button !== 0)) return;
+    drag = { id: e.pointerId, x: e.clientX, y: e.clientY, dx: 0, axis: null };
+  });
+  stage.addEventListener("pointermove", (e) => {
+    if (!drag || e.pointerId !== drag.id || !dcCard) return;
+    const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+    if (!drag.axis) {
+      if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return;
+      drag.axis = Math.abs(dx) > Math.abs(dy) ? "x" : "y";
+      if (drag.axis === "x") { dcCard.classList.add("dragging"); try { stage.setPointerCapture(e.pointerId); } catch (err) { /* already released */ } }
+    }
+    if (drag.axis !== "x") return;
+    e.preventDefault();
+    drag.dx = dx;
+    dcCard.style.transform = `translateX(${dx}px) rotate(${dx / 20}deg)`;
+    dcCard.querySelector(".dc-stamp.like").style.opacity = String(Math.max(0, Math.min(1, dx / 110)));
+    dcCard.querySelector(".dc-stamp.nope").style.opacity = String(Math.max(0, Math.min(1, -dx / 110)));
+  });
+  function endDrag(e, cancelled) {
+    if (!drag || e.pointerId !== drag.id) return;
+    const { dx, axis } = drag;
+    drag = null;
+    if (!dcCard || axis !== "x") return;
+    dcCard.classList.remove("dragging");
+    if (!cancelled && Math.abs(dx) > Math.min(130, dcCard.offsetWidth * 0.28)) { decide(dx > 0); return; }
+    dcCard.style.transform = "";
+    dcCard.querySelectorAll(".dc-stamp").forEach((s) => { s.style.opacity = "0"; });
+  }
+  stage.addEventListener("pointerup", (e) => endDrag(e, false));
+  stage.addEventListener("pointercancel", (e) => endDrag(e, true));
+  stage.addEventListener("click", (e) => {
+    const g = deck[pos];
+    if (e.target.closest("[data-dc-more]")) {
+      const b = e.target.closest("[data-dc-more]"), open = b.getAttribute("aria-expanded") === "true";
+      b.previousElementSibling.classList.toggle("clamped", open);
+      b.setAttribute("aria-expanded", String(!open));
+      b.textContent = open ? "Read more" : "Show less";
+    } else if (e.target.closest("[data-dc-details]") && g) openDetail(g, true);
+    else if (e.target.closest("[data-dc-showfavs]")) showFavourites();
+    else if (e.target.closest("[data-dc-reset]")) askReset();
+  });
+  function openDiscover(push) {
+    if (current) closeDetail("replace");
+    buildDeck();
+    discoverOn = true;
+    if (!dc.open) dc.showModal();
+    renderDc();
+    if (push) { syncUrl(true, "discover"); dcPushed = true; } else syncUrl(false);
+  }
+  function closeDiscover(how = "back") {  // how: as for closeDetail
+    if (!discoverOn) return;
+    discoverOn = false;
+    $("dc-confirm").hidden = true;
+    if (current) closeDetail("history");
+    if (dc.open) dc.close();
+    if (how === "back" && dcPushed && history.state && history.state.discover) history.back();
+    else if (how !== "history") syncUrl(false, "discover", dcPushed);
+    dcPushed = false;
+    if (favOnly) apply();
+  }
+  function showFavourites() {
+    closeDiscover("replace");
+    favOnly = true;
+    showControls();
+    apply();
+    toTop();
+  }
+  function askReset() { $("dc-confirm").hidden = false; $("dc-restart").focus(); }
+  function reset(clearFavs) {
+    swipes.clear();
+    saveSwipes();
+    if (clearFavs) [...favs].forEach((id) => { const g = games.find((x) => x.fid === id); if (g) setFav(g, false); else favs.delete(id); });
+    saveFavs();
+    $("dc-confirm").hidden = true;
+    buildDeck();
+    renderDc();
+  }
+  $("discover-btn").addEventListener("click", () => openDiscover(true));
+  $("dc-close").addEventListener("click", () => closeDiscover("back"));
+  $("dc-like").addEventListener("click", () => decide(true));
+  $("dc-nope").addEventListener("click", () => decide(false));
+  $("dc-undo").addEventListener("click", undo);
+  $("dc-favs").addEventListener("click", showFavourites);
+  $("dc-reset").addEventListener("click", askReset);
+  $("dc-cancel").addEventListener("click", () => { $("dc-confirm").hidden = true; });
+  $("dc-restart").addEventListener("click", () => reset(false));
+  $("dc-wipe").addEventListener("click", () => reset(true));
+  dc.addEventListener("cancel", (e) => { if (!$("dc-confirm").hidden) { e.preventDefault(); $("dc-confirm").hidden = true; } });
+  dc.addEventListener("close", () => { if (discoverOn) closeDiscover("back"); });  // Esc
+  document.addEventListener("keydown", (e) => {
+    if (!discoverOn || dlg.open || !$("dc-confirm").hidden || e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.key === "ArrowRight") { e.preventDefault(); decide(true); }
+    else if (e.key === "ArrowLeft") { e.preventDefault(); decide(false); }
+    else if (e.key === "Backspace" || e.key === "u") { e.preventDefault(); undo(); }
   });
 
   // ----- screenshot cycling (one delegated listener for every card)
@@ -1328,7 +1752,8 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   showControls();
   renderRegion();
   layout();
-  const first = linked && games.find((x) => x.appId === linked);
+  if (linked && linked.discover) openDiscover(false);
+  const first = linked && linked.game && games.find((x) => x.appId === linked.game);
   if (first) openDetail(first, false);
 })();
 </script>
