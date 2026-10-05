@@ -200,7 +200,14 @@ h1 {
   .stub-label { grid-area: label; }
   .stub-region { grid-area: region; margin: 0; align-self: end; justify-self: start; }
   .stub-small { grid-area: small; margin: 4px 0 0; align-self: start; font-size: 9.5px; }
+  /* what the page is, without the how-to and the sources line (both are in the footer) */
+  .eyebrow { letter-spacing: 0.08em; }
+  .lede { margin-top: 8px; }
+  .lede-more, .sources { display: none; }
+  .stub { padding-block: 10px; }
+  .bar { margin-top: 14px; }
 }
+@media (max-width: 420px) { h1 { font-size: min(30px, 7.6vw); } }  /* the title stays on one line */
 
 /* ---------- sticky controls ---------- */
 .bar {
@@ -292,7 +299,31 @@ h1 {
 .lang-btn:focus-within { outline: 3px solid var(--focus); outline-offset: 2px; }
 .lang-btn:hover { color: var(--ink); }
 .i18n-wait .pass, .i18n-wait .bar, .i18n-wait .fab { visibility: hidden; }
-.genres { display: flex; gap: 6px; flex-wrap: wrap; }
+/* the chips: one row that scrolls sideways at every width, with arrows at its ends for a mouse (a fade on
+   touch screens) wherever more chips are out of sight, and thin dividers between the groups */
+.chips { position: relative; }
+.genres { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; overscroll-behavior-x: contain; margin: -5px -16px; padding: 5px 16px; }
+.genres::-webkit-scrollbar { display: none; }
+.genres .genre { flex: none; }
+.chips-sep { flex: none; align-self: center; width: 1px; height: 18px; margin: 0 3px; background: var(--line); }
+.chips-btn {
+  position: absolute;
+  top: -5px; bottom: -5px;
+  z-index: 1;
+  display: none;
+  align-items: center;
+  width: 60px;
+  padding: 0 10px;
+  border: 0;
+  color: var(--ink);
+  cursor: pointer;
+}
+.chips-btn svg { width: 26px; height: 26px; padding: 4px; border-radius: 50%; background: var(--surface); box-shadow: 0 0 0 1px var(--line); }
+.chips-btn:hover svg { box-shadow: 0 0 0 1px var(--muted); }
+.chips-btn.prev { left: -16px; justify-content: flex-start; background: linear-gradient(90deg, var(--veil) 40%, transparent); }
+.chips-btn.next { right: -16px; justify-content: flex-end; background: linear-gradient(270deg, var(--veil) 40%, transparent); }
+.chips.more-start .chips-btn.prev, .chips.more-end .chips-btn.next { display: flex; }
+@media (pointer: coarse) { .chips-btn { width: 36px; pointer-events: none; } .chips-btn svg { display: none; } }
 .genre {
   --h: 250;
   display: inline-flex;
@@ -359,21 +390,19 @@ h1 {
   cursor: pointer;
 }
 @media (max-width: 640px) {
-  .genres { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: -16px; padding-inline: 16px; }
-  .genres::-webkit-scrollbar { display: none; }
   .wide-only { display: none; }
   .row { gap: 8px; }
   .ghost { padding: 0 10px; }
 }
 @media (max-width: 900px) { .ghost .label { display: none; } }
-@media (max-width: 920px) {
+@media (max-width: 720px) {
   /* search gets its own row; the menus share the next one */
   .search { flex-basis: 100%; }
   .select { flex: 1 1 0; min-width: 0; }
   #sort-box { flex-grow: 1.35; }
   .select select { flex: 1 1 0; min-width: 0; max-width: none; }
 }
-@media (max-width: 460px) {
+@media (max-width: 920px) {
   /* the menus' values ("Most popular", "All tags") speak for themselves; keep the labels for screen readers */
   .select { padding-left: 11px; }
   .select > span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -671,6 +700,8 @@ dialog.detail::backdrop { background: rgb(8 10 20 / 0.6); }
 .fab:hover { filter: brightness(1.05); }
 .fab { transition: transform 0.22s ease; }
 .fab.tucked { transform: translateY(calc(100% + 28px)); }
+.fab.mini { width: 54px; padding: 0; justify-content: center; }
+.fab.mini span { display: none; }
 dialog.discover {
   width: 100vw; max-width: 100vw;
   height: 100vh; height: 100dvh; max-height: 100vh; max-height: 100dvh;
@@ -894,7 +925,11 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
         <span><span class="wide-only" data-t="onlyPassIn">In </span>Play Pass</span>
       </button>
     </div>
-    <div class="genres" id="genres" role="group" aria-label="Filter by genre" data-t-label="genreFilter"></div>
+    <div class="chips" id="chips">
+      <button type="button" class="chips-btn prev" tabindex="-1" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m14.5 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="genres" id="genres" role="group" aria-label="Filter by genre" data-t-label="genreFilter"></div>
+      <button type="button" class="chips-btn next" tabindex="-1" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
     <div class="status-row">
       <p class="status" id="status" aria-live="polite"></p>
       <span class="active" id="active"></span>
@@ -1769,6 +1804,12 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
 
   // Static text in the interface language, and the language menu (a new language reloads the page).
   document.querySelectorAll("[data-t]").forEach((el) => { el.textContent = L[el.dataset.t]; });
+  // the lede: what this is, then how to use it (left out on phones)
+  const ledeCut = L.lede.search(/\.(?=\s)|。/);
+  if (ledeCut > 0 && ledeCut < L.lede.length - 1) {
+    $("lede").innerHTML = esc(L.lede.slice(0, ledeCut + 1)) + (L.lede[ledeCut] === "。" ? "" : " ") +
+      `<span class="lede-more">${esc(L.lede.slice(ledeCut + 1).trim())}</span>`;
+  }
   document.querySelectorAll("[data-t-label]").forEach((el) => el.setAttribute("aria-label", L[el.dataset.tLabel]));
   document.querySelectorAll("[data-t-title]").forEach((el) => { el.title = L[el.dataset.tTitle]; });
   $("lang").innerHTML = Object.keys(T).map((k) => `<option value="${k}" lang="${k}"${k === LANG ? " selected" : ""}>${esc(T[k].name)}</option>`).join("");
@@ -2049,14 +2090,15 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     `<optgroup label="${esc(L.genresGroup)}">${tagOptions((n) => STORE_GENRES.has(n))}</optgroup>`);
   $("only-pass").hidden = confirmedOnly;
   // feature chips: hidden until there's something to show (renderCounts)
+  const CHIPS_SEP = '<span class="chips-sep" aria-hidden="true"></span>';  // between yours, the features and the genres
   const featChip = (id, icon, label, title, count = true) => `<button type="button" class="genre feat" id="${id}" aria-pressed="false" ` +
     `title="${esc(title)}" hidden>${icon}${esc(label)}${count ? " <small></small>" : ""}</button>`;
   $("genres").innerHTML =
     `<button type="button" class="genre favs" id="fav-chip" aria-pressed="false">${esc(L.favourites)} <small></small></button>` +
     `<button type="button" class="genre since" id="since-chip" aria-pressed="false" title="${esc(L.newForYouTitle)}" hidden>${esc(L.newForYou)} <small></small></button>` +
-    featChip("gems-chip", ICONS.gem, L.gems, L.gemsTitle) + featChip("pad-chip", ICONS.pad, L.pad, L.padTitle) +
+    CHIPS_SEP + featChip("gems-chip", ICONS.gem, L.gems, L.gemsTitle) + featChip("pad-chip", ICONS.pad, L.pad, L.padTitle) +
     featChip("pc-chip", ICONS.pc, L.pc, L.pcTitle) + featChip("kids-chip", ICONS.kids, L.forKids, L.forKidsTitle) +
-    featChip("nokids-chip", ICONS.nokids, L.noKids, L.noKidsTitle, false) +
+    featChip("nokids-chip", ICONS.nokids, L.noKids, L.noKidsTitle, false) + CHIPS_SEP +
     `<button type="button" class="genre all" data-g="-1" aria-pressed="true">${esc(L.all)} <small></small></button>` +
     D.genres.map((name, gi) => `<button type="button" class="genre" data-g="${gi}" style="--h:${HUES[name] ?? 250}" aria-pressed="false">${esc(genreName(name))} <small></small></button>`).join("");
 
@@ -2100,6 +2142,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     chipCount("pc-chip", pool.filter((g) => g.pc).length, pcOnly);
     chipCount("kids-chip", offered.filter((g) => g.forKids && (genre < 0 || isApp(g) === (genre === APPS))).length, kidsOnly);
     $("nokids-chip").hidden = !offered.some((g) => g.kids);
+    chipEdges();  // chips came and went
     $("tag").querySelectorAll("optgroup option").forEach((o) => {
       const t = Number(o.value);
       o.textContent = `${tagName(t)} (${fmt.format(byTag[t])})`;
@@ -2346,6 +2389,27 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     shared = ids.length && !favOnly ? new Set(ids) : null;
     return { game: p.get("game"), discover: p.get("discover") === "1" };
   }
+  // the chip row: arrows (or a fade) where more chips are out of sight
+  const chipsBox = $("chips"), chipRow = $("genres");
+  function chipEdges() {
+    const x = chipRow.scrollLeft, max = chipRow.scrollWidth - chipRow.clientWidth;
+    chipsBox.classList.toggle("more-start", x > 2);
+    chipsBox.classList.toggle("more-end", x < max - 2);
+  }
+  chipRow.addEventListener("scroll", chipEdges, { passive: true });
+  addEventListener("resize", chipEdges);
+  chipsBox.querySelectorAll(".chips-btn").forEach((b) => b.addEventListener("click", () => chipRow.scrollBy({
+    left: (b.classList.contains("prev") ? -0.7 : 0.7) * chipRow.clientWidth,
+    behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" })));
+  // a genre picked by a link (or Back) can be out of sight in the row: bring it to the middle
+  function revealGenre() {
+    const c = chipRow.querySelector('.genre[data-g]:not([data-g="-1"])[aria-pressed="true"]');
+    if (c) {
+      const r = c.getBoundingClientRect(), box = chipRow.getBoundingClientRect();
+      if (r.left < box.left + 40 || r.right > box.right - 40) chipRow.scrollLeft += r.left - box.left - (box.width - r.width) / 2;
+    }
+    chipEdges();
+  }
   function showControls() {
     document.querySelectorAll(".genre[data-g]").forEach((x) => x.setAttribute("aria-pressed", String(Number(x.dataset.g) === genre)));
     $("fav-chip").setAttribute("aria-pressed", String(favOnly));
@@ -2358,6 +2422,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     $("age-box").classList.toggle("active", age > 0);
     $("region").value = String(region);
     list.querySelectorAll(".tags [data-tag]").forEach((b) => b.setAttribute("aria-pressed", String(Number(b.dataset.tag) === tag)));
+    revealGenre();
   }
   function onUrl() {
     const before = sort;
@@ -2715,20 +2780,21 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     apply();
   });
 
-  // ----- short screens (a phone held sideways): the bar slides away while you scroll down through the
-  // games and comes back as soon as you scroll up
+  // ----- phones (and any short screen): the bar slides away while you scroll down through the games and
+  // comes back as soon as you scroll up. Past the header, Discover's button is just its icon.
   const bar = document.querySelector(".bar"), head = document.querySelector("header.pass"), fab = $("discover-btn");
-  const shortScreen = matchMedia("(max-height: 500px)");
+  const smallScreen = matchMedia("(max-height: 500px), (max-width: 640px)");
   let lastY = scrollY;
   const tuck = (on) => { bar.classList.toggle("tucked", on); fab.classList.toggle("tucked", on); };
   addEventListener("scroll", () => {
-    const y = scrollY, dy = y - lastY;
+    const y = scrollY, dy = y - lastY, past = y > head.offsetTop + head.offsetHeight;
+    fab.classList.toggle("mini", past);
     if (Math.abs(dy) < 6) return;
     lastY = y;
-    tuck(shortScreen.matches && dy > 0 && y > head.offsetTop + head.offsetHeight && !bar.contains(document.activeElement));
+    tuck(smallScreen.matches && dy > 0 && past && !bar.contains(document.activeElement));
   }, { passive: true });
   bar.addEventListener("focusin", () => tuck(false));
-  if (shortScreen.addEventListener) shortScreen.addEventListener("change", () => tuck(false));
+  if (smallScreen.addEventListener) smallScreen.addEventListener("change", () => tuck(false));
 
   // ----- favourites
   function showFavCount() {

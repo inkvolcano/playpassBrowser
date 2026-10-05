@@ -92,11 +92,18 @@ device. "Share list" in the Favourites view copies a link to your list (on a
 phone it opens the share sheet). Whoever opens it sees the list and can add it
 to their own favourites, which is also how you move a list to another device.
 
+**Layout.** The filter bar stays at the top: search and menus (one row from
+tablet width up), one row of chips that scrolls sideways (arrows at its ends for a
+mouse, a fade on touch screens; thin dividers separate your lists, the features
+and the genres), and the status line. On phones the header keeps to what the page
+is (the how-to and the sources line are in the footer), and the bar and the
+Discover button slide out of the way while you scroll down through the games and
+come back as soon as you scroll up. Past the header, the Discover button is just
+its icon.
+
 **Phone held sideways.** On a short screen the filter bar shrinks to one row of
-search and menus plus one sideways-scrolling row of genre chips. It slides out
-of the way while you scroll down through the games and comes back as soon as you
-scroll up; the Discover button does the same. In Discover, ✕ and ♥ sit beside
-the card instead of under it, and the detail view uses the full height.
+search and menus plus the row of chips. In Discover, ✕ and ♥ sit beside the card
+instead of under it, and the detail view uses the full height.
 
 **Install as an app.** In Chrome, Edge and on Android an install button appears
 next to the language menu (or use the browser's "Install app" menu item); on an
