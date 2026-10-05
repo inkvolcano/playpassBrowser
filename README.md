@@ -110,8 +110,9 @@ footer's notes; they are masks cut from one SVG sprite the script builds, so
 they add no elements to the cards and only one image for the browser to set up. On phones the header keeps to what the page
 is (the how-to and the sources line are in the footer), and the bar and the
 Discover button slide out of the way while you scroll down through the games and
-come back as soon as you scroll up. Past the header, the Discover button is just
-its icon.
+come back as soon as you scroll up. Past the header, the Discover button folds
+into its round icon (the label slides shut as the pill narrows) and opens again
+at the top.
 
 **Phone held sideways.** On a short screen the filter bar shrinks to one row of
 search and menus plus the row of chips. In Discover, ✕ and ♥ sit beside the card

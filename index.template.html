@@ -812,9 +812,9 @@ dialog.detail::backdrop { background: rgb(8 10 20 / 0.6); }
   z-index: 6;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 0;
   height: 50px;
-  padding: 0 20px 0 16px;
+  padding: 0 20px 0 14px;
   border: 0;
   border-radius: 999px;
   background: var(--brass);
@@ -823,12 +823,16 @@ dialog.detail::backdrop { background: rgb(8 10 20 / 0.6); }
   box-shadow: 0 6px 20px rgb(0 0 0 / 0.28);
   cursor: pointer;
 }
-.fab svg { width: 22px; height: 22px; }
+.fab svg { flex: none; width: 22px; height: 22px; }
 .fab:hover { filter: brightness(1.05); }
-.fab { transition: transform 0.22s ease; }
 .fab.tucked { transform: translateY(calc(100% + 28px)); }
-.fab.mini { width: 54px; padding: 0; justify-content: center; }
-.fab.mini span { display: none; }
+/* past the header the button folds into a round icon: the label slides shut and fades as the pill narrows, and
+   opens again on the way back (--fab-label: the label's own width, measured by the script, so the timing is exact) */
+.fab { --fold: 0.34s cubic-bezier(0.3, 0.7, 0.2, 1); transition: transform 0.22s ease, padding var(--fold); }
+.fab span { max-width: var(--fab-label, 10em); margin-left: 8px; overflow: hidden; white-space: nowrap;
+  transition: max-width var(--fold), margin-left var(--fold), opacity 0.2s ease 0.06s; }
+.fab.folded { padding: 0 14px; }
+.fab.folded span { max-width: 0; margin-left: 0; opacity: 0; transition: max-width var(--fold), margin-left var(--fold), opacity 0.12s ease; }
 dialog.discover {
   width: 100vw; max-width: 100vw;
   height: 100vh; height: 100dvh; max-height: 100vh; max-height: 100dvh;
@@ -964,7 +968,8 @@ footer p::before { content: ""; position: absolute; left: 0; top: 1px; width: 16
   .active { flex-wrap: nowrap; }
   .filter-chip { height: 22px; }
   main { margin-top: 12px; }
-  .fab { height: 42px; padding: 0 15px 0 12px; font-size: 13.5px; }
+  .fab { height: 42px; padding: 0 15px 0 11.5px; font-size: 13.5px; }
+  .fab.folded { padding: 0 11.5px; }
   .fab svg { width: 19px; height: 19px; }
   /* detail view: the whole height, smaller pictures */
   dialog.detail { height: 100vh; height: 100dvh; max-height: 100vh; max-height: 100dvh; margin: 0 auto; border-radius: 0; border-block: 0; }
@@ -2991,9 +2996,13 @@ footer p::before { content: ""; position: absolute; left: 0; top: 1px; width: 16
   const smallScreen = matchMedia("(max-height: 500px), (max-width: 640px)");
   let lastY = scrollY;
   const tuck = (on) => { bar.classList.toggle("tucked", on); fab.classList.toggle("tucked", on); };
+  // the label's width, for the fold animation (again once the font has arrived)
+  const fabLabel = () => fab.style.setProperty("--fab-label", fab.querySelector("span").scrollWidth + "px");
+  fabLabel();
+  if (document.fonts) document.fonts.ready.then(fabLabel);
   addEventListener("scroll", () => {
     const y = scrollY, dy = y - lastY, past = y > head.offsetTop + head.offsetHeight;
-    fab.classList.toggle("mini", past);
+    fab.classList.toggle("folded", past);
     if (Math.abs(dy) < 6) return;
     lastY = y;
     tuck(smallScreen.matches && dy > 0 && past && !bar.contains(document.activeElement));
