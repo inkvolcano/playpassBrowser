@@ -14,10 +14,13 @@ descriptions and the cards' further screenshots come from `details/`, which a
 browser only lets the published site read, so from disk the cards show their
 first screenshot and the detail view has no description. Each card has the game's icon,
 title (the Play Store's own, not YTECHB's spelling), developer, genre, Play Store
-star rating and downloads, its Play Store tags, up to 12 screenshots that cycle
-when you tap them, and links to the Play Store page, a YouTube gameplay search
-and a Google Images search. Games added to Play Pass or released in the last 30
-days carry a "New" label.
+star rating and downloads, its Play Store tags, up to 12 screenshots, and links
+to the Play Store page, a YouTube gameplay search and a Google Images search.
+Nothing covers the screenshots: a tap or click shows the next one, a sideways
+swipe on a touch screen goes either way, as do the arrows that appear under a
+mouse and the arrow keys, and a thin line under the picture shows which one of
+the set is up. Games added to Play Pass or released in the last 30 days carry a
+"New" label at the start of the tags.
 
 Tap a title for the detail view: the store description, every screenshot, the
 trailer (it plays right there; YouTube only loads when you press play), the age
