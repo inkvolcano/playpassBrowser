@@ -54,6 +54,7 @@
   --shadow: 0 1px 2px rgb(21 24 38 / 0.05), 0 6px 18px rgb(21 24 38 / 0.06);
   --tint: #eef1f7;  /* soft fills: tags, buttons, fact tiles */
   --ta-bg: #dde8fb; --ta-ink: #163563;  /* Teacher Approved badge */
+  --icon-l: 58%; --icon-l-on: 80%; --brass-on: var(--brass);  /* genre icons; "-on": on a pressed (dark) chip */
   --hero-1: #171b36; --hero-2: #2b2154;  /* the ticket */
   --glow: #dde4ff;
   --lift: 0 1px 2px rgb(21 24 38 / 0.06), 0 8px 24px rgb(21 24 38 / 0.07);
@@ -71,6 +72,7 @@
     --line: #2a3052; --brass: #f2b544; --brass-ink: #f6c96f; --screen: #090b15; --focus: #8eb1ff;
     --veil: rgb(14 17 32 / 0.84); --shadow: none; --chip-l: 74%; color-scheme: dark;
     --tint: #20253d; --hero-1: #1a1f3f; --hero-2: #2e2459; --glow: #1a2150; --ta-bg: #23345a; --ta-ink: #cfdcf7;
+    --icon-l: 78%; --icon-l-on: 50%; --brass-on: #a06a00;
     --lift: inset 0 0 0 1px rgb(255 255 255 / 0.06); --lift-hover: inset 0 0 0 1px rgb(255 255 255 / 0.12), 0 18px 40px rgb(0 0 0 / 0.5);
     --chip-ring: inset 0 0 0 1px rgb(255 255 255 / 0.08);
   }
@@ -80,6 +82,7 @@
   --line: #2a3052; --brass: #f2b544; --brass-ink: #f6c96f; --screen: #090b15; --focus: #8eb1ff;
   --veil: rgb(14 17 32 / 0.84); --shadow: none; --chip-l: 74%; color-scheme: dark;
     --tint: #20253d; --hero-1: #1a1f3f; --hero-2: #2e2459; --glow: #1a2150; --ta-bg: #23345a; --ta-ink: #cfdcf7;
+    --icon-l: 78%; --icon-l-on: 50%; --brass-on: #a06a00;
     --lift: inset 0 0 0 1px rgb(255 255 255 / 0.06); --lift-hover: inset 0 0 0 1px rgb(255 255 255 / 0.12), 0 18px 40px rgb(0 0 0 / 0.5);
     --chip-ring: inset 0 0 0 1px rgb(255 255 255 / 0.08);
 }
@@ -312,7 +315,9 @@ h1 {
   border-radius: 12px;
   background: var(--surface);
 }
-.select > span { font: 500 10.5px/1 var(--f-mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.select > span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.select > svg { width: 16px; height: 16px; flex: none; color: var(--muted); }
+.select.active > svg { color: var(--ink); }
 .select select {
   -webkit-appearance: none;
   appearance: none;
@@ -391,7 +396,7 @@ h1 {
   align-items: center;
   gap: 6px;
   height: 30px;
-  padding: 0 11px;
+  padding: 0 11px 0 9px;
   border: 0;
   border-radius: 999px;
   background: var(--surface);
@@ -402,11 +407,18 @@ h1 {
   white-space: nowrap;
 }
 .genre:hover { box-shadow: var(--chip-ring), 0 2px 8px rgb(21 24 38 / 0.08); }
-.genre::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: oklch(68% 0.16 var(--h)); }
-.genre.all::before { background: var(--brass); }
-.genre.favs::before { content: "★"; width: auto; height: auto; border-radius: 0; background: none; color: var(--brass); font-size: 13px; line-height: 1; }
-.genre.favs[aria-pressed="true"]::before { color: var(--brass); }
-.genre.since::before { background: oklch(72% 0.17 150); }
+/* an icon cut from the sprite (cell --gx, set per genre by the script), in the genre's colour */
+.genre::before, .tag::before, .gname::before {
+  content: ""; flex: none; width: 15px; height: 15px;
+  background: oklch(var(--icon-l) 0.16 var(--h, 250));
+  -webkit-mask: var(--sprite) calc(var(--gx, 0) * 100% / (var(--gn) - 1)) 0 / auto 100% no-repeat;
+  mask: var(--sprite) calc(var(--gx, 0) * 100% / (var(--gn) - 1)) 0 / auto 100% no-repeat;
+}
+.genre[aria-pressed="true"]::before { background: oklch(var(--icon-l-on) 0.14 var(--h)); }
+.genre.all::before, .genre.favs::before { background: var(--brass); }
+.genre.all[aria-pressed="true"]::before, .genre.favs[aria-pressed="true"]::before { background: var(--brass-on); }
+.genre.since::before { background: oklch(var(--icon-l) 0.17 150); }
+.genre.since[aria-pressed="true"]::before { background: oklch(var(--icon-l-on) 0.15 150); }
 .genre.feat::before { display: none; }
 .genre.feat svg { width: 15px; height: 15px; flex: none; color: var(--muted); }
 .genre.feat[aria-pressed="true"] svg { color: inherit; }
@@ -428,6 +440,9 @@ h1 {
   cursor: pointer;
   white-space: nowrap;
 }
+#copy::before { --gx: var(--link); content: ""; display: inline-block; width: 14px; height: 14px; margin-right: 5px; vertical-align: -2px; background: currentColor;
+  -webkit-mask: var(--sprite) calc(var(--gx, 0) * 100% / (var(--gn) - 1)) 0 / auto 100% no-repeat; mask: var(--sprite) calc(var(--gx, 0) * 100% / (var(--gn) - 1)) 0 / auto 100% no-repeat; }
+:root:not(.icons) #copy::before, :root:not(.icons) footer p::before { visibility: hidden; }  /* until the script has made the sprite */
 .filter-chip {
   display: inline-flex;
   align-items: center;
@@ -468,9 +483,16 @@ h1 {
 @media (max-width: 920px) {
   /* the menus' values ("Most popular", "All tags") speak for themselves; keep the labels for screen readers */
   .select { padding-left: 11px; }
-  .select > span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .select select { padding-right: 22px; }
   .select::after { right: 9px; }
+}
+/* tablets: the search gives way, so search and menus stay one row down to 721px (below that the search has its own row) */
+@media (min-width: 721px) and (max-width: 920px) { .search { flex-basis: 180px; } }
+@media (max-width: 480px) {
+  /* a phone: the icon says what each menu is, and the arrow makes way for the value */
+  .select { gap: 5px; padding-left: 10px; }
+  .select select { padding-right: 9px; }
+  .select::after { display: none; }
 }
 @media (max-width: 350px) { .select select { font-size: 12.5px; } #sort-box { flex-grow: 1.6; } }
 
@@ -486,9 +508,13 @@ main { margin-top: 18px; }
   font-variation-settings: "wdth" 120;
   font-size: clamp(20px, 2.6vw, 26px);
   line-height: 1.1;
-  display: inline-flex; align-items: center; gap: 10px;
+  position: relative; padding-left: 42px;
 }
-.group-head h2::before { content: ""; width: 12px; height: 12px; border-radius: 4px; background: oklch(68% 0.16 var(--h)); }
+.group-head { align-items: center; }
+.group-head h2::before, .group-head h2::after { content: ""; position: absolute; top: 50%; }
+.group-head h2::before { left: 0; width: 32px; height: 32px; margin-top: -16px; border-radius: 10px; background: oklch(68% 0.16 var(--h) / 0.16); }
+.group-head h2::after { left: 7px; width: 18px; height: 18px; margin-top: -9px; background: oklch(var(--icon-l) 0.16 var(--h));
+  -webkit-mask: var(--sprite) calc(var(--gx, 0) * 100% / (var(--gn) - 1)) 0 / auto 100% no-repeat; mask: var(--sprite) calc(var(--gx, 0) * 100% / (var(--gn) - 1)) 0 / auto 100% no-repeat; }
 .group-head span { font: 400 12px/1 var(--f-mono); color: var(--muted); }
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 248px), 1fr)); gap: 18px; }
 .card:hover { transform: translateY(-3px); box-shadow: var(--lift-hover); }
@@ -649,6 +675,8 @@ button.shots:focus-visible { outline-offset: -3px; border-radius: 18px 18px 0 0;
 .rate-in > .ri + .ri::before { content: "·"; position: absolute; left: 4px; color: var(--muted); }
 .rate .star { color: var(--brass); margin-right: 4px; }
 .rate .cnt { font-weight: 400; font-size: 12px; color: var(--muted); }
+.rate .dl::before { --gx: var(--dl); content: ""; display: inline-block; width: 12px; height: 12px; margin-right: 3px; vertical-align: -1px; background: currentColor;
+  -webkit-mask: var(--sprite) calc(var(--gx, 0) * 100% / (var(--gn) - 1)) 0 / auto 100% no-repeat; mask: var(--sprite) calc(var(--gx, 0) * 100% / (var(--gn) - 1)) 0 / auto 100% no-repeat; }
 .tags { display: flex; flex-wrap: wrap; gap: 5px; padding: 10px 16px 0; }
 .tags button {
   height: 24px;
@@ -664,8 +692,9 @@ button.shots:focus-visible { outline-offset: -3px; border-radius: 18px 18px 0 0;
 .tags button.more { background: transparent; box-shadow: inset 0 0 0 1px var(--line); }
 .tags button[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--surface); }
 .foot { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 14px 16px 16px; }
-.tag { --h: 250; display: inline-flex; align-items: center; gap: 7px; min-width: 0; font: 600 12.5px/1.2 var(--f-body); color: var(--muted); }
-.tag::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: oklch(68% 0.16 var(--h)); }
+.tag { --h: 250; display: inline-flex; align-items: center; gap: 6px; min-width: 0; font: 600 12.5px/1.2 var(--f-body); color: var(--muted); }
+.gname { white-space: nowrap; }
+.gname::before { display: inline-block; width: 1.15em; height: 1.15em; margin-right: 0.3em; vertical-align: -0.22em; }
 .links { display: flex; gap: 4px; }
 .links a {
   display: inline-flex; align-items: center; justify-content: center; gap: 6px;
@@ -683,8 +712,11 @@ button.shots:focus-visible { outline-offset: -3px; border-radius: 18px 18px 0 0;
 .card .links a:not(.store) span { display: none; }  /* their names are in aria-label */
 .links a.store { padding: 0 14px 0 11px; background: var(--brass); color: #2a1a00; }
 .links a.store:hover { filter: brightness(1.05); }
-.empty { padding: 48px 16px; text-align: center; color: var(--muted); }
-.empty button { margin-top: 12px; }
+.empty { padding: 56px 16px; text-align: center; color: var(--muted); }
+.empty-icon { display: grid; place-items: center; width: 64px; height: 64px; margin: 0 auto 14px; border-radius: 50%; background: var(--surface); box-shadow: var(--chip-ring); color: var(--muted); }
+.empty-icon svg { width: 28px; height: 28px; }
+.empty p { margin: 0; font-size: 15px; }
+.empty button { margin-top: 16px; padding: 0 16px 0 13px; }
 /* ---------- detail view ---------- */
 dialog.detail {
   width: min(780px, calc(100vw - 32px));
@@ -731,7 +763,8 @@ dialog.detail::backdrop { background: rgb(8 10 20 / 0.6); }
 .d-gallery img { flex: none; height: 220px; width: auto; max-width: 92%; border-radius: 10px; background: var(--screen); scroll-snap-align: start; }
 .d-facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 8px; margin: 0; padding: 4px 18px 14px; }
 .d-facts > div { padding: 10px 12px; border-radius: 12px; background: var(--tint); }
-.d-facts dt { font: 500 10.5px/1.3 var(--f-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.d-facts dt { display: flex; align-items: center; gap: 6px; font: 500 10.5px/1.3 var(--f-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.d-facts dt svg { width: 14px; height: 14px; flex: none; }
 .d-facts dd { margin: 3px 0 0; font-size: 14px; line-height: 1.45; }
 .d-section { padding: 0 18px 14px; }
 .d-section > p { margin: 0 0 10px; }
@@ -763,7 +796,8 @@ dialog.detail::backdrop { background: rgb(8 10 20 / 0.6); }
 .mini:hover { border-color: var(--ink); }
 .mini .icon { width: 56px; height: 56px; border-radius: 13px; }
 .mini-title { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font: 600 13px/1.25 var(--f-body); overflow-wrap: anywhere; }
-.mini-sub { font-size: 11px; line-height: 1.3; color: var(--muted); }
+.mini-sub { display: flex; flex-direction: column; gap: 2px; font-size: 11px; line-height: 1.3; color: var(--muted); }
+.mini-sub .gname { overflow: hidden; text-overflow: ellipsis; }
 .muted { color: var(--muted); }
 @media (max-width: 560px) {
   dialog.detail { width: 100%; max-width: 100%; height: 100%; max-height: 100%; margin: 0; border: 0; border-radius: 0; }
@@ -895,8 +929,10 @@ dialog.discover::backdrop { background: var(--bg); }
 }
 .dc-btn.primary { background: var(--ink); border-color: var(--ink); color: var(--surface); }
 .dc-btn.danger { color: oklch(55% 0.2 25); }
-footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
-footer p { margin: 0 0 6px; max-width: 75ch; }
+footer { margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; columns: 2 400px; column-gap: 44px; }
+footer p { position: relative; margin: 0 0 12px; padding-left: 26px; max-width: 75ch; break-inside: avoid; }
+footer p::before { content: ""; position: absolute; left: 0; top: 1px; width: 16px; height: 16px; background: currentColor;
+  -webkit-mask: var(--sprite) calc(var(--gx, 0) * 100% / (var(--gn) - 1)) 0 / auto 100% no-repeat; mask: var(--sprite) calc(var(--gx, 0) * 100% / (var(--gn) - 1)) 0 / auto 100% no-repeat; }
 /* ---------- short screens (a phone held sideways): everything slimmer; the bar slides away while scrolling down ---------- */
 @media (max-height: 500px) {
   body { padding-top: max(10px, env(safe-area-inset-top, 0px)); }
@@ -917,7 +953,6 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   .search input { height: 34px; }
   .select { flex: 0 1 auto; min-width: 0; height: 34px; padding-left: 10px; }
   #sort-box { flex-grow: 0; }
-  .select > span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .select select { flex: 0 1 auto; min-width: 0; max-width: 8.5em; padding-right: 22px; font-size: 13px; }
   .select::after { right: 8px; }
   .ghost { height: 34px; }
@@ -995,7 +1030,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         <input id="q" type="search" placeholder="Search games or developers" autocomplete="off" spellcheck="false">
       </label>
-      <label class="select" id="sort-box"><span data-t="sort">Sort</span>
+      <label class="select" id="sort-box"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 19.6V4.4M4.6 7.8 8 4.4l3.4 3.4M16 4.4v15.2M12.6 16.2l3.4 3.4 3.4-3.4"/></svg><span data-t="sort">Sort</span>
         <select id="sort">
           <option value="az" data-t="sortAz">A–Z</option>
           <option value="popular" data-t="sortPopular">Most popular</option>
@@ -1004,10 +1039,10 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
           <option value="genre" data-t="sortGenre">By genre</option>
         </select>
       </label>
-      <label class="select" id="tag-box"><span data-t="tag">Tag</span>
+      <label class="select" id="tag-box"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 12.4V5a1.4 1.4 0 0 1 1.4-1.4h7.4a1.4 1.4 0 0 1 1 .4l7.2 7.2a1.4 1.4 0 0 1 0 2l-7.4 7.4a1.4 1.4 0 0 1-2 0L4 13.4a1.4 1.4 0 0 1-.4-1z"/><circle cx="8.2" cy="8.2" r="1.3" fill="currentColor" stroke="none"/></svg><span data-t="tag">Tag</span>
         <select id="tag"><option value="-1" data-t="allTags">All tags</option></select>
       </label>
-      <label class="select" id="age-box" title="Only games with this PEGI age rating or lower" data-t-title="maxAgeTitle"><span data-t="maxAge">Max age</span>
+      <label class="select" id="age-box" title="Only games with this PEGI age rating or lower" data-t-title="maxAgeTitle"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.4 19 6v5.6c0 4.3-2.9 7.6-7 9-4.1-1.4-7-4.7-7-9V6z"/><path d="m9 12 2.1 2.1L15.2 10"/></svg><span data-t="maxAge">Max age</span>
         <select id="age">
           <option value="0" data-t="allAges">All ages</option>
           <option value="3">PEGI 3</option>
@@ -1037,8 +1072,9 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
 <div class="wrap">
   <main id="list"></main>
   <div class="empty" id="empty" hidden>
+    <span class="empty-icon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.6"/><path d="m16 16 4.4 4.4M8.6 8.6l4.8 4.8M13.4 8.6l-4.8 4.8"/></svg></span>
     <p id="empty-text" data-t="noGames">No games match your search.</p>
-    <button type="button" class="ghost" id="clear" data-t="clearAll">Clear search and filters</button>
+    <button type="button" class="ghost" id="clear"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 12a7.4 7.4 0 1 0 2.2-5.3"/><path d="M4.4 3.8v4h4"/></svg><span data-t="clearAll">Clear search and filters</span></button>
   </div>
   <noscript><p class="empty">This catalogue needs JavaScript to show the games.</p></noscript>
   <footer>
@@ -1138,7 +1174,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       passYes: "Play Pass", passNo: "Not in Play Pass", newPill: "New", noMatchCover: "No Play Store match",
       shotLabel: (t, k, n) => `${t}: screenshot ${k} of ${n}, show next`,
       tagChip: (t) => `Show games tagged ${t}`, moreTags: (n) => `Show ${n} more ${n === 1 ? "tag" : "tags"}`,
-      ratedSr: (r, n) => `Rated ${r} out of 5 from ${n} ratings`, ratings: (c) => `${c} ratings`, downloads: (c) => `${c} downloads`,
+      ratedSr: (r, n) => `Rated ${r} out of 5 from ${n} ratings`, downloads: (c) => `${c} downloads`,
       favOf: (t) => `Favourite: ${t}`, allBy: (d) => `Show everything by ${d}`, notMatched: "Not matched on the Play Store",
       linksFor: (t) => `Links for ${t}`, openOn: (t) => `Open ${t} on Google Play`, searchOn: (t) => `Search for ${t} on Google Play`,
       play: "Play", find: "Find", ytGame: (t) => `Search YouTube for ${t} gameplay`, ytApp: (t) => `Search YouTube for ${t}`,
@@ -1239,7 +1275,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       passYes: "Play Pass", passNo: "Niet in Play Pass", newPill: "Nieuw", noMatchCover: "Niet gevonden in de Play Store",
       shotLabel: (t, k, n) => `${t}: screenshot ${k} van ${n}, toon de volgende`,
       tagChip: (t) => `Toon games met de tag ${t}`, moreTags: (n) => `Toon nog ${n} ${n === 1 ? "tag" : "tags"}`,
-      ratedSr: (r, n) => `Beoordeeld met ${r} van de 5 uit ${n} beoordelingen`, ratings: (c) => `${c} beoordelingen`, downloads: (c) => `${c} downloads`,
+      ratedSr: (r, n) => `Beoordeeld met ${r} van de 5 uit ${n} beoordelingen`, downloads: (c) => `${c} downloads`,
       favOf: (t) => `Favoriet: ${t}`, allBy: (d) => `Toon alles van ${d}`, notMatched: "Niet gevonden in de Play Store",
       linksFor: (t) => `Links voor ${t}`, openOn: (t) => `${t} openen in Google Play`, searchOn: (t) => `${t} zoeken in Google Play`,
       play: "Play", find: "Zoeken", ytGame: (t) => `Gameplay van ${t} zoeken op YouTube`, ytApp: (t) => `${t} zoeken op YouTube`,
@@ -1332,7 +1368,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       passYes: "Play Pass", passNo: "Nicht in Play Pass", newPill: "Neu", noMatchCover: "Nicht im Play Store gefunden",
       shotLabel: (t, k, n) => `${t}: Screenshot ${k} von ${n}, nächsten zeigen`,
       tagChip: (t) => `Spiele mit dem Tag ${t} zeigen`, moreTags: (n) => `${n} weitere ${n === 1 ? "Tag" : "Tags"} zeigen`,
-      ratedSr: (r, n) => `Mit ${r} von 5 bewertet, aus ${n} Bewertungen`, ratings: (c) => `${c} Bewertungen`, downloads: (c) => `${c} Downloads`,
+      ratedSr: (r, n) => `Mit ${r} von 5 bewertet, aus ${n} Bewertungen`, downloads: (c) => `${c} Downloads`,
       favOf: (t) => `Favorit: ${t}`, allBy: (d) => `Alles von ${d} zeigen`, notMatched: "Nicht im Play Store gefunden",
       linksFor: (t) => `Links zu ${t}`, openOn: (t) => `${t} bei Google Play öffnen`, searchOn: (t) => `${t} bei Google Play suchen`,
       play: "Play", find: "Suchen", ytGame: (t) => `Gameplay von ${t} auf YouTube suchen`, ytApp: (t) => `${t} auf YouTube suchen`,
@@ -1426,7 +1462,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       passYes: "Play Pass", passNo: "Hors Play Pass", newPill: "Nouveau", noMatchCover: "Introuvable sur le Play Store",
       shotLabel: (t, k, n) => `${t} : capture ${k} sur ${n}, voir la suivante`,
       tagChip: (t) => `Voir les jeux avec le tag ${t}`, moreTags: (n) => `Voir ${n} ${n <= 1 ? "autre tag" : "autres tags"}`,
-      ratedSr: (r, n) => `Noté ${r} sur 5 d’après ${n} avis`, ratings: (c) => `${c} avis`, downloads: (c) => `${c} téléchargements`,
+      ratedSr: (r, n) => `Noté ${r} sur 5 d’après ${n} avis`, downloads: (c) => `${c} téléchargements`,
       favOf: (t) => `Favori : ${t}`, allBy: (d) => `Voir tout de ${d}`, notMatched: "Introuvable sur le Play Store",
       linksFor: (t) => `Liens pour ${t}`, openOn: (t) => `Ouvrir ${t} sur Google Play`, searchOn: (t) => `Rechercher ${t} sur Google Play`,
       play: "Play", find: "Chercher", ytGame: (t) => `Chercher du gameplay de ${t} sur YouTube`, ytApp: (t) => `Chercher ${t} sur YouTube`,
@@ -1519,7 +1555,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       passYes: "Play Pass", passNo: "Fuera de Play Pass", newPill: "Nuevo", noMatchCover: "No encontrado en Play Store",
       shotLabel: (t, k, n) => `${t}: captura ${k} de ${n}, ver la siguiente`,
       tagChip: (t) => `Ver juegos con la etiqueta ${t}`, moreTags: (n) => `Ver ${n} ${n === 1 ? "etiqueta más" : "etiquetas más"}`,
-      ratedSr: (r, n) => `Valoración de ${r} sobre 5 con ${n} valoraciones`, ratings: (c) => `${c} valoraciones`, downloads: (c) => `${c} descargas`,
+      ratedSr: (r, n) => `Valoración de ${r} sobre 5 con ${n} valoraciones`, downloads: (c) => `${c} descargas`,
       favOf: (t) => `Favorito: ${t}`, allBy: (d) => `Ver todo de ${d}`, notMatched: "No encontrado en Play Store",
       linksFor: (t) => `Enlaces de ${t}`, openOn: (t) => `Abrir ${t} en Google Play`, searchOn: (t) => `Buscar ${t} en Google Play`,
       play: "Play", find: "Buscar", ytGame: (t) => `Buscar gameplay de ${t} en YouTube`, ytApp: (t) => `Buscar ${t} en YouTube`,
@@ -1612,7 +1648,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       passYes: "Play Pass", passNo: "Non in Play Pass", newPill: "Nuovo", noMatchCover: "Non trovato sul Play Store",
       shotLabel: (t, k, n) => `${t}: screenshot ${k} di ${n}, mostra il successivo`,
       tagChip: (t) => `Mostra i giochi con il tag ${t}`, moreTags: (n) => `Mostra altri ${n} tag`,
-      ratedSr: (r, n) => `Valutato ${r} su 5 da ${n} recensioni`, ratings: (c) => `${c} recensioni`, downloads: (c) => `${c} download`,
+      ratedSr: (r, n) => `Valutato ${r} su 5 da ${n} recensioni`, downloads: (c) => `${c} download`,
       favOf: (t) => `Preferito: ${t}`, allBy: (d) => `Mostra tutto di ${d}`, notMatched: "Non trovato sul Play Store",
       linksFor: (t) => `Link per ${t}`, openOn: (t) => `Apri ${t} su Google Play`, searchOn: (t) => `Cerca ${t} su Google Play`,
       play: "Play", find: "Cerca", ytGame: (t) => `Cerca gameplay di ${t} su YouTube`, ytApp: (t) => `Cerca ${t} su YouTube`,
@@ -1705,7 +1741,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       passYes: "Play Pass", passNo: "Fora do Play Pass", newPill: "Novo", noMatchCover: "Não encontrado na Play Store",
       shotLabel: (t, k, n) => `${t}: captura ${k} de ${n}, ver a próxima`,
       tagChip: (t) => `Ver jogos com a tag ${t}`, moreTags: (n) => `Ver mais ${n} ${n === 1 ? "tag" : "tags"}`,
-      ratedSr: (r, n) => `Nota ${r} de 5 em ${n} avaliações`, ratings: (c) => `${c} avaliações`, downloads: (c) => `${c} downloads`,
+      ratedSr: (r, n) => `Nota ${r} de 5 em ${n} avaliações`, downloads: (c) => `${c} downloads`,
       favOf: (t) => `Favorito: ${t}`, allBy: (d) => `Ver tudo de ${d}`, notMatched: "Não encontrado na Play Store",
       linksFor: (t) => `Links de ${t}`, openOn: (t) => `Abrir ${t} no Google Play`, searchOn: (t) => `Pesquisar ${t} no Google Play`,
       play: "Play", find: "Buscar", ytGame: (t) => `Buscar gameplay de ${t} no YouTube`, ytApp: (t) => `Buscar ${t} no YouTube`,
@@ -1798,7 +1834,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       passYes: "Play Pass", passNo: "Play Pass 対象外", newPill: "NEW", noMatchCover: "Play ストアで見つかりません",
       shotLabel: (t, k, n) => `${t}：スクリーンショット ${k}/${n}、次を表示`,
       tagChip: (t) => `タグ「${t}」のゲームを表示`, moreTags: (n) => `ほかのタグを ${n} 個表示`,
-      ratedSr: (r, n) => `評価 ${r}（5 点満点、${n} 件）`, ratings: (c) => `${c} 件の評価`, downloads: (c) => `${c} ダウンロード`,
+      ratedSr: (r, n) => `評価 ${r}（5 点満点、${n} 件）`, downloads: (c) => `${c} ダウンロード`,
       favOf: (t) => `お気に入り：${t}`, allBy: (d) => `${d} のすべてを表示`, notMatched: "Play ストアで見つかりません",
       linksFor: (t) => `${t} のリンク`, openOn: (t) => `Google Play で ${t} を開く`, searchOn: (t) => `Google Play で ${t} を検索`,
       play: "Play", find: "検索", ytGame: (t) => `YouTube で ${t} のプレイ動画を検索`, ytApp: (t) => `YouTube で ${t} を検索`,
@@ -1965,6 +2001,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     g.gem = !!(g.rating >= 4.5 && g.ratings >= 300 && g.installs > 0 && g.installs < 1e5 && !g.kids);  // well rated, little known
   });
   const genreLabel = (g) => (g.category ? catName(g.category) : genreName(g.genre));
+  const gname = (g) => `<span class="gname" style="--h:${HUES[g.genre] ?? 250}" data-gi="${g.gi}">${esc(genreLabel(g))}</span>`;
   const confirmedOnly = !!D.meta.confirmedOnly;
   const APPS = D.genres.indexOf("Apps");  // Play Pass apps that aren't games get their own section
   const isApp = (g) => g.gi === APPS;
@@ -2056,6 +2093,61 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     prev: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.5 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
     next: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
   };
+  // Line icons on a 24px grid (stroke 1.8, round ends; class "f" marks filled shapes). The genre icons and a few
+  // others are drawn as CSS masks, so a card's icons add nothing to the page's element count.
+  const GLYPHS = {
+    "Action": '<path d="M13.2 2.8 5.6 13.2h5.6l-1 8 7.7-10.6h-5.7z"/>',
+    "Adventure": '<circle cx="12" cy="12" r="8.6"/><path d="m15.6 8.4-2.2 5-5 2.2 2.2-5z"/>',
+    "Arcade": '<rect x="3.8" y="14.6" width="16.4" height="5.6" rx="2"/><path d="M12 14.6V9.4"/><circle cx="12" cy="6.4" r="2.8"/><path d="M16.4 14.6v-1.6"/>',
+    "Board": '<rect x="4" y="4" width="16" height="16" rx="3.6"/><circle cx="8.6" cy="8.6" r="1.25" class="f"/><circle cx="12" cy="12" r="1.25" class="f"/><circle cx="15.4" cy="15.4" r="1.25" class="f"/>',
+    "Card": '<rect x="8.2" y="3.6" width="11" height="15.4" rx="2" transform="rotate(12 13.7 11.3)"/><path d="M8.4 6.4 5.9 7a2 2 0 0 0-1.5 2.4l2.3 9.8a2 2 0 0 0 2.4 1.5l3.1-.7"/><path d="m13.9 8.9 1.7 2.4-1.7 2.4-1.7-2.4z" transform="rotate(12 13.9 11.3)"/>',
+    "Casual": '<circle cx="12" cy="12" r="8.6"/><path d="M8.4 13.9a4.6 4.6 0 0 0 7.2 0"/><circle cx="9.2" cy="9.9" r="1.15" class="f"/><circle cx="14.8" cy="9.9" r="1.15" class="f"/>',
+    "Educational": '<path d="M2.6 9.2 12 4.8l9.4 4.4L12 13.6z"/><path d="M6.4 11v4.6c0 1.6 2.5 3.2 5.6 3.2s5.6-1.6 5.6-3.2V11"/><path d="M21.4 9.2v5"/>',
+    "Music": '<path d="M9.2 17.6V6.2l10-2.2v11.4"/><circle cx="6.6" cy="17.6" r="2.6"/><circle cx="16.6" cy="15.4" r="2.6"/>',
+    "Puzzle": '<path d="M10 5.4a2 2 0 1 1 4 0v1.2h3a1.4 1.4 0 0 1 1.4 1.4v3h-1.2a2 2 0 1 0 0 4h1.2v3a1.4 1.4 0 0 1-1.4 1.4h-3v-1.2a2 2 0 1 0-4 0v1.2H7a1.4 1.4 0 0 1-1.4-1.4V8A1.4 1.4 0 0 1 7 6.6h3z"/>',
+    "Racing": '<path d="M5.4 21V3.8"/><path d="M5.4 4.4h12.4l-2.3 4.1 2.3 4.1H5.4"/><path d="M9.5 4.4v4.1h4.1v4.1M5.4 8.5h4.1M13.6 4.4v4.1h2.2"/>',
+    "Role-Playing": '<path d="M14.5 17.5 3.5 6.5v-3h3l11 11"/><path d="m13 19 6-6M16 16l3.8 3.8M18.6 21l2.4-2.4"/>',
+    "Simulation": '<path d="M3.4 20.4h17.2"/><path d="M5.4 20.4V9.8l5.4-3.2v13.8"/><path d="M10.8 20.4v-9h7.8v9"/><path d="M14 14.4h1.4M14 17.2h1.4M7.8 12.4h.6M7.8 15.4h.6"/>',
+    "Sports": '<circle cx="12" cy="12" r="8.6"/><path d="M3.4 12h17.2M12 3.4v17.2"/><path d="M6.1 5.9c2.6 2.6 2.6 9.6 0 12.2M17.9 5.9c-2.6 2.6-2.6 9.6 0 12.2"/>',
+    "Strategy": '<path d="M6.2 20.4h11.6"/><path d="m7.6 20.4 1.1-8.8h6.6l1.1 8.8"/><path d="M7.4 11.6V5.4h2.3v1.9h1.4V5.4h1.8v1.9h1.4V5.4h2.3v6.2z"/>',
+    "Word & Trivia": '<rect x="4" y="4" width="16" height="16" rx="3.6"/><path d="m8.6 16.4 3.4-8.8 3.4 8.8M9.9 13.2h4.2"/>',
+    "Apps": '<rect x="4" y="4" width="6.8" height="6.8" rx="1.8"/><rect x="13.2" y="4" width="6.8" height="6.8" rx="1.8"/><rect x="4" y="13.2" width="6.8" height="6.8" rx="1.8"/><rect x="13.2" y="13.2" width="6.8" height="6.8" rx="1.8"/>',
+    all: '<path d="M3.2 7.2a2 2 0 0 1 2-2h13.6a2 2 0 0 1 2 2v2.6a2.2 2.2 0 0 0 0 4.4v2.6a2 2 0 0 1-2 2H5.2a2 2 0 0 1-2-2v-2.6a2.2 2.2 0 0 0 0-4.4z" class="f"/>',
+    fav: '<path d="m12 3.4 2.6 5.4 5.9.8-4.3 4.1 1.1 5.9L12 16.8l-5.3 2.8 1.1-5.9-4.3-4.1 5.9-.8z" class="f"/>',
+    sparkle: '<path d="m11 3.6 1.7 4.7 4.7 1.7-4.7 1.7L11 16.4l-1.7-4.7L4.6 10l4.7-1.7z" class="f"/><path d="m18 14.6.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z" class="f"/>',
+    downloads: '<path d="M12 4v10.6m0 0-4.2-4.2m4.2 4.2 4.2-4.2M5 19.6h14"/>',
+    link: '<path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1"/>',
+    age: '<path d="M12 3.4 19 6v5.6c0 4.3-2.9 7.6-7 9-4.1-1.4-7-4.7-7-9V6z"/><path d="m9 12 2.1 2.1L15.2 10"/>',
+    price: '<ellipse cx="12" cy="6.8" rx="7" ry="3"/><path d="M5 6.8v5.1c0 1.7 3.1 3 7 3s7-1.3 7-3V6.8"/><path d="M5 11.9V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-5.1"/>',
+    star: '<path d="m12 3.6 2.5 5.2 5.7.8-4.1 4 1 5.6-5.1-2.7-5.1 2.7 1-5.6-4.1-4 5.7-.8z"/>',
+    calendar: '<rect x="4" y="5.4" width="16" height="15" rx="2.6"/><path d="M4 10h16M8.6 3.4v4M15.4 3.4v4"/>',
+    refresh: '<path d="M19.6 10A8 8 0 0 0 5.2 8"/><path d="M4.4 4.2V8h3.8"/><path d="M4.4 14a8 8 0 0 0 14.4 2"/><path d="M19.6 19.8V16h-3.8"/>',
+    ticket: '<path d="M3.2 7.2a2 2 0 0 1 2-2h13.6a2 2 0 0 1 2 2v2.6a2.2 2.2 0 0 0 0 4.4v2.6a2 2 0 0 1-2 2H5.2a2 2 0 0 1-2-2v-2.6a2.2 2.2 0 0 0 0-4.4z"/><path d="M14.6 5.6v2M14.6 11v2M14.6 16.4v2"/>',
+    globe: '<circle cx="12" cy="12" r="8.6"/><path d="M3.4 12h17.2M12 3.4c2.4 2.4 3.4 5.4 3.4 8.6s-1 6.2-3.4 8.6c-2.4-2.4-3.4-5.4-3.4-8.6s1-6.2 3.4-8.6z"/>',
+    list: '<path d="M9 7h11M9 12h11M9 17h11"/><circle cx="4.9" cy="7" r="1.15" class="f"/><circle cx="4.9" cy="12" r="1.15" class="f"/><circle cx="4.9" cy="17" r="1.15" class="f"/>',
+    play: '<path d="M7.4 4.8v14.4L19 12z"/>',
+    pin: '<path d="M12 20.8s-6.4-5.6-6.4-11a6.4 6.4 0 0 1 12.8 0c0 5.4-6.4 11-6.4 11z"/><circle cx="12" cy="9.8" r="2.3"/>',
+    pad: '<path d="M7.5 7h9a5 5 0 0 1 4.9 6l-.6 3a2.5 2.5 0 0 1-4.3 1.2L14.6 15H9.4l-1.9 2.2A2.5 2.5 0 0 1 3.2 16l-.6-3A5 5 0 0 1 7.5 7z"/><path d="M8 9.5v3M6.5 11h3"/><circle cx="15.5" cy="10.2" r="1.1" class="f"/><circle cx="17.3" cy="12.4" r="1.1" class="f"/>'
+  };
+  const glyphSvg = (k) => '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" ' +
+    `stroke-linejoin="round">${GLYPHS[k].replace(/class="f"/g, 'fill="currentColor" stroke="none"')}</svg>`;
+  // The masks all use one sprite (a row of 24px cells, cell 0 a dot): one image for the browser to set up, not thirty.
+  // An element picks its icon with --gx, the cell number.
+  {
+    const keys = Object.keys(GLYPHS), n = keys.length + 1, gx = (k) => keys.indexOf(k) + 1;
+    const sprite = `<svg xmlns="http://www.w3.org/2000/svg" width="${n * 24}" height="24" viewBox="0 0 ${n * 24} 24" fill="none" stroke="#000" ` +
+      `stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4" fill="#000" stroke="none"/>` +
+      keys.map((k, i) => `<g transform="translate(${(i + 1) * 24} 0)">${GLYPHS[k].replace(/class="f"/g, 'fill="#000" stroke="none"')}</g>`).join("") + "</svg>";
+    const st = document.createElement("style");
+    st.textContent = `:root{--sprite:url("data:image/svg+xml,${encodeURIComponent(sprite)}");--gn:${n};--dl:${gx("downloads")};--link:${gx("link")}}` +
+      D.genres.map((name, gi) => GLYPHS[name] ? `[data-g="${gi}"],[data-gi="${gi}"]{--gx:${gx(name)}}` : "").join("") +
+      `.genre.all{--gx:${gx("all")}}.genre.favs{--gx:${gx("fav")}}.genre.since{--gx:${gx("sparkle")}}` +
+      // the footer's notes, each with the icon of its subject
+      [["list", "list"], ["store", "play"], ["pass", "ticket"], ["region", "pin"], ["new", "sparkle"], ["rating", "star"],
+        ["features", "pad"], ["lang", "globe"], ["app", "downloads"]].map(([id, k]) => `#foot-${id}{--gx:${gx(k)}}`).join("");
+    document.head.append(st);
+    document.documentElement.classList.add("icons");
+  }
   const passTag = (g) => confirmedOnly ? "" : g.pass === 1 ? `<span class="pass-tag yes">${ICONS.ticket}${esc(L.passYes)}</span>`
     : g.pass === 0 ? `<span class="pass-tag no">${esc(L.passNo)}</span>` : "";
   const newPill = `<span class="pill-new">${esc(L.newPill)}</span>`;
@@ -2093,12 +2185,13 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   function rateHtml(g) {
     const items = [];
     if (g.rating) {
-      items.push(`<span class="ri"><span class="star" aria-hidden="true">★</span><span aria-hidden="true">${dec1.format(g.rating)}</span>` +
-        `<span class="sr-only">${esc(L.ratedSr(dec1.format(g.rating), fmt.format(g.ratings)))}</span></span>`,
-        `<span class="ri cnt" aria-hidden="true">${esc(L.ratings(compact.format(g.ratings)))}</span>`);
+      // ★ 4.6 (7.3K): the number of ratings in brackets, as app stores show it
+      items.push(`<span class="ri"><span class="star" aria-hidden="true">★</span><span aria-hidden="true">${dec1.format(g.rating)} ` +
+        `<span class="cnt">(${esc(compact.format(g.ratings))})</span></span>` +
+        `<span class="sr-only">${esc(L.ratedSr(dec1.format(g.rating), fmt.format(g.ratings)))}</span></span>`);
     }
     if (g.installs) {
-      items.push(`<span class="ri cnt"><span aria-hidden="true">${esc(L.downloads(compact.format(g.installs)))}</span>` +
+      items.push(`<span class="ri cnt"><span class="dl" aria-hidden="true">${esc(compact.format(g.installs))}</span>` +
         `<span class="sr-only">${esc(L.downloads(fmt.format(g.installs)))}</span></span>`);
     }
     return items.length ? `<p class="rate"><span class="rate-in">${items.join("")}</span></p>` : "";
@@ -2117,7 +2210,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
       rateHtml(g) +
       `</div>${favBtn(g)}</div>` +
       tagsHtml(g) +
-      `<div class="foot"><span class="tag" style="--h:${HUES[g.genre] ?? 250}">${esc(genreLabel(g))}</span><nav class="links" aria-label="${esc(L.linksFor(g.title))}">` +
+      `<div class="foot"><span class="tag" style="--h:${HUES[g.genre] ?? 250}" data-gi="${g.gi}">${esc(genreLabel(g))}</span><nav class="links" aria-label="${esc(L.linksFor(g.title))}">` +
       `<a class="store" href="${esc(storeUrl)}" target="_blank" rel="noopener" aria-label="${esc(g.appId ? L.openOn(g.title) : L.searchOn(g.title))}">${ICONS.store}<span>${esc(g.appId ? L.play : L.find)}</span></a>` +
       `<a href="https://www.youtube.com/results?search_query=${enc(g.title + (isApp(g) ? "" : " gameplay"))}" target="_blank" rel="noopener" aria-label="${esc(isApp(g) ? L.ytApp(g.title) : L.ytGame(g.title))}">${ICONS.video}<span>${esc(isApp(g) ? L.videos : L.gameplay)}</span></a>` +
       `<a href="https://www.google.com/search?tbm=isch&amp;q=${enc(g.title + (isApp(g) ? " app" : " game"))}" target="_blank" rel="noopener" aria-label="${esc(L.imgSearch(g.title))}">${ICONS.images}<span>${esc(L.images)}</span></a>` +
@@ -2306,7 +2399,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
         const name = D.genres[g.gi], n = groupCounts[g.gi];
         const sec = document.createElement("section");
         sec.className = "group";
-        sec.innerHTML = `<div class="group-head"><h2 style="--h:${HUES[name] ?? 250}">${esc(genreName(name))}</h2>` +
+        sec.innerHTML = `<div class="group-head"><h2 style="--h:${HUES[name] ?? 250}" data-gi="${g.gi}">${esc(genreName(name))}</h2>` +
           `<span>${esc(L.groupCount(n, fmt.format(n), g.gi === APPS))}</span></div><div class="grid"></div>`;
         list.insertBefore(sec, listEnd);
         grid = sec.lastElementChild;
@@ -2572,7 +2665,15 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   const details = new Map();  // appId -> detail file contents, or false when it can't be read
   let pushed = false;
   const money = (v, cur) => { try { return new Intl.NumberFormat(LOCALE, { style: "currency", currency: cur || "USD" }).format(v); } catch (e) { return `${v} ${cur || ""}`; } };
-  const paras = (text) => esc(text).replace(/\r\n?/g, "\n").split(/\n{2,}/).map((x) => `<p>${x.replace(/\n/g, "<br>")}</p>`).join("");
+  // Store descriptions as paragraphs. Some carry HTML tags or Markdown-style **bold** and --- rules as plain text:
+  // tags become paragraph breaks, the bold is shown bold and the rules go.
+  const ENTITIES = { amp: "&", lt: "<", gt: ">", quot: '"', "#39": "'", nbsp: " " };
+  const paras = (text) => esc(String(text).replace(/\r\n?/g, "\n")
+    .replace(/<br\s*\/?>/gi, "\n").replace(/<\/?(?:p|div|h[1-6]|ul|ol|li|section|blockquote)\b[^<>]*>/gi, "\n\n")
+    .replace(/<\/?[a-z][a-z0-9-]*(?:\s[^<>]*)?\/?>/gi, "").replace(/&(amp|lt|gt|quot|#39|nbsp);/g, (m, e) => ENTITIES[e])
+    .replace(/^[ \t]*[-–—*_=]{3,}[ \t]*$/gm, ""))
+    .split(/\n{2,}/).map((x) => x.trim()).filter(Boolean)
+    .map((x) => `<p>${x.replace(/\*\*([^*\n]+?)\*\*/g, "<strong>$1</strong>").replace(/\n/g, "<br>")}</p>`).join("");
   function renderDetail(g, d) {
     const storeId = (g.alt && g.alt[region]) || g.appId;
     const shots = d && d.screenshots && d.screenshots.length ? d.screenshots : g.shot0 ? [g.shot0] : [];
@@ -2580,30 +2681,30 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     const facts = [];
     const pegi = g.pegi != null ? `PEGI ${g.pegi}` + (d && d.pegiNotes ? ` · ${esc(d.pegiNotes)}` : "") : "";
     const esrb = d && d.esrb ? `ESRB ${esc(d.esrb)}` + (d.esrbNotes ? ` · ${esc(d.esrbNotes)}` : "") : "";
-    facts.push([L.ageRating, [pegi, esrb].filter(Boolean).join("<br>") || (d === undefined ? "…" : esc(d === false ? L.unknown : L.notRated))]);
+    facts.push(["age", L.ageRating, [pegi, esrb].filter(Boolean).join("<br>") || (d === undefined ? "…" : esc(d === false ? L.unknown : L.notRated))]);
     if (d) {
       const price = d.price > 0 ? money(d.price, d.currency) : d.iap ? esc(L.freeIap) + (d.iapPrices ? ` (${esc(d.iapPrices)})` : "") : esc(L.free);
-      facts.push([L.withoutPass, price + (d.price > 0 || d.iap ? `<br><span class="muted">${esc(L.included)}</span>` : "")]);
+      facts.push(["price", L.withoutPass, price + (d.price > 0 || d.iap ? `<br><span class="muted">${esc(L.included)}</span>` : "")]);
     }
-    if (g.rating) facts.push([L.rating, esc(L.ratingValue(dec1.format(g.rating), fmt.format(g.ratings)))]);
-    if (g.installs) facts.push([L.downloadsFact, fmt.format(g.installs)]);
-    if (g.released) facts.push([L.released, esc(dateText(g.released))]);
-    if (d && d.updated) facts.push([L.updated, esc(dateText(d.updated))]);
-    facts.push([L.inPass, esc(g.firstSeen && since && g.firstSeen > since ? L.since(dateText(g.firstSeen))
+    if (g.rating) facts.push(["star", L.rating, esc(L.ratingValue(dec1.format(g.rating), fmt.format(g.ratings)))]);
+    if (g.installs) facts.push(["downloads", L.downloadsFact, fmt.format(g.installs)]);
+    if (g.released) facts.push(["calendar", L.released, esc(dateText(g.released))]);
+    if (d && d.updated) facts.push(["refresh", L.updated, esc(dateText(d.updated))]);
+    facts.push(["ticket", L.inPass, esc(g.firstSeen && since && g.firstSeen > since ? L.since(dateText(g.firstSeen))
       : since ? L.sinceBefore(dateText(since)) : L.yes)]);
     if (REGIONS.length > 1) {
-      facts.push([L.countries, esc(L.offeredIn(fmt.format(REGIONS.length - missing.length), fmt.format(REGIONS.length))) +
+      facts.push(["globe", L.countries, esc(L.offeredIn(fmt.format(REGIONS.length - missing.length), fmt.format(REGIONS.length))) +
         (missing.length ? `<br><span class="muted">${esc(L.notIn(missing.join(L.listSep)))}</span>` : "")]);
     }
     if (g.pad) {
       const src = D.padSources && D.padSources[g.appId];
       const site = src ? `<a href="${esc(src)}" target="_blank" rel="noopener">${esc(new URL(src).hostname.replace(/^www\./, ""))}</a>` : "";
-      facts.push([L.padFact, esc(g.pad === 1 ? L.padPartly : L.padYes) +
+      facts.push([ICONS.pad, L.padFact, esc(g.pad === 1 ? L.padPartly : L.padYes) +
         `<br><span class="muted">${src ? L.padSaysSite(site) : esc(L.padSaysDesc)}</span>`]);
     }
-    if (g.pc) facts.push([L.pcFact, `<a href="https://play.google.com/pc-store/games/details?id=${enc(g.appId)}" target="_blank" ` +
+    if (g.pc) facts.push([ICONS.pc, L.pcFact, `<a href="https://play.google.com/pc-store/games/details?id=${enc(g.appId)}" target="_blank" ` +
       `rel="noopener">${esc(L.pcValue)}</a>`]);
-    if (g.listedAs) facts.push([L.listedAs, esc(g.listedAs)]);
+    if (g.listedAs) facts.push(["list", L.listedAs, esc(g.listedAs)]);
     const video = ytId(d);
     let desc;
     if (d === undefined) desc = `<p class="muted">${esc(L.loadingDesc)}</p>`;
@@ -2619,11 +2720,11 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
         : d && d.header ? `<img class="d-banner" src="${esc(img(d.header, "w1052"))}" alt="">` : "") +
       `<div class="d-head">${iconHtml(g, 64).replace(/ data-open="\d+"/, "")}<div class="txt">` +
       `<h2 class="d-title" id="d-title">${esc(g.title)}</h2>` +
-      `<p class="d-sub">${g.dev ? `<button type="button" class="linkish" data-ddev>${esc(g.dev)}</button> · ` : ""}${esc(genreLabel(g))}` +
+      `<p class="d-sub">${g.dev ? `<button type="button" class="linkish" data-ddev>${esc(g.dev)}</button> · ` : ""}${gname(g)}` +
       `${g.isNew ? ` · ${newPill}` : ""}${g.ta ? ` · ${taPill}` : ""}</p></div>${favBtn(g)}</div>` +
       (shots.length ? `<div class="d-gallery" tabindex="0" aria-label="${esc(L.screenshots)}">` +
         shots.map((x, k) => `<img src="${esc(img(x, "h440"))}" alt="${esc(L.shotAlt(k + 1, shots.length))}" loading="lazy" decoding="async">`).join("") + `</div>` : "") +
-      `<dl class="d-facts">${facts.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${v}</dd></div>`).join("")}</dl>` +
+      `<dl class="d-facts">${facts.map(([i, k, v]) => `<div><dt>${GLYPHS[i] ? glyphSvg(i) : i}${esc(k)}</dt><dd>${v}</dd></div>`).join("")}</dl>` +
       (g.reps.length ? `<div class="tags d-tags">${g.reps.map((t) => `<button type="button" data-dtag="${t}">${esc(tagName(t))}</button>`).join("")}</div>` : "") +
       // an untranslated description stays English: say so for screen readers and hyphenation
       `<div class="d-section"${d && !d.translated && LANG !== "en" ? ' lang="en"' : ""}>${desc}</div>` +
@@ -2672,7 +2773,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
   const sameDev = (g) => byPopular.filter((x) => x !== g && x.dev === g.dev && inRegion(x)).slice(0, MORE);
   const mini = (x) => `<button type="button" class="mini" data-dopen="${x.i}">${iconHtml(x, 56).replace(/ data-open="\d+"/, "")}` +
     `<span class="mini-title">${esc(x.title)}</span>` +
-    `<span class="mini-sub">${x.rating ? `★ ${dec1.format(x.rating)} · ` : ""}${esc(genreLabel(x))}</span></button>`;
+    `<span class="mini-sub">${x.rating ? `<span>★ ${dec1.format(x.rating)}</span>` : ""}${gname(x)}</span></button>`;
   const strip = (title, list) => list.length
     ? `<section class="d-like"><h3>${esc(title)}</h3><div class="d-strip">${list.map(mini).join("")}</div></section>` : "";
   // Trailers: a still with a play button; the YouTube player loads (and plays) only when it's pressed.
@@ -2970,7 +3071,7 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     const storeId = (g.alt && g.alt[region]) || g.appId;
     return `<div class="dc-head">${iconHtml(g, 60).replace(/ data-open="\d+"/, "")}<div class="txt">` +
       `<h2 class="dc-title">${esc(g.title)}</h2>` +
-      `<p class="d-sub">${g.dev ? esc(g.dev) + " · " : ""}${esc(genreLabel(g))}${g.pegi != null ? ` · PEGI ${g.pegi}` : ""}` +
+      `<p class="d-sub">${g.dev ? esc(g.dev) + " · " : ""}${gname(g)}${g.pegi != null ? ` · PEGI ${g.pegi}` : ""}` +
       `${g.isNew ? ` · ${newPill}` : ""}</p>${rateHtml(g)}</div></div>` +
       `<div class="dc-text"${d && !d.translated && LANG !== "en" ? ' lang="en"' : ""}>${text}</div>` +
       (video ? trailerBtn("dc-trailer", video, d.header ? img(d.header, "w720") : ytStill(video), g.title) : "") +

@@ -25,7 +25,9 @@ the set is up. Games added to Play Pass or released in the last 30 days carry a
 Tap a title for the detail view: the store description, every screenshot, the
 trailer (it plays right there; YouTube only loads when you press play), the age
 rating (PEGI and ESRB), what the game costs without Play Pass, release and update
-dates, the countries that offer it, and a share button. Below that, "More like
+dates, the countries that offer it, and a share button (store descriptions that
+came with HTML tags or Markdown-style **bold** typed as plain text are tidied
+into paragraphs and bold). Below that, "More like
 this" lists the games whose Play Store tags overlap most with this one's (rare
 tags count for more than ones most games share, and children's games go with
 children's games), and a second row has the developer's other games.
@@ -102,7 +104,10 @@ then the features and the genres, with thin dividers between those groups, and
 the status line. In the header, the title always starts
 below the row with the language, theme and install buttons, and the mosaic of
 game icons only fills the free space beside the description (on a phone there
-is none, so it stays away). On phones the header keeps to what the page
+is none, so it stays away). Small line icons mark the genres (on the chips, the
+cards, the genre headings), the three menus, the detail view's facts and the
+footer's notes; they are masks cut from one SVG sprite the script builds, so
+they add no elements to the cards and only one image for the browser to set up. On phones the header keeps to what the page
 is (the how-to and the sources line are in the footer), and the bar and the
 Discover button slide out of the way while you scroll down through the games and
 come back as soon as you scroll up. Past the header, the Discover button is just
