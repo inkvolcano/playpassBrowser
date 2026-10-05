@@ -97,8 +97,9 @@ to their own favourites, which is also how you move a list to another device.
 
 **Layout.** The filter bar stays at the top: search and menus (one row from
 tablet width up), one row of chips that scrolls sideways (arrows at its ends for a
-mouse, a fade on touch screens; thin dividers separate your lists, the features
-and the genres), and the status line. In the header, the title always starts
+mouse, a fade on touch screens): All first, then Favourites (and New for you),
+then the features and the genres, with thin dividers between those groups, and
+the status line. In the header, the title always starts
 below the row with the language, theme and install buttons, and the mosaic of
 game icons only fills the free space beside the description (on a phone there
 is none, so it stays away). On phones the header keeps to what the page

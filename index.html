@@ -2194,16 +2194,16 @@ footer p { margin: 0 0 6px; max-width: 75ch; }
     `<optgroup label="${esc(L.genresGroup)}">${tagOptions((n) => STORE_GENRES.has(n))}</optgroup>`);
   $("only-pass").hidden = confirmedOnly;
   // feature chips: hidden until there's something to show (renderCounts)
-  const CHIPS_SEP = '<span class="chips-sep" aria-hidden="true"></span>';  // between yours, the features and the genres
+  const CHIPS_SEP = '<span class="chips-sep" aria-hidden="true"></span>';  // between All and yours, the features and the genres
   const featChip = (id, icon, label, title, count = true) => `<button type="button" class="genre feat" id="${id}" aria-pressed="false" ` +
     `title="${esc(title)}" hidden>${icon}${esc(label)}${count ? " <small></small>" : ""}</button>`;
   $("genres").innerHTML =
+    `<button type="button" class="genre all" data-g="-1" aria-pressed="true">${esc(L.all)} <small></small></button>` +
     `<button type="button" class="genre favs" id="fav-chip" aria-pressed="false">${esc(L.favourites)} <small></small></button>` +
     `<button type="button" class="genre since" id="since-chip" aria-pressed="false" title="${esc(L.newForYouTitle)}" hidden>${esc(L.newForYou)} <small></small></button>` +
     CHIPS_SEP + featChip("gems-chip", ICONS.gem, L.gems, L.gemsTitle) + featChip("pad-chip", ICONS.pad, L.pad, L.padTitle) +
     featChip("pc-chip", ICONS.pc, L.pc, L.pcTitle) + featChip("kids-chip", ICONS.kids, L.forKids, L.forKidsTitle) +
     featChip("nokids-chip", ICONS.nokids, L.noKids, L.noKidsTitle, false) + CHIPS_SEP +
-    `<button type="button" class="genre all" data-g="-1" aria-pressed="true">${esc(L.all)} <small></small></button>` +
     D.genres.map((name, gi) => `<button type="button" class="genre" data-g="${gi}" style="--h:${HUES[name] ?? 250}" aria-pressed="false">${esc(genreName(name))} <small></small></button>`).join("");
 
   // ----- state
